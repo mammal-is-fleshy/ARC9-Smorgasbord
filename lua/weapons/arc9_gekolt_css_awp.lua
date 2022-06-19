@@ -191,6 +191,7 @@ SWEP.CrouchAng = Angle(0, 0, -5)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(24, 32, 6)
+
 SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = true
 
@@ -246,8 +247,13 @@ SWEP.AttachmentElements = {
 
     ["awp_f_smg"] = {
         Bodygroups = {
-            {0, 1}
+            {0, 1},
+            {1, 1}			
         },
+        Override_IronSights = {
+			Pos = Vector(-4, 0, 5),
+			Ang = Angle(0, 0, -5),
+        },			
 	},	
 }
 
@@ -284,7 +290,9 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_deploy.wav" ,   t = 1 / 40},
         },			
 	},
-	
+    ["holster"] = {
+        Source = "idle",
+     },	
 
     ["fire_cycle"] = {
         Source = "fire",
