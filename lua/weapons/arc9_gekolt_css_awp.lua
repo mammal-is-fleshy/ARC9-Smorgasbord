@@ -142,12 +142,12 @@ SWEP.SwayMultSights = 0.3
 SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.SpeedMult = 0.91
-SWEP.SpeedMultSights = 0.75
+SWEP.SpeedMult = 0.9
+SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.7
 SWEP.SpeedMultMelee = 0.75
-SWEP.SpeedMultCrouch = 1
-SWEP.SpeedMultBlindFire = 1
+SWEP.SpeedMultCrouch = 0.75
+SWEP.SpeedMultBlindFire = 0.95
 
 -------------------------- MELEE
 
@@ -186,8 +186,8 @@ SWEP.SprintPos = Vector(2, 2, 0)
 SWEP.ActivePos = Vector(0, 5, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-2, -10, 2)
-SWEP.CrouchAng = Angle(0, 0, 0)
+SWEP.CrouchPos = Vector(-2, 2, -1)
+SWEP.CrouchAng = Angle(0, 0, -5)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(24, 32, 6)
