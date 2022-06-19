@@ -236,6 +236,13 @@ SWEP.AttachmentElements = {
             {0, 2}
         },
 	},
+	
+    ["awp_s_smg"] = {
+        Bodygroups = {
+            {2, 1}
+        },
+	},
+	
 
     ["awp_f_smg"] = {
         Bodygroups = {
@@ -253,7 +260,16 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),		
-    }
+    },
+    [2] = {
+        PrintName = "Stock",
+        DefaultName = "Polymer Stock",
+
+        Category = "css_awp_stock", 
+        Bone = "W_Main",
+        Pos = Vector(0, 2, -10),
+        Ang = Angle(0, 0, 0),		
+    }	
 }
 
 SWEP.Animations = {

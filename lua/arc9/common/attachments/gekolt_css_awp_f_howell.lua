@@ -12,7 +12,8 @@ ATT.SortOrder = 2
 
 ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"awp_f_howell"}
-ATT.ShootSound = "gekolt_css/mp5-1.wav"
+
+ATT.ShootSound = "gekolt_css/ak47-1.wav"
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 300/50
