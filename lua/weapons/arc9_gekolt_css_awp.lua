@@ -170,14 +170,13 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 SWEP.IronSights = {
     Pos = Vector(-4, 0, -0.25),
     Ang = Angle(0, 0, -5),
+    Midpoint = { -- Where the gun should be at the middle of it's irons
+        Pos = Vector(0, 15, -4),
+        Ang = Angle(-10, 0, -25),
+    },	
     Magnification = 1,
     AssociatedSlot = 0, -- Attachment slot to associate the sights with. Causes RT scopes to render.
     CrosshairInSights = false,
-}
-
-SWEP.SightMidPoint = { -- Where the gun should be at the middle of it's irons
-    Pos = Vector(-1, 15, -4),
-    Ang = Angle(0, 0, -35),
 }
 
 SWEP.SprintAng = Angle(30, -15, -10)
@@ -243,7 +242,13 @@ SWEP.AttachmentElements = {
             {2, 1}
         },
 	},
-	
+
+    ["awp_s_no"] = {
+        Bodygroups = {
+            {2, 2}
+        },
+	},
+		
 
     ["awp_f_smg"] = {
         Bodygroups = {
@@ -317,12 +322,23 @@ SWEP.Animations = {
         Source = "fire_smg",
 		MinProgress = 0.05,
     },	
+    ["fire_empty_smg"] = {
+        Source = "fire_smg",
+		MinProgress = 0.05,
+    },	
 	
     ["fire_br"] = {
         Source = "fire_br",
 		MinProgress = 0.05,
-		Mult =1.25,
+		Mult =1,
+    },	
+    ["fire_empty_br"] = {
+        Source = "fire_br",
+		MinProgress = 0.05,
+		Mult =1,
     },		
+	
+	
 	
     -- AWP --
 

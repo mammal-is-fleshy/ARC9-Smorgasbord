@@ -13,6 +13,7 @@ $bodygroup "upper"
 	studio "m4a1_up_snipe.smd"		
 	studio "m4a1_up_cross.smd"
 	studio "m4a1_up_gibhr.smd"
+	studio "m4a1_hg_pump.smd"	
 	blank
 }
 
@@ -73,16 +74,6 @@ $bodygroup "handguard"
 	studio "m4a1_hg_adar.smd"
 	studio "m4a1_hg_lmg.smd"	
 	studio "m4a1_hg_patriot.smd"
-	studio "m4a1_hg_pump.smd"
-	blank
-}
-
-$bodygroup "grip"
-{
-	studio "m4a1_grip.smd"
-	studio "m4a1_grip_cali.smd"
-	studio "m4a1_grip_saw.smd"
-	studio "m4a1_grip_ske.smd"
 	blank
 }
 
@@ -110,9 +101,12 @@ $bodygroup "m4"
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\v_models\pist_glock18\"
+$cdmaterials "models\weapons\v_models\shot_m3super90\"
+$cdmaterials "models\weapons\v_models\rif_famas\"
 $cdmaterials "models\weapons\V_models\smg_mac10\"
 $cdmaterials "models\weapons\V_models\mach_m249para\"
 $cdmaterials "models\weapons\V_models\rif_m4a1\"
+$cdmaterials "models\weapons\V_models\rif_ak47\"
 $cdmaterials "models\weapons\v_models\rif_galil\"
 $cdmaterials "models\weapons\V_models\smg_ump45\"
 $cdmaterials "models\weapons\V_models\smg_p90\"
