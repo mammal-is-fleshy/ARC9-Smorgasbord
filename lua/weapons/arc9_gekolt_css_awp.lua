@@ -12,10 +12,6 @@ SWEP.Class = "Sniper Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "United Kingdom",
     ["Caliber"] = ".338 Lapua Magnum",
-    ["Weight (Loaded)"] = "6kg",
-    ["Projectile Weight"] = "16.2 Grams",
-    ["Muzzle Velocity"] = "3000 Feet/Second",
-    ["Muzzle Energy"] = "7000 Joules"
 }
 
 SWEP.Credits = {
@@ -35,7 +31,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_awp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-12, 9, -7),
+    Pos = Vector(-8, 6, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -182,7 +178,7 @@ SWEP.IronSights = {
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(2, 2, 0)
 
-SWEP.ActivePos = Vector(0, 5, 0)
+SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-2, 2, -1)
@@ -385,7 +381,7 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 58 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 62 / 40},	
             {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 100 / 40},				
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 114 / 40},	
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 110 / 40},	
 			},
     },	
     -- SMG --

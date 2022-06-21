@@ -2,47 +2,36 @@ AddCSLuaFile()
 
 SWEP.Base = "arc9_base"
 
-SWEP.Spawnable = false
+SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CSS"
 
 SWEP.PrintName = "CC4R"
+SWEP.TrueName = "You literally have no reason to use any other weapon"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = "United States of America",
-    ["Caliber"] = "5.56 NATO",
-    ["Weight (Loaded)"] = "3.22kg",
-    ["Projectile Weight"] = "4 Grams",
-    ["Muzzle Velocity"] = "2900 Feet/Second",
-    ["Muzzle Energy"] = "1570 Joules"
+    ["Caliber"] = "5.56x45mm NATO",
 }
 
 SWEP.Credits = {
-    Author = "Arctic",
+	Author = "Geckololt",
+	Contact = "SlogoKolt#6648",
     Assets = "Counter-Strike Source"
 }
 
+SWEP.Description = [["Extremely versatile gun."
+[Excessive] customisation.]]
 
-if ARC9:UseTrueNames() then
-
-SWEP.Description = [[More accurate but less damaging than its AK-47 counterpart, the M4A1 is the full-auto assault rifle of choice for CTs.]]
-SWEP.PrintName = SWEP.TrueName
-
-else
-
-SWEP.Description = [[More accurate but less damaging than its CV-47 counterpart, the Maverick is the full-auto assault rifle of choice for CTs.]]
-
-end
-
-SWEP.ViewModel = "models/weapons/cstrike/c_rif_m4a1.mdl"
+SWEP.ViewModel = "models/weapons/geckololt_css/c_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
 SWEP.Slot = 2
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/arc9_uli/m_rif_m4a1.mdl"
+SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_m4a1.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-15, 9, -7),
+    Pos = Vector(-7, 5, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -169,8 +158,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-7.96, -6, -0.2),
-    Ang = Angle(-1.65, 2.5, -4),
+    Pos = Vector(-3.05, 0, -0.25),
+    Ang = Angle(0,0,-5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(0, 0, -45),
@@ -179,10 +168,10 @@ SWEP.IronSights = {
     CrosshairInSights = false
 }
 
-SWEP.SprintAng = Angle(30, -15, 0)
-SWEP.SprintPos = Vector(2, -6, 2)
+SWEP.SprintAng = Angle(30, -15, -10)
+SWEP.SprintPos = Vector(3, 0, -0.5)
 
-SWEP.ActivePos = Vector(-3, -4, 0)
+SWEP.ActivePos = Vector(0, 2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-3, -6, 2)
@@ -218,83 +207,63 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "weapons/m4a1/m4a1_unsil-1.wav"
-SWEP.ShootSoundSilenced = "weapons/m4a1/m4a1-1.wav"
+SWEP.ShootSound = "gekolt_css/ump45-1.wav"
+SWEP.ShootSoundSilenced = "gekolt_css/m4a1-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.HideBones = {
-    "v_weapon.m4_Silencer"
-}
-
-SWEP.HideBonesSilenced = {}
-
-SWEP.ReloadHideBoneTables = {
-    [1] = {"v_weapon.m4_Silencer"}
-}
+SWEP.DefaultBodygroups = "00000000000"
 
 SWEP.Animations = {
     ["fire"] = {
-        Source = {"shoot1_unsil", "shoot2_unsil", "shoot3_unsil"},
-        Mult = 0.5,
-        HideBoneIndex = 1,
+        Source = {"fire"},
     },
     ["reload"] = {
-        Source = "reload_unsil",
-        HideBoneIndex = 1,
+        Source = "wet",
     },
+    ["reload_empty"] = {
+        Source = "dry_3",
+    },	
     ["draw"] = {
-        Source = "draw_unsil",
-        HideBoneIndex = 1,
+        Source = "draw",
     },
     ["holster"] = {
-        Source = "draw_unsil",
-        HideBoneIndex = 1,
-        Reverse = true
+        Source = "idle",
     },
     ["idle"] = {
-        Source = "idle_unsil",
-        HideBoneIndex = 1,
+        Source = "idle",
     },
-    ["fire_silenced"] = {
-        Source = {"shoot1", "shoot2", "shoot3"},
-        -- Source = "idle",
-        Mult = 0.5
+
+    ["fire_bolt"] = {
+        Source = {"fire_bolt"},
     },
-    ["reload_silenced"] = {
-        Source = "reload"
+    ["reload_bolt"] = {
+        Source = "dry_sniper",
     },
-    ["draw_silenced"] = {
-        Source = "draw"
-    },
-    ["holster_silenced"] = {
-        Source = "draw",
-        Reverse = true
-    },
-    ["idle_silenced"] = {
-        Source = "idle"
-    },
-    ["postcustomize"] = {
-        Source = "detach_silencer",
-        HideBoneIndex = 0,
-    },
-    ["postcustomize_silenced"] = {
-        Source = "add_silencer"
-    },
+    ["reload_empty_bolt"] = {
+        Source = "dry_sniper",
+    },		
 }
 
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
+    ["up_bolt"] = {
+        Bodygroups = {
+            {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},
+        },
+	},
 }
 
 SWEP.Attachments = {
-    {
-        PrintName = "MUZZLE",
-        Category = "uli_silencer",
-        Bone = "v_weapon.m4_Parent",
-        Pos = Vector(0.152, -4.604, -17.313),
-        Ang = Angle(90, 0, -90),
-    },
+    [1] = {
+        PrintName = "Receiver",
+        DefaultName = "Standard Receiver",
+
+        Category = "css_m4_up", 
+        Bone = "W_Main",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),		
+    },	
 }
