@@ -174,13 +174,13 @@ SWEP.SprintPos = Vector(3, 0, -0.5)
 SWEP.ActivePos = Vector(0, 2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-3, -6, 2)
-SWEP.CrouchAng = Angle(0, 0, 0)
+SWEP.CrouchPos = Vector(-0.5, 1, -1.5)
+SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(24, 32, 8)
-SWEP.CustomizeSnapshotFOV = 100
-SWEP.CustomizeNoRotate = true
+SWEP.CustomizePos = Vector(10, 32, 5)
+SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
