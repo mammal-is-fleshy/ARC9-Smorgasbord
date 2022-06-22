@@ -31,7 +31,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_awp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-8, 6, -7),
+    Pos = Vector(-8, 4, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -192,15 +192,15 @@ SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "rpg"
-SWEP.HoldTypeSprint = "normal"
-SWEP.HoldTypeHolstered = "normal"
-SWEP.HoldTypeSights = "smg"
+SWEP.HoldType = "ar2"
+SWEP.HoldTypeSprint = "passive"
+SWEP.HoldTypeHolstered = "passive"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.AnimReload = ACT_HL2MP_IDLE_AR2
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS

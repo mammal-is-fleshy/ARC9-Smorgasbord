@@ -31,7 +31,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_m4a1.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7, 5, -7),
+    Pos = Vector(-7, 2, -7),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -192,7 +192,7 @@ SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.AnimReload = ACT_HL2MP_IDLE_SMG1
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
@@ -270,6 +270,22 @@ SWEP.Animations = {
 
     ["reload_empty_proto"] = {
         Source = "dry_proto",
+    },	
+
+    ["reload_empty_pdw"] = {
+        Source = "dry_57",
+    },		
+	
+    ["reload_empty_sg"] = {
+        Source = "dry_sg",
+    },	
+
+    ["reload_empty_ak"] = {
+        Source = "dry_ak",
+    },	
+
+    ["reload_empty_smg"] = {
+        Source = "dry_3",
     },		
 }
 
@@ -290,7 +306,33 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 1},{4, 2},{5, 8}
         },
+	},
+    ["up_ak"] = {
+        Bodygroups = {
+            {1, 1},{3, 1},{4, 5},{5, 1}
+        },
 	},	
+    ["up_9mm"] = {
+        Bodygroups = {
+            {4, 1}
+        },
+	},	
+    ["up_sd"] = {
+        Bodygroups = {
+            {0, 2},{5, 3},{6, 7}
+        },
+	},		
+    ["up_pdw"] = {
+        Bodygroups = {
+            {0, 3},{4, 5},{5, 2},{6, 7}
+        },
+	},	
+    ["up_sg"] = {
+        Bodygroups = {
+            {0, 5},{1, 2},{4, 5},{5, 8},{6, 7}
+        },
+	},		
+	
     ["guard_lmg"] = {
         Bodygroups = { {6, 5} },
 	},	
@@ -300,6 +342,12 @@ SWEP.AttachmentElements = {
     ["guard_a2"] = {
         Bodygroups = { {6, 3} },
 	},	
+    ["guard_10"] = {
+        Bodygroups = { {6, 1} },
+	},	
+    ["guard_adar"] = {
+        Bodygroups = { {6, 4} },
+	},		
 	
     ["s_a1"] = {
         Bodygroups = { {2, 1} },
@@ -313,13 +361,16 @@ SWEP.AttachmentElements = {
     ["s_slide"] = {
         Bodygroups = { {2, 2} },
 	},
+    ["s_pdw"] = {
+        Bodygroups = { {2, 4} },
+	},	
     ["s_no"] = {
         Bodygroups = { {2, 5} },
 	},	
 }
 
 SWEP.Attachments = {
-    [1] = {
+    {
         PrintName = "Receiver",
         DefaultName = "Standard Receiver",
 
@@ -329,7 +380,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),		
     },	
 
-    [2] = {
+    {
         PrintName = "Handguard",
         DefaultName = "Standard Handguard",
 
@@ -339,7 +390,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),		
     },		
 
-    [3] = {
+    {
         PrintName = "Stock",
         DefaultName = "Standard Stock",
 
