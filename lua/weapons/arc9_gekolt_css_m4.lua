@@ -397,6 +397,7 @@ SWEP.Attachments = {
         PrintName = "Handguard",
         DefaultName = "Standard Handguard",
 
+		ExcludeElements = {"noguard"},
         Category = "css_m4_handguard", 
         Bone = "W_Main",
         Pos = Vector(0, -1, 10),

@@ -10,5 +10,5 @@ ATT.Cons = {}
 ATT.SortOrder = 0
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_sd"}
+ATT.ActivateElements = {"up_sd", "noguard"}
 ATT.ShootSound = "gekolt_css/m4a1-1.wav"

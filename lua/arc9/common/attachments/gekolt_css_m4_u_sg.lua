@@ -10,7 +10,7 @@ ATT.Cons = {}
 ATT.SortOrder = 0
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_sg"}
+ATT.ActivateElements = {"up_sg", "noguard"}
 ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 
 ATT.ClipSizeOverride = 20
