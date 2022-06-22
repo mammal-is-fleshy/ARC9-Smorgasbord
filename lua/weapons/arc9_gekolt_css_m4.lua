@@ -178,7 +178,7 @@ SWEP.CrouchPos = Vector(-0.5, 1, -1.5)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(10, 32, 5)
+SWEP.CustomizePos = Vector(10, 32, 3)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
@@ -213,7 +213,21 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.DefaultBodygroups = "00000000000"
+SWEP.DefaultBodygroups = "00000000000000000000"
+
+SWEP.BulletBones = {
+    [1] = "W_Belt14",
+    [2] = "W_Belt13",
+    [3] = "W_Belt12",
+    [4] = "W_Belt11",
+    [5] = "W_Belt10",
+    [6] = "W_Belt9",
+    [7] = "W_Belt8",
+    [8] = "W_Belt7",
+    [9] = "W_Belt6",
+    [10] = "W_Belt5",
+}
+
 
 SWEP.Animations = {
     ["fire"] = {
@@ -243,6 +257,19 @@ SWEP.Animations = {
     },
     ["reload_empty_bolt"] = {
         Source = "dry_sniper",
+    },	
+
+    ["reload_lmg"] = {
+        Source = "wet_120_lmg",
+        MagSwapTime = 80/40,		
+    },
+    ["reload_empty_lmg"] = {
+        Source = "dry_120_lmg",
+        MagSwapTime = 75/40,		
+    },	
+
+    ["reload_empty_proto"] = {
+        Source = "dry_proto",
     },		
 }
 
@@ -254,6 +281,41 @@ SWEP.AttachmentElements = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},
         },
 	},
+    ["up_lmg"] = {
+        Bodygroups = {
+            {0, 4},{4, 4},{5, 8}
+        },
+	},
+    ["up_proto"] = {
+        Bodygroups = {
+            {0, 1},{4, 2},{5, 8}
+        },
+	},	
+    ["guard_lmg"] = {
+        Bodygroups = { {6, 5} },
+	},	
+    ["guard_a1"] = {
+        Bodygroups = { {6, 2} },
+	},	
+    ["guard_a2"] = {
+        Bodygroups = { {6, 3} },
+	},	
+	
+    ["s_a1"] = {
+        Bodygroups = { {2, 1} },
+	},	
+    ["s_bolt"] = {
+        Bodygroups = { {2, 6} },
+	},	
+    ["s_wire"] = {
+        Bodygroups = { {2, 3} },
+	},		
+    ["s_slide"] = {
+        Bodygroups = { {2, 2} },
+	},
+    ["s_no"] = {
+        Bodygroups = { {2, 5} },
+	},	
 }
 
 SWEP.Attachments = {
@@ -266,4 +328,24 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),		
     },	
+
+    [2] = {
+        PrintName = "Handguard",
+        DefaultName = "Standard Handguard",
+
+        Category = "css_m4_handguard", 
+        Bone = "W_Main",
+        Pos = Vector(0, -1, 10),
+        Ang = Angle(0, 0, 0),		
+    },		
+
+    [3] = {
+        PrintName = "Stock",
+        DefaultName = "Standard Stock",
+
+        Category = "css_m4_stock", 
+        Bone = "W_Main",
+        Pos = Vector(0, -0.75, -3),
+        Ang = Angle(0, 0, 0),		
+    },			
 }

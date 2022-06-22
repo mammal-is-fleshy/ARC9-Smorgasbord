@@ -33,6 +33,19 @@ ATT.Firemodes = {
     }
 }
 
+ATT.Sights = {
+    {
+        Pos = Vector(1.6, 0, 10),
+        Ang = Angle(90, 0, -90),
+        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
+
+
+        Magnification = 1,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_smg"
 end
