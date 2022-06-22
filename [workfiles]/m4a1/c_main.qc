@@ -109,7 +109,7 @@ $cdmaterials "models\weapons\V_models\rif_m4a1\"
 $cdmaterials "models\weapons\V_models\rif_ak47\"
 $cdmaterials "models\weapons\v_models\rif_galil\"
 $cdmaterials "models\weapons\V_models\smg_ump45\"
-$cdmaterials "models\weapons\V_models\smg_p90\"
+$cdmaterials "models\weapons\V_models\smg_p902\"
 $cdmaterials "models\weapons\V_models\snip_g3sg1\"
 $cdmaterials "models\weapons\V_models\smg_mp5\"
 $cdmaterials "models\weapons\v_models\snip_awp\"
@@ -298,6 +298,24 @@ $sequence "dry_sniper" {
 
 $sequence "wet_sniper" {
 	"anims\wet_sniper.smd"
+	activity "ACT_VM_RELOAD" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_smg" {
+	"anims\dry_smg.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_smg" {
+	"anims\wet_smg.smd"
 	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2
