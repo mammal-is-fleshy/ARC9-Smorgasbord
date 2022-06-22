@@ -47,7 +47,7 @@ $bodygroup "mag"
 	studio "m4a1_mag.smd"
 	studio "m4a1_mag_9mm.smd"
 	studio "m4a1_mag_20.smd"
-	studio "m4a1_mag_50.smd"
+	blank
 	studio "m4a1_mag_150.smd"
 	blank 
 }
