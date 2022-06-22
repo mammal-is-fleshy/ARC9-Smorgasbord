@@ -253,7 +253,7 @@ SWEP.Animations = {
         Source = {"fire_bolt"},
     },
     ["reload_bolt"] = {
-        Source = "dry_sniper",
+        Source = "wet_sniper",
     },
     ["reload_empty_bolt"] = {
         Source = "dry_sniper",
@@ -274,14 +274,23 @@ SWEP.Animations = {
 
     ["reload_empty_pdw"] = {
         Source = "dry_57",
+    },	
+    ["reload_pdw"] = {
+        Source = "wet_57",
     },		
 	
     ["reload_empty_sg"] = {
         Source = "dry_sg",
     },	
+    ["reload_sg"] = {
+        Source = "wet_sg",
+    },		
 
     ["reload_empty_ak"] = {
         Source = "dry_ak",
+    },	
+    ["reload_ak"] = {
+        Source = "wet_ak",
     },	
 
     ["reload_empty_smg"] = {

@@ -170,6 +170,15 @@ $sequence "dry_sg" {
 	fps 40
 }
 
+$sequence "wet_sg" {
+	"anims\wet_sg.smd"
+	activity "ACT_VM_RELOAD" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "dry_2" {
 	"anims\dry_2.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
@@ -197,6 +206,15 @@ $sequence "dry_57" {
 	fps 40
 }
 
+$sequence "wet_57" {
+	"anims\wet_57.smd"
+	activity "ACT_VM_RELOAD" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "dry_120_lmg" {
 	"anims\dry_120_lmg2.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
@@ -218,6 +236,15 @@ $sequence "wet_120_lmg" {
 $sequence "dry_ak" {
 	"anims\dry_ak.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_ak" {
+	"anims\wet_ak.smd"
+	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2
 	snap	
@@ -263,6 +290,15 @@ $sequence "dry_pump" {
 $sequence "dry_sniper" {
 	"anims\dry_sniper.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_sniper" {
+	"anims\wet_sniper.smd"
+	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2
 	snap	
