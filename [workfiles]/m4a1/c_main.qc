@@ -75,6 +75,8 @@ $bodygroup "handguard"
 	studio "m4a1_hg_lmg.smd"	
 	studio "m4a1_hg_patriot.smd"
 	blank
+	studio "m4a1_hg_spr.smd"	
+	studio "m4a1_hg_lr300.smd"	
 }
 
 $bodygroup "grip"

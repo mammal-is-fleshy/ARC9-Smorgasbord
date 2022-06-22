@@ -360,6 +360,15 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_adar"] = {
         Bodygroups = { {6, 4} },
+	},	
+    ["guard_no"] = {
+        Bodygroups = { {6, 6} },
+	},	
+    ["guard_lr300"] = {
+        Bodygroups = { {6, 9} },
+	},	
+    ["guard_spr"] = {
+        Bodygroups = { {6, 8} },
 	},		
 	
     ["s_a1"] = {
