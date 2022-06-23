@@ -15,6 +15,7 @@ $bodygroup "upper"
 	studio "m4a1_up_gibhr.smd"
 	studio "m4a1_hg_pump.smd"	
 	blank
+	studio "m4a1_up_a1.smd"		
 }
 
 $bodygroup "mag_well"
@@ -47,7 +48,7 @@ $bodygroup "mag"
 	studio "m4a1_mag.smd"
 	studio "m4a1_mag_9mm.smd"
 	studio "m4a1_mag_20.smd"
-	blank
+	studio "m4a1_mag_21.smd"
 	studio "m4a1_mag_150.smd"
 	blank 
 }
