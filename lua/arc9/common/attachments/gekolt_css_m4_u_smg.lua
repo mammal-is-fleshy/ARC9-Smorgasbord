@@ -5,7 +5,7 @@ ATT.Description = [[It's just an adaptor stuck in to a normal magwell.]]
  
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 0
+ATT.SortOrder = 1
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_9mm"}

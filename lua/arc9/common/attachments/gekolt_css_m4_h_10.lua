@@ -4,6 +4,6 @@ ATT.Description = [[Older design that some how is more accurate than the modern 
 
 ATT.Icon = Material("")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 6
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_10"}

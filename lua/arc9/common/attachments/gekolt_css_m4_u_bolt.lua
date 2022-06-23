@@ -8,7 +8,7 @@ Don't ask how the bolt handle travels that far without clipping into the stock.]
  
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 0
+ATT.SortOrder = 6
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_bolt", "noguard"}

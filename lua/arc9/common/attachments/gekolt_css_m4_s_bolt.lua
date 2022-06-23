@@ -4,6 +4,6 @@ ATT.Description = [[Looks lighter than most other stock yet somehow dampen recoi
 
 ATT.Icon = Material("")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 3
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_bolt"}

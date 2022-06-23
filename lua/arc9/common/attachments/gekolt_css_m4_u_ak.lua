@@ -6,7 +6,7 @@ Surely making the magwell slightly curved is enough to fit a bigger calibre, you
  
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 0
+ATT.SortOrder = 3
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_ak"}

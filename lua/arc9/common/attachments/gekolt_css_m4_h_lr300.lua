@@ -4,6 +4,6 @@ ATT.Description = [[Fat bastard]]
 
 ATT.Icon = Material("")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 2
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_lr300"}

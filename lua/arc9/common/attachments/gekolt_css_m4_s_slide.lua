@@ -4,6 +4,6 @@ ATT.Description = [[Certified hood classic]]
 
 ATT.Icon = Material("")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 2
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_slide"}

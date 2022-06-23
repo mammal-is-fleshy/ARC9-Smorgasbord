@@ -6,7 +6,7 @@ Magically increases damage while reduce rpm for apparantly no reasons]]
 
 ATT.Icon = Material("")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 1.5
 ATT.Category = "css_m4_up"
 ATT.ActivateElements = {"up_proto"}
 

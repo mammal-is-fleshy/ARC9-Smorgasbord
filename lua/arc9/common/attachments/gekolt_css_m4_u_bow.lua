@@ -6,7 +6,7 @@ Explosive tip for obvious reasons.]]
  
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 0
+ATT.SortOrder = 7
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_bow", "noguard"}

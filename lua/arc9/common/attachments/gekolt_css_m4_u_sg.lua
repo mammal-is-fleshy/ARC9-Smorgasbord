@@ -7,7 +7,7 @@ In case you haven't figure it out, it's a shotgun receiver.]]
  
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 0
+ATT.SortOrder = 5
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_sg", "noguard"}

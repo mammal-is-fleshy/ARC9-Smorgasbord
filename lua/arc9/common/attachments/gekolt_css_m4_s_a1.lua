@@ -4,6 +4,6 @@ ATT.Description = [[C'est grand]]
 
 ATT.Icon = Material("")
 
-ATT.SortOrder = 0
+ATT.SortOrder = 5
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_a1"}
