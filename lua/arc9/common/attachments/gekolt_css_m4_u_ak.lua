@@ -15,12 +15,6 @@ ATT.ShootSound = "gekolt_css/ak47-1.wav"
 ATT.ClipSizeOverride = 30
 
 ATT.RPMMult = 600/700
-ATT.Firemodes = {
-    {
-        Mode = -1,
-        Recoil = 0.4, -- add other attachment modifiers
-    }
-}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ak"

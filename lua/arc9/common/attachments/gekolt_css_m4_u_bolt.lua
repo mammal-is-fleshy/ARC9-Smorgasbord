@@ -17,12 +17,6 @@ ATT.ShootSound = "gekolt_css/m4a1-1.wav"
 ATT.ClipSizeOverride = 5
 
 ATT.RPMMult = 50/700
-ATT.Firemodes = {
-    {
-        Mode = -1,
-        Recoil = 0.4, -- add other attachment modifiers
-    }
-}
 
 ATT.Sights = {
     {

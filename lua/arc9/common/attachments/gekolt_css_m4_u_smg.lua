@@ -14,12 +14,6 @@ ATT.ShootSound = "gekolt_css/glock18-1.wav"
 ATT.ClipSizeOverride = 32
 
 ATT.RPMMult = 900/700
-ATT.Firemodes = {
-    {
-        Mode = -1,
-        Recoil = 0.4, -- add other attachment modifiers
-    }
-}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_smg"

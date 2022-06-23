@@ -248,6 +248,9 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+    ["idle_empty"] = {
+        Source = "idle",
+    },	
 
     ["fire_bolt"] = {
         Source = {"fire_bolt"},
@@ -300,6 +303,22 @@ SWEP.Animations = {
     ["reload_smg"] = {
         Source = "wet_smg",
     },		
+	
+    ["idle_bow"] = {
+        Source = "idle_bow",
+    },	
+    ["idle_empty_bow"] = {
+        Source = "idle_empty_bow",
+    },
+    ["fire_bow"] = {
+        Source = "fire_bow",
+    },	
+    ["reload_bow"] = {
+        Source = "dry_bow",
+    },
+    ["reload_empty_bow"] = {
+        Source = "dry_bow",
+    },	
 }
 
 -------------------------- ATTACHMENTS
@@ -310,6 +329,11 @@ SWEP.AttachmentElements = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},
         },
 	},
+    ["up_bow"] = {
+        Bodygroups = {
+            {0, 7},{4, 5},{5, 7},{6, 7},
+        },
+	},	
     ["up_lmg"] = {
         Bodygroups = {
             {0, 4},{4, 4},{5, 8}

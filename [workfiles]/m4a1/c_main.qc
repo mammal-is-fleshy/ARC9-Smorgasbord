@@ -334,6 +334,31 @@ $sequence "wet" {
 	fps 40
 }
 
+
+$sequence "idle_dry_bow" {
+	"anims\idle_dry_bow.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "idle_bow" {
+	"anims\idle_bow.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "fire_bow" {
+	"anims\fire_bow.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
 $bonemerge "ValveBiped.Bip01_L_UpperArm"

@@ -1,4 +1,4 @@
-ATT.PrintName = "SPR Handguard"
+ATT.PrintName = "Dragooneer Handguard"
 ATT.CompactName = "SPR"
 ATT.Description = [[Slim and thin, fit right in]]
 
