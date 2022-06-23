@@ -18,8 +18,8 @@ ATT.RPMMult = 900/700
 
 ATT.Sights = {
     {
-        Pos = Vector(3.325, 0, 8),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(0, 10, -5.275),
+        Ang = Angle(0, 0, 0),
         Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
 
 

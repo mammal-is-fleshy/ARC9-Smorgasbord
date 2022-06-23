@@ -305,9 +305,17 @@ SWEP.Animations = {
 
     ["reload_empty_pdw"] = {
         Source = "dry_57",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
     },	
     ["reload_pdw"] = {
         Source = "wet_57",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
     },		
 	
     ["reload_empty_sg"] = {
