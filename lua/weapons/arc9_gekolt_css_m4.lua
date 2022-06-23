@@ -239,13 +239,22 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
+        EventTable = {		
+            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 50 / 40},			
+        },				
     },
     ["reload_empty"] = {
         Source = "dry_3",
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
-		},			
+		},	
+        EventTable = {		
+            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 45 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 85 / 40},			
+        },			
     },	
     ["draw"] = {
         Source = "draw",
@@ -262,6 +271,11 @@ SWEP.Animations = {
 
     ["fire_bolt"] = {
         Source = {"fire_bolt"},
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
+        },				
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 0, },  { t = 1, lhik = 1, rhik = 1, },	
@@ -273,13 +287,24 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 0, },
         { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.5, lhik = 0, rhik = 0, }, { t = 0.7, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
 		},			
+        EventTable = {		
+            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 60 / 40},			
+        },			
     },
     ["reload_empty_bolt"] = {
         Source = "dry_sniper",
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 1, },
         { t = 0.3, lhik = 0, rhik = 0, }, { t = 0.65, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
-		},			
+		},		
+        EventTable = {		
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 15 / 40},	
+            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 40 / 40},
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 90 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 135 / 40},
+        },			
     },
 
     ["reload_lmg"] = {
@@ -327,9 +352,19 @@ SWEP.Animations = {
 
     ["reload_empty_ak"] = {
         Source = "dry_ak",
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 60 / 40},	
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 90 / 40},	
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 95 / 40},				
+        },			
     },	
     ["reload_ak"] = {
         Source = "wet_ak",
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 55 / 40},			
+        },			
     },	
 
     ["reload_empty_smg"] = {
