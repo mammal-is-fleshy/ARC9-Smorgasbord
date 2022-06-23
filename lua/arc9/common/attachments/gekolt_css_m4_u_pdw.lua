@@ -9,7 +9,7 @@ ATT.Cons = {}
 ATT.SortOrder = 0
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_pdw", "noguard"}
+ATT.ActivateElements = {"up_pdw", "noguard", "nogrip"}
 ATT.ShootSound = "gekolt_css/p90-1.wav"
 
 ATT.ClipSizeOverride = 50
@@ -32,3 +32,11 @@ ATT.Sights = {
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_pdw"
 end
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(2, 0, -2)
+ATT.ModelAngleOffset = Angle(90, 0, -90)
+ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_cali.mdl"

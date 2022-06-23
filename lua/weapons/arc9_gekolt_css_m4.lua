@@ -235,9 +235,17 @@ SWEP.Animations = {
     },
     ["reload"] = {
         Source = "wet",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
     },
     ["reload_empty"] = {
         Source = "dry_3",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
+		},			
     },	
     ["draw"] = {
         Source = "draw",
@@ -254,21 +262,41 @@ SWEP.Animations = {
 
     ["fire_bolt"] = {
         Source = {"fire_bolt"},
-    },
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 0, },  { t = 1, lhik = 1, rhik = 1, },	
+		},		
+	},
     ["reload_bolt"] = {
         Source = "wet_sniper",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 0, },
+        { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.5, lhik = 0, rhik = 0, }, { t = 0.7, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
+		},			
     },
     ["reload_empty_bolt"] = {
         Source = "dry_sniper",
-    },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 1, },
+        { t = 0.3, lhik = 0, rhik = 0, }, { t = 0.65, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
+		},			
+    },
 
     ["reload_lmg"] = {
         Source = "wet_120_lmg",
         MagSwapTime = 80/40,		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.5, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 1, },	
+		},			
     },
     ["reload_empty_lmg"] = {
         Source = "dry_120_lmg",
-        MagSwapTime = 75/40,		
+        MagSwapTime = 75/40,	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.5, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 1, },	
+		},			
     },	
 
     ["reload_empty_proto"] = {
@@ -413,6 +441,20 @@ SWEP.AttachmentElements = {
     ["s_no"] = {
         Bodygroups = { {2, 5} },
 	},	
+	
+    ["g_ske"] = {
+        Bodygroups = { {7, 3} },
+	},	
+    ["g_hunt"] = {
+        Bodygroups = { {7, 1},{2, 5} },
+	},		
+    ["g_saw"] = {
+        Bodygroups = { {7, 2},{2, 7} },
+	},	
+
+    ["fg_saw"] = {
+        Bodygroups = { {8, 1} },
+	},		
 }
 
 SWEP.Attachments = {
@@ -440,10 +482,32 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultName = "Standard Stock",
-
+		ExcludeElements = {"nostock"},
+		
         Category = "css_m4_stock", 
         Bone = "W_Main",
         Pos = Vector(0, -0.75, -3),
         Ang = Angle(0, 0, 0),		
-    },			
+    },	
+
+    {
+        PrintName = "Grip",
+        DefaultName = "Standard Grip",
+
+        Category = "css_m4_g", 
+        Bone = "W_Main",
+        Pos = Vector(0, 2.5, 0.5),
+        Ang = Angle(0, 0, 0),		
+    },	
+
+    {
+        PrintName = "Foregrip",
+        DefaultName = "Standard Foregrip",
+
+		ExcludeElements = {"nogrip"},
+        Category = "css_m4_fg", 
+        Bone = "W_Main",
+        Pos = Vector(0, 2, 12),
+        Ang = Angle(0, 0, 0),		
+    },		
 }
