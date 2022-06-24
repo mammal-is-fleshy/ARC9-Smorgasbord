@@ -326,6 +326,15 @@ SWEP.Animations = {
 
     ["reload_empty_proto"] = {
         Source = "dry_proto",
+        EventTable = {		
+            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 47 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 78 / 40},					
+        },
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+		},			
     },	
 
     ["reload_empty_pdw"] = {
@@ -372,8 +381,12 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/mp5_clipin.wav" ,    t = 48 / 40},	
-            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 72 / 40},			
+            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 75 / 40},			
         },			
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+		},			
     },	
 
     ["reload_smg"] = {
@@ -381,7 +394,11 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/mp5_clipin.wav" ,    t = 45 / 40},				
-        },			
+        },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
     },		
 	
     ["idle_bow"] = {
