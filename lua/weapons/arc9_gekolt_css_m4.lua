@@ -240,8 +240,8 @@ SWEP.Animations = {
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
-            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 46 / 40},			
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},			
         },				
     },
     ["reload_empty"] = {
@@ -251,8 +251,8 @@ SWEP.Animations = {
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
 		},	
         EventTable = {		
-            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 45 / 40},	
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
             {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 85 / 40},			
         },			
     },	
@@ -291,7 +291,7 @@ SWEP.Animations = {
         { t = 0.2, lhik = 0, rhik = 1, }, { t = 0.3, lhik = 0, rhik = 0, }, { t = 0.7, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
-            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 60 / 40},			
         },			
     },
@@ -304,7 +304,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 15 / 40},	
-            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 40 / 40},
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 40 / 40},
             {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 90 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 130 / 40},
         },			
@@ -320,7 +320,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/m249_coverup.wav" ,   t = 20 / 40},
             {s =  "gekolt_css/m249_boxout.wav" ,    t = 45 / 40},	
-            {s =  "gekolt_css/m249_boxin.wav" ,    t = 80 / 40},	
+            {s =  "gekolt_css/m249_boxin.wav" ,    t = 102 / 40},	
             {s =  "gekolt_css/m249_chain.wav" ,    t = 135 / 40},	
             {s =  "gekolt_css/m249_coverdown.wav" ,   t = 180 / 40},	
             {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 190 / 40},		
@@ -329,6 +329,15 @@ SWEP.Animations = {
     ["reload_empty_lmg"] = {
         Source = "dry_120_lmg",
         MagSwapTime = 75/40,	
+        EventTable = {		
+            {s =  "gekolt_css/galil_boltpull.wav" ,   t = 20 / 40},		
+            {s =  "gekolt_css/m249_boxout.wav" ,   t = 45 / 40},
+            {s =  "gekolt_css/m249_coverup.wav" ,    t = 90 / 40},	
+            {s =  "gekolt_css/m249_boxin.wav" ,    t = 142 / 40},	
+            {s =  "gekolt_css/m249_chain.wav" ,    t = 175 / 40},	
+            {s =  "gekolt_css/m249_coverdown.wav" ,   t = 220 / 40},	
+            {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 230 / 40},		
+        },			
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.075, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
@@ -338,8 +347,8 @@ SWEP.Animations = {
     ["reload_empty_proto"] = {
         Source = "dry_proto",
         EventTable = {		
-            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 47 / 40},	
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 55/ 40},	
             {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 78 / 40},					
         },
 		IKTimeLine = {
@@ -448,8 +457,8 @@ SWEP.Animations = {
     ["reload_empty_a1"] = {
         Source = "dry_2",
         EventTable = {		
-            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 45 / 40},	
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
             {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 72 / 40},					
         },
 		IKTimeLine = {
