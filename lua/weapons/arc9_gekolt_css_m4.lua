@@ -233,6 +233,9 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire"},
     },
+    ["fire_iron"] = {
+        Source = {"fire_iron"},
+    },	
     ["reload"] = {
         Source = "wet",
 		IKTimeLine = {
@@ -284,6 +287,18 @@ SWEP.Animations = {
         { t = 0.2, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 0, },  { t = 1, lhik = 1, rhik = 1, },	
 		},		
 	},	
+    ["fire_iron_bolt"] = {
+        Source = {"fire_bolt"},
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
+        },				
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 0, },  { t = 1, lhik = 1, rhik = 1, },	
+		},		
+	},		
     ["reload_bolt"] = {
         Source = "wet_sniper",
 		IKTimeLine = {
@@ -361,7 +376,7 @@ SWEP.Animations = {
         Source = "dry_57",
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.15, lhik = 0, rhik = 1, },
-		{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
     },	
     ["reload_pdw"] = {
