@@ -269,6 +269,9 @@ SWEP.Animations = {
         Source = "idle",
     },	
 
+    ["fire_empty"] = {
+        Source = {"fire"},	
+	},
     ["fire_bolt"] = {
         Source = {"fire_bolt"},
         EventTable = {
@@ -280,12 +283,12 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 0, },  { t = 1, lhik = 1, rhik = 1, },	
 		},		
-	},
+	},	
     ["reload_bolt"] = {
         Source = "wet_sniper",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 0, },
-        { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.5, lhik = 0, rhik = 0, }, { t = 0.7, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 0, }, 
+        { t = 0.2, lhik = 0, rhik = 1, }, { t = 0.3, lhik = 0, rhik = 0, }, { t = 0.7, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 10 / 40},
@@ -312,15 +315,23 @@ SWEP.Animations = {
         MagSwapTime = 80/40,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.5, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 1, },	
+        { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
 		},			
+        EventTable = {		
+            {s =  "gekolt_css/m249_coverup.wav" ,   t = 20 / 40},
+            {s =  "gekolt_css/p90_clipout.wav" ,    t = 45 / 40},	
+            {s =  "gekolt_css/p90_clipin.wav" ,    t = 80 / 40},	
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 135 / 40},	
+            {s =  "gekolt_css/m249_coverdown.wav" ,   t = 180 / 40},	
+            {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 190 / 40},		
+        },		
     },
     ["reload_empty_lmg"] = {
         Source = "dry_120_lmg",
         MagSwapTime = 75/40,	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.5, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 1, },	
+        { t = 0.075, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
 		},			
     },	
 
@@ -354,9 +365,17 @@ SWEP.Animations = {
 	
     ["reload_empty_sg"] = {
         Source = "dry_sg",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+		},			
     },	
     ["reload_sg"] = {
         Source = "wet_sg",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+		},			
     },		
 
     ["reload_empty_ak"] = {
@@ -366,14 +385,22 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
             {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 90 / 40},	
             {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 95 / 40},				
-        },			
+        },		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},				
     },	
     ["reload_ak"] = {
         Source = "wet_ak",
         EventTable = {		
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 58 / 40},			
-        },			
+        },		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+		},				
     },	
 
     ["reload_empty_smg"] = {
@@ -439,6 +466,8 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},
         },
+        AttPosMods = {
+            [5] = { Pos = Vector(0, 1.2, 17), } }			
 	},
     ["up_bow"] = {
         Bodygroups = {
@@ -447,7 +476,7 @@ SWEP.AttachmentElements = {
 	},	
     ["up_lmg"] = {
         Bodygroups = {
-            {0, 4},{4, 4},{5, 8}
+            {0, 4},{4, 4},{5, 9}
         },
 	},
     ["up_proto"] = {
@@ -509,6 +538,8 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_spr"] = {
         Bodygroups = { {6, 8} },
+        AttPosMods = {
+            [5] = { Pos = Vector(0, 1.1, 13), } }		
 	},		
 	
     ["s_a1"] = {
@@ -593,11 +624,23 @@ SWEP.Attachments = {
         DefaultName = "None",
 
 		ExcludeElements = {"nogrip"},
-        Category = {"css_m4_fg", "grip_css"}, 
+        Category = {"grip_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, 1.5, 12),
+        Ang = Angle(90, 0, -90),	
+		MergeSlots = {6}		
+    },
+
+    {
+        PrintName = "",
+        DefaultName = "",
+        Hidden = true,
+		ExcludeElements = {"nogrip"},
+        Category = {"css_m4_fg"}, 
         Bone = "W_Main",
         Pos = Vector(0, 1.5, 12),
         Ang = Angle(90, 0, -90),		
-    },
+    },	
 
 
     {

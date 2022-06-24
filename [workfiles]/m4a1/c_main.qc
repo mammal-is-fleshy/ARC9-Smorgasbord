@@ -64,6 +64,7 @@ $bodygroup "iron"
 	studio "m4a1_iron_gibhr.smd"
 	studio "m4a1_iron_cross.smd"
 	blank
+	studio "m4a1_iron_lmg.smd"	
 }
 
 $bodygroup "handguard"
