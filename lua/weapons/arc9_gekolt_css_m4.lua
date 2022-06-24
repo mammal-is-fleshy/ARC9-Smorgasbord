@@ -319,9 +319,9 @@ SWEP.Animations = {
 		},			
         EventTable = {		
             {s =  "gekolt_css/m249_coverup.wav" ,   t = 20 / 40},
-            {s =  "gekolt_css/p90_clipout.wav" ,    t = 45 / 40},	
-            {s =  "gekolt_css/p90_clipin.wav" ,    t = 80 / 40},	
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 135 / 40},	
+            {s =  "gekolt_css/m249_boxout.wav" ,    t = 45 / 40},	
+            {s =  "gekolt_css/m249_boxin.wav" ,    t = 80 / 40},	
+            {s =  "gekolt_css/m249_chain.wav" ,    t = 135 / 40},	
             {s =  "gekolt_css/m249_coverdown.wav" ,   t = 180 / 40},	
             {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 190 / 40},		
         },		
@@ -461,18 +461,19 @@ SWEP.Animations = {
 
 -------------------------- ATTACHMENTS
 
-SWEP.AttachmentElements = {
+SWEP.AttachmentElements = {	
     ["up_bolt"] = {
         Bodygroups = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},
         },
         AttPosMods = {
-            [5] = { Pos = Vector(0, 1.2, 17), } }			
+            [5] = { Pos = Vector(0, 1.2, 17), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
 	},
     ["up_bow"] = {
         Bodygroups = {
             {0, 7},{4, 5},{5, 7},{6, 7},
         },
+		AttPosMods = { [7] = { Pos = Vector(0, -3.25, 3), } }				
 	},	
     ["up_lmg"] = {
         Bodygroups = {
@@ -483,11 +484,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 1},{4, 2},{5, 8}
         },
+		AttPosMods = { [7] = { Pos = Vector(0, -3.5, 4), } }			
 	},
     ["up_a1"] = {
         Bodygroups = {
             {0, 11},{4, 3},{5, 8}
         },
+		AttPosMods = { [7] = { Pos = Vector(0, -3.25, 4), } }			
 	},	
     ["up_ak"] = {
         Bodygroups = {
@@ -508,11 +511,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 3},{4, 5},{5, 2},{6, 7}
         },
+		AttPosMods = { [7] = { Pos = Vector(0, -2.5, 1), } }				
 	},	
     ["up_sg"] = {
         Bodygroups = {
             {0, 5},{1, 2},{4, 5},{5, 8},{6, 7}
         },
+		AttPosMods = { [7] = { Pos = Vector(0, -3.3, 4), } }			
 	},		
 	
     ["guard_lmg"] = {
@@ -538,8 +543,7 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_spr"] = {
         Bodygroups = { {6, 8} },
-        AttPosMods = {
-            [5] = { Pos = Vector(0, 1.1, 13), } }		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), } }		
 	},		
 	
     ["s_a1"] = {
@@ -574,7 +578,14 @@ SWEP.AttachmentElements = {
     ["fg_saw"] = {
         Bodygroups = { {8, 1} },
 	},		
+
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+    if wep.Attachments[7].Installed then model:SetBodygroup(5,8) end
+end
+
 
 SWEP.Attachments = {
     {
@@ -646,10 +657,11 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
+		ActivateElements = {"no_irons"},
 
         Category = {"optic_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -3.25, 4),
+        Pos = Vector(0, -1.7, 3),
         Ang = Angle(90, 0, -90),		
     },
 }
