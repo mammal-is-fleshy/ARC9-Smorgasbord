@@ -407,7 +407,11 @@ SWEP.Animations = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 5 / 40},
             {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 45 / 40},	
             {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 72 / 40},					
-        },			
+        },
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+		},	
     },		
 }
 
@@ -544,7 +548,7 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, -1, 10),
         Ang = Angle(0, 0, 0),		
-    },		
+    },
 
     {
         PrintName = "Stock",
@@ -555,7 +559,7 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, -0.75, -3),
         Ang = Angle(0, 0, 0),		
-    },	
+    },
 
     {
         PrintName = "Grip",
@@ -565,16 +569,27 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 2.5, 0.5),
         Ang = Angle(0, 0, 0),		
-    },	
+    },
 
     {
         PrintName = "Foregrip",
-        DefaultName = "Standard Foregrip",
+        DefaultName = "None",
 
 		ExcludeElements = {"nogrip"},
-        Category = "css_m4_fg", 
+        Category = {"css_m4_fg", "grip_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 2, 12),
-        Ang = Angle(0, 0, 0),		
-    },		
+        Pos = Vector(0, 1.5, 12),
+        Ang = Angle(90, 0, -90),		
+    },
+
+
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+
+        Category = {"optic_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, -3.25, 4),
+        Ang = Angle(90, 0, -90),		
+    },
 }
