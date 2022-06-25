@@ -9,6 +9,8 @@ ATT.SortOrder = 0
 
 ATT.Category = "css_m4_fg" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"fg_saw"}
+ATT.ExcludeElements = {"no_irons"}
+
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
@@ -23,6 +25,9 @@ ATT.ActiveAngOverride = Angle(0, 0, -5)
 
 ATT.CrouchPosOverride = Vector(-2, 0.5, -6)
 ATT.CrouchAngOverride = Angle(0, 0, -10)
+
+ATT.SprintPosOverride = Vector(1, 0, -0.5)
+ATT.SprintAngOverride = Angle(30, -15, -30)
 
 ATT.HasSights = false
 
