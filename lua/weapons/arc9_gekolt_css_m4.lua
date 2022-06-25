@@ -279,6 +279,12 @@ SWEP.Animations = {
     ["fire_empty_bolt"] = {
         Source = {"fire"},	
 	},	
+    ["fire_iron_empty"] = {
+        Source = {"fire"},	
+	},		
+    ["fire_iron_empty_bolt"] = {
+        Source = {"fire"},	
+	},		
     ["fire_bolt"] = {
         Source = {"fire_bolt"},
         EventTable = {
