@@ -606,6 +606,9 @@ SWEP.AttachmentElements = {
     ["guard_lr300"] = {
         Bodygroups = { {6, 9}, {10, 9} },
 	},	
+    ["guard_ris"] = {
+        Bodygroups = { {6, 10}, {10, 10} },
+	},		
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), } }		
@@ -629,6 +632,9 @@ SWEP.AttachmentElements = {
     ["s_no"] = {
         Bodygroups = { {2, 5} },
 	},	
+    ["s_light"] = {
+        Bodygroups = { {2, 8} },
+	},		
 	
     ["g_ske"] = {
         Bodygroups = { {7, 3} },

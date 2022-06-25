@@ -35,6 +35,7 @@ $bodygroup "stock"
 	studio "m4a1_stock_buff.smd"	
 	studio "m4a1_stock_sniper.smd"		
 	blank		
+	studio "m4a1_stock_light.smd"		
 }
 
 $bodygroup "rail"
@@ -79,6 +80,7 @@ $bodygroup "handguard"
 	blank
 	studio "m4a1_hg_spr.smd"	
 	studio "m4a1_hg_lr300.smd"	
+	studio "m4a1_hg_ris.smd"		
 }
 
 $bodygroup "grip"
@@ -114,6 +116,7 @@ $bodygroup "fsight"
 	blank
 	studio "m4a1_fs_spr.smd"	
 	studio "m4a1_fs_lr300.smd"	
+	studio "m4a1_fs_ris.smd"		
 }
 
 $illumposition 0 0 0
