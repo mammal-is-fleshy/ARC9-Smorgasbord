@@ -1,7 +1,6 @@
 ATT.PrintName = "Logistic Receiver"
-ATT.CompactName = "M16"
-ATT.Description = [[Older design with a fixed carry handle.
-20-Rounder and Burst only for reasons that is definitely not related to gameplay.]]
+ATT.CompactName = "Logi"
+ATT.Description = [[Old-fashioned receiver for old-fashioned people. It only works in three-round burst mode. Pretty lousy.]]
 
 ATT.Icon = Material("")
 
@@ -20,3 +19,5 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ClipSizeOverride = 20
+
+ATT.RPMMult = 1.5

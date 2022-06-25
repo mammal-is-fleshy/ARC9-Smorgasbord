@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CSS"
 
 SWEP.PrintName = "CC4R"
-SWEP.TrueName = "You literally have no reason to use any other weapon"
+SWEP.TrueName = "M4A1"
 
 SWEP.Class = "Assault Rifle"
 SWEP.Trivia = {
@@ -15,8 +15,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-	Author = "Geckololt",
-	Contact = "SlogoKolt#6648",
+    Author = "Geckololt",
+    Contact = "SlogoKolt#6648",
     Assets = "Counter-Strike Source"
 }
 

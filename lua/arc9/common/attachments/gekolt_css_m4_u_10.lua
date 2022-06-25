@@ -1,8 +1,6 @@
 ATT.PrintName = "Prototype Receiver"
-ATT.CompactName = "AR10"
-ATT.Description = [[Older design that some how is more accurate than the modern one. Really makes you question the decisions of the devs.
-Fitted with a 20-Round .308 magazine
-Magically increases damage while reduce rpm for apparantly no reasons]]
+ATT.CompactName = "Prototype"
+ATT.Description = [[An older design that allows the rifle to take larger bullets. Powerful bullets overpenetrate at close range.]]
 
 ATT.Icon = Material("")
 
@@ -15,3 +13,10 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ClipSizeOverride = 20
+
+ATT.DamageMaxMult = 0.75
+ATT.DamageMinMult = 1.75
+ATT.PhysBulletMuzzleVelocityMult = 1.34
+ATT.RPM = 800
+ATT.RecoilMult = 2
+ATT.RecoilPatternDriftMult = 2

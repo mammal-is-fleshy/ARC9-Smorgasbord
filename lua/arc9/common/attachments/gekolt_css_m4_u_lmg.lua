@@ -1,11 +1,8 @@
-ATT.PrintName = "Belt-Fed Receiver"
-ATT.CompactName = "LMG"
+ATT.PrintName = "Shrike Receiver"
+ATT.CompactName = "Shrike"
 ATT.Icon = Material("")
-ATT.Description = [[Comes with a 120 Round Magazine.
-Drastically increases the reload speed
-Really makes you think why they didn't just let you have a normal 120 round box magazine.
-Surely balancing isn't the reason.]]
- 
+ATT.Description = [[Upper receiver that takes a 120-round box magazine, effectively giving you a light machine gun. Its main purpose is looking cool.]]
+
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 4
@@ -15,6 +12,10 @@ ATT.ActivateElements = {"up_lmg"}
 ATT.ShootSound = "gekolt_css/m4a1_unsil-1.wav"
 
 ATT.ClipSizeOverride = 120
+ATT.AimDownSightsTimeMult = 1.5
+ATT.SprintToFireTimeMult = 1.5
+ATT.SpeedMult = 0.9
+ATT.RecoilPatternDriftMult = 3
 
 ATT.ActivePosOverride = Vector(-0.5, 2, -0.5)
 ATT.ActiveAngOverride = Angle(0, 0, 0)

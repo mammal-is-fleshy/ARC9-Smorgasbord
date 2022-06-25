@@ -1,8 +1,8 @@
-ATT.PrintName = "SAW Foregrip"
-ATT.CompactName = "SAW"
+ATT.PrintName = "ChainSAW Foregrip"
+ATT.CompactName = "ChainSAW"
 ATT.Icon = Material("")
-ATT.Description = [[Uncomfortable.]]
- 
+ATT.Description = [[Disables the ability to scope in.]]
+
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
@@ -20,3 +20,8 @@ ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_saw.mdl"
 
 ATT.ActivePosOverride = Vector(-1.5, 0, -5)
 ATT.ActiveAngOverride = Angle(0, 0, -5)
+
+ATT.HasSights = false
+
+ATT.RecoilMult = 0.25
+ATT.SpreadMultHipFire = 1.1

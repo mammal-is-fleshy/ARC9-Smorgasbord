@@ -1,9 +1,8 @@
 ATT.PrintName = "Defiant Receiver"
-ATT.CompactName = "PDW"
+ATT.CompactName = "Defiant"
 ATT.Icon = Material("")
-ATT.Description = [[Hey why doesn't this one have a proper remodel.
-Turns your m4 into a non-PDW length PDW.]]
- 
+ATT.Description = [[One of the stupidest ideas for a gun ever conceived. Lets your gun shoot P90 magazines.]]
+
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
@@ -14,7 +13,7 @@ ATT.ShootSound = "gekolt_css/p90-1.wav"
 
 ATT.ClipSizeOverride = 50
 
-ATT.RPMMult = 900/700
+ATT.RPMMult = 900 / 700
 
 ATT.Sights = {
     {
@@ -40,3 +39,10 @@ ATT.Scale = 1
 ATT.ModelOffset = Vector(2, 0, -2)
 ATT.ModelAngleOffset = Angle(90, 0, -90)
 ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_cali.mdl"
+
+ATT.DamageMaxMult = 0.9
+ATT.DamageMinMult = 0.75
+ATT.RangeMinMult = 0.5
+ATT.RangeMaxMult = 1.75
+
+ATT.Ammo = "smg1"

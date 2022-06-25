@@ -1,11 +1,8 @@
 ATT.PrintName = "Predator Receiver"
-ATT.CompactName = "Marksman"
+ATT.CompactName = "Predator"
 ATT.Icon = Material("")
-ATT.Description = [[Bolt action converter for sniper calibre.
-Comes with a built-in suppressor.
-Somehow change all the internal mechanism with a click of a button.
-Don't ask how the bolt handle travels that far without clipping into the stock.]]
- 
+ATT.Description = [[Converts the rifle to bolt-action in order to improve its... actually, I don't know why you'd want to do this. Here it is anyway.]]
+
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 6
@@ -16,7 +13,7 @@ ATT.ShootSound = "gekolt_css/m4a1-1.wav"
 
 ATT.ClipSizeOverride = 5
 
-ATT.RPMMult = 50/700
+ATT.RPMMult = 50 / 700
 
 ATT.Sights = {
     {
@@ -31,6 +28,24 @@ ATT.Sights = {
     }
 }
 
+ATT.Firemodes = {
+    {
+        Mode = 1,
+        PrintName = "BOLT"
+    }
+}
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_bolt"
 end
+
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.Ammo = "SniperRound"
+
+ATT.PhysBulletMuzzleVelocityMult = 2.5
+ATT.PenetrationMult = 2
+ATT.DamageMaxMult = 1.5
+ATT.DamageMinOverride = 120
+ATT.RangeMult = 1.5
+
+ATT.Silenced = true

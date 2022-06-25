@@ -1,5 +1,5 @@
 ATT.PrintName = "Sweeper Receiver"
-ATT.CompactName = "SG"
+ATT.CompactName = "Sweeper"
 ATT.Icon = Material("")
 ATT.Description = [[The lord shan't forgive your sins.
 Of course it comes with a drum magazine.
@@ -15,7 +15,7 @@ ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 
 ATT.ClipSizeOverride = 20
 
-ATT.RPMMult = 320/700
+ATT.RPMMult = 320 / 700
 
 ATT.Sights = {
     {
@@ -33,3 +33,13 @@ ATT.Sights = {
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_sg"
 end
+
+ATT.NumOverride = 8
+ATT.SpreadAdd = 0.025
+ATT.DamageMaxMult = 0.5
+ATT.DamageMinMult = 0.5
+
+ATT.RecoilMult = 3
+ATT.RecoilPatternDriftMult = 5
+
+ATT.Ammo = "buckshot"

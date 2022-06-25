@@ -1,9 +1,13 @@
 ATT.PrintName = "Heavy Stock"
-ATT.CompactName = "A1"
-ATT.Description = [[C'est grand]]
+ATT.CompactName = "Heavy"
+ATT.Description = [[It's nothing special, but it gets the job done.]]
 
 ATT.Icon = Material("")
 
 ATT.SortOrder = 5
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_a1"}
+
+ATT.RecoilMult = 0.9
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1

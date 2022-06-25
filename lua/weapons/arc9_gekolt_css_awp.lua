@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CSS"
 
 SWEP.PrintName = "AMP-38"
-SWEP.TrueName = "long gun with one hit kill\"citation needed\" damage"
+SWEP.TrueName = "AWP"
 
 SWEP.Class = "Sniper Rifle"
 SWEP.Trivia = {
@@ -15,8 +15,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-	Author = "Geckololt",
-	Contact = "SlogoKolt#6648",
+    Author = "Geckololt",
+    Contact = "SlogoKolt#6648",
     Assets = "Counter-Strike Source"
 }
 
