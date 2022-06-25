@@ -171,7 +171,7 @@ SWEP.IronSights = {
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(3, 0, -0.5)
 
-SWEP.ActivePos = Vector(0, 3.5, 0)
+SWEP.ActivePos = Vector(0, 2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, 1, -1.5)
@@ -505,7 +505,7 @@ SWEP.Animations = {
         },		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.02, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.725, lhik = 1, rhik = 1, },	
+        { t = 0.02, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},			
     },	
 	

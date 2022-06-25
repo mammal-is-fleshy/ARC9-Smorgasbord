@@ -53,7 +53,7 @@ ATT.DamageMaxMult = 3
 ATT.DamageMinMult = 2
 ATT.RangeMult = 0.5
 
-ATT.ExplosionDamage = 40
+ATT.ExplosionDamage = 60
 ATT.ExplosionRadius = 128
 ATT.ExplosionEffect = "Explosion"
 
