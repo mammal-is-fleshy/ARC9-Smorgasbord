@@ -487,10 +487,7 @@ SWEP.Animations = {
     },	
     ["reload_bow"] = {
         Source = "dry_bow",
-        EventTable = {		
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 10 / 40},		
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},		
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 103 / 40},				
+        EventTable = {					
         },			
     },
     ["reload_empty_bow"] = {
@@ -499,7 +496,11 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 5 / 40},		
             {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 50 / 40},		
             {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 80 / 40},				
-        },			
+        },		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.02, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.725, lhik = 1, rhik = 1, },	
+		},			
     },	
 	
 
