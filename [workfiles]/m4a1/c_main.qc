@@ -130,6 +130,14 @@ $sequence "idle" {
 	fps 40
 }
 
+$sequence "firemode" {
+	"anims\firemode.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "draw" {
 	"anims\draw.smd"
 	fadein 0.2
