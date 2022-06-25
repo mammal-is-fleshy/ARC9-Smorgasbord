@@ -251,7 +251,8 @@ SWEP.Animations = {
         Source = "dry_3",
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 1, rhik = 1, },	
+		{ t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },			
 		},	
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
@@ -286,8 +287,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
         },				
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 0, },  { t = 1, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 1, rhik = 1, },
+        { t = 0.5, lhik = 1, rhik = 0, }, { t = 0.7, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
 		},		
 	},	
     ["fire_iron_bolt"] = {
@@ -298,15 +299,15 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
         },				
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 0, },  { t = 1, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 1, rhik = 1, },
+        { t = 0.5, lhik = 1, rhik = 0, }, { t = 0.7, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
 		},		
 	},		
     ["reload_bolt"] = {
         Source = "wet_sniper",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 0, }, 
-        { t = 0.2, lhik = 0, rhik = 1, }, { t = 0.3, lhik = 0, rhik = 0, }, { t = 0.7, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 0, rhik = 1, }, 
+		{ t = 0.3, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, }, { t = 0.9, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
@@ -316,8 +317,9 @@ SWEP.Animations = {
     ["reload_empty_bolt"] = {
         Source = "dry_sniper",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 1, },
-        { t = 0.3, lhik = 0, rhik = 0, }, { t = 0.65, lhik = 0, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 0, },
+        { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.6, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, },
+		{ t = 0.8, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, },	
 		},		
         EventTable = {		
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 10 / 40},
@@ -378,7 +380,7 @@ SWEP.Animations = {
     ["reload_empty_pdw"] = {
         Source = "dry_57",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.15, lhik = 0, rhik = 1, },
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
 		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},		
         EventTable = {		
@@ -391,7 +393,7 @@ SWEP.Animations = {
     ["reload_pdw"] = {
         Source = "wet_57",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.15, lhik = 0, rhik = 1, },
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
 		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 0.95, rhik = 1, },	
 		},	
         EventTable = {		
@@ -426,7 +428,7 @@ SWEP.Animations = {
     },		
 
     ["reload_empty_ak"] = {
-        Source = "dry_ak",
+        Source = {"dry_ak","dry_ak2"},
         EventTable = {		
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
@@ -459,7 +461,7 @@ SWEP.Animations = {
         },			
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
     },	
 
@@ -662,7 +664,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"noguard"},
         Category = "css_m4_handguard", 
         Bone = "W_Main",
-        Pos = Vector(0, -1, 10),
+        Pos = Vector(0, -0.5, 10),
         Ang = Angle(0, 0, 0),		
     },
 

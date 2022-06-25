@@ -262,6 +262,14 @@ $sequence "dry_ak" {
 	snap	
 	fps 40
 }
+$sequence "dry_ak2" {
+	"anims\dry_ak2.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
 
 $sequence "wet_ak" {
 	"anims\wet_ak.smd"
