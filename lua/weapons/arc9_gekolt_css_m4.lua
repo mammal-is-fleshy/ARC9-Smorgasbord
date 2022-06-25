@@ -409,10 +409,9 @@ SWEP.Animations = {
         { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
-            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 98 / 40},	
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 103 / 40},				
+            {s =  "gekolt_css/famas_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/famas_clipin.wav" ,    t = 62 / 40},	
+            {s =  "gekolt_css/famas_boltpull.wav" ,    t = 95 / 40},				
         },			
     },	
     ["reload_sg"] = {
@@ -422,8 +421,8 @@ SWEP.Animations = {
         { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},		
         EventTable = {		
-            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},					
+            {s =  "gekolt_css/famas_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/famas_clipin.wav" ,    t = 62 / 40},					
         },			
     },		
 
