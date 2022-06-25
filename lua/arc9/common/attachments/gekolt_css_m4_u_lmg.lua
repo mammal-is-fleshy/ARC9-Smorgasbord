@@ -9,7 +9,7 @@ ATT.SortOrder = 4
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_lmg"}
-ATT.ShootSound = "gekolt_css/m4a1_unsil-1.wav"
+ATT.ShootSound = "gekolt_css/m249-1.wav"
 
 ATT.ClipSizeOverride = 120
 ATT.AimDownSightsTimeMult = 1.5

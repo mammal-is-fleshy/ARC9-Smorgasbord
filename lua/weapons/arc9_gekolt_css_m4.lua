@@ -207,7 +207,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "gekolt_css/ump45-1.wav"
+SWEP.ShootSound = "gekolt_css/m4a1_unsil-1.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/m4a1-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -350,7 +350,7 @@ SWEP.Animations = {
         Source = "dry_120_lmg",
         MagSwapTime = 75/40,	
         EventTable = {		
-            {s =  "gekolt_css/galil_boltpull.wav" ,   t = 20 / 40},		
+            {s =  "gekolt_css/galil_boltpull.wav" ,   t = 15 / 40},		
             {s =  "gekolt_css/m249_boxout.wav" ,   t = 45 / 40},
             {s =  "gekolt_css/m249_coverup.wav" ,    t = 90 / 40},	
             {s =  "gekolt_css/m249_boxin.wav" ,    t = 142 / 40},	
