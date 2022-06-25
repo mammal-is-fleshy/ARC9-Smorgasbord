@@ -18,8 +18,11 @@ ATT.ModelOffset = Vector(-12, -0.5, -0.2)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_saw.mdl"
 
-ATT.ActivePosOverride = Vector(-1.5, 0, -5)
+ATT.ActivePosOverride = Vector(-1.5, 1, -5)
 ATT.ActiveAngOverride = Angle(0, 0, -5)
+
+ATT.CrouchPosOverride = Vector(-2, 0.5, -6)
+ATT.CrouchAngOverride = Angle(0, 0, -10)
 
 ATT.HasSights = false
 
