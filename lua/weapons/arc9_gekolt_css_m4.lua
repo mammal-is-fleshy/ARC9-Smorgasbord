@@ -579,28 +579,28 @@ SWEP.AttachmentElements = {
 	},		
 	
     ["guard_lmg"] = {
-        Bodygroups = { {6, 5} },
+        Bodygroups = { {6, 5}, {10, 5} },
 	},	
     ["guard_a1"] = {
-        Bodygroups = { {6, 2} },
+        Bodygroups = { {6, 2}, {10, 2} },
 	},	
     ["guard_a2"] = {
-        Bodygroups = { {6, 3} },
+        Bodygroups = { {6, 3}, {10, 3} },
 	},	
     ["guard_10"] = {
-        Bodygroups = { {6, 1} },
+        Bodygroups = { {6, 1}, {10, 1} },
 	},	
     ["guard_adar"] = {
-        Bodygroups = { {6, 4} },
+        Bodygroups = { {6, 4}, {10, 4} },
 	},	
     ["guard_no"] = {
-        Bodygroups = { {6, 6} },
+        Bodygroups = { {6, 6}, {10, 6} },
 	},	
     ["guard_lr300"] = {
-        Bodygroups = { {6, 9} },
+        Bodygroups = { {6, 9}, {10, 9} },
 	},	
     ["guard_spr"] = {
-        Bodygroups = { {6, 8} },
+        Bodygroups = { {6, 8}, {10, 8} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), } }		
 	},		
 	
@@ -641,7 +641,9 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep.Attachments[7].Installed then model:SetBodygroup(5,8) end
+    if ( wep.Attachments[7].Installed and wep:HasElement("keep_rs") ) then model:SetBodygroup(5,8) end	
+	if wep.Attachments[7].Installed then model:SetBodygroup(5,8) end
+	if wep.Attachments[7].Installed and not wep:HasElement("keep_rs") then model:SetBodygroup(10,7) end	
 end
 
 

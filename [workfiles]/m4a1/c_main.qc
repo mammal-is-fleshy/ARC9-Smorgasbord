@@ -102,6 +102,20 @@ $bodygroup "m4"
 	blank	
 }
 
+$bodygroup "fsight"
+{
+	studio "m4a1_fs.smd"
+	studio "m4a1_fs_10.smd"
+	studio "m4a1_fs_a1.smd"
+	studio "m4a1_fs_a2.smd"
+	studio "m4a1_fs_adar.smd"
+	studio "m4a1_fs_lmg.smd"	
+	studio "m4a1_fs_patriot.smd"
+	blank
+	studio "m4a1_fs_spr.smd"	
+	studio "m4a1_fs_lr300.smd"	
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\v_models\pist_glock18\"

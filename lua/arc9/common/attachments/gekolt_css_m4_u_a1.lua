@@ -6,7 +6,7 @@ ATT.Icon = Material("")
 
 ATT.SortOrder = 0.5
 ATT.Category = "css_m4_up"
-ATT.ActivateElements = {"up_a1"}
+ATT.ActivateElements = {"up_a1", "keep_rs"}
 
 ATT.Firemodes = {
     {

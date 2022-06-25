@@ -6,7 +6,7 @@ ATT.Icon = Material("")
 
 ATT.SortOrder = 1.5
 ATT.Category = "css_m4_up"
-ATT.ActivateElements = {"up_proto"}
+ATT.ActivateElements = {"up_proto", "keep_rs"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_proto"
