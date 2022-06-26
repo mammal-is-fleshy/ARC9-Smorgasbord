@@ -29,6 +29,8 @@ ATT.CrouchAngOverride = Angle(0, 0, -10)
 ATT.SprintPosOverride = Vector(1, 0, -0.5)
 ATT.SprintAngOverride = Angle(30, -15, -30)
 
+ATT.HasSights = false
+
 ATT.Sights = {
     {
         Pos = Vector(2, 3, -10),

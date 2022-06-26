@@ -283,7 +283,7 @@ SWEP.Animations = {
         Source = {"fire"},	
 	},		
     ["fire_iron_empty_bolt"] = {
-        Source = {"fire"},	
+        Source = {"fire"},		
 	},		
     ["fire_bolt"] = {
         Source = {"fire_bolt"},
@@ -318,7 +318,8 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 65 / 40},			
-        },			
+        },	
+        MinProgress = 0.7,		
     },
     ["reload_empty_bolt"] = {
         Source = "dry_sniper",
@@ -333,7 +334,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 40 / 40},
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 95 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 130 / 40},
-        },			
+        },		
+        MinProgress = 0.9,		
     },
 
     ["reload_lmg"] = {
@@ -351,6 +353,7 @@ SWEP.Animations = {
             {s =  "gekolt_css/m249_coverdown.wav" ,   t = 180 / 40},	
             {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 190 / 40},		
         },		
+        MinProgress = 0.8,		
     },
     ["reload_empty_lmg"] = {
         Source = "dry_120_lmg",
@@ -367,7 +370,8 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.075, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
-		},			
+		},		
+        MinProgress = 0.825,		
     },	
 
     ["reload_empty_proto"] = {
@@ -532,7 +536,7 @@ SWEP.AttachmentElements = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7},
         },
         AttPosMods = {
-            [6] = { Pos = Vector(0, 1.2, 17), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
+            [5] = { Pos = Vector(0, 1.2, 17), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
 	},
     ["up_bow"] = {
         Bodygroups = {
@@ -610,11 +614,11 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_ris"] = {
         Bodygroups = { {6, 10}, {10, 10} },
-        AttPosMods = { [6] = { Pos = Vector(0, 1.3, 12), } }			
+        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), } }			
 	},		
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
-        AttPosMods = { [6] = { Pos = Vector(0, 1.1, 13), } }		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), } }		
 	},		
 	
     ["s_a1"] = {
@@ -664,17 +668,6 @@ end
 
 
 SWEP.Attachments = {
-    {
-        PrintName = "",
-        DefaultName = "",
-        Hidden = true,
-		ExcludeElements = {"nogrip", "no_optic"},
-        Category = {"css_m4_fg"}, 
-        Bone = "W_Main",
-        Pos = Vector(0, 1.5, 12),
-        Ang = Angle(90, 0, -90),		
-    },	
-
     {
         PrintName = "Receiver",
         DefaultName = "Standard Receiver",
@@ -726,8 +719,20 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 1.5, 12),
         Ang = Angle(90, 0, -90),	
-		MergeSlots = {1}		
+		MergeSlots = {6}		
     },
+
+    {
+        PrintName = "",
+        DefaultName = "",
+        Hidden = true,
+		ExcludeElements = {"nogrip", "no_optic"},
+        Category = {"css_m4_fg"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, 1.5, 12),
+        Ang = Angle(90, 0, -90),		
+    },	
+	
 
     {
         PrintName = "Optic",
