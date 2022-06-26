@@ -47,10 +47,10 @@ SWEP.DamageMin = 20 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 2000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 9000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 1200 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 3000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 6 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 4 -- Units of wood that can be penetrated by this gun.
 
 -------------------------- PHYS BULLET BALLISTICS
 
@@ -69,7 +69,7 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 650
+SWEP.RPM = 700
 
 -- Works different to ArcCW
 
@@ -532,7 +532,7 @@ SWEP.AttachmentElements = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7},
         },
         AttPosMods = {
-            [5] = { Pos = Vector(0, 1.2, 17), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
+            [6] = { Pos = Vector(0, 1.2, 17), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
 	},
     ["up_bow"] = {
         Bodygroups = {
@@ -610,11 +610,11 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_ris"] = {
         Bodygroups = { {6, 10}, {10, 10} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), } }			
+        AttPosMods = { [6] = { Pos = Vector(0, 1.3, 12), } }			
 	},		
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), } }		
+        AttPosMods = { [6] = { Pos = Vector(0, 1.1, 13), } }		
 	},		
 	
     ["s_a1"] = {

@@ -1,5 +1,5 @@
-ATT.PrintName = "S Cope"
-ATT.CompactName = "Scope"
+ATT.PrintName = "Mounted Scope"
+ATT.CompactName = "Mounted"
 ATT.Icon = Material("")
 ATT.Description = [[h]]
 ATT.SortOrder = 4
@@ -7,7 +7,7 @@ ATT.SortOrder = 4
 ATT.Model = "models/weapons/geckololt_css/atts/m4_scope.mdl"
 
 ATT.Category = "optic_css"
-ATT.Folder = "SCOPE"
+ATT.Folder = "MOUNT"
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
@@ -22,9 +22,10 @@ ATT.Sights = {
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
 ATT.RTScopeFOV = 10
-ATT.RTScopeReticle = Material("arc9/acog.png", "mips smooth")
+ATT.RTScopeReticle = Material("arc9_css/scope_border.png", "mips smooth")
+ATT.RTScopeReticleScale = 0.9
 ATT.RTScopeColorable = true
-ATT.RTScopeShadowIntensity = 5
+ATT.RTScopeShadowIntensity = 7
 
 ATT.ScopeScreenRatio = 0.9
 
