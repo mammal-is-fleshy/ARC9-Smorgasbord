@@ -20,11 +20,11 @@ ATT.Sights = {
 }
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 3
 ATT.RTScopeFOV = 10
 ATT.RTScopeReticle = Material("arc9/acog.png", "mips smooth")
 ATT.RTScopeColorable = true
-ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeShadowIntensity = 5
 
 ATT.ScopeScreenRatio = 0.9
 
