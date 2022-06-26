@@ -665,6 +665,17 @@ end
 
 SWEP.Attachments = {
     {
+        PrintName = "",
+        DefaultName = "",
+        Hidden = true,
+		ExcludeElements = {"nogrip", "no_optic"},
+        Category = {"css_m4_fg"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, 1.5, 12),
+        Ang = Angle(90, 0, -90),		
+    },	
+
+    {
         PrintName = "Receiver",
         DefaultName = "Standard Receiver",
 
@@ -715,20 +726,8 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 1.5, 12),
         Ang = Angle(90, 0, -90),	
-		MergeSlots = {6}		
+		MergeSlots = {1}		
     },
-
-    {
-        PrintName = "",
-        DefaultName = "",
-        Hidden = true,
-		ExcludeElements = {"nogrip", "no_optic"},
-        Category = {"css_m4_fg"}, 
-        Bone = "W_Main",
-        Pos = Vector(0, 1.5, 12),
-        Ang = Angle(90, 0, -90),		
-    },	
-
 
     {
         PrintName = "Optic",
