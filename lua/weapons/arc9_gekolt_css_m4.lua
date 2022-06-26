@@ -544,6 +544,8 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 4},{4, 4},{5, 9}
         },
+        AttPosMods = {
+            [7] = { Pos = Vector(0, -2.25, 1), } }			
 	},
     ["up_proto"] = {
         Bodygroups = {
@@ -608,6 +610,7 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_ris"] = {
         Bodygroups = { {6, 10}, {10, 10} },
+        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), } }			
 	},		
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
@@ -719,7 +722,7 @@ SWEP.Attachments = {
         PrintName = "",
         DefaultName = "",
         Hidden = true,
-		ExcludeElements = {"nogrip"},
+		ExcludeElements = {"nogrip", "no_optic"},
         Category = {"css_m4_fg"}, 
         Bone = "W_Main",
         Pos = Vector(0, 1.5, 12),
@@ -730,8 +733,9 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		ActivateElements = {"no_irons"},
+		ActivateElements = {"no_irons", "no_optic"},
 
+		ExcludeElements = {"fg_saw"},
         Category = {"optic_css"}, 
         Bone = "W_Main",
         Pos = Vector(0, -1.7, 3),

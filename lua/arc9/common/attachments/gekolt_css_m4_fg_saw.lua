@@ -9,7 +9,7 @@ ATT.SortOrder = 0
 
 ATT.Category = "css_m4_fg" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"fg_saw"}
-ATT.ExcludeElements = {"no_irons"}
+ATT.ExcludeElements = {"no_optic"}
 
 
 ATT.LHIK = true
@@ -29,7 +29,19 @@ ATT.CrouchAngOverride = Angle(0, 0, -10)
 ATT.SprintPosOverride = Vector(1, 0, -0.5)
 ATT.SprintAngOverride = Angle(30, -15, -30)
 
-ATT.HasSights = false
+ATT.Sights = {
+    {
+        Pos = Vector(2, 3, -10),
+        Ang = Angle(0, 0, 0),
+        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
+
+
+        Magnification = 1,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
 
 ATT.RecoilMult = 0.25
 ATT.SpreadMultHipFire = 1.1
