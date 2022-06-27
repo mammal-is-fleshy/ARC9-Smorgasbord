@@ -7,3 +7,20 @@ ATT.Icon = Material("")
 ATT.SortOrder = 0.5
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_ris"}
+
+
+ATT.Attachments = {
+    {
+        PrintName = "MOUNT LEFT",
+        Category = "mountr_css",
+        Pos = Vector(-1.5,0.3, -4),
+        Ang = Angle(-90, 180, 0),
+    },
+	
+    {
+        PrintName = "MOUNT Right",
+        Category = "mountl_css",
+        Pos = Vector(1.5,0.3, -4),
+        Ang = Angle(90, 0, 0),
+    },	
+}

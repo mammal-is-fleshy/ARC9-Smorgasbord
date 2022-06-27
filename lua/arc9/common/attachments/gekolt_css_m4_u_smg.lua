@@ -11,6 +11,7 @@ ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_9mm"}
 ATT.ShootSound = "gekolt_css/mp5-1.wav"
 ATT.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
+ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.ClipSizeOverride = 32
 

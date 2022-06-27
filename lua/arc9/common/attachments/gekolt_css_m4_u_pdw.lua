@@ -10,6 +10,7 @@ ATT.SortOrder = 2
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_pdw", "noguard", "nogrip"}
 ATT.ShootSound = "gekolt_css/p90-1.wav"
+ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.ClipSizeOverride = 50
 
