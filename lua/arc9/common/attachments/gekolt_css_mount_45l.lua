@@ -21,5 +21,6 @@ ATT.Attachments = {
         Category = "optic_css_s",
         Pos = Vector(-0.3, -0.7, -0.35),
         Ang = Angle(0, 0, -45),
+		KeepBaseIrons = true		
     },
 }

@@ -268,6 +268,9 @@ SWEP.Animations = {
     },
     ["idle"] = {
         Source = "idle",
+    }, 
+	["firemode"] = {
+        Source = "firemode",
     },
     ["idle_empty"] = {
         Source = "idle",
@@ -549,7 +552,7 @@ SWEP.AttachmentElements = {
             {0, 4},{4, 4},{5, 9}
         },
         AttPosMods = {
-            [7] = { Pos = Vector(0, -2.25, 1), } }			
+            [7] = { Pos = Vector(0, -2.85, 0.5), } }	
 	},
     ["up_proto"] = {
         Bodygroups = {
@@ -664,6 +667,11 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if ( wep.Attachments[7].Installed and wep:HasElement("keep_rs") ) then model:SetBodygroup(5,8) end	
 	if wep.Attachments[7].Installed then model:SetBodygroup(5,8) end
 	if wep.Attachments[7].Installed and not wep:HasElement("keep_rs") then model:SetBodygroup(10,7) end	
+
+	if wep.Attachments[7].Installed and wep:HasElement("up_9mm") then model:SetBodygroup(3,1) end	
+	if wep.Attachments[7].Installed and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end		
+	--if wep.Attachments[7].Installed and wep:HasElement("up_a1") then model:SetBodygroup(3,2) end		
+	if wep.Attachments[7].Installed and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
 end
 
 

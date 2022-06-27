@@ -38,10 +38,13 @@ $bodygroup "stock"
 	studio "m4a1_stock_light.smd"		
 }
 
-$bodygroup "rail"
+$bodygroup "rail_top"
 {
 	blank	
-	studio "m4a1_rail.smd"			
+	studio "m4a1_rail.smd"		
+	studio "m4a1_rail_top_a1.smd"		
+	studio "m4a1_rail_top_10.smd"		
+	studio "m4a1_rail_lmg.smd"			
 }
 
 $bodygroup "mag"
