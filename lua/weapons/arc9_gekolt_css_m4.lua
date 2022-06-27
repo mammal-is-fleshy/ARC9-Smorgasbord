@@ -552,7 +552,7 @@ SWEP.AttachmentElements = {
             {0, 4},{4, 4},{5, 9}
         },
         AttPosMods = {
-            [7] = { Pos = Vector(0, -2.85, 0.5), } }	
+            [7] = { Pos = Vector(0, -3, 0.5), } }	
 	},
     ["up_proto"] = {
         Bodygroups = {
