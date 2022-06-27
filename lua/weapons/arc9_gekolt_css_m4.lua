@@ -585,7 +585,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 3},{4, 5},{5, 2},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -2.5, 1), } }				
+		AttPosMods = { [7] = { Pos = Vector(0, -2.5, 1), }, [8] = { Pos = Vector(0, -0.475, 19.75), } }				
 	},	
     ["up_sg"] = {
         Bodygroups = {
@@ -596,32 +596,39 @@ SWEP.AttachmentElements = {
 	
     ["guard_lmg"] = {
         Bodygroups = { {6, 5}, {10, 5} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 30), } }			
 	},	
     ["guard_a1"] = {
         Bodygroups = { {6, 2}, {10, 2} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 28.75), } }			
 	},	
     ["guard_a2"] = {
         Bodygroups = { {6, 3}, {10, 3} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 32), } }			
 	},	
     ["guard_10"] = {
         Bodygroups = { {6, 1}, {10, 1} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 31.4), } }			
 	},	
     ["guard_adar"] = {
         Bodygroups = { {6, 4}, {10, 4} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 31.25), } }			
 	},	
     ["guard_no"] = {
         Bodygroups = { {6, 6}, {10, 6} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 12.75), } }			
 	},	
     ["guard_lr300"] = {
         Bodygroups = { {6, 9}, {10, 9} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 23), } }			
 	},	
     ["guard_ris"] = {
         Bodygroups = { {6, 10}, {10, 10} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), } }			
+        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), },[8] = { Pos = Vector(0, -0.25, 21.2), } }					
 	},		
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), } }		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), } }		
 	},		
 	
     ["s_a1"] = {
@@ -755,8 +762,7 @@ SWEP.Attachments = {
         Category = {"optic_css", "mount_css_m16"}, 
         Bone = "W_Main",
         Pos = Vector(0, -1.7, 3),
-        Ang = Angle(90, 0, -90),	
-		MergeSlots = {9}			
+        Ang = Angle(90, 0, -90),			
     },
 	
 
