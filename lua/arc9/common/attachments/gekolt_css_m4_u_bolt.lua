@@ -49,3 +49,21 @@ ATT.DamageMinOverride = 120
 ATT.RangeMult = 1.5
 
 ATT.Silenced = true
+
+
+
+ATT.Attachments = {
+    {
+        PrintName = "MOUNT LEFT",
+        Category = "mountr_css",
+        Pos = Vector(-1.5,-0.3, -18),
+        Ang = Angle(-90, 180, 0),
+    },
+	
+    {
+        PrintName = "MOUNT Right",
+        Category = "mountl_css",
+        Pos = Vector(1.5,-0.3, -18),
+        Ang = Angle(90, 0, 0),
+    },	
+}
