@@ -669,19 +669,19 @@ SWEP.AttachmentElements = {
 
 }
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)
+SWEP.Hook_ModifyBodygroups = function(wep, data)  -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
     local model = data.model
-    if ( wep.Attachments[7].Installed and wep:HasElement("keep_rs") ) then model:SetBodygroup(5,8) end	
+    if wep.Attachments[7].Installed and wep:HasElement("keep_rs") then model:SetBodygroup(5,8) end	
 	if wep.Attachments[7].Installed then model:SetBodygroup(5,8) end
 	if wep.Attachments[7].Installed and not wep:HasElement("keep_rs") then model:SetBodygroup(10,7) end	
-
+-- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
 	if wep.Attachments[7].Installed and wep:HasElement("up_9mm") then model:SetBodygroup(3,1) end	
 	if wep.Attachments[7].Installed and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end	
-	
+-- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
 	if wep.Attachments[7].Installed and wep:HasElement("up_a1") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
 	if wep.Attachments[7].Installed and wep:HasElement("up_sg") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end		
 	if wep.Attachments[7].Installed and wep:HasElement("up_proto") and not wep:HasElement("m16_on") then model:SetBodygroup(3,3) end		
-	
+-- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
 	if wep.Attachments[7].Installed and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
 end
 
