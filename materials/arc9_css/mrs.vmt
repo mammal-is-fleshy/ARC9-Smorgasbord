@@ -1,0 +1,7 @@
+"VertexLitGeneric"
+{
+	"$basetexture"	"arc9_css\mrs_d"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "arc9_css\mrs_s"
+    "$translucent" "1"
+}

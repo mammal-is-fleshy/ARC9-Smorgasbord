@@ -49,6 +49,6 @@ ATT.AimDownSightsTimeAdd = 0.14
 ATT.SprintToFireTimeAdd = 0.08
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("arc9/dot.png", "mips smooth")
-ATT.HoloSightSize = 1024
+ATT.HoloSightReticle = Material("arc9_css/acog_top.png", "mips smooth")
+ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true

@@ -1,10 +1,10 @@
-ATT.PrintName = "Delta Sight"
-ATT.CompactName = "Delta"
+ATT.PrintName = "MRS Sight"
+ATT.CompactName = "MRS"
 ATT.Icon = Material("")
 ATT.Description = [[]]
 ATT.SortOrder = 0.2
 
-ATT.Model = "models/weapons/geckololt_css/atts/delta.mdl"
+ATT.Model = "models/weapons/geckololt_css/atts/mrs.mdl"
 
 ATT.Category = {"optic_css","optic_css_s"}
 ATT.Folder = "REFLEX"
@@ -12,7 +12,7 @@ ATT.Folder = "REFLEX"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 10, -1.05),
+        Pos = Vector(0, 8, -1.3),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 60
@@ -20,8 +20,8 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("arc9_css/acog_top.png", "mips smooth")
-ATT.HoloSightSize = 650
+ATT.HoloSightReticle = Material("arc9_css/mrs.png", "mips smooth")
+ATT.HoloSightSize = 900
 ATT.HoloSightColorable = true
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
