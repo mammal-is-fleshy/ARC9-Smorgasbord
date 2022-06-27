@@ -558,13 +558,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 1},{4, 2},{5, 8}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.5, 4), } }			
+		AttPosMods = { [7] = { Pos = Vector(0, -3.9, 4.25), } }			
 	},
     ["up_a1"] = {
         Bodygroups = {
             {0, 11},{4, 3},{5, 8}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.25, 4), } }			
+		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }			
 	},	
     ["up_ak"] = {
         Bodygroups = {
@@ -591,7 +591,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 5},{1, 2},{4, 5},{5, 8},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.3, 4), } }			
+		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }				
 	},		
 	
     ["guard_lmg"] = {
@@ -669,8 +669,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep.Attachments[7].Installed and not wep:HasElement("keep_rs") then model:SetBodygroup(10,7) end	
 
 	if wep.Attachments[7].Installed and wep:HasElement("up_9mm") then model:SetBodygroup(3,1) end	
-	if wep.Attachments[7].Installed and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end		
-	--if wep.Attachments[7].Installed and wep:HasElement("up_a1") then model:SetBodygroup(3,2) end		
+	if wep.Attachments[7].Installed and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end	
+	
+	if wep.Attachments[7].Installed and wep:HasElement("up_a1") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
+	if wep.Attachments[7].Installed and wep:HasElement("up_sg") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end		
+	if wep.Attachments[7].Installed and wep:HasElement("up_proto") and not wep:HasElement("m16_on") then model:SetBodygroup(3,3) end		
+	
 	if wep.Attachments[7].Installed and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
 end
 
@@ -748,9 +752,22 @@ SWEP.Attachments = {
 		ActivateElements = {"no_irons", "no_optic"},
 
 		ExcludeElements = {"fg_saw"},
-        Category = {"optic_css"}, 
+        Category = {"optic_css", "mount_css_m16"}, 
         Bone = "W_Main",
         Pos = Vector(0, -1.7, 3),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),	
+		MergeSlots = {9}			
     },
+	
+
+    {
+        PrintName = "Muzzle",
+        DefaultName = "None",
+
+		ExcludeElements = {"pre_muzzed"},
+        Category = {"muzzle_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, -0.25, 20),
+        Ang = Angle(90, 0, -90),		
+    },	
 }
