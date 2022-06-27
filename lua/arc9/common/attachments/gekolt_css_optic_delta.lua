@@ -24,7 +24,7 @@ ATT.HoloSightReticle = Material("arc9/eotech.png", "mips smooth")
 ATT.HoloSightSize = 400
 ATT.HoloSightColorable = true
 
-ATT.ModelOffset = Vector(0, 0, -0.35)
+ATT.ModelOffset = Vector(0, 0, -0.1)
 
 ATT.SwayAdd = 0.02
 ATT.FreeAimRadiusMultSights = 0.25
