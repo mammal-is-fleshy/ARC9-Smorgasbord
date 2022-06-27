@@ -255,11 +255,19 @@ SWEP.AttachmentElements = {
 			Pos = Vector(-4, 0, 5),
 			Ang = Angle(0, 0, -5),
         },			
+		AttPosMods = { [3] = { Pos = Vector(0, -0.7, -1), } }			
 	},	
 }
 
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model	
+	if wep.Attachments[3].Installed then model:SetBodygroup(1,3) end		
+	if wep.Attachments[3].Installed and wep:HasElement("awp_f_smg") then model:SetBodygroup(1,2) end	
+end
+
 SWEP.Attachments = {
-    [1] = {
+    {
         PrintName = "Frame",
         DefaultName = "Bolt Action Frame",
 
@@ -268,7 +276,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),		
     },
-    [2] = {
+    {
         PrintName = "Stock",
         DefaultName = "Polymer Stock",
 
@@ -276,7 +284,16 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 2, -10),
         Ang = Angle(0, 0, 0),		
-    }	
+    },
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+
+        Category = {"optic_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, -1, 3),
+        Ang = Angle(90, 0, -90),		
+    },	
 }
 
 SWEP.Animations = {
