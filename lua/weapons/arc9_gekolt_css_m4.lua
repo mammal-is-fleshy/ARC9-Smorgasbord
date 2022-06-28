@@ -539,7 +539,7 @@ SWEP.AttachmentElements = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7},
         },
         AttPosMods = {
-            [5] = { Pos = Vector(0, 1.2, 17), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
+            [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
 	},
     ["up_bow"] = {
         Bodygroups = {
@@ -596,23 +596,23 @@ SWEP.AttachmentElements = {
 	
     ["guard_lmg"] = {
         Bodygroups = { {6, 5}, {10, 5} },
-		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 30), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.85, 11.9),}, [8] = { Pos = Vector(0, -0.25, 30), } }			
 	},	
     ["guard_a1"] = {
         Bodygroups = { {6, 2}, {10, 2} },
-		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 28.75), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), } }			
 	},	
     ["guard_a2"] = {
         Bodygroups = { {6, 3}, {10, 3} },
-		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 32), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), } }			
 	},	
     ["guard_10"] = {
         Bodygroups = { {6, 1}, {10, 1} },
-		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 31.4), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), } }			
 	},	
     ["guard_adar"] = {
         Bodygroups = { {6, 4}, {10, 4} },
-		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 31.25), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), } }			
 	},	
     ["guard_no"] = {
         Bodygroups = { {6, 6}, {10, 6} },
@@ -736,7 +736,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"nogrip"},
         Category = {"grip_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 1.5, 12),
+        Pos = Vector(0, 1.6, 12),
         Ang = Angle(90, 0, -90),	
 		MergeSlots = {6}		
     },

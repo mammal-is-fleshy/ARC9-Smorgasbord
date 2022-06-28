@@ -6,7 +6,7 @@ ATT.Icon = Material("")
 
 ATT.SortOrder = 0
 ATT.Category = "css_m4_handguard"
-ATT.ActivateElements = {"guard_no"}
+ATT.ActivateElements = {"guard_no", "nogrip"}
 
 ATT.SpeedMult = 1.25
 ATT.AimDownSightsTime = 1.15
