@@ -33,7 +33,7 @@ ATT.Attachments = {
 
     {
         PrintName = "MOUNT Bottom",
-        Category = {"tac_css_flat"},
+        Category = {"tac_css"},
         Pos = Vector(0,1.65, -5),
         Ang = Angle(90, 0, 90),
 		ExcludeElements = {"bottom_long"},		

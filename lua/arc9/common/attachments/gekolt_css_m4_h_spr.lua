@@ -26,4 +26,11 @@ ATT.Attachments = {
         Pos = Vector(1.5,0.2, -4),
         Ang = Angle(90, 0, 0),
     },	
+	
+    {
+        PrintName = "MOUNT TOP",
+        Category = {"tac_css_flat", "mount_css"},
+        Pos = Vector(0,-1.3, -3.25),
+        Ang = Angle(90, 0, -90),
+    },		
 }

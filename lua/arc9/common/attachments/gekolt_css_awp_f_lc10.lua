@@ -21,6 +21,7 @@ ATT.Mult_HipDispersion = 2
 ATT.Mult_SightsDispersion = 2
 ATT.Mult_SightTime = 0.75
 ATT.Mult_SpeedMultSights = 1.5
+ATT.SpeedMultShootingMult = 1.25
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 900/50
