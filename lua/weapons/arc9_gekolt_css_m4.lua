@@ -251,7 +251,7 @@ SWEP.Animations = {
         Source = "dry_3",
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 1, rhik = 1, },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.65, lhik = 1, rhik = 1, },	
 		{ t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },			
 		},	
         EventTable = {		
@@ -329,7 +329,7 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 0, },
         { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.6, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, },
-		{ t = 0.8, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, },	
+		{ t = 0.85, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, },	
 		},		
         EventTable = {		
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 10 / 40},
@@ -539,7 +539,7 @@ SWEP.AttachmentElements = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7},
         },
         AttPosMods = {
-            [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
+            [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.3, 4.5), } }		
 	},
     ["up_bow"] = {
         Bodygroups = {
