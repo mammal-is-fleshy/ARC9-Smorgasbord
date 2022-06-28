@@ -8,6 +8,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/afg.mdl"
 
 ATT.SortOrder = 0
 ATT.Category = "grip_css"
+ATT.ActivateElements = "bottom_long"
 
 ATT.RecoilPatternDriftMult = 1.15
 ATT.RecoilAutoControlMult = 0.8
