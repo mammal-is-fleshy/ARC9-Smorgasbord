@@ -1,5 +1,5 @@
 ATT.PrintName = "Precision Handguard"
-ATT.CompactName = "AR10"
+ATT.CompactName = "Precision"
 ATT.Description = [[Older design that's somehow more accurate than new ones. Makes you question the sanity of the devs.]]
 
 ATT.Icon = Material("")

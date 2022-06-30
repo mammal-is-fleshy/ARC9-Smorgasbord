@@ -15,13 +15,14 @@ ATT.ActivateElements = {"awp_f_smg"}
 ATT.MuzzleParticle = "muzzleflash_ak47"
 ATT.ShootSound = "gekolt_css/mp5-1.wav"
 
-ATT.Mult_Sway = 1.5
-ATT.Mult_AccuracyMOA = 3
-ATT.Mult_HipDispersion = 2
-ATT.Mult_SightsDispersion = 2
-ATT.Mult_SightTime = 0.75
-ATT.Mult_SpeedMultSights = 1.5
-ATT.Mult_SpeedMultShooting = 1.25
+ATT.SwayMult = 1.5
+ATT.AccuracyMOAMult = 3
+ATT.HipDispersionMult = 2
+ATT.SightsDispersionMult = 2
+ATT.SightTimeMult = 0.75
+
+ATT.SpeedMultSightsMult = 2.5
+ATT.SpeedMultShootingMult = 2.25
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 900/50

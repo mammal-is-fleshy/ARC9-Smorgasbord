@@ -18,6 +18,6 @@ ATT.ClipSizeOverride = 20
 ATT.DamageMaxMult = 0.75
 ATT.DamageMinMult = 1.75
 ATT.PhysBulletMuzzleVelocityMult = 1.34
-ATT.RPM = 800
+ATT.RPMMult = 500/700
 ATT.RecoilMult = 2
 ATT.RecoilPatternDriftMult = 2

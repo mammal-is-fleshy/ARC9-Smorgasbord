@@ -16,6 +16,7 @@ $bodygroup "upper"
 	studio "m4a1_hg_pump.smd"	
 	blank
 	studio "m4a1_up_a1.smd"		
+	studio "m4a1_up_acr.smd"			
 }
 
 $bodygroup "mag_well"
@@ -83,7 +84,9 @@ $bodygroup "handguard"
 	blank
 	studio "m4a1_hg_spr.smd"	
 	studio "m4a1_hg_lr300.smd"	
-	studio "m4a1_hg_ris.smd"		
+	studio "m4a1_hg_ris.smd"
+	studio "m4a1_hg_acr.smd"
+	studio "m4a1_hg_148.smd"
 }
 
 $bodygroup "grip"

@@ -216,7 +216,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "gekolt_css/awp1.wav"
-SWEP.ShootSoundSilenced = "weapons/tmp/tmp-1.wav"
+SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
 SWEP.EjectDelay = 0.1
@@ -226,11 +226,9 @@ SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.DefaultBodygroups = "00000"
 
 SWEP.AttachmentElements = {
-
     ["awp_f_howell"] = {
-        Bodygroups = {
-            {0, 2}
-        },
+        Bodygroups = {{0, 2}},
+        AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 2.5, 11.5), } }			
 	},
 	
     ["awp_s_smg"] = {
@@ -247,15 +245,12 @@ SWEP.AttachmentElements = {
 		
 
     ["awp_f_smg"] = {
-        Bodygroups = {
-            {0, 1},
-            {1, 1}			
-        },
+        Bodygroups = {{0, 1},{1, 1}},
         Override_IronSights = {
 			Pos = Vector(-4, 0, 5),
 			Ang = Angle(0, 0, -5),
         },			
-		AttPosMods = { [3] = { Pos = Vector(0, -0.7, -1), } }			
+		AttPosMods = { [3] = { Pos = Vector(0, -0.7, -1), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 2.5, 9), } }			
 	},	
 }
 
@@ -293,6 +288,26 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, -1, 3),
         Ang = Angle(90, 0, -90),		
+    },	
+    {
+        PrintName = "Muzzle",
+        DefaultName = "None",
+
+		ExcludeElements = {"pre_muzzed"},
+        Category = {"muzzle_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, 0.1, 30),
+        Ang = Angle(90, 0, -90),		
+    },		
+    {
+        PrintName = "Foregrip",
+        DefaultName = "None",
+
+		ExcludeElements = {"nogrip"},
+        Category = {"grip_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, 2.5, 12),
+        Ang = Angle(90, 0, -90),			
     },	
 }
 
@@ -363,6 +378,10 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/awp_clipin.wav" ,    t = 50 / 40},
         },		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
     },
     ["reload_empty"] = {
         Source = "dry",
@@ -374,7 +393,7 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 105 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 112 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 125 / 40},
-        },	
+        },			
     },
 
     -- BR --
@@ -388,6 +407,10 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 58 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 62 / 40},			
         },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
     },
     ["reload_empty_br"] = {
         Source = "dry_br",
@@ -400,6 +423,10 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 100 / 40},				
             {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 110 / 40},	
 			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.55, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },
+		},				
     },	
     -- SMG --
 
@@ -411,6 +438,10 @@ SWEP.Animations = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/mp5_clipin.wav" ,    t = 58 / 40},
         },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
     },
     ["reload_empty_smg"] = {
         Source = "dry_smg",
@@ -422,5 +453,9 @@ SWEP.Animations = {
             {s =  "gekolt_css/mp5_slide.wav" ,    t = 75 / 40},				
             {s =  "gekolt_css/mp5_slideback.wav" ,    t = 85 / 40},	
 			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},				
     },		
 }
