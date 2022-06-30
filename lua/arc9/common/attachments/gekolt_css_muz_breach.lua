@@ -5,7 +5,7 @@ ATT.Description = [[]]
 ATT.Icon = Material("")
 ATT.SortOrder = 1
 
-ATT.Model = "models/weapons/geckololt_css/atts/muz_negator.mdl"
+ATT.Model = "models/weapons/geckololt_css/atts/muz_breach.mdl"
 ATT.Category = "muzzle_css"
 
 ATT.Scale = 1
