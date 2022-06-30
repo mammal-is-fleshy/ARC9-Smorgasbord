@@ -15,7 +15,7 @@ ATT.ShootSound = "gekolt_css/m4a1-1.wav"
 
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 
-ATT.RPMMult = 0.8
+ATT.RPMMult = 650/700
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.9
 
