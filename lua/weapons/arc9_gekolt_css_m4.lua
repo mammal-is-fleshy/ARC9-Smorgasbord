@@ -528,6 +528,31 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},	
+    },	
+	
+	
+    ["reload_gih"] = {
+        Source = "wet_gih",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},			
+        },				
+    },
+    ["reload_empty_gih"] = {
+        Source = "dry_gih",
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},					
+        },
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+		},	
     },		
 }
 
@@ -581,6 +606,12 @@ SWEP.AttachmentElements = {
             {0, 2},{5, 3},{6, 7},{10,7}
         },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),} }			
+	},	
+    ["up_gih"] = {
+        Bodygroups = {
+            {0, 8},{1, 2},{4, 5},{5, 6},{6, 7},{10,7}
+        },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }			
 	},		
     ["up_pdw"] = {
         Bodygroups = {
@@ -623,6 +654,10 @@ SWEP.AttachmentElements = {
         Bodygroups = { {6, 6}, {10, 6} },
 		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 12.75), } }			
 	},	
+    ["guard_sten"] = {
+        Bodygroups = { {6, 14}, {10, 12} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 19), } }			
+	},		
     ["guard_lr300"] = {
         Bodygroups = { {6, 9}, {10, 9} },
 		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 23), } }			
@@ -657,10 +692,22 @@ SWEP.AttachmentElements = {
     ["s_light"] = {
         Bodygroups = { {2, 8} },
 	},		
+    ["s_swire"] = {
+        Bodygroups = { {2, 9} },
+	},			
+    ["s_608"] = {
+        Bodygroups = { {2, 10} },
+	},	
+    ["s_607"] = {
+        Bodygroups = { {2, 11} },
+	},			
 	
     ["g_ske"] = {
         Bodygroups = { {7, 3} },
 	},	
+    ["g_short"] = {
+        Bodygroups = { {7, 5} },
+	},		
     ["g_hunt"] = {
         Bodygroups = { {7, 1},{2, 5} },
 	},		
@@ -670,7 +717,7 @@ SWEP.AttachmentElements = {
 
     ["fg_saw"] = {
         Bodygroups = { {8, 1} },
-	},		
+	},
 
 }
 

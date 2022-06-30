@@ -36,7 +36,10 @@ $bodygroup "stock"
 	studio "m4a1_stock_buff.smd"	
 	studio "m4a1_stock_sniper.smd"		
 	blank		
-	studio "m4a1_stock_light.smd"		
+	studio "m4a1_stock_light.smd"	
+	studio "m4a1_stock_swire.smd"	
+	studio "m4a1_stock_607.smd"	
+	studio "m4a1_stock_608.smd"		
 }
 
 $bodygroup "rail_top"
@@ -87,6 +90,8 @@ $bodygroup "handguard"
 	studio "m4a1_hg_ris.smd"
 	studio "m4a1_hg_acr.smd"
 	studio "m4a1_hg_148.smd"
+	studio "m4a1_hg_dragoon.smd"
+	studio "m4a1_hg_sten.smd"
 }
 
 $bodygroup "grip"
@@ -96,6 +101,7 @@ $bodygroup "grip"
 	studio "m4a1_grip_saw.smd"
 	studio "m4a1_grip_ske.smd"
 	blank
+	studio "m4a1_grip_short.smd"	
 }
 
 $bodygroup "fore"
@@ -122,7 +128,9 @@ $bodygroup "fsight"
 	blank
 	studio "m4a1_fs_spr.smd"	
 	studio "m4a1_fs_lr300.smd"	
-	studio "m4a1_fs_ris.smd"		
+	studio "m4a1_fs_ris.smd"	
+	studio "m4a1_fs_dragoon.smd"	
+	studio "m4a1_fs_sten.smd"		
 }
 
 $illumposition 0 0 0
@@ -403,6 +411,24 @@ $sequence "idle_bow" {
 
 $sequence "fire_bow" {
 	"anims\fire_bow.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_gih" {
+	"anims\dry_gih.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_gih" {
+	"anims\wet_gih.smd"
+	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2
 	snap	

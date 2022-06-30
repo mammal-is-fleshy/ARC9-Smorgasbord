@@ -1,6 +1,6 @@
-ATT.PrintName = "No Handguard"
-ATT.CompactName = "None"
-ATT.Description = [[Handguards are a conspiracy to sell more useless gun crap you don't need. You can make do without one.]]
+ATT.PrintName = "Stub Barrel"
+ATT.CompactName = "Stub"
+ATT.Description = [[It's longer than what you got down there.]]
 
 ATT.Icon = Material("")
 
