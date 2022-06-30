@@ -8,8 +8,7 @@ ATT.Cons = {}
 ATT.SortOrder = 7
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_gih", "pre_muzzed"}
-ATT.ShootSound = "gekolt_css/ak47-1.wav"
+ATT.ActivateElements = {"up_gih", "pre_muzzed", "noguard"}
 
 ATT.ClipSizeOverride = 60
 ATT.ChamberSize = 2
@@ -22,13 +21,14 @@ ATT.Firemodes = {
     {
 		PrintName = "Alternating",
         Mode = -1,
-		RPMMult = 1400 / 700
+		RPMMult = 1200 / 700
     },
     {
 		PrintName = "Simutaneous",
         Mode = -1,
 		NumOverride = 2,
-		AmmoPerShot = 2
+		AmmoPerShot = 2,
+		RPMMult = 600 / 700		
     },	
 }
 
