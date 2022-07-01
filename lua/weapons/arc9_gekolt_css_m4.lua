@@ -340,6 +340,64 @@ SWEP.Animations = {
         },		
         MinProgress = 0.9,		
     },
+	
+
+    ["fire_empty_pump"] = {
+        Source = {"fire"},	
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },},			
+	},
+    ["fire_iron_empty_pump"] = {
+        Source = {"fire"},		
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },},			
+	},		
+    ["fire_pump"] = {
+        Source = {"fire_pump"},
+        EventTable = {
+            {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
+        },				
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},		
+	},	
+    ["fire_iron_pump"] = {
+        Source = {"fire_pump"},
+        EventTable = {
+            {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
+        },				
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+	},		
+    ["reload_pump"] = {
+        Source = "wet_pump",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},				
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 42 / 40},			
+        },	
+        MinProgress = 0.7,		
+    },
+    ["reload_empty_pump"] = {
+        Source = "dry_pump",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 0.99, lhik = 1, rhik = 1, },	
+		},				
+        EventTable = {		
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 10 / 40},	
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 50 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 75 / 40},
+        },		
+        MinProgress = 0.9,		
+    },	
+
 
     ["reload_lmg"] = {
         Source = "wet_120_lmg",
@@ -551,7 +609,31 @@ SWEP.Animations = {
         },
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},	
+    },	
+	
+    ["reload_perosa"] = {
+        Source = "wet_perosa",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 53 / 40},			
+        },				
+    },
+    ["reload_empty_perosa"] = {
+        Source = "dry_perosa",
+        EventTable = {		
+            {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 62 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},					
+        },
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},	
     },		
 }
@@ -612,6 +694,12 @@ SWEP.AttachmentElements = {
             {0, 8},{1, 2},{4, 5},{5, 6},{6, 7},{10,7}
         },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }			
+	},	
+    ["up_perosa"] = {
+        Bodygroups = {
+            {0, 13},{1, 2},{4, 5},{5, 10},{6, 7},{10,7}
+        },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }			
 	},		
     ["up_pdw"] = {
         Bodygroups = {
@@ -625,6 +713,12 @@ SWEP.AttachmentElements = {
         },
 		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }				
 	},		
+    ["up_pump"] = {
+        Bodygroups = {
+            {0, 9},{1, 2},{4, 5},{5, 5},{6, 7},{10,7}
+        },
+		AttPosMods = { [7] = { Pos = Vector(0, -1.5, 4.25), } }				
+	},	
 	
     ["guard_lmg"] = {
         Bodygroups = { {6, 5}, {10, 5} },
@@ -636,7 +730,7 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_drg"] = {
         Bodygroups = { {6, 13}, {10, 11} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 12.2),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
 	},		
     ["guard_acr"] = {
         Bodygroups = { {6, 11}, {10, 7} },

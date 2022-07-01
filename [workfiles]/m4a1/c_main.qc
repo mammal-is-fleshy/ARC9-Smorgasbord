@@ -16,7 +16,8 @@ $bodygroup "upper"
 	studio "m4a1_hg_pump.smd"	
 	blank
 	studio "m4a1_up_a1.smd"		
-	studio "m4a1_up_acr.smd"			
+	studio "m4a1_up_acr.smd"		
+	studio "m4a1_up_perosa.smd"	
 }
 
 $bodygroup "mag_well"
@@ -72,7 +73,8 @@ $bodygroup "iron"
 	studio "m4a1_iron_gibhr.smd"
 	studio "m4a1_iron_cross.smd"
 	blank
-	studio "m4a1_iron_lmg.smd"	
+	studio "m4a1_iron_lmg.smd"
+	studio "m4a1_iron_perosa.smd"	
 }
 
 $bodygroup "handguard"
@@ -197,6 +199,16 @@ $sequence "fire_iron" {
 
 $sequence "fire_bolt" {
 	"anims\fire_bolt.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
+
+$sequence "fire_pump" {
+	"anims\fire_pump.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
 	fadein 0.02
@@ -347,6 +359,16 @@ $sequence "dry_pump" {
 	fps 40
 }
 
+
+$sequence "wet_pump" {
+	"anims\wet_pump.smd"
+	activity "ACT_VM_RELOAD" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "dry_sniper" {
 	"anims\dry_sniper.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
@@ -434,6 +456,25 @@ $sequence "wet_gih" {
 	snap	
 	fps 40
 }
+
+$sequence "dry_perosa" {
+	"anims\dry_perosa.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_perosa" {
+	"anims\wet_perosa.smd"
+	activity "ACT_VM_RELOAD" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"

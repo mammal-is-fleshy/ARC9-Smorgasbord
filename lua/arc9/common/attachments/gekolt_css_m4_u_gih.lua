@@ -13,10 +13,6 @@ ATT.ActivateElements = {"up_gih", "pre_muzzed", "noguard"}
 ATT.ClipSizeOverride = 60
 ATT.ChamberSize = 2
 
-ATT.RecoilMult = 1.5
-ATT.DamageMinMult = 1.5
-ATT.PhysBulletMuzzleVelocityMult = 1.25
-
 ATT.Firemodes = {
     {
 		PrintName = "Alternating",
@@ -54,7 +50,7 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css_flat", "mount_css"},
-        Pos = Vector(0,-2.3, -12),
+        Pos = Vector(0,-2.3, -10.5),
         Ang = Angle(90, 0, -90),
     },		
 }
