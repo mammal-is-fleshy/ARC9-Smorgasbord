@@ -230,6 +230,10 @@ SWEP.BulletBones = {
 
 
 SWEP.Animations = {
+    ["firemode"] = {
+        Source = "firemode",
+    },
+
     ["fire"] = {
         Source = {"fire"},
     },
@@ -343,7 +347,7 @@ SWEP.Animations = {
         MagSwapTime = 80/40,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
             {s =  "gekolt_css/m249_coverup.wav" ,   t = 20 / 40},
@@ -369,7 +373,7 @@ SWEP.Animations = {
         },			
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.075, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
+        { t = 0.075, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},		
         MinProgress = 0.825,		
     },	
