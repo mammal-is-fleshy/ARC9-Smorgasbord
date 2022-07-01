@@ -3,7 +3,7 @@ ATT.CompactName = "Sweeper"
 ATT.Icon = Material("")
 ATT.Description = [[The lord shan't forgive your sins.
 Of course it comes with a drum magazine.
-In case you haven't figure it out, it's a shotgun receiver.]]
+In case you haven't figure it out, it's an automatic shotgun receiver.]]
  
 ATT.Pros = {}
 ATT.Cons = {}
@@ -37,10 +37,10 @@ end
 
 ATT.NumOverride = 8
 ATT.SpreadAdd = 0.025
-ATT.DamageMaxMult = 0.5
-ATT.DamageMinMult = 0.5
+ATT.DamageMaxMult = 0.45
+ATT.DamageMinMult = 0.45
 
-ATT.RecoilMult = 3
+ATT.RecoilMult = 4
 ATT.RecoilPatternDriftMult = 5
 
 ATT.Ammo = "buckshot"

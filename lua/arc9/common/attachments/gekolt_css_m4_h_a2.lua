@@ -1,6 +1,6 @@
-ATT.PrintName = "M16A2 Handguard"
-ATT.CompactName = "A2"
-ATT.Description = [[A long boy.]]
+ATT.PrintName = "Full length Handguard"
+ATT.CompactName = "F.Length"
+ATT.Description = [[Full length handguard for full length engagement.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_a2.png", "mips smooth")
 

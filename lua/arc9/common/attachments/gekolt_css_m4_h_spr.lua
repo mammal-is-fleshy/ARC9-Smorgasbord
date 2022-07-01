@@ -1,6 +1,7 @@
 ATT.PrintName = "Special-Purpose Rifle Handguard"
 ATT.CompactName = "SPR"
-ATT.Description = [[It's kinda neat, I guess.]]
+ATT.Description = [[Small and slim, fit right in.
+Compact design with three extra rails.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_spr.png", "mips smooth")
 

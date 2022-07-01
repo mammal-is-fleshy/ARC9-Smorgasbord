@@ -1,7 +1,8 @@
-ATT.PrintName = "Sugma Receiver"
-ATT.CompactName = "Sugma"
+ATT.PrintName = "Ancillary Receiver"
+ATT.CompactName = "Aux"
 ATT.Icon = Material("")
-ATT.Description = [[Adapter for converting the gun into a sugmachine gun. Uh, wait, that doesn't sound right.]]
+ATT.Description = [[An adapter slapped onto a standard magwell to accept lower calibre.
+For scenarios where you need to downgrade your rifle.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

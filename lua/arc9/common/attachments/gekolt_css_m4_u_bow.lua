@@ -1,7 +1,8 @@
 ATT.PrintName = "Ranger Receiver"
 ATT.CompactName = "Ranger"
 ATT.Icon = Material("")
-ATT.Description = [[I have no idea why you would want to convert your gun into a crossbow, but here's the option to do so anyway. We'll even throw in explosive bolts, free of charge.]]
+ATT.Description = [[Why would you want to convert your gun into a crossbow? 
+Armed with explosive bolts because.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

@@ -1,7 +1,8 @@
 ATT.PrintName = "Little Italy Receiver"
 ATT.CompactName = "Perosa"
 ATT.Icon = Material("")
-ATT.Description = [[Twin barrel 9mm madness.]]
+ATT.Description = [[Twin barrel 9mm madness.
+Comes with a preinstalled grip for recoil control]]
 
 ATT.Pros = {}
 ATT.Cons = {}

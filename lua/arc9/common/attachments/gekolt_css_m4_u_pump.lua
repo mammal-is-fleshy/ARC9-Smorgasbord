@@ -1,7 +1,8 @@
 ATT.PrintName = "Breacher Receiver"
 ATT.CompactName = "Breacher"
 ATT.Icon = Material("")
-ATT.Description = [[Usually these are installed under the handguard.
+ATT.Description = [[Compliment breaching device for your primary.
+Usually these are installed under the handguard.
 Not going to stop you from instaling it directly on the receiver]]
  
 ATT.Pros = {}

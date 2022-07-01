@@ -1,6 +1,7 @@
 ATT.PrintName = "Targeter Handguard"
 ATT.CompactName = "Targeter"
-ATT.Description = [[Despite its name, it doesn't really help that much with targeting.]]
+ATT.Description = [[Despite its name, it doesn't really help that much with targeting.
+Fitted with three extra rails.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_lr300.png", "mips smooth")
 

@@ -1,6 +1,7 @@
 ATT.PrintName = "Dragoon Handguard"
 ATT.CompactName = "Dragoon"
-ATT.Description = [[Hit them with that driveby whip.]]
+ATT.Description = [[Design fitted for mounting or moving. 
+Hit them with that driveby whip.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_dragoon.png", "mips smooth")
 

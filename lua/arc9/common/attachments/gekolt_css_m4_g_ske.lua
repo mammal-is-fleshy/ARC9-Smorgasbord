@@ -1,7 +1,8 @@
 ATT.PrintName = "Skeleton Grip"
 ATT.CompactName = "Skeleton"
 ATT.Icon = Material("")
-ATT.Description = [[Nah dawg, you don't need those parts. Just get rid of them.]]
+ATT.Description = [[Because that amount of weight saved is really the defactor of life and death.
+What do you think would happen if your grip is extremely floaty?]]
 
 ATT.Pros = {}
 ATT.Cons = {}

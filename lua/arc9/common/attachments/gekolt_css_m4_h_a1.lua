@@ -1,6 +1,6 @@
 ATT.PrintName = "Antique Handguard"
 ATT.CompactName = "Antique"
-ATT.Description = [[I don't care if it's an antique, I want my gun parts and I want them now.]]
+ATT.Description = [[It's old, outdated and you want it for your serious anarchist roleplay.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_a1.png", "mips smooth")
 

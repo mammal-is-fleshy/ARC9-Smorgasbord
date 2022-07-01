@@ -1,6 +1,6 @@
-ATT.PrintName = "??????? Handguard"
-ATT.CompactName = "SPADE"
-ATT.Description = [[Funny looking guard.]]
+ATT.PrintName = "Bulwark Handguard"
+ATT.CompactName = "Bulwark"
+ATT.Description = [[Short handguard fitted with a peculiar flash guard.]]
 
 ATT.Icon = Material("")
 

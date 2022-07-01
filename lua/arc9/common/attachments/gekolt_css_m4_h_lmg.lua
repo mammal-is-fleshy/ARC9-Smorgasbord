@@ -1,6 +1,6 @@
 ATT.PrintName = "LMG Handguard"
 ATT.CompactName = "LMG"
-ATT.Description = [[Wonder what this is supposed to be for?]]
+ATT.Description = [[Heavy duty handguard designed for long sustaining fire.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_lmg.png", "mips smooth")
 

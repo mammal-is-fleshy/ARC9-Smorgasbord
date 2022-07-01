@@ -1,6 +1,7 @@
 ATT.PrintName = "Precision Stock"
 ATT.CompactName = "Precision"
-ATT.Description = [[Real cool, sniper-style.]]
+ATT.Description = [[Sniper-style stock for single fire compensation. 
+You check and shoulder would thank you for this]]
 
 ATT.Icon = Material("")
 

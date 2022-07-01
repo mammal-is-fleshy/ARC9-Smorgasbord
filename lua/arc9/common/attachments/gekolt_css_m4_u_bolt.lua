@@ -1,7 +1,8 @@
 ATT.PrintName = "Predator Receiver"
 ATT.CompactName = "Predator"
 ATT.Icon = Material("")
-ATT.Description = [[Converts the rifle to bolt-action in order to improve its... actually, I don't know why you'd want to do this. Here it is anyway.]]
+ATT.Description = [[Converts the rifle to bolt-action in order to improve its... ehhhhhhhhhh
+Comes with a built-in suppressor.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

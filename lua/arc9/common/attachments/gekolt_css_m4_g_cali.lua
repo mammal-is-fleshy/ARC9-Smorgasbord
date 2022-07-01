@@ -1,7 +1,8 @@
 ATT.PrintName = "Cali Compliance Grip"
 ATT.CompactName = "Cali"
 ATT.Icon = Material("")
-ATT.Description = [[Uncomfortable grip with which it is physically impossible to perform a mass shooting.]]
+ATT.Description = [[Uncomfortable hunting grip for loopholes.
+Physically impossible to perform a mass shooting.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

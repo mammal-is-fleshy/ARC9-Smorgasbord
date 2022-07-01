@@ -1,7 +1,9 @@
 ATT.PrintName = "Defiant Receiver"
 ATT.CompactName = "Defiant"
 ATT.Icon = Material("")
-ATT.Description = [[One of the stupidest ideas for a gun ever conceived. Lets your gun shoot P90 magazines.]]
+ATT.Description = [[One of the stupidest ideas for a gun ever conceived.
+Turns your M4 into a non-PDW length PDW.
+Lets your gun shoot P90 magazines.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

@@ -1,6 +1,7 @@
 ATT.PrintName = "Woodsman Handguard"
 ATT.CompactName = "Woodsman"
-ATT.Description = [[IT'S POLYMER NOT WOOD]]
+ATT.Description = [[IT'S POLYMER NOT WOOD.
+Semi-automati only system for precision shot.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_adar.png", "mips smooth")
 

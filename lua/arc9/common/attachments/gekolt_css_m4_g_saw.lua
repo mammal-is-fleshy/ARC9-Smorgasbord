@@ -1,7 +1,8 @@
 ATT.PrintName = "ChainSAW Grip"
 ATT.CompactName = "ChainSAW"
 ATT.Icon = Material("")
-ATT.Description = [[Uncomfortable.]]
+ATT.Description = [[Extremely uncomfortable grip for hip firing.
+Don't ask how do you even engage the magazine release button.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

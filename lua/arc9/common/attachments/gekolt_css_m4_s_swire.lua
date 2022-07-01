@@ -1,6 +1,6 @@
 ATT.PrintName = "SWire Stock"
 ATT.CompactName = "SWire"
-ATT.Description = [[It's wired but it's a sliding one]]
+ATT.Description = [[It's a wired stock but it's a sliding one. Slide not included]]
 
 ATT.Icon = Material("")
 

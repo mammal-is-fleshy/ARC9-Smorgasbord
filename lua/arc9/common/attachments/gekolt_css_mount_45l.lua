@@ -1,7 +1,7 @@
 ATT.PrintName = "45 Degree Canted Mount (Right)"
 ATT.CompactName = "45L"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Extra rail for extra attachments.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/mount_45l.mdl"

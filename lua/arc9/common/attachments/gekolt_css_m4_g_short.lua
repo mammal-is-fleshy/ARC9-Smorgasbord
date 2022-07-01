@@ -1,7 +1,8 @@
 ATT.PrintName = "Short Grip"
 ATT.CompactName = "Short"
 ATT.Icon = Material("")
-ATT.Description = [[How do you even hold it?]]
+ATT.Description = [[How do you even hold it?
+Better question, why would you want it?]]
 
 ATT.Pros = {}
 ATT.Cons = {}

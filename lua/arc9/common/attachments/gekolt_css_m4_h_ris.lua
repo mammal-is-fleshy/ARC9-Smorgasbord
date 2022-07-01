@@ -1,6 +1,7 @@
 ATT.PrintName = "RIS Handguard"
 ATT.CompactName = "RIS"
-ATT.Description = [[Railed hanguard for extra mounted devices.]]
+ATT.Description = [[Railed hanguard for extra mounted devices.
+Fitted with four extra rails.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_ris.png", "mips smooth")
 

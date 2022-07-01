@@ -1,6 +1,6 @@
 ATT.PrintName = "ACR Handguard"
 ATT.CompactName = "ACR"
-ATT.Description = [[Special handguard system with a cooling device allowing rapid two-shot fire.]]
+ATT.Description = [[Special system with a cooling device allowing for rapid two-shot fire.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_acr.png", "mips smooth")
 
