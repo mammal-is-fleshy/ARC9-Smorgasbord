@@ -26,4 +26,6 @@ ATT.DamageMinMult = 0.5
 ATT.RangeMinMult = 1.15
 ATT.RangeMaxMult = 0.65
 
+ATT.RecoilMult = 0.65
+
 ATT.Ammo = "pistol"

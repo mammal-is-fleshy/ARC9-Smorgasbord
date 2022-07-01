@@ -8,8 +8,8 @@ ATT.Cons = {}
 ATT.SortOrder = 6
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_bolt", "noguard"}
-ATT.ShootSound = "gekolt_css/m4a1-1.wav"
+ATT.ActivateElements = {"up_bolt", "noguard", "pre_muzzed"}
+ATT.ShootSound = "gekolt_css/cs5_sup-1.wav"
 
 ATT.ClipSizeOverride = 5
 
@@ -49,3 +49,28 @@ ATT.DamageMinOverride = 120
 ATT.RangeMult = 1.5
 
 ATT.Silenced = true
+
+
+
+ATT.Attachments = {
+    {
+        PrintName = "MOUNT LEFT",
+        Category = "mountr_css",
+        Pos = Vector(-1.5,-0.3, -18),
+        Ang = Angle(-90, 180, 0),
+    },
+	
+    {
+        PrintName = "MOUNT Right",
+        Category = "mountl_css",
+        Pos = Vector(1.5,-0.3, -18),
+        Ang = Angle(90, 0, 0),
+    },	
+
+    {
+        PrintName = "MOUNT TOP",
+        Category = {"tac_css_flat", "mount_css"},
+        Pos = Vector(0,-1.95, -18),
+        Ang = Angle(90, 0, -90),
+    },		
+}

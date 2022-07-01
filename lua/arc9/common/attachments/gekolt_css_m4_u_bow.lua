@@ -8,7 +8,7 @@ ATT.Cons = {}
 ATT.SortOrder = 7
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_bow", "noguard", "nogrip"}
+ATT.ActivateElements = {"up_bow", "noguard", "nogrip", "pre_muzzed"}
 ATT.ShootSound = {"gekolt_css/cross_fire.wav"}
 
 ATT.Sights = {

@@ -26,6 +26,11 @@ ATT.Firemodes = {
     }
 }
 
+ATT.SpeedMultSightsMult = 2
+ATT.SpeedMultShootingMult = 1.25
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.15
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_br"
 end

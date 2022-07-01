@@ -2,7 +2,7 @@ ATT.PrintName = "Special-Purpose Rifle Handguard"
 ATT.CompactName = "SPR"
 ATT.Description = [[It's kinda neat, I guess.]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_h_spr.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "css_m4_handguard"
@@ -26,4 +26,11 @@ ATT.Attachments = {
         Pos = Vector(1.5,0.2, -4),
         Ang = Angle(90, 0, 0),
     },	
+	
+    {
+        PrintName = "MOUNT TOP",
+        Category = {"tac_css_flat", "mount_css"},
+        Pos = Vector(0,-1.3, -3.25),
+        Ang = Angle(90, 0, -90),
+    },		
 }

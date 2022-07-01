@@ -2,7 +2,7 @@ ATT.PrintName = "LMG Handguard"
 ATT.CompactName = "LMG"
 ATT.Description = [[Wonder what this is supposed to be for?]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_h_lmg.png", "mips smooth")
 
 ATT.SortOrder = 4
 ATT.Category = "css_m4_handguard"

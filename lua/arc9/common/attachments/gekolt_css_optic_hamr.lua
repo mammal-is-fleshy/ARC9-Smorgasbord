@@ -6,7 +6,7 @@ ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/hamr.mdl"
 
-ATT.Category = "optic_css"
+ATT.Category = {"optic_css", "optic_css_m"}
 ATT.Folder = "SCOPE"
 
 // Allows a custom sight position to be defined
@@ -33,7 +33,7 @@ ATT.RTScopeAdjustmentLevels = 1
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 10
-ATT.RTScopeReticle = Material("arc9_css/scope2_border.png", "mips smooth")
+ATT.RTScopeReticle = Material("arc9_css/scope3_border.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
@@ -49,6 +49,6 @@ ATT.AimDownSightsTimeAdd = 0.14
 ATT.SprintToFireTimeAdd = 0.08
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("arc9/dot.png", "mips smooth")
-ATT.HoloSightSize = 1024
+ATT.HoloSightReticle = Material("arc9_css/acog_top.png", "mips smooth")
+ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true

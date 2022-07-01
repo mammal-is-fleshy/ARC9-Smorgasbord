@@ -15,6 +15,7 @@ $bodygroup "iron"
 	studio "awp_iron.smd"
 	studio "awm_iron_smg.smd"		
 	blank		
+	studio "awm_rail.smd"	
 }
 
 $bodygroup "stock"

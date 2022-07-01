@@ -1,0 +1,8 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "arc9_css\shared_tacticaltat"
+	"$bumpmap" "arc9_css\shared_tacticaltat_norm"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "arc9_css\shared_tacticaltat"
+
+}

@@ -105,7 +105,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 1 -- Multiplier for automatic recoil control.
+SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1
 
@@ -255,7 +255,7 @@ SWEP.Animations = {
         Source = "dry_3",
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 1, rhik = 1, },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.65, lhik = 1, rhik = 1, },	
 		{ t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },			
 		},	
         EventTable = {		
@@ -272,6 +272,9 @@ SWEP.Animations = {
     },
     ["idle"] = {
         Source = "idle",
+    }, 
+	["firemode"] = {
+        Source = "firemode",
     },
     ["idle_empty"] = {
         Source = "idle",
@@ -330,7 +333,7 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 0, },
         { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.6, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, },
-		{ t = 0.8, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, },	
+		{ t = 0.85, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, },	
 		},		
         EventTable = {		
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 10 / 40},
@@ -341,6 +344,64 @@ SWEP.Animations = {
         },		
         MinProgress = 0.9,		
     },
+	
+
+    ["fire_empty_pump"] = {
+        Source = {"fire"},	
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },},			
+	},
+    ["fire_iron_empty_pump"] = {
+        Source = {"fire"},		
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },},			
+	},		
+    ["fire_pump"] = {
+        Source = {"fire_pump"},
+        EventTable = {
+            {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
+        },				
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},		
+	},	
+    ["fire_iron_pump"] = {
+        Source = {"fire_pump"},
+        EventTable = {
+            {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
+        },				
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+	},		
+    ["reload_pump"] = {
+        Source = "wet_pump",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},				
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 42 / 40},			
+        },	
+        MinProgress = 0.7,		
+    },
+    ["reload_empty_pump"] = {
+        Source = "dry_pump",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 0.99, lhik = 1, rhik = 1, },	
+		},				
+        EventTable = {		
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 10 / 40},	
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 50 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 75 / 40},
+        },		
+        MinProgress = 0.9,		
+    },	
+
 
     ["reload_lmg"] = {
         Source = "wet_120_lmg",
@@ -529,6 +590,55 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},	
+    },	
+	
+	
+    ["reload_gih"] = {
+        Source = "wet_gih",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},			
+        },				
+    },
+    ["reload_empty_gih"] = {
+        Source = "dry_gih",
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},					
+        },
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},	
+    },	
+	
+    ["reload_perosa"] = {
+        Source = "wet_perosa",
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 53 / 40},			
+        },				
+    },
+    ["reload_empty_perosa"] = {
+        Source = "dry_perosa",
+        EventTable = {		
+            {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 62 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},					
+        },
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},	
     },		
 }
 
@@ -540,7 +650,7 @@ SWEP.AttachmentElements = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7},
         },
         AttPosMods = {
-            [5] = { Pos = Vector(0, 1.2, 17), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
+            [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.3, 4.5), } }		
 	},
     ["up_bow"] = {
         Bodygroups = {
@@ -553,20 +663,20 @@ SWEP.AttachmentElements = {
             {0, 4},{4, 4},{5, 9}
         },
         AttPosMods = {
-            [7] = { Pos = Vector(0, -2.25, 1), } }			
+            [7] = { Pos = Vector(0, -3, 0.5), } }	
 	},
     ["up_proto"] = {
         Bodygroups = {
             {0, 1},{4, 2},{5, 8}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.5, 4), } }			
+		AttPosMods = { [7] = { Pos = Vector(0, -3.9, 4.25), } }			
 	},
     ["up_a1"] = {
         Bodygroups = {
             {0, 11},{4, 3},{5, 8}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.25, 4), } }			
-	},	
+		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }			
+	},		
     ["up_ak"] = {
         Bodygroups = {
             {1, 1},{3, 1},{4, 5},{5, 1}
@@ -581,48 +691,86 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 2},{5, 3},{6, 7},{10,7}
         },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),} }			
+	},	
+    ["up_gih"] = {
+        Bodygroups = {
+            {0, 8},{1, 2},{4, 5},{5, 6},{6, 7},{10,7}
+        },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }			
+	},	
+    ["up_perosa"] = {
+        Bodygroups = {
+            {0, 13},{1, 2},{4, 5},{5, 10},{6, 7},{10,7}
+        },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }			
 	},		
     ["up_pdw"] = {
         Bodygroups = {
             {0, 3},{4, 5},{5, 2},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -2.5, 1), } }				
+		AttPosMods = { [7] = { Pos = Vector(0, -2.5, 1), }, [8] = { Pos = Vector(0, -0.475, 19.75), } }				
 	},	
     ["up_sg"] = {
         Bodygroups = {
             {0, 5},{1, 2},{4, 5},{5, 8},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.3, 4), } }			
+		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }				
 	},		
+    ["up_pump"] = {
+        Bodygroups = {
+            {0, 9},{1, 2},{4, 5},{5, 5},{6, 7},{10,7}
+        },
+		AttPosMods = { [7] = { Pos = Vector(0, -1.5, 4.25), } }				
+	},	
 	
     ["guard_lmg"] = {
         Bodygroups = { {6, 5}, {10, 5} },
-	},	
+		AttPosMods = { [5] = { Pos = Vector(0, 1.85, 11.9),}, [8] = { Pos = Vector(0, -0.25, 30), } }			
+	},		
     ["guard_a1"] = {
         Bodygroups = { {6, 2}, {10, 2} },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), } }			
 	},	
+    ["guard_drg"] = {
+        Bodygroups = { {6, 13}, {10, 11} },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 12.2),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
+	},		
+    ["guard_acr"] = {
+        Bodygroups = { {6, 11}, {10, 7} },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), } }			
+	},		
     ["guard_a2"] = {
         Bodygroups = { {6, 3}, {10, 3} },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), } }			
 	},	
     ["guard_10"] = {
         Bodygroups = { {6, 1}, {10, 1} },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), } }			
 	},	
     ["guard_adar"] = {
         Bodygroups = { {6, 4}, {10, 4} },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), } }			
 	},	
     ["guard_no"] = {
         Bodygroups = { {6, 6}, {10, 6} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 12.75), } }			
 	},	
+    ["guard_sten"] = {
+        Bodygroups = { {6, 14}, {10, 12} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 19), } }			
+	},		
     ["guard_lr300"] = {
         Bodygroups = { {6, 9}, {10, 9} },
+		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 23), } }			
 	},	
     ["guard_ris"] = {
         Bodygroups = { {6, 10}, {10, 10} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), } }			
+        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), },[8] = { Pos = Vector(0, -0.25, 21.2), } }					
 	},		
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), } }		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), } }		
 	},		
 	
     ["s_a1"] = {
@@ -646,10 +794,22 @@ SWEP.AttachmentElements = {
     ["s_light"] = {
         Bodygroups = { {2, 8} },
 	},		
+    ["s_swire"] = {
+        Bodygroups = { {2, 9} },
+	},			
+    ["s_608"] = {
+        Bodygroups = { {2, 10} },
+	},	
+    ["s_607"] = {
+        Bodygroups = { {2, 11} },
+	},			
 	
     ["g_ske"] = {
         Bodygroups = { {7, 3} },
 	},	
+    ["g_short"] = {
+        Bodygroups = { {7, 5} },
+	},		
     ["g_hunt"] = {
         Bodygroups = { {7, 1},{2, 5} },
 	},		
@@ -659,15 +819,24 @@ SWEP.AttachmentElements = {
 
     ["fg_saw"] = {
         Bodygroups = { {8, 1} },
-	},		
+	},
 
 }
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)
+SWEP.Hook_ModifyBodygroups = function(wep, data)  -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
     local model = data.model
-    if ( wep.Attachments[7].Installed and wep:HasElement("keep_rs") ) then model:SetBodygroup(5,8) end	
+    if wep.Attachments[7].Installed and wep:HasElement("keep_rs") then model:SetBodygroup(5,8) end	
 	if wep.Attachments[7].Installed then model:SetBodygroup(5,8) end
 	if wep.Attachments[7].Installed and not wep:HasElement("keep_rs") then model:SetBodygroup(10,7) end	
+-- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
+	if wep.Attachments[7].Installed and wep:HasElement("up_9mm") then model:SetBodygroup(3,1) end	
+	if wep.Attachments[7].Installed and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end	
+-- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
+	if wep.Attachments[7].Installed and wep:HasElement("up_a1") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
+	if wep.Attachments[7].Installed and wep:HasElement("up_sg") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end		
+	if wep.Attachments[7].Installed and wep:HasElement("up_proto") and not wep:HasElement("m16_on") then model:SetBodygroup(3,3) end		
+-- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
+	if wep.Attachments[7].Installed and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
 end
 
 
@@ -721,7 +890,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"nogrip"},
         Category = {"grip_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 1.5, 12),
+        Pos = Vector(0, 1.6, 12),
         Ang = Angle(90, 0, -90),	
 		MergeSlots = {6}		
     },
@@ -744,9 +913,21 @@ SWEP.Attachments = {
 		ActivateElements = {"no_irons", "no_optic"},
 
 		ExcludeElements = {"fg_saw"},
-        Category = {"optic_css"}, 
+        Category = {"optic_css", "mount_css_m16"}, 
         Bone = "W_Main",
         Pos = Vector(0, -1.7, 3),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),			
     },
+	
+
+    {
+        PrintName = "Muzzle",
+        DefaultName = "None",
+
+		ExcludeElements = {"pre_muzzed"},
+        Category = {"muzzle_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, -0.25, 20),
+        Ang = Angle(90, 0, -90),		
+    },	
 }
