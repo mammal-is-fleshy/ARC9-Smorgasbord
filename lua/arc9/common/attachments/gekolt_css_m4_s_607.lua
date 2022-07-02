@@ -1,6 +1,6 @@
-ATT.PrintName = "607 Stock"
-ATT.CompactName = "607"
-ATT.Description = [[]]
+ATT.PrintName = "Compact Stock"
+ATT.CompactName = "Compact"
+ATT.Description = [[For those with long shoulder]]
 
 ATT.Icon = Material("")
 
