@@ -9,7 +9,7 @@ ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_sten", "nogrip"}
 
 ATT.SpeedMult = 1.15
-ATT.AimDownSightsTime = 0.8
+ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.85
 ATT.PhysBulletMuzzleVelocityMult = 0.5
 
