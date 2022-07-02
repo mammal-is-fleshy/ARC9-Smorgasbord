@@ -8,6 +8,9 @@ Contre Srike Sorse in 2022 Gmod Tacticle Reelesm :tm:
 Google Images - ref
 Arctic - Incredibly doggy original restoration models
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
+Fesiug??? - Nade ent
+
+Rainbow Six Vegas 2 - Mass26
 CSGO, CSCD - Sounds??
 https://gamebanana.com/mods/210646 - SPR Guard
 https://gamebanana.com/mods/210602 - Targeter Guard
@@ -27,15 +30,29 @@ https://gamebanana.com/mods/39876 - Muzzle/Grip/T1
 [checklist]
 -------------
 AWP
-M4
-AK
+M4 (handguard:16 | receiver:13 | stock:10 | grip:4)
+AK (handguard:9 | receiver:7 | stock:12 | grip:4)
 M9???
 Glock???
 MP5/UMP/G3
 Mac10??
-M3
+M3 (handguard:4 | receiver:3 | stock:4 )
 Makarov??
 FAL???????????
+
+
+-------------
+[wishlist]
+-------------
+[M4]
+- .30 dmr stuff
+- single shot .50cal
+- acr Upper implement
+
+
+
+
+
 
 
 --- Basicall Dev Log -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

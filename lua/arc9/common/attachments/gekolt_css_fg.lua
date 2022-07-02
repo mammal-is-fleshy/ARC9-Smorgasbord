@@ -7,7 +7,7 @@ ATT.Icon = Material("")
 ATT.Model = "models/weapons/geckololt_css/atts/fg.mdl"
 
 ATT.SortOrder = 0
-ATT.Category = "grip_css"
+ATT.Category = {"grip_css", "grip_short_css"}
 
 ATT.RecoilPatternDriftMult = 0.75
 ATT.RecoilAutoControlMult = 1.15

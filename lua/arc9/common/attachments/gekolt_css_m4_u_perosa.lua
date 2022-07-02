@@ -2,7 +2,7 @@ ATT.PrintName = "Little Italy Receiver"
 ATT.CompactName = "Perosa"
 ATT.Icon = Material("")
 ATT.Description = [[Twin barrel 9mm madness.
-Comes with a preinstalled grip for recoil control]]
+Comes with a preinstalled grip for recoil control.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -10,9 +10,9 @@ ATT.SortOrder = 7
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_perosa", "pre_muzzed", "noguard", "nogrip"}
-
 ATT.ShootSound = "gekolt_css/mp5-1.wav"
 ATT.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
+ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.ClipSizeOverride = 64
 ATT.ChamberSize = 2

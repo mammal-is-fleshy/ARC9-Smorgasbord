@@ -31,6 +31,13 @@ ATT.Sights = {
     }
 }
 
+ATT.Firemodes = {
+    {
+        Mode = 1,
+        PrintName = "PUMP"
+    }
+}
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_pump"
 end
