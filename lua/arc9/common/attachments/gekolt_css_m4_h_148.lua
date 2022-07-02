@@ -7,7 +7,7 @@ ATT.Icon = Material("")
 
 ATT.SortOrder = 0.2
 ATT.Category = "css_m4_handguard"
-ATT.ActivateElements = {"guard_148", "nogrip"}
+ATT.ActivateElements = {"guard_148", "nogrip", "pre_ubgl"}
 
 ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"

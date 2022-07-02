@@ -19,6 +19,7 @@ ATT.DamageMinMult = 1.5
 ATT.PhysBulletMuzzleVelocityMult = 1.25
 ATT.RPMMult = 600 / 700
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
+ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_ak"
+
 end

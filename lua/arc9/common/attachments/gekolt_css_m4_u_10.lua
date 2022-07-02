@@ -8,9 +8,12 @@ ATT.SortOrder = 1.5
 ATT.Category = "css_m4_up"
 ATT.ActivateElements = {"up_proto", "keep_rs"}
 ATT.ShootSound = "gekolt_css/sg550-1.wav"
+ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+
     return anim .. "_proto"
+
 end
 
 ATT.ClipSizeOverride = 20

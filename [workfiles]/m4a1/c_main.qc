@@ -95,7 +95,8 @@ $bodygroup "handguard"
 	studio "m4a1_hg_dragoon.smd"
 	studio "m4a1_hg_sten.smd"
 	studio "m4a1_hg_doe.smd"
-	studio "m4a1_hg_608.smd"	
+	studio "m4a1_hg_608.smd"
+	studio "m4a1_hg_bn36.smd"	
 }
 
 $bodygroup "grip"
@@ -137,6 +138,7 @@ $bodygroup "fsight"
 	studio "m4a1_fs_sten.smd"	
 	studio "m4a1_fs_doe.smd"	
 	studio "m4a1_fs_608.smd"		
+	studio "m4a1_fs_bn36.smd"		
 }
 
 $illumposition 0 0 0

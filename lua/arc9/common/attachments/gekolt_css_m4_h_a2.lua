@@ -1,4 +1,4 @@
-ATT.PrintName = "Full length Handguard"
+ATT.PrintName = "Full-length Handguard"
 ATT.CompactName = "F.Length"
 ATT.Description = [[Full length handguard for full length engagement.]]
 

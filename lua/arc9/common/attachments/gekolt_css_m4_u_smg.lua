@@ -18,8 +18,9 @@ ATT.ClipSizeOverride = 32
 
 ATT.RPMMult = 900 / 700
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
+ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_smg"
+
 end
 
 ATT.DamageMaxMult = 0.75

@@ -20,6 +20,6 @@ ATT.RecoilPatternDriftMult = 3
 ATT.ActivePosOverride = Vector(-0.5, 2, -0.5)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_lmg"
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+	return anim .. "_lmg"
 end

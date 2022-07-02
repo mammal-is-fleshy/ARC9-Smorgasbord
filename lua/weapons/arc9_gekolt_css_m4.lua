@@ -239,13 +239,26 @@ SWEP.BulletBones = {
 SWEP.Hook_TranslateAnimation = function(wep, anim)		
     if wep:GetUBGL() then
     		if anim == "idle" then  return "idle_ubgl" end	
-    		if anim == "fire" then  return "fire_ubgl" end				
+    		if anim == "fire" then  return "fire_ubgl" end						
     end
 end
 
 
 
 SWEP.Animations = {
+--- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
+	["idle_ubgl_smg"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
+    ["fire_ubgl_smg"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
+	["idle_ubgl_a1"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
+    ["fire_ubgl_a1"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
+	["idle_ubgl_ak"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
+    ["fire_ubgl_ak"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
+	["idle_ubgl_proto"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
+    ["fire_ubgl_proto"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
+	["idle_ubgl_lmg"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
+    ["fire_ubgl_lmg"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
+--- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
+
     ["firemode"] = {
         Source = "firemode",
     },
@@ -794,6 +807,10 @@ SWEP.AttachmentElements = {
         Bodygroups = { {6, 3}, {10, 3} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), } }			
 	},	
+    ["guard_bn63"] = {
+        Bodygroups = { {6, 17}, {10, 15} },
+		AttPosMods = { [5] = { Pos = Vector(0, 1.5, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), } }			
+	},		
     ["guard_10"] = {
         Bodygroups = { {6, 1}, {10, 1} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), } }			
