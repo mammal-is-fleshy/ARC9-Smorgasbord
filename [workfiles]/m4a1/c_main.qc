@@ -480,6 +480,42 @@ $sequence "wet_perosa" {
 }
 
 
+$sequence "nade_fire" {
+	"anims\nade_fire.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "nade_idle" {
+	"anims\nade_idle.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "nade_reload" {
+	"anims\nade_reload.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "r2n" {
+	"anims\r2n.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "n2r" {
+	"anims\n2r.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
 $bonemerge "ValveBiped.Bip01_L_UpperArm"

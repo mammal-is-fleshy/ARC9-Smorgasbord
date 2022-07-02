@@ -207,6 +207,11 @@ SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
+SWEP.UBGLIntegralReload = true -- The UBGL uses reload animations that are baked into the gun.
+SWEP.DoFireAnimationUBGL = true
+SWEP.NoShellEjectUBGL = true
+SWEP.MuzzleEffectQCAUBGL = 1
+
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "gekolt_css/m4a1_unsil-1.wav"
@@ -231,11 +236,46 @@ SWEP.BulletBones = {
 }
 
 
+SWEP.Hook_TranslateAnimation = function(self, anim)		
+    if self:GetUBGL() then
+    		if anim == "idle" then  return "idle_ubgl"		end	
+    		if anim == "fire" then  return "fire_ubgl"		end				
+    end
+end
+
+
+
 SWEP.Animations = {
     ["firemode"] = {
         Source = "firemode",
     },
-
+    ["enter_ubgl"] = {
+        Source = "r2n",
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 1, }},			
+    },  
+	["exit_ubgl"] = {
+        Source = "n2r",
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 1, }},		
+    },  
+	["reload_ubgl"] = {
+        Source = "nade_reload",
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 6 / 40},	
+            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 50 / 40},				
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 80 / 40},
+        },				
+    },  	
+	["idle_ubgl"] = {
+        Source = "nade_idle",
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+    },
+    ["fire_ubgl"] = {
+        Source = {"nade_fire"},	
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+    },
+	
     ["fire"] = {
         Source = {"fire"},
     },
@@ -757,6 +797,9 @@ SWEP.AttachmentElements = {
     ["guard_10"] = {
         Bodygroups = { {6, 1}, {10, 1} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), } }			
+	},
+    ["guard_148"] = {
+        Bodygroups = { {6, 12} },		
 	},	
     ["guard_adar"] = {
         Bodygroups = { {6, 4}, {10, 4} },
