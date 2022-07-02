@@ -13,6 +13,7 @@ ATT.Firemodes = {
         Mode = 3,
     }
 }
+ATT.RunawayBurstOverride = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_a1"

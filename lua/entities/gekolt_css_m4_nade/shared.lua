@@ -9,7 +9,7 @@ ENT.Spawnable 			= false
 
 AddCSLuaFile()
 
-ENT.Model = "models/weapons/arccw/mifl/fas2/shell/40mm.mdl"
+ENT.Model = "models/Items/AR2_Grenade.mdl"
 ENT.Ticks = 0
 ENT.FuseTime = 0.1
 ENT.Defused = false
