@@ -251,6 +251,8 @@ SWEP.Animations = {
     ["fire_ubgl_smg"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
 	["idle_ubgl_a1"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
     ["fire_ubgl_a1"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
+	["idle_ubgl_acr"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
+    ["fire_ubgl_acr"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
 	["idle_ubgl_ak"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
     ["fire_ubgl_ak"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
 	["idle_ubgl_proto"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
@@ -646,7 +648,19 @@ SWEP.Animations = {
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},	
     },	
-	
+    ["reload_empty_acr"] = {
+        Source = "dry_4",
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 72 / 40},					
+        },
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+		},	
+    },	
+		
 	
     ["reload_gih"] = {
         Source = "wet_gih",
@@ -729,6 +743,12 @@ SWEP.AttachmentElements = {
     ["up_a1"] = {
         Bodygroups = {
             {0, 11},{4, 3},{5, 8}
+        },
+		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }			
+	},	
+    ["up_acr"] = {
+        Bodygroups = {
+            {0, 12},{4, 6},{5, 8}
         },
 		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }			
 	},		
@@ -902,6 +922,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)  -- IM SORRY IM SORRY IM SORRY 
 	if wep.Attachments[7].Installed and wep:HasElement("up_9mm") then model:SetBodygroup(3,1) end	
 	if wep.Attachments[7].Installed and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end	
 -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
+	if wep.Attachments[7].Installed and wep:HasElement("up_acr") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
 	if wep.Attachments[7].Installed and wep:HasElement("up_a1") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
 	if wep.Attachments[7].Installed and wep:HasElement("up_sg") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end		
 	if wep.Attachments[7].Installed and wep:HasElement("up_proto") and not wep:HasElement("m16_on") then model:SetBodygroup(3,3) end		

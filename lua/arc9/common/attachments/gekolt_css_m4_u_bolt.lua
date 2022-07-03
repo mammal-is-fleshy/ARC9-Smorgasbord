@@ -45,9 +45,10 @@ ATT.Ammo = "SniperRound"
 
 ATT.PhysBulletMuzzleVelocityMult = 2.5
 ATT.PenetrationMult = 2
-ATT.DamageMaxMult = 1.5
-ATT.DamageMinOverride = 120
-ATT.RangeMult = 1.5
+ATT.DamageMaxMult = 2
+ATT.DamageMinMult = 150/20
+ATT.RangeMult = 2
+ATT.SpreadMultSights = 0.5
 
 ATT.Silenced = true
 

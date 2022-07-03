@@ -60,6 +60,7 @@ $bodygroup "mag"
 	studio "m4a1_mag_21.smd"
 	studio "m4a1_mag_150.smd"
 	blank 
+	studio "m4a1_mag_40.smd"	
 }
 
 $bodygroup "iron"
@@ -260,6 +261,15 @@ $sequence "dry_2" {
 
 $sequence "dry_3" {
 	"anims\dry_3.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_4" {
+	"anims\dry_4.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

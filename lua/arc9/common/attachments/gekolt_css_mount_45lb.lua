@@ -1,13 +1,12 @@
-ATT.PrintName = "45 Degree Canted Mount (Right)"
-ATT.CompactName = "45L"
+ATT.PrintName = "45 Degree Canted Mount"
+ATT.CompactName = "Canted"
 ATT.Icon = Material("")
-ATT.Description = [[Extra rail for extra attachments.]]
+ATT.Description = [[Canted rail for foregrip attachments at an angle.]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/mount_45l.mdl"
 
 ATT.Category = {"grip_css"}
-ATT.Folder = "MOUNT"
 ATT.Max = 4
 
 // Allows a custom sight position to be defined
