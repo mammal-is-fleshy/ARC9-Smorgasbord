@@ -239,6 +239,7 @@ SWEP.BulletBones = {
 SWEP.Hook_TranslateAnimation = function(wep, anim)		
     if wep:GetUBGL() then
     		if anim == "idle" then  return "idle_ubgl" end	
+    		if anim == "idle_empty" then  return "idle_ubgl" end				
     		if anim == "fire" then  return "fire_ubgl" end						
     end
 end
@@ -266,7 +267,7 @@ SWEP.Animations = {
     },
     ["enter_ubgl"] = {
         Source = "r2n",
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 1, }},			
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }},			
     },  
 	["exit_ubgl"] = {
         Source = "n2r",
