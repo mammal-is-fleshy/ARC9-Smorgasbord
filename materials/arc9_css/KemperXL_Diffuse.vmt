@@ -12,4 +12,5 @@ VertexLitGeneric
  $rimlightexponent 22
  $rimlightboost "0.120000"
  $nocull 1
+ $color2 "[2 3 3]"	 
 }
