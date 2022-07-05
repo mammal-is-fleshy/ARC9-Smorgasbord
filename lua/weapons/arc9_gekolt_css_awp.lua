@@ -250,7 +250,7 @@ SWEP.AttachmentElements = {
 			Pos = Vector(-4, 0, 5),
 			Ang = Angle(0, 0, -5),
         },			
-		AttPosMods = { [3] = { Pos = Vector(0, -0.7, -1), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 2.5, 9), } }			
+		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 2.5, 9), } }			
 	},	
 }
 
@@ -258,7 +258,7 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model	
 	if wep.Attachments[3].Installed then model:SetBodygroup(1,3) end		
-	if wep.Attachments[3].Installed and wep:HasElement("awp_f_smg") then model:SetBodygroup(1,2) end	
+	if wep.Attachments[3].Installed and wep:HasElement("awp_f_smg") then model:SetBodygroup(1,4) end	
 end
 
 SWEP.Attachments = {
@@ -409,7 +409,7 @@ SWEP.Animations = {
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},			
     },
     ["reload_empty_br"] = {
@@ -440,7 +440,7 @@ SWEP.Animations = {
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
     },
     ["reload_empty_smg"] = {

@@ -3,5 +3,5 @@
 	"$basetexture"	"arc9_css\okp_d"
 	"$envmap" "env_cubemap"
 	"$envmapmask" "arc9_css\okp_s"
-	// $color2 "[2.7 2.7 2.7]"	
+	$color2 "[1.2 1.2 1.25]"	
 }
