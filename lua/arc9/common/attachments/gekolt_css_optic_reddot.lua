@@ -12,7 +12,7 @@ ATT.Folder = "REFLEX"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -1.35),
+        Pos = Vector(0, 6, -1.375),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 60
@@ -21,7 +21,7 @@ ATT.Sights = {
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("arc9_css/reddot.png", "mips smooth")
-ATT.HoloSightSize = 1200
+ATT.HoloSightSize = 1000
 ATT.HoloSightColorable = true
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
