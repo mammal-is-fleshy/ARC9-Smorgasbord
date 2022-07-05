@@ -2,8 +2,7 @@ ATT.PrintName = "Grenadier Handguard"
 ATT.CompactName = "Grenadier"
 ATT.Description = [[Half handguard equipped with a prototype grenade launcher]]
 
-ATT.Icon = Material("")
-
+ATT.Icon = Material("entities/gekolt_css_m4_h_148.png", "mips smooth")
 
 ATT.SortOrder = 0.2
 ATT.Category = "css_m4_handguard"

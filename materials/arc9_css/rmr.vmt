@@ -1,0 +1,19 @@
+vertexlitgeneric
+{
+ $baseTexture "arc9_css/rmr"
+ $bumpmap "arc9_css/rmr_normal"
+// $envmap env_cubemap
+// $normalmapalphaenvmapmask 1
+ 
+ $envmapsaturation "0.100000"
+ $envmaptint "[0.1 0.1 0.1]"
+ 
+ $phong 1
+ $phongboost "0.750000"
+ $phongfresnelranges "[.3 4 15]"
+ $phongexponent 11
+ 
+ $rimlight 1   -- ew ew ew why tho
+ $rimlightexponent 22
+ $rimlightboost "0.120000"
+}

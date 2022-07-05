@@ -1,0 +1,17 @@
+VertexLitGeneric
+{
+ $basetexture "arc9_css/accessories"
+ $envmap env_cubemap
+ $bumpmap "arc9_css/accessories_normal"
+ $normalmapalphaenvmapmask 1
+ $envmapsaturation "0.200000"
+ $envmaptint "[0.2 0.2 0.2]"
+ $phong 1
+ $phongboost "0.520000"
+ $phongfresnelranges "[1 14 40]"
+ $phongexponent 5
+ $rimlight 0
+ $rimlightexponent 22
+ $rimlightboost "0.120000"
+ $nocull 1
+}

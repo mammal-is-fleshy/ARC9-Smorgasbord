@@ -1,6 +1,6 @@
 Contre Srike Sorse in 2022 Gmod Tacticle Reelesm :tm:
 
-[ Created by Geckololt (no rights reserved, dont care)]
+[ Created by Geckololt (no rights reserved, dont care didnt ask) ]
 
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -10,6 +10,7 @@ Arctic - Incredibly doggy original restoration models
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
 Fesiug??? - Nade ent
 
+Tactical Intervention - Stuff
 Rainbow Six Vegas 2 - Mass26
 CSGO, CSCD - Sounds??
 https://gamebanana.com/mods/210646 - SPR Guard
@@ -22,6 +23,8 @@ https://gamebanana.com/models/4134 - OKP7
 -- the attachment models are probably from contract wars
 
 https://gamebanana.com/mods/39876 - Muzzle/Grip/T1
+
+
 
 
 
