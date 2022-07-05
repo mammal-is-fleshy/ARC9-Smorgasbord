@@ -60,6 +60,7 @@ ATT.Attachments = {
         Category = "mountr_css",
         Pos = Vector(-1.5,-0.3, -18),
         Ang = Angle(-90, 180, 0),
+        ExtraSightDistance = 10			
     },
 	
     {
@@ -67,6 +68,7 @@ ATT.Attachments = {
         Category = "mountl_css",
         Pos = Vector(1.5,-0.3, -18),
         Ang = Angle(90, 0, 0),
+        ExtraSightDistance = 10	
     },	
 
     {
@@ -74,5 +76,6 @@ ATT.Attachments = {
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-1.95, -18),
         Ang = Angle(90, 0, -90),
+        ExtraSightDistance = 10		
     },		
 }

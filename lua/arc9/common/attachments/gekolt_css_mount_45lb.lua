@@ -22,6 +22,5 @@ ATT.Attachments = {
         Pos = Vector(-0.2, -0.8, 0.5),
         Ang = Angle(0, 0, 45),
 		KeepBaseIrons = true,
-        ExtraSightDistance = 7
     },
 }
