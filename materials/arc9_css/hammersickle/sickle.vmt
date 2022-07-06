@@ -1,0 +1,16 @@
+"VertexLitGeneric"
+{
+	"$basetexture" 			"arc9_css\hammersickle\sickle"
+	"$bumpmap"     			"arc9_css\hammersickle\sickle_n"
+
+	"$phong"	"1"
+	"$phongexponent"	"9"
+	"$phongalbedotint"	"1"
+
+	"$phongboost"	"0.85"
+	"$phongfresnelranges"	"[0.2 0.25 0.53]"
+
+	"$rimlight"               1
+	"$rimlightexponent"       300
+	"$rimlightboost"          .05	
+}
