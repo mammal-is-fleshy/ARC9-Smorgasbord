@@ -74,8 +74,8 @@ SWEP.PrimaryBash = true
 SWEP.BashDamage = 70
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.27
-SWEP.PostBashTime = 0.275
+SWEP.PreBashTime = 0.275
+SWEP.PostBashTime = 0.3
 
 -------------------------- TRACERS
 

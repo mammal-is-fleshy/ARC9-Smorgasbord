@@ -22,7 +22,7 @@ ATT.RangeMinMult = 0.9
 ATT.DamageMaxMult = 1.25
 ATT.DamageMinMult = 0.5
 
-ATT.RecoilMult = 1.2
+ATT.RecoilMult = 1.05
 
 ATT.Ammo = "357"
 
