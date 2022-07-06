@@ -16,7 +16,7 @@ $sequence "idle" {
 	"anims\idle.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap	
+	loop	
 	fps 40
 }
 $sequence "draw" {
@@ -31,21 +31,21 @@ $sequence "slash1" {
 	"anims\slash1.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap	
+
 	fps 40
 }
 $sequence "slash2" {
 	"anims\slash2.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap	
+
 	fps 40
 }
 $sequence "slash3" {
 	"anims\slash3.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap	
+
 	fps 40
 }
 
@@ -53,21 +53,21 @@ $sequence "bash1" {
 	"anims\bash1.smd"
 	fadein 0.2
 	fadeout 0.2	
-	snap
+
 	fps 40
 }
 $sequence "bash2" {
 	"anims\bash2.smd"
 	fadein 0.2
 	fadeout 0.2	
-	snap
+
 	fps 40
 }
 $sequence "bash3" {
 	"anims\bash3.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap
+
 	fps 40
 }
 
@@ -75,21 +75,21 @@ $sequence "slash1_hit" {
 	"anims\slash1_hit.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap
+
 	fps 40
 }
 $sequence "slash2_hit" {
 	"anims\slash2_hit.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap
+
 	fps 40
 }
 $sequence "slash3_hit" {
 	"anims\slash3_hit.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap
+
 	fps 40
 }
 
@@ -98,14 +98,14 @@ $sequence "block" {
 	"anims\block.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap
+
 	fps 40
 }
 $sequence "block_hold" {
 	"anims\block_hold.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap
+	loop
 	fps 40
 }
 

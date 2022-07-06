@@ -23,9 +23,10 @@ SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
 SWEP.Slot = 0
 
 SWEP.MirrorVMWM = true
+SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_hns.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-8, 2, -5),
-    Ang = Angle(-5, 0, 180),
+    Pos = Vector(-10, 15, -10),
+    Ang = Angle(0, 0, 180),
     Scale = 1
 }
 
@@ -73,8 +74,8 @@ SWEP.PrimaryBash = true
 SWEP.BashDamage = 70
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.3
-SWEP.PostBashTime = 0.4
+SWEP.PreBashTime = 0.27
+SWEP.PostBashTime = 0.275
 
 -------------------------- TRACERS
 
@@ -106,8 +107,8 @@ SWEP.HoldTypeHolstered = "normal"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_AR2
+SWEP.AnimShoot = ACT_MELEE_ATTACK2
+SWEP.AnimReload = ACT_IDLE_MELEE
 SWEP.AnimDraw = false
 
 -------------------------- SOUNDS
