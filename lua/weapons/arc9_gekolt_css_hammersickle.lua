@@ -73,8 +73,8 @@ SWEP.PrimaryBash = true
 SWEP.BashDamage = 70
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.25
-SWEP.PostBashTime = 0.35
+SWEP.PreBashTime = 0.3
+SWEP.PostBashTime = 0.4
 
 -------------------------- TRACERS
 
@@ -96,7 +96,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(16, 32, 4)
 SWEP.CustomizeSnapshotFOV = 110
 
-SWEP.CrouchPos = Vector(0, 0, 0)
+SWEP.CrouchPos = Vector(0, -3, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 -------------------------- HoldTypes
 
@@ -127,8 +127,12 @@ SWEP.Animations = {
         Source = "block",
     },
     ["bash"] = {
-        Source = {"slash", "slash2", "slash3"}
+        Source = {"slash", "slash2", "slash3", "bash1", "bash2", "bash3"}
     },
+	
+    /// ["impact"] = {
+    ///    Source = {"slash_hit", "slash2_hit", "slash3_hit", "bash1", "bash2", "bash3"}
+    /// },	
 
 }
 
