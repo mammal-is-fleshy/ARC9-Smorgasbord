@@ -158,6 +158,7 @@ $cdmaterials "models\weapons\V_models\snip_g3sg1\"
 $cdmaterials "models\weapons\V_models\smg_mp5\"
 $cdmaterials "models\weapons\v_models\snip_awp\"
 $cdmaterials "models\weapons\v_models\rif_aug\"
+$cdmaterials "arc9_css\"
 
 $attachment "1" "W_Muz" 0 0 0 rotate -90 0 -90
 $attachment "2" "W_Bolt_Rotate" 0 0 0 rotate 0 -135 0

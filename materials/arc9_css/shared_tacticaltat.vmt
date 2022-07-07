@@ -2,4 +2,16 @@
 {
 	"$baseTexture" "arc9_css\shared_tacticaltat"
 	"$bumpmap" "arc9_css\shared_tacticaltat_norm"
+
+ $envmap env_cubemap
+ $envmapsaturation "0.200000"
+ $envmaptint "[0.02 0.02 0.02]"
+ $phong 1
+ $phongboost "0.25"
+ $phongfresnelranges "[1 14 40]"
+ $phongexponent 5
+ $rimlight 0
+ $rimlightexponent 22
+ $rimlightboost "0.120000"
+ $nocull 1	
 }
