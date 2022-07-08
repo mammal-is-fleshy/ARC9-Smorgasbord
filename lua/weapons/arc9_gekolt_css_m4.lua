@@ -810,15 +810,15 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_drg"] = {
         Bodygroups = { {6, 13}, {10, 11} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 12.2),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.25, 11.9),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
 	},	
     ["guard_doe"] = {
         Bodygroups = { {6, 15}, {10, 13} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 12.2),}, [8] = { Pos = Vector(0, -0.25, 15), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [8] = { Pos = Vector(0, -0.25, 15), } }			
 	},	
     ["guard_608"] = {
         Bodygroups = { {6, 16}, {10, 14} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 12.2),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.75),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
 	},		
     ["guard_acr"] = {
         Bodygroups = { {6, 11}, {10, 7} },

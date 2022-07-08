@@ -44,14 +44,14 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT Back",
         Category = {"tac_css_flat", "mount_css", "optic_css_s"},
-        Pos = Vector(0,0, -2.25),
+        Pos = Vector(0,0, -2.35),
         Ang = Angle(0, 0, 0),
     },		
 	
     {
         PrintName = "MOUNT Front",
         Category = {"tac_css_flat", "mount_css"},
-        Pos = Vector(-3.5,0, -2.25),
+        Pos = Vector(-3.5,0, -2.35),
         Ang = Angle(0, 0, 0),
     },	
 	

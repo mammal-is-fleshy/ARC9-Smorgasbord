@@ -12,7 +12,7 @@ ATT.Folder = "SCOPE"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(-0.0025, 9, -1.61),
+        Pos = Vector(-0.00325, 7.5, -1.285),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
@@ -34,7 +34,7 @@ ATT.RTScopeShadowIntensity = 10
 
 ATT.ScopeScreenRatio = 0.7
 
-ATT.Scale = 1.25
+ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, -0.175)
 
 ATT.SwayAdd = 0.075
@@ -48,7 +48,7 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css_flat", "mount_css", "optic_css_s"},
-        Pos = Vector(1,0, -3),
+        Pos = Vector(1,0, -2.4),
         Ang = Angle(0, 0, 0),
     },		
 }

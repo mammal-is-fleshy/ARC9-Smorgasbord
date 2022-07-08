@@ -2,7 +2,7 @@ ATT.PrintName = "Romeo-7 Sight"
 ATT.CompactName = "R-7"
 ATT.Icon = Material("")
 ATT.Description = [[]]
-ATT.SortOrder = 0.2
+ATT.SortOrder = 0.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/pks.mdl"
 
