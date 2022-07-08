@@ -6,7 +6,7 @@ ATT.Icon = Material("")
 
 ATT.Model = "models/weapons/geckololt_css/atts/afg.mdl"
 
-ATT.SortOrder = 0
+ATT.SortOrder = 10
 ATT.Category = {"grip_css"}
 ATT.ActivateElements = "bottom_long"
 
@@ -19,7 +19,8 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0, 0, -0.25)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.SwayAdd = 0.2
-ATT.AimDownSightsTimeMult = 0.85
+ATT.SwayAdd = 0.4
+ATT.AimDownSightsTimeMult = 0.75
 ATT.SprintToFireTimeMult = 0.975
-ATT.SpeedMult = 0.975
+ATT.SpeedMult = 0.985
+ATT.RecoilMult = 1.05
