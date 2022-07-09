@@ -194,7 +194,7 @@ SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_IDLE_SMG1
+SWEP.AnimReload = false
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
