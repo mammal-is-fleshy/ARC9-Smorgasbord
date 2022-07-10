@@ -37,7 +37,7 @@ ATT.RTScopeNoShadow = true
 ATT.RTScopeBlackBox = false
 ATT.RTScopeBlackBoxShadow = false
 
-ATT.RTScopeFLIR = false
+ATT.RTScopeFLIR = true
 ATT.RTScopeFLIRHighlightColor = Color(255, 30, 30)
 ATT.RTScopeFLIRMonochrome = true
 ATT.RTScopeFLIRBlend = 0.075
@@ -46,7 +46,7 @@ ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
     ["$pp_colour_addg"] = 0,
     ["$pp_colour_addb"] = 0,
     ["$pp_colour_brightness"] = 0.005,
-    ["$pp_colour_contrast"] = 1.5,
+    ["$pp_colour_contrast"] = 3,
     ["$pp_colour_colour"] = 1,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
