@@ -12,7 +12,7 @@ ATT.Folder = "SCOPE"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0.00, 8.25, -1.775),
+        Pos = Vector(0.00, 8.5, -1.775),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 40
