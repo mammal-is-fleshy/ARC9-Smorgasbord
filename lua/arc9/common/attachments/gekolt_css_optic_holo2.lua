@@ -29,11 +29,13 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 10
 ATT.RTScopeRes = 1024
-ATT.RTScopeReticle = Material("arc9_css/holo.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.75
+ATT.RTScopeReticle = Material("arc9_css/holo2.png", "mips smooth")
+ATT.RTScopeReticleScale = 0.95
 ATT.RTScopeColorable = true
-ATT.RTScopeNoPP = true
+ATT.RTScopeNoPP = false
 ATT.RTScopeNoShadow = true
+ATT.RTScopeBlackBox = false
+ATT.RTScopeBlackBoxShadow = false
 
 ATT.RTScopeFLIR = true
 ATT.RTScopeFLIRHighlightColor = Color(255, 30, 30)
