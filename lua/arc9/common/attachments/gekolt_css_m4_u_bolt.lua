@@ -32,7 +32,7 @@ ATT.Sights = {
 ATT.Firemodes = {
     {
         Mode = 1,
-        PrintName = "BOLT"
+        PrintName = "BOLT",
     }
 }
 

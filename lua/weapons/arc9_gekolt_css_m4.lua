@@ -236,7 +236,7 @@ SWEP.BulletBones = {
 }
 
 
-SWEP.Hook_TranslateAnimation = function(wep, anim)		
+SWEP.Hook_TranslateAnimation = function(wep, anim) 
     if wep:GetUBGL() then
     		if anim == "idle" then  return "idle_ubgl" end	
     		if anim == "idle_empty" then  return "idle_ubgl" end				
@@ -244,10 +244,10 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
     end
 end
 
-
-
 SWEP.Animations = {
 --- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
+	// HOW THE FUCK DO YOU EXCLUDE ANIM FROM BEING OVERRIDDEN???
+
 	["idle_ubgl_smg"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
     ["fire_ubgl_smg"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
 	["idle_ubgl_a1"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
@@ -300,6 +300,8 @@ SWEP.Animations = {
     },	
     ["reload"] = {
         Source = "wet",
+		FireASAP = true,
+		MinProgress = 0.83,
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
@@ -311,6 +313,8 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "dry_3",
+		FireASAP = true,
+		MinProgress = 0.9,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
@@ -343,12 +347,18 @@ SWEP.Animations = {
 	},
     ["fire_empty_bolt"] = {
         Source = {"fire"},	
+		FireASAP = true,
+		MinProgress = 0,			
 	},	
     ["fire_iron_empty"] = {
         Source = {"fire"},	
+		FireASAP = true,
+		MinProgress = 0,		
 	},		
     ["fire_iron_empty_bolt"] = {
-        Source = {"fire"},		
+        Source = {"fire"},	
+		FireASAP = true,
+		MinProgress = 0,		
 	},		
     ["fire_bolt"] = {
         Source = {"fire_bolt"},
@@ -380,11 +390,12 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 0, rhik = 1, }, 
 		{ t = 0.3, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, }, { t = 0.9, lhik = 1, rhik = 1, },	
 		},			
+		FireASAP = true,
+		MinProgress = 0.85,	
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 65 / 40},			
-        },	
-        MinProgress = 0.7,		
+        },		
     },
     ["reload_empty_bolt"] = {
         Source = "dry_sniper",
@@ -393,14 +404,15 @@ SWEP.Animations = {
         { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.6, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, },
 		{ t = 0.85, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, },	
 		},		
+		FireASAP = true,
+		MinProgress = 0.9,		
         EventTable = {		
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 15 / 40},	
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 40 / 40},
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 95 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 130 / 40},
-        },		
-        MinProgress = 0.9,		
+        },
     },
 	
 
@@ -438,18 +450,21 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},				
+		FireASAP = true,
+		MinProgress = 0.85,		
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 42 / 40},			
-        },	
-        MinProgress = 0.7,		
+        },
     },
     ["reload_empty_pump"] = {
         Source = "dry_pump",
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 0.99, lhik = 1, rhik = 1, },	
-		},				
+		},
+		FireASAP = true,
+		MinProgress = 0.95,				
         EventTable = {		
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 10 / 40},	
@@ -457,7 +472,7 @@ SWEP.Animations = {
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 50 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 75 / 40},
         },		
-        MinProgress = 0.9,		
+        MinProgress = 0.925,		
     },	
 
 
@@ -467,7 +482,9 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
-		},			
+		},
+		FireASAP = true,
+		MinProgress = 0.95,				
         EventTable = {		
             {s =  "gekolt_css/m249_coverup.wav" ,   t = 20 / 40},
             {s =  "gekolt_css/m249_boxout.wav" ,    t = 45 / 40},	
@@ -476,7 +493,6 @@ SWEP.Animations = {
             {s =  "gekolt_css/m249_coverdown.wav" ,   t = 180 / 40},	
             {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 190 / 40},		
         },		
-        MinProgress = 0.8,		
     },
     ["reload_empty_lmg"] = {
         Source = "dry_120_lmg",
@@ -494,7 +510,8 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.075, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},		
-        MinProgress = 0.825,		
+		FireASAP = true,
+		MinProgress = 0.95,	
     },	
 
     ["reload_empty_proto"] = {
@@ -507,7 +524,9 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},			
+		},
+		FireASAP = true,
+		MinProgress = 0.925,		
     },	
 
     ["reload_empty_pdw"] = {
@@ -521,7 +540,9 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 60 / 40},	
             {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 88 / 40},	
             {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 92 / 40},				
-        },			
+        },
+		FireASAP = true,
+		MinProgress = 0.9,				
     },	
     ["reload_pdw"] = {
         Source = "wet_57",
@@ -532,7 +553,9 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 60 / 40},				
-        },			
+        },
+		FireASAP = true,
+		MinProgress = 0.95,				
     },		
 	
     ["reload_empty_sg"] = {
@@ -545,7 +568,9 @@ SWEP.Animations = {
             {s =  "gekolt_css/famas_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/famas_clipin.wav" ,    t = 62 / 40},	
             {s =  "gekolt_css/famas_boltpull.wav" ,    t = 95 / 40},				
-        },			
+        },
+		FireASAP = true,
+		MinProgress = 0.95,				
     },	
     ["reload_sg"] = {
         Source = "wet_sg",
@@ -556,7 +581,9 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/famas_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/famas_clipin.wav" ,    t = 62 / 40},					
-        },			
+        },
+		FireASAP = true,
+		MinProgress = 0.9,				
     },		
 
     ["reload_empty_ak"] = {
@@ -570,7 +597,9 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
+		},
+		FireASAP = true,
+		MinProgress = 0.95,				
     },	
     ["reload_ak"] = {
         Source = "wet_ak",
@@ -581,7 +610,9 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},				
+		},
+		FireASAP = true,
+		MinProgress = 0.9,				
     },	
 
     ["reload_empty_smg"] = {
@@ -594,7 +625,9 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+		},
+		FireASAP = true,
+		MinProgress = 0.9,				
     },	
 
     ["reload_smg"] = {
@@ -606,7 +639,9 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+		},
+		FireASAP = true,
+		MinProgress = 0.9,		
     },		
 	
     ["idle_bow"] = {
@@ -648,6 +683,8 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},	
+		FireASAP = true,
+		MinProgress = 0.9,		
     },	
     ["reload_empty_acr"] = {
         Source = "dry_4",
@@ -656,6 +693,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
             {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 72 / 40},					
         },
+		FireASAP = true,
+		MinProgress = 0.9,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
@@ -672,7 +711,9 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},			
-        },				
+        },
+		FireASAP = true,
+		MinProgress = 0.9,		
     },
     ["reload_empty_gih"] = {
         Source = "dry_gih",
@@ -681,6 +722,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},	
             {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},					
         },
+		FireASAP = true,
+		MinProgress = 0.9,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
@@ -693,6 +736,8 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
+		FireASAP = true,
+		MinProgress = 0.9,		
         EventTable = {		
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/mp5_clipin.wav" ,    t = 53 / 40},			
@@ -709,6 +754,8 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},	
+		FireASAP = true,
+		MinProgress = 0.9,		
     },		
 }
 
@@ -914,6 +961,7 @@ SWEP.AttachmentElements = {
 
 }
 
+--- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
 SWEP.Hook_ModifyBodygroups = function(wep, data)  -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
     local model = data.model
     if wep.Attachments[7].Installed and wep:HasElement("keep_rs") then model:SetBodygroup(5,8) end	
@@ -930,7 +978,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)  -- IM SORRY IM SORRY IM SORRY 
 -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
 	if wep.Attachments[7].Installed and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
 end
-
+--- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
+--- surely theres a much much much much much better alternative
+--- dont look at me i cant code nor logic
 
 SWEP.Attachments = {
     {
@@ -987,7 +1037,7 @@ SWEP.Attachments = {
 		MergeSlots = {6}		
     },
 
-    {
+    {   -- permanent saw grip location, unaffected by the changes of the above attachment
         PrintName = "",
         DefaultName = "",
         Hidden = true,
@@ -1002,7 +1052,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		ActivateElements = {"no_irons", "no_optic"},
+		ActivateElements = {"no_irons", "no_optic"},  -- i forgot why i did this
 
 		ExcludeElements = {"fg_saw"},
         Category = {"optic_css", "mount_css_m16"}, 
