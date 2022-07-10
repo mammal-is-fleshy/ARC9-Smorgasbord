@@ -6,7 +6,7 @@ ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/micro2.mdl"
 
-ATT.Category = "optic_css"
+ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
 // Allows a custom sight position to be defined
@@ -41,7 +41,7 @@ ATT.SprintToFireTimeAdd = 0.05
 ATT.Attachments = {
     {
         PrintName = "MOUNT TOP",
-        Category = {"tac_css", "mount_css", "optic_css_s"},
+        Category = {"tac_css", "mount_css", "optic_css_holo"},
         Pos = Vector(-1,0, -2.7),
         Ang = Angle(0, 0, 0),
     },		

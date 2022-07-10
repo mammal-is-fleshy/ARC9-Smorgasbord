@@ -6,7 +6,7 @@ ATT.SortOrder = 0.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/delta.mdl"
 
-ATT.Category = {"optic_css","optic_css_s"}
+ATT.Category = {"optic_css","optic_css_s","optic_css_holo"}
 ATT.Folder = "REFLEX"
 
 // Allows a custom sight position to be defined
