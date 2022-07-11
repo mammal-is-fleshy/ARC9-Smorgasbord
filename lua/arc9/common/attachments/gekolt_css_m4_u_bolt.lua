@@ -9,7 +9,7 @@ ATT.Cons = {}
 ATT.SortOrder = 6
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_bolt", "noguard", "pre_muzzed"}
+ATT.ActivateElements = {"up_bolt", "noguard", "pre_muzzed", "short_clamp"}
 ATT.ShootSound = "gekolt_css/cs5_sup-1.wav"
 
 ATT.ClipSizeOverride = 5

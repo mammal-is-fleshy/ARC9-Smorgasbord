@@ -838,13 +838,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 5},{1, 2},{4, 5},{5, 8},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }				
+		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), }, [9] = { Pos = Vector(0, -0.25, 18.5), }, }				
 	},		
     ["up_pump"] = {
         Bodygroups = {
             {0, 9},{1, 2},{4, 5},{5, 5},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -1.5, 4.25), } }				
+		AttPosMods = { [7] = { Pos = Vector(0, -1.5, 4.25), }, [9] = { Pos = Vector(0, -0.25, 12), }, }			
 	},	
 	
     ["guard_lmg"] = {

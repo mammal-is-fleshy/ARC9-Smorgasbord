@@ -8,7 +8,7 @@ ATT.Cons = {}
 ATT.SortOrder = 7
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_gih", "pre_muzzed", "noguard"}
+ATT.ActivateElements = {"up_gih", "pre_muzzed", "noguard", "short_clamp"}
 
 ATT.ClipSizeOverride = 60
 ATT.ChamberSize = 2
