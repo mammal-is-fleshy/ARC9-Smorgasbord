@@ -109,6 +109,7 @@ $bodygroup "grip"
 	studio "m4a1_grip_ske.smd"
 	blank
 	studio "m4a1_grip_short.smd"	
+	studio "m4a1_grip_wood.smd"	
 }
 
 $bodygroup "fore"
