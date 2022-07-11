@@ -849,19 +849,19 @@ SWEP.AttachmentElements = {
 	
     ["guard_lmg"] = {
         Bodygroups = { {6, 5}, {10, 5} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.85, 11.9),}, [8] = { Pos = Vector(0, -0.25, 30), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.85, 11.9),}, [8] = { Pos = Vector(0, -0.25, 30), }, [9] = { Pos = Vector(0, -0.25, 23.5), }, }
 	},		
     ["guard_a1"] = {
         Bodygroups = { {6, 2}, {10, 2} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }
 	},	
     ["guard_drg"] = {
         Bodygroups = { {6, 13}, {10, 11} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.25, 11.9),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.25, 11.9),}, [8] = { Pos = Vector(0, -0.25, 22), }, [9] = { Pos = Vector(0, -0.25, 19.55), }, }		
 	},	
     ["guard_doe"] = {
         Bodygroups = { {6, 15}, {10, 13} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [8] = { Pos = Vector(0, -0.25, 15), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [8] = { Pos = Vector(0, -0.25, 15), } }		
 	},	
     ["guard_608"] = {
         Bodygroups = { {6, 16}, {10, 14} },
@@ -869,26 +869,26 @@ SWEP.AttachmentElements = {
 	},		
     ["guard_acr"] = {
         Bodygroups = { {6, 11}, {10, 7} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }		
 	},		
     ["guard_a2"] = {
         Bodygroups = { {6, 3}, {10, 3} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }				
 	},	
     ["guard_bn63"] = {
         Bodygroups = { {6, 17}, {10, 15} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.5, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.5, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }	
 	},		
     ["guard_10"] = {
         Bodygroups = { {6, 1}, {10, 1} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), }, [9] = { Pos = Vector(0, -0.25, 24.25), }, }
 	},
     ["guard_148"] = {
         Bodygroups = { {6, 12} },		
 	},	
     ["guard_adar"] = {
         Bodygroups = { {6, 4}, {10, 4} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), } }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), }, [9] = { Pos = Vector(0, -0.25, 24.1), }, }	
 	},	
     ["guard_no"] = {
         Bodygroups = { {6, 6}, {10, 6} },
@@ -904,11 +904,11 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_ris"] = {
         Bodygroups = { {6, 10}, {10, 10} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), },[8] = { Pos = Vector(0, -0.25, 21.2), } }					
+        AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), },[8] = { Pos = Vector(0, -0.25, 21.2), }, [9] = { Pos = Vector(0, -0.25, 18.75), }, }						
 	},		
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), } }		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), }, [9] = { Pos = Vector(0, -0.25, 18.25), }, }			
 	},		
 	
     ["s_a1"] = {
@@ -938,6 +938,9 @@ SWEP.AttachmentElements = {
     ["s_608"] = {
         Bodygroups = { {2, 10} },
 	},	
+    ["s_thomp"] = {
+        Bodygroups = { {2, 12} },
+	},
     ["s_607"] = {
         Bodygroups = { {2, 11} },
 	},			
@@ -1072,4 +1075,15 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.25, 20),
         Ang = Angle(90, 0, -90),		
     },	
+
+    {
+        PrintName = "Clamp",
+        DefaultName = "None",
+
+		ExcludeElements = {"short_clamp"},
+        Category = {"clamp_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, -0.25, 17.5),
+        Ang = Angle(90, 0, -90),		
+    },		
 }

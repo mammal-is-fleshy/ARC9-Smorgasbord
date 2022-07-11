@@ -7,7 +7,7 @@ ATT.Icon = Material("entities/gekolt_css_m4_h_lr300.png", "mips smooth")
 
 ATT.SortOrder = 2
 ATT.Category = "css_m4_handguard"
-ATT.ActivateElements = {"guard_lr300"}
+ATT.ActivateElements = {"guard_lr300", "short_clamp"}
 
 ATT.SpreadMultSights = 1.15
 ATT.SpreadMultHipFire = 0.75

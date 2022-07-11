@@ -6,4 +6,4 @@ ATT.Icon = Material("")
 
 ATT.SortOrder = 0.05
 ATT.Category = "css_m4_handguard"
-ATT.ActivateElements = {"guard_doe"}
+ATT.ActivateElements = {"guard_doe", "short_clamp"}

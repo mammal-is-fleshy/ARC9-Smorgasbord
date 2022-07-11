@@ -41,6 +41,7 @@ $bodygroup "stock"
 	studio "m4a1_stock_swire.smd"	
 	studio "m4a1_stock_607.smd"	
 	studio "m4a1_stock_608.smd"		
+	studio "m4a1_stock_thomp.smd"			
 }
 
 $bodygroup "rail_top"
@@ -161,7 +162,7 @@ $cdmaterials "models\weapons\v_models\rif_aug\"
 $cdmaterials "arc9_css\"
 
 $attachment "1" "W_Muz" 0 0 0 rotate -90 0 -90
-$attachment "2" "W_Bolt_Rotate" 0 0 0 rotate 0 -135 0
+$attachment "2" "W_Shell" 0 0 0 rotate 0 -135 0
 
 $sequence "idle" {
 	"anims\idle.smd"

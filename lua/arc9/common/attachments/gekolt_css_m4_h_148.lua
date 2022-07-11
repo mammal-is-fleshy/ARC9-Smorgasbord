@@ -6,7 +6,7 @@ ATT.Icon = Material("entities/gekolt_css_m4_h_148.png", "mips smooth")
 
 ATT.SortOrder = 0.2
 ATT.Category = "css_m4_handguard"
-ATT.ActivateElements = {"guard_148", "nogrip", "pre_ubgl"}
+ATT.ActivateElements = {"guard_148", "nogrip", "pre_ubgl", "short_clamp"}
 
 ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"

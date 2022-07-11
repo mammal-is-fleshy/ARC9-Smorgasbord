@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/mount_45r.mdl"
 ATT.Category = {"mount_css", "mountr_css"}
 ATT.Folder = "MOUNT"
 ATT.Max = 4
-ATT.InvAtt = "mount_dual_45l"
+ATT.InvAtt = "mount_45l"
 
 // Allows a custom sight position to be defined
 

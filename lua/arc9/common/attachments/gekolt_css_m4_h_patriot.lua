@@ -6,7 +6,7 @@ ATT.Icon = Material("entities/gekolt_css_m4_h_patriot.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "css_m4_handguard"
-ATT.ActivateElements = {"guard_no", "nogrip"}
+ATT.ActivateElements = {"guard_no", "nogrip", "short_clamp"}
 
 ATT.SpeedMult = 1.25
 ATT.AimDownSightsTimeMult = 1.15
