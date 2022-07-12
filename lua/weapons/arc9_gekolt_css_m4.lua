@@ -361,6 +361,7 @@ SWEP.Animations = {
 		MinProgress = 0,		
 	},		
     ["fire_bolt"] = {
+		Mult = 0.8,
         Source = {"fire_bolt"},
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
@@ -373,6 +374,7 @@ SWEP.Animations = {
 		},		
 	},	
     ["fire_iron_bolt"] = {
+		Mult = 0.8,	
         Source = {"fire_bolt"},
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},

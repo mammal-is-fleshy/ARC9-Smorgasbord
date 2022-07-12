@@ -14,7 +14,7 @@ ATT.ShootSound = "gekolt_css/cs5_sup-1.wav"
 
 ATT.ClipSizeOverride = 5
 
-ATT.RPMMult = 50 / 700
+ATT.RPMMult = 60 / 700
 
 ATT.Sights = {
     {
