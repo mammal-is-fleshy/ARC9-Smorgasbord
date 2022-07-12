@@ -4,14 +4,12 @@
 	"$envmapmask" "arc9_css\spr_ref"
 	
  $envmap env_cubemap
- $envmapsaturation "0.200000"
+ $envmapsaturation "0.05"
  $envmaptint "[0.02 0.02 0.02]"
  $phong 1
- $phongboost "0.25"
- $phongfresnelranges "[1 14 40]"
- $phongexponent 5
- $rimlight 0
- $rimlightexponent 22
- $rimlightboost "0.120000"
- $nocull 1		
+ $phongboost "20"
+ $phongexponent 0.5
+ $nocull 1
+ 
+ 	$color2 "[2 2 2.5]"
 }
