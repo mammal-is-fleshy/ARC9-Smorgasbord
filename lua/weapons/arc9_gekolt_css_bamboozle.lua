@@ -97,7 +97,7 @@ SWEP.PostBashTime = 0.3
 
 -------------------------- MAGAZINE
 
-SWEP.Ammo = "smg1" -- What ammo type this gun uses.
+SWEP.Ammo = "slam" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 1 -- Self-explanatory.

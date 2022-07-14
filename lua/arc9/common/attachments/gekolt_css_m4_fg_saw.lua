@@ -47,3 +47,15 @@ ATT.Sights = {
 
 ATT.RecoilMult = 0.25
 ATT.SpreadMultHipFire = 1.1
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+	-- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
+    if anim == "fire" then return "fire_iron" end
+    if anim == "fire_lmg" then return "fire_iron" end
+    if anim == "fire_sg" then return "fire_iron" end
+    if anim == "fire_ak" then return "fire_iron" end 
+	if anim == "fire_smg" then return "fire_iron" end
+    if anim == "fire_acr" then return "fire_iron" end
+	if anim == "fire_gih" then return "fire_iron" end
+    if anim == "fire_perosa" then return "fire_iron" end	
+end
