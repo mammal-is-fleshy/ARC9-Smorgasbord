@@ -1,0 +1,6 @@
+VertexLitGeneric
+{
+	"$basetexture"	"arc9_css\m18a1_claymore"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "arc9_css\m18a1_claymore_s"
+}
