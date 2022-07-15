@@ -22,9 +22,10 @@ ATT.SightsDispersionMult = 2
 ATT.SightTimeMult = 0.75
 
 ATT.SpeedMultSightsMult = 2.5
+ATT.Mult_SpeedMultSights = 1.75
 ATT.SpeedMultShootingMult = 2.25
+ATT.Ammo = "pistol"
 
-ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 900/50
 ATT.Firemodes = {
     {

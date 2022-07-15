@@ -1,5 +1,5 @@
-ATT.PrintName = "Half-Full Stock"
-ATT.CompactName = "H.Full"
+ATT.PrintName = "Telescopic Stock"
+ATT.CompactName = "Telescopic"
 ATT.Description = [[Because showing more parts means better]]
 
 ATT.Icon = Material("")

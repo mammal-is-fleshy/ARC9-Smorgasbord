@@ -1,5 +1,5 @@
 ATT.PrintName = "???? Handguard"
-ATT.CompactName = "CHUBE"
+ATT.CompactName = "F.Hider"
 ATT.Description = [[Thin handguard fitted with a peculiar flashhider.]]
 
 ATT.Icon = Material("")

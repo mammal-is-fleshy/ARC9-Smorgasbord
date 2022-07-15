@@ -57,5 +57,5 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 	if anim == "fire_smg" then return "fire_iron" end
     if anim == "fire_acr" then return "fire_iron" end
 	if anim == "fire_gih" then return "fire_iron" end
-    if anim == "fire_perosa" then return "fire_iron" end	
+    if anim == "fire_proto" then return "fire_iron" end	
 end

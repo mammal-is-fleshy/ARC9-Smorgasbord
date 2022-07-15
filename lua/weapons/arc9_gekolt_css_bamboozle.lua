@@ -25,7 +25,7 @@ SWEP.Slot = 0
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_bamboo.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 15, -10),
+    Pos = Vector(-10, 10, -20),
     Ang = Angle(0, 0, 180),
     Scale = 1
 }
@@ -45,7 +45,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.9
+SWEP.Recoil = 0
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
@@ -61,7 +61,7 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 0.5
 
 -------------------------- ENTITY LAUNCHING
 
@@ -151,7 +151,7 @@ SWEP.Animations = {
     },
     ["idle_empty"] = {
         Source = "idle_empty",
-    },	
+    },
     ["draw"] = {
         Source = "draw",
         EventTable = {		

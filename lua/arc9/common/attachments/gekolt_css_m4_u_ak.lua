@@ -23,3 +23,5 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ak"
 
 end
+
+ATT.Ammo = "ar2"

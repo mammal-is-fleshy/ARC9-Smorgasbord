@@ -1,8 +1,8 @@
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = "Fold"
-ATT.Description = [[Discounted foldable stock but isn't]]
+ATT.Description = [[Discounted skeletal stock]]
 
-ATT.Icon = Material("entities/arc9_att_ak_stock_skeleton.png", "mips smooth")
+ATT.Icon = Material("")
 
 ATT.SortOrder = 0
 ATT.Category = "css_awp_stock"

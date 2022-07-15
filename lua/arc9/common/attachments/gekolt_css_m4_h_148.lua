@@ -16,7 +16,7 @@ ATT.UBGLFiremodeName = "XM148"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
 
-ATT.SpreadUBGL = 0.001
+ATT.SpreadUBGL = 0.0025
 
 ATT.ShootEntUBGL = "gekolt_css_m4_nade"
 ATT.ShootEntForceUBGL = 20000
