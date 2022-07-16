@@ -2,7 +2,7 @@ ATT.PrintName = "Far View Scope"
 ATT.CompactName = "FView"
 ATT.Icon = Material("")
 ATT.Description = [[]]
-ATT.SortOrder = 4
+ATT.SortOrder = 6
 
 ATT.Model = "models/weapons/geckololt_css/atts/farview.mdl"
 
@@ -21,18 +21,26 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 6
 ATT.RTScopeReticle = Material("arc9_css/scope10_border.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.8
 ATT.RTScopeColorable = true
-ATT.RTScopeShadowIntensity = 7
+
+ATT.RTScopeFOVMax = 1.5
+ATT.RTScopeFOVMin = 15
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 4
 
 ATT.ScopeScreenRatio = 0.9
+ATT.ScopeLength = 30
 
 ATT.Scale = 1.1
 ATT.ModelOffset = Vector(0, 0, -0.25)
 
-ATT.SwayAdd = 0.05
-ATT.FreeAimRadiusMultSights = 0.1
-ATT.AimDownSightsTimeAdd = 0.12
-ATT.SprintToFireTimeAdd = 0.05
+ATT.SwayAdd = 0.1
+ATT.FreeAimRadiusMultSights = 0.12
+ATT.AimDownSightsTimeAdd = 0.18
+ATT.SprintToFireTimeAdd = 0.15
+
+ATT.Flare = true
+ATT.FlareColor = Color(255, 255, 255)
+ATT.FlareSize = 32

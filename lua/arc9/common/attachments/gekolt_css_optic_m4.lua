@@ -1,7 +1,8 @@
 ATT.PrintName = "Mounted Scope"
 ATT.CompactName = "Mounted"
 ATT.Icon = Material("")
-ATT.Description = [[h]]
+ATT.Description = [[Unique scope mounted on the carry handle
+Only available to some model]]
 ATT.SortOrder = 0.01
 
 ATT.Model = "models/weapons/geckololt_css/atts/m4_scope.mdl"

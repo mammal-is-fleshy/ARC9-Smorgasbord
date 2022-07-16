@@ -1,7 +1,7 @@
 ATT.PrintName = "Bravo-4 Sight"
 ATT.CompactName = "B-4"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Variable mid-ranged scoped with a short rail mounted]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/sig.mdl"
@@ -12,17 +12,17 @@ ATT.Folder = "SCOPE"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(-0.00325, 7.5, -1.285),
+        Pos = Vector(-0.00325, 6.75, -1.285),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
     },
 }
 
-ATT.RTScopeFOVMax = 10
-ATT.RTScopeFOVMin = 30
+ATT.RTScopeFOVMax = 5
+ATT.RTScopeFOVMin = 12
 ATT.RTScopeAdjustable = true
-ATT.RTScopeAdjustmentLevels = 1
+ATT.RTScopeAdjustmentLevels = 2
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1

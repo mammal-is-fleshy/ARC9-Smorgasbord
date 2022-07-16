@@ -1,7 +1,7 @@
 ATT.PrintName = "T1 Sight"
 ATT.CompactName = "T1"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Mid-profile red dot sight]]
 ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/t1.mdl"

@@ -1,7 +1,7 @@
 ATT.PrintName = "ACOG"
 ATT.CompactName = "ACOG"
 ATT.Icon = Material("")
-ATT.Description = [[3x Magnifying Scope]]
+ATT.Description = [[Simple mid-ranged scope]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/acog.mdl"
@@ -12,7 +12,7 @@ ATT.Folder = "SCOPE"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0.005, 9, -1.87),
+        Pos = Vector(0.005, 8, -1.87),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 40

@@ -1,7 +1,7 @@
 ATT.PrintName = "OKP Sight"
 ATT.CompactName = "OKP"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Reflex sight with chevron reticle]]
 ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/okp.mdl"

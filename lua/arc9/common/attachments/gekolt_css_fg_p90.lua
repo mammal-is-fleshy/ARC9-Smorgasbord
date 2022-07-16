@@ -1,6 +1,6 @@
 ATT.PrintName = "Spaceage Foregrip"
 ATT.CompactName = "HERA"
-ATT.Description = [[Coolio.]]
+ATT.Description = [[Heavy foregrip ripped straight from a P90.]]
 
 ATT.Icon = Material("")
 
@@ -18,8 +18,8 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0.2, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.SwayAdd = 0.1
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.1
-ATT.SpeedMult = 0.95
-ATT.RecoilMult = 0.8
+ATT.SwayAdd = -0.25
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.25
+ATT.SpeedMult = 0.9
+ATT.RecoilMult = 0.75

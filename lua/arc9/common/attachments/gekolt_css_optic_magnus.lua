@@ -1,7 +1,7 @@
 ATT.PrintName = "Magnus Scope"
 ATT.CompactName = "Magnus"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Sniper rifle optic with the ability to be adjusted between long and medium range magnification options]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/magnus.mdl"

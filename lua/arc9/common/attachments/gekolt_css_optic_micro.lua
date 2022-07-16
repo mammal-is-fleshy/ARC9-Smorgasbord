@@ -1,7 +1,7 @@
 ATT.PrintName = "Micro Scope"
 ATT.CompactName = "Micro"
 ATT.Icon = Material("")
-ATT.Description = [[2x Magnifying Scope]]
+ATT.Description = [[2x magnifying scope with three mounted rails for even more attachments]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/micro2.mdl"
@@ -21,7 +21,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 10
+ATT.RTScopeFOV = 12
 ATT.RTScopeReticle = Material("arc9_css/scope8_border.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.8
 ATT.RTScopeColorable = true

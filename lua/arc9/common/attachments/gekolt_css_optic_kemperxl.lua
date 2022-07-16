@@ -1,7 +1,7 @@
 ATT.PrintName = "Kemper XL"
 ATT.CompactName = "K.XL"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Extremely wide holographic sight with a built in range finder]]
 ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/ragnok.mdl"
@@ -63,7 +63,7 @@ if CLIENT then
         })
 
         if tr.HitSky then
-            top = "NO TARGET"
+            top = "OUT OF RANGE"
         else
             top = tostring(math.ceil(tr.Fraction * d * ARC9.HUToM)) .. "m"
         end

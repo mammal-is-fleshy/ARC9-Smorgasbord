@@ -1,7 +1,7 @@
 ATT.PrintName = "Trilux Scope"
 ATT.CompactName = "Trilux"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Cold War era scope with simple picture]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/trilux.mdl"
@@ -25,12 +25,11 @@ ATT.RTScopeFOV = 5
 ATT.RTScopeReticle = Material("arc9_css/scope_fal.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.95
 ATT.RTScopeColorable = true
-ATT.RTScopeShadowIntensity = 7
 
 ATT.ScopeScreenRatio = 0.9
 
 ATT.Scale = 1.25
-ATT.ModelOffset = Vector(0, 0, -0.25)
+ATT.ModelOffset = Vector(0, 0, -0.1)
 
 ATT.SwayAdd = 0.05
 ATT.FreeAimRadiusMultSights = 0.1

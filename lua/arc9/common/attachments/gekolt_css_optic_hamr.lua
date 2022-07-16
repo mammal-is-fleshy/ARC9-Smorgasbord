@@ -1,7 +1,7 @@
 ATT.PrintName = "HAMR Sight"
 ATT.CompactName = "HAMR"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Combat scope fitted with a backup reflex]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/hamr.mdl"
@@ -12,7 +12,7 @@ ATT.Folder = "SCOPE"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, -2.05),
+        Pos = Vector(0, 8, -2.05),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
@@ -26,8 +26,8 @@ ATT.Sights = {
     },
 }
 
-ATT.RTScopeFOVMax = 10
-ATT.RTScopeFOVMin = 30
+ATT.RTScopeFOVMax = 8
+ATT.RTScopeFOVMin = 15
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 1
 
@@ -37,7 +37,6 @@ ATT.RTScopeFOV = 10
 ATT.RTScopeReticle = Material("arc9_css/scope3_border.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
-ATT.RTScopeShadowIntensity = 10
 
 ATT.ScopeScreenRatio = 0.7
 

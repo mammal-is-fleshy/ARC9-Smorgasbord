@@ -1,7 +1,7 @@
 ATT.PrintName = "MRS Sight"
 ATT.CompactName = "MRS"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[The most basic reflex sight]]
 ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/mrs.mdl"

@@ -1,7 +1,8 @@
 ATT.PrintName = "Holo Prototype Sight"
 ATT.CompactName = "H.Proto"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Holographic sight slapped with some "Tech" bollocks with thermal seeking sense
+Grayscaled for reason not related to gameplay]]
 ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/holo2.mdl"

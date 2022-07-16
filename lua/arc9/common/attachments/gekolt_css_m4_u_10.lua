@@ -18,9 +18,9 @@ end
 
 ATT.ClipSizeOverride = 20
 
-ATT.DamageMaxMult = 0.75
-ATT.DamageMinMult = 2
-ATT.RangeMinMult = 1.05
+ATT.DamageMaxMult = 0.925
+ATT.DamageMinMult = 4.5
+ATT.RangeMinMult = 1.25
 ATT.RangeMaxMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.34
 ATT.RPMMult = 500/700

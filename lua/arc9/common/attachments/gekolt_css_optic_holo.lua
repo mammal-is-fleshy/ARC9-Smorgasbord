@@ -1,7 +1,7 @@
 ATT.PrintName = "Holo Sight"
 ATT.CompactName = "Holo"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Boxy holographic sight with wide fov]]
 ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/holo.mdl"

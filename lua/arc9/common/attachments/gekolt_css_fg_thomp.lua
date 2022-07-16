@@ -18,7 +18,7 @@ ATT.LHIK = true
 ATT.ModelOffset = Vector(0.2, 0, 0.1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 
-ATT.SwayAdd = 0.1
+ATT.SwayAdd = -0.2
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.075
 ATT.SpeedMult = 0.97
