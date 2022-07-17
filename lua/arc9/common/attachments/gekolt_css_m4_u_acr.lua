@@ -4,7 +4,7 @@ ATT.Description = [[Extremely fictional-non-fictional receiver armed with duplex
 Comes with a 40-Rounder
 May or may not deal double damage.]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_acr.png", "mips smooth")
 
 ATT.SortOrder = 0.75
 ATT.Category = "css_m4_up"

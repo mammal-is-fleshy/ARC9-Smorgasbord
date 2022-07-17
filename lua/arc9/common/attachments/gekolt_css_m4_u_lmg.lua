@@ -1,6 +1,6 @@
 ATT.PrintName = "Shrike Receiver"
 ATT.CompactName = "Shrike"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_lmg.png", "mips smooth")
 ATT.Description = [[Upper receiver that takes a 120-round box magazine, effectively giving you a light machine gun. Its main purpose is looking cool.]]
 
 ATT.Pros = {}

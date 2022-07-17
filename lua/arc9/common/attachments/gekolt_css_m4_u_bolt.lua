@@ -1,6 +1,6 @@
 ATT.PrintName = "Predator Receiver"
 ATT.CompactName = "Predator"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_bolt.png", "mips smooth")
 ATT.Description = [[Converts the rifle to bolt-action in order to improve its... ehhhhhhhhhh
 Comes with a built-in suppressor.]]
 

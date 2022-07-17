@@ -1,8 +1,9 @@
-ATT.PrintName = "Spacegun Stock"
-ATT.CompactName = "Spacegun"
-ATT.Description = [[We found this one lying in the wreckage of a crashed alien spaceship. Naturally, the first thing we did was sell it to the general public.]]
+ATT.PrintName = "PDW Stock"
+ATT.CompactName = "PDW"
+ATT.Description = [[Heavy cumbersome chassis built from a pdw kit
+Hence the extremely misleading name.]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_s_pdw.png", "mips smooth")
 
 ATT.SortOrder = 4
 ATT.Category = "css_m4_stock"

@@ -3,7 +3,7 @@ ATT.CompactName = "Marksman"
 ATT.Description = [[Extended guard with 4 extra rails.
 Why couln't there be a regular extended RIS guard?]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_h_bn63.png", "mips smooth")
 
 ATT.SortOrder = 7.5
 ATT.Category = "css_m4_handguard"

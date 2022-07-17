@@ -1,6 +1,6 @@
 ATT.PrintName = "ChainSAW Grip"
 ATT.CompactName = "ChainSAW"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_g_saw.png", "mips smooth")
 ATT.Description = [[Extremely uncomfortable grip for hip firing.
 Don't ask how do you even engage the magazine release button.]]
 

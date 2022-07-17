@@ -1,6 +1,6 @@
 ATT.PrintName = "Little Italy Receiver"
 ATT.CompactName = "Perosa"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_perosa.png", "mips smooth")
 ATT.Description = [[Twin barrel 9mm madness.
 Comes with a preinstalled grip for recoil control.]]
 

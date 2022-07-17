@@ -2,7 +2,7 @@ ATT.PrintName = "Prototype Receiver"
 ATT.CompactName = "Prototype"
 ATT.Description = [[An older design that allows the rifle to take larger bullets. Powerful bullets overpenetrate at close range.]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_10.png", "mips smooth")
 
 ATT.SortOrder = 1.5
 ATT.Category = "css_m4_up"

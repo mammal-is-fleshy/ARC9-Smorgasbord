@@ -1,6 +1,6 @@
 ATT.PrintName = "Sweeper Receiver"
 ATT.CompactName = "Sweeper"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_sg.png", "mips smooth")
 ATT.Description = [[The lord shan't forgive your sins.
 Of course it comes with a drum magazine.
 In case you haven't figure it out, it's an automatic shotgun receiver.]]

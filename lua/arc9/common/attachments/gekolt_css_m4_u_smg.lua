@@ -1,6 +1,6 @@
 ATT.PrintName = "Ancillary Receiver"
 ATT.CompactName = "Aux"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_smg.png", "mips smooth")
 ATT.Description = [[An adapter slapped onto a standard magwell to accept lower calibre.
 For scenarios where you need to downgrade your rifle.]]
 

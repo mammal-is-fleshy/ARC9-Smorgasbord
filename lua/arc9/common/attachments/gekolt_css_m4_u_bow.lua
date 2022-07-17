@@ -1,6 +1,6 @@
 ATT.PrintName = "Ranger Receiver"
 ATT.CompactName = "Ranger"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_bow.png", "mips smooth")
 ATT.Description = [[Why would you want to convert your gun into a crossbow? 
 Armed with explosive bolts because.]]
 

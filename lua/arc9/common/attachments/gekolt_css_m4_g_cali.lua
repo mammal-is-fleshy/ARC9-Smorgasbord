@@ -1,6 +1,6 @@
 ATT.PrintName = "Cali Compliance Grip"
 ATT.CompactName = "Cali"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_g_cali.png", "mips smooth")
 ATT.Description = [[Uncomfortable hunting grip for loopholes.
 Physically impossible to perform a mass shooting.]]
 

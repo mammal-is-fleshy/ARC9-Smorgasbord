@@ -1,6 +1,6 @@
 ATT.PrintName = "Breacher Receiver"
 ATT.CompactName = "Breacher"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_pump.png", "mips smooth")
 ATT.Description = [[Compliment breaching device for your primary.
 Usually these are installed under the handguard.
 Not going to stop you from instaling it directly on the receiver]]

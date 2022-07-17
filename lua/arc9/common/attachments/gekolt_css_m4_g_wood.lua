@@ -1,6 +1,6 @@
 ATT.PrintName = "Wooden Grip"
 ATT.CompactName = "Wooden"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_g_wood.png", "mips smooth")
 ATT.Description = [[Don't let the termites get you]]
 
 ATT.Pros = {}

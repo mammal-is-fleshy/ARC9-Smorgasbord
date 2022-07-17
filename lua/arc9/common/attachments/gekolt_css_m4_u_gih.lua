@@ -1,6 +1,6 @@
 ATT.PrintName = "Gibhr Receiver"
 ATT.CompactName = "Gibhr"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_gih.png", "mips smooth")
 ATT.Description = [[Extra thicc receiver with two barrels and two firemodes.]]
 
 ATT.Pros = {}

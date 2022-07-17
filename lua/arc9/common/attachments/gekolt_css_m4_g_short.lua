@@ -1,6 +1,6 @@
 ATT.PrintName = "Short Grip"
 ATT.CompactName = "Short"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_g_short.png", "mips smooth")
 ATT.Description = [[How do you even hold it?
 Better question, why would you want it?]]
 

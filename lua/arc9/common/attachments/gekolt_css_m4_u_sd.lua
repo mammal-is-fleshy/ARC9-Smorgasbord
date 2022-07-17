@@ -1,9 +1,7 @@
 ATT.PrintName = "Blackout Receiver"
 ATT.CompactName = "Blackout"
-ATT.Icon = Material("")
-ATT.Description = [[Total conversion for barrel and receiver that chambers the gun in .300 Blackout.
-
-Shrimple as that.]]
+ATT.Icon = Material("entities/gekolt_css_m4_u_sd.png", "mips smooth")
+ATT.Description = [[Total conversion for barrel and receiver that chambers the gun in .300 Blackout.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -25,8 +23,6 @@ ATT.DamageMinMult = 0.5
 ATT.RecoilMult = 1.05
 
 ATT.Ammo = "357"
-
-
 
 ATT.Attachments = {
     {

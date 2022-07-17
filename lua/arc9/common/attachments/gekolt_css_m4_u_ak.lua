@@ -1,6 +1,6 @@
 ATT.PrintName = "Chimera Receiver"
 ATT.CompactName = "Chimera"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_u_ak.png", "mips smooth")
 ATT.Description = [[A receiver modification bridging the gap between East and West by allowing your rifle to take AK-47 magazines.]]
 
 ATT.Pros = {}
