@@ -21,3 +21,4 @@ end
 ATT.ClipSizeOverride = 20
 
 ATT.RPMMult = 1.5
+ATT.RecoilMult = 0.8

@@ -23,8 +23,9 @@ ATT.DamageMinMult = 4.5
 ATT.RangeMinMult = 1.25
 ATT.RangeMaxMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.34
-ATT.RPMMult = 500/700
-ATT.RecoilMult = 2
+ATT.RPMMult = 520/700
+ATT.RecoilUpMult = 1.5
+ATT.RecoilSideMult = 0.5
 ATT.RecoilPatternDriftMult = 2
 
 ATT.Ammo = "ar2"
