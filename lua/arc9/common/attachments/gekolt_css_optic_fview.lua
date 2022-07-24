@@ -2,7 +2,7 @@ ATT.PrintName = "Far View Scope"
 ATT.CompactName = "FView"
 ATT.Icon = Material("")
 ATT.Description = [[]]
-ATT.SortOrder = 6
+ATT.SortOrder = 6.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/farview.mdl"
 
