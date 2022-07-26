@@ -5,9 +5,13 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CSS"
 
-SWEP.PrintName = "Hammer & Sickle"
+SWEP.PrintName = "Hammer and Sickle"
 
 SWEP.Class = "Melee"
+SWEP.Trivia = {
+    ["Country of Origin"] = "Insert Generic Union/Commune Here",
+    ["Caliber"] = "Wood and Steel",
+}
 
 SWEP.Credits = {
     Author = "Geckololt",
@@ -15,7 +19,7 @@ SWEP.Credits = {
     Assets = "CoD: Black Ops"
 }
 
-SWEP.Description = [[Arm the working class]]
+SWEP.Description = [[These two pack more than just symbolism and questionable design.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_hns.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"

@@ -334,17 +334,33 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire_full",
 		MinProgress = 0.05,
+		EjectAt = 30/40,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
         },		
     },	
-
+    ["fire_iron"] = {
+        Source = "fire_full",
+		EjectAt = 30/40,		
+		MinProgress = 0.05,
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
+        },		
+    },		
     ["fire_empty"] = {
         Source = "fire",
 		MinProgress = 0.05,
+    },	
+    ["fire_iron_empty"] = {
+        Source = "fire",
+		MinProgress = 0.05,
     },		
+
+
 
     ["fire_smg"] = {
         Source = "fire_smg",
@@ -354,12 +370,21 @@ SWEP.Animations = {
         Source = "fire_smg",
 		MinProgress = 0.05,
     },	
+    ["fire_iron_smg"] = {
+        Source = "fire_iron_smg",
+		MinProgress = 0.05,
+    },		
 	
     ["fire_br"] = {
         Source = "fire_br",
 		MinProgress = 0.05,
 		Mult =1,
     },	
+    ["fire_iron_br"] = {
+        Source = "fire_br",
+		MinProgress = 0.05,
+		Mult =1,
+    },		
     ["fire_empty_br"] = {
         Source = "fire_br",
 		MinProgress = 0.05,

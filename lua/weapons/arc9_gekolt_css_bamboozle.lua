@@ -8,6 +8,10 @@ SWEP.Category = "ARC-9 - CSS"
 SWEP.PrintName = "Claymore on a Stick"
 
 SWEP.Class = "Melee"
+SWEP.Trivia = {
+    ["Country of Origin"] = "Scotland",
+    ["Caliber"] = "3.2mm steel balls",
+}
 
 SWEP.Credits = {
     Author = "Geckololt",
@@ -15,7 +19,9 @@ SWEP.Credits = {
     Assets = "Firearms: Source"
 }
 
-SWEP.Description = [[The japanese has attack once again]]
+SWEP.Description = [[The japanese has attacked once again.
+
+Crude anti-tank-personnel-whateverinfrontofyou device from the peak of the highlands.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_bamboo.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
