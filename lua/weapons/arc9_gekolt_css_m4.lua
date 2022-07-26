@@ -633,7 +633,6 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,				
     },	
-
     ["reload_smg"] = {
         Source = "wet_smg",
         EventTable = {		
@@ -646,6 +645,20 @@ SWEP.Animations = {
 		},
 		FireASAP = true,
 		MinProgress = 0.9,		
+    },		
+    ["reload_empty_sd"] = {
+        Source = "dry_sd",
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
+            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 75 / 40},			
+        },			
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},
+		FireASAP = true,
+		MinProgress = 0.9,				
     },		
 	
     ["idle_bow"] = {

@@ -253,6 +253,15 @@ $sequence "wet_sg" {
 	fps 40
 }
 
+$sequence "dry_sd" {
+	"anims\dry_sd.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "dry_2" {
 	"anims\dry_2.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		

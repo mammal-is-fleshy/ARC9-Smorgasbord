@@ -32,3 +32,7 @@ ATT.Attachments = {
         Ang = Angle(90, 0, -90),
     },		
 }
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+	if anim == "reload_empty" then return "reload_empty_sd" end	
+end
