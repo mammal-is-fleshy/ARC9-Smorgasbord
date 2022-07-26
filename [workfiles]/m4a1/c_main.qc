@@ -41,7 +41,9 @@ $bodygroup "stock"
 	studio "m4a1_stock_swire.smd"	
 	studio "m4a1_stock_607.smd"	
 	studio "m4a1_stock_608.smd"		
-	studio "m4a1_stock_thomp.smd"			
+	studio "m4a1_stock_thomp.smd"
+	studio "m4a1_stock_t91.smd"	
+	studio "m4a1_stock_x79.smd"
 }
 
 $bodygroup "rail_top"
@@ -76,7 +78,8 @@ $bodygroup "iron"
 	studio "m4a1_iron_cross.smd"
 	blank
 	studio "m4a1_iron_lmg.smd"
-	studio "m4a1_iron_perosa.smd"	
+	studio "m4a1_iron_perosa.smd"
+	studio "m4a1_iron_9mm.smd"
 }
 
 $bodygroup "handguard"
@@ -98,7 +101,9 @@ $bodygroup "handguard"
 	studio "m4a1_hg_sten.smd"
 	studio "m4a1_hg_doe.smd"
 	studio "m4a1_hg_608.smd"
-	studio "m4a1_hg_bn36.smd"	
+	studio "m4a1_hg_bn36.smd"
+	studio "m4a1_hg_t86.smd"
+	studio "m4a1_hg_t65.smd"
 }
 
 $bodygroup "grip"
@@ -141,7 +146,9 @@ $bodygroup "fsight"
 	studio "m4a1_fs_sten.smd"	
 	studio "m4a1_fs_doe.smd"	
 	studio "m4a1_fs_608.smd"		
-	studio "m4a1_fs_bn36.smd"		
+	studio "m4a1_fs_bn36.smd"
+	studio "m4a1_fs_t86.smd"
+	studio "m4a1_fs_t65.smd"		
 }
 
 $illumposition 0 0 0

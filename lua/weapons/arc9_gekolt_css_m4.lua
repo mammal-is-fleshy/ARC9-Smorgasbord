@@ -824,7 +824,7 @@ SWEP.AttachmentElements = {
 	},	
     ["up_9mm"] = {
         Bodygroups = {
-            {4, 1}
+            {4, 1},{5, 11}
         },
 	},	
     ["up_sd"] = {
@@ -926,6 +926,14 @@ SWEP.AttachmentElements = {
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), }, [9] = { Pos = Vector(0, -0.25, 18.25), }, }			
+	},	
+    ["guard_t86"] = {
+        Bodygroups = { {6, 18}, {10, 16} },
+        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 19.5), }, }			
+	},	
+    ["guard_t65"] = {
+        Bodygroups = { {6, 19}, {10, 17} },
+        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 22.75), }, }			
 	},		
 	
     ["s_a1"] = {
@@ -960,7 +968,13 @@ SWEP.AttachmentElements = {
 	},
     ["s_607"] = {
         Bodygroups = { {2, 11} },
-	},			
+	},	
+    ["s_x79"] = {
+        Bodygroups = { {2, 14} },
+	},
+    ["s_t91"] = {
+        Bodygroups = { {2, 13} },
+	},		
 	
     ["g_ske"] = {
         Bodygroups = { {7, 3} },
