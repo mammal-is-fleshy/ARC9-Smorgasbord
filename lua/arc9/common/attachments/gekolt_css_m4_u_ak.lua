@@ -16,6 +16,7 @@ ATT.ShootSound = "gekolt_css/ak47-1.wav"
 
 ATT.RecoilMult = 1.5
 ATT.DamageMinMult = 1.5
+ATT.DamageMaxMult = 1.25
 ATT.PhysBulletMuzzleVelocityMult = 1.25
 ATT.RPMMult = 600 / 700
 

@@ -43,6 +43,7 @@ ATT.ModelOffset = Vector(2, 0, -2)
 ATT.ModelAngleOffset = Angle(90, 0, -90)
 ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_cali.mdl"
 
+ATT.RecoilMult = 0.75
 ATT.DamageMaxMult = 0.9
 ATT.DamageMinMult = 0.75
 ATT.RangeMinMult = 0.5

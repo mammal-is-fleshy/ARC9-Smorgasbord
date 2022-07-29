@@ -94,20 +94,20 @@ SWEP.Firemodes = {
 SWEP.Recoil = 0.5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.65 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.45 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.25
-SWEP.RecoilRandomSide = 0.5
+SWEP.RecoilRandomSide = 0.25
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1
+SWEP.RecoilKick = 0.75
 
 -------------------------- SPREAD
 
@@ -784,7 +784,7 @@ SWEP.AttachmentElements = {
             {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7},
         },
         AttPosMods = {
-            [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.3, 4.5), } }		
+            [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
 	},
     ["up_bow"] = {
         Bodygroups = {
