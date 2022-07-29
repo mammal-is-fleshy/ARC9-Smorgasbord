@@ -199,7 +199,7 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "muzzleflash_5"
+SWEP.MuzzleParticle = "muzzleflash_4"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.ShellModel = "models/shells/shell_556.mdl"
@@ -242,7 +242,9 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
     		if anim == "idle" then  return "idle_ubgl" end	
     		if anim == "idle_empty" then  return "idle_ubgl" end				
     		if anim == "fire" then  return "fire_ubgl" end		
-    		if anim == "fire_empty" then  return "fire_ubgl" end					
+    		if anim == "fire_empty" then  return "fire_ubgl" end
+    		if anim == "fire_iron" then  return "fire_ubgl" end		
+    		if anim == "fire_iron_empty" then  return "fire_ubgl" end			
     end
 end
 
@@ -269,11 +271,17 @@ SWEP.Animations = {
     },
     ["enter_ubgl"] = {
         Source = "r2n",
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }},			
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }},	
+        EventTable = {
+            {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 0 / 40},
+        },			
     },  
 	["exit_ubgl"] = {
         Source = "n2r",
 		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }},		
+        EventTable = {
+            {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 0 / 40},
+        },			
     },  
 	["reload_ubgl"] = {
         Source = "nade_reload",
@@ -929,11 +937,11 @@ SWEP.AttachmentElements = {
 	},	
     ["guard_t86"] = {
         Bodygroups = { {6, 18}, {10, 16} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 19.5), }, }			
+        AttPosMods = { [5] = { Pos = Vector(0, 1.25, 13.15), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 19.5), }, }			
 	},	
     ["guard_t65"] = {
         Bodygroups = { {6, 19}, {10, 17} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 22.75), }, }			
+        AttPosMods = { [5] = { Pos = Vector(0, 1.15, 13.6), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 22.75), }, }			
 	},		
 	
     ["s_a1"] = {
