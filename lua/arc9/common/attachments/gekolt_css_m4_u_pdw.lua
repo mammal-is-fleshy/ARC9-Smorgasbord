@@ -2,8 +2,7 @@ ATT.PrintName = "Defiant Receiver"
 ATT.CompactName = "Defiant"
 ATT.Icon = Material("entities/gekolt_css_m4_u_pdw.png", "mips smooth")
 ATT.Description = [[One of the stupidest ideas for a gun ever conceived.
-Turns your M4 into a non-PDW length PDW.
-Lets your gun shoot P90 magazines.]]
+Turns your M4 into a non-PDW length PDW firing from P90 magazines.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -25,7 +24,7 @@ ATT.Sights = {
         Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
 
 
-        Magnification = 1,
+        Magnification = 1.05,
         IsIronSight = true,
         KeepBaseIrons = false
     }
