@@ -1,6 +1,6 @@
 ATT.PrintName = "Howell Full-Auto Frame"
 ATT.CompactName = "AUTO-Frame"
-ATT.Icon = Material("entities/arc9_att_m16_barrel_a1.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
 ATT.Description = [[This ancient mechanism from the 1900s allows your not so lee enfield looking gun to fire in [SEMI]-auto!
 Extremely questionable choice for your bolt action of this calibre. Or not, not here to judge.
 Comes with a comically large 20 round mag that for some reason look like it could hold 10 more.

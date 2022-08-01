@@ -2,7 +2,7 @@ ATT.PrintName = "No Stock"
 ATT.CompactName = "No"
 ATT.Description = [[Why would you do this]]
 
-ATT.Icon = Material("entities/arc9_att_ak_stock_skeleton.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_blank.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = "css_awp_stock"
