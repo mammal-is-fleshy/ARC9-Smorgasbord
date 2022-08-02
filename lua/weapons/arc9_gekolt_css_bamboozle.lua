@@ -148,6 +148,12 @@ SWEP.AnimShoot = ACT_MELEE_ATTACK2
 SWEP.AnimReload = ACT_IDLE_MELEE
 SWEP.AnimDraw = false
 
+SWEP.BlindFireLeft = false
+
+SWEP.BlindFireOffset = Vector(0, 0, 32) -- The amount by which to offset the blind fire muzzle.
+SWEP.BlindFirePos = Vector(-2, -5, 5)
+SWEP.BlindFireAng = Angle(0, 10, -20)
+
 -------------------------- SOUNDS
 SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
 SWEP.TriggerDelayTime = 0.275 -- Time until weapon fires.

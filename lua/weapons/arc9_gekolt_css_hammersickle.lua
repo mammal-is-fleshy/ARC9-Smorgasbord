@@ -36,6 +36,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "00"
 
+SWEP.CanBlindFire = false
 -------------------------- MAGAZINE
 
 SWEP.Ammo = "" -- What ammo type this gun uses.

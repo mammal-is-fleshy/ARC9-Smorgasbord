@@ -145,6 +145,26 @@ SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.75
 SWEP.SpeedMultBlindFire = 0.95
 
+-------------------------- BLIND FIRE
+
+SWEP.CanBlindFire = true -- This weapon is capable of blind firing.
+SWEP.BlindFireLHIK = false -- Hide the left hand while blind firing forward.
+
+SWEP.BlindFireLeft = true
+SWEP.BlindFireRight = true -- This weapon can blind fire towards the right. Generally keep this off.
+
+SWEP.BlindFireOffset = Vector(0, 0, 32) -- The amount by which to offset the blind fire muzzle.
+SWEP.BlindFirePos = Vector(-2, -2, 8)
+SWEP.BlindFireAng = Angle(0, 0, -45)
+
+SWEP.BlindFireRightOffset = Vector(0, 24, 0) -- The amount by which to offset the blind fire muzzle.
+SWEP.BlindFireRightPos = Vector(-8, 10, -1)
+SWEP.BlindFireRightAng = Angle(-45, 0, 0)
+
+SWEP.BlindFireLeftOffset = Vector(0, 24, 0) -- The amount by which to offset the blind fire muzzle.
+SWEP.BlindFireLeftPos = Vector(5, 5, 0)
+SWEP.BlindFireLeftAng = Angle(60, 0, 0)
+
 -------------------------- MELEE
 
 SWEP.Bash = true
