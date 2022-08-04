@@ -111,7 +111,7 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 0 
 
-SWEP.RecoilKick = 0.75
+SWEP.RecoilKick = 3
 
 -------------------------- SPREAD
 
@@ -353,13 +353,14 @@ SWEP.Animations = {
 	
     ["fire"] = {
         Source = "fire_full",
-		MinProgress = 0.05,
 		EjectAt = 30/40,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
         },		
+		FireASAP = true,
+		MinProgress = 0.83,		
     },	
     ["fire_iron"] = {
         Source = "fire_full",
@@ -418,11 +419,12 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "wet",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        MinProgress = 1.5,
         EventTable = {
             {s =  "gekolt_css/awp_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/awp_clipin.wav" ,    t = 50 / 40},
-        },		
+        },
+		FireASAP = true,
+		MinProgress = 0.83,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
@@ -431,7 +433,8 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        MinProgress = 2,
+		FireASAP = true,
+		MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_css/awp_clipout.wav" ,   t = 20 / 40},
             {s =  "gekolt_css/awp_clipin.wav" ,    t = 60 / 40},		
@@ -446,7 +449,8 @@ SWEP.Animations = {
     ["reload_br"] = {
         Source = "wet_br",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        MinProgress = 1.5,
+		FireASAP = true,
+		MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 58 / 40},
@@ -460,7 +464,8 @@ SWEP.Animations = {
     ["reload_empty_br"] = {
         Source = "dry_br",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        MinProgress = 2,
+		FireASAP = true,
+		MinProgress = 0.86,
         EventTable = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 58 / 40},
@@ -478,7 +483,8 @@ SWEP.Animations = {
     ["reload_smg"] = {
         Source = "wet_smg",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        MinProgress = 1.5,
+		FireASAP = true,
+		MinProgress = 0.85,
         EventTable = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/mp5_clipin.wav" ,    t = 58 / 40},
@@ -491,7 +497,8 @@ SWEP.Animations = {
     ["reload_empty_smg"] = {
         Source = "dry_smg",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        MinProgress = 2,
+		FireASAP = true,
+		MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/mp5_clipin.wav" ,    t = 58 / 40},

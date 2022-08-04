@@ -51,23 +51,17 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0 -- Multiplier for vertical recoil
 
--- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
--- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
-
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 0.5
+SWEP.RecoilKick = 2
 
 -------------------------- ENTITY LAUNCHING
 

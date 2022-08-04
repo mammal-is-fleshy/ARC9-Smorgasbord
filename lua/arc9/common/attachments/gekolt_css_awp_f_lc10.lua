@@ -21,19 +21,25 @@ ATT.HipDispersionMult = 2
 ATT.SightsDispersionMult = 2
 ATT.SightTimeMult = 0.75
 
-ATT.SpeedMultSightsMult = 2.5
-ATT.Mult_SpeedMultSights = 1.75
-ATT.SpeedMultShootingMult = 2.25
+ATT.Mult_SpeedMultSights = 0.5
+ATT.Mult_SpeedMultShooting = 0.5
 ATT.Ammo = "pistol"
+
+ATT.ClipSizeOverride = 25
+
+
+ATT.AimDownSightsTimeMult = 0.75
+ATT.DamageMaxMult = 45/60
+ATT.DamageMinMult = 20/160
+ATT.RangeMinMult = 0.8
+ATT.RangeMaxMult = 0.8
+ATT.RecoilMult = 0.4
+ATT.RecoilKickMult = 1.2/3
 
 ATT.RPMMult = 900/50
 ATT.Firemodes = {
     {
         Mode = -1,
-        Recoil = 0.4, -- add other attachment modifiers
-		ClipSize = 25,
-		DamageMax = 45,
-		DamageMin = 20,
     }
 }
 

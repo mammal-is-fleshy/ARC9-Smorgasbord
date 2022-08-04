@@ -13,18 +13,21 @@ ATT.SortOrder = 2
 ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"awp_f_howell"}
 ATT.MuzzleParticle = "muzzleflash_smg"
-ATT.ShootSound = "gekolt_css/ak47-1.wav"
+--ATT.ShootSound = "gekolt_css/ak47-1.wav"
 
 ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 320/50
+ATT.RPMMult = 350/50
 ATT.Firemodes = {
     {
         Mode = -1,
-		ClipSize = 20,
-        DamageMax = 90,
-		DamageMin = 60,
     }
 }
+ATT.ClipSizeOverride = 20
+
+ATT.DamageMaxMult = 90/60
+ATT.DamageMinMult = 60/160
+ATT.RecoilMult = 1.15
+ATT.RecoilKickMult = 2/3
 
 ATT.SpeedMultSightsMult = 2
 ATT.SpeedMultShootingMult = 1.25
