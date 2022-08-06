@@ -20,7 +20,7 @@ ATT.Attachments = {
         PrintName = "MOUNT LEFT",
         Category = "mountr_css",
         Pos = Vector(-1,-1.5, 0),
-        Ang = Angle(180, 180, 90),
+        Ang = Angle(0, 0, -90),
         ExtraSightDistance = 5
     },
 	
