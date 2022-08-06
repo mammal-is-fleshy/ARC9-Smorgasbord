@@ -20,7 +20,7 @@ ATT.Attachments = {
     {
         PrintName = "OPTIC",
         Category = {"optic_css_s", "tac_css"},
-        Pos = Vector(0.3, 0.7, 0.35),
+        Pos = Vector(-0.3, 0.7, -0.35),
         Ang = Angle(0, 0, 45),
 		KeepBaseIrons = true,
     },
