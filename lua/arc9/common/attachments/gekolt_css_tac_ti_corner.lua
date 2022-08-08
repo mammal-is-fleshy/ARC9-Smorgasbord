@@ -127,14 +127,14 @@ ATT.Hook_DoRT = function(swep)
         })
     end
 
-    if blindfiretime < 0.2 then
+    if blindfiretime < 0.3 then
         surface.SetMaterial(csm_boot_1)
-    elseif blindfiretime < 0.4 then
-        surface.SetMaterial(csm_boot_2)
     elseif blindfiretime < 0.6 then
+        surface.SetMaterial(csm_boot_2)
+    elseif blindfiretime < 0.9 then
         surface.SetMaterial(csm_boot_3)
     else
-        if math.sin(CurTime() * 3) > 0.25 then
+        if math.sin(CurTime() * 5) > 0.25 then
             surface.SetMaterial(csm_1)
         else
             surface.SetMaterial(csm_2)
