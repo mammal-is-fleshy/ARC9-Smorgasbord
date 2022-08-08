@@ -105,7 +105,7 @@ ATT.Hook_DoRT = function(swep)
     cam.Start2D()
 
     if blindfiretime < 1 then
-        if blindfiretime < 0.75 then
+        if blindfiretime < 0.8 then  -- grey screen + timing
             surface.SetDrawColor(255, 255, 255)
             surface.SetMaterial(noisemats[math.random(#noisemats)])
             surface.DrawTexturedRect(0, 0, rt_w, rt_h)
@@ -127,14 +127,14 @@ ATT.Hook_DoRT = function(swep)
         })
     end
 
-    if blindfiretime < 0.3 then
+    if blindfiretime < 0.2 then   --- self explainatory
         surface.SetMaterial(csm_boot_1)
     elseif blindfiretime < 0.6 then
         surface.SetMaterial(csm_boot_2)
-    elseif blindfiretime < 0.9 then
+    elseif blindfiretime < 1 then
         surface.SetMaterial(csm_boot_3)
     else
-        if math.sin(CurTime() * 5) > 0.25 then
+        if math.sin(CurTime() * 5) > 0.25 then --- self explainatory
             surface.SetMaterial(csm_1)
         else
             surface.SetMaterial(csm_2)
