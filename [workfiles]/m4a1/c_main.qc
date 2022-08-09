@@ -152,31 +152,6 @@ $bodygroup "fsight"
 	studio "m4a1_fs_t65.smd"		
 }
 
-
-$bodygroup "brail"
-{
-	studio "m4a1_brail.smd"
-	studio "m4a1_brail_10.smd"
-	studio "m4a1_brail_a1.smd"
-	studio "m4a1_brail_a2.smd"
-	studio "m4a1_brail_adar.smd"
-	studio "m4a1_brail_lmg.smd"	
-	blank
-	blank
-	blank
-	studio "m4a1_brail_lr300.smd"	
-	blank
-	studio "m4a1_brail_acr.smd"
-	blank
-	studio "m4a1_brail_dragoon.smd"
-	blank
-	studio "m4a1_brail_doe.smd"
-	studio "m4a1_brail_608.smd"
-	blank
-	studio "m4a1_brail_t86.smd"
-	studio "m4a1_brail_t65.smd"
-}
-
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\v_models\pist_glock18\"

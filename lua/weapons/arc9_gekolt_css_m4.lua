@@ -893,74 +893,74 @@ SWEP.AttachmentElements = {
 	},	
 	
     ["guard_lmg"] = {
-        Bodygroups = { {6, 5},{11, 5}, {10, 5} },
+        Bodygroups = { {6, 5}, {10, 5} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.85, 11.9),}, [8] = { Pos = Vector(0, -0.25, 30), }, [9] = { Pos = Vector(0, -0.25, 23.5), }, }
 	},		
     ["guard_a1"] = {
-        Bodygroups = { {6, 2},{11, 2}, {10, 2} },
+        Bodygroups = { {6, 2}, {10, 2} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }
 	},	
     ["guard_drg"] = {
-        Bodygroups = { {6, 13},{11, 13}, {10, 11} },
+        Bodygroups = { {6, 13}, {10, 11} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.25, 11.9),}, [8] = { Pos = Vector(0, -0.25, 22), }, [9] = { Pos = Vector(0, -0.25, 19.55), }, }		
 	},	
     ["guard_doe"] = {
-        Bodygroups = { {6, 15},{11, 15}, {10, 13} },
+        Bodygroups = { {6, 15}, {10, 13} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [8] = { Pos = Vector(0, -0.25, 15), } }		
 	},	
     ["guard_608"] = {
-        Bodygroups = { {6, 16},{11, 16}, {10, 14} },
+        Bodygroups = { {6, 16}, {10, 14} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.75),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
 	},		
     ["guard_acr"] = {
-        Bodygroups = { {6, 11},{11, 11}, {10, 7} },
+        Bodygroups = { {6, 11}, {10, 7} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }		
 	},		
     ["guard_a2"] = {
-        Bodygroups = { {6, 3},{11, 3}, {10, 3} },
+        Bodygroups = { {6, 3}, {10, 3} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }				
 	},	
     ["guard_bn63"] = {
-        Bodygroups = { {6, 17},{11, 17}, {10, 15} },
+        Bodygroups = { {6, 17}, {10, 15} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.5, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }	
 	},		
     ["guard_10"] = {
-        Bodygroups = { {6, 1},{11, 1}, {10, 1} },
+        Bodygroups = { {6, 1}, {10, 1} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), }, [9] = { Pos = Vector(0, -0.25, 24.25), }, }
 	},
     ["guard_148"] = {
         Bodygroups = { {6, 12} },		
 	},	
     ["guard_adar"] = {
-        Bodygroups = { {6, 4},{11, 4}, {10, 4} },
+        Bodygroups = { {6, 4}, {10, 4} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), }, [9] = { Pos = Vector(0, -0.25, 24.1), }, }	
 	},	
     ["guard_no"] = {
-        Bodygroups = { {6, 6},{11, 6}, {10, 6} },
+        Bodygroups = { {6, 6}, {10, 6} },
 		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 12.75), } }			
 	},	
     ["guard_sten"] = {
-        Bodygroups = { {6, 14},{11, 14}, {10, 12} },
+        Bodygroups = { {6, 14}, {10, 12} },
 		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 19), } }			
 	},		
     ["guard_lr300"] = {
-        Bodygroups = { {6, 9},{11, 9}, {10, 9} },
+        Bodygroups = { {6, 9}, {10, 9} },
 		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 23), } }			
 	},	
     ["guard_ris"] = {
-        Bodygroups = { {6, 10},{11, 10}, {10, 10} },
+        Bodygroups = { {6, 10}, {10, 10} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), },[8] = { Pos = Vector(0, -0.25, 21.2), }, [9] = { Pos = Vector(0, -0.25, 18.75), }, }
 	},		
     ["guard_spr"] = {
-        Bodygroups = { {6, 8},{11, 8}, {10, 8} },
+        Bodygroups = { {6, 8}, {10, 8} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), }, [9] = { Pos = Vector(0, -0.25, 18.25), }, }			
 	},	
     ["guard_t86"] = {
-        Bodygroups = { {6, 18},{11, 18}, {10, 16} },
+        Bodygroups = { {6, 18}, {10, 16} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.25, 13.15), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 19.5), }, }			
 	},	
     ["guard_t65"] = {
-        Bodygroups = { {6, 19},{11, 19}, {10, 17} },
+        Bodygroups = { {6, 19}, {10, 17} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.15, 13.6), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 22.75), }, }			
 	},		
 	
@@ -1045,8 +1045,6 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)  -- IM SORRY IM SORRY IM SORRY 
 	if wep.Attachments[7].Installed and wep:HasElement("up_proto") and not wep:HasElement("m16_on") then model:SetBodygroup(3,3) end		
 -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
 	if wep.Attachments[7].Installed and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
-	
-	if not wep.Attachments[5].Installed then model:SetBodygroup(11,6) end			
 end
 --- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
 --- surely theres a much much much much much better alternative
