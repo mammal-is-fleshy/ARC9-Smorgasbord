@@ -1,6 +1,6 @@
 ATT.PrintName = "Breacher"
 ATT.CompactName = "Breacher"
-ATT.Description = [[]]
+ATT.Description = [[Spiking muzzle for bashing people]]
 
 ATT.Icon = Material("")
 ATT.SortOrder = 1

@@ -1,7 +1,7 @@
 ATT.PrintName = "Reddot Sight"
 ATT.CompactName = "Reddot"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Cylindrical optics with lot's of circles.]]
 ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/reddot.mdl"

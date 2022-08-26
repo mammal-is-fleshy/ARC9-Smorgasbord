@@ -1,7 +1,7 @@
 ATT.PrintName = "Defiant Receiver"
 ATT.CompactName = "Defiant"
 ATT.Icon = Material("entities/gekolt_css_m4_u_pdw.png", "mips smooth")
-ATT.Description = [[One of the stupidest ideas for a gun ever conceived.
+ATT.Description = [[PDW is such a concept
 Turns your M4 into a non-PDW length PDW firing from P90 magazines.]]
 
 ATT.Pros = {}

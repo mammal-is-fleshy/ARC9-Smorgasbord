@@ -1,6 +1,6 @@
 ATT.PrintName = "Sliding Stock B"
 ATT.CompactName = "SB"
-ATT.Description = [[Yoo YOOOOO]]
+ATT.Description = [[Reverese telescopic stock]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_s_wire.png", "mips smooth")
 

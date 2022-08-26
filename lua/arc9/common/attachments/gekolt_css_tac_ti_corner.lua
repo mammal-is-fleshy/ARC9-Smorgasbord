@@ -1,6 +1,6 @@
 ATT.PrintName = "Corner-Cam"
 ATT.CompactName = "C-CAM"
-ATT.Description = [[]]
+ATT.Description = [[Have a quick peak on this 40fps camera when you blind fire]]
 
 ATT.Icon = Material("")
 

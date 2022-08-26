@@ -1,7 +1,7 @@
 ATT.PrintName = "S&D Medium Scope"
 ATT.CompactName = "S&D M"
 ATT.Icon = Material("")
-ATT.Description = [[]]
+ATT.Description = [[Medium range hunting scope]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/schd.mdl"

@@ -1,7 +1,7 @@
 ATT.PrintName = "Clamped Rail"
 ATT.CompactName = "Rail"
 ATT.Icon = Material("")
-ATT.Description = [[Extend your handguard even more.]]
+ATT.Description = [[Extend your handguard even more. This time with Foregrip Option]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/clamp_long.mdl"

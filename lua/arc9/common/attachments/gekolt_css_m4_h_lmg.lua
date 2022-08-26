@@ -11,3 +11,4 @@ ATT.ActivateElements = {"guard_lmg"}
 ATT.SwayMult = 1.5
 ATT.RecoilSideMult = 0.75
 ATT.RPMMult = 0.9
+ATT.VisualRecoilMult = 0.75

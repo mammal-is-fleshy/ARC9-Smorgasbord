@@ -1,6 +1,6 @@
 ATT.PrintName = "Negator"
 ATT.CompactName = "Negator"
-ATT.Description = [[]]
+ATT.Description = [[Heavy device improves sustaining recoil]]
 
 ATT.Icon = Material("")
 ATT.SortOrder = 1

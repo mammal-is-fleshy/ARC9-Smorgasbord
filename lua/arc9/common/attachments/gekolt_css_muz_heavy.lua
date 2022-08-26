@@ -1,6 +1,6 @@
 ATT.PrintName = "Heavy Muzzle Break"
 ATT.CompactName = "H.BRAKE"
-ATT.Description = [[]]
+ATT.Description = [[Muzzle device designed to compensate DMR/Sniper Rifle recoil]]
 
 ATT.Icon = Material("")
 ATT.SortOrder = 1

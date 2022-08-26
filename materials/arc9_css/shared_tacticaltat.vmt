@@ -4,14 +4,12 @@
 	"$bumpmap" "arc9_css\shared_tacticaltat_norm"
 
  $envmap env_cubemap
- $envmapsaturation "0.200000"
- $envmaptint "[0.02 0.02 0.02]"
+ $envmapsaturation "0.02"
+ $envmaptint "[0.002 0.002 0.002]"
  $phong 1
- $phongboost "0.25"
- $phongfresnelranges "[1 14 40]"
- $phongexponent 5
- $rimlight 0
- $rimlightexponent 22
- $rimlightboost "0.120000"
+ $phongboost "0.1"
+ $phongfresnelranges "[1 2 2]"
+ $phongexponent 20
  $nocull 1	
+ $color2 "[1.2 1.2 1.25]"	
 }

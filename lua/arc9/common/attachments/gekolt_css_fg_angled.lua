@@ -1,6 +1,7 @@
 ATT.PrintName = "Angled Foregrip"
 ATT.CompactName = "AFG"
-ATT.Description = [[Fast aim though]]
+ATT.Description = [[Foregrip allowing faster aim acquisition
+Slightly suffer from recoil and stability]]
 
 ATT.Icon = Material("")
 

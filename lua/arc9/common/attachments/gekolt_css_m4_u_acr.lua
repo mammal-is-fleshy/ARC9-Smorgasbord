@@ -1,7 +1,6 @@
 ATT.PrintName = "Experimental Receiver"
 ATT.CompactName = "Exr"
-ATT.Description = [[Extremely fictional-non-fictional receiver armed with duplex ammunition.
-Comes with a 40-Rounder
+ATT.Description = [[Extremely fictional-non-fictional receiver armed with duplex ammunition stacked in a 40-Rounder
 May or may not deal double damage.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_u_acr.png", "mips smooth")
@@ -17,5 +16,3 @@ end
 ATT.ClipSizeOverride = 40
 
 ATT.DamageRand = 2
-ATT.DamageMaxMult = 1.25
-ATT.DamageMinMult = 1.25

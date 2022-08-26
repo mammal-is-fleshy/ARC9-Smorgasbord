@@ -1,7 +1,8 @@
 ATT.PrintName = "Telescopic Ironsight"
-ATT.CompactName = "Mounted"
+ATT.CompactName = "Telescopic"
 ATT.Icon = Material("")
-ATT.Description = [[h]]
+ATT.Description = [[Old ironsight system designed for variable ranges.
+No you can't switch between them.]]
 ATT.SortOrder = 0.01
 
 ATT.Model = "models/weapons/geckololt_css/atts/rail_iron.mdl"

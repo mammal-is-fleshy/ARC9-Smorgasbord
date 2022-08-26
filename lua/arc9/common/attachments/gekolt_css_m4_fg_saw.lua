@@ -1,7 +1,9 @@
 ATT.PrintName = "ChainSAW Foregrip"
 ATT.CompactName = "ChainSAW"
 ATT.Icon = Material("")
-ATT.Description = [[Disables the ability to scope in.]]
+ATT.Description = [[Obvious questions include why how and what.
+Horizontal grip dramatically increases hip fire potential
+Disables the ability to scope in.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

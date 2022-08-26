@@ -1,6 +1,6 @@
 ATT.PrintName = "Stub Barrel"
 ATT.CompactName = "Stub"
-ATT.Description = [[It's longer than what you got down there.]]
+ATT.Description = [[It's still longer than what you got down there.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_patriot.png", "mips smooth")
 
