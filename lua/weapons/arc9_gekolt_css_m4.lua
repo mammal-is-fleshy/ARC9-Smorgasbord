@@ -560,6 +560,10 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.925,		
     },	
+    ["fire_proto"] = { Source = {"fire_proto"},
+    },
+    ["fire_iron_proto"] = { Source = {"fire_iron_proto"},
+    },		
 
     ["reload_empty_pdw"] = {
         Source = "dry_57",
@@ -616,6 +620,10 @@ SWEP.Animations = {
         },
 		FireASAP = true,
 		MinProgress = 0.9,				
+    },		
+    ["fire_sg"] = { Source = {"fire_proto"},
+    },
+    ["fire_iron_sg"] = { Source = {"fire_iron_proto"},
     },		
 
     ["reload_empty_ak"] = {
@@ -689,15 +697,9 @@ SWEP.Animations = {
 		MinProgress = 0.9,				
     },		
 	
-    ["idle_bow"] = {
-        Source = "idle_bow",
-    },	
-    ["idle_empty_bow"] = {
-        Source = "idle_empty_bow",
-    },
-    ["fire_bow"] = {
-        Source = "fire_bow",
-    },	
+    ["idle_bow"] = { Source = "idle_bow", },	
+    ["idle_empty_bow"] = { Source = "idle_empty_bow", },
+    ["fire_bow"] = { Source = "fire_bow", },	
     ["reload_bow"] = {
         Source = "dry_bow",
         EventTable = {					
@@ -883,7 +885,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 5},{1, 2},{4, 5},{5, 8},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), }, [9] = { Pos = Vector(0, -0.25, 18.5), }, }				
+		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), }, [8] = { Pos = Vector(0, -0.25, 25), } , [9] = { Pos = Vector(0, -0.25, 18.5), }, }				
 	},		
     ["up_pump"] = {
         Bodygroups = {
