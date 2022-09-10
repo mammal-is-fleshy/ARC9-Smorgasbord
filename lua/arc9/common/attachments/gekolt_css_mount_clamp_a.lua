@@ -22,7 +22,8 @@ ATT.Attachments = {
         Pos = Vector(-1, -1, -1),
         Ang = Angle(0, 0, -45),
         ExtraSightDistance = 10,
-        Icon_Offset = Vector(1, 0, 0)			
+        Icon_Offset = Vector(1, 0, 0),
+		KeepBaseIrons = true,		
     },
 	
     {
@@ -31,7 +32,8 @@ ATT.Attachments = {
         Pos = Vector(-1, 1, -1),
         Ang = Angle(0, 0, 45),
         ExtraSightDistance = 10,
-        Icon_Offset = Vector(-2, 0, 0)			
+        Icon_Offset = Vector(-2, 0, 0),
+		KeepBaseIrons = true,		
     },	
 	
     {
