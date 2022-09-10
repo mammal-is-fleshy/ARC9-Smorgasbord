@@ -248,7 +248,7 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.AttachmentElements = {
     ["awp_f_howell"] = {
         Bodygroups = {{0, 2}},
-        AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 2.5, 11.5), } }			
+        AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 2.5, 11.5), }, [6] = { Pos = Vector(0, 0.1, 18.35), } }			
 	},
 	
     ["awp_s_smg"] = {
@@ -329,6 +329,17 @@ SWEP.Attachments = {
         Pos = Vector(0, 2.5, 12),
         Ang = Angle(90, 0, -90),			
     },	
+	
+    {
+        PrintName = "Clamp",
+        DefaultName = "None",
+
+		ExcludeElements = {"short_clamp"},
+        Category = {"clamp_css"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, 0.1, 21.25),
+        Ang = Angle(90, 0, -90),		
+    },		
 }
 
 SWEP.Animations = {

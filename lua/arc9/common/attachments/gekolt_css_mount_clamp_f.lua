@@ -4,7 +4,7 @@ ATT.Icon = Material("")
 ATT.Description = [[Extend your handguard even more. This time with Foregrip Option]]
 ATT.SortOrder = 1
 
-ATT.Model = "models/weapons/geckololt_css/atts/clamp_long.mdl"
+ATT.Model = "models/weapons/geckololt_css/atts/clamp_short.mdl"
 
 ATT.Category = {"clamp_s_css"}
 ATT.Max = 4
