@@ -18,7 +18,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-12, -0.5, -0.2)
+ATT.ModelOffset = Vector(-11, -0.5, -0.5)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_saw.mdl"
 

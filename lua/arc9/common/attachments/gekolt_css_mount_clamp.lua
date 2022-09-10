@@ -17,11 +17,12 @@ ATT.Scale = 1
 
 ATT.Attachments = {
     {
-        PrintName = "MOUNT LEFT",
+        PrintName = "MOUNT Left",
         Category = "mountr_css",
         Pos = Vector(-1,-1.5, 0),
         Ang = Angle(0, 0, -90),
-        ExtraSightDistance = 5
+        ExtraSightDistance = 5,
+        Icon_Offset = Vector(1, 0, 0)		
     },
 	
     {
@@ -29,15 +30,16 @@ ATT.Attachments = {
         Category = "mountl_css",
         Pos = Vector(-1,1.5, 0),
         Ang = Angle(0, 0, 90),
-        ExtraSightDistance = 5	
+        ExtraSightDistance = 5,
+        Icon_Offset = Vector(-2, 0, 0)			
     },	
 	
     {
-        PrintName = "MOUNT TOP",
+        PrintName = "MOUNT Top",
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(-1,0, -1.6),
         Ang = Angle(0, 0, 0),
-		ExtraSightDistance = 7
+		ExtraSightDistance = 7			
     },	
 
     {
