@@ -1078,7 +1078,8 @@ SWEP.Attachments = {
         PrintName = "Stock",
         DefaultName = "Standard Stock",
 		ExcludeElements = {"nostock"},
-		
+
+        DefaultIcon = Material("arc9/def_att_icons/stock_ak.png"),		
         Category = "css_m4_stock", 
         Bone = "W_Main",
         Pos = Vector(0, -0.75, -3),
@@ -1089,6 +1090,7 @@ SWEP.Attachments = {
         PrintName = "Grip",
         DefaultName = "Standard Grip",
 
+        DefaultIcon = Material("arc9/def_att_icons/grip_ar.png"),	
         Category = "css_m4_g", 
         Bone = "W_Main",
         Pos = Vector(0, 2.5, 0.5),
@@ -1099,6 +1101,7 @@ SWEP.Attachments = {
         PrintName = "Foregrip",
         DefaultName = "None",
 
+        DefaultIcon = Material("arc9/def_att_icons/grip.png"),	
 		ExcludeElements = {"nogrip"},
         Category = {"grip_css"}, 
         Bone = "W_Main",
@@ -1117,13 +1120,13 @@ SWEP.Attachments = {
         Pos = Vector(0, 1.5, 12),
         Ang = Angle(90, 0, -90),		
     },	
-	
 
     {
         PrintName = "Optic",
         DefaultName = "None",
 		ActivateElements = {"no_irons", "no_optic"},  -- i forgot why i did this
 
+        DefaultIcon = Material("arc9/def_att_icons/optic.png"),
 		ExcludeElements = {"fg_saw"},
         Category = {"optic_css", "mount_css_m16"}, 
         Bone = "W_Main",
@@ -1136,6 +1139,7 @@ SWEP.Attachments = {
         PrintName = "Muzzle",
         DefaultName = "None",
 
+        DefaultIcon = Material("arc9/def_att_icons/barrel.png"),
 		ExcludeElements = {"pre_muzzed"},
         Category = {"muzzle_css"}, 
         Bone = "W_Main",
