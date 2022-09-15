@@ -152,6 +152,12 @@ $bodygroup "fsight"
 	studio "m4a1_fs_t65.smd"		
 }
 
+$bodygroup "akimbo"
+{
+	blank
+	studio "m4a1_bolt_r.smd"	
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\weapons\v_models\pist_glock18\"
@@ -172,6 +178,7 @@ $cdmaterials "arc9_css\"
 
 $attachment "1" "W_Muz" 0 0 0 rotate -90 0 -90
 $attachment "2" "W_Shell" 0 0 0 rotate 0 -135 0
+$attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
 
 $sequence "idle" {
 	"anims\idle.smd"
@@ -560,6 +567,25 @@ $sequence "r2n" {
 }
 $sequence "n2r" {
 	"anims\n2r.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+
+$sequence "dry_akimbo" {
+	"anims\dry_akimbo.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_akimbo" {
+	"anims\wet_akimbo.smd"
+	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2
 	snap	
