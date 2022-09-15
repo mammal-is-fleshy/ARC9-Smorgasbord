@@ -1,0 +1,13 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\arccw_fas2\deagle\deserteagle_1.vtf"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.2 .2 .2]"
+	"$basemapalphaphongmask" 	"1"
+	"$phong" 			"1"
+	"$phongexponent" 		"80"
+	"$phongboost" 			".1"
+	"$phongfresnelranges"		"[9 9 9]"
+	"$halflambert"			"1"
+	"$nocull" "1"			
+}
