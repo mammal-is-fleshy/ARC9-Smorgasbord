@@ -178,7 +178,7 @@ $cdmaterials "arc9_css\"
 
 $attachment "1" "W_Muz" 0 0 0 rotate -90 0 -90
 $attachment "2" "W_Shell" 0 0 0 rotate 0 -135 0
-$attachment "Akimbo_Base" "Akimbo_Base" 0 0 0 rotate 0 0 0
+$bonemerge "Akimbo_Base"
 
 $sequence "idle" {
 	"anims\idle.smd"

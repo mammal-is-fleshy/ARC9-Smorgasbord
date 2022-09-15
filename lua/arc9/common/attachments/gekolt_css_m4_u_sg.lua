@@ -10,7 +10,7 @@ ATT.Cons = {}
 ATT.SortOrder = 5
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_sg", "noguard", "keep_rs"}
+ATT.ActivateElements = {"up_sg", "noguard", "keep_rs", "akantbo"}
 ATT.MuzzleParticle = "muzzleflash_shotgun"
 ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 

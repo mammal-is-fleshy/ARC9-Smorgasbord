@@ -257,15 +257,35 @@ SWEP.BulletBones = {
 
 
 SWEP.Hook_TranslateAnimation = function(wep, anim) 
-
-    if wep:GetUBGL() then
+	
+    if wep:GetUBGL() and wep:HasElement("guard_148") then
     		if anim == "idle" then  return "idle_ubgl" end	
     		if anim == "idle_empty" then  return "idle_ubgl" end				
     		if anim == "fire" then  return "fire_ubgl" end		
     		if anim == "fire_empty" then  return "fire_ubgl" end
     		if anim == "fire_iron" then  return "fire_ubgl" end		
     		if anim == "fire_iron_empty" then  return "fire_ubgl" end			
-    end
+    end	
+
+    if wep.Attachments[9].Installed then
+    		if anim == "reload" then  return "reload_akimbo" end
+    		if anim == "reload_empty" then  return "reload_empty_akimbo" end	
+    		if anim == "reload_acr" then  return "reload_akimbo" end
+    		if anim == "reload_empty_acr" then  return "reload_empty_akimbo" end
+    		if anim == "reload_proto" then  return "reload_akimbo" end
+    		if anim == "reload_empty_proto" then  return "reload_empty_akimbo" end
+    		if anim == "reload_a1" then  return "reload_akimbo" end
+    		if anim == "reload_empty_a1" then  return "reload_empty_akimbo" end		
+    		if anim == "reload_smg" then  return "reload_akimbo" end
+    		if anim == "reload_empty_smg" then  return "reload_empty_akimbo" end		
+    		if anim == "reload_ak" then  return "reload_akimbo" end
+    		if anim == "reload_empty_ak" then  return "reload_empty_akimbo" end	 
+			if anim == "reload_empty_sd" then  return "reload_empty_akimbo" end	
+    		if anim == "reload_perosa" then  return "reload_akimbo" end
+    		if anim == "reload_empty_perosa" then  return "reload_empty_akimbo" end		
+    		if anim == "reload_gih" then  return "reload_akimbo" end
+    		if anim == "reload_empty_gih" then  return "reload_empty_akimbo" end		
+    end	
 end
 
 SWEP.Animations = {
@@ -446,6 +466,28 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 130 / 40},
         },
     },
+
+    ["reload_akimbo"] = {
+        Source = "wet_akimbo",
+		FireASAP = true,
+		MinProgress = 0.83,
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, },			
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},			
+        },				
+    },
+    ["reload_empty_akimbo"] = {
+        Source = "dry_akimbo",
+		FireASAP = true,
+		MinProgress = 0.9,		
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, },	
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},	
+            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 88 / 40},			
+        },			
+    },		
 	
 
     ["fire_empty_pump"] = {
@@ -1028,7 +1070,9 @@ SWEP.AttachmentElements = {
     ["fg_saw"] = {
         Bodygroups = { {8, 1} },
 	},
-
+    ["akimbo"] = {
+        Bodygroups = { {11, 1} },
+	},
 }
 
 --- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
@@ -1156,5 +1200,17 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, -0.25, 17.5),
         Ang = Angle(90, 0, -90),		
-    },		
+    },
+
+    {
+        PrintName = "Off-Hand",
+        DefaultName = "None",
+		ActivateElements = {"akimbo"},		
+
+		ExcludeElements = {"akantbo"},
+        Category = {"css_akimbo"}, 
+        Bone = "Akimbo_Base",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(90, 0, -90),		
+    },	
 }
