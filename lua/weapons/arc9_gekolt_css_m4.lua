@@ -267,7 +267,7 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
     		if anim == "fire_iron_empty" then  return "fire_ubgl" end			
     end	
 
-    if wep.Attachments[9].Installed then
+    if wep.Attachments[10].Installed then
     		if anim == "reload" then  return "reload_akimbo" end
     		if anim == "reload_empty" then  return "reload_empty_akimbo" end	
     		if anim == "reload_acr" then  return "reload_akimbo" end
@@ -372,8 +372,8 @@ SWEP.Animations = {
 		},	
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
-            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 80 / 40},			
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 48 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 75 / 40},			
         },			
     },	
     ["draw"] = {
@@ -610,7 +610,7 @@ SWEP.Animations = {
     ["reload_empty_pdw"] = {
         Source = "dry_57",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.025, lhik = 0, rhik = 1, },
 		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},		
         EventTable = {		
@@ -625,7 +625,7 @@ SWEP.Animations = {
     ["reload_pdw"] = {
         Source = "wet_57",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.025, lhik = 0, rhik = 1, },
 		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 0.95, rhik = 1, },	
 		},	
         EventTable = {		
@@ -765,8 +765,8 @@ SWEP.Animations = {
         Source = "dry_2",
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
-            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 72 / 40},					
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 48 / 40},	
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 68 / 40},					
         },
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },

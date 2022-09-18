@@ -1,6 +1,6 @@
 ATT.PrintName = "Pistole"
 ATT.CompactName = "P"
-//ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
 ATT.Description = [[h]]
 
 ATT.Pros = {}
@@ -9,7 +9,7 @@ ATT.SortOrder = 2
 
 ATT.Category = {"css_akimbo"} -- can be "string" or {"list", "of", "strings"}
 
-//ATT.HasSights = false
+ATT.HasSights = true
 ATT.Model = "models/weapons/arccw/mifl_atts/fas2/c_deagle.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 100000
@@ -42,8 +42,7 @@ ATT.IKAnimationProxy = {
     ["exit_ubgl"] = {
         Source = "idle"
     },
-} -- When an animation event plays, override it with one based on this LHIK model.
---ATT.IKGunMotionQCA = 2
+}
 
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
@@ -54,7 +53,7 @@ ATT.UBGLClipSize = 7
 ATT.UBGLFiremode = 1
 ATT.UBGLFiremodeName = "Deagle"
 ATT.UBGLChamberSize = 1
-ATT.ShootVolumeUBGL = 110
+ATT.ShootVolumeUBGL = 80
 
 ATT.SpreadUBGL = 0.002
 
@@ -62,7 +61,6 @@ ATT.FirstShootSoundUBGL = false
 ATT.ShootSoundUBGL = "weapons/arccw_mifl/fas2/deserteagle/de_fire1.wav"
 
 ATT.DistantShootSoundUBGL = false
-ATT.HasSightsUBGL = false
 
 ATT.EnterUBGLSound = "arc9/ubgl_select.wav"
 ATT.ExitUBGLSound = "arc9/ubgl_exit.wav"
