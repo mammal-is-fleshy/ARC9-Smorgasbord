@@ -258,7 +258,7 @@ SWEP.BulletBones = {
 
 SWEP.Hook_TranslateAnimation = function(wep, anim) 
 	
-    if wep:GetUBGL() and wep:HasElement("guard_148") then
+    if wep:GetUBGL() then
     		if anim == "idle" then  return "idle_ubgl" end	
     		if anim == "idle_empty" then  return "idle_ubgl" end				
     		if anim == "fire" then  return "fire_ubgl" end		
