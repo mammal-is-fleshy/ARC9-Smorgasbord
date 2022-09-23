@@ -9,19 +9,22 @@ ATT.SortOrder = 2
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_slam"}
-ATT.MuzzleParticle = "muzzleflash_smg"
+ATT.MuzzleParticle = "muzzleflash_shotgun"
 ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 120/300
 ATT.Firemodes = {
     {
-        Mode = 1
+        Mode = 1,
+		PrintName = "Pump"		
     },
     {
         Mode = -1,
+		PrintName = "SLAM"			
     }
 }
+
 ATT.ClipSizeOverride = 7
 
 ATT.NumOverride = 10
@@ -31,6 +34,9 @@ ATT.DamageMinMult = 6/30
 
 ATT.RecoilMult = 3
 ATT.RecoilPatternDriftMult = 5
+ATT.SpreadHipFireAdd = 5
+ATT.SpreadFireAdd = 5
+ATT.RecoilHipFireAdd = 1.25
 
 ATT.Ammo = "buckshot"
 

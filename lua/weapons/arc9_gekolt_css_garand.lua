@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CSS"
 
-SWEP.PrintName = "Cette Machine"
+SWEP.PrintName = "GR-30"
 SWEP.TrueName = "M1 Garand"
 
 SWEP.Class = "Marskman Rifle"
@@ -200,8 +200,8 @@ SWEP.SprintPos = Vector(2, 2, 0)
 SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-1, 2, -1)
-SWEP.CrouchAng = Angle(0, 0, -5)
+SWEP.CrouchPos = Vector(-2, 0, -2)
+SWEP.CrouchAng = Angle(0, 0, -30)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(15, 32, 2)
@@ -224,12 +224,13 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "muzzleflash_m82"
+SWEP.MuzzleParticle = "muzzleflash_1"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.ShellModel = "models/shells/shell_338mag.mdl"
-SWEP.ShellCorrectAng = Angle(0, 180, 0)
-SWEP.ShellScale = 1
+SWEP.ShellCorrectPos = Vector(0, 0, 0)
+SWEP.ShellCorrectAng = Angle(0, 0, 90)
+SWEP.ShellScale = 0.5
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 -------------------------- SOUNDS
@@ -247,7 +248,7 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.AttachmentElements = {
     ["garand_slam"] = {
         Bodygroups = {{1, 2}},
-        AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 2.5, 11.5), }, [6] = { Pos = Vector(0, 0.1, 18.35), } }			
+        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 22.5), }, [4] = { Pos = Vector(0, 2.5, 11.5), }, [5] = { Pos = Vector(0, 0.1, 18.35), } }			
 	},
 
     ["garand_m14"] = {
@@ -256,16 +257,16 @@ SWEP.AttachmentElements = {
 			Pos = Vector(-4, 0, 5),
 			Ang = Angle(0, 0, -5),
         },			
-		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 2.5, 9), } }			
+		AttPosMods = { [3] = { Pos = Vector(0, 0, 22.5), } }			
 	},
 
     ["garand_mini"] = {
-        Bodygroups = {{1, 3-}},
+        Bodygroups = {{1, 3}},
         Override_IronSights = {
 			Pos = Vector(-4, 0, 5),
 			Ang = Angle(0, 0, -5),
         },			
-		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 2.5, 9), } }			
+		AttPosMods = { [3] = { Pos = Vector(0, 0, 19.15), } }			
 	},	
 }
 
@@ -285,7 +286,7 @@ SWEP.Attachments = {
 
         Category = {"optic_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -1, 3),
+        Pos = Vector(0, -1, 9),
         Ang = Angle(90, 0, -90),		
     },	
     {
@@ -295,7 +296,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"pre_muzzed"},
         Category = {"muzzle_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 0.1, 30),
+        Pos = Vector(0, 0, 28),
         Ang = Angle(90, 0, -90),		
     },		
     {
@@ -305,20 +306,9 @@ SWEP.Attachments = {
 		ExcludeElements = {"nogrip"},
         Category = {"grip_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 2.5, 12),
+        Pos = Vector(0, 2, 10),
         Ang = Angle(90, 0, -90),			
     },	
-	
-    {
-        PrintName = "Clamp",
-        DefaultName = "None",
-
-		ExcludeElements = {"short_clamp"},
-        Category = {"clamp_css"}, 
-        Bone = "W_Main",
-        Pos = Vector(0, 0.1, 21.25),
-        Ang = Angle(90, 0, -90),		
-    },		
 }
 
 SWEP.Animations = {
@@ -336,10 +326,22 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_deploy.wav" ,   t = 1 / 40},
         },			
 	},
+    ["draw_empty"] = {
+        Source = "draw_emp", -- QC sequence source, can be {"table", "of", "strings"} or "string" 
+		--Time = 0.5, -- overrides the duration of the sequence
+        Mult = 1, -- multiplies time
+        EventTable = {
+            {s =  "gekolt_css/awp_deploy.wav" ,   t = 1 / 40},
+        },			
+	},	
     ["holster"] = {
         Source = "idle",
-     },	
-	
+		Time = 0
+    },	
+    ["holster_empty"] = {
+        Source = "idle_emp",
+		Time = 0		
+    },	
     ["fire"] = {
         Source = "fire",	
     },	
@@ -372,22 +374,22 @@ SWEP.Animations = {
 			{s =  "gekolt_dod/garand_boltforward.wav" ,    t = 78 / 40},
         },
 		FireASAP = true,
-		MinProgress = 0.83,		
+		MinProgress = 0.85,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},			
     },
     ["reload_empty"] = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.925,
         EventTable = {
             {s =  "gekolt_dod/garand_clipin1.wav" ,   t = 30 / 40},
             {s =  "gekolt_dod/garand_clipin2.wav" ,    t = 35 / 40},
 			{s =  "gekolt_dod/garand_boltforward.wav" ,    t = 50 / 40},
-        },			
+        },		
     },
 
     -- M14 --
@@ -405,12 +407,12 @@ SWEP.Animations = {
 		MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 16 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 52 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 62 / 40},			
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 55 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 65 / 40},			
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
     },
     ["reload_empty_308"] = {
@@ -426,7 +428,7 @@ SWEP.Animations = {
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.55, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},				
     },	
 	
@@ -467,7 +469,7 @@ SWEP.Animations = {
         Source = "load_slam",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
-            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 4 / 40},		
+            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 5 / 40},	
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
