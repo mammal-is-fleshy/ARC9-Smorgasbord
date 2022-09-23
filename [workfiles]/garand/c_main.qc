@@ -27,6 +27,7 @@ $bodygroup "Rail2"
 {
 	blank
 	studio "Rail_Bottom.smd"
+	studio "Rail_Bottom_Pump.smd"	
 }
 $bodygroup "Rail3"
 {

@@ -193,7 +193,8 @@ SWEP.Crosshair = true
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(3, 0, -0.5)
 
-SWEP.ActivePos = Vector(0, 2, 0)
+SWEP.ViewModelFOVBase = 70
+SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CrouchPos = Vector(-0.5, 1, -1.5)
@@ -201,7 +202,7 @@ SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(10, 32, 3)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes

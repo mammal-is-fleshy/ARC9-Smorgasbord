@@ -119,8 +119,8 @@ SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 15 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0.5 -- How much the gun sways.
+SWEP.FreeAimRadius = 7 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.Sway = 0.75 -- How much the gun sways.
 
 SWEP.SwayMultMidAir = 2
 SWEP.SwayMultMove = 1.15
@@ -196,6 +196,7 @@ SWEP.Crosshair = true
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(2, 2, 0)
 
+SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
@@ -205,7 +206,7 @@ SWEP.CrouchAng = Angle(0, 0, -30)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(10, 32, 2)
 
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
@@ -247,7 +248,7 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.AttachmentElements = {
     ["garand_slam"] = {
         Bodygroups = {{1, 2}},
-        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 22.5), }, [4] = { Pos = Vector(0, 0.75, 0), }, [5] = { Pos = Vector(0, 0.1, 18.35), } }			
+        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 22.5), }, [4] = { Pos = Vector(0, 1.15, 0.75), }, [5] = { Pos = Vector(0, 0.1, 18.35), } }			
 	},
 
     ["garand_m14"] = {
@@ -256,7 +257,7 @@ SWEP.AttachmentElements = {
 			Pos = Vector(-4, 0, 5),
 			Ang = Angle(0, 0, -5),
         },			
-		AttPosMods = { [3] = { Pos = Vector(0, 0, 22.5), } }			
+		AttPosMods = { [2] = { Pos = Vector(0,  -1.1, 5), }, [3] = { Pos = Vector(0, 0, 22.5), } }			
 	},
 
     ["garand_mini"] = {
@@ -265,7 +266,7 @@ SWEP.AttachmentElements = {
 			Pos = Vector(-4, 0, 5),
 			Ang = Angle(0, 0, -5),
         },			
-		AttPosMods = { [3] = { Pos = Vector(0, 0, 19.15), } }			
+		AttPosMods = { [2] = { Pos = Vector(0,  -1.1, 5), }, [3] = { Pos = Vector(0, 0, 19.15), } }			
 	},	
 
     ["rail_top"] = {Bodygroups = {{2, 1}},},
@@ -274,7 +275,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data) 
     local model = data.model
-    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,0) end	--- to future me: Rail ici s'il te plait ---
+    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- to future me: Rail ici s'il te plait ---
 	
     if wep.Attachments[2].Installed and wep:HasElement("garand_mini") then model:SetBodygroup(4,1) end	
     if wep.Attachments[2].Installed and wep:HasElement("garand_m14") then model:SetBodygroup(4,1) end		
@@ -297,7 +298,7 @@ SWEP.Attachments = {
 
         Category = {"optic_css", "optic_css_free"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -1.15, 9),
+        Pos = Vector(0, -1.1, 9),
         Ang = Angle(90, 0, -90),		
     },	
     {
@@ -440,7 +441,7 @@ SWEP.Animations = {
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
 		},				
     },	
 	

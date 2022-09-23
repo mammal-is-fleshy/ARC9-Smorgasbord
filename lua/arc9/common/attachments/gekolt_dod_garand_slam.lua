@@ -11,6 +11,7 @@ ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"
 ATT.ActivateElements = {"garand_slam"}
 ATT.MuzzleParticle = "muzzleflash_shotgun"
 ATT.ShootSound = "gekolt_css/xm1014-1.wav"
+ATT.ShellModelOverride = "models/shells/shell_12gauge.mdl"
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 120/300
@@ -27,6 +28,7 @@ ATT.Firemodes = {
 
 ATT.ClipSizeOverride = 7
 
+ATT.FreeAimRadiusAdd = 5
 ATT.NumOverride = 10
 ATT.SpreadAdd = 0.0175
 ATT.DamageMaxMult = 12/80

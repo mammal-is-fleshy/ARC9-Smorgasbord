@@ -3,6 +3,8 @@ Contre Srike Sorse in 2022 Gmod Tacticle Reelesm :tm:
 [ Created by Geckololt (all wrongs reserved, dont care didnt ask) ]
 
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Counter Strike Source: (horrid)Models, Textures
+Day of Defeat Sourse: (horrid)Models, Textures
 
 Google Images - ref
 Arctic - Incredibly doggy original restoration models
@@ -12,7 +14,7 @@ Fesiug??? - Nade ent
 
 Tactical Intervention - Stuff (Holo/Acog2/Aimpoint/Silencer2)
 Rainbow Six Vegas 2 - Mass26
-CSGO, CSCD - Sounds??
+CSGO, CSCZ, DOD:S - Sounds??
 https://gamebanana.com/mods/210646 - SPR Guard
 https://gamebanana.com/mods/210602 - Targeter Guard
 Soldier of Fortune 3 - Muzzles and Tac/Flashlight
@@ -27,14 +29,15 @@ https://gamebanana.com/mods/39876 - Muzzle/Grip/T1
 -------------
 [checklist]
 -------------
-AWP
+AWP (receiver: 2)
+Garand (receiver: 4)
 M4 (handguard:18 | receiver:14 | stock:13 | grip:5)
 AK (handguard:9 | receiver:7 | stock:12 | grip:4)
 M9???
 Glock???
-MP5/UMP/G3
-Mac10??
-M3 (handguard:4 | receiver:3 | stock:4 )
+MP5/UMP/G3 -- cant believe mwii steal from me --
+Mac10?? -- or mp9 --
+M3 (handguard:4 | receiver:3 | stock:4) -- probably not --
 Makarov??
 FAL???????????
 
@@ -46,6 +49,18 @@ FAL???????????
 - .30 dmr stuff
 - single shot .50cal
 
+[Garand]
+- Manual Bolting
+- Stripper Clip Load
+- 22lr/9mm Ruger
+
+[Uni]
+- Back up pistol/smg (ubgl)
+- Grenade Rifle muzzle mount
+- Equippable Suppressor
+- Flip up/hybird/magnifying sight
+- Grenade Chasis mount
+- Shield
 
 
 
@@ -54,13 +69,14 @@ FAL???????????
 
 --- Basicall Dev Log -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Do care did ask
-AWP: Basically Done
+AWP: Done
 M4: Done
 AK: Model Done
 Makarov: Model Half
 M3: Model Done
 FAL: Model Quarter
-MP5: Model Quarter
+MP5/G3: Model Fifth
+Garand: Half
 
 
 
