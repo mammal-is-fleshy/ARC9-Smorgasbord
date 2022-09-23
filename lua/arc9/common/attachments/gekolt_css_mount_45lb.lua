@@ -12,7 +12,7 @@ ATT.Max = 4
 // Allows a custom sight position to be defined
 
 ATT.ModelOffset = Vector(-0.25, 0, -0.1)
-ATT.ModelAngleOffset = Angle(0, 180, 0)
+ATT.ModelAngleOffset = Angle(180, 180, 0)
 ATT.Scale = 1.25
 
 ATT.Attachments = {

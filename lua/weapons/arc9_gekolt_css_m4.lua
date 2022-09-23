@@ -113,7 +113,7 @@ SWEP.RecoilKick = 1.2
 
 SWEP.Spread = 0.002
 
-SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
@@ -1168,7 +1168,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		ActivateElements = {"no_irons", "no_optic"},  -- i forgot why i did this
+		InstalledElements = {"no_irons", "no_optic"},  -- i forgot why i did this
 
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
 		ExcludeElements = {"fg_saw"},
@@ -1205,7 +1205,7 @@ SWEP.Attachments = {
     {
         PrintName = "Off-Hand",
         DefaultName = "None",
-		ActivateElements = {"akimbo"},		
+		InstalledElements = {"akimbo"},		
 
 		ExcludeElements = {"akantbo"},
         Category = {"css_akimbo"}, 

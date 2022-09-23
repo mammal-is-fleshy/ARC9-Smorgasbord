@@ -14,7 +14,24 @@ $bodygroup "kit"
 	studio "Garand_M14.smd"
 	studio "Garand_Slam.smd"
 	studio "Garand_Mini.smd"
+	studio "Garand_Romania.smd"
 	blank			
+}
+
+$bodygroup "Rail1"
+{
+	blank
+	studio "Rail_Top.smd"
+}
+$bodygroup "Rail2"
+{
+	blank
+	studio "Rail_Bottom.smd"
+}
+$bodygroup "Rail3"
+{
+	blank
+	studio "Rail_Iron.smd"
 }
 
 $illumposition 0 0 0
@@ -23,6 +40,7 @@ $cdmaterials "models\weapons\v_models\pist_glock18\"
 $cdmaterials "models\weapons\V_models\smg_mac10\"
 $cdmaterials "models\weapons\V_models\mach_m249para\"
 $cdmaterials "models\weapons\V_models\rif_m4a1\"
+$cdmaterials "models\weapons\V_models\rif_ak47\"
 $cdmaterials "models\weapons\v_models\rif_galil\"
 $cdmaterials "models\weapons\V_models\smg_ump45\"
 $cdmaterials "models\weapons\V_models\smg_p90\"

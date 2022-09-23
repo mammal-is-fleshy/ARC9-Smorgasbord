@@ -30,7 +30,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_garand.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-8, 4, -7),
+    Pos = Vector(2, 8, -5),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -88,7 +88,6 @@ SWEP.RPM = 300
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "BOLT"
     }
 }
 -------------------------- RECOIL
@@ -115,10 +114,8 @@ SWEP.RecoilKick = 3
 -------------------------- SPREAD
 
 SWEP.Spread = 0.003
-SWEP.SpreadHipFire = 0.01
-SWEP.SpreadSights = 0
 
-SWEP.SpreadAddRecoil = 0 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
@@ -194,6 +191,8 @@ SWEP.IronSights = {
     CrosshairInSights = false,
 }
 
+SWEP.Crosshair = true
+
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(2, 2, 0)
 
@@ -204,7 +203,7 @@ SWEP.CrouchPos = Vector(-2, 0, -2)
 SWEP.CrouchAng = Angle(0, 0, -30)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(15, 32, 2)
+SWEP.CustomizePos = Vector(10, 32, 2)
 
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
@@ -239,7 +238,7 @@ SWEP.ShootSound = "gekolt_dod/garand_shoot.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
-SWEP.EjectDelay = 0.1
+SWEP.EjectDelay = 0
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -248,7 +247,7 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.AttachmentElements = {
     ["garand_slam"] = {
         Bodygroups = {{1, 2}},
-        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 22.5), }, [4] = { Pos = Vector(0, 2.5, 11.5), }, [5] = { Pos = Vector(0, 0.1, 18.35), } }			
+        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 22.5), }, [4] = { Pos = Vector(0, 0.75, 0), }, [5] = { Pos = Vector(0, 0.1, 18.35), } }			
 	},
 
     ["garand_m14"] = {
@@ -268,7 +267,18 @@ SWEP.AttachmentElements = {
         },			
 		AttPosMods = { [3] = { Pos = Vector(0, 0, 19.15), } }			
 	},	
+
+    ["rail_top"] = {Bodygroups = {{2, 1}},},
+	["rail_bot"] = {Bodygroups = {{3, 1}},},
 }
+
+SWEP.Hook_ModifyBodygroups = function(wep, data) 
+    local model = data.model
+    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,0) end	--- to future me: Rail ici s'il te plait ---
+	
+    if wep.Attachments[2].Installed and wep:HasElement("garand_mini") then model:SetBodygroup(4,1) end	
+    if wep.Attachments[2].Installed and wep:HasElement("garand_m14") then model:SetBodygroup(4,1) end		
+end
 
 SWEP.Attachments = {
     {
@@ -283,10 +293,11 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
+		InstalledElements = {"rail_top"},
 
-        Category = {"optic_css"}, 
+        Category = {"optic_css", "optic_css_free"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -1, 9),
+        Pos = Vector(0, -1.15, 9),
         Ang = Angle(90, 0, -90),		
     },	
     {
@@ -302,11 +313,12 @@ SWEP.Attachments = {
     {
         PrintName = "Foregrip",
         DefaultName = "None",
+		InstalledElements = {"rail_bot"},
 
 		ExcludeElements = {"nogrip"},
-        Category = {"grip_css"}, 
-        Bone = "W_Main",
-        Pos = Vector(0, 2, 10),
+        Category = {"grip_css", "grip_css_free"}, 
+        Bone = "W_Pump",
+        Pos = Vector(0, 0.9, -3),
         Ang = Angle(90, 0, -90),			
     },	
 }
@@ -460,10 +472,7 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_css/m3_insertshell.wav" ,   t = 5 / 40},	
         },	
-		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.5, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }	},			
     }, 
 	["reload_insert_slam"] = {
         Source = "load_slam",
@@ -471,10 +480,7 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_css/m3_insertshell.wav" ,   t = 5 / 40},	
         },	
-		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},			
     },
 	["reload_finish_slam"] = {
         Source = "end_slam",
@@ -484,10 +490,7 @@ SWEP.Animations = {
         EventTable = {
 		
         },	
-		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
     },	
     ["reload_start_empty"] = {
         Source = "dry_slam",
@@ -498,9 +501,6 @@ SWEP.Animations = {
             {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 50 / 40},		
             {s =  "gekolt_css/m3_insertshell.wav" ,   t = 72 / 40},				
 		},
-		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
+		IKTimeLine = {		{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},				
     },		
 }

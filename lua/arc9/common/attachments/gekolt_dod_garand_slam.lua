@@ -28,15 +28,11 @@ ATT.Firemodes = {
 ATT.ClipSizeOverride = 7
 
 ATT.NumOverride = 10
-ATT.SpreadAdd = 0.5
+ATT.SpreadAdd = 0.0175
 ATT.DamageMaxMult = 12/80
 ATT.DamageMinMult = 6/30
 
 ATT.RecoilMult = 3
-ATT.RecoilPatternDriftMult = 5
-ATT.SpreadHipFireAdd = 5
-ATT.SpreadFireAdd = 5
-ATT.RecoilHipFireAdd = 1.25
 
 ATT.Ammo = "buckshot"
 
