@@ -248,7 +248,7 @@ SWEP.DefaultBodygroups = "00000"
 SWEP.AttachmentElements = {
     ["garand_slam"] = {
         Bodygroups = {{1, 2}},
-        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 22.5), }, [4] = { Pos = Vector(0, 1.15, 0.75), }, [5] = { Pos = Vector(0, 0.1, 18.35), } }			
+        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 20), }, [4] = { Pos = Vector(0, 1.15, 0.75), }, [5] = { Pos = Vector(0, 0.1, 18.35), } }			
 	},
 
     ["garand_m14"] = {
