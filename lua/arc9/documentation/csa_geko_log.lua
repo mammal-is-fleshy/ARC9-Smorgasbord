@@ -26,6 +26,8 @@ https://gamebanana.com/models/4134 - OKP7
 
 https://gamebanana.com/mods/39876 - Muzzle/Grip/T1
 
+
+
 -------------
 [checklist]
 -------------
@@ -77,6 +79,15 @@ M3: Model Done
 FAL: Model Quarter
 MP5/G3: Model Fifth
 Garand: Half
+
+
+
+
+
+The receiver is the meat of this mod
+Ideally each modification should change the animations And how the weapons handle (stats and all)
+All the stuff like handguard And stock And what have you are just window dressing And should Not be the focus (how the fuck Do i handle pistols????)
+
 
 
 

@@ -5,22 +5,23 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CSS"
 
-SWEP.PrintName = "GR-30"
+SWEP.PrintName = "MSA-30"
 SWEP.TrueName = "M1 Garand"
 
 SWEP.Class = "Marskman Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = "United States of America",
-    ["Caliber"] = ".30 Cal",
+    ["Country of Origin"] = [[[Dominion of] Canada]], -- me purposely spreading misinfomation --
+    ["Caliber"] = ".30-06 Springfield",
 }
 
 SWEP.Credits = {
     Author = "Geckololt",
     Contact = "SlogoKolt#6648",
-    Assets = "Day of Defeat + Counter-Strike Source"
+    Assets = "Day of Defeat"
 }
 
-SWEP.Description = [[Ancient gun.]]
+SWEP.Description = [[Ancient forerunner of an array of modern marksman rifle.
+Surpirsingly customisable for this era.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_garand.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -44,18 +45,18 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 SWEP.DamageMax = 80 -- Damage done at point blank range
 SWEP.DamageMin = 30 -- Damage done at maximum range
 
-SWEP.DamageRand = 0.3 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
+SWEP.DamageRand = 0.5 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
 SWEP.RangeMin = 60 -- How far bullets retain their maximum damage for.
 SWEP.RangeMax = 1500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
-SWEP.Penetration = 15 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 12 -- Units of wood that can be penetrated by this gun.
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_LEFTARM] = 0.75,
-    [HITGROUP_RIGHTARM] = 0.75,
+    [HITGROUP_LEFTARM] = 0.85,
+    [HITGROUP_RIGHTARM] = 0.85,
 }
 
 -------------------------- PHYS BULLET BALLISTICS
@@ -135,11 +136,11 @@ SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming
 SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMult = 0.9
-SWEP.SpeedMultSights = 0.5
+SWEP.SpeedMultSights = 0.75
 SWEP.SpeedMultShooting = 0.7
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.75
-SWEP.SpeedMultBlindFire = 0.95
+SWEP.SpeedMultBlindFire = 0.9
 
 -------------------------- BLIND FIRE
 
@@ -204,7 +205,7 @@ SWEP.CrouchPos = Vector(-2, 0, -2)
 SWEP.CrouchAng = Angle(0, 0, -30)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(10, 32, 2)
+SWEP.CustomizePos = Vector(13, 32, 2)
 
 SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false
@@ -230,7 +231,7 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.ShellModel = "models/shells/shell_338mag.mdl"
 SWEP.ShellCorrectPos = Vector(0, 0, 0)
 SWEP.ShellCorrectAng = Angle(0, 0, 90)
-SWEP.ShellScale = 0.5
+SWEP.ShellScale = 0.75
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 -------------------------- SOUNDS
@@ -244,6 +245,17 @@ SWEP.EjectDelay = 0
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.DefaultBodygroups = "00000"
+
+SWEP.BulletBones = {
+    [1] = "W_Ammo1",
+    [2] = "W_Ammo2",
+    [3] = "W_Ammo3",
+    [4] = "W_Ammo4",
+    [5] = "W_Ammo5",
+    [6] = "W_Ammo6",
+    [7] = "W_Ammo7",
+    [8] = "W_Ammo8",
+}
 
 SWEP.AttachmentElements = {
     ["garand_slam"] = {
@@ -387,6 +399,7 @@ SWEP.Animations = {
 			{s =  "gekolt_dod/garand_boltforward.wav" ,    t = 78 / 40},
         },
 		FireASAP = true,
+        MagSwapTime = 40/40,		
 		MinProgress = 0.85,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -448,13 +461,15 @@ SWEP.Animations = {
     -- SLAM --
 
     ["fire_slam"] = {
-        Source = "fire_slam",	
+        Source = "fire_slam",
+		EjectAt = 12/40,		
         EventTable = {
             {s =  "gekolt_css/m3_pump.wav" ,   t = 5 / 40},
         },
     },	
     ["fire_iron_slam"] = {
         Source = "fire_slam",
+		EjectAt = 12/40,		
         EventTable = {
             {s =  "gekolt_css/m3_pump.wav" ,   t = 5 / 40},
         },		

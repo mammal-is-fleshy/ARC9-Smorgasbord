@@ -19,7 +19,7 @@ SWEP.Credits = {
     Assets = "CoD: Black Ops"
 }
 
-SWEP.Description = [[These two pack more than just symbolism and questionable design.]]
+SWEP.Description = [[Fuck communism, this mod was made by syndicalism gang.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_hns.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"

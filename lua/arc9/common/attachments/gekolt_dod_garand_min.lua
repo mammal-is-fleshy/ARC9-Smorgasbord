@@ -1,7 +1,7 @@
 ATT.PrintName = "Sportsman Frame"
 ATT.CompactName = "Mini-14"
-// ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
-ATT.Description = [[Modern-ish thing]]
+ATT.Icon = Material("entities/gekolt_dod_garand_mini.png", "mips smooth")
+ATT.Description = [[Modernised mag-fed system loaded in a lower calibre]]
 
 ATT.Pros = {}
 ATT.Cons = {}

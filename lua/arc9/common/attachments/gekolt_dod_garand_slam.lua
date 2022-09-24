@@ -1,6 +1,6 @@
 ATT.PrintName = "Trencher Frame"
 ATT.CompactName = "SLAM"
-// ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_dod_garand_slam.png", "mips smooth")
 ATT.Description = [[Unholy creation for all your sweeping needs]]
 
 ATT.Pros = {}
@@ -12,6 +12,7 @@ ATT.ActivateElements = {"garand_slam"}
 ATT.MuzzleParticle = "muzzleflash_shotgun"
 ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 ATT.ShellModelOverride = "models/shells/shell_12gauge.mdl"
+ATT.ShellScaleOverride = 1
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 120/300

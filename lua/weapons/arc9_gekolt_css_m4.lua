@@ -18,9 +18,9 @@ SWEP.Credits = {
     Author = "Geckololt",
     Contact = "SlogoKolt#6648",
     Assets = "Counter-Strike Source"
-}
+}	
 
-SWEP.Description = [["Extremely versatile gun."
+SWEP.Description = [[Extremely versatile gun.
 [Excessive(ly painful)] customisation.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m4a1.mdl"
@@ -47,7 +47,7 @@ SWEP.DamageMin = 20 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 1200 -- How far bullets retain their maximum damage for.
+SWEP.RangeMin = 600 -- How far bullets retain their maximum damage for.
 SWEP.RangeMax = 3000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 4 -- Units of wood that can be penetrated by this gun.

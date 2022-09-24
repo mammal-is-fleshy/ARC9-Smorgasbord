@@ -19,7 +19,7 @@ SWEP.Credits = {
     Assets = "Firearms: Source"
 }
 
-SWEP.Description = [[The japanese has attacked once again.
+SWEP.Description = [[THE JAPANESES ARE ATTACKING.
 
 Crude anti-tank-personnel-whateverinfrontofyou device from the peak of the highlands.]]
 

@@ -1,7 +1,7 @@
 ATT.PrintName = "Marksman Frame"
 ATT.CompactName = "M14"
-// ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
-ATT.Description = [[Cold War era upgrade]]
+ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
+ATT.Description = [["Prototype" of a Mag-Fed conversion, 20 rounders capable of full-auto]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -30,9 +30,7 @@ ATT.DamageMinMult = 60/160
 ATT.RecoilMult = 1.15
 ATT.RecoilKickMult = 2/3
 
-ATT.SpeedMultSightsMult = 2
-ATT.SpeedMultShootingMult = 1.25
-ATT.AimDownSightsTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.15
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
