@@ -90,25 +90,27 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.75
+SWEP.Recoil = 1.25
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.45 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.6
 
-SWEP.RecoilDissipationRate = 100 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
+SWEP.RecoilKick = 1.5
+
 -------------------------- VISUAL RECOIL
 
-SWEP.RecoilKick = 3
+SWEP.RecoilKick = 1
 
 SWEP.UseVisualRecoil = true
 
@@ -118,7 +120,7 @@ SWEP.VisualRecoilRoll = 0.2 -- Roll tilt for visual recoil.
 
 SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
 
-SWEP.VisualRecoilPunch = 0.75 -- How far back visual recoil moves the gun.
+SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun.
 
 SWEP.VisualRecoilMult = 1
 
@@ -206,14 +208,14 @@ SWEP.IronSights = {
 SWEP.Crosshair = true
 
 SWEP.SprintAng = Angle(30, -15, -10)
-SWEP.SprintPos = Vector(3, 0, -0.5)
+SWEP.SprintPos = Vector(3, 4, -0.5)
 
 SWEP.ViewModelFOVBase = 70
-SWEP.ActivePos = Vector(0, 5, 0)
+SWEP.ActivePos = Vector(0.5, 5, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-0.5, 1, -1.5)
-SWEP.CrouchAng = Angle(0, 0, -10)
+SWEP.CrouchPos = Vector(-2.5, 3, -2.25)
+SWEP.CrouchAng = Angle(0, 0, -30)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(10, 32, 3)
@@ -320,11 +322,25 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {		
     ["s_fold1"] = { Bodygroups = { {4, 3} },},	
     ["s_fold2"] = { Bodygroups = { {4, 4} },},	
-    ["s_fold3"] = { Bodygroups = { {4, 5} },},	
+    ["s_fold3"] = { Bodygroups = { {4, 5} },},
+	["s_slide"] = { Bodygroups = { {4, 10} },},
+    ["s_heavy"] = { Bodygroups = { {4, 6} },},
+    ["s_rpk"] = { Bodygroups = { {4, 9} },},	
+    ["s_poly1"] = { Bodygroups = { {4, 7} },},
+    ["s_poly2"] = { Bodygroups = { {4, 8} },},		
+    ["s_adaptor"] = { Bodygroups = { {4, 11} },},
+
+    ["hg_poly"] = { Bodygroups = { {3, 4} },},		
+    ["hg_sd"] = { Bodygroups = { {3, 2} },},	
+    ["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },},		
+
+    ["g_poly"] = { Bodygroups = { {6, 1} },},		
+    ["g_ske"] = { Bodygroups = { {6, 2} },},	
 
     ["u_308"] = { Bodygroups = { {0, 3} },},	
     ["u_545"] = { Bodygroups = { {0, 1} },},	
-    ["u_556"] = { Bodygroups = { {0, 2} },},	
+    ["u_556"] = { Bodygroups = { {0, 2} },},
+    ["u_566"] = { Bodygroups = { {0, 7}, {1, 3}, {2, 2},{3, 10} },},	
 
     ["rail_def"] = { Bodygroups = { {5, 3} },},	
 }
@@ -336,7 +352,7 @@ SWEP.Attachments = {
 
         Category = "css_ak_up", 
         Bone = "W_Main",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 2, 7.5),
         Ang = Angle(0, 0, 0),		
     },	
 
@@ -347,7 +363,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"noguard"},
         Category = "css_ak_handguard", 
         Bone = "W_Main",
-        Pos = Vector(0, -0.5, 10),
+        Pos = Vector(0, -0.5, 15),
         Ang = Angle(0, 0, 0),		
     },
 
@@ -359,7 +375,7 @@ SWEP.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/stock_ak.png"),		
         Category = "css_ak_stock", 
         Bone = "W_Main",
-        Pos = Vector(0, -0.75, -3),
+        Pos = Vector(0, 0.5, -5),
         Ang = Angle(0, 0, 0),		
     },
 
@@ -393,7 +409,7 @@ SWEP.Attachments = {
 
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
 		ExcludeElements = {"fg_saw"},
-        Category = {"optic_css", "mount_css_m16"}, 
+        Category = {"optic_css"}, 
         Bone = "W_Main",
         Pos = Vector(0, -2.35, 3),
         Ang = Angle(90, 0, -90),			
@@ -408,7 +424,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"pre_muzzed"},
         Category = {"muzzle_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -0.25, 20),
+        Pos = Vector(0, -0.25, 25),
         Ang = Angle(90, 0, -90),		
     },	
 
@@ -419,7 +435,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"short_clamp"},
         Category = {"clamp_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -0.25, 17.5),
+        Pos = Vector(0, -0.25, 20),
         Ang = Angle(90, 0, -90),		
     },
 }
