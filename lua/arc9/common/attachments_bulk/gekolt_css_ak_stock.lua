@@ -211,10 +211,48 @@ ATT.ActivateElements = {"g_ske"}
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip2")
 
 
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Rifle Grip]]
+ATT.CompactName = [[Rifle]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+
+]]
+
+ATT.SortOrder = 2
+ATT.Category = "css_ak_g"
+ATT.ActivateElements = {"g_rif", "nostock"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip3")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Polymer Rifle Grip]]
+ATT.CompactName = [[P.Rifle]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+
+]]
+
+ATT.SortOrder = 2
+ATT.Category = "css_ak_g"
+ATT.ActivateElements = {"g_rifp", "nostock"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip4")
 
 
 
--- GRIP --
+
+
+-- GUARD --
 
 
 ----------------------------------------------------------------------------------
@@ -269,3 +307,75 @@ ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rail"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg3")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Krinkov Handguard]]
+ATT.CompactName = [[U]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+]]
+
+ATT.SortOrder = 3
+ATT.Category = "css_ak_handguard"
+ATT.ActivateElements = {"hg_u"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg4")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Huntsman Handguard]]
+ATT.CompactName = [[Hunt]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+]]
+
+ATT.SortOrder = 3
+ATT.Category = "css_ak_handguard"
+ATT.ActivateElements = {"hg_hunt"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg6")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Sputnik Handguard]]
+ATT.CompactName = [[N94]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+]]
+
+ATT.SortOrder = 3
+ATT.Category = "css_ak_handguard"
+ATT.ActivateElements = {"hg_94"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg7")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Auxilier Handguard]]
+ATT.CompactName = [[Aux]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+]]
+
+ATT.SortOrder = 3
+ATT.Category = "css_ak_handguard"
+ATT.ActivateElements = {"hg_bizon"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg8")

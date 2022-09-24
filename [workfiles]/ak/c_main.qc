@@ -12,6 +12,7 @@ $bodygroup "mag"
 	studio "ak47_mag_disk.smd"
 	studio "ak47_mag_bizon.smd"
 	studio "ak47_mag_water.smd"
+	studio "ak47_mag_9mm.smd"	
 }
 
 $bodygroup "iron"

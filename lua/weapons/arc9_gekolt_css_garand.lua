@@ -201,8 +201,8 @@ SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-2, 0, -2)
-SWEP.CrouchAng = Angle(0, 0, -30)
+SWEP.CrouchPos = Vector(-0.5, 2, -1)
+SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizePos = Vector(13, 32, 2)
@@ -422,7 +422,7 @@ SWEP.Animations = {
     ["fire_empty_308"] = {
         Source = "fire_emp",	
     },	
-    ["fire_iron_empty_380"] = {
+    ["fire_iron_empty_308"] = {
         Source = "fire_iron_emp",	
     },			
 
@@ -432,6 +432,7 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.83,
         EventTable = {
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 13 / 40},		
             {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 16 / 40},
             {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 55 / 40},
             {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 65 / 40},			
@@ -447,6 +448,7 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.86,
         EventTable = {
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 13 / 40},		
             {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 16 / 40},
             {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 65 / 40},
             {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 70 / 40},					

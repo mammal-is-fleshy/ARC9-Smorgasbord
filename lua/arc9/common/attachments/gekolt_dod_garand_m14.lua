@@ -8,6 +8,7 @@ ATT.Cons = {}
 ATT.SortOrder = 2
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ShootSound = "gekolt_dod/m1carbine_shoot.wav"
 ATT.ActivateElements = {"garand_m14"}
 ATT.MuzzleParticle = "muzzleflash_smg"
 --ATT.ShootSound = "gekolt_css/ak47-1.wav"

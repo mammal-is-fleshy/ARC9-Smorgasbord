@@ -330,18 +330,27 @@ SWEP.AttachmentElements = {
     ["s_poly2"] = { Bodygroups = { {4, 8} },},		
     ["s_adaptor"] = { Bodygroups = { {4, 11} },},
 
-    ["hg_poly"] = { Bodygroups = { {3, 4} },},		
-    ["hg_sd"] = { Bodygroups = { {3, 2} },},	
+    ["hg_poly"] = { Bodygroups = { {3, 4} },},	
+    ["hg_bizon"] = { Bodygroups = { {3, 9} },},		
+    ["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} },},
+    ["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },},	
+    ["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },},	
+    ["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },},		
     ["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },},		
 
     ["g_poly"] = { Bodygroups = { {6, 1} },},		
     ["g_ske"] = { Bodygroups = { {6, 2} },},	
+    ["g_rif"] = { Bodygroups = { {4, 1},{6, 3} },},		
+    ["g_rifp"] = { Bodygroups = { {4, 2},{6, 3} },},	
 
+    ["u_919"] = { Bodygroups = { {0, 8} },},		
+    ["u_919x"] = { Bodygroups = { {0, 6} },},	
     ["u_308"] = { Bodygroups = { {0, 3} },},	
     ["u_545"] = { Bodygroups = { {0, 1} },},	
     ["u_556"] = { Bodygroups = { {0, 2} },},
-    ["u_566"] = { Bodygroups = { {0, 7}, {1, 3}, {2, 2},{3, 10} },},	
-
+    ["u_566"] = { Bodygroups = { {0, 7}, {1, 3}, {2, 2}, {3, 10} },},	
+    ["u_disk"] = { Bodygroups = { {0, 5}, {2, 2},{3, 7}, {5, 0} },},
+	
     ["rail_def"] = { Bodygroups = { {5, 3} },},	
 }
 

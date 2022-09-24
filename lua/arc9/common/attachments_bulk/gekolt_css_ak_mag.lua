@@ -51,7 +51,6 @@ ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_556"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag3")
-ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag2")
 
 
 ----------------------------------------------------------------------------------
@@ -71,3 +70,60 @@ ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_566", "noguard"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag4")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[762 Disk]]
+ATT.CompactName = [[762 Disk]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+
+]]
+
+ATT.SortOrder = 2
+ATT.Category = "css_ak_up"
+ATT.ActivateElements = {"u_disk", "noguard"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag5")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[919]]
+ATT.CompactName = [[919]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+
+]]
+
+ATT.SortOrder = 2
+ATT.Category = "css_ak_up"
+ATT.ActivateElements = {"u_919"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag6")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[919 Helica]]
+ATT.CompactName = [[919X]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+
+]]
+
+ATT.SortOrder = 2
+ATT.Category = "css_ak_up"
+ATT.ActivateElements = {"u_919x"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag7")
