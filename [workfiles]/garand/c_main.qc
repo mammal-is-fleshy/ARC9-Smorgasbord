@@ -99,6 +99,24 @@ $sequence "fire_iron" {
 	fps 40
 }
 
+$sequence "fire_gempty" {
+	"anims\fire_gempty.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
+$sequence "fire_iron_gempty" {
+	"anims\fire_iron_gempty.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 0.02
+	fps 40
+}
+
 $sequence "fire_iron_emp" {
 	"anims\fire_iron_emp.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
