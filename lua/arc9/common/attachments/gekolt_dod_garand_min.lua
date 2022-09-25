@@ -1,39 +1,50 @@
 ATT.PrintName = "Sportsman Frame"
 ATT.CompactName = "Mini-14"
 ATT.Icon = Material("entities/gekolt_dod_garand_mini.png", "mips smooth")
-ATT.Description = [[Modernised mag-fed system loaded in a lower calibre]]
+ATT.Description = [[Modernised Mag-Fed system loaded in a lower calibre]]
 
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ShootSound = "gekolt_dod/m1carbine_shoot1.wav"
 ATT.ActivateElements = {"garand_mini"}
 ATT.MuzzleParticle = "muzzleflash_smg"
---ATT.ShootSound = "gekolt_css/ak47-1.wav"
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 650/300
 ATT.Firemodes = {
     {
-        Mode = 1
+        Mode = -1
     },
     {
-        Mode = -1,
+        Mode = 1,
     }
 }
-ATT.ClipSizeOverride = 20
+ATT.ClipSizeOverride = 30
+ATT.ChamberSizeOverride = 1
 
-ATT.DamageMaxMult = 90/60
-ATT.DamageMinMult = 60/160
-ATT.RecoilMult = 1.15
-ATT.RecoilKickMult = 2/3
+ATT.DamageMaxMult = 32/80
+ATT.DamageMinMult = 18/30
+ATT.RecoilMult = 0.85
+ATT.RecoilKickMult = 1.5/3
 
-ATT.SpeedMultSightsMult = 2
-ATT.SpeedMultShootingMult = 1.25
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_308"
+    return anim .. "_mini"
 end
+
+
+
+
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-7.5, -2, 3)
+ATT.ModelAngleOffset = Angle(120, -90, 0)
+ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
+ATT.ModelBodygroups = "15000"

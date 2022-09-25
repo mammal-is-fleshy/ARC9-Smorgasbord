@@ -247,14 +247,14 @@ SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.DefaultBodygroups = "00000"
 
 SWEP.BulletBones = {
-    [1] = "W_Ammo1",
-    [2] = "W_Ammo2",
-    [3] = "W_Ammo3",
-    [4] = "W_Ammo4",
-    [5] = "W_Ammo5",
-    [6] = "W_Ammo6",
-    [7] = "W_Ammo7",
-    [8] = "W_Ammo8",
+    [1] = "W_Ammo8",
+    [2] = "W_Ammo7",
+    [3] = "W_Ammo6",
+    [4] = "W_Ammo5",
+    [5] = "W_Ammo4",
+    [6] = "W_Ammo3",
+    [7] = "W_Ammo2",
+    [8] = "W_Ammo1",
 }
 
 SWEP.AttachmentElements = {
@@ -432,8 +432,8 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.83,
         EventTable = {
-            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 13 / 40},		
-            {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 16 / 40},
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 14 / 40},		
+            {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 14 / 40},
             {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 55 / 40},
             {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 65 / 40},			
         },	
@@ -459,6 +459,48 @@ SWEP.Animations = {
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
 		},				
     },	
+	
+    -- Mini --
+    ["fire_empty_mini"] = {
+        Source = "fire_emp",	
+    },	
+    ["fire_iron_empty_mini"] = {
+        Source = "fire_iron_emp",	
+    },			
+
+    ["reload_mini"] = {
+        Source = "wet_mini",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.83,
+        EventTable = {
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 13 / 40},		
+            {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 16 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 55 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 62 / 40},			
+        },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+    },
+    ["reload_empty_mini"] = {
+        Source = "dry_mini",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.86,
+        EventTable = {
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 13 / 40},		
+            {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 16 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 55 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 62 / 40},					
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 90 / 40},	
+			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.6, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 1, rhik = 0, }, { t = 0.8, lhik = 1, rhik = 0, }, { t = 0.95, lhik = 1, rhik = 1, },	
+		},				
+    },		
 	
     -- SLAM --
 

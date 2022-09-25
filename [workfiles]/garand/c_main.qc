@@ -171,6 +171,24 @@ $sequence "dry_308" {
 	fps 40
 }
 
+$sequence "wet_mini" {
+	"anims\wet_mini.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_mini" {
+	"anims\dry_mini.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 
 $sequence "dry_slam" {
 	"anims\dry_slam.smd"	
