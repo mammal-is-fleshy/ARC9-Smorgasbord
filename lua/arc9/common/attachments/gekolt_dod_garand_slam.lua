@@ -1,7 +1,7 @@
 ATT.PrintName = "Trencher Frame"
 ATT.CompactName = "SLAM"
 ATT.Icon = Material("entities/gekolt_dod_garand_slam.png", "mips smooth")
-ATT.Description = [[Unholy creation for all your sweeping needs]]
+ATT.Description = [[Unholy creation for all your trench sweeping needs. Both the enemies and your allies will be confused]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -10,7 +10,7 @@ ATT.SortOrder = 2
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_slam"}
 ATT.MuzzleParticle = "muzzleflash_shotgun"
-ATT.ShootSound = "gekolt_css/xm1014-1.wav"
+ATT.ShootSound = "gekolt_dod/1887_fire01.wav"
 ATT.ShellModelOverride = "models/shells/shell_12gauge.mdl"
 ATT.ShellScaleOverride = 1
 

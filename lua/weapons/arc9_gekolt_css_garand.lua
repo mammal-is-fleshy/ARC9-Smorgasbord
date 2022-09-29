@@ -135,11 +135,11 @@ SWEP.SwayMultSights = 0.3
 SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.SpeedMult = 0.9
-SWEP.SpeedMultSights = 0.75
-SWEP.SpeedMultShooting = 0.7
+SWEP.SpeedMult = 0.85
+SWEP.SpeedMultSights = 0.65
+SWEP.SpeedMultShooting = 0.725
 SWEP.SpeedMultMelee = 0.75
-SWEP.SpeedMultCrouch = 0.75
+SWEP.SpeedMultCrouch = 0.725
 SWEP.SpeedMultBlindFire = 0.9
 
 -------------------------- BLIND FIRE
@@ -264,20 +264,12 @@ SWEP.AttachmentElements = {
 	},
 
     ["garand_m14"] = {
-        Bodygroups = {{1, 1}},
-        Override_IronSights = {
-			Pos = Vector(-4, 0, 5),
-			Ang = Angle(0, 0, -5),
-        },			
+        Bodygroups = {{1, 1}},		
 		AttPosMods = { [2] = { Pos = Vector(0,  -1.1, 5), }, [3] = { Pos = Vector(0, 0, 22.5), } }			
 	},
 
     ["garand_mini"] = {
-        Bodygroups = {{1, 3}},
-        Override_IronSights = {
-			Pos = Vector(-4, 0, 5),
-			Ang = Angle(0, 0, -5),
-        },			
+        Bodygroups = {{1, 3}},			
 		AttPosMods = { [2] = { Pos = Vector(0,  -1.1, 5), }, [3] = { Pos = Vector(0, 0, 19.15), } }			
 	},	
 
@@ -530,7 +522,7 @@ SWEP.Animations = {
         RestoreAmmo = 1,		
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
-            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 5 / 40},	
+            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 5 / 40},	
         },	
 		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.5, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }	},			
     }, 
@@ -538,7 +530,7 @@ SWEP.Animations = {
         Source = "load_slam",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
-            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 5 / 40},	
+            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 5 / 40},	
         },	
 		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},			
     },
@@ -557,10 +549,10 @@ SWEP.Animations = {
         RestoreAmmo = 2,			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
-            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 12 / 40},	
+            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 12 / 40},	
             {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 50 / 40},		
-            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 72 / 40},				
+            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 72 / 40},				
 		},
-		IKTimeLine = {		{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},				
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},				
     },		
 }
