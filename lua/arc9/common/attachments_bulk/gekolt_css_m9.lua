@@ -15,7 +15,7 @@ ATT.ActivateElements = {"f_auto"}
 
 ATT.Firemodes = { { Mode = -1, }	}
 
-ATT.ClipSizeOverride = 18
+ATT.ClipSizeOverride = 21
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ex"
@@ -45,7 +45,7 @@ ATT.ActivateElements = {"f_burst"}
 
 ATT.Firemodes = { { Mode = 3, }	}
 
-// ATT.ClipSizeOverride = 20
+ATT.ClipSizeOverride = 20
 
 ATT.RPMMult = 1.5
 ATT.RecoilMult = 0.8
@@ -91,7 +91,7 @@ end
 
 ATT.RPMMult = 750/800
 ATT.Firemodes = {	{ Mode = -1, }	}
-ATT.ClipSizeOverride = 32
+ATT.ClipSizeOverride = 42
 
 ATT.DamageMaxMult = 24/26
 ATT.DamageMinMult = 12/16 
@@ -198,6 +198,19 @@ ATT.RPMMult = 600/800
 
 ATT.DamageMaxMult = 32/26
 ATT.DamageMinMult = 21/16 
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-25, -2, -7.5)
+ATT.ModelAngleOffset = Angle(90, -90, 0)
+ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
+ATT.ModelBodygroups = "15000"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_p38"
+end
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f6")
 
