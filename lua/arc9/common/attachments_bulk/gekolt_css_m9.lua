@@ -155,6 +155,19 @@ ATT.DamageMinMult = 0.75
 
 ATT.RecoilMult = 1.05
 
+ATT.Sights = {
+    {
+        Pos = Vector(3.85, 0, 12),
+        Ang = Angle(90, 0, -90),
+        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
+
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f4")
 
 
@@ -166,13 +179,37 @@ ATT = {}
 ATT.PrintName = [[Stalker-Frame]]
 ATT.CompactName = [[Welrod]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
-ATT.Description = [[ HOW
-    
+ATT.Description = [[ Super compact manual action kit, damage magically increases to compensate
 ]]
 ATT.ClipSizeOverride = 7
 ATT.SortOrder = 5
 ATT.Category = "css_m9_frame"
 ATT.ActivateElements = {"f_welrod", "pre_muzzed"}
+ATT.ShootSound = "gekolt_css/usp1.wav"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.RPMMult = 60/800
+
+ATT.DamageMaxMult = 54/26
+ATT.DamageMinMult = 39/16 
+ATT.SpreadMultSights = 0.15
+ATT.SpreadMult = 0.15
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_sd"
+end
+
+ATT.Sights = {
+    {
+        Pos = Vector(3.85, 0, 12),
+        Ang = Angle(90, 0, -90),
+        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
+
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f5")
 

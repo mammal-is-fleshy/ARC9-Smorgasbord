@@ -106,6 +106,15 @@ $sequence "fire" {
 	fps 40
 }
 
+$sequence "fire_sd" {
+	"anims\fire_sd.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
 $sequence "fire_emp" {
 	"anims\fire_emp.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
@@ -162,6 +171,24 @@ $sequence "wet" {
 
 $sequence "dry" {
 	"anims\dry.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_sd" {
+	"anims\wet_sd.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_sd" {
+	"anims\dry_sd.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

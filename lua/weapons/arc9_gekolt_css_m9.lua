@@ -236,7 +236,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "gekolt_css/elite-1.wav"
-SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
+SWEP.ShootSoundSilenced = "gekolt_css/9mm_sd.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
 SWEP.EjectDelay = 0
@@ -482,5 +482,81 @@ SWEP.Animations = {
 		},				
     },	
 	
+	-- Welrod --
+	
 
+
+    ["reload_sd"] = {
+        Source = "wet_sd",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.83,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},								
+        },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+    },
+    ["reload_empty_sd"] = {
+        Source = "dry_sd",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.86,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},					
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 68 / 40},	
+			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
+		},				
+    },	
+
+    ["idle_empty_sd"] = {
+        Source = "idle",
+    },	 
+    ["draw_empty_sd"] = {
+        Source = "draw", -- QC sequence source, can be {"table", "of", "strings"} or "string" 
+		--Time = 0.5, -- overrides the duration of the sequence
+        Mult = 1, -- multiplies time
+        EventTable = {
+            {s =  "gekolt_css/elite_twirl.wav" ,   t = 1 / 40},
+        },			
+	},	
+    ["fire_sd"] = {
+        Source = "fire_sd",	
+		EjectAt = 36/40,		
+        EventTable = {				
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},	
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
+		},		
+    },	
+    ["fire_iron_sd"] = {
+        Source = "fire_sd",	
+		EjectAt = 36/40,		
+        EventTable = {				
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},	
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
+		},	
+    },		
+    ["fire_empty_sd"] = {
+        Source = "fire_sd",	
+		EjectAt = 36/40,		
+        EventTable = {				
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},	
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
+		},	
+    },	
+    ["fire_iron_empty_sd"] = {
+        Source = "fire_sd",	
+		EjectAt = 36/40,		
+        EventTable = {				
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},	
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
+		},	
+    },				
 }
