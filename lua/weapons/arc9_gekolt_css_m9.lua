@@ -97,8 +97,8 @@ SWEP.Firemodes = {
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.45 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.25 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -194,8 +194,8 @@ SWEP.IronSights = {
 
 SWEP.Crosshair = true
 
-SWEP.SprintAng = Angle(30, -15, -10)
-SWEP.SprintPos = Vector(2, 2, 0)
+SWEP.SprintAng = Angle(10, -15, -10)
+SWEP.SprintPos = Vector(0, 2, 0)
 
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 3, 0)
@@ -247,11 +247,11 @@ SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
     ["f_auto"] = {
-        Bodygroups = {{3, 1}},			
+        Bodygroups = {{3, 1},{2, 3}},			
 		AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
 	},
     ["f_burst"] = {
-        Bodygroups = {{3, 2},{1, 1}},	
+        Bodygroups = {{3, 2},{1, 1},{2, 3}},	
 		AttPosMods = { [3] = { Pos = Vector(0, 0, 10.25), } }		
 	},
     ["f_carbine"] = {
@@ -283,9 +283,9 @@ SWEP.Attachments = {
         PrintName = "Optic",
         DefaultName = "None",
 
-        Category = {"optic_css"}, 
+        Category = {"optic_css_s"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -1.1, 2),
+        Pos = Vector(0, -1.1, 1.5),
         Ang = Angle(90, 0, -90),		
     },	
     {
@@ -357,7 +357,7 @@ SWEP.Animations = {
 		MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -381,7 +381,7 @@ SWEP.Animations = {
     },		
 
 
-    -- M14 --
+    -- Carbine --
     ["fire_carbine"] = {
         Source = "fire_carbine",	
     },
@@ -396,7 +396,7 @@ SWEP.Animations = {
 		MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 70 / 40},						
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},						
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -410,7 +410,7 @@ SWEP.Animations = {
 		MinProgress = 0.86,
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 70 / 40},				
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},				
             {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 113 / 40},
 			},
 		IKTimeLine = {
@@ -418,5 +418,38 @@ SWEP.Animations = {
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
 		},				
     },	
+
+
+
+    ["reload_ex"] = {
+        Source = "wet_ex",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.83,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},									
+        },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+    },
+    ["reload_empty_ex"] = {
+        Source = "dry_ex",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.86,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 35 / 40},					
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 59 / 40},	
+			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
+		},				
+    },	
+	
 
 }

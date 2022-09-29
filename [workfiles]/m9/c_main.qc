@@ -23,6 +23,7 @@ $bodygroup "mag"
 	studio "m9_mag.smd"
 	studio "m9_mag_snail.smd"
 	studio "m9_mag_welrod.smd"
+	studio "m9_mag_ex.smd"	
 	blank			
 }
 
@@ -186,6 +187,23 @@ $sequence "dry_carbine" {
 	fps 40
 }
 
+$sequence "wet_ex" {
+	"anims\wet_ex.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_ex" {
+	"anims\dry_ex.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
 
 
 $sequence "draw" {

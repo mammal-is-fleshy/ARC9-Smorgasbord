@@ -15,7 +15,11 @@ ATT.ActivateElements = {"f_auto"}
 
 ATT.Firemodes = { { Mode = -1, }	}
 
-// ATT.ClipSizeOverride = 18
+ATT.ClipSizeOverride = 18
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_ex"
+end
 
 ATT.RPMMult = 900/800
 ATT.RecoilMult = 1.2
@@ -57,6 +61,9 @@ ATT.Sights = {
         KeepBaseIrons = false
     }
 }
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_ex"
+end
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f2")
 
@@ -82,7 +89,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_carbine"
 end
 
-ATT.RPMMult = 850/800
+ATT.RPMMult = 750/800
 ATT.Firemodes = {	{ Mode = -1, }	}
 ATT.ClipSizeOverride = 32
 
