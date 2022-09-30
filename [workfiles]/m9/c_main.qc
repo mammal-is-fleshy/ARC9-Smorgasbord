@@ -80,6 +80,7 @@ $cdmaterials "models\weapons\v_models\shot_xm1014\"
 
 $attachment "1" "W_Muz" 0 0 0 rotate -90 0 -90
 $attachment "2" "W_Shell" 0 0 0 rotate 0 -135 0
+$bonemerge "Akimbo_Base"
 
 $sequence "idle" {
 	"anims\idle.smd"
@@ -189,6 +190,33 @@ $sequence "wet_sd" {
 
 $sequence "dry_sd" {
 	"anims\dry_sd.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_p38" {
+	"anims\dry_p38.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_akimbo" {
+	"anims\wet_akimbo.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_akimbo" {
+	"anims\dry_akimbo.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

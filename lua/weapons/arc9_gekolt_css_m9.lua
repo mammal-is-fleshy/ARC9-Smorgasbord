@@ -297,8 +297,32 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 0, 6),
         Ang = Angle(90, 0, -90),		
+    },
+	
+    {
+        PrintName = "Off-Hand",
+        DefaultName = "None",
+		InstalledElements = {"akimbo"},		
+
+		ExcludeElements = {"akantbo"},
+        Category = {"css_akimbo"}, 
+        Bone = "Akimbo_Base",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(90, 0, -90),		
     },		
 }
+
+SWEP.Hook_TranslateAnimation = function(wep, anim) 
+
+    if wep:HasElement("akimbo") then
+    		if anim == "reload" then  return "reload_akimbo" end
+    		if anim == "reload_empty" then  return "reload_empty_akimbo" end
+			if anim == "reload_p38" then  return "reload_akimbo" end
+    		if anim == "reload_empty_p38" then  return "reload_empty_akimbo" end
+			if anim == "reload_ex" then  return "reload_akimbo" end
+    		if anim == "reload_empty_ex" then  return "reload_empty_akimbo" end
+    end	
+end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
@@ -396,7 +420,7 @@ SWEP.Animations = {
 		},			
     },	
     ["reload_empty_p38"] = {
-        Source = "dry",
+        Source = "dry_p38",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
 		MinProgress = 0.9,
@@ -407,7 +431,7 @@ SWEP.Animations = {
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},				
     },		
 
@@ -481,6 +505,30 @@ SWEP.Animations = {
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
 		},				
     },	
+	
+    ["reload_akimbo"] = {
+        Source = "wet_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.83,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},									
+        },	
+		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},			
+    },
+    ["reload_empty_akimbo"] = {
+        Source = "dry_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.86,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},					
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 70 / 40},	
+			},
+		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},				
+    },		
 	
 	-- Welrod --
 	

@@ -83,7 +83,7 @@ ATT.Description = [[ Snail mags
 
 ATT.SortOrder = 3
 ATT.Category = "css_m9_frame"
-ATT.ActivateElements = {"f_carbine"}
+ATT.ActivateElements = {"f_carbine", "akantbo"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_carbine"
@@ -184,7 +184,7 @@ ATT.Description = [[ Super compact manual action kit, damage magically increases
 ATT.ClipSizeOverride = 7
 ATT.SortOrder = 5
 ATT.Category = "css_m9_frame"
-ATT.ActivateElements = {"f_welrod", "pre_muzzed"}
+ATT.ActivateElements = {"f_welrod", "pre_muzzed", "akantbo"}
 ATT.ShootSound = "gekolt_css/usp1.wav"
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.RPMMult = 60/800
