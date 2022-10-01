@@ -1,4 +1,4 @@
-ATT.PrintName = "Holo Prototype Sight"
+ATT.PrintName = "Holographic Prototype Sight"
 ATT.CompactName = "H.Proto"
 ATT.Icon = Material("")
 ATT.Description = [[Holographic sight slapped with some "Tech" bollocks with thermal seeking sense
@@ -7,7 +7,7 @@ ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/holo2.mdl"
 
-ATT.Category = {"optic_css","optic_css_m","optic_css_holo"}
+ATT.Category = {"optic_css","optic_css_l","optic_css_holo"}
 ATT.Folder = "REFLEX"
 
 // Allows a custom sight position to be defined

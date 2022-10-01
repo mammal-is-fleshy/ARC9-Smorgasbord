@@ -285,7 +285,7 @@ SWEP.Attachments = {
 
         Category = {"optic_css_s"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -1.1, 1.5),
+        Pos = Vector(0, -1.1, 2),
         Ang = Angle(90, 0, -90),		
     },	
     {

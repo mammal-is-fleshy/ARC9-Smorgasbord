@@ -1,10 +1,10 @@
-ATT.PrintName = "MRS Sight A"
-ATT.CompactName = "MRS A"
+ATT.PrintName = "MRS Sight B"
+ATT.CompactName = "MRS B"
 ATT.Icon = Material("")
 ATT.Description = [[The most basic reflex sight]]
 ATT.SortOrder = 0.2
 
-ATT.Model = "models/weapons/geckololt_css/atts/mrs.mdl"
+ATT.Model = "models/weapons/geckololt_css/atts/mrs2.mdl"
 
 ATT.Category = {"optic_css","optic_css_s","optic_css_holo"}
 ATT.Folder = "REFLEX"
@@ -20,8 +20,8 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("arc9_css/mrs.png", "mips smooth")
-ATT.HoloSightSize = 1200
+ATT.HoloSightReticle = Material("arc9_css/mrs3.png", "mips smooth")
+ATT.HoloSightSize = 750
 ATT.HoloSightColorable = true
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
