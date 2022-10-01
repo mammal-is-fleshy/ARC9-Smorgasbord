@@ -553,6 +553,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
 		MinProgress = 0.86,
+		EjectAt = 73/40,			
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},					
@@ -591,20 +592,16 @@ SWEP.Animations = {
             {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
 		},	
     },		
-    ["fire_empty_sd"] = {
-        Source = "fire_sd",	
-		EjectAt = 36/40,		
+    ["fire_empty_sd_emp"] = {
+        Source = "fire_sd",		
         EventTable = {				
-            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},	
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},			
 		},	
     },	
     ["fire_iron_empty_sd"] = {
-        Source = "fire_sd",	
-		EjectAt = 36/40,		
+        Source = "fire_sd_emp",			
         EventTable = {				
-            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},	
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},				
 		},	
     },				
 }

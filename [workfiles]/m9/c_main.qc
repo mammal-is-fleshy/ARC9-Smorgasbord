@@ -116,6 +116,15 @@ $sequence "fire_sd" {
 	fps 40
 }
 
+$sequence "fire_sd_emp" {
+	"anims\fire_sd_emp.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
 $sequence "fire_emp" {
 	"anims\fire_emp.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
