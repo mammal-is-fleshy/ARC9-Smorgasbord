@@ -1079,19 +1079,19 @@ SWEP.AttachmentElements = {
 --- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
 SWEP.Hook_ModifyBodygroups = function(wep, data)  -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
     local model = data.model
-    if wep.Attachments[7].Installed and wep:HasElement("keep_rs") then model:SetBodygroup(5,8) end	
-	if wep.Attachments[7].Installed then model:SetBodygroup(5,8) end
-	if wep.Attachments[7].Installed and not wep:HasElement("keep_rs") then model:SetBodygroup(10,7) end	
+    if wep:HasElement("optic_main") and wep:HasElement("keep_rs") then model:SetBodygroup(5,8) end	
+	if wep:HasElement("optic_main") then model:SetBodygroup(5,8) end
+	if wep:HasElement("optic_main") and not wep:HasElement("keep_rs") then model:SetBodygroup(10,7) end	
 -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
-	if wep.Attachments[7].Installed and wep:HasElement("up_9mm") then model:SetBodygroup(3,1) end	
-	if wep.Attachments[7].Installed and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end	
+	if wep:HasElement("optic_main") and wep:HasElement("up_9mm") then model:SetBodygroup(3,1) end	
+	if wep:HasElement("optic_main") and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end	
 -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
-	if wep.Attachments[7].Installed and wep:HasElement("up_acr") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
-	if wep.Attachments[7].Installed and wep:HasElement("up_a1") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
-	if wep.Attachments[7].Installed and wep:HasElement("up_sg") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end		
-	if wep.Attachments[7].Installed and wep:HasElement("up_proto") and not wep:HasElement("m16_on") then model:SetBodygroup(3,3) end		
+	if wep:HasElement("optic_main") and wep:HasElement("up_acr") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
+	if wep:HasElement("optic_main") and wep:HasElement("up_a1") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
+	if wep:HasElement("optic_main") and wep:HasElement("up_sg") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end		
+	if wep:HasElement("optic_main") and wep:HasElement("up_proto") and not wep:HasElement("m16_on") then model:SetBodygroup(3,3) end		
 -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
-	if wep.Attachments[7].Installed and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
+	if wep:HasElement("optic_main") and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
 end
 --- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
 --- surely theres a much much much much much better alternative
@@ -1169,10 +1169,10 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"no_irons", "no_optic"},  -- i forgot why i did this
+		InstalledElements = {"no_irons", "no_optic", "optic_main"},  -- i forgot why i did this
 
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
-		ExcludeElements = {"fg_saw"},
+		ExcludeElements = {"fg_saw", "alt_optic"},
         Category = {"optic_css", "mount_css_m16"}, 
         Bone = "W_Main",
         Pos = Vector(0, -1.7, 3),

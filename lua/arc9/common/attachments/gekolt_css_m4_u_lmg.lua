@@ -8,7 +8,7 @@ ATT.Cons = {}
 ATT.SortOrder = 4
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_lmg", "akantbo"}
+ATT.ActivateElements = {"up_lmg", "akantbo", "alt_optic"}
 ATT.ShootSound = "gekolt_css/m249-1.wav"
 
 ATT.ClipSizeOverride = 120
@@ -23,3 +23,17 @@ ATT.ActiveAngOverride = Angle(0, 0, 0)
 ATT.Hook_TranslateAnimation = function(wep, anim) 
 	return anim .. "_lmg"
 end
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        Category = "mountr_css",
+		InstalledElements = {"no_irons", "no_optic", "optic_main"},
+        DefaultIcon = Material("arc9/def_att_icons/optic.png"),
+		ExcludeElements = {"fg_saw"},
+        Category = {"optic_css_s", "optic_css_m" }, 
+		
+        Pos = Vector(0,-2.55, 0),
+        Ang = Angle(90, 0, -90),	
+    },
+}

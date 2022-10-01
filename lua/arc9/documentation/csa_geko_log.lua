@@ -26,6 +26,12 @@ https://gamebanana.com/models/4134 - OKP7
 
 https://gamebanana.com/mods/39876 - Muzzle/Grip/T1
 
+-- sounds --
+https://gamebanana.com/sounds/18970
+https://gamebanana.com/sounds/18302
+https://gamebanana.com/sounds/21639
+https://gamebanana.com/sounds/57239
+
 
 
 -------------
@@ -74,11 +80,17 @@ Do care did ask
 AWP: Done
 M4: Done
 AK: Model Done
-Makarov: Model Half
+Makarov: Model Half [SCRAPPED]
+M9: Done
 M3: Model Done
 FAL: Model Quarter
 MP5/G3: Model Fifth
-Garand: Half
+Garand: Three Quarter
+
+
+note myself: 
+-use elements instead of attachment check
+-Find a smaller EOtech model
 
 
 

@@ -6,7 +6,7 @@ ATT.SortOrder = 100
 
 ATT.Model = "models/weapons/geckololt_css/atts/pvs4.mdl"
 
-ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
+ATT.Category = {"optic_css", "optic_css_l", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
 // Allows a custom sight position to be defined

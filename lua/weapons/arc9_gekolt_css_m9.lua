@@ -121,7 +121,7 @@ SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
 -------------------------- HANDLING
 
 SWEP.FreeAimRadius = 7 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 1.5 -- How much the gun sways.
+SWEP.Sway = 1.1 -- How much the gun sways.
 
 SWEP.SwayMultMidAir = 2
 SWEP.SwayMultMove = 1.15
