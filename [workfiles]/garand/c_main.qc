@@ -220,6 +220,43 @@ $sequence "end_slam" {
 }
 
 
+$sequence "dry_strip" {
+	"anims\dry_strip.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "load_strip_f" {
+	"anims\load_strip_f.smd"	
+	fadein 0.05
+	fadeout 0.05
+	loop	
+	fps 40
+}
+$sequence "load_strip_s" {
+	"anims\load_strip_s.smd"	
+	fadein 0.05
+	fadeout 0.05
+	loop	
+	fps 40
+}
+$sequence "start_strip_s" {
+	"anims\start_strip.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "end_strip" {
+	"anims\end_strip.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+
 
 $sequence "draw" {
 	"anims\draw.smd"

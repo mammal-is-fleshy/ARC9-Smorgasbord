@@ -27,7 +27,7 @@ ATT.ChamberSizeOverride = 1
 
 ATT.DamageMaxMult = 32/80
 ATT.DamageMinMult = 18/30
-ATT.RecoilMult = 0.85
+ATT.RecoilMult = 0.5/0.75
 ATT.RecoilKickMult = 1.5/3
 
 ATT.AimDownSightsTimeMult = 0.95

@@ -42,5 +42,8 @@ ATT.Ammo = "buckshot"
 ATT.ShotgunReload = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
+	if anim == "reload_start_empty" then return "reload_start_empty_slam" end
+	if anim == "reload_insert_1" then return "reload_insert_slam" end
+	if anim == "reload_insert_5" then return "reload_insert_slam_5" end	
     return anim .. "_slam"
 end

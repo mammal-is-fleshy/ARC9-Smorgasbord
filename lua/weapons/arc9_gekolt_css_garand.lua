@@ -94,7 +94,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.2
+SWEP.Recoil = 0.7
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
@@ -103,14 +103,14 @@ SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomSide = 0.15
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0 
 
-SWEP.RecoilKick = 3
+SWEP.RecoilKick = 2
 
 -------------------------- SPREAD
 
@@ -268,6 +268,11 @@ SWEP.AttachmentElements = {
 		AttPosMods = { [2] = { Pos = Vector(0,  -1.1, 5), }, [3] = { Pos = Vector(0, 0, 22.5), } }			
 	},
 
+    ["garand_sks"] = {
+        Bodygroups = {{1, 4}},		
+		AttPosMods = { [3] = { Pos = Vector(0, 0, 22.5), } }			
+	},
+
     ["garand_mini"] = {
         Bodygroups = {{1, 3}},			
 		AttPosMods = { [2] = { Pos = Vector(0,  -1.1, 5), }, [3] = { Pos = Vector(0, 0, 19.15), } }			
@@ -279,9 +284,9 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data) 
     local model = data.model
-    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- to future me: Rail ici s'il te plait ---
+    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- under rail ---
 	
-    if wep.Attachments[2].Installed and wep:HasElement("garand_mini") then model:SetBodygroup(4,1) end	
+    if wep.Attachments[2].Installed and wep:HasElement("garand_mini") then model:SetBodygroup(4,1) end	-- 'extended' top rail --
     if wep.Attachments[2].Installed and wep:HasElement("garand_m14") then model:SetBodygroup(4,1) end		
 end
 
@@ -534,6 +539,15 @@ SWEP.Animations = {
         },	
 		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},			
     },
+	["reload_insert_slam_5"] = { ---- bodging time ----
+        Source = "load_slam",
+        RestoreAmmo = -4,				
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 5 / 40},	
+        },	
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},			
+    },	
 	["reload_finish_slam"] = {
         Source = "end_slam",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -553,6 +567,57 @@ SWEP.Animations = {
             {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 50 / 40},		
             {s =  "gekolt_dod/1887_shell1.wav" ,   t = 72 / 40},				
 		},
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},				
+    },	
+
+    -- ROMANIA IS THE STRONGEST --	
+
+    ["fire_empty_sks"] = {
+        Source = "fire_emp",	
+    },	
+    ["fire_iron_empty_sks"] = {
+        Source = "fire_iron_emp",	
+    },
+
+    ["reload_start_sks"] = {
+        Source = "start_strip_s",		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 5 / 40},	
+        },	
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.5, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }	},			
+    }, 
+	["reload_insert_5"] = {
+        Source = "load_strip_f",	
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_dod/k98_clipin.wav" ,   t = 5 / 40},	
+            {s =  "gekolt_dod/k98_clipin2.wav" ,   t = 20 / 40},	
+        },	
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},			
+    },
+	["reload_insert_1"] = {
+        Source = "load_strip_s",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_dod/k98_singleshotreload.wav" ,   t = 5 / 40},	
+        },	
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},			
+    },	
+	["reload_finish_sks"] = {
+        Source = "end_strip",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.85,
+        EventTable = {
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 10 / 40},	
+        },			
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
+    },	
+    ["reload_start_empty_sks"] = {
+        Source = "dry_strip",
+        RestoreAmmo = 0,			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},				
     },		
 }

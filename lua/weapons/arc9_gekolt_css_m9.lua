@@ -94,7 +94,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 0.5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.45 -- Multiplier for vertical recoil
@@ -204,7 +204,7 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.CrouchPos = Vector(-0.5, 2, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
-SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizeAng = Angle(90, -5, 0)
 SWEP.CustomizePos = Vector(13, 32, 2)
 
 SWEP.CustomizeSnapshotFOV = 110
@@ -592,8 +592,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
 		},	
     },		
-    ["fire_empty_sd_emp"] = {
-        Source = "fire_sd",		
+    ["fire_empty_sd"] = {
+        Source = "fire_sd_emp",		
         EventTable = {				
             {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},			
 		},	

@@ -21,9 +21,9 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ex"
 end
 
-ATT.RPMMult = 900/800
-ATT.RecoilMult = 1.2
-ATT.RecoilSideMult = 2.5
+ATT.RPMMult = 950/800
+ATT.RecoilMult = 1.25
+ATT.RecoilSideMult = 4
 ATT.RecoilRandomSideMult = 0.75/0.3
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f1")

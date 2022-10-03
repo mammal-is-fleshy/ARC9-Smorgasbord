@@ -1,7 +1,7 @@
 ATT.PrintName = "Delta Sight B"
 ATT.CompactName = "Delta B"
 ATT.Icon = Material("")
-ATT.Description = [[Smaller reflex sight designed as a backup. Peculiar reticle]]
+ATT.Description = [[Smaller reflex sight designed as a backup]]
 ATT.SortOrder = 0.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/delta_mini.mdl"
