@@ -5,24 +5,24 @@ ATT.Description = [[Coversion to a higher calibre with a fixed magazine, strippe
 
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = 3
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_sks", "nogrip"}
 
 ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 200/300
+ATT.RPMMult = 250/300
 ATT.Firemodes = {
     {
         Mode = 1,	
     },
 }
 
-ATT.ClipSizeOverride = 15
+ATT.ClipSizeOverride = 12
 ATT.ChamberSizeOverride = 1
 
 ATT.DamageMaxMult = 105/80
-ATT.DamageMinMult = 60/30
+ATT.DamageMinMult = 45/30
 ATT.RecoilMult = 0.8/0.7
 ATT.RecoilKickMult = 2.5/3
 

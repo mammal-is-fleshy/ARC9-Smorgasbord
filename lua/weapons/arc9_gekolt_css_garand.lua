@@ -608,7 +608,7 @@ SWEP.Animations = {
         Source = "end_strip",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.85,
+		MinProgress = 0.5,
         EventTable = {
             {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 10 / 40},	
         },			

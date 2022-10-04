@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = [[Auto-Frame]]
 ATT.CompactName = [[Auto]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
 ATT.Description = [[Semi-auto won't do much in this world of chaos
 Unstable recoil
 ]]
@@ -36,9 +36,10 @@ ATT = {}
 
 ATT.PrintName = [[Burst-Frame]]
 ATT.CompactName = [[Burst]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_f_burst.png", "mips smooth")
 ATT.Description = [[Encumbersome frontend device allowing for stable short burst in quick succession
 Raised front sight is just only a style points, there is no 80s action movie revolving about a mechanical police reference
+Despite using the exact same magazine as the Auto-Frame, only holds 20 for reasons undisclosable
 ]]
 
 ATT.SortOrder = 2
@@ -78,9 +79,9 @@ ATT = {}
 
 ATT.PrintName = [[Carbine-Frame]]
 ATT.CompactName = [[Carbine]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_f_carbine.png", "mips smooth")
 ATT.Description = [[Pistols don't have to be short
-Fully automatic carbine kit along with a old fashion snail magazine
+Fully automatic carbine kit along with a old fashion 42-round snail magazine
 Much more stable than those auto-frames
 ]]
 
@@ -137,7 +138,7 @@ ATT = {}
 
 ATT.PrintName = [[Whisper-Frame]]
 ATT.CompactName = [[SD]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_f_sd.png", "mips smooth")
 ATT.Description = [[For quiet times and uneasy times
 For infiltration with styles
 ]]
@@ -150,7 +151,7 @@ ATT.ShootSound = "gekolt_css/usp1.wav"
 
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 
-ATT.RPMMult = 750/800
+ATT.RPMMult = 720/800
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.9
 
@@ -182,9 +183,9 @@ ATT = {}
 
 ATT.PrintName = [[Stalker-Frame]]
 ATT.CompactName = [[Welrod]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+// ATT.Icon = Material("entities/gekolt_css_m9_f_welrod.png", "mips smooth")
 ATT.Description = [[Super compact manual action kit, the hammer doesn't even automatically reset
-Damage magically increases to compensate
+Damage magically increases to compensate, imagine it use some sort of small .50AE
 ]]
 ATT.ClipSizeOverride = 7
 ATT.SortOrder = 5
@@ -226,7 +227,7 @@ ATT = {}
 
 ATT.PrintName = [[Compact-Frame]]
 ATT.CompactName = [[Compact]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
 ATT.Description = [[Shortened slide for certain types of officers
 Magically increases damage in the name of videogame balance
 ]]
