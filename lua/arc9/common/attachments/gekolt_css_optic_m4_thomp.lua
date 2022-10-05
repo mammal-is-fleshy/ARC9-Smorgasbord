@@ -1,6 +1,6 @@
 ATT.PrintName = "Telescopic Ironsight"
 ATT.CompactName = "Telescopic"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic_thomp.png")
 ATT.Description = [[Old ironsight system designed for variable ranges.
 No you can't switch between them.]]
 ATT.SortOrder = 0.01

@@ -3,7 +3,7 @@ ATT.CompactName = "AFG"
 ATT.Description = [[Foregrip allowing faster aim acquisition
 Slightly suffer from recoil and stability]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_fore_angled.png")
 
 ATT.Model = "models/weapons/geckololt_css/atts/afg.mdl"
 

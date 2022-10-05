@@ -1,6 +1,6 @@
 ATT.PrintName = "Clamped Rail (Angled)"
 ATT.CompactName = "Rail"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_mount_clampb.png")
 ATT.Description = [[Extend your handguard even more.]]
 ATT.SortOrder = 1
 
