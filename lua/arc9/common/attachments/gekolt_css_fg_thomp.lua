@@ -2,7 +2,7 @@ ATT.PrintName = "Wooden Foregrip"
 ATT.CompactName = "Wood"
 ATT.Description = [[Straight from the antique shop, botched with a rail adaptor]]
 
-ATT.Icon = Material("entities/gekolt_css_fore_thomp.png")
+ATT.Icon = Material("entities/gekolt_css_fore_thomp.png", "mips smooth")
 
 ATT.Model = "models/weapons/geckololt_css/grip_thomp.mdl"
 

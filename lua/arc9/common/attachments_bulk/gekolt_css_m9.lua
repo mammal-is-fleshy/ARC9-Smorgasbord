@@ -183,7 +183,7 @@ ATT = {}
 
 ATT.PrintName = [[Stalker-Frame]]
 ATT.CompactName = [[Welrod]]
-// ATT.Icon = Material("entities/gekolt_css_m9_f_welrod.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_f_welrod.png", "mips smooth")
 ATT.Description = [[Super compact manual action kit, the hammer doesn't even automatically reset
 Damage magically increases to compensate, imagine it use some sort of small .50AE
 ]]

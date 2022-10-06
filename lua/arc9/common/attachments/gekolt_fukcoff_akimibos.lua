@@ -11,6 +11,8 @@ ATT.Category = {"css_akimbo"} -- can be "string" or {"list", "of", "strings"}
 
 ATT.HasSights = true
 ATT.Model = "models/weapons/arccw/mifl_atts/fas2/c_deagle.mdl"
+ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.LHIK = true
 ATT.LHIK_Priority = 100000
 

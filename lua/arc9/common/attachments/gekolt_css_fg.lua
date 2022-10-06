@@ -2,7 +2,7 @@ ATT.PrintName = "Vertical Foregrip"
 ATT.CompactName = "TROY"
 ATT.Description = [[Rail-mounted vertical foregrip. Provides a stable, vertical surface to grip onto, improving recoil control and reducing recoil drift.]]
 
-ATT.Icon = Material("entities/gekolt_css_fore_troy.png")
+ATT.Icon = Material("entities/gekolt_css_fore_troy.png", "mips smooth")
 
 ATT.Model = "models/weapons/geckololt_css/atts/fg.mdl"
 

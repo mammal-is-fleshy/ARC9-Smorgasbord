@@ -90,6 +90,7 @@ Makarov: Model Half [SCRAPPED]
 
 note myself: 
 -use elements instead of attachment check
+-you cant use $attachment as a spare point For offhand stuff       use $bonemerge instead
 
 
 

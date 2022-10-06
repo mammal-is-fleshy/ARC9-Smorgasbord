@@ -2,7 +2,7 @@ ATT.PrintName = "Spaceage Foregrip"
 ATT.CompactName = "HERA"
 ATT.Description = [[Heavy foregrip ripped straight from a P90.]]
 
-ATT.Icon = Material("entities/gekolt_css_fore_p90.png")
+ATT.Icon = Material("entities/gekolt_css_fore_p90.png", "mips smooth")
 
 ATT.Model = "models/weapons/geckololt_css/grip_p90.mdl"
 
