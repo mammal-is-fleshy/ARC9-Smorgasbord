@@ -307,14 +307,15 @@ ATT.ActivateElements = {"f_artillery", "pre_optic", "akantbo"}
 
 ATT.RPMMult = 400/800
 
-ATT.DamageMaxMult = 12/26
+ATT.DamageMaxMult = 15/26
 ATT.DamageMinMult = 62/16 
 ATT.SpeedMult = 0.85
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 2
-ATT.RangeMaxMult = 0.5
+ATT.RangeMaxMult = 2
 ATT.RecoilKickMult = 0.5
+ATT.SpreadMultSights = 0.5
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
@@ -338,7 +339,7 @@ ATT.Attachments = {
         Category = {"optic_css"},
         Pos = Vector(0, -3.7, -5),
         Ang = Angle(90, 0, -90),
-        ExtraSightDistance = 2		
+        ExtraSightDistance = 0.5		
     },		
 }
 
