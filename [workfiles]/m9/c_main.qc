@@ -35,6 +35,7 @@ $bodygroup "slide"
 	studio "m9_slide_p38.smd"
 	studio "m9_slide_welrod.smd"
 	studio "m9_slide_carbine.smd"	
+	studio "m9_slide_artillery.smd"		
 	blank	
 }
 
@@ -43,13 +44,15 @@ $bodygroup "Rail"
 	blank
 	studio "m9_rail.smd"
 	studio "m9_iron_carbine.smd"
-	studio "m9_rail_carbine.smd"	
+	studio "m9_rail_carbine.smd"
+	studio "m9_rail_artillery.smd"
 }
 
 $bodygroup "Stock"
 {
 	blank
 	studio "m9_stock.smd"
+	studio "m9_stock_artillery.smd"
 }
 
 $bodygroup "grip"
@@ -208,6 +211,15 @@ $sequence "dry_sd" {
 
 $sequence "dry_p38" {
 	"anims\dry_p38.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_artillery" {
+	"anims\dry_artillery.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

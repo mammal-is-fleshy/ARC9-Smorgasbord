@@ -110,8 +110,6 @@ SWEP.RecoilKick = 1.5
 
 -------------------------- VISUAL RECOIL
 
-SWEP.RecoilKick = 1
-
 SWEP.UseVisualRecoil = true
 
 SWEP.VisualRecoilUp = 0.01 -- Vertical tilt for visual recoil.

@@ -26,6 +26,16 @@ ATT.RecoilMult = 1.25
 ATT.RecoilSideMult = 4
 ATT.RecoilRandomSideMult = 0.75/0.3
 
+ATT.Attachments = {
+    {
+        PrintName = "Stock",
+        DefaultName = "None",		
+        Category = {"css_m9_stock"},
+        Pos = Vector(0, 2, 5),
+        Ang = Angle(90, 0, -90),		
+    },		
+}
+
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f1")
 
 
@@ -67,6 +77,17 @@ ATT.Sights = {
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ex"
 end
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Grip",
+        DefaultName = "None",		
+        Category = {"css_m9_grip"},
+        Pos = Vector(0, 0.5, -4),
+        Ang = Angle(90, 0, -90),		
+    },		
+}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f2")
 
@@ -160,10 +181,18 @@ ATT.DamageMinMult = 0.75
 
 ATT.RecoilMult = 1.05
 
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.Model = "models/weapons/geckololt_css/grip/m9_nor.mdl"
+ATT.ModelOffset = Vector(-14, -4, 5)
+ATT.ModelAngleOffset = Angle(90, -90, 0)
+
 ATT.Sights = {
     {
-        Pos = Vector(3.85, 0, 12),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(-4, 0, 1.2),
+        Ang = Angle(0, 0, 0),
         Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
 
 
@@ -260,3 +289,116 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f6")
 
 ----------------------------------------------------------------------------------
 
+
+ATT = {}
+
+ATT.PrintName = [[Artillery-Frame]]
+ATT.CompactName = [[Artillery]]
+// ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
+ATT.Description = [[Polymer frame of an old fashion comically long barrel kit for artillery crew
+Artillery not included
+Stock however, does
+]]
+ATT.ClipSizeOverride = 21
+ATT.SortOrder = 3.5
+ATT.Category = "css_m9_frame"
+ATT.ActivateElements = {"f_artillery", "pre_optic", "akantbo"}
+
+
+ATT.RPMMult = 400/800
+
+ATT.DamageMaxMult = 12/26
+ATT.DamageMinMult = 62/16 
+ATT.SpeedMult = 0.85
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 2
+ATT.RangeMaxMult = 0.5
+ATT.RecoilKickMult = 0.5
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-11.5, -1.75, 4.75)
+ATT.ModelAngleOffset = Angle(90, -90, 0)
+ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
+ATT.ModelBodygroups = "15000"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_artillery"
+end
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+		InstalledElements = {"has_optic"},	
+		
+        Category = {"optic_css"},
+        Pos = Vector(0, -3.7, -5),
+        Ang = Angle(90, 0, -90),
+        ExtraSightDistance = 2		
+    },		
+}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_m9_f7")
+
+
+----------------------------------------------------------------------------------
+
+-- EXTRA --
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Stock]]
+ATT.CompactName = [[Stock]]
+// ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
+ATT.Description = [[Bracing
+]]
+ATT.SortOrder = 1
+ATT.Category = "css_m9_stock"
+ATT.ActivateElements = {"s_1"}
+
+ATT.RecoilMult = 0.85
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.RecoilPatternDriftMult = 0.65
+ATT.RecoilAutoControlMult = 1.2
+
+ARC9.LoadAttachment(ATT, "gekolt_css_m9_s1")
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = [[Grip]]
+ATT.CompactName = [[Grip]]
+// ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
+ATT.Description = [[Bracing
+]]
+ATT.SortOrder = 1
+ATT.Category = "css_m9_grip"
+ATT.ActivateElements = {"g_1"}
+
+ATT.SwayAdd = -0.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.075
+ATT.SpeedMult = 0.97
+ATT.RecoilPatternDriftMult = 0.75
+ATT.RecoilAutoControlMult = 1.15
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 1
+
+ATT.Scale = 1
+ATT.Model = "models/weapons/geckololt_css/grip/m9_grip.mdl"
+ATT.ModelOffset = Vector(-18, -4, 5.5)
+
+
+ARC9.LoadAttachment(ATT, "gekolt_css_m9_g1")
+
+----------------------------------------------------------------------------------

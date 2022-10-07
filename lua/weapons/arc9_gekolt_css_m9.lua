@@ -258,6 +258,10 @@ SWEP.AttachmentElements = {
         Bodygroups = {{3, 5},{1, 2},{2, 1},{4, 2}},		
 		AttPosMods = { [2] = { Pos = Vector(0, -1.3, -4.75), },  [3] = { Pos = Vector(0, 0, 9.25), } }		
 	},
+    ["f_artillery"] = {
+        Bodygroups = {{3, 6},{1, 2},{2, 1},{5, 2}},				
+		AttPosMods = { [3] = { Pos = Vector(0, 0, 15.75), } }				
+	},		
     ["f_sd"] = {
         Bodygroups = {{3, 4},{1, 2}},				
 	},
@@ -267,6 +271,9 @@ SWEP.AttachmentElements = {
     ["f_welrod"] = {
         Bodygroups = {{3, 4},{1, 3},{2, 2},{0, 1}},				
 	},
+
+    ["g_1"] = { Bodygroups = {{6, 1}}, },
+    ["s_1"] = { Bodygroups = {{5, 1}}, },	
 }
 
 SWEP.Attachments = {
@@ -282,7 +289,9 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-
+		InstalledElements = {"has_optic"},		
+		
+		ExcludeElements = {"pre_optic"},
         Category = {"optic_css_s"}, 
         Bone = "W_Main",
         Pos = Vector(0, -1.1, 2),
@@ -326,8 +335,9 @@ end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep.Attachments[2].Installed then model:SetBodygroup(4,1) end	
-    if wep.Attachments[2].Installed and wep:HasElement("f_carbine") then model:SetBodygroup(4,3) end 
+	if wep:HasElement("has_optic") then model:SetBodygroup(4,1) end	
+    if wep:HasElement("has_optic") and wep:HasElement("f_carbine") then model:SetBodygroup(4,3) end 
+    if wep:HasElement("has_optic") and wep:HasElement("f_artillery") then model:SetBodygroup(4,4) end 	
 end
 
 SWEP.Animations = {
@@ -431,7 +441,7 @@ SWEP.Animations = {
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},				
     },		
 
@@ -474,6 +484,44 @@ SWEP.Animations = {
 		},				
     },	
 
+    -- Carbine --
+    ["fire_artillery"] = {
+        Source = "fire_carbine",	
+    },
+    ["fire_empty_artillery"] = {
+        Source = "fire_carbine_emp",		
+    },		
+
+    ["reload_artillery"] = {
+        Source = "wet_carbine",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.83,
+        EventTable = {
+            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},						
+        },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+    },
+    ["reload_empty_artillery"] = {
+        Source = "dry_artillery",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.86,
+        EventTable = {
+            {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},				
+            {s =  "gekolt_css/galil_boltpull.wav" ,    t = 100 / 40},	
+			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
+		},				
+    },		
+
 
 
     ["reload_ex"] = {
@@ -487,7 +535,7 @@ SWEP.Animations = {
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
     },
     ["reload_empty_ex"] = {
