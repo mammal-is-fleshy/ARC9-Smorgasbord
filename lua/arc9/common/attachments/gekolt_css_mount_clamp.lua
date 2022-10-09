@@ -21,7 +21,7 @@ ATT.Attachments = {
         Category = "mountr_css",
         Pos = Vector(-1,-1.5, 0),
         Ang = Angle(0, 0, -90),
-        ExtraSightDistance = 15,
+        ExtraSightDistance = 10,
         Icon_Offset = Vector(1, 0, 0)			
     },
 	
@@ -30,7 +30,7 @@ ATT.Attachments = {
         Category = "mountl_css",
         Pos = Vector(-1,1.5, 0),
         Ang = Angle(0, 0, 90),
-        ExtraSightDistance = 15,
+        ExtraSightDistance = 10,
         Icon_Offset = Vector(-2, 0, 0)			
     },	
 	

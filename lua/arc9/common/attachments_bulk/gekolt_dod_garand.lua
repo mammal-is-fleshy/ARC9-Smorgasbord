@@ -8,7 +8,7 @@ ATT = {}
 ATT.PrintName = "Vanguard Frame"
 ATT.CompactName = "Vanguard"
 // ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
-ATT.Description = [[Extra short module experimental module with extra funky definitely non-folding stock]]
+ATT.Description = [[Extra short experimental module for paratrooper with extra funky definitely non-folding stock]]
 
 ATT.Pros = {}
 ATT.Cons = {}
