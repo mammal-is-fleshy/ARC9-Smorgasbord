@@ -17,7 +17,7 @@ SWEP.Trivia = {
 SWEP.Credits = {
     Author = "Geckololt",
     Contact = "SlogoKolt#6648",
-    Assets = "Day of Defeat"
+    Assets = "Counter-Strike Source"
 }
 
 SWEP.Description = [[Outdated sidearm with huge reserve amounts.

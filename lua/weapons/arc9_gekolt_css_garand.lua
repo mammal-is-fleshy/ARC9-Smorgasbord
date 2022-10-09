@@ -268,6 +268,11 @@ SWEP.AttachmentElements = {
 		AttPosMods = { [2] = { Pos = Vector(0,  -1.1, 5), }, [3] = { Pos = Vector(0, 0, 22.5), } }			
 	},
 
+    ["garand_vanguard"] = {
+        Bodygroups = {{1, 6}},		
+		AttPosMods = { [3] = { Pos = Vector(0, 0, 22.5), } }			
+	},	
+
     ["garand_sks"] = {
         Bodygroups = {{1, 4}},		
 		AttPosMods = { [3] = { Pos = Vector(0, 0, 22.5), } }			
@@ -585,7 +590,7 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 5 / 40},	
         },	
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.5, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }	},			
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.4, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }	},			
     }, 
 	["reload_insert_5"] = {
         Source = "load_strip_f",	
@@ -612,12 +617,12 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 10 / 40},	
         },			
-		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 1, }, { t = 0.4, lhik = 0, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
     },	
     ["reload_start_empty_sks"] = {
         Source = "dry_strip",
         RestoreAmmo = 0,			
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},				
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},				
     },		
 }
