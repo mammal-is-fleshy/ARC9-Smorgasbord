@@ -435,7 +435,7 @@ SWEP.Animations = {
 		MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 14 / 40},		
-            {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 20 / 40},
             {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 55 / 40},
             {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 65 / 40},			
         },	
@@ -561,7 +561,7 @@ SWEP.Animations = {
         EventTable = {
 		
         },	
-		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 1, }, { t = 0.85, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
     },	
     ["reload_start_empty"] = {
         Source = "dry_slam",
