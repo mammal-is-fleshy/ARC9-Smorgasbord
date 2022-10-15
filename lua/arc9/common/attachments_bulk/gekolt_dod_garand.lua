@@ -8,7 +8,7 @@ ATT = {}
 ATT.PrintName = "Vanguard Frame"
 ATT.CompactName = "Vanguard"
 // ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
-ATT.Description = [[Extra short experimental module for paratrooper with extra funky definitely non-folding stock]]
+ATT.Description = [[Extra short experimental module for paratrooper with extra funky definitely non-foldable stock]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -34,14 +34,14 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_vanguard")
 
 ATT = {}
 
-ATT.PrintName = "Marksman Frame"
-ATT.CompactName = "M14"
+ATT.PrintName = "Yankee Self-Loader Frame"
+ATT.CompactName = "YSL"
 ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
 ATT.Description = [["Prototype" of a Mag-Fed conversion, fitted with 20 rounders capable of full-auto]]
 
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = 1
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ShootSound = "gekolt_dod/m1carbine_shoot.wav"
@@ -81,8 +81,8 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_m14")
 
 ATT = {}
 
-ATT.PrintName = "Sportsman Frame"
-ATT.CompactName = "Mini-14"
+ATT.PrintName = "Sportsman Converter Frame"
+ATT.CompactName = "SCF"
 ATT.Icon = Material("entities/gekolt_dod_garand_mini.png", "mips smooth")
 ATT.Description = [[Modernised Mag-Fed system loaded in a lower calibre]]
 
@@ -147,7 +147,7 @@ ATT.Description = [[Unholy creation for all your trench sweeping needs. Both the
 
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = 3
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_slam"}
@@ -199,13 +199,13 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_slam")
 ATT = {}
 
 ATT.PrintName = "Survivalist Frame"
-ATT.CompactName = "SKS"
+ATT.CompactName = "SCAV"
 ATT.Icon = Material("entities/gekolt_dod_garand_romania.png", "mips smooth")
 ATT.Description = [[Coversion to a higher calibre with a fixed magazine, stripper load only]]
 
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 3
+ATT.SortOrder = 4
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_sks", "nogrip"}
@@ -262,7 +262,7 @@ ATT = {}
 
 ATT.PrintName = "Rail"
 ATT.CompactName = "O"
-ATT.Description = [[Tacticool.]]
+ATT.Description = [[Railing without attachments]]
 
 ATT.Icon = Material("")
 
@@ -277,7 +277,7 @@ ATT = {}
 
 ATT.PrintName = "Rail"
 ATT.CompactName = "O"
-ATT.Description = [[Tacticool.]]
+ATT.Description = [[Railing without attachments.]]
 
 ATT.Icon = Material("")
 

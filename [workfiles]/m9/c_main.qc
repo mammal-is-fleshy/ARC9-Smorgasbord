@@ -7,6 +7,7 @@ $bodygroup "frame"
 	studio "m9.smd"
 	studio "m9_welrod.smd"	
 	blank
+	studio "m9_burst.smd"		
 }
 
 $bodygroup "frame"

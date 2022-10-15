@@ -115,7 +115,8 @@ $bodygroup "grip"
 	blank
 	studio "m4a1_grip_short.smd"	
 	studio "m4a1_grip_wood.smd"	
-	studio "m4a1_grip_tw.smd"		
+	studio "m4a1_grip_tw.smd"	
+	studio "m4a1_grip_adar.smd"		
 }
 
 $bodygroup "fore"
@@ -175,6 +176,7 @@ $cdmaterials "models\weapons\V_models\smg_mp5\"
 $cdmaterials "models\weapons\v_models\snip_awp\"
 $cdmaterials "models\weapons\v_models\rif_aug\"
 $cdmaterials "arc9_css\"
+$cdmaterials "models\weapons\v_models\rif_garand2\"
 
 $attachment "1" "W_Muz" 0 0 0 rotate -90 0 -90
 $attachment "2" "W_Shell" 0 0 0 rotate 0 -135 0

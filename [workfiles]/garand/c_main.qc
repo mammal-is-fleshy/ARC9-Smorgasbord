@@ -216,7 +216,6 @@ $sequence "end_slam" {
 	"anims\end_slam.smd"	
 	fadein 0.2
 	fadeout 0.2
-	snap	
 	fps 40
 }
 

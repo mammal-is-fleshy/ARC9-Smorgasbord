@@ -1063,6 +1063,9 @@ SWEP.AttachmentElements = {
 	},		
     ["g_hunt"] = {
         Bodygroups = { {7, 1},{2, 5} },
+	},	
+    ["g_adar"] = {
+        Bodygroups = { {7, 8},{2, 5} },
 	},		
     ["g_saw"] = {
         Bodygroups = { {7, 2},{2, 7} },

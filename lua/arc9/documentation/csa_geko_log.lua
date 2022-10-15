@@ -3,6 +3,8 @@ Contre Srike Sorse et Nuit d'Honneur in 2022 Gmod Tacticle Reelesm :tm:
 [ Created by Geckololt (all wrongs reserved, dont care didnt ask) ]
 
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CturiX - Mauser Sound
+
 Counter Strike Source: (horrid)Models, Textures
 Day of Defeat Source: (horrid)Models, Textures
 
@@ -42,6 +44,7 @@ Garand (receiver:4)
 M4 (handguard:18 | receiver:14 | stock:13 | grip:5)
 AK (handguard:9 | receiver:7 | stock:12 | grip:4)
 M9 (receiver:6)
+M79 (receiver:6)
 Glock??? [NOPE NOPE NOPE]
 MP5/UMP/G3 -- cant believe mwii steal from me --
 Mac10?? -- or mp9 --
@@ -64,6 +67,7 @@ FAL??????????? [Only the canadian variants]
 [Uni]
 - Back up pistol/smg (ubgl)  -- mwii isnt real
 - Grenade Rifle muzzle mount
+- Bayonet
 - Equippable Suppressor
 - Flip up/hybird/magnifying sight
 - Bullpup Grenade Chasis mount
@@ -82,6 +86,8 @@ M9: Done
 Garand: Done
 Mauser: Model Done
 AK: Model Done
+M79: Model Done
+M30: Scrapped???????
 M3: Model Done [SCRAPPED??]
 MP5/G3: Model Fifth [SCRAPPED??]
 FAL: Model Quarter [SCRAPPED/ Rework?????]
@@ -91,6 +97,7 @@ Makarov: Model Half [SCRAPPED]
 note myself: 
 -use elements instead of attachment check
 -you cant use $attachment as a spare point For offhand stuff       use $bonemerge instead
+-use a different path for material FUCK YOU CSGO
 
 
 
@@ -125,7 +132,7 @@ Burst - Robocock
 Garand:
 M14 - Duh
 Mini 14 - Duh
-Survivalist - Part SKS, part mauser selbstlader, part romanian ak, part one of those stripper clip mini 14
+Scav - Part SKS, part mauser selbstlader, part romanian ak, part one of those stripper clip mini 14
 Slam - fortress 2
 
 AWP:
@@ -138,8 +145,9 @@ one of those trench variants
 brazil
 what Do you mean beta mag doesnt exist in ww2
 
-
-
+M79:
+Alofs is basically a magazine tube for single barrel self ejecting shotguns
+MTS but break action
 
 
 

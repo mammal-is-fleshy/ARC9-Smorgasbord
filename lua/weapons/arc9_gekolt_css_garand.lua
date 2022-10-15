@@ -557,7 +557,7 @@ SWEP.Animations = {
         Source = "end_slam",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.85,
+		MinProgress = 0.5,
         EventTable = {
 		
         },	
@@ -570,7 +570,7 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_dod/1887_shell1.wav" ,   t = 12 / 40},	
             {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 50 / 40},		
-            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 72 / 40},				
+            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 70 / 40},				
 		},
 		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},				
     },	
