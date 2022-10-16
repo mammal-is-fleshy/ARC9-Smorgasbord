@@ -5,7 +5,7 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "Vanguard Frame"
+ATT.PrintName = "Tranchant"
 ATT.CompactName = "Vanguard"
 // ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
 ATT.Description = [[Extra short experimental module for paratrooper with extra funky definitely non-foldable stock]]
@@ -34,7 +34,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_vanguard")
 
 ATT = {}
 
-ATT.PrintName = "Yankee Self-Loader Frame"
+ATT.PrintName = "Chasseur"
 ATT.CompactName = "YSL"
 ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
 ATT.Description = [["Prototype" of a Mag-Fed conversion, fitted with 20 rounders capable of full-auto]]
@@ -81,7 +81,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_m14")
 
 ATT = {}
 
-ATT.PrintName = "Sportsman Converter Frame"
+ATT.PrintName = "Sportif"
 ATT.CompactName = "SCF"
 ATT.Icon = Material("entities/gekolt_dod_garand_mini.png", "mips smooth")
 ATT.Description = [[Modernised Mag-Fed system loaded in a lower calibre]]
@@ -140,7 +140,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_min")
 
 ATT = {}
 
-ATT.PrintName = "Trencher Frame"
+ATT.PrintName = "Trancheur"
 ATT.CompactName = "SLAM"
 ATT.Icon = Material("entities/gekolt_dod_garand_slam.png", "mips smooth")
 ATT.Description = [[Unholy creation for all your trench sweeping needs. Both the enemies and your allies will be confused]]
@@ -198,7 +198,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_slam")
 
 ATT = {}
 
-ATT.PrintName = "Survivalist Frame"
+ATT.PrintName = "Charognard"
 ATT.CompactName = "SCAV"
 ATT.Icon = Material("entities/gekolt_dod_garand_romania.png", "mips smooth")
 ATT.Description = [[Coversion to a higher calibre with a fixed magazine, stripper load only]]

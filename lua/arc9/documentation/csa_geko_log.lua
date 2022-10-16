@@ -98,6 +98,7 @@ note myself:
 -use elements instead of attachment check
 -you cant use $attachment as a spare point For offhand stuff       use $bonemerge instead
 -use a different path for material FUCK YOU CSGO
+-maybe keep the calibre vague to keep the antfuckers away
 
 
 
@@ -132,18 +133,18 @@ Burst - Robocock
 Garand:
 M14 - Duh
 Mini 14 - Duh
-Scav - Part SKS, part mauser selbstlader, part romanian ak, part one of those stripper clip mini 14
+Scav - Part SKS, part mauser selbstlader[originally going to be lever action but lazy], part romanian ak, part one of those stripper clip mini 14
 Slam - fortress 2
 
 AWP:
 Lincoln - Cold War
-Howell - duh, ww1 semi auto lee enfield
+Howell - duh, ww1 [semi] auto lee enfield, Charlton is not real
 
 Mauser:
-Edgerunner 2077
-one of those trench variants
-brazil
-what Do you mean beta mag doesnt exist in ww2
+Edgerunners 2077
+one of those trench variants [default]
+brazil [burst cuz reasons]
+what Do you mean beta mag And carbine frame doesnt exist In ww2
 
 M79:
 Alofs is basically a magazine tube for single barrel self ejecting shotguns
