@@ -252,7 +252,6 @@ $sequence "end_strip" {
 	"anims\end_strip.smd"	
 	fadein 0.2
 	fadeout 0.2
-	snap	
 	fps 40
 }
 
