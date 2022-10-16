@@ -405,7 +405,7 @@ SWEP.Animations = {
 		MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 35 / 40},					
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},					
             {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 57 / 40},	
 			},
 		IKTimeLine = {
@@ -436,7 +436,7 @@ SWEP.Animations = {
 		MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 35 / 40},					
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},					
             {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 57 / 40},	
 			},
 		IKTimeLine = {
@@ -545,7 +545,7 @@ SWEP.Animations = {
 		MinProgress = 0.86,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 35 / 40},					
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 30 / 40},					
             {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 59 / 40},	
 			},
 		IKTimeLine = {

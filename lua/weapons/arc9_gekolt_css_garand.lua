@@ -297,8 +297,8 @@ end
 
 SWEP.Attachments = {
     {
-        PrintName = "Châssis",
-        DefaultName = "Châssis Standard",
+        PrintName = "Frame",
+        DefaultName = "SStandard Frame",
 
         Category = "dod_garand_frame", 
         Bone = "W_Main",
