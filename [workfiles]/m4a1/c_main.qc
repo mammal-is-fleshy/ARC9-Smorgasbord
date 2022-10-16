@@ -161,20 +161,7 @@ $bodygroup "akimbo"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\v_models\pist_glock18\"
-$cdmaterials "models\weapons\v_models\shot_m3super90\"
-$cdmaterials "models\weapons\v_models\rif_famas\"
-$cdmaterials "models\weapons\V_models\smg_mac10\"
-$cdmaterials "models\weapons\V_models\mach_m249para\"
-$cdmaterials "models\weapons\V_models\rif_m4a1\"
-$cdmaterials "models\weapons\V_models\rif_ak47\"
-$cdmaterials "models\weapons\v_models\rif_galil\"
-$cdmaterials "models\weapons\V_models\smg_ump45\"
-$cdmaterials "models\weapons\V_models\smg_p902\"
-$cdmaterials "models\weapons\V_models\snip_g3sg1\"
-$cdmaterials "models\weapons\V_models\smg_mp5\"
-$cdmaterials "models\weapons\v_models\snip_awp\"
-$cdmaterials "models\weapons\v_models\rif_aug\"
+$cdmaterials "models\gekolt_css_vmt\"
 $cdmaterials "arc9_css\"
 $cdmaterials "models\weapons\v_models\rif_garand2\"
 

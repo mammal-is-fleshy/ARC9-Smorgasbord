@@ -27,17 +27,7 @@ $bodygroup "stock"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\v_models\pist_glock18\"
-$cdmaterials "models\weapons\V_models\smg_mac10\"
-$cdmaterials "models\weapons\V_models\mach_m249para\"
-$cdmaterials "models\weapons\V_models\rif_m4a1\"
-$cdmaterials "models\weapons\v_models\rif_galil\"
-$cdmaterials "models\weapons\V_models\smg_ump45\"
-$cdmaterials "models\weapons\V_models\smg_p90\"
-$cdmaterials "models\weapons\V_models\snip_g3sg1\"
-$cdmaterials "models\weapons\V_models\smg_mp5\"
-$cdmaterials "models\weapons\v_models\snip_awp\"
-$cdmaterials "models\weapons\v_models\rif_aug\"
+$cdmaterials "models\gekolt_css_vmt\"
 
 $attachment "1" "W_Muz" 0 0 0 rotate -90 0 -90
 $attachment "2" "W_Shell" 0 0 0 rotate 0 -135 0
