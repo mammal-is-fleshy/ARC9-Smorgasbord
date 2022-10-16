@@ -247,12 +247,17 @@ SWEP.DefaultBodygroups = "00000000"
 SWEP.AttachmentElements = {
     ["f_edge"] = {
         Bodygroups = {{4, 2},{3, 1},{2, 3},{1, 1}},			
-		AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
+		AttPosMods = { [3] = { Pos = Vector(0, 0.1, 8.3), }, [2] = { Pos = Vector(1.3, -0.75, -0.5), } }
 	},	
+
+    ["f_brazil"] = {
+        Bodygroups = {{4, 1},{2, 1},{1, 1}},			
+		AttPosMods = { [3] = { Pos = Vector(0, 0.1, 8.3), } }
+	},		
 	
     ["f_carbine"] = {
         Bodygroups = {{5, 3},{4, 2},{3, 2},{2, 2},{1, 2}},			
-		AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
+		AttPosMods = { [3] = { Pos = Vector(0, 0.1, 11.5), } }
 	},		
 }
 
@@ -263,18 +268,19 @@ SWEP.Attachments = {
 
         Category = "dod_mauser_frame", 
         Bone = "W_Main",
-        Pos = Vector(0, 3, -0.5),
+        Pos = Vector(0, 2.5, -0.75),
         Ang = Angle(0, 0, 0),		
     },
     {
         PrintName = "Optic",
         DefaultName = "None",
 		InstalledElements = {"has_optic"},		
-		
+	
+        KeepBaseIrons = true,
 		ExcludeElements = {"pre_optic"},
         Category = {"optic_css_s"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -1.1, 2),
+        Pos = Vector(-1.3, -0.75, -0.5),
         Ang = Angle(90, 0, -90),		
     },	
     {
@@ -284,7 +290,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"pre_muzzed"},
         Category = {"muzzle_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 0, 6),
+        Pos = Vector(0, 0.1, 17.1),
         Ang = Angle(90, 0, -90),		
     },
 	
@@ -315,9 +321,11 @@ end
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
-	if wep:HasElement("has_optic") then model:SetBodygroup(4,1) end	
+	if wep:HasElement("has_optic") then model:SetBodygroup(5,1) end	
     if wep:HasElement("has_optic") and wep:HasElement("f_carbine") then model:SetBodygroup(4,3) end 
-    if wep:HasElement("has_optic") and wep:HasElement("f_artillery") then model:SetBodygroup(4,4) end 	
+    if wep:HasElement("has_optic") and wep:HasElement("f_carbine") then model:SetBodygroup(5,0) end 
+
+    if wep:HasElement("has_optic") and wep:HasElement("f_edge") then model:SetBodygroup(5,2) end 	
 end
 
 SWEP.Animations = {

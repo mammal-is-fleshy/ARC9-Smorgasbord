@@ -56,7 +56,7 @@ ATT.Description = [[ongewoon
 
 ATT.SortOrder = 1
 ATT.Category = "dod_mauser_frame"
-ATT.ActivateElements = {"f_carbine"}
+ATT.ActivateElements = {"f_carbine", "pre_optic", "akantbo"}
 
 ATT.Firemodes = { { Mode = -1, } }
 
@@ -74,13 +74,27 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-10, -2.1, 5)
+ATT.ModelOffset = Vector(-10, -2.1, 4.5)
 ATT.ModelAngleOffset = Angle(90, -90, 0)
 ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
 ATT.ModelBodygroups = "15000"
 
 ATT.ActivePosOverride = Vector(-0.5, 5, -1)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+		InstalledElements = {"has_optic"},	
+		
+        Category = {"optic_css"},
+        Pos = Vector(0, -3.85, 0),
+        Ang = Angle(90, 0, -90),		
+    },		
+}
+
 
 ATT.Sights = {
     {
@@ -99,3 +113,42 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ARC9.LoadAttachment(ATT, "gekolt_css_mauser_f2")
+
+
+------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Aufplatzen-Gestell]]
+ATT.CompactName = [[Burst]]
+//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Description = [[Straight from Brazil
+]]
+
+ATT.SortOrder = 1
+ATT.Category = "dod_mauser_frame"
+ATT.ActivateElements = {"f_brazil"}
+
+ATT.Firemodes = { { Mode = 3, } }
+
+ATT.ClipSizeOverride = 20
+
+ATT.RPMMult = 1200/800
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_brazil"
+end
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-8, -1.75, 4)
+ATT.ModelAngleOffset = Angle(90, -90, 0)
+ATT.Model = "models/weapons/geckololt_css/grip/garand_romania.mdl"
+
+ARC9.LoadAttachment(ATT, "gekolt_css_mauser_f3")
+
+
+------------------------------------------------------------
