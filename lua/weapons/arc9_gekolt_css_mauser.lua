@@ -41,13 +41,13 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 26 -- Damage done at point blank range
-SWEP.DamageMin = 16 -- Damage done at maximum range
+SWEP.DamageMax = 34 -- Damage done at point blank range
+SWEP.DamageMin = 19 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
-SWEP.RangeMin = 600 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 4000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 700 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
@@ -93,34 +93,35 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 0.5
+SWEP.Recoil = 1.25
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.45 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.25 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 70 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
+SWEP.RecoilKickDamping = 60
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.01
+SWEP.Spread = 0.003
 
-SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.0025 -- Applied per unit of recoil.
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 7 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 1.1 -- How much the gun sways.
+SWEP.FreeAimRadius = 7.5 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.Sway = 1.5 -- How much the gun sways.
 
 SWEP.SwayMultMidAir = 2
 SWEP.SwayMultMove = 1.15
@@ -194,7 +195,7 @@ SWEP.IronSights = {
 SWEP.Crosshair = true
 
 SWEP.SprintAng = Angle(10, -15, -10)
-SWEP.SprintPos = Vector(0, 2, 0)
+SWEP.SprintPos = Vector(0, 4, -2)
 
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 3, 0)
@@ -402,6 +403,44 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
+		},				
+    },	
+
+    ["fire_iron_roni"] = {
+        Source = "fire_iron_roni",	
+    },
+    ["reload_roni"] = {
+        Source = "wet_roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.9,
+        EventTable = {
+            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 55 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 62 / 40},
+            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 68 / 40},
+        },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.775, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 1, rhik = 1, },	
+		},			
+    },	
+    ["reload_empty_roni"] = {
+        Source = "dry_roni",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.9,
+        EventTable = {
+            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 55 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 62 / 40},
+            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 68 / 40},				
+            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 92 / 40},	 
+			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 102 / 40},	
+			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},				
     },		
 	

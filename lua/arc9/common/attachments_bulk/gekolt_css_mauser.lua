@@ -21,8 +21,8 @@ ATT.RecoilMult = 3
 ATT.RecoilSideMult = 8
 ATT.RecoilRandomSideMult = 0.75/0.3
 
-ATT.DamageMaxMult = 95/26
-ATT.DamageMinMult = 60/16 
+ATT.DamageMaxMult = 92/34
+ATT.DamageMinMult = 60/19 
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
@@ -63,21 +63,15 @@ ATT.Firemodes = { { Mode = -1, } }
 ATT.ClipSizeOverride = 80
 
 ATT.RPMMult = 700/800
-ATT.RecoilMult = 3
-ATT.RecoilSideMult = 8
-ATT.RecoilRandomSideMult = 0.75/0.3
-
-ATT.DamageMaxMult = 95/26
-ATT.DamageMinMult = 60/16 
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-10, -2.1, 4.5)
+ATT.ModelOffset = Vector(-7, -3.8, 5)
 ATT.ModelAngleOffset = Angle(90, -90, 0)
-ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
-ATT.ModelBodygroups = "15000"
+ATT.Model = "models/weapons/geckololt_css/c_mauser.mdl"
+ATT.ModelBodygroups = "123320"
 
 ATT.ActivePosOverride = Vector(-0.5, 5, -1)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
@@ -92,13 +86,22 @@ ATT.Attachments = {
         Category = {"optic_css"},
         Pos = Vector(0, -3.85, 0),
         Ang = Angle(90, 0, -90),		
+    },	
+	
+    {
+        PrintName = "Foregrip",
+        DefaultName = "None",
+
+        Category = {"grip_css"}, 
+        Pos = Vector(0, 0.3, -7),
+        Ang = Angle(90, 0, -90),		
     },		
 }
 
 
 ATT.Sights = {
     {
-        Pos = Vector(-2.15, 0, -0.475),
+        Pos = Vector(-3.85, 4, 0.1),
         Ang = Angle(0, 0, 0),
         Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
 
@@ -109,7 +112,7 @@ ATT.Sights = {
     }
 }
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_carbine"
+    return anim .. "_roni"
 end
 
 ARC9.LoadAttachment(ATT, "gekolt_css_mauser_f2")

@@ -99,6 +99,15 @@ $sequence "fire_iron" {
 	fps 40
 }
 
+$sequence "fire_iron_roni" {
+	"anims\fire_iron_roni.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
 $sequence "fire_iron_emp" {
 	"anims\fire_iron_emp.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
@@ -155,6 +164,24 @@ $sequence "wet_edge" {
 
 $sequence "dry_edge" {
 	"anims\dry_edge.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_roni" {
+	"anims\wet_roni.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_roni" {
+	"anims\dry_roni.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2
