@@ -76,6 +76,9 @@ ATT.ModelBodygroups = "123320"
 ATT.ActivePosOverride = Vector(-0.5, 5, -1)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
 
+ATT.CrouchPosOverride = Vector(-0.5, 4.5, -2.5)
+ATT.CrouchAngOverride = Angle(0, 0, -10)
+
 
 ATT.Attachments = {
     {
@@ -134,6 +137,8 @@ ATT.Category = "dod_mauser_frame"
 ATT.ActivateElements = {"f_brazil"}
 
 ATT.Firemodes = { { Mode = 3, } }
+ATT.RunawayBurst = true
+ATT.PostBurstDelay = 0.2
 
 ATT.ClipSizeOverride = 20
 
@@ -147,8 +152,8 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-8, -1.75, 4)
-ATT.ModelAngleOffset = Angle(90, -90, 0)
+ATT.ModelOffset = Vector(-8, -2.05, 4)
+ATT.ModelAngleOffset = Angle(90, -90, 12.5)
 ATT.Model = "models/weapons/geckololt_css/grip/garand_romania.mdl"
 
 ARC9.LoadAttachment(ATT, "gekolt_css_mauser_f3")

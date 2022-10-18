@@ -57,6 +57,8 @@ ATT.Category = "css_m9_frame"
 ATT.ActivateElements = {"f_burst"}
 
 ATT.Firemodes = { { Mode = 3, }	}
+ATT.RunawayBurst = true
+ATT.PostBurstDelay = 0.2
 
 ATT.ClipSizeOverride = 20
 
