@@ -256,7 +256,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f5")
 
 ATT = {}
 
-ATT.PrintName = [[Compact-Frame]]
+ATT.PrintName = [[Centurion-Frame]]
 ATT.CompactName = [[Compact]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
 ATT.Description = [[Shortened slide for certain types of officers

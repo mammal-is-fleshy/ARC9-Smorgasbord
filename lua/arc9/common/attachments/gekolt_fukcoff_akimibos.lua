@@ -9,6 +9,11 @@ ATT.SortOrder = 2
 
 ATT.Category = {"css_akimbo"} -- can be "string" or {"list", "of", "strings"}
 
+
+ATT.Hook_Think = function(wep)
+
+end
+
 ATT.HasSights = true
 ATT.Model = "models/weapons/arccw/mifl_atts/fas2/c_deagle.mdl"
 ATT.ModelOffset = Vector(0, 0, 0)

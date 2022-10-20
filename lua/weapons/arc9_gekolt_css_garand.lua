@@ -197,6 +197,14 @@ SWEP.Crosshair = true
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(2, 2, 0)
 
+SWEP.SprintMidPoint = {
+    Pos = Vector(-1, -5, -3),
+    Ang = Angle(5, 20, 15)
+}
+
+SWEP.MovingPos = Vector(0, 2.5, -0.25)
+SWEP.MovingAng = Angle(0, -1.5, 0)
+
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -435,7 +443,7 @@ SWEP.Animations = {
 		MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 14 / 40},		
-            {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 20 / 40},
+            {s =  "gekolt_dod/m1carbine_clipout.wav" ,   t = 16 / 40},
             {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 55 / 40},
             {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 65 / 40},			
         },	

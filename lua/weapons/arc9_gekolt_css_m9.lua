@@ -31,7 +31,7 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_m9.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(2, 8, -5),
+    Pos = Vector(-8, 4, -8),
     Ang = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -185,7 +185,7 @@ SWEP.IronSights = {
     Ang = Angle(0, 0, 5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
-        Ang = Angle(-10, 0, -25),
+        Ang = Angle(-10, 60, -25),
     },	
     Magnification = 1,
     AssociatedSlot = 0, -- Attachment slot to associate the sights with. Causes RT scopes to render.
@@ -196,6 +196,14 @@ SWEP.Crosshair = true
 
 SWEP.SprintAng = Angle(10, -15, -10)
 SWEP.SprintPos = Vector(0, 2, 0)
+
+SWEP.SprintMidPoint = {
+    Pos = Vector(0, -5, -3),
+    Ang = Angle(5, 20, 15)
+}
+
+SWEP.MovingPos = Vector(0, 1.75, 0.5)
+SWEP.MovingAng = Angle(0, -2, 0)
 
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 3, 0)
@@ -437,7 +445,7 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},					
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 57 / 40},	
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 55 / 40},	
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },

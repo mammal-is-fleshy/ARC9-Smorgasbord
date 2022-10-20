@@ -197,6 +197,14 @@ SWEP.Crosshair = true
 SWEP.SprintAng = Angle(10, -15, -10)
 SWEP.SprintPos = Vector(0, 4, -1.5)
 
+SWEP.SprintMidPoint = {
+    Pos = Vector(0, -5, -3),
+    Ang = Angle(5, 20, 15)
+}
+
+SWEP.MovingPos = Vector(0, 2.5, -0.25)
+SWEP.MovingAng = Angle(0, -2, 0)
+
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)

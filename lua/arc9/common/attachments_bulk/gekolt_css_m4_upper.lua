@@ -482,7 +482,7 @@ ATT.Attachments = {
 		ExcludeElements = {"fg_saw"},
         Category = {"optic_css_s", "optic_css_m" }, 
 		
-        Pos = Vector(0,-2.55, 0),
+        Pos = Vector(0, -2.5, -0.05),
         Ang = Angle(90, 0, -90),	
     },
 }
