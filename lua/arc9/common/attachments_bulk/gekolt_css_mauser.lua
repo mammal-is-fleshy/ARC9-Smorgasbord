@@ -33,8 +33,12 @@ ATT.LHIK_Priority = 0
 ATT.SprintAngOverride = Angle(-10, 60, -5)
 ATT.SprintPosOverride = Vector(0.5, 4, -9)
 
+ATT.CrouchPosOverride = Vector(-0.5, 4.5, -1)
+ATT.CrouchAngOverride = Angle(0, 0, -10)
+
 ATT.ActivePosOverride = Vector(0, 5, 0)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
+ATT.ReloadNoSprintPos = true
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(-25, -2, -7.5)
@@ -48,6 +52,53 @@ end
 
 ARC9.LoadAttachment(ATT, "gekolt_css_mauser_f1")
 
+
+
+ATT = {}
+
+ATT.PrintName = [[Kundschafter-Gestell]] -- it means scout methinks whatev
+ATT.CompactName = [[SD]]
+//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Description = [[In case you accidentally wander into the enemy's trench
+]]
+
+ATT.SortOrder = 1
+ATT.Category = "dod_mauser_frame"
+ATT.ActivateElements = {"f_sd", "pre_muzzed"}
+
+ATT.Firemodes = { { Mode = 1, } }
+
+ATT.MovingPosOverride = Vector(0, 4.5, -0.1)
+ATT.MovingAngOverride = Angle(0, -2, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.SprintAngOverride = Angle(-10, 60, -5)
+ATT.SprintPosOverride = Vector(0.5, 4, -7)
+
+ATT.CrouchPosOverride = Vector(-0.5, 4.5, -1)
+ATT.CrouchAngOverride = Angle(0, 0, -10)
+
+ATT.ActivePosOverride = Vector(0, 5, 0)
+ATT.ActiveAngOverride = Angle(0, 0, 0)
+ATT.ReloadNoSprintPos = true
+
+ATT.ShootSound = "gekolt_css/usp1.wav"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+
+ATT.ClipSizeOverride = 15
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-25, -2, -5)
+ATT.ModelAngleOffset = Angle(90, -90, 0)
+ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
+ATT.ModelBodygroups = "15000"
+
+ARC9.LoadAttachment(ATT, "gekolt_css_mauser_f11")
 
 ------------------------------------------------------------
 
@@ -149,7 +200,7 @@ ATT = {}
 ATT.PrintName = [[Aufplatzen-Gestell]]
 ATT.CompactName = [[Burst]]
 //ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
-ATT.Description = [[Aftermarket three-round burst system straight from Brazil
+ATT.Description = [[Aftermarket three-round burst system straight from the favelas of Brazil
 ]]
 
 ATT.SortOrder = 1

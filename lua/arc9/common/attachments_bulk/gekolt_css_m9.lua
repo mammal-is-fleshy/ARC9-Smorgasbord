@@ -275,6 +275,7 @@ ATT.DamageMinMult = 21/16
 
 ATT.SprintAngOverride = Angle(-5, 60, -5)
 ATT.SprintPosOverride = Vector(0.5, 1.5, -10)
+ATT.ReloadNoSprintPos = true
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0

@@ -11,8 +11,9 @@ $bodygroup "frame"
 $bodygroup "barrel"
 {
 	studio "c96_barrel_long.smd"
-	studio "c96_barrel.smd"
-	blank			
+	studio "c96_barrel.smd"	
+	blank	
+	studio "c96_barrel_sd.smd"	
 }
 
 $bodygroup "guard"

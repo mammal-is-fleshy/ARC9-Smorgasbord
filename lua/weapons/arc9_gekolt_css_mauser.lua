@@ -259,6 +259,11 @@ SWEP.AttachmentElements = {
 		AttPosMods = { [3] = { Pos = Vector(0, 0.1, 8.3), }, [2] = { Pos = Vector(1.3, -0.75, -0.5), } }
 	},	
 
+    ["f_sd"] = {
+        Bodygroups = {{4, 2},{2, 3},{1, 3}},			
+		AttPosMods = { [3] = { Pos = Vector(0, 0.1, 8.3), }, [2] = { Pos = Vector(1.3, -0.75, -0.5), } }
+	},		
+
     ["f_brazil"] = {
         Bodygroups = {{4, 1},{2, 1},{1, 1}},			
 		AttPosMods = { [3] = { Pos = Vector(0, 0.1, 8.3), } }
@@ -393,7 +398,7 @@ SWEP.Animations = {
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
     },	
     ["reload_empty"] = {
