@@ -135,7 +135,7 @@ $bodygroup "fsight"
 {
 	studio "m4a1_fs.smd"
 	studio "m4a1_fs_10.smd"
-	studio "m4a1_fs_a1.smd"
+	studio "m4a1_fs_608.smd"	
 	studio "m4a1_fs_bn36.smd"	
 	studio "m4a1_fs_t86.smd"	
 	studio "m4a1_fs_lmg.smd"	
@@ -146,8 +146,7 @@ $bodygroup "fsight"
 	studio "m4a1_fs_ris.smd"	
 	studio "m4a1_fs_dragoon.smd"	
 	studio "m4a1_fs_sten.smd"	
-	studio "m4a1_fs_doe.smd"	
-	studio "m4a1_fs_608.smd"		
+	studio "m4a1_fs_doe.smd"		
 }
 
 $illumposition 0 0 0

@@ -619,14 +619,14 @@ SWEP.Animations = {
     ["reload_empty_pdw"] = {
         Source = "dry_57",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.025, lhik = 0, rhik = 1, },
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
 		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},		
         EventTable = {		
             {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40}, 
 			{s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
             {s =  "gekolt_css/sg550_clipin.wav" ,    t = 60 / 40},	
-            {s =  "gekolt_css/p90_boltpull.wav" ,    t = 88 / 40},					
+            {s =  "gekolt_css/sg552_boltpull.wav" ,    t = 88 / 40},					
         },
 		FireASAP = true,
 		MinProgress = 0.9,				
@@ -634,7 +634,7 @@ SWEP.Animations = {
     ["reload_pdw"] = {
         Source = "wet_57",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.025, lhik = 0, rhik = 1, },
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
 		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 0.95, rhik = 1, },	
 		},	
         EventTable = {		
@@ -951,7 +951,7 @@ SWEP.AttachmentElements = {
 		AttPosMods = { [5] = { Pos = Vector(0, 1.85, 11.9),}, [8] = { Pos = Vector(0, -0.25, 30), }, [9] = { Pos = Vector(0, -0.25, 23.5), }, }
 	},		
     ["guard_a1"] = {
-        Bodygroups = { {6, 2}, {10, 2} },
+        Bodygroups = { {6, 2}, {10, 1} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }
 	},	
     ["guard_drg"] = {
@@ -963,7 +963,7 @@ SWEP.AttachmentElements = {
 		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [8] = { Pos = Vector(0, -0.25, 15), } }		
 	},	
     ["guard_608"] = {
-        Bodygroups = { {6, 16}, {10, 14} },
+        Bodygroups = { {6, 16}, {10, 2} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.75),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
 	},		
     ["guard_acr"] = {
@@ -971,7 +971,7 @@ SWEP.AttachmentElements = {
 		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }		
 	},		
     ["guard_a2"] = {
-        Bodygroups = { {6, 3}, {10, 2} },
+        Bodygroups = { {6, 3}, {10, 1} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }				
 	},	
     ["guard_bn63"] = {

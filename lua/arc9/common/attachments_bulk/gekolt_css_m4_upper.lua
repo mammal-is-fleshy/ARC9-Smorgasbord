@@ -338,6 +338,14 @@ ATT.Firemodes = {
     },	
 }
 
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-7, -3.25, 3)
+ATT.ModelAngleOffset = Angle(90, -10, -90)
+ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_nor.mdl"
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_gih"
 end
@@ -345,8 +353,8 @@ end
 
 ATT.Sights = {
     {
-        Pos = Vector(3.4, 0, 5),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(-3.8375, -1.5, -0.35),
+        Ang = Angle(0, 0, 10),
         Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
 
 
@@ -377,7 +385,7 @@ ATT.PrintName = "Defiant Receiver"
 ATT.CompactName = "Defiant"
 ATT.Icon = Material("entities/gekolt_css_m4_u_pdw.png", "mips smooth")
 ATT.Description = [[PDW is such a concept
-Turns your M4 into a non-PDW length PDW firing from P90 magazines.]]
+Turns your M4 into a non-PDW length PDW firing an intermediate calibre]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -394,10 +402,9 @@ ATT.RPMMult = 900 / 700
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -5.495),
-        Ang = Angle(0, 0, 0),
-        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
-
+        Pos = Vector(-3, -0.25, 0.25),
+        Ang = Angle(0, 0, 5),
+        Reticle = nil,
 
         Magnification = 1.05,
         IsIronSight = true,
@@ -413,9 +420,9 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-1, 0, -2.25)
-ATT.ModelAngleOffset = Angle(90, 0, -90)
-ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_cali.mdl"
+ATT.ModelOffset = Vector(-7, -2.7, 3.5)
+ATT.ModelAngleOffset = Angle(90, -5, -90)
+ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_nor.mdl"
 
 ATT.RecoilMult = 0.75
 ATT.DamageMaxMult = 0.9
@@ -437,6 +444,40 @@ ATT.Attachments = {
         Pos = Vector(0,-2.55, -0.5),
         Ang = Angle(90, 0, -90),	
     },
+	
+    {
+        PrintName = "MOUNT LEFT",
+        Category = "mountr_css",
+        Pos = Vector(-1.25,-0.25, -16.75),
+        Ang = Angle(90, 180, 0),
+        ExtraSightDistance = 7		
+    },
+	
+    {
+        PrintName = "MOUNT Right",
+        Category = "mountl_css",
+        Pos = Vector(1.25,-0.25, -16.75),
+        Ang = Angle(90, 0, 0),
+        ExtraSightDistance = 7		
+    },	
+
+    {
+        PrintName = "MOUNT Bottom",
+        Category = {"tac_css"},
+        Pos = Vector(0,1, -17),
+        Ang = Angle(90, 0, 90),
+		ExcludeElements = {"bottom_long"},		
+    },
+	
+    {
+        PrintName = "Foregrip",
+        DefaultName = "None",
+        DefaultIcon = Material("arc9/def_att_icons/grip.png"),	
+		
+        Category = "grip_css",
+        Pos = Vector(0, 0.45, -10),
+        Ang = Angle(90, 0, -90),
+    },			
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_u_pdw")

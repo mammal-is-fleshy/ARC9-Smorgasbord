@@ -7,7 +7,7 @@ ATT.SortOrder = 0.01
 
 ATT.Model = "models/weapons/geckololt_css/atts/rail_iron.mdl"
 
-ATT.Category = {"optic_css","optic_css_m"}
+ATT.Category = {"optic_css","optic_css_scope"}
 
 // Allows a custom sight position to be defined
 ATT.Sights = {
