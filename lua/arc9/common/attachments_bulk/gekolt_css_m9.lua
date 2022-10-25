@@ -273,11 +273,14 @@ ATT.RPMMult = 600/800
 ATT.DamageMaxMult = 32/26
 ATT.DamageMinMult = 21/16 
 
+ATT.SprintAngOverride = Angle(-5, 60, -5)
+ATT.SprintPosOverride = Vector(0.5, 1.5, -10)
+
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-25, -2, -7.5)
+ATT.ModelOffset = Vector(-50, -2, -7.5)
 ATT.ModelAngleOffset = Angle(90, -90, 0)
 ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
 ATT.ModelBodygroups = "15000"

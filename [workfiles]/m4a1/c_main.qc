@@ -103,7 +103,6 @@ $bodygroup "handguard"
 	studio "m4a1_hg_608.smd"
 	studio "m4a1_hg_bn36.smd"
 	studio "m4a1_hg_t86.smd"
-	studio "m4a1_hg_t65.smd"
 }
 
 $bodygroup "grip"
@@ -123,6 +122,7 @@ $bodygroup "fore"
 {
 	blank
 	studio "m4a1_foregrip_saw.smd"
+	studio "m4a1_bolt_r.smd"		
 }
 
 $bodygroup "m4"
@@ -136,8 +136,8 @@ $bodygroup "fsight"
 	studio "m4a1_fs.smd"
 	studio "m4a1_fs_10.smd"
 	studio "m4a1_fs_a1.smd"
-	studio "m4a1_fs_a2.smd"
-	studio "m4a1_fs_adar.smd"
+	studio "m4a1_fs_bn36.smd"	
+	studio "m4a1_fs_t86.smd"	
 	studio "m4a1_fs_lmg.smd"	
 	studio "m4a1_fs_patriot.smd"
 	blank
@@ -148,15 +148,6 @@ $bodygroup "fsight"
 	studio "m4a1_fs_sten.smd"	
 	studio "m4a1_fs_doe.smd"	
 	studio "m4a1_fs_608.smd"		
-	studio "m4a1_fs_bn36.smd"
-	studio "m4a1_fs_t86.smd"
-	studio "m4a1_fs_t65.smd"		
-}
-
-$bodygroup "akimbo"
-{
-	blank
-	studio "m4a1_bolt_r.smd"	
 }
 
 $illumposition 0 0 0
@@ -312,7 +303,7 @@ $sequence "dry_4" {
 }
 
 $sequence "dry_57" {
-	"anims\dry_57.smd"
+	"anims\dry_57_2.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2
@@ -321,7 +312,7 @@ $sequence "dry_57" {
 }
 
 $sequence "wet_57" {
-	"anims\wet_57.smd"
+	"anims\wet_57_2.smd"
 	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2

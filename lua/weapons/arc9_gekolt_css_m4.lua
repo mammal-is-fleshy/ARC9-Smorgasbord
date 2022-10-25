@@ -623,10 +623,10 @@ SWEP.Animations = {
 		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},		
         EventTable = {		
-            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 60 / 40},	
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 88 / 40},	
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 92 / 40},				
+            {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40}, 
+			{s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
+            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 60 / 40},	
+            {s =  "gekolt_css/p90_boltpull.wav" ,    t = 88 / 40},					
         },
 		FireASAP = true,
 		MinProgress = 0.9,				
@@ -638,8 +638,9 @@ SWEP.Animations = {
 		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 0.95, rhik = 1, },	
 		},	
         EventTable = {		
-            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 60 / 40},				
+            {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40}, 
+			{s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
+            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 60 / 40},				
         },
 		FireASAP = true,
 		MinProgress = 0.95,				
@@ -970,11 +971,11 @@ SWEP.AttachmentElements = {
 		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }		
 	},		
     ["guard_a2"] = {
-        Bodygroups = { {6, 3}, {10, 3} },
+        Bodygroups = { {6, 3}, {10, 2} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }				
 	},	
     ["guard_bn63"] = {
-        Bodygroups = { {6, 17}, {10, 15} },
+        Bodygroups = { {6, 17}, {10, 3} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.5, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }	
 	},		
     ["guard_10"] = {
@@ -985,7 +986,7 @@ SWEP.AttachmentElements = {
         Bodygroups = { {6, 12} },		
 	},	
     ["guard_adar"] = {
-        Bodygroups = { {6, 4}, {10, 4} },
+        Bodygroups = { {6, 4}, {10, 1} },
 		AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), }, [9] = { Pos = Vector(0, -0.25, 24.1), }, }	
 	},	
     ["guard_no"] = {
@@ -1009,14 +1010,9 @@ SWEP.AttachmentElements = {
         AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), }, [9] = { Pos = Vector(0, -0.25, 18.25), }, }			
 	},	
     ["guard_t86"] = {
-        Bodygroups = { {6, 18}, {10, 16} },
+        Bodygroups = { {6, 18}, {10, 4} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.25, 13.15), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 19.5), }, }			
 	},	
-    ["guard_t65"] = {
-        Bodygroups = { {6, 19}, {10, 17} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.15, 13.6), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 22.75), }, }			
-	},		
-	
     ["s_a1"] = {
         Bodygroups = { {2, 1} },
 	},	
@@ -1083,7 +1079,7 @@ SWEP.AttachmentElements = {
         Bodygroups = { {8, 1} },
 	},
     ["akimbo"] = {
-        Bodygroups = { {11, 1} },
+        Bodygroups = { {8, 2} },
 	},
 }
 

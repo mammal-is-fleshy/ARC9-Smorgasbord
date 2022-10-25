@@ -5,7 +5,7 @@ ATT = {}
 ATT.PrintName = [[Kantschapper-Gestell]]
 ATT.CompactName = [[Malorian]]
 //ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
-ATT.Description = [[ongewoon
+ATT.Description = [[Samurai's choice of preference
 ]]
 
 ATT.SortOrder = 1
@@ -24,8 +24,14 @@ ATT.RecoilRandomSideMult = 0.75/0.3
 ATT.DamageMaxMult = 92/34
 ATT.DamageMinMult = 60/19 
 
+ATT.MovingPosOverride = Vector(0, 4.5, -0.1)
+ATT.MovingAngOverride = Angle(0, -2, 0)
+
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
+
+ATT.SprintAngOverride = Angle(-10, 60, -5)
+ATT.SprintPosOverride = Vector(0.5, 4, -9)
 
 ATT.ActivePosOverride = Vector(0, 5, 0)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
@@ -51,7 +57,8 @@ ATT = {}
 ATT.PrintName = [[Karabiner-Gestell]]
 ATT.CompactName = [[Carbine]]
 //ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
-ATT.Description = [[ongewoon
+ATT.Description = [[An attempt to modernise a rusty old pistol with a more stable but lower rate of fire and a long top rail system for full length optics
+Drum magazine for obvious reasons
 ]]
 
 ATT.SortOrder = 1
@@ -73,12 +80,17 @@ ATT.ModelAngleOffset = Angle(90, -90, 0)
 ATT.Model = "models/weapons/geckololt_css/c_mauser.mdl"
 ATT.ModelBodygroups = "123320"
 
+ATT.MovingPosOverride = Vector(-0.5, 4.5, -0.9)
+ATT.MovingAngOverride = Angle(0, -2, 0)
+
 ATT.ActivePosOverride = Vector(-0.5, 5, -1)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
 
 ATT.CrouchPosOverride = Vector(-0.5, 4.5, -2.5)
 ATT.CrouchAngOverride = Angle(0, 0, -10)
 
+ATT.SprintAngOverride = Angle(40, -15, -10)
+ATT.SprintPosOverride = Vector(1.25, 4, -1.5)
 
 ATT.Attachments = {
     {
@@ -90,6 +102,14 @@ ATT.Attachments = {
         Pos = Vector(0, -3.85, 0),
         Ang = Angle(90, 0, -90),		
     },	
+	
+    {
+        PrintName = "MOUNT Right",
+        Category = "mountl_css",
+        Pos = Vector(1.5, -2.15, -7),
+        Ang = Angle(90, 0, 0),
+        ExtraSightDistance = 5			
+    },		
 	
     {
         PrintName = "Foregrip",
@@ -129,7 +149,7 @@ ATT = {}
 ATT.PrintName = [[Aufplatzen-Gestell]]
 ATT.CompactName = [[Burst]]
 //ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
-ATT.Description = [[Straight from Brazil
+ATT.Description = [[Aftermarket three-round burst system straight from Brazil
 ]]
 
 ATT.SortOrder = 1

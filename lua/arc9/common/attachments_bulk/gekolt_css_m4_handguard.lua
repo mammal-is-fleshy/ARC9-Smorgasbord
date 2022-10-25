@@ -19,24 +19,6 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_t86")
 
 ATT = {}
 
-ATT.PrintName = "?????? Handguard"
-ATT.CompactName = "whatshouldicallthishelp"
-ATT.Description = [[The T definitely stands for taiwan.]]
-
-ATT.Icon = Material("entities/gekolt_css_m4_h_dragoon.png", "mips smooth")
-
-ATT.SortOrder = 2.85
-ATT.Category = "css_m4_handguard"
-ATT.ActivateElements = {"guard_t65"}
-
-ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_t65")
-
-
-----------------------------------------------------------------------------------
-
-
-ATT = {}
-
 ATT.PrintName = "No Handguard"
 ATT.CompactName = "No"
 ATT.Description = [[Handguards are a conspiracy to sell more useless gun crap you don't need. You can make do without one.]]
@@ -590,3 +572,4 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_doe")
 
 
 ----------------------------------------------------------------------------------
+

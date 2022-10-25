@@ -84,29 +84,71 @@ AWP: Done
 M4: Done
 M9: Done
 Garand: Done
-Mauser: Model Done
-AK: Model Done
+Mauser: Done?
+AK: Model Done / Scrapped???????
 M79: Model Done
+Sten: Model Half?
 M30: Scrapped???????
 M3: Model Done [SCRAPPED??]
 MP5/G3: Model Fifth [SCRAPPED??]
 FAL: Model Quarter [SCRAPPED/ Rework?????]
 Makarov: Model Half [SCRAPPED]
 
-
 note myself: 
 -use elements instead of attachment check
 -you cant use $attachment as a spare point For offhand stuff       use $bonemerge instead
--use a different path for material FUCK YOU CSGO
--maybe keep the calibre vague to keep the antfuckers away
+-use a different path for material FUCK YOU CSGO  -- nope doesn't work
+-maybe Write the calibre vague to keep the larping hardcore tactile realischism wankers away
 
 
 
 
+EXAMINATION
+Modular vs Total Conversion
+Pros and Cons
 
-The receiver is the meat of this mod
-Ideally each modification should change the animations And how the weapons handle (stats and all)
-All the stuff like handguard And stock And what have you are just window dressing And should Not be the focus (how the fuck Do i handle pistols????)
+Modular:
+100000 bodygroups And pontentially conflicting combinations
+compiling issues 
+Bodgy bodygroup logic
+easier to Break (just look at fas2)
+extremely tedious to Do
+gives the player the feeling of "control" even If most combinations are just window dressings
+	ie: If youre using a wooden handguard, youd probably pick a wooden stock and grip as well, might as well make that one option
+		If youre using a high calibre mag, youd probably pick a longer handguard/barrel and similar with a low calibre
+mixing is always fun (for the players, not me lol its so bloody boring)
+
+
+Total Conv:
+very few bodygroups
+fast to prototype And to set up
+easier to fix
+guarantee to change almost every aspect of the weapons, making every attachment feels sort of different (this is a major strength)
+"preset" feeling
+
+
+the awp was the first gun i made And i opted For a Total Conversion method (barring the stocks), at the Time i thought i had to Do it because
+the awp has horrid geometry And separating the grip from the frame is too bloody hard might as well change the entire gun up
+as a result the awp was super fun to Do, only took me ~a week to properly set it up
+
+the second gun was the m4 And it took me A WHOLE BLEEDING MONTH, arguably the animating was bloody horrible cuz art block And all but I did NOT Find
+ANY JOY when doing the m4
+
+the third gun was the garand (claymore, hammer and sickle dont count) and I opted for a FULL Total Conv method and it was brilliant, never had more fun prototyping
+from that moment it was clear, doing modular is the worse way of handling this
+
+the fourth gun was the m9 and I tried a hybird system but not like how I handle the awp, particularly with the auto and burst frame
+ehhh not worth it, just window dressings but it feels necessary
+
+the fifth was the mauser and of course it was quick, dirty and fun, but this is the only gun that i feel like i shouldve done a Modular on
+
+the sixth will be a sten or m79, both will be made using a total conv method, though probably a hybrid for the m79 cuz funi 12g shotgun momento
+
+the main reason the ak fell off so hard was because		ehhh lazy	but again like the m4 its too modular
+the m4 itself has some total conversion like the cs5, mass26 and so on but that was mostly because of bodygroup issue
+it was clear that my lazy arse no matter how much Time you grant me will refuse to finish the ak, too bloody much for an arse like mine to handle (dont take this out of context)
+
+from here Then on only the optics, foregrips and muzzles will be Modular
 
 
 -- where the inspirations from --
