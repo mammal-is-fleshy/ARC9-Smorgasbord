@@ -19,4 +19,4 @@ ATT.Sights = {
 }
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, -0.35)
+ATT.ModelOffset = Vector(0, 0, 0)

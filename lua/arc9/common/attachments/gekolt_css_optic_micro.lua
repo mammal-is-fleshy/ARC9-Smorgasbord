@@ -42,20 +42,20 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css", "mount_css", "optic_css_holo"},
-        Pos = Vector(-1,0, -2.7),
+        Pos = Vector(-1,0, -2.6),
         Ang = Angle(0, 0, 0),
     },		
     {
         PrintName = "MOUNT LEFT",
         Category = {"mountr_css", "tac_css"},
-        Pos = Vector(-1, -1.25, -1.5),
+        Pos = Vector(-1, -1.05, -1.5),
         Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(1, 0, 0),		
     },
     {
         PrintName = "MOUNT Right",
         Category = {"mountl_css", "tac_css"},
-        Pos = Vector(-1,1.25, -1.5),
+        Pos = Vector(-1,1.05, -1.5),
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(-2, 0, 0),
     },	

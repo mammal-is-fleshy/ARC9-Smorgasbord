@@ -18,8 +18,8 @@ ATT.Scale = 1
 ATT.Attachments = {
     {
         PrintName = "MOUNT Upper Left",
-        Category = {"optic_css_s", "tac_css"},
-        Pos = Vector(-1, -1, -1),
+        Category = {"optic_css_s", "tac_css", "mountr_css"},
+        Pos = Vector(-1.25, -0.9, -0.9),
         Ang = Angle(0, 0, -45),
         ExtraSightDistance = 10,
         Icon_Offset = Vector(1, 0, 0),
@@ -28,8 +28,8 @@ ATT.Attachments = {
 	
     {
         PrintName = "MOUNT Upper Right",
-        Category = {"optic_css_s", "tac_css"},
-        Pos = Vector(-1, 1, -1),
+        Category = {"optic_css_s", "tac_css", "mountl_css"},
+        Pos = Vector(-1.25, 0.9, -0.9),
         Ang = Angle(0, 0, 45),
         ExtraSightDistance = 10,
         Icon_Offset = Vector(-2, 0, 0),
@@ -39,7 +39,7 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT Lower Left",
         Category = {"tac_css"},
-        Pos = Vector(-1, -1, 1),
+        Pos = Vector(-1.25, -0.9, 0.9),
         Ang = Angle(0, 0, -135),
         Icon_Offset = Vector(1, 0, 0)			
     },	
@@ -47,7 +47,7 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT Lower Right",
         Category = {"tac_css"},
-        Pos = Vector(-1, 1, 1),
+        Pos = Vector(-1.25, 0.9, 0.9),
         Ang = Angle(0, 0, 135),
         Icon_Offset = Vector(-2, 0, 0)			
     },		

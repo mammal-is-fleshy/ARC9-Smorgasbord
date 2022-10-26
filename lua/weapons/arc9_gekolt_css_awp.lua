@@ -184,7 +184,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-4, 0, -0.25),
+    Pos = Vector(-3.935, 0, -0.025),
     Ang = Angle(0, 0, -5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
@@ -195,8 +195,8 @@ SWEP.IronSights = {
     CrosshairInSights = false,
 }
 
-SWEP.SprintAng = Angle(40, -15, -15)
-SWEP.SprintPos = Vector(2, 2, 0.25)
+SWEP.SprintAng = Angle(45, -15, -5)
+SWEP.SprintPos = Vector(5, 1.25, 0.25)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(-1, -5, -5),
@@ -247,8 +247,6 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.ShootSound = "gekolt_css/awp1.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
-
-SWEP.EjectDelay = 0.1
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -455,6 +453,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
 		MinProgress = 0.9,
+		EjectAt = 120/40,		
         EventTable = {
             {s =  "gekolt_css/awp_clipout.wav" ,   t = 20 / 40},
             {s =  "gekolt_css/awp_clipin.wav" ,    t = 60 / 40},		

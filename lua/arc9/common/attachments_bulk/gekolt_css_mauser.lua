@@ -157,7 +157,7 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT Right",
         Category = "mountl_css",
-        Pos = Vector(1.5, -2.15, -7),
+        Pos = Vector(1.25, -2.15, -7.25),
         Ang = Angle(90, 0, 0),
         ExtraSightDistance = 5			
     },		

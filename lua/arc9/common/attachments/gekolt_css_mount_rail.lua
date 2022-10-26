@@ -13,7 +13,7 @@ ATT.InvAtt = "mount_45l"
 
 // Allows a custom sight position to be defined
 
-ATT.ModelOffset = Vector(0, 0, -0.35)
+ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.Scale = 1
 
