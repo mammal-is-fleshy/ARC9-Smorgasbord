@@ -1,0 +1,10 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_models\launch_m79_fas2\m79_grenade_diffuse"
+
+	"$phong" 			"1"
+	"$phongexponent" 		"50"
+	"$phongboost" 			"1"
+	"$phongfresnelranges"		"[0.5 1.5 3.0]"//"[0.1 0.4 .8]"
+	"$halflambert"			"1"	
+}

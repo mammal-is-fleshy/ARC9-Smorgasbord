@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "models\weapons\v_models\launch_m79_fas2\m79_diffuse"
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+	"$basemapalphaphongmask" 	"1"
+	"$phong" 			"1"
+	"$phongexponent" 		"50"
+	"$phongboost" 			"0.5"
+	"$halflambert"			"1"
+}

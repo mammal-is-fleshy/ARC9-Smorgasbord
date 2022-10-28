@@ -241,6 +241,7 @@ SWEP.ShellModel = "models/shells/shell_338mag.mdl"
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
+SWEP.NoShellEject = true
 
 -------------------------- SOUNDS
 
@@ -371,7 +372,7 @@ SWEP.Animations = {
 	
     ["fire"] = {
         Source = "fire_full",
-		EjectAt = 30/40,
+		EjectAt = 32/40,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
@@ -382,7 +383,7 @@ SWEP.Animations = {
     },	
     ["fire_iron"] = {
         Source = "fire_full",
-		EjectAt = 30/40,		
+		EjectAt = 32/40,		
 		MinProgress = 0.05,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
@@ -404,30 +405,36 @@ SWEP.Animations = {
     ["fire_smg"] = {
         Source = "fire_smg",
 		MinProgress = 0.05,
+        EjectAt = 1/40,			
     },	
     ["fire_empty_smg"] = {
         Source = "fire_smg",
 		MinProgress = 0.05,
+        EjectAt = 1/40,			
     },	
     ["fire_iron_smg"] = {
         Source = "fire_iron_smg",
 		MinProgress = 0.05,
+        EjectAt = 1/40,			
     },		
 	
     ["fire_br"] = {
         Source = "fire_br",
 		MinProgress = 0.05,
 		Mult =1,
+        EjectAt = 1/40,			
     },	
     ["fire_iron_br"] = {
         Source = "fire_br",
 		MinProgress = 0.05,
 		Mult =1,
+        EjectAt = 1/40,			
     },		
     ["fire_empty_br"] = {
         Source = "fire_br",
 		MinProgress = 0.05,
 		Mult =1,
+        EjectAt = 1/40,			
     },		
 	
 	
