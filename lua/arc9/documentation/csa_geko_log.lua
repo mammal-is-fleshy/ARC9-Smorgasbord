@@ -7,12 +7,18 @@ CturiX - Mauser Sound
 
 Counter Strike Source: (horrid)Models, Textures
 Day of Defeat Source: (horrid)Models, Textures
+FAS1: Claymore
+FAS2: M79
+
 
 Google Images - ref
 Arctic - Incredibly doggy original restoration models (css)
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
 Counter Strike Online 2 - Some M4 Parts (  The Taiwanese looking stuff  )
 Fesiug??? - Nade ent
+
+https://gamebanana.com/mods/173290 - Garand?
+https://gamebanana.com/mods/173805 - Mauser
 
 Tactical Intervention - Stuff (Holo/Acog2/Aimpoint/Silencer2)
 Rainbow Six Vegas 2 - Mass26
@@ -86,7 +92,7 @@ M9: Done
 Garand: Done
 Mauser: Done?
 AK: Model Done / Scrapped???????
-M79: Model Done
+M79: Half
 Sten: Model Half?
 M30: Scrapped???????
 M3: Model Done [SCRAPPED??]
@@ -108,7 +114,7 @@ Modular vs Total Conversion
 Pros and Cons
 
 Modular:
-100000 bodygroups And pontentially conflicting combinations
+100000 bodygroups And potentially conflicting combinations
 compiling issues 
 Bodgy bodygroup logic
 easier to Break (just look at fas2)
@@ -175,7 +181,7 @@ Burst - Robocock
 Garand:
 M14 - Duh
 Mini 14 - Duh
-Scav - Part SKS, part mauser selbstlader[originally going to be lever action but lazy], part romanian ak, part one of those stripper clip mini 14
+Scav - Part SKS, part mauser selbstlader/fedorov[originally going to be lever action but lazy], part romanian ak, part one of those stripper clip mini 14
 Slam - fortress 2
 
 AWP:
@@ -191,6 +197,11 @@ what Do you mean beta mag And carbine frame doesnt exist In ww2
 M79:
 Alofs is basically a magazine tube for single barrel self ejecting shotguns
 MTS but break action
+
+Sten:
+MK 1,3,4,5
+MK2 but those "pistol" grip
+sterling mk4
 
 
 

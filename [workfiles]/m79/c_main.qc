@@ -42,7 +42,8 @@ $bodygroup "ammo"
 $bodygroup "Alofs"
 {
 	blank
-	studio "m79_alofs_40mm.smd"
+	studio "m79_alofs_40mm.smd"	
+	studio "m79_alofs_4g.smd"
 }
 $bodygroup "Iron1"
 {
@@ -82,6 +83,15 @@ $sequence "fire" {
 	fps 40
 }
 
+$sequence "fire_rev" {
+	"anims\fire_rev.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
 $sequence "dry" {
 	"anims\dry.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
@@ -103,7 +113,7 @@ $sequence "alofs_load" {
 	"anims\alofs_load.smd"	
 	fadein 0.2
 	fadeout 0.2
-	snap	
+	loop
 	fps 40
 }
 $sequence "alofs_start" {
@@ -123,6 +133,22 @@ $sequence "alofs_end" {
 
 $sequence "dry_pirate" {
 	"anims\dry_pirate.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "dry_mts" {
+	"anims\dry_mts.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "dry_rev" {
+	"anims\dry_rev.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

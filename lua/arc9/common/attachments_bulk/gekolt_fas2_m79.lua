@@ -14,7 +14,7 @@ ATT.ActivateElements = {"a_12g"}
 
 ATT.Ammo = "buckshot"
 
-ATT.PhysBulletMuzzleVelocityOverride = 8000
+ATT.PhysBulletMuzzleVelocityOverride = 2900 * 12
 ATT.PhysBulletGravityOverride = 1
 ATT.PhysBulletDragOverride = 1
 
@@ -23,7 +23,7 @@ ATT.SpreadAdd = 0.02
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumOverride = 40
+ATT.NumOverride = 32
 
 ATT.DamageMaxOverride = 20
 ATT.DamageMinOverride = 5
@@ -45,12 +45,52 @@ ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
 ATT.TracerColor = Color(255, 225, 200)
 ATT.TracerSize = 1
 
-
-ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit	
-	if anim == "reload_revolver" then return "reload_buck_revolver" end		
-end
-
 ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_a1")
+
+
+
+ATT = {}
+
+ATT.PrintName = [[Rifle Round]]
+ATT.CompactName = [[308]]
+//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Description = [[LOL
+]]
+
+ATT.SortOrder = 1
+ATT.Category = "fas2_m79_ammo2"
+ATT.ActivateElements = {"a_308"}
+
+ATT.Ammo = "357"
+
+ATT.SpreadAdd = -0.01
+
+ATT.PenetrationOverride = 12
+ATT.RicochetChanceOverride = 1
+
+ATT.NumOverride = 1
+
+ATT.DamageMaxOverride = 65
+ATT.DamageMinOverride = 34
+ATT.RangeMinOverride = 750
+ATT.RangeMaxOverride = 10000
+
+ATT.PhysBulletModelOverride = false
+ATT.ImpactDecalOverride = ""
+
+ATT.SuppressSmokeTrail = true
+
+ATT.ExplosionDamageOverride = 0
+ATT.ExplosionEffect = false
+
+ATT.ShootSound = "gekolt_css/deagle-1.wav"
+
+ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
+
+ATT.TracerColor = Color(255, 225, 200)
+ATT.TracerSize = 1
+
+ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_a2")
 
 
 ------------------------------------------------------------------------------------------
@@ -160,12 +200,12 @@ ATT.Description = [[how
 
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
-ATT.ActivateElements = {"f_mts"}
+ATT.ActivateElements = {"f_mts", "pre_ammo"}
 
 ATT.ClipSizeOverride = 5
 ATT.Ammo = "buckshot"
 
-ATT.PhysBulletMuzzleVelocityOverride = 8000
+ATT.PhysBulletMuzzleVelocityOverride = 3100 * 12
 ATT.PhysBulletGravityOverride = 1
 ATT.PhysBulletDragOverride = 1
 
@@ -174,7 +214,7 @@ ATT.SpreadAdd = 0.02
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumOverride = 15
+ATT.NumOverride = 12
 
 ATT.DamageMaxOverride = 23
 ATT.DamageMinOverride = 10
@@ -196,8 +236,44 @@ ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
 ATT.TracerColor = Color(255, 225, 200)
 ATT.TracerSize = 1
 
-ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
-    return anim .. "_mts"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-12, -2.75, 3)
+ATT.ModelAngleOffset = Angle(90, -90, -5)
+ATT.Model = "models/weapons/geckololt_css/c_m79.mdl"
+ATT.ModelBodygroups = "14324022"
+
+ATT.Sights = {
+    {
+        Pos = Vector(-2.855, -2, 1.75),
+        Ang = Angle(0, 0, 5),
+        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
+
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo",
+        DefaultName = "12 Gauge",
+		
+        Category = "fas2_m79_ammo2", 
+        Bone = "W_Main",
+        Pos = Vector(0, 0, 4),
+        Ang = Angle(0, 0, 0),		
+    },	
+}
+ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit	
+	if anim == "reload" then return "reload_mts" end
+	if anim == "reload_empty" then return "reload_mts" end
+	if anim == "fire" then return "fire_rev" end
+	if anim == "fire_iron" then return "fire_rev" end	
 end
 
 ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_f3")
@@ -215,21 +291,21 @@ ATT.Description = [[HOW
 
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
-ATT.ActivateElements = {"f_mtss"}
+ATT.ActivateElements = {"f_mtss", "pre_ammo"}
 
 ATT.ClipSizeOverride = 5
 ATT.Ammo = "buckshot"
 
-ATT.PhysBulletMuzzleVelocityOverride = 8000
+ATT.PhysBulletMuzzleVelocityOverride = 2900 * 12
 ATT.PhysBulletGravityOverride = 1
 ATT.PhysBulletDragOverride = 1
 
-ATT.SpreadAdd = 0.02
+ATT.SpreadAdd = 0.03
 
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumOverride = 15
+ATT.NumOverride = 8
 
 ATT.DamageMaxOverride = 23
 ATT.DamageMinOverride = 10
@@ -249,11 +325,50 @@ ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
 
 ATT.TracerColor = Color(255, 225, 200)
-ATT.TracerSize = 1
+ATT.TracerSize = 0.5
 
-ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
-    return anim .. "_mtss"
+
+ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit	
+	if anim == "reload" then return "reload_rev" end
+	if anim == "reload_empty" then return "reload_rev" end
+	if anim == "fire" then return "fire_rev" end
+	if anim == "fire_iron" then return "fire_rev" end	
 end
+
+ATT.MovingPosOverride = Vector(0, 1.5, -0.1)
+ATT.MovingAngOverride = Angle(0, -2, 0)
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.SprintAngOverride = Angle(-10, 60, -5)
+ATT.SprintPosOverride = Vector(0.5, 4, -6)
+
+ATT.CrouchPosOverride = Vector(-0.5, 1.5, -1)
+ATT.CrouchAngOverride = Angle(0, 0, -10)
+
+ATT.ActivePosOverride = Vector(0, 2, 0)
+ATT.ActiveAngOverride = Angle(0, 0, 0)
+ATT.ReloadNoSprintPos = true
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-50, -2, -7.5)
+ATT.ModelAngleOffset = Angle(90, -90, 0)
+ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
+ATT.ModelBodygroups = "15000"
+
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo",
+        DefaultName = "12 Gauge",
+		
+        Category = "fas2_m79_ammo2", 
+        Bone = "W_Main",
+        Pos = Vector(0, 0, 4),
+        Ang = Angle(0, 0, 0),		
+    },	
+}
 
 ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_f4")
 

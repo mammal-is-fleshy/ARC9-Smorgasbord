@@ -8,4 +8,6 @@
 	"$phongexponent" 		"50"
 	"$phongboost" 			"0.5"
 	"$halflambert"			"1"
+	
+	"$nocull" 1	
 }
