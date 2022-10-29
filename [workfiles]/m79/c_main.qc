@@ -91,6 +91,36 @@ $sequence "dry" {
 	fps 40
 }
 
+
+$sequence "alofs_dry" {
+	"anims\alofs_dry.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "alofs_load" {
+	"anims\alofs_load.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "alofs_start" {
+	"anims\alofs_start.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "alofs_end" {
+	"anims\alofs_end.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "dry_pirate" {
 	"anims\dry_pirate.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		

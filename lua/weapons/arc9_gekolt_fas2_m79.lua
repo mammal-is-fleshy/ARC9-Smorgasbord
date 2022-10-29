@@ -275,10 +275,10 @@ SWEP.MuzzleParticle = "muzzleflash_1"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.CaseEffectQCA = 2
-SWEP.ShellModel = "models/shells/shell_338mag.mdl"
+//SWEP.ShellModel = "models/Items/AR2_Grenade.mdl"
 SWEP.ShellCorrectPos = Vector(0, 0, 0)
 SWEP.ShellCorrectAng = Angle(0, 0, 90)
-SWEP.ShellScale = 1
+SWEP.ShellScale = 0
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.NoShellEject = true
 
@@ -287,8 +287,6 @@ SWEP.NoShellEject = true
 SWEP.ShootSound = "gekolt_fas2/m79_fire1.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
-
-SWEP.EjectDelay = 0
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -339,18 +337,8 @@ SWEP.Attachments = {
 		InstalledElements = {"rail_top"},
 
         Category = {"optic_css", "optic_css_free"}, 
-        Bone = "W_Main",
+        Bone = "W_Break",
         Pos = Vector(0, -1.1, 9),
-        Ang = Angle(90, 0, -90),		
-    },	
-    {
-        PrintName = "Muzzle",
-        DefaultName = "None",
-
-		ExcludeElements = {"pre_muzzed"},
-        Category = {"muzzle_css"}, 
-        Bone = "W_Main",
-        Pos = Vector(0, 0, 28),
         Ang = Angle(90, 0, -90),		
     },		
     {
@@ -360,10 +348,15 @@ SWEP.Attachments = {
 
 		ExcludeElements = {"nogrip"},
         Category = {"grip_css", "grip_css_free"}, 
-        Bone = "W_Pump",
+        Bone = "W_Break",
         Pos = Vector(0, 0.9, -3),
         Ang = Angle(90, 0, -90),			
     },	
+}
+
+SWEP.BulletBones = {
+    [2] = "W_Bullet_Spare",
+    [1] = "W_Bullet_Spare2",
 }
 
 SWEP.Animations = {
@@ -384,11 +377,9 @@ SWEP.Animations = {
     },	
     ["fire"] = {
         Source = "fire",	
-        EjectAt = 1/40,		
     },	
     ["fire_iron"] = {
-        Source = "fire",
-        EjectAt = 1/40,			
+        Source = "fire",	
     },			
     ["reload"] = {
         Source = "dry",
@@ -401,8 +392,7 @@ SWEP.Animations = {
 			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},			
 			{s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},
         },
-		FireASAP = true,
-        MagSwapTime = 40/40,		
+		FireASAP = true,	
 		MinProgress = 0.85,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -413,11 +403,15 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "pump",
         EjectAt = 18/40,
-        MinProgress = 40 / 40,
+		FireASAP = true,		
+        MinProgress = 27 / 40,
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 13 / 40},		
+            {s =  "gekolt_fas2/m79_remove.wav" ,   t = 15 / 40},			
 			{s =  "gekolt_fas2/m79_close.wav" ,    t = 27 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32/ 40},				
         },
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, }, { t = 0.8, lhik = 0, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, }	},			
     },	
 
     ["reload_pirate"] = {
@@ -438,4 +432,59 @@ SWEP.Animations = {
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
     },	
+
+
+
+
+	-- Agony --
+    ["reload_start"] = {
+        Source = "alofs_start",
+        RestoreAmmo = 1,		
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 20 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 24 / 40}, 
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 25 / 40},
+			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 33 / 40},		
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 44/ 40},		
+        },	
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, }	},			
+    }, 
+	["reload_insert"] = {
+        Source = "alofs_load",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 8 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 12 / 40}, 
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 13 / 40},
+			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 21 / 40},		
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32/ 40},			
+        },	
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},			
+    },
+	["reload_finish"] = {
+        Source = "alofs_end",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.5,
+        EventTable = {
+		
+        },	
+		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
+    },	
+    ["reload_start_empty"] = {
+        Source = "alofs_dry",
+        RestoreAmmo = 1,			
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_fas2/m79_open.wav" ,   t = 3 / 40},
+            {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 9 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40}, 
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50/ 40},
+			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},		
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 88 / 40},			
+			{s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},		
+		},
+		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},				
+    },	 
 }

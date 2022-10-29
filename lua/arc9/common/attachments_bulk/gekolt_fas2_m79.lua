@@ -113,10 +113,35 @@ ATT.Category = "fas2_m79_frame"
 ATT.ActivateElements = {"f_alofs"}
 ATT.ClipSizeOverride = 5
 ATT.ManualAction = true
+ATT.ShotgunReload = true
+ATT.ManualActionNoLastCycle = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
     return anim .. "_alofs"
 end
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-14, -2.75, 2.2)
+ATT.ModelAngleOffset = Angle(90, -90, -5)
+ATT.Model = "models/weapons/geckololt_css/grip/m79_alofs.mdl"
+
+ATT.Sights = {
+    {
+        Pos = Vector(-2.95, -2, 0.05),
+        Ang = Angle(-0.25, -2.5, 5),
+        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
+
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
 
 ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_f2")
 
