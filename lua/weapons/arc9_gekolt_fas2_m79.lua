@@ -474,7 +474,7 @@ SWEP.Animations = {
         Source = "pump",
         EjectAt = 15/40,
 		FireASAP = true,		
-        MinProgress = 27 / 40,
+        MinProgress = 25 / 40,
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 13 / 40},		
             {s =  "gekolt_fas2/m79_remove.wav" ,   t = 15 / 40},			

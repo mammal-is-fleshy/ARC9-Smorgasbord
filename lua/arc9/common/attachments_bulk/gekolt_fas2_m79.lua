@@ -63,7 +63,7 @@ ATT.ActivateElements = {"a_308"}
 
 ATT.Ammo = "357"
 
-ATT.SpreadAdd = -0.01
+ATT.SpreadMult = 0.1
 
 ATT.PenetrationOverride = 12
 ATT.RicochetChanceOverride = 1
@@ -85,7 +85,7 @@ ATT.ExplosionEffect = false
 
 ATT.ShootSound = "gekolt_css/deagle-1.wav"
 
-ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
+ATT.MuzzleParticleOverride = "muzzleflash_minimi"
 
 ATT.TracerColor = Color(255, 225, 200)
 ATT.TracerSize = 1
@@ -335,7 +335,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
 	if anim == "fire_iron" then return "fire_rev" end	
 end
 
-ATT.MovingPosOverride = Vector(0, 1.5, -0.1)
+ATT.MovingPosOverride = Vector(0, 4.5, -0.1)
 ATT.MovingAngOverride = Angle(0, -2, 0)
 
 ATT.LHIK = true
@@ -344,10 +344,10 @@ ATT.LHIK_Priority = 0
 ATT.SprintAngOverride = Angle(-10, 60, -5)
 ATT.SprintPosOverride = Vector(0.5, 4, -6)
 
-ATT.CrouchPosOverride = Vector(-0.5, 1.5, -1)
+ATT.CrouchPosOverride = Vector(-0.5, 4.5, -1)
 ATT.CrouchAngOverride = Angle(0, 0, -10)
 
-ATT.ActivePosOverride = Vector(0, 2, 0)
+ATT.ActivePosOverride = Vector(0, 5, 0)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
 ATT.ReloadNoSprintPos = true
 

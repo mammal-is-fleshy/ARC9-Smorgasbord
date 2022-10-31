@@ -127,7 +127,6 @@ $sequence "alofs_end" {
 	"anims\alofs_end.smd"	
 	fadein 0.2
 	fadeout 0.2
-	snap	
 	fps 40
 }
 
