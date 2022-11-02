@@ -8,11 +8,10 @@ ATT.SortOrder = 0
 ATT.Category = "css_awp_stock"
 ATT.ActivateElements = {"awp_s_smg"}
 
-ATT.SwayAdd = -0.85
-ATT.SprintToFireTimeMult = 1.8
-ATT.AimDownSightsTimeMult = 1.15
-ATT.RecoilMult = 0.7
+ATT.SwayAdd = 1.1
+ATT.SprintToFireTimeMult = 0.75
+ATT.AimDownSightsTimeMult = 0.85
+ATT.RecoilMult = 1.25
 ATT.RecoilKickMult = 1.125
 
-ATT.RecoilAutoControlMult = 3.6
-ATT.FreeAimRadiusMult = 0.7
+ATT.FreeAimRadiusMult = 1.2

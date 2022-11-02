@@ -22,7 +22,8 @@ $bodygroup "stock"
 {
 	studio "awp_s.smd"
 	studio "awp_s_ske.smd"		
-	blank		
+	blank
+	studio "awp_ss.smd"		
 }
 
 $illumposition 0 0 0
