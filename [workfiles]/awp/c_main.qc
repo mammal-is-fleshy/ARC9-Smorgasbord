@@ -116,6 +116,15 @@ $sequence "fire_br" {
 	fps 40
 }
 
+$sequence "fire_br_iron" {
+	"anims\fire_br_iron.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 0.02
+	fps 40
+}
+
 $sequence "wet" {
 	"anims\wet.smd"
 	activity "ACT_VM_RELOAD" 1

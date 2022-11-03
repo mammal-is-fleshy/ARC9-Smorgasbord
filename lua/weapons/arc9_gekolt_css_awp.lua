@@ -449,19 +449,28 @@ SWEP.Animations = {
         Source = "fire_br",
 		MinProgress = 0.05,
 		Mult =1,
-        EjectAt = 1/40,			
+        EjectAt = 1/40,
+        EventTable = {			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 0 / 40},
+        },		
     },	
     ["fire_iron_br"] = {
-        Source = "fire_br",
+        Source = "fire_br_iron",
 		MinProgress = 0.05,
 		Mult =1,
-        EjectAt = 1/40,			
+        EjectAt = 1/40,		
+        EventTable = {			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 0 / 40},
+        },			
     },		
     ["fire_empty_br"] = {
         Source = "fire_br",
 		MinProgress = 0.05,
 		Mult =1,
-        EjectAt = 1/40,			
+        EjectAt = 1/40,		
+        EventTable = {			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 0 / 40},
+        },			
     },		
 	
 	
@@ -523,7 +532,9 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 58 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 62 / 40},	
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 100 / 40},				
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 100 / 40},	
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 101 / 40},		
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 109 / 40},			
             {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 110 / 40},	
 			},
 		IKTimeLine = {
