@@ -26,6 +26,28 @@ $bodygroup "stock"
 	studio "awp_ss.smd"		
 }
 
+
+$bodygroup "rail_bottom"
+{
+	blank
+	studio "Rail_Bottom.smd"
+	studio "Rail_Bottom_Howell.smd"
+	studio "Rail_Bottom_LC10.smd"
+}
+$bodygroup "rail_side"
+{
+	blank
+	studio "Rail_Side.smd"
+	studio "Rail_Side_Howell.smd"
+	studio "Rail_Side_LC10.smd"
+}
+$bodygroup "rail_top"
+{
+	blank
+	studio "Rail_Up.smd"
+	studio "Rail_Up_Howell.smd"
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\gekolt_css_vmt\"

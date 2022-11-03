@@ -251,17 +251,21 @@ SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.AttachmentElements = {
     ["awp_f_howell"] = {
         Bodygroups = {{0, 2}},
-        AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 2.5, 11.5), }, [6] = { Pos = Vector(0, 0.1, 18.35), } }			
+        AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 3.25, 11.5), },	[6] = { Pos = Vector(1.15, 1.25, 13), },	[7] = { Pos = Vector(-1.35, 1.25, 13), } }			
 	},
 	
     ["awp_s_smg"] = {Bodygroups = {{2, 1}},},
     ["awp_s_no"] = {Bodygroups = { {2, 2}},},
 	["awp_s_short"] = {Bodygroups = { {2, 3}},},
+	
+    ["rail_bot"] = {Bodygroups = {{3, 1}},},
+    ["rail_side"] = {Bodygroups = { {4, 1}},},
+	["rail_top"] = {Bodygroups = { {5, 1}},},	
 
     ["awp_f_smg"] = {
         Bodygroups = {{0, 1},{1, 1}},
@@ -269,7 +273,7 @@ SWEP.AttachmentElements = {
 			Pos = Vector(-4, 0, 5),
 			Ang = Angle(0, 0, -5),
         },			
-		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 2.5, 9), } }			
+		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 3.4, 9), },	[6] = { Pos = Vector(1.15, 1.25, 10), },	[7] = { Pos = Vector(-1.35, 1.25, 10), } }			
 	},	
 }
 
@@ -278,6 +282,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model	
 	if wep.Attachments[3].Installed then model:SetBodygroup(1,3) end		
 	if wep.Attachments[3].Installed and wep:HasElement("awp_f_smg") then model:SetBodygroup(1,4) end	
+
+	if wep:HasElement("rail_bot") and wep:HasElement("awp_f_smg") then model:SetBodygroup(3,3) end	
+	if wep:HasElement("rail_side") and wep:HasElement("awp_f_smg") then model:SetBodygroup(4,3) end	
+
+	if wep:HasElement("rail_bot") and wep:HasElement("awp_f_howell") then model:SetBodygroup(3,2) end	
+	if wep:HasElement("rail_side") and wep:HasElement("awp_f_howell") then model:SetBodygroup(4,2) end	
+	if wep:HasElement("rail_top") and wep:HasElement("awp_f_howell") then model:SetBodygroup(5,2) end		
 end
 
 SWEP.Attachments = {
@@ -321,23 +332,48 @@ SWEP.Attachments = {
     {
         PrintName = "Foregrip",
         DefaultName = "None",
+		InstalledElements = {"rail_bot", "optic_css_free"}, 		
 
 		ExcludeElements = {"nogrip"},
-        Category = {"grip_css"}, 
+        Category = {"grip_css", "optic_css_free"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 2.5, 12),
+        Pos = Vector(0, 3.25, 12),
         Ang = Angle(90, 0, -90),			
     },	
 	
     {
-        PrintName = "Clamp",
-        DefaultName = "None",
+        PrintName = "MOUNT Left",
+        Category = {"mountr_css", "optic_css_free"},
+		InstalledElements = {"rail_side"}, 		
 
-		ExcludeElements = {"short_clamp"},
-        Category = {"clamp_css"}, 
+        Bone = "W_Main",		
+        Pos = Vector(1.15, 1.25, 15),
+        Ang = Angle(90, 0, 180),
+        ExtraSightDistance = 10,
+        Icon_Offset = Vector(1, 0, 0)			
+    },	
+
+    {
+        PrintName = "MOUNT Right",
+        Category = {"mountl_css", "optic_css_free"},
+		InstalledElements = {"rail_side"}, 		
+
+        Bone = "W_Main",			
+        Pos = Vector(-1.35, 1.25, 15),
+        Ang = Angle(90, 0, 0),
+        ExtraSightDistance = 10,
+        Icon_Offset = Vector(-2, 0, 0)			
+    },		
+    {
+        PrintName = "Mount Top",
+        DefaultName = "None",
+		InstalledElements = {"rail_top"}, 		
+
+		ExcludeElements = {"notop"},
+        Category = {"tac_css_flat", "mount_css", "optic_css_free"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 0.1, 21.25),
-        Ang = Angle(90, 0, -90),		
+        Pos = Vector(0, -0.9, 13),
+        Ang = Angle(90, 0, -90),			
     },		
 }
 

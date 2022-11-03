@@ -6,7 +6,7 @@ ATT.Description = [[This feels wrong]]
 
 ATT.SortOrder = 0
 ATT.Category = "css_awp_stock"
-ATT.ActivateElements = {"awp_s_smg"}
+ATT.ActivateElements = {"awp_s_short"}
 
 ATT.SwayAdd = 1.25
 ATT.SprintToFireTimeMult = 0.9
