@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC-9 - CSS"
 
-SWEP.PrintName = "Gun"
+SWEP.PrintName = "TDR-90"
 SWEP.TrueName = "M79"
 
 SWEP.Class = "Grenade Launcher"
