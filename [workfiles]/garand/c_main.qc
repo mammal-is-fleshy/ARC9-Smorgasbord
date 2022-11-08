@@ -27,13 +27,20 @@ $bodygroup "Rail1"
 $bodygroup "Rail2"
 {
 	blank
-	studio "Rail_Bottom.smd"
+	studio "Rail_Bottom2.smd"
 	studio "Rail_Bottom_Pump.smd"	
 }
 $bodygroup "Rail3"
 {
 	blank
 	studio "Rail_Iron.smd"
+}
+$bodygroup "Rail3"
+{
+	blank
+	studio "Rail_Side.smd"
+	studio "Rail_Side_Pump.smd"
+	studio "Rail_Side_Bare.smd"	
 }
 
 $illumposition 0 0 0

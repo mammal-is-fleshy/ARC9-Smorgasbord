@@ -252,7 +252,7 @@ SWEP.EjectDelay = 0
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.DefaultBodygroups = "00000"
+SWEP.DefaultBodygroups = "0000000000"
 
 SWEP.BulletBones = {
     [1] = "W_Ammo8",
@@ -268,7 +268,7 @@ SWEP.BulletBones = {
 SWEP.AttachmentElements = {
     ["garand_slam"] = {
         Bodygroups = {{1, 2}},
-        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 20), }, [4] = { Pos = Vector(0, 1.15, 0.75), }, [5] = { Pos = Vector(0, 0.1, 18.35), } }			
+        AttPosMods = { [3] = { Pos = Vector(0, 0.1, 20), }, [4] = { Pos = Vector(0, 1.15, 0.75), }, [5] = { Pos = Vector(-0.9, -0.55, 0.5), } }			
 	},
 
     ["garand_m14"] = {
@@ -293,11 +293,15 @@ SWEP.AttachmentElements = {
 
     ["rail_top"] = {Bodygroups = {{2, 1}},},
 	["rail_bot"] = {Bodygroups = {{3, 1}},},
+	["rail_side"] = {Bodygroups = {{5, 3}, {3, 0}},},	
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data) 
     local model = data.model
-    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- under rail ---
+    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- shotgun under rail ---
+    if wep.Attachments[5].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(5,2) end	--- shotgun side rail ---	
+    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- shotgun under rail ---
+    if wep:HasElement("rail_bot") and wep:HasElement("rail_side") then model:SetBodygroup(5,1) end	--- side rail ---		
 	
     if wep.Attachments[2].Installed and wep:HasElement("garand_mini") then model:SetBodygroup(4,1) end	-- 'extended' top rail --
     if wep.Attachments[2].Installed and wep:HasElement("garand_m14") then model:SetBodygroup(4,1) end		
@@ -339,11 +343,22 @@ SWEP.Attachments = {
 		InstalledElements = {"rail_bot"},
 
 		ExcludeElements = {"nogrip"},
-        Category = {"grip_css", "grip_css_free"}, 
+        Category = {"grip_css", "optic_css_free"}, 
         Bone = "W_Pump",
         Pos = Vector(0, 0.9, -3),
         Ang = Angle(90, 0, -90),			
-    },	
+    },
+
+    {
+        PrintName = "MOUNT Right",
+        Category = {"mountl_css", "optic_css_free"},
+		InstalledElements = {"rail_side"}, 		
+
+        Bone = "W_Pump",		
+        Pos = Vector(-1.1, -0.4, -1.5),
+        Ang = Angle(90, 0, 0),
+        ExtraSightDistance = 7,		
+    },		
 }
 
 SWEP.Animations = {

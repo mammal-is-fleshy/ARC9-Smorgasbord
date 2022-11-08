@@ -105,7 +105,7 @@ ATT.Description = [[Short
 
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
-ATT.ActivateElements = {"f_pirate"}
+ATT.ActivateElements = {"f_pirate", "nogrip"}
 
 
 
@@ -291,7 +291,7 @@ ATT.Description = [[HOW
 
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
-ATT.ActivateElements = {"f_mtss", "pre_ammo"}
+ATT.ActivateElements = {"f_mtss", "pre_ammo", "nogrip"}
 
 ATT.ClipSizeOverride = 5
 ATT.Ammo = "buckshot"

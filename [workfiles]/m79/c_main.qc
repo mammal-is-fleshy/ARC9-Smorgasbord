@@ -28,7 +28,10 @@ $bodygroup "grip"
 {
 	studio "m79_grip.smd"
 	studio "m79_grip_alof.smd"	
-	blank	
+	blank
+	studio "m79_grip_rail.smd"
+	studio "m79_grip_alof_rail.smd"	
+	studio "rail_mts.smd"			
 }
 $bodygroup "ammo"
 {
@@ -56,6 +59,12 @@ $bodygroup "Iron2"
 	studio "m79_sight_up.smd"
 	studio "m79_sight_down.smd"
 	blank
+}
+$bodygroup "Rail"
+{
+	blank
+	studio "Rail_Up.smd"
+	studio "Rail_Up2.smd"
 }
 
 $illumposition 0 0 0

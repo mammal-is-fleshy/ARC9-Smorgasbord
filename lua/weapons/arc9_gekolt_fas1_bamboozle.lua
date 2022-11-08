@@ -9,7 +9,7 @@ SWEP.PrintName = "Claymore on a Stick"
 
 SWEP.Class = "Melee"
 SWEP.Trivia = {
-    ["Country of Origin"] = "Scotland",
+    ["Country of Origin"] = "Scotland", -- trolleg
     ["Caliber"] = "3.2mm steel balls",
 }
 
@@ -19,7 +19,7 @@ SWEP.Credits = {
     Assets = "Firearms: Source"
 }
 
-SWEP.Description = [[THE JAPANESES ARE ATTACKING.
+SWEP.Description = [[THE JAPANESES ARE ATTACKING AGAIN.
 
 Crude anti-tank-personnel-whateverinfrontofyou device from the peak of the highlands.]]
 
@@ -37,6 +37,27 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.DefaultBodygroups = "00"
+SWEP.BottomlessClip = false
+
+-------------------------- ENTITY LAUNCHING
+
+SWEP.ShootEnt = "gekolt_css_m4_claymore_bamboo" -- Set to an entity to launch it out of this weapon.
+
+SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
+SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
+SWEP.ThrowSpeed = 1
+
+SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
+
+SWEP.ThrowForceMin = 2500 -- Minimum force that the grenade will be thrown with.
+SWEP.ThrowForceMax = 5000 -- Maximum force that the grenade will be thrown with.
+SWEP.TossForce = 2500 -- Force that the grenade will be thrown with when right clicked.
+
+SWEP.ThrowChargeTime = 0.5 -- How long it takes to charge the grenade to its maximum throw force.
+
+SWEP.ThrowTumble = false -- Grenade tumbles when thrown.
+
+SWEP.PhysBulletMuzzleVelocity = 1000 * 40
 
 -------------------------- FIREMODES
 
@@ -47,28 +68,6 @@ SWEP.Firemodes = {
         -- add other attachment modifiers
     },
 }
-
--------------------------- RECOIL
-
--- General recoil multiplier
-SWEP.Recoil = 1
-
--- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0 -- Multiplier for vertical recoil
-
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
-
-SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
-
-SWEP.RecoilKick = 2
-
--------------------------- ENTITY LAUNCHING
-
-SWEP.ShootEnt = "gekolt_css_m4_claymore_bamboo" -- Set to an entity to launch it out of this weapon.
-SWEP.ShootEntForce = 25000
-SWEP.ShootEntityData = {} -- Extra data that can be given to a projectile. Sets SENT.WeaponDataLink with this table.
-
 -------------------------- HANDLING
 
 SWEP.FreeAimRadius = 0
@@ -148,14 +147,14 @@ SWEP.BlindFireOffset = Vector(0, 0, 32) -- The amount by which to offset the bli
 SWEP.BlindFirePos = Vector(-2, -5, 5)
 SWEP.BlindFireAng = Angle(0, 10, -20)
 
--------------------------- SOUNDS
-SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
-SWEP.TriggerDelayTime = 0.275 -- Time until weapon fires.
 
-// theres no grenade base yet
+// theres no grenade base yet  --- before 22/11/08
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
+    },
+    ["idle_primed"] = {
+        Source = "idle_prep"
     },
     ["idle_empty"] = {
         Source = "idle_empty",
@@ -165,6 +164,12 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 1 / 40},
             {s =  "gekolt_css/clay/pinpull.wav" ,   t = 15 / 40},			
+        },			
+    },
+    ["throw"] = {
+        Source = "throw",
+        EventTable = {		
+            {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 1 / 40},		
         },			
     },
     ["draw_empty"] = {
@@ -177,21 +182,15 @@ SWEP.Animations = {
             {s =  "gekolt_css/clay/pinpull.wav" ,   t = 15 / 40},			
         },			
     },	
-    ["trigger"] = {
+    ["pullpin"] = {
         Source = {"prep"},
-    }, 
-    ["trigger_empty"] = {
-        Source = {"idle_empty"},
+		FireASAP = true,
+		MinProgress = 0.83,			
     }, 	
-	["fire"] = {
-        Source = {"throw"},
-        EventTable = {		
-            {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 1 / 40},		
-        },			
-    },
     ["holster"] = {
         Source = "idle",
-    },	
+    },
+	
 }
 
 -------------------------- ATTACHMENTS
