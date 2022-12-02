@@ -150,7 +150,7 @@ ATT.Description = [[Agony
 
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
-ATT.ActivateElements = {"f_alofs"}
+ATT.ActivateElements = {"f_alofs", "nogrip"}
 ATT.ClipSizeOverride = 5
 ATT.ManualAction = true
 ATT.ShotgunReload = true

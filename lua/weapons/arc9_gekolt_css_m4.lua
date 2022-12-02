@@ -862,52 +862,34 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {	
     ["up_bolt"] = {
-        Bodygroups = {
-            {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7},
-        },
-        AttPosMods = {
-            [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
+        Bodygroups = { {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7}, },
+        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
 	},
     ["up_bow"] = {
-        Bodygroups = {
-            {0, 7},{4, 5},{5, 7},{6, 7},{10,7},
-        },
+        Bodygroups = { {0, 7},{4, 5},{5, 7},{6, 7},{10,7}, },
 		AttPosMods = { [7] = { Pos = Vector(0, -3.25, 3), } }				
 	},	
     ["up_lmg"] = {
-        Bodygroups = {
-            {0, 4},{4, 4},{5, 9}
-        },
-        AttPosMods = {
-            [7] = { Pos = Vector(0, -2.677, 0.15), } }	
+        Bodygroups = { {0, 4},{4, 4},{5, 9} },
+        AttPosMods = { [7] = { Pos = Vector(0, -2.677, 0.15), } }	
 	},
     ["up_proto"] = {
-        Bodygroups = {
-            {0, 1},{4, 2},{5, 8}
-        },
+        Bodygroups = { {0, 1},{4, 2},{5, 8} },
 		AttPosMods = { [7] = { Pos = Vector(0, -3.9, 4.25), } }			
 	},
     ["up_a1"] = {
-        Bodygroups = {
-            {0, 11},{4, 3},{5, 8}
-        },
+        Bodygroups = { {0, 11},{4, 3},{5, 8} },
 		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }			
 	},	
     ["up_acr"] = {
-        Bodygroups = {
-            {0, 12},{4, 6},{5, 8}
-        },
+        Bodygroups = { {0, 12},{4, 6},{5, 8} },
 		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }			
 	},		
     ["up_ak"] = {
-        Bodygroups = {
-            {1, 1},{3, 1},{4, 5},{5, 1}
-        },
+        Bodygroups = { {1, 1},{3, 1},{4, 5},{5, 1} },
 	},	
     ["up_9mm"] = {
-        Bodygroups = {
-            {4, 1},{5, 11}
-        },
+        Bodygroups = { {4, 1},{5, 11} },
 	},	
     ["up_sd"] = {
         Bodygroups = {
@@ -1113,7 +1095,7 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),		
-    },	
+    },
 
     {
         PrintName = "Handguard",
@@ -1171,7 +1153,7 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 1.5, 12),
         Ang = Angle(90, 0, -90),		
-    },	
+    },
 
     {
         PrintName = "Optic",
@@ -1197,7 +1179,7 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, -0.25, 20),
         Ang = Angle(90, 0, -90),		
-    },	
+    },
 
     {
         PrintName = "Clamp",
@@ -1220,5 +1202,5 @@ SWEP.Attachments = {
         Bone = "Akimbo_Base",
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 0, -90),		
-    },	
+    },
 }

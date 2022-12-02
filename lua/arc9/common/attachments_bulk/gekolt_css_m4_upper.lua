@@ -262,10 +262,6 @@ ATT.Firemodes = {
     }
 }
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_pdw"
-end
-
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
 

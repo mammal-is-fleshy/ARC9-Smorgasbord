@@ -384,7 +384,7 @@ SWEP.Attachments = {
 		InstalledElements = {"rail_bot"},
 
 		ExcludeElements = {"nogrip"},
-        Category = {"grip_css", "optic_css_free"}, 
+        Category = {"grip_css"}, 
         Bone = "W_Break",
         Pos = Vector(0, 0.75, 3.6),
         Ang = Angle(90, 0, -90),			
@@ -392,8 +392,8 @@ SWEP.Attachments = {
 }
 
 SWEP.BulletBones = {
-    [2] = "W_Bullet_Spare",
     [1] = "W_Bullet_Spare2",
+    [2] = "W_Bullet_Spare",
 }
 
 SWEP.Animations = {

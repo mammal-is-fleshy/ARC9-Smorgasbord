@@ -300,8 +300,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- shotgun under rail ---
     if wep.Attachments[5].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(5,2) end	--- shotgun side rail ---	
-    if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- shotgun under rail ---
-    if wep:HasElement("rail_bot") and wep:HasElement("rail_side") then model:SetBodygroup(5,1) end	--- side rail ---		
+    if wep:HasElement("rail_bot") and wep:HasElement("rail_side") then model:SetBodygroup(5,1) end	--- side rail ---	
+    if wep.Attachments[4].Installed and wep:HasElement("rail_side") and wep:HasElement("garand_slam") then model:SetBodygroup(5,2) end	--- shotgun under rail ---	
 	
     if wep.Attachments[2].Installed and wep:HasElement("garand_mini") then model:SetBodygroup(4,1) end	-- 'extended' top rail --
     if wep.Attachments[2].Installed and wep:HasElement("garand_m14") then model:SetBodygroup(4,1) end		
