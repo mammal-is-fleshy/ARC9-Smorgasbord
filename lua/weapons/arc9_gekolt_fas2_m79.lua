@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC-9 - CSS"
+SWEP.Category = "ARC9 - CSS"
 
 SWEP.PrintName = "TDR-90"
 SWEP.TrueName = "M79"

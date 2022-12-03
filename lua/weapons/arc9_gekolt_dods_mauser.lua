@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC-9 - CSS"
+SWEP.Category = "ARC9 - CSS"
 
 SWEP.PrintName = "Konstruktie 95" 
 SWEP.TrueName = "M712 Schnellfeuer"
