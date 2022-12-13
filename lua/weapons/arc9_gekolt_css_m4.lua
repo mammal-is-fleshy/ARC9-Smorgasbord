@@ -265,8 +265,8 @@ SWEP.BulletBones = {
 }
 
 
-SWEP.Hook_TranslateAnimation = function(wep, anim) 
-	
+SWEP.Hook_TranslateAnimation = function(wep, data, anim) 
+    local model = data.model	
     if wep:GetUBGL() and wep:HasElement("pre_ubgl") then  // this is very very very wrong
     		if anim == "idle" then  return "idle_ubgl" end	
     		if anim == "idle_empty" then  return "idle_ubgl" end				
@@ -303,21 +303,21 @@ SWEP.Animations = {
     },
     ["enter_ubgl"] = {
         Source = "r2n",
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }},	
+		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},	
         EventTable = {
             {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 0 / 40},
         },			
     },  
 	["exit_ubgl"] = {
         Source = "n2r",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }},		
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},		
         EventTable = {
             {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 0 / 40},
         },			
     },  
 	["reload_ubgl"] = {
         Source = "nade_reload",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},			
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 6 / 40},	
@@ -327,15 +327,15 @@ SWEP.Animations = {
     },  	
 	["idle_ubgl"] = {
         Source = "nade_idle",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},				
     },
     ["fire_ubgl"] = {
         Source = {"nade_fire"},	
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},			
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},			
     },
 	
     ["fire"] = {
-        Source = {"fire"},
+        Source = {"fire"},			
     },
     ["fire_iron"] = {
         Source = {"fire_iron"},

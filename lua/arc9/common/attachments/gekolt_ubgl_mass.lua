@@ -10,7 +10,6 @@ ATT.SortOrder = 0
 
 ATT.Model = "models/weapons/geckololt_css/atts/ubgl/c_mass.mdl"
 ATT.LHIK = true
-ATT.RHIK = true -- disable this?
 
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
@@ -25,15 +24,15 @@ ATT.IKAnimationProxy = {
     ["reload_ubgl"] = {
         Source = "wet",
         EventTable = {		
-            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 61 / 40},			
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 8 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 59 / 40},			
         },
     },
     ["reload_ubgl_empty"] = {
         Source = "dry",
         EventTable = {		
-            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 61 / 40},	
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 8 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 59 / 40},	
             {s =  "gekolt_css/m3_pump.wav" ,   t = 89 / 40},			
         },
     },	
@@ -47,8 +46,7 @@ ATT.IKAnimationProxy = {
         Source = "idle_armed"
     },
     ["idle"] = {
-        Source = "idle",
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 0, } },	-- tout ca pour rien?		
+        Source = "idle",	
     },
     ["exit_ubgl"] = {
         Source = "to_idle"
