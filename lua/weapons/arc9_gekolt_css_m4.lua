@@ -267,7 +267,7 @@ SWEP.BulletBones = {
 
 SWEP.Hook_TranslateAnimation = function(wep, anim) 
 	
-    if wep:GetUBGL() then
+    if wep:GetUBGL() and wep:HasElement("pre_ubgl") then  // this is very very very wrong
     		if anim == "idle" then  return "idle_ubgl" end	
     		if anim == "idle_empty" then  return "idle_ubgl" end				
     		if anim == "fire" then  return "fire_ubgl" end		
@@ -298,23 +298,6 @@ SWEP.Hook_TranslateAnimation = function(wep, anim)
 end
 
 SWEP.Animations = {
---- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
-	// HOW THE FUCK DO YOU EXCLUDE ANIM FROM BEING OVERRIDDEN???
-
-	["idle_ubgl_smg"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
-    ["fire_ubgl_smg"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
-	["idle_ubgl_a1"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
-    ["fire_ubgl_a1"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
-	["idle_ubgl_acr"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
-    ["fire_ubgl_acr"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
-	["idle_ubgl_ak"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
-    ["fire_ubgl_ak"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
-	["idle_ubgl_proto"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
-    ["fire_ubgl_proto"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
-	["idle_ubgl_lmg"] = { Source = "nade_idle", IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }}, },
-    ["fire_ubgl_lmg"] = { Source = "nade_fire",	IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }},	},	
---- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
-
     ["firemode"] = {
         Source = "firemode",
     },
@@ -863,7 +846,7 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {	
     ["up_bolt"] = {
         Bodygroups = { {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7}, },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), } }		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), }, [11] = { Pos = Vector(0, 1, 10), } }		
 	},
     ["up_bow"] = {
         Bodygroups = { {0, 7},{4, 5},{5, 7},{6, 7},{10,7}, },
@@ -1141,7 +1124,7 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 1.6, 12),
         Ang = Angle(90, 0, -90),	
-		MergeSlots = {6}		
+		MergeSlots = {6, 11}		
     },
 
     {   -- permanent saw grip location, unaffected by the changes of the above attachment
@@ -1152,7 +1135,8 @@ SWEP.Attachments = {
         Category = {"css_m4_fg"}, 
         Bone = "W_Main",
         Pos = Vector(0, 1.5, 12),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),	
+		MergeSlots = {11}			
     },
 
     {
@@ -1203,4 +1187,15 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 0, -90),		
     },
+
+    {   -- permanent saw grip location, unaffected by the changes of the above attachment
+        PrintName = "",
+        DefaultName = "",
+        Hidden = true,
+		ExcludeElements = {"nogrip"},
+        Category = {"css_ubgl"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, 1, 8.75),
+        Ang = Angle(90, 0, -90),				
+    },	
 }

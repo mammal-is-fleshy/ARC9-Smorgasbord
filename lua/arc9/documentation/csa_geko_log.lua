@@ -5,10 +5,11 @@ Contre Srike Sorse et Nuit d'Honneur in 2022 Gmod Tacticle Reelesm :tm:
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 CturiX - Mauser Sound
 
-Counter Strike Source: (horrid)Models, Textures
-Day of Defeat Source: (horrid)Models, Textures
+Counter Strike Source: (horrid)Models, Textures [AWP/M4/AK/M9]
+Day of Defeat Source: (horrid)Models [Garand/Mauser]
 FAS1: Claymore
-FAS2: M79
+FAS2: M79/Sterling
+Brother In Arms: Sten
 
 
 Google Images - ref
@@ -17,7 +18,7 @@ Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
 Counter Strike Online 2 - Some M4 Parts (  The Taiwanese looking stuff  )
 Fesiug??? - Nade ent
 
-https://gamebanana.com/mods/173290 - Garand?
+https://gamebanana.com/mods/173290 - Garand??? (genuinely forgo :skull::skull::skull::skull:)
 https://gamebanana.com/mods/173805 - Mauser
 
 Tactical Intervention - Stuff (Holo/Acog2/Aimpoint/Silencer2)
@@ -92,8 +93,8 @@ M9: Done
 Garand: Done
 Mauser: Done?
 AK: Model Done / Scrapped???????
-M79: Half
-Sten: Model Half?
+M79: Done
+Sten: Model Done?
 M30: Scrapped???????
 M3: Model Done [SCRAPPED??]
 MP5/G3: Model Fifth [SCRAPPED??]
@@ -154,11 +155,11 @@ the main reason the ak fell off so hard was because		ehhh lazy	but again like th
 the m4 itself has some total conversion like the cs5, mass26 and so on but that was mostly because of bodygroup issue
 it was clear that my lazy arse no matter how much Time you grant me will refuse to finish the ak, too bloody much for an arse like mine to handle (dont take this out of context)
 
-from here Then on only the optics, foregrips and muzzles will be Modular
+from there Then on only the optics, foregrips and muzzles will be Modular
 
 
--- where the inspirations from --
-M4:
+-- where the inspirations from /naming convension --
+M4: [English]
 9mm - Taiwanese Rail thing for ironsight
 ak - angled Mk11 magwell
 57 - just a p90 lol
@@ -170,7 +171,7 @@ crossbow - duh
 shotgun(pump) - just a mass26
 suppressed - honey badger
 
-M9:
+M9: [English]
 Suppressed - part PB9, part makarov
 Welrod - duh
 P38 - duh
@@ -178,27 +179,27 @@ Carbine - one of those flux frame for the p350(?) and a snail mag
 Auto - its just a burst frame with shorter guard
 Burst - Robocock
 
-Garand:
+Garand: [French(lol)]
 M14 - Duh
 Mini 14 - Duh
 Scav - Part SKS, part mauser selbstlader/fedorov[originally going to be lever action but lazy], part romanian ak, part one of those stripper clip mini 14
 Slam - fortress 2
 
-AWP:
+AWP: [English]
 Lincoln - Cold War
 Howell - duh, ww1 [semi] auto lee enfield, Charlton is not real
 
-Mauser:
+Mauser: [Dutch(lol)/German]
 Edgerunners 2077
 one of those trench variants [default]
 brazil [burst cuz reasons]
 what Do you mean beta mag And carbine frame doesnt exist In ww2
 
-M79:
+M79: [English]
 Alofs is basically a magazine tube for single barrel self ejecting shotguns
 MTS but break action
 
-Sten:
+Sten: [English]
 MK 1,3,4,5
 MK2 but those "pistol" grip
 sterling mk4
