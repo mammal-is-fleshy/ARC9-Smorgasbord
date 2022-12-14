@@ -268,12 +268,8 @@ SWEP.AttachmentElements = {
 	["rail_top"] = {Bodygroups = { {5, 1}},},	
 
     ["awp_f_smg"] = {
-        Bodygroups = {{0, 1},{1, 1}},
-        Override_IronSights = {
-			Pos = Vector(-4, 0, 5),
-			Ang = Angle(0, 0, -5),
-        },			
-		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 3.4, 9), },	[6] = { Pos = Vector(1.15, 1.25, 10), },	[7] = { Pos = Vector(-1.35, 1.25, 10), } }			
+        Bodygroups = {{0, 1},{1, 1}},			
+		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 3.4, 9), },	[6] = { Pos = Vector(1.15, 1.25, 10), },	[7] = { Pos = Vector(-1.35, 1.25, 10), },	[9] = { Pos = Vector(0, 2.25, 6), } }			
 	},	
 }
 
@@ -338,7 +334,8 @@ SWEP.Attachments = {
         Category = {"grip_css", "optic_css_free"}, 
         Bone = "W_Main",
         Pos = Vector(0, 3.25, 12),
-        Ang = Angle(90, 0, -90),			
+        Ang = Angle(90, 0, -90),
+		MergeSlots = {9}	
     },	
 	
     {
@@ -374,7 +371,18 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, -0.9, 13),
         Ang = Angle(90, 0, -90),			
-    },		
+    },
+	
+    {   -- permanent ubgl, unaffected by the changes of the above attachment
+		PrintName = "",
+		DefaultName = "",
+		Hidden = true,
+		Category = {"css_ubgl"}, 
+		RequireElements = {"ubgl_maghold"},
+		Bone = "W_Main",
+		Pos = Vector(0, 2.25, 7.5),
+		Ang = Angle(90, 0, -90),				
+    },			
 }
 
 SWEP.Animations = {

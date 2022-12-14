@@ -11,7 +11,7 @@ ATT.Cons = {}
 ATT.SortOrder = 0
 
 ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"awp_f_smg", "short_clamp", "notop"}
+ATT.ActivateElements = {"awp_f_smg", "short_clamp", "notop", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_ak47"
 ATT.ShootSound = "gekolt_css/mp5-1.wav"
 

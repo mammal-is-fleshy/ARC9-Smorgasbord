@@ -346,7 +346,8 @@ SWEP.Attachments = {
         Category = {"grip_css", "optic_css_free"}, 
         Bone = "W_Pump",
         Pos = Vector(0, 0.9, -3),
-        Ang = Angle(90, 0, -90),			
+        Ang = Angle(90, 0, -90),
+		MergeSlots = {6}
     },
 
     {
@@ -357,7 +358,18 @@ SWEP.Attachments = {
         Bone = "W_Pump",		
         Pos = Vector(-1.1, -0.4, -1.5),
         Ang = Angle(90, 0, 0),
-        ExtraSightDistance = 7,		
+        ExtraSightDistance = 7,
+    },		
+	
+    {   -- permanent ubgl, unaffected by the changes of the above attachment
+		PrintName = "",
+		DefaultName = "",
+		Hidden = true,
+		Category = {"css_ubgl"}, 
+		RequireElements = {"ubgl_maghold"},
+		Bone = "W_Main",
+		Pos = Vector(0, 1.75, 7),
+		Ang = Angle(90, 0, -90),				
     },		
 }
 

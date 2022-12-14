@@ -45,7 +45,7 @@ ATT.SortOrder = 1
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ShootSound = "gekolt_dod/m1carbine_shoot.wav"
-ATT.ActivateElements = {"garand_m14"}
+ATT.ActivateElements = {"garand_m14", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.DrawFunc = function(swep, model, wm) end
@@ -92,7 +92,7 @@ ATT.SortOrder = 2
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ShootSound = "gekolt_dod/m1carbine_shoot1.wav"
-ATT.ActivateElements = {"garand_mini"}
+ATT.ActivateElements = {"garand_mini", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.DrawFunc = function(swep, model, wm) end
@@ -208,7 +208,7 @@ ATT.Cons = {}
 ATT.SortOrder = 4
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"garand_sks", "nogrip"}
+ATT.ActivateElements = {"garand_sks", "nogrip", "ubgl_maghold"}
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 250/300

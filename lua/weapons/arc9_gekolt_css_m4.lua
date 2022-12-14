@@ -346,7 +346,7 @@ SWEP.Animations = {
 		MinProgress = 0.83,
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
@@ -360,7 +360,7 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
-		{ t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },			
+		{ t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 1, },			
 		},	
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
@@ -854,7 +854,7 @@ SWEP.AttachmentElements = {
 	},	
     ["up_lmg"] = {
         Bodygroups = { {0, 4},{4, 4},{5, 9} },
-        AttPosMods = { [7] = { Pos = Vector(0, -2.677, 0.15), } }	
+        AttPosMods = { [7] = { Pos = Vector(0, -2.677, 0.15), }, [11] = { Pos = Vector(0, 1, 9.5), } }	
 	},
     ["up_proto"] = {
         Bodygroups = { {0, 1},{4, 2},{5, 8} },
@@ -870,6 +870,7 @@ SWEP.AttachmentElements = {
 	},		
     ["up_ak"] = {
         Bodygroups = { {1, 1},{3, 1},{4, 5},{5, 1} },
+        AttPosMods = { [11] = { Pos = Vector(0, 1, 9), } }	
 	},	
     ["up_9mm"] = {
         Bodygroups = { {4, 1},{5, 11} },
@@ -884,13 +885,13 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 8},{1, 2},{4, 5},{5, 6},{6, 7},{10,7}
         },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }, [11] = { Pos = Vector(0, 1, 9.5), }  }			
 	},	
     ["up_perosa"] = {
         Bodygroups = {
             {0, 13},{1, 2},{4, 5},{5, 10},{6, 7},{10,7}
         },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }			
+		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }	
 	},		
     ["up_pdw"] = {
         Bodygroups = {
@@ -902,7 +903,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {
             {0, 5},{1, 2},{4, 5},{5, 8},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), }, [8] = { Pos = Vector(0, -0.25, 25), } , [9] = { Pos = Vector(0, -0.25, 18.5), }, }				
+		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), }, [8] = { Pos = Vector(0, -0.25, 25), } , [9] = { Pos = Vector(0, -0.25, 18.5), },[11] = { Pos = Vector(0, 1, 10), } }				
 	},		
     ["up_pump"] = {
         Bodygroups = {
@@ -1188,7 +1189,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),		
     },
 
-    {   -- permanent saw grip location, unaffected by the changes of the above attachment
+    {   -- permanent ubgl, unaffected by the changes of the above attachment
         PrintName = "",
         DefaultName = "",
         Hidden = true,
