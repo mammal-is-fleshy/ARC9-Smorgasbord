@@ -45,9 +45,6 @@ ATT.IKAnimationProxy = {
     ["idle_ubgl_empty"] = {
         Source = "idle_armed"
     },
-    ["idle"] = {
-        Source = "idle",	
-    },
     ["exit_ubgl"] = {
         Source = "to_idle"
     },
