@@ -110,8 +110,6 @@ ATT.RangeMaxUBGL = 12000 -- In Hammer units, how far bullets can travel before d
 
 ATT.PenetrationUBGL = 3 -- Units of wood that can be penetrated by this gun.
 
-
-
 ATT.MuzzleParticleUBGL = "muzzleflash_shotgun"
 
 ATT.ModelOffset = Vector(0, 0, 1)

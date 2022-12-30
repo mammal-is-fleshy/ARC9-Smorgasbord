@@ -12,7 +12,7 @@ ATT.Folder = "REFLEX"
 // Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 8, -0.9),
+        Pos = Vector(0, 7, -0.9),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 60
