@@ -4,8 +4,8 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "Pressured Magnum"
-ATT.CompactName = "MAG"
+ATT.PrintName = "Pressured Magnum Shot"
+ATT.CompactName = "MAGNUM"
 ATT.Icon = Material("entities/gekolt_css_ammo/mag.png", "mips smooth")
 ATT.Description = [[less shots.]]
 ATT.SortOrder = 6
@@ -30,7 +30,7 @@ ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_magnum")
 ATT = {}
 
 ATT.PrintName = "Foule Drone Shot" -- get it, cuz its bird shot, and foule looks like fowl but it means mob shot as in crowd control multi pellets  haha  ehh ill see myself out
-ATT.CompactName = "BIRD"
+ATT.CompactName = "DRONE"
 ATT.Icon = Material("entities/gekolt_css_ammo/drone.png", "mips smooth")
 ATT.Description = [[more shots.]]
 ATT.SortOrder = 20
@@ -70,6 +70,7 @@ ATT.RicochetChanceOverride = 1
 //ATT.DamageMinOverride = 70
 
 ATT.NumOverride = 1
+//ATT.Num_Priority = 1000 -- if it works  just to make sure
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_slug")
 
@@ -80,17 +81,16 @@ ATT.PrintName = "Piercing Flechettes"
 ATT.CompactName = "FLECHT"
 ATT.Icon = Material("entities/gekolt_css_ammo/flecht.png", "mips smooth")
 ATT.Description = [[pointy.]]
-ATT.SortOrder = 12
+ATT.SortOrder = 4
 
 ATT.Category = {"css_ammo_sg"}
 
-ATT.SpreadMult = 0.25
+ATT.SpreadMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 2
 ATT.PenetrationMult = 3
 ATT.ArmorPiercingAdd = 1
 
-ATT.NumMult = 1.5
-//ATT.NumOverride = 4
+ATT.NumOverride = 4
 
 ATT.DamageMaxMult = 0.75
 ATT.RangeMaxMult = 1.3
@@ -104,8 +104,7 @@ ATT = {}
 ATT.PrintName = [[FRAG-12 High Explosive]]
 ATT.CompactName = "EXPLOSIVE"
 ATT.Icon = Material("entities/gekolt_css_ammo/exp.png", "mips smooth")
-ATT.Description = [[A load containing an explosive compound, dealing damage in a small radius.
-Effectiveness is limited by the small caliber size.]]
+ATT.Description = [[bombe.]]
 ATT.SortOrder = 1.5
 
 ATT.Category = {"css_ammo_sg"}
@@ -121,7 +120,7 @@ ATT.DamageMaxOverride = 35
 ATT.DamageMinOverride = 10
 
 ATT.ExplosionDamage = 72
-ATT.ExplosionRadius = 128*1.5
+ATT.ExplosionRadius = 64*3
 ATT.ExplosionEffect = "Explosion"
 ATT.ImpactDecal = "FadingScorch"
 
@@ -133,8 +132,8 @@ ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_frag")
 -------------------------------------------------------------------------------
 ATT = {}
 
-ATT.PrintName = "Dragon's Breath Inflamma"
-ATT.CompactName = "Dragon"
+ATT.PrintName = "Inflamma Dragon's Breath"
+ATT.CompactName = "FLAME"
 ATT.Icon = Material("entities/gekolt_css_ammo/dragon.png", "mips smooth")
 ATT.Description = [[la fleur du cul]]
 ATT.SortOrder = 4

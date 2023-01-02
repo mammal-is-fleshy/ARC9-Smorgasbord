@@ -14,7 +14,7 @@ $bodygroup "kit"
 	studio "Garand_M14.smd"
 	studio "Garand_Slam.smd"
 	studio "Garand_Mini.smd"
-	studio "Garand_Romania.smd"
+	studio "Garand_Romania_Mauser.smd"
 	blank
 	studio "Garand_Vanguard.smd"	
 }
@@ -69,6 +69,15 @@ $sequence "idle_emp" {
 
 $sequence "fire" {
 	"anims\fire.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
+$sequence "fire_lever" {
+	"anims\fire_lever.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
 	fadein 0.02

@@ -8,6 +8,17 @@ ATT.CompactName = [[SG]]
 ATT.Description = [[Shotguno
 ]]
 
+ATT.Attachments = {
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",		
+        Category = {"css_ammo_sg"},
+        Pos = Vector(0,3,0),
+        Ang = Angle(0, 0, 0),
+    },		
+}
+
+
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_ammo"
 ATT.ActivateElements = {"a_12g"}
@@ -263,7 +274,7 @@ ATT.Attachments = {
         PrintName = "Ammo",
         DefaultName = "12 Gauge",
 		
-        Category = "fas2_m79_ammo2", 
+        Category = {"fas2_m79_ammo2", "css_ammo_sg"}, 
         Bone = "W_Main",
         Pos = Vector(0, 0, 4),
         Ang = Angle(0, 0, 0),		
@@ -363,11 +374,11 @@ ATT.Attachments = {
         PrintName = "Ammo",
         DefaultName = "12 Gauge",
 		
-        Category = "fas2_m79_ammo2", 
+        Category = {"fas2_m79_ammo2", "css_ammo_sg"}, 
         Bone = "W_Main",
         Pos = Vector(0, 0, 4),
         Ang = Angle(0, 0, 0),		
-    },	
+    },		
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_f4")

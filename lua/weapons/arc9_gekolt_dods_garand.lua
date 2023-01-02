@@ -615,6 +615,28 @@ SWEP.Animations = {
     ["fire_empty_sks"] = {
         Source = "fire_emp",	
     },	
+    ["fire_sks"] = {
+        Source = "fire_lever",	
+		IKTimeLine = {	
+			{ t = 0, lhik = 1, rhik = 1, },{ t = 0.3, lhik = 1, rhik = 1, },{ t = 0.4, lhik = 0, rhik = 1, },
+			{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	
+		},	
+        EventTable = {			
+	        {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 20 / 40},	
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 30 / 40},	
+		},	
+    },	 
+	["fire_iron_sks"] = {
+        Source = "fire_lever",	
+		IKTimeLine = {	
+			{ t = 0, lhik = 1, rhik = 1, },{ t = 0.3, lhik = 1, rhik = 1, },{ t = 0.4, lhik = 0, rhik = 1, },
+			{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	
+		},	
+        EventTable = {			
+	        {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 20 / 40},	
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 30 / 40},	
+		},	
+    },	
     ["fire_iron_empty_sks"] = {
         Source = "fire_iron_emp",	
     },

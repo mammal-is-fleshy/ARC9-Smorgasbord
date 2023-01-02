@@ -653,6 +653,16 @@ ATT.Firemodes = {
     }
 }
 
+ATT.Attachments = {
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",		
+        Category = {"css_ammo_sg"},
+        Pos = Vector(0,3,-7),
+        Ang = Angle(0, 0, 0),
+    },		
+}
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_pump"
 end
@@ -719,6 +729,16 @@ ATT.Sights = {
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_sg"
 end
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",		
+        Category = {"css_ammo_sg"},
+        Pos = Vector(0,3,-6),
+        Ang = Angle(0, 0, 0),
+    },		
+}
 
 ATT.NumOverride = 8
 ATT.SpreadAdd = 0.025

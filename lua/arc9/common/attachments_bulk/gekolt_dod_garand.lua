@@ -169,6 +169,16 @@ ATT.Firemodes = {
     }
 }
 
+ATT.Attachments = {
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",		
+        Category = {"css_ammo_sg"},
+        Pos = Vector(0,2,-3),
+        Ang = Angle(0, 0, 0),
+    },		
+}
+
 ATT.ClipSizeOverride = 7
 
 ATT.FreeAimRadiusAdd = 5
@@ -201,7 +211,7 @@ ATT = {}
 ATT.PrintName = "Charognard"
 ATT.CompactName = "SCAV"
 ATT.Icon = Material("entities/gekolt_dod_garand_romania.png", "mips smooth")
-ATT.Description = [[Coversion to a higher calibre with a fixed magazine, stripper load only]]
+ATT.Description = [[Coversion to a lever action high calibre with a fixed magazine, stripper load only]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -211,7 +221,7 @@ ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"
 ATT.ActivateElements = {"garand_sks", "nogrip", "ubgl_maghold"}
 
 ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 250/300
+ATT.RPMMult = 60/300
 ATT.Firemodes = {
     {
         Mode = 1,	

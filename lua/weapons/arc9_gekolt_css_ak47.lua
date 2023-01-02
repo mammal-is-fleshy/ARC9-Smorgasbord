@@ -118,7 +118,7 @@ SWEP.VisualRecoilRoll = 0.2 -- Roll tilt for visual recoil.
 
 SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
 
-SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun.
+SWEP.VisualRecoilPunch = 0.1 -- How far back visual recoil moves the gun.
 
 SWEP.VisualRecoilMult = 1
 
