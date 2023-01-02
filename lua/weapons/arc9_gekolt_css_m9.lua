@@ -282,6 +282,11 @@ SWEP.AttachmentElements = {
 
     ["g_1"] = { Bodygroups = {{6, 1}}, },
     ["s_1"] = { Bodygroups = {{5, 1}}, },	
+
+    ["akimbose"] = { 
+		SprintPosOverride = Vector(0, 2, -3),
+		SprintAngOverride = Angle(0, 18, 0),
+	},	
 }
 
 SWEP.Attachments = {

@@ -8,7 +8,7 @@ ATT.Cons = {}
 ATT.SortOrder = 2
 
 ATT.Category = {"css_akimbo"} -- can be "string" or {"list", "of", "strings"}
-
+ATT.ActivateElements = {"akimbose"}
 
 ATT.Hook_Think = function(wep)
 
