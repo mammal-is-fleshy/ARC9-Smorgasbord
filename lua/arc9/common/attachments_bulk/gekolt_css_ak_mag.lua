@@ -119,6 +119,10 @@ ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_919"}
 
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_9mm"
+end
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag6")
 
 

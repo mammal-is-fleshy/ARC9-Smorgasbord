@@ -136,6 +136,15 @@ $sequence "dry" {
 	fps 40
 }
 
+$sequence "dry_9mm" {
+	"anims\dry_9mm.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "wet" {
 	"anims\wet.smd"
 	activity "ACT_VM_RELOAD" 1		
@@ -162,8 +171,18 @@ $sequence "wet25" {
 	snap	
 	fps 40
 }
+
 $sequence "wet_water" {
 	"anims\wet_water.smd"
+	activity "ACT_VM_RELOAD" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_9mm" {
+	"anims\wet_9mm.smd"
 	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2
