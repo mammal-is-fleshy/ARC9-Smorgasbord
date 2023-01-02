@@ -277,6 +277,45 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 18 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
         },				
+    }, 
+	["reload_54"] = {
+        Source = "wet54",
+		FireASAP = true,
+		MinProgress = 0.83,
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
+        },				
+    },
+	["reload_25"] = {
+        Source = "wet25",
+		FireASAP = true,
+		MinProgress = 0.83,
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
+        },				
+    },
+	["reload_water"] = {
+        Source = "wet_water",
+		FireASAP = true,
+		MinProgress = 0.83,
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
+        },				
     },
     ["reload_empty"] = {
         Source = "dry",

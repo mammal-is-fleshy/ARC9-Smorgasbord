@@ -9,6 +9,10 @@ ATT.Description = [[
     
 ]]
 
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_54"
+end
+
 ATT.SortOrder = 1
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_545"}
@@ -26,6 +30,10 @@ ATT.CompactName = [[308]]
 ATT.Description = [[
     
 ]]
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_25"
+end
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
@@ -64,6 +72,10 @@ ATT.CompactName = [[566]]
 ATT.Description = [[
     Walter
 ]]
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_water"
+end
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
