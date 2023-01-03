@@ -306,6 +306,18 @@ ATT.SortOrder = 3
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rail"}
 
+ATT.Sights = {
+    {
+        Pos = Vector(2.15, 0, 19),
+        Ang = Angle(90, 0, -90),
+        Reticle = nil,
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg3")
 
 
@@ -323,6 +335,18 @@ ATT.Description = [[
 ATT.SortOrder = 3
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_u"}
+
+ATT.Sights = {
+    {
+        Pos = Vector(2.05, 0, 19),
+        Ang = Angle(90, 0, -90),
+        Reticle = nil,
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg4")
 
@@ -342,6 +366,18 @@ ATT.SortOrder = 3
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_hunt"}
 
+ATT.Sights = {
+    {
+        Pos = Vector(2.2, 0, 19),
+        Ang = Angle(90.5, 0, -90),
+        Reticle = nil,
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg6")
 
 
@@ -359,6 +395,18 @@ ATT.Description = [[
 ATT.SortOrder = 3
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_94"}
+
+ATT.Sights = {
+    {
+        Pos = Vector(1.6, 0, 21),
+        Ang = Angle(89.75, 0, -90),
+        Reticle = nil,
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg7")
 

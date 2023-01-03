@@ -77,9 +77,22 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_water"
 end
 
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 10, -5.2),
+        Ang = Angle(0, 0, 0),
+        Reticle = nil,
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
-ATT.ActivateElements = {"u_566", "noguard"}
+ATT.ActivateElements = {"u_566", "noguard", "nofg"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag4")
 
@@ -140,6 +153,6 @@ ATT.Description = [[
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
-ATT.ActivateElements = {"u_919x"}
+ATT.ActivateElements = {"u_919x", "nofg"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag7")

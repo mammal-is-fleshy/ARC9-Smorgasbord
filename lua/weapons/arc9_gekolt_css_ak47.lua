@@ -193,7 +193,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.25, 0, 0.7),
+    Pos = Vector(-2.6, 0, 0.7),
     Ang = Angle(0,0,-5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
@@ -291,6 +291,7 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
         },				
     },
+------------------ 25 ----------------------------------	
 	["reload_25"] = {
         Source = "wet25",
 		FireASAP = true,
@@ -304,6 +305,23 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
         },				
     },
+    ["reload_empty_25"] = {
+        Source = "dry_25",
+		FireASAP = true,
+		MinProgress = 0.9,		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
+		{ t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },			
+		},	
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 87 / 40},	
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 93 / 40},			
+        },			
+    },	
+------------------ 25 ----------------------------------	
 	["reload_water"] = {
         Source = "wet_water",
 		FireASAP = true,
@@ -347,7 +365,7 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
         },				
     },
-    ["reload_9mm_empty"] = {
+    ["reload_empty_9mm"] = {
         Source = "dry_9mm",
 		FireASAP = true,
 		MinProgress = 0.9,		
@@ -404,7 +422,7 @@ SWEP.AttachmentElements = {
     ["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },},	
     ["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },},	
     ["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },},		
-    ["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },},		
+    ["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} }, 		AttPosMods = { [6] = { Pos = Vector(0, -2.35, 6), } }		},		 
 
     ["g_poly"] = { Bodygroups = { {6, 1} },},		
     ["g_ske"] = { Bodygroups = { {6, 2} },},	
@@ -422,6 +440,15 @@ SWEP.AttachmentElements = {
     ["rail_def"] = { Bodygroups = { {5, 3} },},	
 }
 
+SWEP.Hook_ModifyBodygroups = function(wep, data) 
+    local model = data.model
+    if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(5,0) end
+	if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(1,0) end
+    if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(5,2) end 
+	if wep:HasElement("rail_def") and wep:HasElement("hg_94") then model:SetBodygroup(5,2) end	
+	if wep:HasElement("rail_def") and wep:HasElement("u_566") then model:SetBodygroup(5,2) end
+end
+
 SWEP.Attachments = {
     {
         PrintName = "Receiver",
@@ -430,7 +457,7 @@ SWEP.Attachments = {
         Category = "css_ak_up", 
         Bone = "W_Main",
         Pos = Vector(0, 2, 7.5),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(90, 0, -90),		
     },	
 
     {
@@ -461,6 +488,7 @@ SWEP.Attachments = {
         DefaultName = "Standard Grip",
 
         DefaultIcon = Material("arc9/def_att_icons/grip_ar.png"),	
+		ExcludeElements = {"nogrip"},		
         Category = "css_ak_g", 
         Bone = "W_Main",
         Pos = Vector(0, 2.5, 0.5),
@@ -472,10 +500,10 @@ SWEP.Attachments = {
         DefaultName = "None",
 
         DefaultIcon = Material("arc9/def_att_icons/grip.png"),	
-		ExcludeElements = {"nogrip"},
+		ExcludeElements = {"nofg"},
         Category = {"grip_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 1.6, 12),
+        Pos = Vector(0, 1.6, 15	),
         Ang = Angle(90, 0, -90),			
     },
 	
@@ -485,7 +513,6 @@ SWEP.Attachments = {
 		InstalledElements = {"rail_def"}, 
 
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
-		ExcludeElements = {"fg_saw"},
         Category = {"optic_css"}, 
         Bone = "W_Main",
         Pos = Vector(0, -2.35, 3),
@@ -501,7 +528,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"pre_muzzed"},
         Category = {"muzzle_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, -0.25, 25),
+        Pos = Vector(0, 0.15, 27.5),
         Ang = Angle(90, 0, -90),		
     },	
 

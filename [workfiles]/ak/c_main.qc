@@ -136,6 +136,15 @@ $sequence "dry" {
 	fps 40
 }
 
+$sequence "dry_25" {
+	"anims\dry_25.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "dry_9mm" {
 	"anims\dry_9mm.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
