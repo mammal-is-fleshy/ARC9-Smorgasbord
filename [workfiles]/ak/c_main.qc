@@ -136,6 +136,15 @@ $sequence "dry" {
 	fps 40
 }
 
+$sequence "dry_bizon" {
+	"anims\dry_bizon.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "dry_25" {
 	"anims\dry_25.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
@@ -156,6 +165,15 @@ $sequence "dry_9mm" {
 
 $sequence "wet" {
 	"anims\wet.smd"
+	activity "ACT_VM_RELOAD" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_bizon" {
+	"anims\wet_bizon.smd"
 	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2

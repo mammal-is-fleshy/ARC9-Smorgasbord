@@ -427,3 +427,21 @@ ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_bizon"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg8")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[INSERT NAME Handguard]]
+ATT.CompactName = [[RPK]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+]]
+
+ATT.SortOrder = 3
+ATT.Category = "css_ak_handguard"
+ATT.ActivateElements = {"hg_rpk"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg9")

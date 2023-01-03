@@ -321,7 +321,37 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 93 / 40},			
         },			
     },	
------------------- 25 ----------------------------------	
+------------------ bizon --------------------------------	
+	["reload_bizon"] = {
+        Source = "wet_bizon",
+		FireASAP = true,
+		MinProgress = 0.83,
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
+        },				
+    },
+    ["reload_empty_bizon"] = {
+        Source = "dry_bizon",
+		FireASAP = true,
+		MinProgress = 0.9,		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },	
+		{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },			
+		},	
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 53 / 40},	
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 75 / 40},	
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 80 / 40},			
+        },			
+    },	
+------------------ water --------------------------------
 	["reload_water"] = {
         Source = "wet_water",
 		FireASAP = true,
@@ -406,38 +436,40 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {		
-    ["s_fold1"] = { Bodygroups = { {4, 3} },},	
-    ["s_fold2"] = { Bodygroups = { {4, 4} },},	
-    ["s_fold3"] = { Bodygroups = { {4, 5} },},
+	["s_fold1"] = { Bodygroups = { {4, 3} },},	
+	["s_fold2"] = { Bodygroups = { {4, 4} },},	
+	["s_fold3"] = { Bodygroups = { {4, 5} },},
 	["s_slide"] = { Bodygroups = { {4, 10} },},
-    ["s_heavy"] = { Bodygroups = { {4, 6} },},
-    ["s_rpk"] = { Bodygroups = { {4, 9} },},	
-    ["s_poly1"] = { Bodygroups = { {4, 7} },},
-    ["s_poly2"] = { Bodygroups = { {4, 8} },},		
-    ["s_adaptor"] = { Bodygroups = { {4, 11} },},
+	["s_heavy"] = { Bodygroups = { {4, 6} },},
+	["s_rpk"] = { Bodygroups = { {4, 9} },},	
+	["s_poly1"] = { Bodygroups = { {4, 7} },},
+	["s_poly2"] = { Bodygroups = { {4, 8} },},		
+	["s_adaptor"] = { Bodygroups = { {4, 11} },},
 
-    ["hg_poly"] = { Bodygroups = { {3, 4} },},	
-    ["hg_bizon"] = { Bodygroups = { {3, 9} },},		
-    ["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} },},
-    ["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },},	
-    ["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },},	
-    ["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },},		
-    ["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} }, 		AttPosMods = { [6] = { Pos = Vector(0, -2.35, 6), } }		},		 
+	["hg_poly"] = { Bodygroups = { {3, 4} },},	
+	["hg_bizon"] = { Bodygroups = { {3, 9} },},		
+	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} },},
+	["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },},
+	["hg_rpk"] = { Bodygroups = { {3, 5} },},	
+	["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },},	
+	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },},		
+	["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },	AttPosMods = { [6] = { Pos = Vector(0, -2.35, 6), } }		},		 
 
-    ["g_poly"] = { Bodygroups = { {6, 1} },},		
-    ["g_ske"] = { Bodygroups = { {6, 2} },},	
-    ["g_rif"] = { Bodygroups = { {4, 1},{6, 3} },},		
-    ["g_rifp"] = { Bodygroups = { {4, 2},{6, 3} },},	
+	["g_poly"] = { Bodygroups = { {6, 1} },},		
+	["g_ske"] = { Bodygroups = { {6, 2} },},	
+	["g_rif"] = { Bodygroups = { {4, 1},{6, 3} },},		
+	["g_rifp"] = { Bodygroups = { {4, 2},{6, 3} },},	
 
-    ["u_919"] = { Bodygroups = { {0, 8} },},		
-    ["u_919x"] = { Bodygroups = { {0, 6} },},	
-    ["u_308"] = { Bodygroups = { {0, 3} },},	
-    ["u_545"] = { Bodygroups = { {0, 1} },},	
-    ["u_556"] = { Bodygroups = { {0, 2} },},
-    ["u_566"] = { Bodygroups = { {0, 7}, {1, 3}, {2, 2}, {3, 10} },},	
-    ["u_disk"] = { Bodygroups = { {0, 5}, {2, 2},{3, 7}, {5, 0} },},
-	
-    ["rail_def"] = { Bodygroups = { {5, 3} },},	
+	["u_919"] = { Bodygroups = { {0, 8} },},		
+	["u_919x"] = { Bodygroups = { {0, 6} },},	
+	["u_308"] = { Bodygroups = { {0, 3} },},	
+	["u_545"] = { Bodygroups = { {0, 1} },},	
+	["u_556"] = { Bodygroups = { {0, 2} },}, 
+	["u_drum"] = { Bodygroups = { {0, 4} },},
+	["u_566"] = { Bodygroups = { {0, 7}, {1, 3}, {2, 2}, {3, 10} },},	
+	["u_disk"] = { Bodygroups = { {0, 5}, {2, 2},{3, 7}, {5, 0} },},
+
+	["rail_def"] = { Bodygroups = { {5, 3} },},	
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data) 

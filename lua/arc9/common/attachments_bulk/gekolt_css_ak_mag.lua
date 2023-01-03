@@ -145,7 +145,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag6")
 ATT = {}
 
 ATT.PrintName = [[919 Helica]]
-ATT.CompactName = [[919X]]
+ATT.CompactName = [[Helica]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
 
@@ -155,4 +155,35 @@ ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_919x", "nofg"}
 
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_bizon"
+end
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-13, -2, 3)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.Model = "models/weapons/geckololt_css/c_garand.mdl"
+ATT.ModelBodygroups = "15000"
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag7")
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[762 Drum]]
+ATT.CompactName = [[Drum]]
+// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Description = [[
+
+]]
+
+ATT.SortOrder = 2
+ATT.Category = "css_ak_up"
+ATT.ActivateElements = {"u_drum"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag8")

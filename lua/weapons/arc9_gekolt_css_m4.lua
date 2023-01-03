@@ -1189,7 +1189,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),		
     },
 
-    {   -- permanent ubgl, unaffected by the changes of the above attachment
+    {   -- permanent ubgl, affected separately from the changes of the above attachment
         PrintName = "",
         DefaultName = "",
         Hidden = true,
