@@ -127,7 +127,7 @@ ATT = {}
 
 ATT.PrintName = "Curved Grip"
 ATT.CompactName = "Curved"
-ATT.Icon = Material("entities/gekolt_css_m4_g_wood.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m4_g_tw.png", "mips smooth")
 ATT.Description = [[Revolver stype grip instead of the usual pistol one]]
 
 ATT.Pros = {}
@@ -240,7 +240,7 @@ ATT = {}
 
 ATT.PrintName = "Hunting Grip"
 ATT.CompactName = "ADAR"
-ATT.Icon = Material("entities/gekolt_css_m4_g_wood.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m4_g_adar.png", "mips smooth")
 ATT.Description = [[WOOD]]
 
 ATT.Pros = {}
@@ -434,7 +434,7 @@ ATT.PrintName = "Full Stock B"
 ATT.CompactName = "FB"
 ATT.Description = [[Why wasn't the original one hugging the frame?]]
 
-ATT.Icon = Material("entities/gekolt_css_m4_s_wire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m4_s_t91.png", "mips smooth")
 
 ATT.SortOrder = 5.1
 ATT.Category = "css_m4_stock"
@@ -514,7 +514,7 @@ ATT.PrintName = "Sliding Stock B"
 ATT.CompactName = "SB"
 ATT.Description = [[Reverese telescopic stock]]
 
-ATT.Icon = Material("entities/gekolt_css_m4_s_wire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m4_s_x79.png", "mips smooth")
 
 ATT.SortOrder = 1
 ATT.Category = "css_m4_stock"
