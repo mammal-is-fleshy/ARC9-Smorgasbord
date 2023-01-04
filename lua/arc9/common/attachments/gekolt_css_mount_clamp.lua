@@ -44,7 +44,7 @@ ATT.Attachments = {
 
     {
         PrintName = "MOUNT Bottom",
-        Category = {"tac_css"},
+        Category = {"tac_css", "rail_bottom"},
         Pos = Vector(-1,0, 1.6),
         Ang = Angle(0, 0, 180),
     },		

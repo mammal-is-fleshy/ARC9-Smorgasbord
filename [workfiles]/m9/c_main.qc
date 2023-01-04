@@ -259,14 +259,13 @@ $sequence "wet_ex" {
 }
 
 $sequence "dry_ex" {
-	"anims\dry_ex.smd"
+	"anims\dry_ex2.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2
 	snap	
 	fps 40
 }
-
 
 $sequence "draw" {
 	"anims\draw.smd"

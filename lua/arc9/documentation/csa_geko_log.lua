@@ -1,9 +1,9 @@
-Contre Srike Sorse et Nuit d'Honneur in 2022 Gmod Tacticle Reelesm :tm: 
+Contre Srike Sorse et Nuit d'Honneur in 2022 Gmod Tactile Reelesm :tm: 
 
 [ Created by Geckololt (all wrongs reserved, dont care didnt ask) ]
 
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-CturiX - Mauser Sound
+CturiX - Mauser Sound -- and other sounds once hes done
 
 Counter Strike Source: (horrid)Models, Textures [AWP/M4/AK/M9]
 Day of Defeat Source: (horrid)Models [Garand/Mauser]
@@ -18,7 +18,7 @@ Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
 Counter Strike Online 2 - Some M4 Parts (  The Taiwanese looking stuff  )
 Fesiug??? - Nade ent
 
-https://gamebanana.com/mods/173290 - Garand??? (genuinely forgo :skull::skull::skull::skull:)
+https://gamebanana.com/mods/173290 - Garand??? --(genuinely forgo :skull::skull::skull::skull:)
 https://gamebanana.com/mods/173805 - Mauser
 
 Tactical Intervention - Stuff (Holo/Acog2/Aimpoint/Silencer2)
@@ -68,17 +68,21 @@ FAL??????????? [Only the canadian variants]
 - single shot .50cal
 
 [Garand]
-- Manual Bolting -- or level action
 - 22lr/9mm Ruger
 
+[AK]
+- Drum (probably 545)
+- Bolt action
+
 [Uni]
-- Back up pistol/smg (ubgl)  -- mwii isnt real
-- Grenade Rifle muzzle mount
+- Back up pistol/smg (ubgl)  -- mwii isnt real -- so darsu said not possible :((
+- Grenade Rifle muzzle mount -- not possible yet, ik overides stuff
 - Bayonet
-- Equippable Suppressor
-- Flip up/hybird/magnifying sight
-- Bullpup Grenade Chasis mount
-- Shield
+- Equippable Suppressor -- same as grenade rifle
+- Flip up/hybird/magnifying sight -- still a wip
+- Bullpup Grenade Chasis mount -- gustavo fring
+- Shield -- unless akimbo is a thing, nope
+- Actual bipod animation with stock holding in deploy -- not possible yet, rhik overides stuff
 
 
 
