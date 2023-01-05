@@ -445,3 +445,6 @@ ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rpk"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg9")
+
+
+----------------------------------------------------------------------------------
