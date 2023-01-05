@@ -3,6 +3,7 @@ Contre Srike Sorse et Nuit d'Honneur in 2022 Gmod Tactile Reelesm :tm:
 [ Created by Geckololt (all wrongs reserved, dont care didnt ask) ]
 
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Cylo - Annoying little burger -- i love this man as if he's my little cabbage :))
 CturiX - Mauser Sound -- and other sounds once hes done
 
 Counter Strike Source: (horrid)Models, Textures [AWP/M4/AK/M9]
@@ -10,6 +11,7 @@ Day of Defeat Source: (horrid)Models [Garand/Mauser]
 FAS1: Claymore
 FAS2: M79/Sterling
 Brother In Arms: Sten
+Medal of Hounor Airborne: M18
 
 
 Google Images - ref
@@ -42,6 +44,8 @@ https://gamebanana.com/sounds/21639
 https://gamebanana.com/sounds/57239
 
 
+The entire Kingdom of Sweden - being so fvcking zased
+
 
 -------------
 [checklist]
@@ -58,6 +62,7 @@ Mac10?? -- or mp9 --
 M3 (handguard:4 | receiver:3 | stock:4) -- probably not --
 Makarov?? [NOPE NOPE NOPE]
 FAL??????????? [Only the canadian variants]
+M18 (receiver:2)
 
 
 -------------
@@ -82,7 +87,8 @@ FAL??????????? [Only the canadian variants]
 - Flip up/hybird/magnifying sight -- still a wip
 - Bullpup Grenade Chasis mount -- gustavo fring
 - Shield -- unless akimbo is a thing, nope
-- Actual bipod animation with stock holding in deploy -- not possible yet, rhik overides stuff
+- Actual bipod animation with stock holding in deploy -- not possible for the latter yet, ik overides stuff
+- Muzzle department is lacking
 
 
 
@@ -104,12 +110,14 @@ M3: Model Done [SCRAPPED??]
 MP5/G3: Model Fifth [SCRAPPED??]
 FAL: Model Quarter [SCRAPPED/ Rework?????]
 Makarov: Model Half [SCRAPPED]
+M18: Done?
 
 note myself: 
 -use elements instead of attachment check
 -you cant use $attachment as a spare point For offhand stuff       use $bonemerge instead
 -use a different path for material FUCK YOU CSGO  -- nope doesn't work
 -maybe Write the calibre vague to keep the larping hardcore tactile realischism wankers away
+-you suck at ubgl
 
 
 
@@ -162,6 +170,8 @@ it was clear that my lazy arse no matter how much Time you grant me will refuse 
 from there Then on only the optics, foregrips and muzzles will be Modular
 
 
+
+
 -- where the inspirations from /naming convension --
 M4: [English]
 9mm - Taiwanese Rail thing for ironsight
@@ -186,7 +196,7 @@ Burst - Robocock
 Garand: [French(lol)]
 M14 - Duh
 Mini 14 - Duh
-Scav - Part SKS, part mauser selbstlader/fedorov[originally going to be lever action but lazy], part romanian ak, part one of those stripper clip mini 14
+Scav - Part SKS, part mauser selbstlader/fedorov, part romanian ak, part one of those stripper clip mini 14
 Slam - fortress 2
 
 AWP: [English]
@@ -207,6 +217,16 @@ Sten: [English]
 MK 1,3,4,5
 MK2 but those "pistol" grip
 sterling mk4
+
+M18: [Swedish] --lol
+rpg convert -- obviously
+xm70 -- this is based on a real thing, back in world war cold, the swedes wanted to arm their infantry with an anti-tank 'auxiliary' option, this was back during the early coldwar
+-- the concept of oicw or multi-purpose weapons only takes form around ~90s so this is one of the forerunner, even then those are made to counter infantry, this was a panzerjaeger
+-- 762 cuz the m4 already exist, and currently lacking in battle rifle
+-- based on the second alteration, which i believe is a modern concept but the 'prototype' was like 50s
+
+
+
 
 
 
