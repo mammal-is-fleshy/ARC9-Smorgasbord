@@ -7,7 +7,7 @@ ATT = {}
 
 ATT.PrintName = [[Auxiliary Rifle]]
 ATT.CompactName = [[XM70]]
-ATT.Icon = Material("entities/gekolt_moah_xm70.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_moah_xm72.png", "mips smooth")
 ATT.Description = [[Least based Swedish gun
 A not G3 underbarrel weapon for your anti-tank rifle
 ]]
@@ -181,7 +181,7 @@ ATT = {}
 
 ATT.PrintName = [[Rocket Launcher Conversion]]
 ATT.CompactName = [[RPG]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_moah_rpg2.png", "mips smooth")
 ATT.Description = [[Fuck it we ball
 no animala yet
 ]]

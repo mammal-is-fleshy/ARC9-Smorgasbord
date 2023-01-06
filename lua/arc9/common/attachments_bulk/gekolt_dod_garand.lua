@@ -7,7 +7,7 @@ ATT = {}
 
 ATT.PrintName = "Tranchant"
 ATT.CompactName = "Vanguard"
-// ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
 ATT.Description = [[Extra short experimental module for paratrooper with extra funky definitely non-foldable stock]]
 
 ATT.Pros = {}
