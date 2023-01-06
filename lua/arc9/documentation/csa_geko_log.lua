@@ -101,16 +101,18 @@ AWP: Done
 M4: Done
 M9: Done
 Garand: Done
-Mauser: Done?
-AK: Model Done / Scrapped???????
+Mauser: Done
+AK: WIP
 M79: Done
 Sten: Model Done?
+M18: Done?
+
 M30: Scrapped???????
 M3: Model Done [SCRAPPED??]
 MP5/G3: Model Fifth [SCRAPPED??]
 FAL: Model Quarter [SCRAPPED/ Rework?????]
 Makarov: Model Half [SCRAPPED]
-M18: Done?
+
 
 note myself: 
 -use elements instead of attachment check
@@ -175,7 +177,7 @@ from there Then on only the optics, foregrips and muzzles will be Modular
 -- where the inspirations from /naming convension --
 M4: [English]
 9mm - Taiwanese Rail thing for ironsight
-ak - angled Mk11 magwell
+ak - angled Mk11 magwell, which i believe for the mutant, they just have no magwell
 57 - just a p90 lol
 sniper - yup thats a cs5
 shotgun(drum) - part usas, part ar10
@@ -185,11 +187,12 @@ crossbow - duh
 shotgun(pump) - just a mass26
 suppressed - honey badger
 
-M9: [English]
+M9: [English] -- maybe i should named them in italian or like ehh roman latin
 Suppressed - part PB9, part makarov
 Welrod - duh
 P38 - duh
 Carbine - one of those flux frame for the p350(?) and a snail mag
+Artillery - Same as above hence the snail mag
 Auto - its just a burst frame with shorter guard
 Burst - Robocock
 
@@ -210,7 +213,7 @@ brazil [burst cuz reasons]
 what Do you mean beta mag And carbine frame doesnt exist In ww2
 
 M79: [English]
-Alofs is basically a magazine tube for single barrel self ejecting shotguns
+Alofs is basically a magazine tube for single barrel self ejecting shotguns  -- STOP SAYING HUNT SHOWDOWN I HAVE NEVER PLAYED IT
 MTS but break action
 
 Sten: [English]
@@ -218,12 +221,22 @@ MK 1,3,4,5
 MK2 but those "pistol" grip
 sterling mk4
 
-M18: [Swedish] --lol
+AK: [Russian? Maybe Hungarian for the lol]
+919: saiga
+556: trolled
+566: aps underwater dart gun
+disk: Tachanka units during the Russian Civil War in ehh 1921? or something either use DP27s as a prone mount or strapped them on a horse    driveby lmg shooting
+helica: bizon, the animala is defintely NOT mw22
+
+stalker: asval
+huntsman: ??? i saw something similar on tarkov once?? probably a saiga
+
+M18: [Swedish(lol)]
 rpg convert -- obviously
-xm70 -- this is based on a real thing, back in world war cold, the swedes wanted to arm their infantry with an anti-tank 'auxiliary' option, this was back during the early coldwar
+xm70 -- this is based on a real thing, back in world war cold, the swedes wanted to arm their infantry with an anti-tank 'auxiliary' option, this was back during the coldwar
 -- the concept of oicw or multi-purpose weapons only takes form around ~90s so this is one of the forerunner, even then those are made to counter infantry, this was a panzerjaeger
 -- 762 cuz the m4 already exist, and currently lacking in battle rifle
--- based on the second alteration, which i believe is a modern concept but the 'prototype' was like 50s
+-- based on the second alteration, which i believe is a modern concept but the 'prototype' was like 70s
 
 
 

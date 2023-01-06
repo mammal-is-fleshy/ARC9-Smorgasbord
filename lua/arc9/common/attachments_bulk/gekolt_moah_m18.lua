@@ -114,14 +114,14 @@ ATT.UBGLFiremodeName = "M18"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
 
-ATT.DamageTypeUBGL = DMG_BULLET + DMG_AIRBOAT
-ATT.DamageMaxUBGL = 400 -- Damage done at point blank range
-ATT.DamageMinUBGL = 820 -- Damage done at maximum range
+ATT.DamageTypeUBGL = DMG_BLAST + DMG_BULLET + DMG_AIRBOAT
+ATT.DamageMaxUBGL = 600 -- Damage done at point blank range
+ATT.DamageMinUBGL = 300 -- Damage done at maximum range
 
 ATT.DamageRandUBGL = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
 ATT.RangeMinUBGL = 300 -- How far bullets retain their maximum damage for.
-ATT.RangeMaxUBGL = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+ATT.RangeMaxUBGL = 9000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 ATT.AlwaysPhysBulletUBGL = true
 
