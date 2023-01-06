@@ -30,8 +30,10 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_ak47.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-7, 2, -7),
+    Pos = Vector(-1, 2, -7),
     Ang = Angle(-5, 0, 180),
+    TPIKPos = Vector(-8, 2, -7),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
