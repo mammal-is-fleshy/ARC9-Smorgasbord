@@ -30,8 +30,10 @@ SWEP.Slot = 2
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_mauser.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(2, 8, -5),
+    Pos = Vector(-4, 5, -5),
     Ang = Angle(-5, 0, 180),
+    TPIKPos = Vector(-14, 2, -6),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -220,15 +222,16 @@ SWEP.CustomizeNoRotate = false
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "ar2"
+SWEP.HoldType = "revolver"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "ar2"
+SWEP.HoldTypeSights = "revolver"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
-SWEP.AnimReload = ACT_HL2MP_IDLE_AR2
+SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC -- While in TPIK only -- Tip: if you dont want any additional anim put ACT_HL2MP_GESTURE_RELOAD_MAGIC here instead!
+SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_PISTOL -- Non TPIK
 SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
