@@ -7,7 +7,7 @@ ATT = {}
 
 ATT.PrintName = [[Auxiliary Rifle]]
 ATT.CompactName = [[XM70]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_moah_xm70.png", "mips smooth")
 ATT.Description = [[Least based Swedish gun
 A not G3 underbarrel weapon for your anti-tank rifle
 ]]
@@ -52,6 +52,7 @@ end
 
 ATT.MuzzleEffectQCA = 3
 ATT.CaseEffectQCA = 2
+ATT.PhysBulletMuzzleVelocity = 2900 * 12
 
 ATT.DamageType = DMG_BULLET
 ATT.DamageMax = 35 -- Damage done at point blank range
@@ -127,6 +128,7 @@ ATT.RangeMinUBGL = 300 -- How far bullets retain their maximum damage for.
 ATT.RangeMaxUBGL = 9000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 ATT.AlwaysPhysBulletUBGL = true
+ATT.PhysBulletMuzzleVelocityUBGL = 2225 * 8.5
 
 ATT.SpreadUBGL = 0.0025
 
