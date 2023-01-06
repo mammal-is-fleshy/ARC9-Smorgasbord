@@ -41,7 +41,7 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageType = DMG_BLAST + DMG_AIRBOAT
+SWEP.DamageType = DMG_BULLET + DMG_AIRBOAT
 SWEP.DamageMax = 400 -- Damage done at point blank range
 SWEP.DamageMin = 820 -- Damage done at maximum range
 
@@ -54,6 +54,7 @@ SWEP.Penetration = 8 -- Units of wood that can be penetrated by this gun.
 
 -------------------------- PHYS BULLET BALLISTICS
 
+SWEP.AlwaysPhysBullet = true
 SWEP.PhysBulletMuzzleVelocity = 2225 * 14
 
 -------------------------- MAGAZINE

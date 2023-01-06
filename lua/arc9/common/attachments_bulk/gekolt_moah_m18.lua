@@ -61,6 +61,8 @@ ATT.RangeMax = 11000 -- In Hammer units, how far bullets can travel before deali
 
 ATT.Penetration = 8 -- Units of wood that can be penetrated by this gun.
 
+ATT.AlwaysPhysBullet = false
+
 ATT.ChamberSize = 1 -- The amount of rounds this gun can chamber.
 ATT.ClipSize = 20 -- Self-explanatory.
 ATT.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
@@ -112,7 +114,7 @@ ATT.UBGLFiremodeName = "M18"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
 
-ATT.DamageTypeUBGL = DMG_BLAST + DMG_AIRBOAT
+ATT.DamageTypeUBGL = DMG_BULLET + DMG_AIRBOAT
 ATT.DamageMaxUBGL = 400 -- Damage done at point blank range
 ATT.DamageMinUBGL = 820 -- Damage done at maximum range
 
@@ -120,6 +122,8 @@ ATT.DamageRandUBGL = 0.1 -- Damage varies randomly per shot by this fraction. 0.
 
 ATT.RangeMinUBGL = 300 -- How far bullets retain their maximum damage for.
 ATT.RangeMaxUBGL = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+
+ATT.AlwaysPhysBulletUBGL = true
 
 ATT.SpreadUBGL = 0.0025
 
