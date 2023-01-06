@@ -82,6 +82,24 @@ $sequence "fire" {
 	fps 40
 }
 
+$sequence "fire_xm" {
+	"anims\fire_xm.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
+$sequence "fire_iron_xm" {
+	"anims\fire_iron_xm.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
 $sequence "wet_xm" {
 	"anims\wet_xm.smd"
 	activity "ACT_VM_RELOAD" 1
