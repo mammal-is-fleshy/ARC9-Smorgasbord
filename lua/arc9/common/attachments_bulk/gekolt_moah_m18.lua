@@ -50,6 +50,9 @@ end
 
 -- stat Normal --
 
+ATT.MuzzleEffectQCA = 3
+ATT.CaseEffectQCA = 2
+
 ATT.DamageType = DMG_BULLET
 ATT.DamageMax = 35 -- Damage done at point blank range
 ATT.DamageMin = 24 -- Damage done at maximum range
@@ -116,7 +119,7 @@ ATT.ShootVolumeUBGL = 110
 
 ATT.DamageTypeUBGL = DMG_BLAST + DMG_BULLET + DMG_AIRBOAT
 ATT.DamageMaxUBGL = 600 -- Damage done at point blank range
-ATT.DamageMinUBGL = 300 -- Damage done at maximum range
+ATT.DamageMinUBGL = 200 -- Damage done at maximum range
 
 ATT.DamageRandUBGL = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 
