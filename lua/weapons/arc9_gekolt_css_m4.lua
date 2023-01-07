@@ -1076,7 +1076,7 @@ end
 --- dont look at me i cant code nor logic
 
 SWEP.Attachments = {
-    {
+    {	--1
         PrintName = "Receiver",
         DefaultName = "Standard Receiver",
 
@@ -1086,7 +1086,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),		
     },
 
-    {
+    {	--2
         PrintName = "Handguard",
         DefaultName = "Standard Handguard",
 
@@ -1097,7 +1097,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),		
     },
 
-    {
+    {	--3
         PrintName = "Stock",
         DefaultName = "Standard Stock",
 		ExcludeElements = {"nostock"},
@@ -1109,7 +1109,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),		
     },
 
-    {
+    {	--4
         PrintName = "Grip",
         DefaultName = "Standard Grip",
 
@@ -1120,7 +1120,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),		
     },
 
-    {
+    {	--5
         PrintName = "Foregrip",
         DefaultName = "None",
 
@@ -1130,10 +1130,10 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 1.6, 12),
         Ang = Angle(90, 0, -90),	
-		MergeSlots = {6,11},	
+		MergeSlots = {6, 11},	
     },
 
-    {   -- permanent saw grip location, unaffected by the changes of the above attachment
+    {   --6 permanent saw grip location, unaffected by the changes of the above attachment
         PrintName = "",
         DefaultName = "",
         Hidden = true,
@@ -1145,7 +1145,7 @@ SWEP.Attachments = {
 		//MergeSlots = {11}			
     },
 
-    {
+    {	--7
         PrintName = "Optic",
         DefaultName = "None",
 		InstalledElements = {"no_irons", "no_optic", "optic_main"},  -- i forgot why i did this
@@ -1159,7 +1159,7 @@ SWEP.Attachments = {
     },
 	
 
-    {
+    {	--8
         PrintName = "Muzzle",
         DefaultName = "None",
 
@@ -1171,7 +1171,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),		
     },
 
-    {
+    {	--9
         PrintName = "Clamp",
         DefaultName = "None",
 
@@ -1182,7 +1182,8 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),		
     },
 
-    {
+    {	--10
+        Hidden = true,	
         PrintName = "Off-Hand",
         DefaultName = "None",
 		InstalledElements = {"akimbo"},		
@@ -1194,7 +1195,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),		
     },
 
-    {   -- permanent ubgl, affected separately from the changes of the above attachment
+    {   --11 permanent ubgl, affected separately from the changes of the above attachment
         PrintName = "",
         DefaultName = "",
         Hidden = true,
