@@ -293,6 +293,22 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
         },				
     },
+    ["reload_empty_54"] = {
+        Source = "dry_54",
+		FireASAP = true,
+		MinProgress = 0.9,		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
+		{ t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },			
+		},	
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 87 / 40},	
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 93 / 40},			
+        },			
+    },	
 ------------------ 25 ----------------------------------	
 	["reload_25"] = {
         Source = "wet25",

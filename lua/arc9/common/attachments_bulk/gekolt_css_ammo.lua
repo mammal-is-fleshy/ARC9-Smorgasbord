@@ -42,6 +42,7 @@ ATT.SpreadMult = 2
 
 ATT.DamageMaxMult = 1/3
 ATT.DamageMinMult = 1/3
+ATT.RicochetChanceMult = 0.5
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_drone")
 
@@ -85,6 +86,7 @@ ATT.SortOrder = 4
 
 ATT.Category = {"css_ammo_sg"}
 
+ATT.RicochetChanceOverride = 0
 ATT.SpreadMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 2
 ATT.PenetrationMult = 3
@@ -112,6 +114,7 @@ ATT.Category = {"css_ammo_sg"}
 ATT.NumOverride = 1
 ATT.SpreadMult = 0.3
 
+ATT.RicochetChanceOverride = 0
 ATT.AlwaysPhysBullet = true
 ATT.PhysBulletGravityMult = 3
 ATT.PhysBulletMuzzleVelocityMult = 0.75
@@ -184,6 +187,7 @@ ATT.AutoStats = true
 end]]
 
 ATT.PhysBulletImpactMult = false
+ATT.RicochetChanceOverride = 0
 
 ATT.DamageTypeOverride = DMG_BURN + DMG_BUCKSHOT
 
