@@ -105,14 +105,14 @@ ATT.PrintName = [[FRAG-12 High Explosive]]
 ATT.CompactName = "EXPLOSIVE"
 ATT.Icon = Material("entities/gekolt_css_ammo/exp.png", "mips smooth")
 ATT.Description = [[bombe.]]
-ATT.SortOrder = 1.5
+ATT.SortOrder = 1
 
 ATT.Category = {"css_ammo_sg"}
 
 ATT.NumOverride = 1
-
 ATT.SpreadMult = 0.3
 
+ATT.AlwaysPhysBullet = true
 ATT.PhysBulletGravityMult = 3
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 
@@ -124,8 +124,7 @@ ATT.ExplosionRadius = 64*3
 ATT.ExplosionEffect = "Explosion"
 ATT.ImpactDecal = "FadingScorch"
 
-ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
-ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
+ATT.DamageTypeOverride = DMG_BUCKSHOT + DMG_BLAST + DMG_AIRBOAT
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_frag")
 
@@ -186,7 +185,7 @@ end]]
 
 ATT.PhysBulletImpactMult = false
 
-ATT.DamageTypeMult = DMG_BURN + DMG_BUCKSHOT
+ATT.DamageTypeOverride = DMG_BURN + DMG_BUCKSHOT
 
 ATT.HullSizeMult = 2
 ATT.HullSize_PriorityMult = 100
@@ -199,4 +198,4 @@ ATT.PhysBulletMuzzleVelocityMult = 0.1
 ATT.PhysBulletGravityMult = 0.75
 ATT.PhysBulletDragMult = 3
 
-ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_frag")
+ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_flame")

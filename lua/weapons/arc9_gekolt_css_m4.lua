@@ -1126,23 +1126,23 @@ SWEP.Attachments = {
 
         DefaultIcon = Material("arc9/def_att_icons/grip.png"),	
 		ExcludeElements = {"nogrip"},
-        Category = {"grip_css"}, 
+        Category = {"grip_css", "css_m4_fg"}, 
         Bone = "W_Main",
         Pos = Vector(0, 1.6, 12),
         Ang = Angle(90, 0, -90),	
-		MergeSlots = {6, 11}		
+		MergeSlots = {6,11},	
     },
 
     {   -- permanent saw grip location, unaffected by the changes of the above attachment
         PrintName = "",
         DefaultName = "",
         Hidden = true,
-		ExcludeElements = {"nogrip", "no_optic"},
+		ExcludeElements = {"nogrip"},
         Category = {"css_m4_fg"}, 
         Bone = "W_Main",
         Pos = Vector(0, 1.5, 12),
         Ang = Angle(90, 0, -90),	
-		MergeSlots = {11}			
+		//MergeSlots = {11}			
     },
 
     {
