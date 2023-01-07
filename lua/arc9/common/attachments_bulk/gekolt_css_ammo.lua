@@ -67,6 +67,10 @@ ATT.RangeMaxMult = 2.25
 
 ATT.RicochetChanceOverride = 1
 
+-- this weird system of converting total damage back to single back to total is very not hog
+ATT.DamageMinMult = 6
+ATT.DamageMaxMult = 14
+
 //ATT.DamageMaxOverride = 180
 //ATT.DamageMinOverride = 70
 
@@ -90,13 +94,14 @@ ATT.RicochetChanceOverride = 0
 ATT.SpreadMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 2
 ATT.PenetrationMult = 3
-ATT.ArmorPiercingAdd = 1
+ATT.ArmorPiercingAdd = 2
 
 ATT.NumOverride = 4
 
-ATT.DamageMaxMult = 0.75
-ATT.RangeMaxMult = 1.3
-ATT.RangeMinMult = 1.3
+ATT.DamageMaxMult = 4
+ATT.DamageMinMult = 4
+ATT.RangeMaxMult = 1.5
+ATT.RangeMinMult = 1.5
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_sharp")
 
