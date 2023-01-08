@@ -265,6 +265,15 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire"},
     },
+    ["enter_ubgl"] = {
+        Source = "idle",
+        EventTable = { {s =  "arc9/firemode.wav" ,   t = 0 / 40}, },			
+    },  
+	["exit_ubgl"] = {
+        Source = "idle",
+        EventTable = { {s =  "arc9/firemode.wav" ,   t = 0 / 40}, },					
+    },
+	
     ["fire_xm"] = {
         Source = {"fire_xm"},
     },
@@ -374,7 +383,7 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {		
-	["kit_xm70"] = { Bodygroups = { {3, 1}, {4, 3}, {5, 1} },},
+	["kit_xm70"] = { Bodygroups = { {3, 1}, {4, 3}, {5, 1}, {6, 2} },},
 	["kit_rpg"] = { Bodygroups = { {0, 1}, {4, 1} },},
 	["rail_def"] = { Bodygroups = { {1, 2}, {2, 1} },},
 }

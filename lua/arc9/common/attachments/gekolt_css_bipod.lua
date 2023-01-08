@@ -15,9 +15,9 @@ ATT.ModelOffset = Vector(0, 0, 0.5)
 ATT.Bipod = true
 
 ATT.DrawFunc = function(self, model)
-	if self:GetBipod() then
-		model:SetBodygroup(0,1)
+	if self:GetUBGL() then
+		model:SetBodygroup(6,1)
 	else 
-		model:SetBodygroup(0,0)
+		model:SetBodygroup(6,2)
 	end
 end

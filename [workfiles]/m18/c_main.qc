@@ -46,6 +46,13 @@ $bodygroup "Grip"
 	blank
 }
 
+$bodygroup "XM_Indicator"
+{
+	blank
+	studio "XM_On.smd"
+	studio "XM_Off.smd"
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\gekolt_css_vmt\rif_m18\"
