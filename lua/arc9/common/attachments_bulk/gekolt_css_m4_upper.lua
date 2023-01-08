@@ -328,7 +328,7 @@ ATT.Firemodes = {
     {
 		PrintName = "Simutaneous",
         Mode = -1,
-		NumMult = 2,
+		NumOverride = 2,
 		AmmoPerShot = 2,
 		RPMMult = 600 / 700		
     },	
@@ -573,7 +573,7 @@ ATT.Firemodes = {
     {
 		PrintName = "Simutaneous",
         Mode = -1,
-		NumMult = 2,
+		NumOverride = 2,
 		AmmoPerShot = 2,
 		RPMMult = 900 / 700		
     },	
@@ -667,7 +667,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_pump"
 end
 
-ATT.NumMult = 10
+ATT.NumOverride = 10
 ATT.SpreadAdd = 0.025
 ATT.DamageMaxMult = 0.75
 ATT.DamageMinMult = 0.65
@@ -740,7 +740,7 @@ ATT.Attachments = {
     },		
 }
 
-ATT.NumMult = 8
+ATT.NumOverride = 8
 ATT.SpreadAdd = 0.025
 ATT.DamageMaxMult = 0.45
 ATT.DamageMinMult = 0.45

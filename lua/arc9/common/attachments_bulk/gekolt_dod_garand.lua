@@ -182,7 +182,7 @@ ATT.Attachments = {
 ATT.ClipSizeOverride = 7
 
 ATT.FreeAimRadiusAdd = 5
-ATT.NumMult = 10
+ATT.NumOverride = 10
 ATT.SpreadAdd = 0.0175
 ATT.DamageMaxMult = 12/80
 ATT.DamageMinMult = 6/30

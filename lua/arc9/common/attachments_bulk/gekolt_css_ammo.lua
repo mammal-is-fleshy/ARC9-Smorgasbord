@@ -74,9 +74,8 @@ ATT.DamageMaxMult = 14
 //ATT.DamageMaxOverride = 180
 //ATT.DamageMinOverride = 70
 
-ATT.NumMult = 0
-ATT.NumAdd = 1
---- just kill me
+ATT.NumOverride = 1
+//ATT.Num_Priority = 1000 -- if it works  just to make sure
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_slug")
 
@@ -97,9 +96,7 @@ ATT.PhysBulletMuzzleVelocityMult = 2
 ATT.PenetrationMult = 3
 ATT.ArmorPiercingAdd = 2
 
-ATT.NumMult = 0
-ATT.NumAdd = 4
---- just kill me
+ATT.NumOverride = 4
 
 ATT.DamageMaxMult = 4
 ATT.DamageMinMult = 4
@@ -119,10 +116,7 @@ ATT.SortOrder = 1
 
 ATT.Category = {"css_ammo_sg"}
 
-ATT.NumMult = 0
-ATT.NumAdd = 1
---- just kill me
-
+ATT.NumOverride = 1
 ATT.SpreadMult = 0.3
 
 ATT.RicochetChanceOverride = 0

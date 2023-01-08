@@ -34,7 +34,7 @@ ATT.SpreadAdd = 0.02
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumMult = 32
+ATT.NumOverride = 32
 
 ATT.DamageMaxOverride = 20
 ATT.DamageMinOverride = 5
@@ -225,7 +225,7 @@ ATT.SpreadAdd = 0.02
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumMult = 12
+ATT.NumOverride = 12
 
 ATT.DamageMaxOverride = 23
 ATT.DamageMinOverride = 10
@@ -316,7 +316,7 @@ ATT.SpreadAdd = 0.03
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumMult = 8
+ATT.NumOverride = 8
 
 ATT.DamageMaxOverride = 23
 ATT.DamageMinOverride = 10
