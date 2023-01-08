@@ -5,7 +5,7 @@ ATT = {}
 ATT.PrintName = [[Buckshot]]
 ATT.CompactName = [[SG]]
 //ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
-ATT.Description = [[Shotguno
+ATT.Description = [[Oversized buckshot round for your angry tube
 ]]
 
 ATT.Attachments = {
@@ -34,7 +34,7 @@ ATT.SpreadAdd = 0.02
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumOverride = 32
+ATT.NumMult = 32
 
 ATT.DamageMaxOverride = 20
 ATT.DamageMinOverride = 5
@@ -156,7 +156,7 @@ ATT = {}
 ATT.PrintName = [[Alofs]]
 ATT.CompactName = [[Alofs]]
 //ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
-ATT.Description = [[Agony
+ATT.Description = [[An overbulking attempt to compete the classic outdated grenade launcher with the modern auto grenade launchers
 ]]
 
 ATT.SortOrder = 1
@@ -225,7 +225,7 @@ ATT.SpreadAdd = 0.02
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumOverride = 12
+ATT.NumMult = 12
 
 ATT.DamageMaxOverride = 23
 ATT.DamageMinOverride = 10
@@ -316,7 +316,7 @@ ATT.SpreadAdd = 0.03
 ATT.PenetrationOverride = 1
 ATT.RicochetChanceOverride = 0.25
 
-ATT.NumOverride = 8
+ATT.NumMult = 8
 
 ATT.DamageMaxOverride = 23
 ATT.DamageMinOverride = 10
