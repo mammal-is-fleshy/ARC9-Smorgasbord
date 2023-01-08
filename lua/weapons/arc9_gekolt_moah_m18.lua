@@ -259,6 +259,12 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
+
+SWEP.BulletBones = {
+    [1] = "W_Mag_Rocket",
+}
+
+
 SWEP.DefaultBodygroups = "00000000000000000000"
 
 SWEP.Animations = {
@@ -331,6 +337,32 @@ SWEP.Animations = {
             {s =  "gekolt_css/sg550_clipin.wav" ,    t = 75 / 40},				
         },			
     },	
+    ["reload_rpg"] = {
+        Source = "dry_rpg",
+		FireASAP = true,
+		MinProgress = 0.83,
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 30 / 40},		
+            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},				
+        },				
+    }, 
+    ["reload_empty"] = {
+        Source = "dry_rpg",
+		FireASAP = true,
+		MinProgress = 0.9,		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },				
+		},	
+        EventTable = {		
+            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 30 / 40},		
+            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},				
+        },			
+    },	
     ["reload_xm"] = {
         Source = "wet_xm",
 		FireASAP = true,
@@ -384,7 +416,7 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {		
 	["kit_xm70"] = { Bodygroups = { {3, 1}, {4, 3}, {5, 1}, {6, 2} },},
-	["kit_rpg"] = { Bodygroups = { {0, 1}, {4, 1} },},
+	["kit_rpg"] = { Bodygroups = { {0, 1}, {4, 2} },},
 	["rail_def"] = { Bodygroups = { {1, 2}, {2, 1} },},
 }
 

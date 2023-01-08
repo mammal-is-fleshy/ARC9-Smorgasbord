@@ -193,12 +193,17 @@ ATT.PrintName = [[Rocket Launcher Conversion]]
 ATT.CompactName = [[RPG]]
 ATT.Icon = Material("entities/gekolt_moah_rpg2.png", "mips smooth")
 ATT.Description = [[Fuck it we ball
-no animala yet
+no stats yet
 ]]
 
 ATT.SortOrder = 3
 ATT.Category = "moah_m18_kit"
 ATT.ActivateElements = {"kit_rpg"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_rpg"
+end
+
 
 ARC9.LoadAttachment(ATT, "gekolt_moah_m18_rpg")
 

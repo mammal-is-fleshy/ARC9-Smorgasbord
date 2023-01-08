@@ -125,6 +125,15 @@ $sequence "dry" {
 	fps 40
 }
 
+$sequence "dry_rpg" {
+	"anims\dry_rpg.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "draw" {
 	"anims\draw.smd"
 	activity "ACT_VM_DRAW" 1
