@@ -171,6 +171,14 @@ ATT.VisualRecoilHipFireUBGL = true
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
+ATT.DrawFunc = function(self, model, vm)
+	if self:GetBipod() then
+		vm:SetBodygroup(0,1)
+	else 
+		vm:SetBodygroup(0,0)
+	end
+end
+
 ARC9.LoadAttachment(ATT, "gekolt_moah_m18_sweden")
 
 
