@@ -171,11 +171,13 @@ ATT.VisualRecoilHipFireUBGL = true
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
-ATT.DrawFunc = function(self, model, vm)
-	if self:GetBipod() then
-		vm:SetBodygroup(0,1)
+ATT.Hook_ModifyBodygroups = function(wep, data)
+    local model = data.model
+	
+	if wep:GetUBGL() then
+		model:SetBodygroup(6,1)
 	else 
-		vm:SetBodygroup(0,0)
+		model:SetBodygroup(6,2)
 	end
 end
 
