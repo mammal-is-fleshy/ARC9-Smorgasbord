@@ -5,7 +5,7 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = [[Auxiliary Rifle]]
+ATT.PrintName = [[Hjaelpare-Stomme]]
 ATT.CompactName = [[XM70]]
 ATT.Icon = Material("entities/gekolt_moah_xm72.png", "mips smooth")
 ATT.Description = [[Least based Swedish gun
@@ -189,7 +189,7 @@ ARC9.LoadAttachment(ATT, "gekolt_moah_m18_sweden")
 
 ATT = {}
 
-ATT.PrintName = [[Rocket Launcher Conversion]]
+ATT.PrintName = [[Landskap Yeagare-Stomme]]
 ATT.CompactName = [[RPG]]
 ATT.Icon = Material("entities/gekolt_moah_rpg2.png", "mips smooth")
 ATT.Description = [[Fuck it we ball

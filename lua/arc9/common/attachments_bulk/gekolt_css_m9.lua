@@ -2,7 +2,7 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = [[Carrista-Frame]]
+ATT.PrintName = [[Carrista-Ossatura]]
 ATT.CompactName = [[Auto]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
 ATT.Description = [[Semi-auto won't do much in this world of chaos
@@ -44,7 +44,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f1")
 
 ATT = {}
 
-ATT.PrintName = [[Lanciere-Frame]]
+ATT.PrintName = [[Lanciere-Ossatura]]
 ATT.CompactName = [[Burst]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_burst.png", "mips smooth")
 ATT.Description = [[Encumbersome frontend device allowing for stable short burst in quick succession
@@ -100,7 +100,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f2")
 
 ATT = {}
 
-ATT.PrintName = [[Bersagliere-Frame]]
+ATT.PrintName = [[Bersagliere-Ossatura]]
 ATT.CompactName = [[Carbine]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_carbine.png", "mips smooth")
 ATT.Description = [[Pistols don't have to be short
@@ -159,7 +159,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f3")
 
 ATT = {}
 
-ATT.PrintName = [[Incursore-Frame]]
+ATT.PrintName = [[Incursore-Ossatura]]
 ATT.CompactName = [[SD]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_sd.png", "mips smooth")
 ATT.Description = [[For quiet times and uneasy times
@@ -212,7 +212,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f4")
 
 ATT = {}
 
-ATT.PrintName = [[Trasmettitore-Frame]]
+ATT.PrintName = [[Trasmettitore-Ossatura]]
 ATT.CompactName = [[Welrod]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_welrod.png", "mips smooth")
 ATT.Description = [[Super compact manual action kit, the hammer doesn't even automatically reset
@@ -256,7 +256,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f5")
 
 ATT = {}
 
-ATT.PrintName = [[Centurione-Frame]]
+ATT.PrintName = [[Centurione-Ossatura]]
 ATT.CompactName = [[Compact]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
 ATT.Description = [[Shortened slide for certain types of officers
@@ -298,7 +298,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f6")
 
 ATT = {}
 
-ATT.PrintName = [[Artigliere-Frame]]
+ATT.PrintName = [[Artigliere-Ossatura]]
 ATT.CompactName = [[Artillery]]
 // ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
 ATT.Description = [[Polymer frame of an old fashion comically long barrel kit for artillery crew

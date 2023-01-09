@@ -187,7 +187,7 @@ crossbow - duh
 shotgun(pump) - just a mass26
 suppressed - honey badger
 
-M9: [English] -- maybe i should named them in italian or like ehh roman latin
+M9: [Italian]
 Suppressed - part PB9, part makarov
 Welrod - duh
 P38 - duh
@@ -202,7 +202,7 @@ Mini 14 - Duh
 Scav - Part SKS, part mauser selbstlader/fedorov, part romanian ak, part one of those stripper clip mini 14
 Slam - fortress 2
 
-AWP: [English]
+AWP: [English-English]
 Lincoln - Cold War
 Howell - duh, ww1 [semi] auto lee enfield, Charlton is not real
 
@@ -216,7 +216,7 @@ M79: [English]
 Alofs is basically a magazine tube for single barrel self ejecting shotguns  -- STOP SAYING HUNT SHOWDOWN I HAVE NEVER PLAYED IT
 MTS but break action
 
-Sten: [English]
+Sten: [English-English]
 MK 1,3,4,5
 MK2 but those "pistol" grip
 sterling mk4

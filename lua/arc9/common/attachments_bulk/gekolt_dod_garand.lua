@@ -5,7 +5,7 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "Tranchant"
+ATT.PrintName = "Tranchante-Charpente"
 ATT.CompactName = "Vanguard"
 ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
 ATT.Description = [[Extra short experimental module for paratrooper with extra funky definitely non-foldable stock]]
@@ -34,7 +34,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_vanguard")
 
 ATT = {}
 
-ATT.PrintName = "Chasseur"
+ATT.PrintName = "Chasseuse-Charpente"
 ATT.CompactName = "YSL"
 ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
 ATT.Description = [["Prototype" of a Mag-Fed conversion, fitted with 20 rounders capable of full-auto]]
@@ -81,7 +81,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_m14")
 
 ATT = {}
 
-ATT.PrintName = "Sportif"
+ATT.PrintName = "Sportive-Charpente"
 ATT.CompactName = "SCF"
 ATT.Icon = Material("entities/gekolt_dod_garand_mini.png", "mips smooth")
 ATT.Description = [[Modernised Mag-Fed system loaded in a lower calibre]]
@@ -140,7 +140,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_min")
 
 ATT = {}
 
-ATT.PrintName = "Trancheur"
+ATT.PrintName = "Trancheuse-Charpente"
 ATT.CompactName = "SLAM"
 ATT.Icon = Material("entities/gekolt_dod_garand_slam.png", "mips smooth")
 ATT.Description = [[Unholy creation for all your trench sweeping needs. Both the enemies and your allies will be confused]]
@@ -208,7 +208,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_slam")
 
 ATT = {}
 
-ATT.PrintName = "Charognard"
+ATT.PrintName = "Charognarde-Charpente"
 ATT.CompactName = "SCAV"
 ATT.Icon = Material("entities/gekolt_dod_garand_romania.png", "mips smooth")
 ATT.Description = [[Coversion to a lever action high calibre with a fixed magazine, stripper load only]]
