@@ -368,6 +368,35 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 80 / 40},			
         },			
     },	
+------------------ dp27 ----------------------------------	
+	["reload_dp"] = {
+        Source = "dry_dp",
+		FireASAP = true,
+		MinProgress = 0.83,
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
+        },				
+    },
+    ["reload_empty_dp"] = {
+        Source = "dry_dp",
+		FireASAP = true,
+		MinProgress = 0.9,		
+		IKTimeLine = {
+		{ t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },
+		{ t = 0.85, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },			
+		},	
+        EventTable = {		
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 53 / 40},	
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 75 / 40},	
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 80 / 40},			
+        },			
+    },	
 ------------------ water --------------------------------
 	["reload_water"] = {
         Source = "wet_water",

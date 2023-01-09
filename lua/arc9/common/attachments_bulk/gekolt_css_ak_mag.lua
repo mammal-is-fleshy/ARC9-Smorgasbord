@@ -80,7 +80,7 @@ end
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 10, -5.2),
+        Pos = Vector(0, 8, -5.2),
         Ang = Angle(0, 0, 0),
         Reticle = nil,
 
@@ -109,9 +109,33 @@ ATT.Description = [[
 
 ]]
 
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_dp"
+end
+
+ATT.ActivePosOverride = Vector(0, 6, -1.5)
+ATT.ActiveAngOverride = Angle(0, 0, 0)
+
+ATT.MovingPosOverride = Vector(0, 5.5, -1.5)
+ATT.MovingAngOverride = Angle(0, -2, 0)
+
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_disk", "noguard"}
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 12, -5.24),
+        Ang = Angle(0, 0, 0),
+        Reticle = nil,
+
+        Magnification = 1.05,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag5")
 
