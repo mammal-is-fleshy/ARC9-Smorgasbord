@@ -54,6 +54,10 @@ ATT.Description = [[
     
 ]]
 
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_56"
+end
+
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_556"}
