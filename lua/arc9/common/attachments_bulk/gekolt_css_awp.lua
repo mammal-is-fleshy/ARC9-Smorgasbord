@@ -198,12 +198,12 @@ ARC9.LoadAttachment(ATT, "gekolt_css_awp_s_short")
 
 
 ATT = {}
-
+-- thankyou gamer Cylo for the idea
 ATT.PrintName = "AX50 Frame"
 ATT.CompactName = "AX50"
-//ATT.Icon = Material("entities/gekolt_css_awp_f_lc10.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_awp_f_sd.png", "mips smooth")
 ATT.Description = [["Ah, here we go, a brand new top of the line high calibre configu-
-OI WHAT DO YOU MEAN YOU GOT THE WRONG CALIBRE? I SAID .50- .50 CAL NOT- WHAT?
+OI WHAT DO YOU MEAN YOU GOT THE WRONG CALIBRE? I SAID .50- .50 BMG NOT- WHAT?
 ...
 Oh chalice of piss ... Hold on this is walkable
 It looks sort of cute though, like one of them De Lisle's back in-
