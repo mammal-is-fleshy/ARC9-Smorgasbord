@@ -107,7 +107,7 @@ ATT = {}
 
 ATT.PrintName = [[Karabiner-Gestell]]
 ATT.CompactName = [[Carbine]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_dod_c96_carbine.png", "mips smooth")
 ATT.Description = [[An attempt to modernise a rusty old pistol with a more stable but lower rate of fire and a long top rail system for full length optics
 Drum magazine for obvious reasons
 ]]

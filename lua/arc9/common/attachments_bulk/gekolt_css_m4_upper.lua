@@ -772,6 +772,7 @@ ATT.ActivateElements = {"up_sd", "noguard", "pre_muzzed"}
 ATT.ShootSound = "gekolt_css/hb_sd.wav"
 
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.Silencer = true
 
 ATT.RPMMult = 650/700
 ATT.RangeMaxMult = 0.75

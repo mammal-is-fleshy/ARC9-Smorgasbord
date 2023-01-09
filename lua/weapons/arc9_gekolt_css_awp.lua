@@ -272,6 +272,9 @@ SWEP.AttachmentElements = {
         Bodygroups = {{0, 1},{1, 1}},			
 		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 3.4, 9), },	[6] = { Pos = Vector(1.15, 1.25, 10), },	[7] = { Pos = Vector(-1.35, 1.25, 10), },	[9] = { Pos = Vector(0, 2.25, 6), } }			
 	},	
+    ["awp_f_sd"] = {
+        Bodygroups = {{0, 4}},			
+	},	
 }
 
 
@@ -423,7 +426,7 @@ SWEP.Animations = {
 		MinProgress = 0.05,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
         },		
     },		
@@ -513,6 +516,63 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 112 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 125 / 40},
         },			
+    },	
+	
+    -- AX50 --
+	
+    ["fire_sd"] = {
+        Source = "fire_full_sd",
+		EjectAt = 15/40,
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 9 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 18 / 40},
+        },		
+		FireASAP = true,
+		MinProgress = 0.83,		
+    },	
+    ["fire_iron_sd"] = {
+        Source = "fire_full_sd",
+		EjectAt = 15/40,
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 9 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 18 / 40},
+        },		
+		FireASAP = true,
+		MinProgress = 0.83,		
+    },	
+    ["reload_sd"] = {
+        Source = "wet_sd",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_css/awp_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/awp_clipin.wav" ,    t = 50 / 40},
+        },
+		FireASAP = true,
+		MinProgress = 0.83,		
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+    },
+    ["reload_empty_sd"] = {
+        Source = "dry_sd",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.9,
+		EjectAt = 100/40,
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 1, rhik = 1, },	
+		},			
+        EventTable = {
+            {s =  "gekolt_css/awp_clipout.wav"	,	t = 10 / 40},
+            {s =  "gekolt_css/awp_clipin.wav"	,	t = 50 / 40},		
+            {s =  "gekolt_css/awp_boltup.wav"	,	t = 72 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,	t = 79 / 40},			
+            {s =  "gekolt_css/awp_boltdown.wav" ,	t = 82 / 40},
+        },			
     },
 
     -- BR --
@@ -523,9 +583,9 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.83,
         EventTable = {
-            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 58 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 62 / 40},			
+            {s =  "gekolt_css/ak47_clipout.wav" ,	t = 10 / 40},
+            {s =  "gekolt_css/ak47_clipin1.wav" ,	t = 58 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,	t = 62 / 40},			
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },

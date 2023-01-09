@@ -1,0 +1,243 @@
+local ATT = {}
+
+ATT = {}
+
+ATT.PrintName = "No Stock"
+ATT.CompactName = "No"
+ATT.Description = [[Why would you do this]]
+
+ATT.Icon = Material("entities/gekolt_css_blank.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "css_awp_stock"
+ATT.ActivateElements = {"awp_s_no"}
+
+ATT.SwayAdd = -0.85
+ATT.SprintToFireTimeMult = 1.8
+ATT.AimDownSightsTimeMult = 1.15
+ATT.RecoilMult = 0.7
+ATT.RecoilKickMult = 1.125
+
+ATT.RecoilAutoControlMult = 3.6
+ATT.FreeAimRadiusMult = 0.7
+
+ARC9.LoadAttachment(ATT, "gekolt_css_awp_s_no")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = "Howell Full-Auto Frame"
+ATT.CompactName = "AUTO"
+ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
+ATT.Description = [[This ancient mechanism from the 1900s allows your not so lee enfield looking gun to fire in [SEMI]-auto!
+Extremely questionable choice for your bolt action of this calibre. Or not, not here to judge.
+Comes with a comically large 20 round mag that for some reason look like it could hold 10 more.
+Despite using the exact same calibre the damage is reduced in the name of videogame balance.]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 2
+
+ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"awp_f_howell", "ubgl_maghold"}
+ATT.MuzzleParticle = "muzzleflash_smg"
+--ATT.ShootSound = "gekolt_css/ak47-1.wav"
+
+ATT.DrawFunc = function(swep, model, wm) end
+ATT.RPMMult = 350/50
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    }
+}
+ATT.ClipSizeOverride = 20
+
+ATT.DamageMaxMult = 90/60
+ATT.DamageMinMult = 60/160
+ATT.RecoilMult = 1.15
+ATT.RecoilKickMult = 2/3
+
+ATT.SpeedMultSightsMult = 2
+ATT.SpeedMultShootingMult = 1.25
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.15
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_br"
+end
+
+ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_howell")
+
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = "Folding Stock"
+ATT.CompactName = "Fold"
+ATT.Description = [[Discounted skeletal stock]]
+
+ATT.Icon = Material("entities/gekolt_css_awp_s_fold.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "css_awp_stock"
+ATT.ActivateElements = {"awp_s_smg"}
+
+ATT.SwayAdd = 1.1
+ATT.SprintToFireTimeMult = 0.75
+ATT.AimDownSightsTimeMult = 0.85
+ATT.RecoilMult = 1.25
+ATT.RecoilKickMult = 1.125
+
+ATT.FreeAimRadiusMult = 1.2
+
+ARC9.LoadAttachment(ATT, "gekolt_css_awp_s_fold")
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = "Lincoln Corp 10A2 Frame"
+ATT.CompactName = "LC10"
+ATT.Icon = Material("entities/gekolt_css_awp_f_lc10.png", "mips smooth")
+ATT.Description = [[Mockup frame of a relic from a certain fridgid war.
+Somehow change all the internal mechanism with a click of a button.
+Effectively turn the rifle into a really bad SMG.
+Only for the blackest of operations]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 0
+
+ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"awp_f_smg", "short_clamp", "notop", "ubgl_maghold"}
+ATT.MuzzleParticle = "muzzleflash_ak47"
+ATT.ShootSound = "gekolt_css/mp5-1.wav"
+
+ATT.SwayMult = 1.5
+ATT.AccuracyMOAMult = 3
+ATT.HipDispersionMult = 2
+ATT.SightsDispersionMult = 2
+ATT.SightTimeMult = 0.75
+
+ATT.SpeedMultSightsMult = 0.5
+ATT.SpeedMultShootingMult = 0.5
+ATT.Ammo = "pistol"
+
+ATT.ClipSizeOverride = 25
+
+
+ATT.AimDownSightsTimeMult = 0.75
+ATT.DamageMaxMult = 45/60
+ATT.DamageMinMult = 20/160
+ATT.RangeMinMult = 0.8
+ATT.RangeMaxMult = 0.8
+ATT.RecoilMult = 0.4
+ATT.RecoilKickMult = 1.2/3
+
+ATT.RPMMult = 900/50
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    }
+}
+
+ATT.Sights = {
+    {
+        Pos = Vector(1.6, 0, 10),
+        Ang = Angle(90, 0, -90),
+        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
+
+
+        Magnification = 1,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_smg"
+end
+
+ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_lc10")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = "Short Stock"
+ATT.CompactName = "Fold"
+ATT.Description = [[This feels wrong]]
+
+ATT.Icon = Material("entities/gekolt_css_awp_s_short.png", "mips smooth")
+
+ATT.SortOrder = 0
+ATT.Category = "css_awp_stock"
+ATT.ActivateElements = {"awp_s_short"}
+
+ATT.SwayAdd = 1.25
+ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.9
+ATT.RecoilMult = 1.05
+ATT.RecoilKickMult = 0.95
+
+ATT.FreeAimRadiusMult = 0.85
+
+ARC9.LoadAttachment(ATT, "gekolt_css_awp_s_short")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = "AX50 Frame"
+ATT.CompactName = "AX50"
+//ATT.Icon = Material("entities/gekolt_css_awp_f_lc10.png", "mips smooth")
+ATT.Description = [["Ah, here we go, a brand new top of the line high calibre configu-
+OI WHAT DO YOU MEAN YOU GOT THE WRONG CALIBRE? I SAID .50- .50 CAL NOT- WHAT?
+...
+Oh chalice of piss ... Hold on this is walkable
+It looks sort of cute though, like one of them De Lisle's back in-
+... Now just hold on a moment, have we got any spare commically large suprressor lying around?"]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 0
+
+ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"awp_f_sd", "ubgl_maghold", "pre_muzzed"}
+ATT.ShootSound = "gekolt_css/hb_sd.wav"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.Silencer = true
+
+ATT.SwayMult = 1.25
+ATT.AccuracyMOAMult = 0.75
+ATT.HipDispersionMult = 0.8
+ATT.SightsDispersionMult = 0.9
+ATT.SightTimeMult = 0.9
+
+ATT.DamageMaxMult = 70/60
+ATT.DamageMinMult = 30/160
+
+ATT.Ammo = "357"
+
+ATT.ClipSizeOverride = 7
+ATT.Firemodes = { { Mode = -1,	PrintName = "BOLT" } }
+ATT.RPMMult = 80/50
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_sd"
+end
+
+ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_sd")
+
+----------------------------------------------------------------------------------
