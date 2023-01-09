@@ -300,7 +300,7 @@ ATT = {}
 
 ATT.PrintName = [[Artigliere-Ossatura]]
 ATT.CompactName = [[Artillery]]
-// ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_f_long.png", "mips smooth")
 ATT.Description = [[Polymer frame of an old fashion comically long barrel kit for artillery crew
 Artillery not included
 Stock however, does
@@ -355,7 +355,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f7")
 ----------------------------------------------------------------------------------
 
 -- EXTRA --
-
+-- the stock and foregrip should modifide the exact same stats
 ----------------------------------------------------------------------------------
 
 
@@ -363,7 +363,7 @@ ATT = {}
 
 ATT.PrintName = [[Stock]]
 ATT.CompactName = [[Stock]]
-// ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_stock.png", "mips smooth")
 ATT.Description = [[Bracing
 ]]
 ATT.SortOrder = 1
@@ -384,7 +384,7 @@ ATT = {}
 
 ATT.PrintName = [[Grip]]
 ATT.CompactName = [[Grip]]
-// ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m9_fg.png", "mips smooth")
 ATT.Description = [[Bracing
 ]]
 ATT.SortOrder = 1

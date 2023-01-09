@@ -148,6 +148,7 @@ ATT.SortOrder = 4
 ATT.Category = {"css_ammo_sg"}
 ATT.AutoStats = true
 
+-- stolen from urbna, maybe dont touch it
 --[[local dontburn = { -- zombies don't take damage from DMG_BURN (hardcoded to set them on fire)
     npc_zombie = true,
     npc_zombie_torso = true,
