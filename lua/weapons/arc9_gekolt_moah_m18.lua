@@ -350,7 +350,7 @@ SWEP.Animations = {
             {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},				
         },				
     }, 
-    ["reload_empty"] = {
+    ["reload_empty_rpg"] = {
         Source = "dry_rpg",
 		FireASAP = true,
 		MinProgress = 0.9,		
