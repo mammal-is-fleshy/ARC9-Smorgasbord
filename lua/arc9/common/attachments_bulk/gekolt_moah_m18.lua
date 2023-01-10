@@ -189,11 +189,10 @@ ARC9.LoadAttachment(ATT, "gekolt_moah_m18_sweden")
 
 ATT = {}
 
-ATT.PrintName = [[Landskap Yeagare-Stomme]]
+ATT.PrintName = [[Landskap Yeagare-Stomme]] -- landship hunter???
 ATT.CompactName = [[RPG]]
 ATT.Icon = Material("entities/gekolt_moah_rpg2.png", "mips smooth")
 ATT.Description = [[Fuck it we ball
-no stats yet
 ]]
 
 ATT.SortOrder = 3
@@ -204,8 +203,37 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_rpg"
 end
 
+ATT.ShootEnt = "gekolt_moah_m18_rocket"
+ATT.ShootEntForce = 200000
+
 
 ARC9.LoadAttachment(ATT, "gekolt_moah_m18_rpg")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Rustning Genomträngare-Stomme]] -- armour penetrator???
+ATT.CompactName = [[RPG]]
+ATT.Icon = Material("entities/gekolt_moah_rpg2.png", "mips smooth")
+ATT.Description = [[Tandem?????
+]]
+
+ATT.SortOrder = 3
+ATT.Category = "moah_m18_kit"
+ATT.ActivateElements = {"kit_rpg2"}
+
+ATT.ShootEnt = "gekolt_moah_m18_rocket_tandem"
+ATT.ShootEntForce = 200000
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_rpg"
+end
+
+
+ARC9.LoadAttachment(ATT, "gekolt_moah_m18_rpg2")
 
 
 ----------------------------------------------------------------------------------

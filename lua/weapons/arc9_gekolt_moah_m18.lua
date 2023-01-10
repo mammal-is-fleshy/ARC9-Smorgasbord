@@ -416,7 +416,8 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {		
 	["kit_xm70"] = { Bodygroups = { {3, 1}, {4, 3}, {5, 1}, {6, 2} },},
-	["kit_rpg"] = { Bodygroups = { {0, 1}, {4, 2} },},
+	["kit_rpg"] = { Bodygroups = { {0, 1}, {4, 2} },},	
+	["kit_rpg2"] = { Bodygroups = { {0, 1}, {4, 1} },},
 	["rail_def"] = { Bodygroups = { {1, 2}, {2, 1} },},
 }
 
