@@ -182,7 +182,7 @@ ak - angled Mk11 magwell, which i believe for the mutant, they just have no magw
 sniper - yup thats a cs5
 shotgun(drum) - part usas, part ar10
 marksman - pre prototype ar10
-40 ex - one of those dumb looking e2 variants
+40 ex - one of those dumb looking e2 duplex variants
 crossbow - duh
 shotgun(pump) - just a mass26
 suppressed - honey badger
@@ -192,19 +192,20 @@ Suppressed - part PB9, part makarov
 Welrod - duh
 P38 - duh
 Carbine - one of those flux frame for the p350(?) and a snail mag
-Artillery - Same as above hence the snail mag
+Artillery - Same as above hence the snail mag to begin with
 Auto - its just a burst frame with shorter guard
 Burst - Robocock
 
 Garand: [French(lol)]
 M14 - Duh
 Mini 14 - Duh
-Scav - Part SKS, part mauser selbstlader/fedorov, part romanian ak, part one of those stripper clip mini 14
+Scav - Part SKS, part mauser selbstlader/fedorov, part romanian ak, part one of those stripper clip mini 14, lever action because why not
 Slam - fortress 2
 
 AWP: [English-English]
 Lincoln - Cold War
 Howell - duh, ww1 [semi] auto lee enfield, Charlton is not real
+AX50 - De Lisle but 50AE --- thanks Cylo for the shout
 
 Mauser: [Dutch(lol)/German]
 Edgerunners 2077
@@ -231,7 +232,7 @@ helica: bizon, the animala is defintely NOT mw22
 stalker: asval
 huntsman: ??? i saw something similar on tarkov once?? probably a saiga
 
-M18: [Swedish(lol)]
+M18: [Swedish(lol)] --- thanks Cylo for the shout
 rpg convert -- obviously
 xm70 -- this is based on a real thing, back in world war cold, the swedes wanted to arm their infantry with an anti-tank 'auxiliary' option, this was back during the coldwar
 -- the concept of oicw or multi-purpose weapons only takes form around ~90s so this is one of the forerunner, even then those are made to counter infantry, this was a panzerjaeger

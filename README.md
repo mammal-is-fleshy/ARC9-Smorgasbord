@@ -9,7 +9,7 @@ Current Weapons:
 - AWP
 - Hammer and Sickle
 - Mauser
-- M18 (WIP)
+- M18
 - Claymore on a Stick
 - M79
 - Garand

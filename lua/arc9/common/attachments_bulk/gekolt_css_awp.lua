@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "No Stock"
 ATT.CompactName = "No"
-ATT.Description = [[Why would you do this]]
+ATT.Description = [[Completely removes any sense of bracing from a high calibre rifle.]]
 
 ATT.Icon = Material("entities/gekolt_css_blank.png", "mips smooth")
 
@@ -33,8 +33,7 @@ ATT.PrintName = "Howell Full-Auto Frame"
 ATT.CompactName = "AUTO"
 ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
 ATT.Description = [[This ancient mechanism from the 1900s allows your not so lee enfield looking gun to fire in [SEMI]-auto!
-Extremely questionable choice for your bolt action of this calibre. Or not, not here to judge.
-Comes with a comically large 20 round mag that for some reason look like it could hold 10 more.
+Comes with a comically large 20 round mag that for some reason look like it could hold 10 more
 Despite using the exact same calibre the damage is reduced in the name of videogame balance.]]
 
 ATT.Pros = {}
@@ -199,15 +198,15 @@ ARC9.LoadAttachment(ATT, "gekolt_css_awp_s_short")
 
 ATT = {}
 -- thankyou gamer Cylo for the idea
-ATT.PrintName = "AX50 Frame"
-ATT.CompactName = "AX50"
+ATT.PrintName = "AE50 Frame"
+ATT.CompactName = "AE50"
 ATT.Icon = Material("entities/gekolt_css_awp_f_sd.png", "mips smooth")
 ATT.Description = [["Ah, here we go, a brand new top of the line high calibre configu-
 OI WHAT DO YOU MEAN YOU GOT THE WRONG CALIBRE? I SAID .50- .50 BMG NOT- WHAT?
 ...
 Oh chalice of piss ... Hold on this is walkable
-It looks sort of cute though, like one of them De Lisle's back in-
-... Now just hold on a moment, have we got any spare commically large suprressor lying around?"]]
+It looks cute though, like one of them De Lisle's back in the war-
+... Now just grip that thought, have we got any spare commically large suprressor lying around?"]]
 
 ATT.Pros = {}
 ATT.Cons = {}

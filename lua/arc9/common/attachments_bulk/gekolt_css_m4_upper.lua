@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "Prototype Receiver"
 ATT.CompactName = "Prototype"
-ATT.Description = [[An older design that allows the rifle to take larger bullets. Powerful bullets overpenetrate at close range.]]
+ATT.Description = [[Older design that allows the rifle to take larger bullets. Powerful bullets overpenetrate at close range.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_u_10.png", "mips smooth")
 
@@ -106,7 +106,7 @@ ATT = {}
 ATT.PrintName = "Chimera Receiver"
 ATT.CompactName = "Chimera"
 ATT.Icon = Material("entities/gekolt_css_m4_u_ak.png", "mips smooth")
-ATT.Description = [[A receiver modification bridging the gap between East and West by allowing your rifle to take AK-47 magazines.]]
+ATT.Description = [[Receiver modification bridging the gap between East and West by allowing your rifle to take AK-47 magazines.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -144,7 +144,7 @@ ATT.PrintName = "Predator Receiver"
 ATT.CompactName = "Predator"
 ATT.Icon = Material("entities/gekolt_css_m4_u_bolt.png", "mips smooth")
 ATT.Description = [[Converts the rifle to bolt-action in order to improve its... ehhhhhhhhhh
-Comes with a built-in suppressor.]]
+Comes with a built-in suppressor for obvious reasons.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
