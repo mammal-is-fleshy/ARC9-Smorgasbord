@@ -127,7 +127,7 @@ $sequence "fire_br" {
 }
 
 $sequence "fire_br_iron" {
-	"anims\fire_br_iron.smd"
+	"anims\fire_br_iron2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
 	fadein 0.02
