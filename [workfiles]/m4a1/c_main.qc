@@ -193,7 +193,7 @@ $sequence "fire" {
 }
 
 $sequence "fire_iron" {
-	"anims\fire_iron.smd"
+	"anims\fire_iron2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
 	fadein 0.02
@@ -211,7 +211,7 @@ $sequence "fire_proto" {
 }
 
 $sequence "fire_iron_proto" {
-	"anims\fire_iron_proto.smd"
+	"anims\fire_iron_proto2.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
 	fadein 0.02

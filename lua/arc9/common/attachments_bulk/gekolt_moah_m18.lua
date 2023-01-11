@@ -186,7 +186,7 @@ ARC9.LoadAttachment(ATT, "gekolt_moah_m18_sweden")
 
 ----------------------------------------------------------------------------------
 
-
+--- anglicalise a bit of germanic so j > y, umlauts to -e
 ATT = {}
 
 ATT.PrintName = [[Landskap Yeagare-Stomme]] -- landship hunter???
@@ -215,7 +215,7 @@ ARC9.LoadAttachment(ATT, "gekolt_moah_m18_rpg")
 
 ATT = {}
 
-ATT.PrintName = [[Rustning Genomträngare-Stomme]] -- armour penetrator???
+ATT.PrintName = [[Rustning Genomtraengare-Stomme]] -- armour penetrator???
 ATT.CompactName = [[RPG]]
 ATT.Icon = Material("entities/gekolt_moah_rpg2.png", "mips smooth")
 ATT.Description = [[Tandem?????

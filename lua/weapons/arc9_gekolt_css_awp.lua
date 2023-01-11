@@ -547,7 +547,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_css/awp_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/awp_clipin.wav" ,    t = 50 / 40},
+            {s =  "gekolt_css/awp_clipin.wav" ,    t = 48 / 40},
         },
 		FireASAP = true,
 		MinProgress = 0.83,		
@@ -568,7 +568,7 @@ SWEP.Animations = {
 		},			
         EventTable = {
             {s =  "gekolt_css/awp_clipout.wav"	,	t = 10 / 40},
-            {s =  "gekolt_css/awp_clipin.wav"	,	t = 50 / 40},		
+            {s =  "gekolt_css/awp_clipin.wav"	,	t = 48 / 40},		
             {s =  "gekolt_css/awp_boltup.wav"	,	t = 72 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,	t = 79 / 40},			
             {s =  "gekolt_css/awp_boltdown.wav" ,	t = 82 / 40},

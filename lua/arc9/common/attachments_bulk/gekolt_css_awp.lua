@@ -59,8 +59,8 @@ ATT.DamageMinMult = 60/160
 ATT.RecoilMult = 1.15
 ATT.RecoilKickMult = 2/3
 
-ATT.SpeedMultSightsMult = 2
-ATT.SpeedMultShootingMult = 1.25
+ATT.SpeedMultSights = 1.15
+ATT.SpeedMultShooting = 1.15
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.15
 
@@ -125,8 +125,8 @@ ATT.HipDispersionMult = 2
 ATT.SightsDispersionMult = 2
 ATT.SightTimeMult = 0.75
 
-ATT.SpeedMultSightsMult = 0.5
-ATT.SpeedMultShootingMult = 0.5
+ATT.SpeedMultSights = 1.25
+ATT.SpeedMultShooting = 1.25
 ATT.Ammo = "pistol"
 
 ATT.ClipSizeOverride = 25
@@ -222,7 +222,10 @@ ATT.SwayMult = 1.25
 ATT.AccuracyMOAMult = 0.75
 ATT.HipDispersionMult = 0.8
 ATT.SightsDispersionMult = 0.9
-ATT.SightTimeMult = 0.9
+ATT.SightTimeMult = 0.85
+
+ATT.SpeedMultSights = 1.45
+ATT.SpeedMultShooting = 1.5
 
 ATT.DamageMaxMult = 70/60
 ATT.DamageMinMult = 30/160
