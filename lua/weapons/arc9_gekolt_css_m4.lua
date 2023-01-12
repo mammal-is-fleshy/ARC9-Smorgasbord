@@ -613,7 +613,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40}, 
 			{s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
-            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 60 / 40},	
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 60 / 40},	
             {s =  "gekolt_css/sg552_boltpull.wav" ,    t = 88 / 40},					
         },
 		FireASAP = true,
@@ -628,7 +628,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40}, 
 			{s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
-            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 60 / 40},				
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 60 / 40},				
         },
 		FireASAP = true,
 		MinProgress = 0.95,				
