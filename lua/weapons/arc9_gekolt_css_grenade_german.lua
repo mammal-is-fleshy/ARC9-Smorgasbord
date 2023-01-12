@@ -41,7 +41,7 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-
+SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = false
 SWEP.ClipSize = 3
 SWEP.ChamberSize = 0
@@ -58,7 +58,7 @@ SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
 SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
 SWEP.ThrowAnimSpeed = 1
 
-SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
+SWEP.FuseTimer = 5 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
 SWEP.ThrowForceMin = 1000 -- Minimum force that the grenade will be thrown with.
 SWEP.ThrowForceMax = 2000 -- Maximum force that the grenade will be thrown with.
@@ -77,11 +77,11 @@ SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being a
 SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 90
-SWEP.ActivePos = Vector(0, -2, 0)
+SWEP.ActivePos = Vector(0, -1, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.SprintPos = Vector(0, 0, -1.5)
-SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.SprintPos = Vector(3, -2, -5)
+SWEP.SprintAng = Angle(30, 0, -20)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -1.5, -0.15),
