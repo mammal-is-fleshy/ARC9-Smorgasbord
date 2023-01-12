@@ -13,6 +13,9 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_54"
 end
 
+ATT.ShootSound = "oneshotof_cs16/galil-1.wav"
+//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+
 ATT.SortOrder = 1
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_545"}
@@ -31,9 +34,14 @@ ATT.Description = [[
     
 ]]
 
+ATT.ClipSizeOverride = 15
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_25"
 end
+
+ATT.ShootSound = "oneshotof_cs16/sg552-1.wav"
+//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
@@ -58,6 +66,9 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_56"
 end
 
+ATT.ShootSound = "oneshotof_cs16/m4a1_unsil-1.wav"
+//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_556"}
@@ -77,9 +88,14 @@ ATT.Description = [[
     Walter
 ]]
 
+ATT.ClipSizeOverride = 25
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_water"
 end
+
+ATT.ShootSound = "oneshotof_cs16/sg550-1.wav"
+//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 
 ATT.Sights = {
@@ -113,10 +129,15 @@ ATT.Description = [[
 
 ]]
 
+ATT.ClipSizeOverride = 47
+
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_dp"
 end
+
+ATT.ShootSound = "oneshotof_cs16/m249-1.wav"
+//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.ActivePosOverride = Vector(0, 6, -1.5)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
@@ -156,6 +177,11 @@ ATT.Description = [[
 
 ]]
 
+ATT.ClipSizeOverride = 32
+
+ATT.ShootSound = "oneshotof_cs16/mp5-1.wav"
+//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_919"}
@@ -179,6 +205,8 @@ ATT.Description = [[
 
 ]]
 
+ATT.ClipSizeOverride = 64
+
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_919x", "nofg"}
@@ -186,6 +214,9 @@ ATT.ActivateElements = {"u_919x", "nofg"}
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_bizon"
 end
+
+ATT.ShootSound = "oneshotof_cs16/ump45-1.wav"
+//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0

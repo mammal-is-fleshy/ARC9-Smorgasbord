@@ -7,7 +7,7 @@ SWEP.Category = "ARC9 - CSS"
 
 SWEP.PrintName = "Claymore on a Stick"
 
-SWEP.Class = "Melee"
+SWEP.Class = "Explosive"
 SWEP.Trivia = {
     ["Country of Origin"] = "Scotland", -- trolleg
     ["Caliber"] = "3.2mm steel balls",
