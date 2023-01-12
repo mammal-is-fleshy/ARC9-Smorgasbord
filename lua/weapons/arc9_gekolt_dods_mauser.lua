@@ -312,6 +312,7 @@ SWEP.Attachments = {
 	
     {
         PrintName = "Off-Hand",
+		Hidden = true,
         DefaultName = "None",
 		InstalledElements = {"akimbo"},		
 

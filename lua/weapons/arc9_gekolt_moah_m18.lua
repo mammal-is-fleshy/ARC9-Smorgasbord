@@ -306,7 +306,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
             {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 75 / 40},			
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},			
         },			
     },  	
     ["reload"] = {
@@ -320,7 +320,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
             {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 75 / 40},			
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},			
         },				
     }, 
     ["reload_empty"] = {
@@ -334,7 +334,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
             {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 75 / 40},				
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},				
         },			
     },	
     ["reload_rpg"] = {
@@ -346,7 +346,7 @@ SWEP.Animations = {
         { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
-            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 30 / 40},		
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 30 / 40},		
             {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},				
         },				
     }, 
@@ -359,7 +359,7 @@ SWEP.Animations = {
         { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },				
 		},	
         EventTable = {		
-            {s =  "gekolt_css/sg550_clipin.wav" ,    t = 30 / 40},		
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 30 / 40},		
             {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},				
         },			
     },	
