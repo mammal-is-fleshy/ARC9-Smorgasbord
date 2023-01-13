@@ -5,7 +5,7 @@ ATT.Description = [[]]
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/sd_m3.mdl"
-ATT.Category = "muzzle_css"
+ATT.Category = {"muzzle_css", "muzzle_css_shotgun"}
 
 ATT.Scale = 1.25
 ATT.ModelOffset = Vector(0.25, 0, 0)

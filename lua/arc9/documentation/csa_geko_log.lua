@@ -175,7 +175,7 @@ from there Then on only the optics, foregrips and muzzles will be Modular
 
 
 -- where the inspirations from /naming convension --
-M4: [English]
+ M4: [English] -- basic bitch        Common American L
 9mm - Taiwanese Rail thing for ironsight
 ak - angled Mk11 magwell, which i believe for the mutant, they just have no magwell
 57 - just a p90 lol
@@ -187,7 +187,7 @@ crossbow - duh
 shotgun(pump) - just a mass26
 suppressed - honey badger
 
-M9: [Italian]
+ M9: [Italian] -- basic bitch part 2
 Suppressed - part PB9, part makarov
 Welrod - duh
 P38 - duh
@@ -196,50 +196,52 @@ Artillery - Same as above hence the snail mag to begin with
 Auto - its just a burst frame with shorter guard
 Burst - Robocock
 
-Garand: [French(lol)]
+ Garand: [French(lol)] -- something something canadian John Garand patented(is that the right word?) the garand   i keep the quebecois aspect of Jean Garand hence french   Common Canadian W
 M14 - Duh
 Mini 14 - Duh
 Scav - Part SKS, part mauser selbstlader/fedorov, part romanian ak, part one of those stripper clip mini 14, lever action because why not
 Slam - fortress 2
 
-AWP: [English-English]
+ AWP: [English-English] -- my brain keep telling me to translate this to Finnish cuz arctic warfare or something
 Lincoln - Cold War
 Howell - duh, ww1 [semi] auto lee enfield, Charlton is not real
 AX50 - De Lisle but 50AE --- thanks Cylo for the shout
 
-Mauser: [Dutch(lol)/German]
+ Mauser: [Dutch(lol)/German] -- im just more comfortable with Dutch
 Edgerunners 2077
 one of those trench variants [default]
 brazil [burst cuz reasons]
 what Do you mean beta mag And carbine frame doesnt exist In ww2
 
-M79: [English]
+ M79: [English] -- basic bitch part 3
 Alofs is basically a magazine tube for single barrel self ejecting shotguns  -- STOP SAYING HUNT SHOWDOWN I HAVE NEVER PLAYED IT
 MTS but break action
 
-Sten: [English-English]
+ Sten: [English-English]
 MK 1,3,4,5
 MK2 but those "pistol" grip
-sterling mk4
+sterling mk4 (suppressed)
+saladmander from Fortuna returns
 
-AK: [Russian? Maybe Hungarian for the lol]
+ AK: [Russian? Maybe Hungarian for the lol]
 919: saiga
 556: trolled
 566: aps underwater dart gun
 disk: Tachanka units during the Russian Civil War in ehh 1921? or something either use DP27s as a prone mount or strapped them on a horse    driveby lmg shooting
 helica: bizon, the animala is defintely NOT mw22
-
 stalker: asval
 huntsman: ??? i saw something similar on tarkov once?? probably a saiga
 
-M18: [Swedish(lol)] --- thanks Cylo for the shout
+ M18: [Swedish(lol)] --- thanks Cylo for the shout          Common Swedish W
 rpg convert -- obviously
 xm70 -- this is based on a real thing, back in world war cold, the swedes wanted to arm their infantry with an anti-tank 'auxiliary' option, this was back during the coldwar
 -- the concept of oicw or multi-purpose weapons only takes form around ~90s so this is one of the forerunner, even then those are made to counter infantry, this was a panzerjaeger
 -- 762 cuz the m4 already exist, and currently lacking in battle rifle
 -- based on the second alteration, which i believe is a modern concept but the 'prototype' was like 70s
 
-
+ Claymore on a stick -- during late war 2 pacific front, the japs used lunge mine to take out tanks, i was wondering why they didnt throw it, then i realise you need pressure, oh well, videogame logic
+ Bundle grenade -- during second war 2, both the germans and the russiansd bundle up grenades to create a much bigger explosive device, cant remember if they could takeout tanks or not but oh well
+-- oh you still need to remove the spoon thing irl       videogame logic
 
 
 

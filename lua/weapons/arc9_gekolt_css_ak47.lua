@@ -541,7 +541,7 @@ SWEP.AttachmentElements = {
 	["hg_rpk"] = { Bodygroups = { {3, 5} },	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 35), } }		},
 	["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 37.5), } }		},
 	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },	AttPosMods = { [7] = { Pos = Vector(0, 0.2, 29.5), } }		},		
-	["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },	AttPosMods = { [6] = { Pos = Vector(0, -2.35, 6), }, [7] = { Pos = Vector(0, 0.2, 32), } }		},	
+	["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },	AttPosMods = { [6] = { Pos = Vector(0, -2.35, 6), }, [7] = { Pos = Vector(0, 0.1, 27), } }		},	
 
 	["g_poly"] = { Bodygroups = { {6, 1} },},		
 	["g_ske"] = { Bodygroups = { {6, 2} },},	
@@ -554,7 +554,7 @@ SWEP.AttachmentElements = {
 	["u_545"] = { Bodygroups = { {0, 1} },},	
 	["u_556"] = { Bodygroups = { {0, 2} },}, 
 	["u_drum"] = { Bodygroups = { {0, 4} },},
-	["u_566"] = { Bodygroups = { {0, 7}, {1, 3}, {2, 2}, {3, 10} },},	
+	["u_566"] = { Bodygroups = { {0, 7}, {1, 3}, {2, 2}, {3, 10}},	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 29.5), } }		},	
 	["u_disk"] = { Bodygroups = { {0, 5}, {2, 2},{3, 7}, {5, 0} },},
 
 	["rail_def"] = { Bodygroups = { {5, 3} },},	
@@ -567,6 +567,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(5,2) end 
 	if wep:HasElement("rail_def") and wep:HasElement("hg_94") then model:SetBodygroup(5,2) end	
 	if wep:HasElement("rail_def") and wep:HasElement("u_566") then model:SetBodygroup(5,2) end
+	if wep:HasElement("rail_def") and wep:HasElement("u_566") then model:SetBodygroup(1,0) end
 end
 
 SWEP.Attachments = {

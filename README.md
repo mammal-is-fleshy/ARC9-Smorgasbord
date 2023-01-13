@@ -11,6 +11,8 @@ Current Weapons:
 - Mauser
 - M18
 - Claymore on a Stick
+- Grenade Bundle
 - M79
 - Garand
 - M9
+- Sten (Early Concept)

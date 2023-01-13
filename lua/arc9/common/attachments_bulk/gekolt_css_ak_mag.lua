@@ -147,7 +147,7 @@ ATT.MovingAngOverride = Angle(0, -2, 0)
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
-ATT.ActivateElements = {"u_disk", "noguard"}
+ATT.ActivateElements = {"u_disk", "noguard", "pre_muzzed"}
 
 ATT.Sights = {
     {
