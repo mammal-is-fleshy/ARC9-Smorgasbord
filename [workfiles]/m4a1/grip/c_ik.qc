@@ -10,9 +10,9 @@ $bodygroup "Grip"
 
 $illumposition 0 0 0
 
-$cdmaterials "models\weapons\V_models\rif_m4a1\"
-$cdmaterials "models\weapons\V_models\smg_ump45\"
-$cdmaterials "models\weapons\V_models\smg_p902\"
+$cdmaterials "models\gekolt_css_vmt\"
+$cdmaterials "arc9_css\"
+$cdmaterials "models\weapons\v_models\rif_garand2\"
 
 $sequence "Idle" {
 	"anims\LH_RH_GRIP_IK_k.smd"
