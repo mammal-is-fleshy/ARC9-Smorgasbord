@@ -534,14 +534,14 @@ SWEP.AttachmentElements = {
 	["s_poly2"] = { Bodygroups = { {4, 8} },},		
 	["s_adaptor"] = { Bodygroups = { {4, 11} },},
 
-	["hg_poly"] = { Bodygroups = { {3, 4} },},	
-	["hg_bizon"] = { Bodygroups = { {3, 9} },},		
+	["hg_poly"] = { Bodygroups = { {3, 4} },},
+	["hg_bizon"] = { Bodygroups = { {3, 9} },	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
 	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} },},
-	["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },},
-	["hg_rpk"] = { Bodygroups = { {3, 5} },},	
-	["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },},	
-	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },},		
-	["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },	AttPosMods = { [6] = { Pos = Vector(0, -2.35, 6), } }		},		 
+	["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 20), } }		},
+	["hg_rpk"] = { Bodygroups = { {3, 5} },	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 35), } }		},
+	["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 37.5), } }		},
+	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },	AttPosMods = { [7] = { Pos = Vector(0, 0.2, 29.5), } }		},		
+	["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },	AttPosMods = { [6] = { Pos = Vector(0, -2.35, 6), }, [7] = { Pos = Vector(0, 0.2, 32), } }		},	
 
 	["g_poly"] = { Bodygroups = { {6, 1} },},		
 	["g_ske"] = { Bodygroups = { {6, 2} },},	
@@ -638,7 +638,6 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.35, 3),
         Ang = Angle(90, 0, -90),			
     },
-	
 
     {
         PrintName = "Muzzle",
@@ -648,7 +647,7 @@ SWEP.Attachments = {
 		ExcludeElements = {"pre_muzzed"},
         Category = {"muzzle_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 0.15, 27.5),
+        Pos = Vector(0, 0.075, 27.5),
         Ang = Angle(90, 0, -90),		
     },	
 

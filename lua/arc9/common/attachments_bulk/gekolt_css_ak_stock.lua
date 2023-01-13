@@ -265,10 +265,12 @@ ATT.CompactName = [[SD]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
 ]]
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.Silencer = true
 
 ATT.SortOrder = 1
 ATT.Category = "css_ak_handguard"
-ATT.ActivateElements = {"hg_sd"}
+ATT.ActivateElements = {"hg_sd", "pre_muzzed"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg1")
 

@@ -38,26 +38,26 @@ $sequence "draw" {
 }
 $sequence "prep" {
 	"anims\prep.smd"
-	fadein 0.2
-	fadeout 0.2
+	fadein 0.5
+	fadeout 0.5
 	fps 40
 }
 $sequence "prep_idle" {
 	"anims\prep_idle.smd"
-	fadein 0.2
-	fadeout 0.2
+	fadein 0.4
+	fadeout 0.4
 	fps 40
 }
 $sequence "throw" {
 	"anims\throw.smd"
-	fadein 0.2
-	fadeout 0.2
+	fadein 0.1
+	fadeout 0.1
 	fps 40
 }
 $sequence "throw_full" {
 	"anims\throw_full.smd"
-	fadein 0.2
-	fadeout 0.2
+	fadein 0.3
+	fadeout 0.3
 	fps 40
 }
 
