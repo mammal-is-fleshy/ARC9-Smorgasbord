@@ -4,4 +4,5 @@ VertexLitGeneric
 	"$envmap" "env_cubemap"
 	"$envmapmask" "models\weapons\v_models\shot_xm1014\shot_xm1014_ref"
 
+	"$nocull" 1
 }

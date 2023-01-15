@@ -4,4 +4,5 @@ VertexLitGeneric
 	"$envmap" "env_cubemap"
 	"$envmapmask" "models\weapons\v_models\pist_p228\pist_p228_1_ref"
 
+	"$nocull" 1
 }
