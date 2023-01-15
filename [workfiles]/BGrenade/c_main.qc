@@ -14,6 +14,97 @@ $cdmaterials "arc9_css\"
 $cdmaterials "models\gekolt_css_vmt\"
 $cdmaterials "models\weapons\v_models\rif_garand2\"
 
+$jigglebone "Nade1"
+{
+	is_flexible
+	{
+		length 20
+		tip_mass 22
+		pitch_stiffness 98
+		pitch_damping 2
+		yaw_stiffness 95
+		yaw_damping 3
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 17
+	}
+}
+$jigglebone "Nade2"
+{
+	is_flexible
+	{
+		length 20
+		tip_mass 18
+		pitch_stiffness 95
+		pitch_damping 2
+		yaw_stiffness 90
+		yaw_damping 4
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 13
+	}
+}
+$jigglebone "Nade3"
+{
+	is_flexible
+	{
+		length 20
+		tip_mass 15
+		pitch_stiffness 92
+		pitch_damping 2
+		yaw_stiffness 120
+		yaw_damping 4
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 16
+	}
+}
+$jigglebone "Nade4"
+{
+	is_flexible
+	{
+		length 20
+		tip_mass 19
+		pitch_stiffness 92
+		pitch_damping 2
+		yaw_stiffness 125
+		yaw_damping 4
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 14
+	}
+}
+$jigglebone "Nade5"
+{
+	is_flexible
+	{
+		length 20
+		tip_mass 25
+		pitch_stiffness 95
+		pitch_damping 2
+		yaw_stiffness 150
+		yaw_damping 4
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 11
+	}
+}
+$jigglebone "Nade6"
+{
+	is_flexible
+	{
+		length 20
+		tip_mass 17
+		pitch_stiffness 105
+		pitch_damping 2
+		yaw_stiffness 125
+		yaw_damping 4
+		along_stiffness 100
+		along_damping 0
+		angle_constraint 12
+	}
+}
+
 $sequence "idle_nor" {
 	"anims\idle_nor.smd"
 	fadein 0.2
