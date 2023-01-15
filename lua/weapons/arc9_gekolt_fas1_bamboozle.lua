@@ -1,6 +1,6 @@
 AddCSLuaFile()
 
-SWEP.Base = "arc9_base"
+SWEP.Base = "arc9_base_nade"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - CSS"
@@ -38,6 +38,10 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = false
+SWEP.ClipSize = 3
+SWEP.ChamberSize = 0
+SWEP.SupplyLimit = 1
+SWEP.Crosshair = true
 
 -------------------------- ENTITY LAUNCHING
 
@@ -94,19 +98,6 @@ SWEP.BashRange = 64
 SWEP.PreBashTime = 0.275
 SWEP.PostBashTime = 0.3
 
--------------------------- MAGAZINE
-
-SWEP.Ammo = "slam" -- What ammo type this gun uses.
-
-SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 1 -- Self-explanatory.
-SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
-SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
-
-SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
-
-SWEP.AutoReload = true
-
 -------------------------- TRACERS
 
 SWEP.TracerNum = 1 -- Tracer every X
@@ -161,6 +152,8 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
+		FireASAP = true,
+		MinProgress = 0.35,	
         EventTable = {		
             {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 1 / 40},
             {s =  "gekolt_css/clay/pinpull.wav" ,   t = 15 / 40},			
@@ -174,23 +167,15 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "idle_empty",	
-    },	
-    ["reload"] = {
-        Source = "draw",
-        EventTable = {		
-            {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 1 / 40},
-            {s =  "gekolt_css/clay/pinpull.wav" ,   t = 15 / 40},			
-        },			
-    },	
+    },
     ["pullpin"] = {
         Source = {"prep"},
 		FireASAP = true,
-		MinProgress = 0.83,			
+		MinProgress = 0.4,			
     }, 	
     ["holster"] = {
         Source = "idle",
     },
-	
 }
 
 -------------------------- ATTACHMENTS

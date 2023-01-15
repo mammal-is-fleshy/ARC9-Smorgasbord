@@ -132,6 +132,8 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
+		FireASAP = true,
+		MinProgress = 0.2,		
         EventTable = {		
             {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 1 / 40},		
         },		

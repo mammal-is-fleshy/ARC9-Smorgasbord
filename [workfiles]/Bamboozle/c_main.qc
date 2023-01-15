@@ -48,6 +48,7 @@ $sequence "draw" {
 	"anims\draw.smd"
 	fadein 0.2
 	fadeout 0.2
+	snap
 	fps 40
 }
 $sequence "prep" {
