@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "ChainSAW Foregrip"
 ATT.CompactName = "ChainSAW"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_m4_fg_saw.png", "mips smooth")
 ATT.Description = [[Obvious questions include why how and what.
 Horizontal grip dramatically increases hip fire potential
 Disables the ability to scope in.]]
