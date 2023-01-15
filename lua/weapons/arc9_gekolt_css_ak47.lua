@@ -20,7 +20,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike Source"
 }	
 
-SWEP.Description = [[Land of the Ivans.]]
+SWEP.Description = [[If it walks, keep using it.
+If it's outdated but still functional, add junks to it]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_ak47.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"

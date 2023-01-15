@@ -27,14 +27,15 @@ SWEP.Firemodes = {
     },
 }
 
-SWEP.Description = [[Six bundled grenade is better than one lonely grenade.]]
+SWEP.Description = [[Six bundled grenade is better than one lonely grenade.
+Guarantee to blow off your brain if you don't displace yourself after throwing]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
 SWEP.Slot = 0
 
 SWEP.MirrorVMWM = true
-SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_bamboo.mdl"
+SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-10, 10, -20),
     Ang = Angle(0, 0, 180),
