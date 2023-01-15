@@ -315,7 +315,7 @@ SWEP.Animations = {
     },  
 	["exit_ubgl"] = {
         Source = "n2r",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},		
+		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }},		
         EventTable = {
             {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 0 / 40},
         },			
@@ -375,6 +375,9 @@ SWEP.Animations = {
     },	
     ["draw"] = {
         Source = "draw",
+        EventTable = {		
+            {s =  "gekolt_css_foley/draw_rif.wav" ,   t = 0 / 40},		
+        },	
     },
     ["holster"] = {
         Source = "idle",

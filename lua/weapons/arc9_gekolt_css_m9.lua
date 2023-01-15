@@ -364,11 +364,9 @@ SWEP.Animations = {
         Source = "idle_emp",
     },	 
     ["draw"] = {
-        Source = "draw", -- QC sequence source, can be {"table", "of", "strings"} or "string" 
-		--Time = 0.5, -- overrides the duration of the sequence
-        Mult = 1, -- multiplies time
-        EventTable = {
-            {s =  "gekolt_css/elite_twirl.wav" ,   t = 1 / 40},
+        Source = "draw",
+        EventTable = {		
+            {s =  "gekolt_css_foley/draw_pist.wav" ,   t = 0 / 40},		
         },			
 	},
     ["draw_empty"] = {

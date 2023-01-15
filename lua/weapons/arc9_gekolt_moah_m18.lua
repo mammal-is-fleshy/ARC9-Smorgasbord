@@ -393,6 +393,9 @@ SWEP.Animations = {
 --------------------------------------------------------	
     ["draw"] = {
         Source = "draw",
+        EventTable = {		
+            {s =  "gekolt_css_foley/draw_rif2.wav" ,   t = 0 / 40},		
+        },				
     },
     ["holster"] = {
         Source = "idle",

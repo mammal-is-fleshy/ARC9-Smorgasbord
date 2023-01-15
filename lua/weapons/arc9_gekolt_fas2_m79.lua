@@ -406,7 +406,9 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         Mult = 1,
-        EventTable = { {s =  "gekolt_css/awp_deploy.wav" ,   t = 1 / 40}, },			
+        EventTable = {		
+            {s =  "gekolt_css_foley/draw_smg.wav" ,   t = 0 / 40},		
+        },			
 	},
     ["holster"] = {
         Source = "idle",

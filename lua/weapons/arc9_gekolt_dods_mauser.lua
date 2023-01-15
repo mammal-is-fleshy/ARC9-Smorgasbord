@@ -357,7 +357,7 @@ SWEP.Animations = {
 		--Time = 0.5, -- overrides the duration of the sequence
         Mult = 1, -- multiplies time
         EventTable = {
-            {s =  "gekolt_css/elite_twirl.wav" ,   t = 1 / 40},
+            {s =  "gekolt_css/elite_twirl.wav" ,   t = 0 / 40},
         },			
 	},
     ["draw_empty"] = {
@@ -365,7 +365,7 @@ SWEP.Animations = {
 		--Time = 0.5, -- overrides the duration of the sequence
         Mult = 1, -- multiplies time
         EventTable = {
-            {s =  "gekolt_css/elite_twirl.wav" ,   t = 1 / 40},
+            {s =  "gekolt_css/elite_twirl.wav" ,   t = 0 / 40},
         },			
 	},	
     ["holster"] = {
