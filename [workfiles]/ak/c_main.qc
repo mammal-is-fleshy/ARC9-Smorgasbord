@@ -226,6 +226,15 @@ $sequence "wet54" {
 	fps 40
 }
 
+$sequence "wet_dp" {
+	"anims\wet_dp.smd"
+	activity "ACT_VM_RELOAD" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "wet56" {
 	"anims\wet56.smd"
 	activity "ACT_VM_RELOAD" 1		

@@ -397,7 +397,7 @@ SWEP.Animations = {
     },	
 ------------------ dp27 ----------------------------------	
 	["reload_dp"] = {
-        Source = "dry_dp",
+        Source = "wet_dp",
 		FireASAP = true,
 		MinProgress = 0.83,
 		IKTimeLine = {
@@ -407,8 +407,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/famas_clipout.wav" ,   t = 18 / 40},   
 			{s =  "gekolt_css/m249_boxin.wav" ,   t = 72 / 40},
-            {s =  "gekolt_css/m4a1_magtap.wav" ,    t = 105 / 40},	 
-			{s =  "gekolt_css/m249_boltpull.wav" ,    t = 125 / 40},			
+            {s =  "gekolt_css/m4a1_magtap.wav" ,    t = 105 / 40},	 			
         },				
     },
     ["reload_empty_dp"] = {
