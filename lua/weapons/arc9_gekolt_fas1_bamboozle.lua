@@ -37,7 +37,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.DefaultBodygroups = "00"
-SWEP.BottomlessClip = false
+SWEP.BottomlessClip = true
 SWEP.ClipSize = 3
 SWEP.ChamberSize = 0
 SWEP.SupplyLimit = 1
