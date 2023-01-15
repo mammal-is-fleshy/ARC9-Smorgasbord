@@ -2,12 +2,12 @@ ATT.PrintName = "Suppressor B"
 ATT.CompactName = "SUPP B"
 ATT.Icon = Material("entities/gekolt_css_muz_sd2.png", "mips smooth")
 ATT.Description = [[]]
-ATT.SortOrder = 1
+ATT.SortOrder = 2
 
 ATT.Model = "models/weapons/geckololt_css/atts/sd_m2.mdl"
 ATT.Category = "muzzle_css"
 
-ATT.Scale = 1.25
+ATT.Scale = 1
 ATT.ModelOffset = Vector(0.25, 0, 0)
 
 ATT.PhysBulletMuzzleVelocityMult = 1.1
