@@ -136,6 +136,11 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_dp"
 end
 
+ATT.TriggerDelay = true
+ATT.TriggerDelayTime = 0.07
+ATT.TriggerDownSound = "gekolt_css/weaponclick.wav"
+//ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
+
 ATT.ShootSound = "oneshotof_cs16/m249-1.wav"
 //ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 

@@ -497,6 +497,11 @@ ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_lmg", "akantbo", "alt_optic"}
 ATT.ShootSound = "gekolt_css/m249-1.wav"
 
+ATT.TriggerDelay = true
+ATT.TriggerDelayTime = 0.07
+ATT.TriggerDownSound = "gekolt_css/weaponclick.wav"
+//ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
+
 ATT.ClipSizeOverride = 120
 ATT.AimDownSightsTimeMult = 1.5
 ATT.SprintToFireTimeMult = 1.5
