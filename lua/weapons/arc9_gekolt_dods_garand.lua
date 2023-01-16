@@ -630,7 +630,7 @@ SWEP.Animations = {
 	["fire_iron_sks"] = {
         Source = "fire_lever_iron",	
 		IKTimeLine = {	
-			{ t = 0, lhik = 1, rhik = 1, },{ t = 0.3, lhik = 1, rhik = 1, },{ t = 0.4, lhik = 0, rhik = 1, },
+			{ t = 0, lhik = 1, rhik = 1, },{ t = 0.25, lhik = 1, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },
 			{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	
 		},	
         EventTable = {			

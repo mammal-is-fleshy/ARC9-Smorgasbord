@@ -31,7 +31,7 @@ ATT.PrintName = [[Okhota-Rama]]
 ATT.CompactName = [[Marksman]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
-    
+
 ]]
 
 ATT.ClipSizeOverride = 15
@@ -59,7 +59,7 @@ ATT.PrintName = [[Erikoinen-Rama]]  -- this is finnish btw
 ATT.CompactName = [[Assault]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
-    
+
 ]]
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -85,7 +85,7 @@ ATT.PrintName = [[Podvod-Rama]]
 ATT.CompactName = [[Dart]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
-    Walter
+Walter
 ]]
 
 ATT.ClipSizeOverride = 25

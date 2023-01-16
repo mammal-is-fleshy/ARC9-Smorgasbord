@@ -391,7 +391,8 @@ ATT = {}
 ATT.PrintName = [[Sputnik Handguard]]
 ATT.CompactName = [[N94]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Magic non reciprocating floating barrel capable of performing first shot burst
+totally not a technical issue
 ]]
 
 ATT.SortOrder = 3
@@ -409,6 +410,18 @@ ATT.Sights = {
         KeepBaseIrons = false
     }
 }
+
+ATT.AimDownSightsTimeMult = 1.02
+ATT.SprintToFireTimeMult = 1.02
+
+ATT.RPMMult = 0.9
+ATT.RPMMultFirstShot = 3
+
+ATT.RecoilMult = 1.25
+ATT.RecoilMultFirstShot = 0.1
+
+ATT.SpreadMultSights = 0.85
+ATT.SwayMult = 0.9
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg7")
 

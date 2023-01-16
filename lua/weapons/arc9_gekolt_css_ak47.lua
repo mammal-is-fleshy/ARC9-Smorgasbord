@@ -542,7 +542,7 @@ SWEP.AttachmentElements = {
 	["hg_bizon"] = { Bodygroups = { {3, 9} },			AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
 	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} }, 		AttPosMods = { [5] = { Pos = Vector(0, 2.25, 18.5), } }		},	
 	["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },		AttPosMods = { [7] = { Pos = Vector(0, 0.075, 20), } }		},
-	["hg_rpk"] = { Bodygroups = { {3, 5} },				ttPosMods = { [7] = { Pos = Vector(0, 0.075, 35), } }		},
+	["hg_rpk"] = { Bodygroups = { {3, 5} },				AttPosMods = { [7] = { Pos = Vector(0, 0.075, 35), } }		},
 	["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 37.5), } }		},
 	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },	AttPosMods = { [7] = { Pos = Vector(0, 0.2, 29.5), } }		},		
 	["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },	AttPosMods = { [6] = { Pos = Vector(0, -0.35 , 5), }, [5] = { Pos = Vector(0, 2, 15), }, [7] = { Pos = Vector(0, 0.1, 27), } }		},	
