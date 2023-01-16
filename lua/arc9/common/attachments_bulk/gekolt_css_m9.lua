@@ -212,7 +212,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m9_f4")
 
 ATT = {}
 
-ATT.PrintName = [[Trasmettitore-Ossatura]]
+ATT.PrintName = [[Bisbigliare-Ossatura]]
 ATT.CompactName = [[Welrod]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_welrod.png", "mips smooth")
 ATT.Description = [[Super compact manual action kit, the hammer doesn't even automatically reset

@@ -1,7 +1,7 @@
 local ATT = {}
 
 ----------------------------------------------------------------------------------
-
+--- anglicised a bit of north germanic so j > y, umlauts to +e
 
 ATT = {}
 
@@ -186,7 +186,6 @@ ARC9.LoadAttachment(ATT, "gekolt_moah_m18_sweden")
 
 ----------------------------------------------------------------------------------
 
---- anglicalise a bit of germanic so j > y, umlauts to -e
 ATT = {}
 
 ATT.PrintName = [[Landskap Yeagare-Stomme]] -- landship hunter???

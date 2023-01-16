@@ -1,9 +1,9 @@
 local ATT = {}
 
 ATT = {}
-
-ATT.PrintName = [[545]]
-ATT.CompactName = [[545]]
+--- never anglicise/latinise Russian again
+ATT.PrintName = [[Atakovat-Rama]]
+ATT.CompactName = [[Carbine]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
     
@@ -27,8 +27,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag1")
 
 ATT = {}
 
-ATT.PrintName = [[308]]
-ATT.CompactName = [[308]]
+ATT.PrintName = [[Okhota-Rama]]
+ATT.CompactName = [[Marksman]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
     
@@ -55,8 +55,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag2")
 
 ATT = {}
 
-ATT.PrintName = [[556]]
-ATT.CompactName = [[556]]
+ATT.PrintName = [[Erikoinen-Rama]]  -- this is finnish btw
+ATT.CompactName = [[Assault]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
     
@@ -81,8 +81,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag3")
 
 ATT = {}
 
-ATT.PrintName = [[566]]
-ATT.CompactName = [[566]]
+ATT.PrintName = [[Podvod-Rama]]
+ATT.CompactName = [[Dart]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
     Walter
@@ -122,8 +122,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag4")
 
 ATT = {}
 
-ATT.PrintName = [[762 Disk]]
-ATT.CompactName = [[762 Disk]]
+ATT.PrintName = [[Kavaleriya-Rama]]
+ATT.CompactName = [[LMG]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
 
@@ -175,8 +175,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag5")
 
 ATT = {}
 
-ATT.PrintName = [[919]]
-ATT.CompactName = [[919]]
+ATT.PrintName = [[Dobavoch-Rama]]
+ATT.CompactName = [[Aux]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
 
@@ -203,8 +203,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag6")
 
 ATT = {}
 
-ATT.PrintName = [[919 Helica]]
-ATT.CompactName = [[Helica]]
+ATT.PrintName = [[Gelikoidal-Rama]]
+ATT.CompactName = [[Hex]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
 
@@ -238,7 +238,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag7")
 
 
 ATT = {}
-
+---??? I should replace this with a shotgun mag
 ATT.PrintName = [[762 Drum]]
 ATT.CompactName = [[Drum]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
