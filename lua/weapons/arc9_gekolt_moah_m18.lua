@@ -3,7 +3,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - CSS"
+SWEP.Category = "ARC9 - Smorgasbord"
 
 SWEP.PrintName = "Kromusgen-18"
 SWEP.TrueName = "M18"
