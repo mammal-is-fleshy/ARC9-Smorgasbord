@@ -2,7 +2,7 @@ ATT.PrintName = "Breacher"
 ATT.CompactName = "Breacher"
 ATT.Description = [[Spiking muzzle for bashing people]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_muz_breach.png", "mips smooth")
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/muz_breach.mdl"

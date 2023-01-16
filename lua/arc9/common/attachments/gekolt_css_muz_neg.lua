@@ -2,7 +2,7 @@ ATT.PrintName = "Negator"
 ATT.CompactName = "Negator"
 ATT.Description = [[Heavy device improves sustaining recoil]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_muz_cage.png", "mips smooth")
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/muz_negator.mdl"

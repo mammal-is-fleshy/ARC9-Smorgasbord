@@ -1,6 +1,6 @@
 ATT.PrintName = "Suppressor D"
 ATT.CompactName = "SUPP D"
-ATT.Icon = Material("entities/gekolt_css_muz_sd2.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_muz_sd4.png", "mips smooth")
 ATT.Description = [[]]
 ATT.SortOrder = 2
 

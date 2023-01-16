@@ -2,7 +2,7 @@ ATT.PrintName = "Bird Cage"
 ATT.CompactName = "Cage"
 ATT.Description = [[  ]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_muz_cage.png", "mips smooth")
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/muz_cage.mdl"

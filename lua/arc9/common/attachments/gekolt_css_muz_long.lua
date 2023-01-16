@@ -2,7 +2,7 @@ ATT.PrintName = "Slanted"
 ATT.CompactName = "Slanted"
 ATT.Description = [[  ]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_muz_longh.png", "mips smooth")
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/muz_long.mdl"

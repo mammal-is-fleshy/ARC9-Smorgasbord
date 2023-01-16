@@ -2,7 +2,7 @@ ATT.PrintName = "Heavy Muzzle Break"
 ATT.CompactName = "H.BRAKE"
 ATT.Description = [[Muzzle device designed to compensate DMR/Sniper Rifle recoil]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_muz_heavy.png", "mips smooth")
 ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/muz_heavy.mdl"
