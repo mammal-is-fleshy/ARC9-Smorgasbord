@@ -223,7 +223,7 @@ MK2 but those "pistol" grip
 sterling mk4 (suppressed)
 saladmander from Fortuna returns
 
- AK: [Russian? Maybe Hungarian for the lol]
+ AK: [Russian? Maybe Finnish for the lol]
 919: saiga
 556: trolled
 566: aps underwater dart gun
@@ -231,6 +231,7 @@ disk: Tachanka units during the Russian Civil War in ehh 1921? or something eith
 helica: bizon, the animala is defintely NOT mw22
 stalker: asval
 huntsman: ??? i saw something similar on tarkov once?? probably a saiga
+saiga: loosely based on one of them bullpup ak
 
  M18: [Swedish(lol)] --- thanks Cylo for the shout          Common Swedish W
 rpg convert -- obviously

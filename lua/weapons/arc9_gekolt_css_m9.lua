@@ -339,13 +339,15 @@ SWEP.Attachments = {
 
 SWEP.Hook_TranslateAnimation = function(wep, anim) 
 
+	-- att add _[attachment] + this replace animala with _akimbo   >   replace animala with _akimbo_[attachment]???   HOW DOES LOGIC WORK?
+
     if wep:HasElement("akimbo") then
     		if anim == "reload" then  return "reload_akimbo" end
     		if anim == "reload_empty" then  return "reload_empty_akimbo" end
-			if anim == "reload_p38" then  return "reload_akimbo" end
-    		if anim == "reload_empty_p38" then  return "reload_empty_akimbo" end
-			if anim == "reload_ex" then  return "reload_akimbo" end
-    		if anim == "reload_empty_ex" then  return "reload_empty_akimbo" end
+			if anim == "reload_akimbo_p38" then  return "reload_akimbo" end
+    		if anim == "reload_empty_akimbo_p38" then  return "reload_empty_akimbo" end
+			if anim == "reload_akimbo_ex" then  return "reload_akimbo" end
+    		if anim == "reload_empty_akimbo_ex" then  return "reload_empty_akimbo" end
     end	
 end
 

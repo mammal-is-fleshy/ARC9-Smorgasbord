@@ -1,18 +1,16 @@
-# ARC9-CSS?
-name is a lieutenant
+# ARC9-Smorgasbord
+low quality models stuff on even lower quality animations
 
-Not actually only from Counter Strike Source
-
-Current Weapons:
+12 Total Weapons: (In order of development)
+- AWP 
 - M4
-- AK (WIP)
-- AWP
 - Hammer and Sickle
-- Mauser
-- M18
 - Claymore on a Stick
-- Grenade Bundle
-- M79
 - Garand
 - M9
+- Mauser
+- M79
+- AK (WIP)
+- M18
+- Grenade Bundle
 - Sten (Early Concept)
