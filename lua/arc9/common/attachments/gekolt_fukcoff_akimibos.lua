@@ -10,11 +10,27 @@ ATT.SortOrder = 2
 ATT.Category = {"css_akimbo"} -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"akimbose"}
 
-ATT.Hook_Think = function(wep)
+ATT.HasSights = false
 
+ATT.Hook_Think = function(wep)
+-- HOW THE FUCK DO I DO CHAIN FUNCTION?????		
+    if wep:GetOwner():KeyPressed(IN_RELOAD) then
+        wep:Reload()	-- first
+    elseif wep:GetOwner():KeyPressed(IN_RELOAD) then
+        wep:SetUBGL(true) -- second
+        wep:Reload()	
+    elseif wep:GetOwner():KeyPressed(IN_RELOAD) then		
+        wep:SetUBGL(false)	-- third	
+	
+    elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
+        wep:SetUBGL(false)	
+        wep:DoPrimaryAttack()
+    elseif wep:GetOwner():KeyPressed(IN_ATTACK2) then
+        wep:SetUBGL(true)
+        wep:DoPrimaryAttack()
+    end
 end
 
-ATT.HasSights = true
 ATT.Model = "models/weapons/arccw/mifl_atts/fas2/c_deagle.mdl"
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 0, 0)

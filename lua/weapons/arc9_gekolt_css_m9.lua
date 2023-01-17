@@ -580,7 +580,30 @@ SWEP.Animations = {
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},									
         },	
 		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},			
-    },
+    },   
+	["reload_akimbo_p38"] ={
+        Source = "wet_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.83,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},									
+        },	
+		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},			
+    },  
+	["reload_empty_akimbo_p38"] = {
+        Source = "dry_akimbo",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.86,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},					
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 70 / 40},	
+			},
+		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},				
+    },	
     ["reload_empty_akimbo"] = {
         Source = "dry_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,

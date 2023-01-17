@@ -33,7 +33,7 @@ ATT.Attachments = {
         Category = {"css_m9_stock"},
         Pos = Vector(0, 2, 5),
         Ang = Angle(90, 0, -90),		
-    },		
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f1")
