@@ -1,6 +1,6 @@
 ATT.PrintName = "Rail Extension"
 ATT.CompactName = "Ext"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_mount_long.png", "mips smooth")
 ATT.Description = [[More space for your cursed weapon built.]]
 ATT.SortOrder = 1
 

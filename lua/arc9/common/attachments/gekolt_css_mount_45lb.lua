@@ -1,6 +1,6 @@
 ATT.PrintName = "45 Degree Canted Mount"
 ATT.CompactName = "Canted"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_mount_side.png", "mips smooth")
 ATT.Description = [[Canted rail for foregrip attachments at an angle.]]
 ATT.SortOrder = 1
 

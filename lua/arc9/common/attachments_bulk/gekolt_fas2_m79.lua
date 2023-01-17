@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = [[Buckshot]]
 ATT.CompactName = [[SG]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ammo/shotgun.png", "mips smooth")
 ATT.Description = [[Oversized buckshot round for your angry tube
 ]]
 

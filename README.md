@@ -14,3 +14,11 @@ low quality models stuff on even lower quality animations
 - M18
 - Grenade Bundle
 - Sten (Early Concept)
+
+Future stuff??
+AK expansion:
+- Gepard
+- Verp
+- Chauchat
+
+Mosin????
