@@ -66,8 +66,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_56"
 end
 
-ATT.ShootSound = "oneshotof_cs16/m4a1_unsil-1.wav"
-//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+ATT.ShootSound = {"oneshotof_cs16/m4a1_unsil-1.wav", "oneshotof_cs16/m4a1_unsil-2.wav"}
+//ATT.ShootSoundSilenced = "oneshotof_cs16/m4a1-1.wav"
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"

@@ -6,7 +6,7 @@ $bodygroup "mag"
 {
 	studio "ak47_mag.smd"
 	studio "ak47_mag2.smd"
-	studio "ak47_mag_54.smd"
+	studio "ak47_mag_556.smd"
 	studio "ak47_mag_25.smd"
 	studio "ak47_mag_drum.smd"
 	studio "ak47_mag_disk.smd"
@@ -146,7 +146,7 @@ $sequence "dry_54" {
 }
 
 $sequence "dry_56" {
-	"anims\dry_56.smd"
+	"anims\dry_556_bolt.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2
@@ -236,7 +236,7 @@ $sequence "wet_dp" {
 }
 
 $sequence "wet56" {
-	"anims\wet56.smd"
+	"anims\wet556.smd"
 	activity "ACT_VM_RELOAD" 1		
 	fadein 0.2
 	fadeout 0.2

@@ -331,8 +331,7 @@ SWEP.Animations = {
         EventTable = {		
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 85 / 40},	
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 91 / 40},			
+            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 84 / 40},			
         },			
     },	
 ------------------ 25 ----------------------------------	
