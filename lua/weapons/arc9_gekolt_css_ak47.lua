@@ -642,7 +642,7 @@ SWEP.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
         Category = {"optic_css"}, 
         Bone = "W_Bolt_Disk",
-        Pos = Vector(0, -0.4, 0.4),
+        Pos = Vector(0, -0.4, 0.8),
         Ang = Angle(90, 0, -90),			
     },
 
@@ -661,6 +661,7 @@ SWEP.Attachments = {
     {
         PrintName = "Clamp",
         DefaultName = "None",
+		Hidden = "True",
 
 		ExcludeElements = {"short_clamp"},
         Category = {"clamp_css"}, 
