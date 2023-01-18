@@ -23,7 +23,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 5
 ATT.RTScopeReticle = Material("arc9_css/scope_fal.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.95
+ATT.RTScopeReticleScale = 1.04
 ATT.RTScopeColorable = true
 
 ATT.ScopeScreenRatio = 0.9
