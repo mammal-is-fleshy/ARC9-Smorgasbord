@@ -196,7 +196,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.6, 0, 0.7),
+    Pos = Vector(-2.55, 0, 0.7),
     Ang = Angle(0,0,-5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
@@ -315,8 +315,8 @@ SWEP.Animations = {
         { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
-            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},			
+            {s =  "oneshotof_cs16/ump45_clipout.wav" ,   t = 18 / 40},
+            {s =  "oneshotof_cs16/mp5_clipin.wav" ,    t = 63 / 40},			
         },				
     },
     ["reload_empty_56"] = {
@@ -329,9 +329,9 @@ SWEP.Animations = {
 		{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },			
 		},	
         EventTable = {		
-            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
-            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 84 / 40},			
+            {s =  "oneshotof_cs16/ump45_clipout.wav" ,   t = 18 / 40},
+            {s =  "oneshotof_cs16/mp5_clipin.wav" ,    t = 61 / 40}, 
+			{s =  "oneshotof_cs16/ump45_boltslap.wav" ,    t = 85 / 40},
         },			
     },	
 ------------------ 25 ----------------------------------	
@@ -358,10 +358,10 @@ SWEP.Animations = {
 		{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },		
 		},	
         EventTable = {		
-            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/ak47_clipout.wav" ,   t = 11 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 87 / 40},	
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 93 / 40},			
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 85 / 40},	
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 90 / 40},			
         },			
     },	
 ------------------ bizon --------------------------------	

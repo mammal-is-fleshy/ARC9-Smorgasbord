@@ -41,6 +41,7 @@ $bodygroup "Rail3"
 	studio "Rail_Side.smd"
 	studio "Rail_Side_Pump.smd"
 	studio "Rail_Side_Bare.smd"	
+	studio "Rail_Side_Romanian.smd"	
 }
 
 $illumposition 0 0 0

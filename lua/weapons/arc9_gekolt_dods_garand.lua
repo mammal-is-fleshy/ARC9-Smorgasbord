@@ -195,6 +195,7 @@ SWEP.IronSights = {
 }
 
 SWEP.Crosshair = true
+SWEP.NoShellEject = true
 
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(2, 2, 0)
@@ -286,7 +287,7 @@ SWEP.AttachmentElements = {
 
     ["garand_sks"] = {
         Bodygroups = {{1, 4}},		
-		AttPosMods = { [3] = { Pos = Vector(0, 0, 22.5), } }			
+		AttPosMods = { [3] = { Pos = Vector(0, 0, 22.5), }, [5] = { Pos = Vector(-1, -0.55, 0.5), } }			
 	},
 
     ["garand_mini"] = {
@@ -302,7 +303,8 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data) 
     local model = data.model
     if wep.Attachments[4].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(3,2) end	--- shotgun under rail ---
-    if wep.Attachments[5].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(5,2) end	--- shotgun side rail ---	
+    if wep.Attachments[5].Installed and wep:HasElement("garand_slam") then model:SetBodygroup(5,2) end	--- shotgun side rail ---	 
+	if wep.Attachments[5].Installed and wep:HasElement("garand_sks") then model:SetBodygroup(5,4) end	--- sks side rail ---	
     if wep:HasElement("rail_bot") and wep:HasElement("rail_side") then model:SetBodygroup(5,1) end	--- side rail ---	
     if wep.Attachments[4].Installed and wep:HasElement("rail_side") and wep:HasElement("garand_slam") then model:SetBodygroup(5,2) end	--- shotgun under rail ---	
 	
@@ -406,19 +408,23 @@ SWEP.Animations = {
 		Time = 0		
     },	
     ["fire"] = {
-        Source = "fire",	
+        Source = "fire",
+		EjectAt = 0/40,
     },	
     ["fire_iron"] = {
         Source = "fire_iron",	
+		EjectAt = 0/40,
     },		
     ["fire_empty"] = {
         Source = "fire_gempty",
+		EjectAt = 0/40,
         EventTable = {
             {s =  "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
         },		
     },	
     ["fire_iron_empty"] = {
         Source = "fire_iron_gempty",
+		EjectAt = 0/40,
         EventTable = {
             {s =  "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
         },	
@@ -458,10 +464,12 @@ SWEP.Animations = {
 
     -- M14 --
     ["fire_empty_308"] = {
-        Source = "fire_emp",	
+        Source = "fire_emp",
+		EjectAt = 0/40,
     },	
     ["fire_iron_empty_308"] = {
-        Source = "fire_iron_emp",	
+        Source = "fire_iron_emp",
+		EjectAt = 0/40,
     },			
 
     ["reload_308"] = {
@@ -501,9 +509,11 @@ SWEP.Animations = {
     -- Mini --
     ["fire_empty_mini"] = {
         Source = "fire_emp",	
+		EjectAt = 0/40,
     },	
     ["fire_iron_empty_mini"] = {
-        Source = "fire_iron_emp",	
+        Source = "fire_iron_emp",
+		EjectAt = 0/40,
     },			
 
     ["reload_mini"] = {
@@ -544,23 +554,25 @@ SWEP.Animations = {
 
     ["fire_slam"] = {
         Source = "fire_slam",
-		EjectAt = 12/40,		
+		EjectAt = 12/40,
         EventTable = {
             {s =  "gekolt_css/m3_pump.wav" ,   t = 5 / 40},
         },
     },	
     ["fire_iron_slam"] = {
         Source = "fire_slam",
-		EjectAt = 12/40,		
+		EjectAt = 12/40,
         EventTable = {
             {s =  "gekolt_css/m3_pump.wav" ,   t = 5 / 40},
         },		
     },		
     ["fire_empty_slam"] = {
-        Source = "fire_emp",	
+        Source = "fire_emp",
+		EjectAt = 0/40,
     },	
     ["fire_iron_empty_slam"] = {
-        Source = "fire_emp",	
+        Source = "fire_emp",
+		EjectAt = 0/40,
     },	
 
     ["reload_start_slam"] = {
@@ -615,9 +627,11 @@ SWEP.Animations = {
 
     ["fire_empty_sks"] = {
         Source = "fire_emp",	
+		EjectAt = 0/40,
     },	
     ["fire_sks"] = {
         Source = "fire_lever",	
+		EjectAt = 23/40,
 		IKTimeLine = {	
 			{ t = 0, lhik = 1, rhik = 1, },{ t = 0.3, lhik = 1, rhik = 1, },{ t = 0.4, lhik = 0, rhik = 1, },
 			{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	
@@ -629,6 +643,7 @@ SWEP.Animations = {
     },	 
 	["fire_iron_sks"] = {
         Source = "fire_lever_iron",	
+		EjectAt = 23/40,
 		IKTimeLine = {	
 			{ t = 0, lhik = 1, rhik = 1, },{ t = 0.25, lhik = 1, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },
 			{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	
@@ -640,6 +655,7 @@ SWEP.Animations = {
     },	
     ["fire_iron_empty_sks"] = {
         Source = "fire_iron_emp",	
+		EjectAt = 0/40,
     },
 
     ["reload_start_sks"] = {

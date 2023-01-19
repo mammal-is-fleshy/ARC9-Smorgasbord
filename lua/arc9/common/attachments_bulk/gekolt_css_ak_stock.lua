@@ -370,7 +370,7 @@ ATT.ActivateElements = {"hg_hunt"}
 
 ATT.Sights = {
     {
-        Pos = Vector(2.2, 0, 19),
+        Pos = Vector(2.2, 0, 16),
         Ang = Angle(90.5, 0, -90),
         Reticle = nil,
 
