@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = [[Kantschapper-Gestell]]
 ATT.CompactName = [[Malorian]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_dod_c96_cyber.png", "mips smooth")
 ATT.Description = [[Samurai's choice of preference
 ]]
 
@@ -58,7 +58,7 @@ ATT = {}
 
 ATT.PrintName = [[Kundschafter-Gestell]] -- it means scout methinks whatev
 ATT.CompactName = [[SD]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_dod_c96_sd.png", "mips smooth")
 ATT.Description = [[In case you accidentally wander into the enemy's trench
 ]]
 
@@ -199,7 +199,7 @@ ATT = {}
 
 ATT.PrintName = [[Aufplatzen-Gestell]]
 ATT.CompactName = [[Burst]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_dod_c96_burst.png", "mips smooth")
 ATT.Description = [[Aftermarket three-round burst system straight from the favelas of Brazil
 ]]
 

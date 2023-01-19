@@ -15,11 +15,12 @@ ATT.HasSights = false
 ATT.Hook_Think = function(wep)
 -- HOW THE FUCK DO I DO CHAIN FUNCTION?????		
     if wep:GetOwner():KeyPressed(IN_RELOAD) then
+        wep:SetUBGL(false)	-- third		
         wep:Reload()	-- first
-    elseif wep:GetOwner():KeyPressed(IN_RELOAD) then
+
         wep:SetUBGL(true) -- second
         wep:Reload()	
-    elseif wep:GetOwner():KeyPressed(IN_RELOAD) then		
+		
         wep:SetUBGL(false)	-- third	
 	
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then

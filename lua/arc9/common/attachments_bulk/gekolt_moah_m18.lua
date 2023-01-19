@@ -216,7 +216,7 @@ ATT = {}
 
 ATT.PrintName = [[Rustning Genomtraengare-Stomme]] -- armour penetrator???
 ATT.CompactName = [[RPG]]
-ATT.Icon = Material("entities/gekolt_moah_rpg2.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_moah_rpg3.png", "mips smooth")
 ATT.Description = [[Tandem?????
 ]]
 
