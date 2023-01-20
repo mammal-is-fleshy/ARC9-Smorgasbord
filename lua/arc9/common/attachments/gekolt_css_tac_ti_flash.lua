@@ -2,7 +2,7 @@ ATT.PrintName = "Flashlight B"
 ATT.CompactName = "FLASH B"
 ATT.Description = [[]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_tac_flash2.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"tac_css","mountr_css","mountl_css"}

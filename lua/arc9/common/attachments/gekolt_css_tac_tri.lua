@@ -2,7 +2,7 @@ ATT.PrintName = "Tri-Beam"
 ATT.CompactName = "TROIS"
 ATT.Description = [[]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_tac_las3.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"tac_css","mountr_css","mountl_css"}

@@ -2,7 +2,7 @@ ATT.PrintName = "AN/PEQ-15"
 ATT.CompactName = "PEQ15"
 ATT.Description = [[Tactical laser/light module that provides an aiming point while hip firing. Lasers help with aiming, and can blind enemies, but will reveal the location of the user.]]
 
-ATT.Icon = Material("entities/arc9_att_tac_anpeq16a.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_tac_las4.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"mount_css", "tac_css","mountr_css","mountl_css", "tac_css_flat"}

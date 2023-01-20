@@ -2,7 +2,7 @@ ATT.PrintName = "Tac-Light B"
 ATT.CompactName = "TAC B"
 ATT.Description = [[]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_tac_las2.png", "mips smooth")
 
 ATT.SortOrder = 0
 ATT.Category = {"tac_css","mountr_css","mountl_css"}
