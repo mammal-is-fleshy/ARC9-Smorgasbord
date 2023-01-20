@@ -19,7 +19,7 @@ ATT.ExcludeElements = {"no_optic"}
 
 
 ATT.LHIK = true
-ATT.LHIK_Priority = 0
+ATT.LHIK_Priority = 900000
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(-11, -0.5, -0.5)
