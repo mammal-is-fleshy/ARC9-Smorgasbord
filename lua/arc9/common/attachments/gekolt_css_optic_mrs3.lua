@@ -1,6 +1,6 @@
 ATT.PrintName = "MRS Sight C"
 ATT.CompactName = "MRS C"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/mrs.png", "mips smooth")
 ATT.Description = [[The most basic reflex sight]]
 ATT.SortOrder = 0.2
 

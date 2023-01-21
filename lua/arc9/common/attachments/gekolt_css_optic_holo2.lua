@@ -1,6 +1,6 @@
 ATT.PrintName = "Holographic Prototype Sight"
 ATT.CompactName = "H.Proto"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/eo_e.png", "mips smooth")
 ATT.Description = [[Holographic sight slapped with some "Tech" bollocks with thermal seeking sense
 Grayscaled for reason not related to gameplay]]
 ATT.SortOrder = 0.2

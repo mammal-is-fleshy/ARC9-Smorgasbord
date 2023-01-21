@@ -1,6 +1,6 @@
 ATT.PrintName = "T1 Sight"
 ATT.CompactName = "T1"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/t1.png", "mips smooth")
 ATT.Description = [[Mid-profile red dot sight]]
 ATT.SortOrder = 0.2
 

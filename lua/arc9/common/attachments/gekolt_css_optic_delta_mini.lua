@@ -1,6 +1,6 @@
 ATT.PrintName = "Delta Sight B"
 ATT.CompactName = "Delta B"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/delta2.png", "mips smooth")
 ATT.Description = [[Smaller reflex sight designed as a backup]]
 ATT.SortOrder = 0.1
 

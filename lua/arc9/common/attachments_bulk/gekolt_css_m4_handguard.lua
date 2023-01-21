@@ -47,7 +47,7 @@ ATT.Attachments = {
         Category = {"clamp_s_css"},
         Pos = Vector(0,0.25, 0.5),
         Ang = Angle(90, 0, -90),
-        Icon_Offset = Vector(0, 0, 5)
+        Icon_Offset = Vector(5, 0, 0)
     },	
 	
 }

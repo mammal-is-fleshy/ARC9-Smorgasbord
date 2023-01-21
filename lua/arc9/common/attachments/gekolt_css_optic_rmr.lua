@@ -1,6 +1,6 @@
 ATT.PrintName = "RMR Sight"
 ATT.CompactName = "RMR"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/rmr.png", "mips smooth")
 ATT.Description = [[Small reflex sight designed for pistols and small arms]]
 ATT.SortOrder = 0.1
 

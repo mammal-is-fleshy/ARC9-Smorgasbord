@@ -1,6 +1,6 @@
 ATT.PrintName = "Kemper XL"
 ATT.CompactName = "K.XL"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/ragnok.png", "mips smooth")
 ATT.Description = [[Extremely wide holographic sight with a built in range finder]]
 ATT.SortOrder = 0.2
 

@@ -1,6 +1,6 @@
 ATT.PrintName = "Holographic Sight"
 ATT.CompactName = "Holo"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/eo.png", "mips smooth")
 ATT.Description = [[Boxy holographic sight with wide fov]]
 ATT.SortOrder = 0.2
 
