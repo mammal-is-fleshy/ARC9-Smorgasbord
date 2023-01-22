@@ -284,6 +284,8 @@ SWEP.ShellCorrectAng = Angle(0, 0, 90)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.NoShellEject = true
+SWEP.NoShellEjectManualAction = true
+SWEP.EjectDelay = 0
 
 -------------------------- SOUNDS
 
@@ -415,13 +417,13 @@ SWEP.Animations = {
 		Time = 0
     },	
     ["fire"] = {
-        Source = "fire",	
+        Source = "fire",
     },	
     ["fire_rev"] = {
-        Source = "fire_rev",	
+        Source = "fire_rev",
     },		
     ["fire_iron"] = {
-        Source = "fire",	
+        Source = "fire",
     },			
     ["reload"] = {
         Source = "dry",
