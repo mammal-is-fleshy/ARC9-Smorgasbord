@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = [[Folding Stock A]]
 ATT.CompactName = [[F.A]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_fold.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -22,7 +22,7 @@ ATT = {}
 
 ATT.PrintName = [[Folding Stock B]]
 ATT.CompactName = [[F.B]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_fold2.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -60,7 +60,7 @@ ATT = {}
 
 ATT.PrintName = [[Sliding Stock]]
 ATT.CompactName = [[Slide]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_slide.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -79,7 +79,7 @@ ATT = {}
 
 ATT.PrintName = [[Heavy Stock]]
 ATT.CompactName = [[Heavy]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_rpk.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -98,7 +98,7 @@ ATT = {}
 
 ATT.PrintName = [[Full Stock]]
 ATT.CompactName = [[Full]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_full.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -117,7 +117,7 @@ ATT = {}
 
 ATT.PrintName = [[Polymer Stock A]]
 ATT.CompactName = [[P.A]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_poly.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -136,7 +136,7 @@ ATT = {}
 
 ATT.PrintName = [[Polymer Stock B]]
 ATT.CompactName = [[P.B]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_poly2.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -155,7 +155,7 @@ ATT = {}
 
 ATT.PrintName = [[MOE Stock]]
 ATT.CompactName = [[MOE]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_m4_s.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -218,7 +218,7 @@ ATT = {}
 
 ATT.PrintName = [[Rifle Grip]]
 ATT.CompactName = [[Rifle]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_cali.png", "mips smooth")
 ATT.Description = [[
 
 ]]
@@ -237,7 +237,7 @@ ATT = {}
 
 ATT.PrintName = [[Polymer Rifle Grip]]
 ATT.CompactName = [[P.Rifle]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_cali2.png", "mips smooth")
 ATT.Description = [[
 
 ]]
