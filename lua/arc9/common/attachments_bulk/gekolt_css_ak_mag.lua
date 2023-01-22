@@ -4,7 +4,7 @@ ATT = {}
 --- never anglicise/latinise Russian again
 ATT.PrintName = [[Atakovat-Rama]]
 ATT.CompactName = [[Carbine]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_u_545.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -29,7 +29,7 @@ ATT = {}
 
 ATT.PrintName = [[Okhota-Rama]]
 ATT.CompactName = [[Marksman]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
 ATT.Description = [[
 
 ]]
@@ -57,7 +57,7 @@ ATT = {}
 
 ATT.PrintName = [[Erikoinen-Rama]]  -- this is finnish btw
 ATT.CompactName = [[Assault]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_u_556.png", "mips smooth")
 ATT.Description = [[
 
 ]]
@@ -83,7 +83,7 @@ ATT = {}
 
 ATT.PrintName = [[Podvod-Rama]]
 ATT.CompactName = [[Dart]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_u_aps.png", "mips smooth")
 ATT.Description = [[
 Walter
 ]]
@@ -124,7 +124,7 @@ ATT = {}
 
 ATT.PrintName = [[Kavaleriya-Rama]]
 ATT.CompactName = [[LMG]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_u_cal.png", "mips smooth")
 ATT.Description = [[
 
 ]]
@@ -177,7 +177,7 @@ ATT = {}
 
 ATT.PrintName = [[Dobavoch-Rama]]
 ATT.CompactName = [[Aux]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_u_pp.png", "mips smooth")
 ATT.Description = [[
 
 ]]
@@ -205,7 +205,7 @@ ATT = {}
 
 ATT.PrintName = [[Gelikoidal-Rama]]
 ATT.CompactName = [[Hex]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_u_bizon.png", "mips smooth")
 ATT.Description = [[
 
 ]]
