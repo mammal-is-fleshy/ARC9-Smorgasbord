@@ -1,6 +1,6 @@
 ATT.PrintName = "Reddot Sight"
 ATT.CompactName = "Reddot"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/aimpoint.png", "mips smooth")
 ATT.Description = [[Cylindrical optics with lot's of circles.]]
 ATT.SortOrder = 0.2
 

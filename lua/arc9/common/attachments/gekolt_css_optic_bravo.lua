@@ -1,6 +1,6 @@
 ATT.PrintName = "Bravo-4 Sight"
 ATT.CompactName = "B-4"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/b4.png", "mips smooth")
 ATT.Description = [[Variable mid-ranged scoped with a short rail mounted]]
 ATT.SortOrder = 4
 

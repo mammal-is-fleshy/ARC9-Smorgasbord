@@ -1,6 +1,6 @@
 ATT.PrintName = "ACOG"
 ATT.CompactName = "ACOG"
-ATT.Icon = Material("")
+//ATT.Icon = Material("entities/gekolt_css_optic/acog.png", "mips smooth")
 ATT.Description = [[Simple mid-ranged scope]]
 ATT.SortOrder = 4
 

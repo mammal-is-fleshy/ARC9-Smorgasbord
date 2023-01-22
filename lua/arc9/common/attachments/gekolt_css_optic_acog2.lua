@@ -1,6 +1,6 @@
 ATT.PrintName = "ACOG [Modern]"
 ATT.CompactName = "ACOG_M"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/acog2.png", "mips smooth")
 ATT.Description = [[Funky model with funky backup ironsight]]
 ATT.SortOrder = 4
 
