@@ -1,6 +1,6 @@
 ATT.PrintName = "Trilux Scope"
 ATT.CompactName = "Trilux"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/fal.png", "mips smooth")
 ATT.Description = [[Cold War era scope with simple picture]]
 ATT.SortOrder = 4
 

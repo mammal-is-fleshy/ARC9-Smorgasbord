@@ -1,6 +1,6 @@
 ATT.PrintName = "Elcan Scope"
 ATT.CompactName = "Elcan"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/elcan.png", "mips smooth")
 ATT.Description = [[]]
 ATT.SortOrder = 4
 

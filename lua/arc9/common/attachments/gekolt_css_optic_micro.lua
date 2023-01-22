@@ -1,6 +1,6 @@
 ATT.PrintName = "Micro Scope"
 ATT.CompactName = "Micro"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/micro.png", "mips smooth")
 ATT.Description = [[2x magnifying scope with three mounted rails for even more attachments]]
 ATT.SortOrder = 4
 

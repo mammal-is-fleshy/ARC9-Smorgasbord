@@ -1,6 +1,6 @@
 ATT.PrintName = "HAMR Sight"
 ATT.CompactName = "HAMR"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/b4.png", "mips smooth")
 ATT.Description = [[Combat scope fitted with a backup reflex]]
 ATT.SortOrder = 4
 

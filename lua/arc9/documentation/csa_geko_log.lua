@@ -117,6 +117,7 @@ Makarov: Model Half [SCRAPPED]
 note myself: 
 -use elements instead of attachment check
 -you cant use $attachment as a spare point For offhand stuff       use $bonemerge instead
++you have to apply the animation point before exporting
 -use a different path for material FUCK YOU CSGO  -- nope doesn't work
 -maybe Write the calibre vague to keep the larping hardcore tactile realischism wankers away
 -you suck at ubgl
@@ -235,6 +236,7 @@ saiga: loosely based on one of them bullpup ak
 
  M18: [Swedish(lol)] --- thanks Cylo for the shout          Common Swedish W
 rpg convert -- obviously
+tandem convert -- i knew this would happen
 xm70 -- this is based on a real thing, back in world war cold, the swedes wanted to arm their infantry with an anti-tank 'auxiliary' option, this was back during the coldwar
 -- the concept of oicw or multi-purpose weapons only takes form around ~90s so this is one of the forerunner, even then those are made to counter infantry, this was a panzerjaeger
 -- 762 cuz the m4 already exist, and currently lacking in battle rifle

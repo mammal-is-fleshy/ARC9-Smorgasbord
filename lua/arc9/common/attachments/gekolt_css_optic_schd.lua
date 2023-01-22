@@ -1,6 +1,6 @@
 ATT.PrintName = "S&D Medium Scope"
 ATT.CompactName = "S&D M"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/schmidt.png", "mips smooth")
 ATT.Description = [[Medium range hunting scope]]
 ATT.SortOrder = 4
 

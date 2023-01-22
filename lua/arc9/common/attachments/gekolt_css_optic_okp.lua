@@ -1,6 +1,6 @@
 ATT.PrintName = "OKP Sight"
 ATT.CompactName = "OKP"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/okp.png", "mips smooth")
 ATT.Description = [[Reflex sight with chevron reticle]]
 ATT.SortOrder = 0.2
 

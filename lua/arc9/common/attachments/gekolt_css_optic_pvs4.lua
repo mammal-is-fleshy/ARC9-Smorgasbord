@@ -1,6 +1,6 @@
 ATT.PrintName = "Nightstalker Scope"
 ATT.CompactName = "NStalker"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/pvs4.png", "mips smooth")
 ATT.Description = [[Heavy night vision scope with extremely limited visibility]]
 ATT.SortOrder = 100
 

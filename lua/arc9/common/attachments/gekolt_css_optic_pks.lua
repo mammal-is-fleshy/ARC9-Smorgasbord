@@ -1,6 +1,6 @@
 ATT.PrintName = "Romeo-7 Sight"
 ATT.CompactName = "R-7"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/pks.png", "mips smooth")
 ATT.Description = [[Small relfex sight for backup use]]
 ATT.SortOrder = 0.1
 
