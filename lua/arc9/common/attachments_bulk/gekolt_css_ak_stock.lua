@@ -41,7 +41,7 @@ ATT = {}
 
 ATT.PrintName = [[Folding Stock C]]
 ATT.CompactName = [[F.C]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_s_fold3.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -180,7 +180,7 @@ ATT = {}
 
 ATT.PrintName = [[Polymer Grip]]
 ATT.CompactName = [[Poly]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_g_poly.png", "mips smooth")
 ATT.Description = [[
     
 ]]
@@ -199,9 +199,9 @@ ATT = {}
 
 ATT.PrintName = [[Skeleton Grip]]
 ATT.CompactName = [[SKE]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_g_ske.png", "mips smooth")
 ATT.Description = [[
-    How do you even drill it like that?
+How do you even drill it like that?
 ]]
 
 ATT.SortOrder = 2

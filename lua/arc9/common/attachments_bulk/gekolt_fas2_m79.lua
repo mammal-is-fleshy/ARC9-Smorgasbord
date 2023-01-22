@@ -64,7 +64,7 @@ ATT = {}
 
 ATT.PrintName = [[Rifle Round]]
 ATT.CompactName = [[308]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fas2_m79_rifle.png", "mips smooth")
 ATT.Description = [[LOL
 ]]
 
@@ -110,7 +110,7 @@ ATT = {}
 
 ATT.PrintName = [[Pirate]]
 ATT.CompactName = [[Pirate]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fas2_m79_pirate.png", "mips smooth")
 ATT.Description = [[Short
 ]]
 
@@ -155,7 +155,7 @@ ATT = {}
 
 ATT.PrintName = [[Alofs]]
 ATT.CompactName = [[Alofs]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fas2_m79_alof.png", "mips smooth")
 ATT.Description = [[An overbulking attempt to compete the classic outdated grenade launcher with the modern auto grenade launchers
 ]]
 
@@ -205,7 +205,7 @@ ATT = {}
 
 ATT.PrintName = [[MTS]]
 ATT.CompactName = [[MTS]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fas2_m79_mts.png", "mips smooth")
 ATT.Description = [[how
 ]]
 
@@ -296,7 +296,7 @@ ATT = {}
 
 ATT.PrintName = [[MTS-S]]
 ATT.CompactName = [[MTS-S]]
-//ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fas2_m79_mts.png", "mips smooth")
 ATT.Description = [[HOW
 ]]
 
