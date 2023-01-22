@@ -262,7 +262,7 @@ ATT = {}
 
 ATT.PrintName = [[Stalker Handguard]]
 ATT.CompactName = [[SD]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_sd.png", "mips smooth")
 ATT.Description = [[
 ]]
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
@@ -282,7 +282,7 @@ ATT = {}
 
 ATT.PrintName = [[Polymer Handguard]]
 ATT.CompactName = [[Poly]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_poly.png", "mips smooth")
 ATT.Description = [[
 ]]
 
@@ -300,7 +300,7 @@ ATT = {}
 
 ATT.PrintName = [[Railed Handguard]]
 ATT.CompactName = [[Saiga]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_saiga.png", "mips smooth")
 ATT.Description = [[
 ]]
 
@@ -330,7 +330,7 @@ ATT = {}
 
 ATT.PrintName = [[Krinkov Handguard]]
 ATT.CompactName = [[U]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_u.png", "mips smooth")
 ATT.Description = [[
 ]]
 
@@ -360,7 +360,7 @@ ATT = {}
 
 ATT.PrintName = [[Huntsman Handguard]]
 ATT.CompactName = [[Hunt]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_hunt.png", "mips smooth")
 ATT.Description = [[
 ]]
 
@@ -390,7 +390,7 @@ ATT = {}
 
 ATT.PrintName = [[Sputnik Handguard]]
 ATT.CompactName = [[N94]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_94.png", "mips smooth")
 ATT.Description = [[Magic non reciprocating floating barrel capable of performing first shot burst
 totally not a technical issue
 ]]
@@ -433,7 +433,7 @@ ATT = {}
 
 ATT.PrintName = [[Auxilier Handguard]]
 ATT.CompactName = [[Aux]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_bizon.png", "mips smooth")
 ATT.Description = [[
 ]]
 
@@ -451,7 +451,7 @@ ATT = {}
 
 ATT.PrintName = [[INSERT NAME Handguard]]
 ATT.CompactName = [[RPK]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_rpk.png", "mips smooth")
 ATT.Description = [[
 ]]
 
