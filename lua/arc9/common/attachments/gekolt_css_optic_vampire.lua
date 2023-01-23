@@ -1,6 +1,6 @@
 ATT.PrintName = "Vampire Scope"
 ATT.CompactName = "Vampire"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/vampire.png", "mips smooth")
 ATT.Description = [[Infrared thermal vision scope in a bulky chassis drapes everything in grayscale
 Highlights targets in sort-of white]]
 ATT.SortOrder = 101

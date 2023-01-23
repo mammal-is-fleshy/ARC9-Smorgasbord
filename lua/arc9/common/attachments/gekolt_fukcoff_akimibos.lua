@@ -13,15 +13,30 @@ ATT.ActivateElements = {"akimbose"}
 ATT.HasSights = false
 
 ATT.Hook_Think = function(wep)
--- HOW THE FUCK DO I DO CHAIN FUNCTION?????		
-    if wep:GetOwner():KeyPressed(IN_RELOAD) then
-        wep:SetUBGL(false)	-- third		
-        wep:Reload()	-- first
+-- HOW THE FUCK DO I DO CHAIN FUNCTION?????	
+	local howthefuckdoesthiswork = 0	
+	local resetthisshit = false
+	local resettime = 0	
+	
 
-        wep:SetUBGL(true) -- second
-        wep:Reload()	
-		
-        wep:SetUBGL(false)	-- third	
+    if wep:GetOwner():KeyPressed(IN_RELOAD) then
+		if !resetthisshit then
+			resettime = 0
+		end
+	    if resettime > CurTime() - (1 / 30) then return end
+	
+		howthefuckdoesthiswork = howthefuckdoesthiswork + (math.random(0, 5) * math.random(0, 5) * (1 / 30) / 6.25)
+		if howthefuckdoesthiswork < 0.1 then   --- self explainatory
+			wep:SetUBGL(false)	-- third		
+			wep:Reload()	-- first
+		elseif howthefuckdoesthiswork < 0.15 then
+			wep:SetUBGL(true) -- second
+			wep:Reload()	
+		else howthefuckdoesthiswork < 0.2 then
+			wep:SetUBGL(false)	-- third	
+		end
+	resetthisshit = true
+	resettime = CurTime()		
 	
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetUBGL(false)	
@@ -30,6 +45,7 @@ ATT.Hook_Think = function(wep)
         wep:SetUBGL(true)
         wep:DoPrimaryAttack()
     end
+	
 end
 
 ATT.Model = "models/weapons/arccw/mifl_atts/fas2/c_deagle.mdl"

@@ -1,6 +1,6 @@
 ATT.PrintName = "Far View Scope"
 ATT.CompactName = "FView"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/farv.png", "mips smooth")
 ATT.Description = [[]]
 ATT.SortOrder = 6.1
 

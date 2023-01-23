@@ -1,6 +1,6 @@
 ATT.PrintName = "Mounted Scope"
 ATT.CompactName = "Mounted"
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_optic/colt.png", "mips smooth")
 ATT.Description = [[Unique scope mounted on the carry handle
 Only available to some model]]
 ATT.SortOrder = 0.01
