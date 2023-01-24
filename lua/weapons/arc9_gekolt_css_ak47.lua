@@ -561,6 +561,7 @@ SWEP.AttachmentElements = {
 	["u_disk"] = { Bodygroups = { {0, 5}, {2, 2},{3, 7}, {5, 0}},	AttPosMods = { [6] = { Pos = Vector(0, -1, 0.4), } }		},	
 
 	["rail_def"] = { Bodygroups = { {5, 3} },},	
+	["fg_def"] = { Bodygroups = { {8, 1} },},	
 }
 
 SWEP.Hook_ModifyBodygroups = function(wep, data) 
@@ -568,12 +569,15 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(5,0) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(1,0) end
     if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(5,2) end
-	if wep:HasElement("rail_def") and wep:HasElement("hg_sd") then model:SetBodygroup(5,2) end 
-	if wep:HasElement("rail_def") and wep:HasElement("hg_94") then model:SetBodygroup(5,2) end	
+	if wep:HasElement("rail_def") and wep:HasElement("hg_sd") then model:SetBodygroup(5,2) end
+	if wep:HasElement("rail_def") and wep:HasElement("hg_94") then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("u_566") then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("u_566") then model:SetBodygroup(1,0) end
-	if wep:HasElement("rail_def") and wep:HasElement("u_disk") then model:SetBodygroup(5,0) end	
-	if wep:HasElement("rail_def") and wep:HasElement("u_disk") then model:SetBodygroup(5,0) end	
+	if wep:HasElement("rail_def") and wep:HasElement("u_disk") then model:SetBodygroup(5,0) end
+	if wep:HasElement("rail_def") and wep:HasElement("u_disk") then model:SetBodygroup(5,0) end
+
+	if wep:HasElement("fg_def") and wep:HasElement("hg_sd") then model:SetBodygroup(8,0) end
+	if wep:HasElement("fg_def") and wep:HasElement("hg_rail") then model:SetBodygroup(8,0) end 	
 end
 
 SWEP.Attachments = {
@@ -625,12 +629,13 @@ SWEP.Attachments = {
     {
         PrintName = "Foregrip",
         DefaultName = "None",
+		InstalledElements = {"fg_def"}, 		
 
         DefaultIcon = Material("arc9/def_att_icons/grip.png"),	
 		ExcludeElements = {"nofg"},
         Category = {"grip_css"}, 
         Bone = "W_Main",
-        Pos = Vector(0, 1.6, 15),
+        Pos = Vector(0, 2.6, 14),
         Ang = Angle(90, 0, -90),			
     },
 	

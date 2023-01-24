@@ -31,10 +31,24 @@ ATT.PrintName = [[Okhota-Rama]]
 ATT.CompactName = [[Marksman]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
 ATT.Description = [[
-
+Chamber the weapon in hunting rounds
 ]]
 
+
+ATT.Firemodes = {{Mode = 1,}}
+
 ATT.ClipSizeOverride = 15
+
+ATT.RPMMult = 400/600
+ATT.RangeMaxMult = 1.25
+ATT.RangeMinMult = 1.5
+
+ATT.DamageMaxMult = 0.9
+ATT.DamageMinMult = 5
+
+ATT.RecoilMult = 1.2
+
+ATT.Ammo = "357"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_25"
@@ -43,7 +57,7 @@ end
 ATT.ShootSound = "oneshotof_cs16/sg552-1.wav"
 //ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
-ATT.SortOrder = 2
+ATT.SortOrder = 10
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_308"}
 
@@ -110,7 +124,7 @@ ATT.Sights = {
     }
 }
 
-ATT.SortOrder = 2
+ATT.SortOrder = 15
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_566", "noguard", "nofg"}
 
@@ -150,7 +164,7 @@ ATT.ActiveAngOverride = Angle(0, 0, 0)
 ATT.MovingPosOverride = Vector(0, 5.5, -1.5)
 ATT.MovingAngOverride = Angle(0, -2, 0)
 
-ATT.SortOrder = 2
+ATT.SortOrder = 30
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_disk", "noguard", "pre_muzzed"}
 
@@ -187,7 +201,7 @@ ATT.ClipSizeOverride = 32
 ATT.ShootSound = "oneshotof_cs16/mp5-1.wav"
 //ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
-ATT.SortOrder = 2
+ATT.SortOrder = 12
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_919"}
 
@@ -212,7 +226,7 @@ ATT.Description = [[
 
 ATT.ClipSizeOverride = 64
 
-ATT.SortOrder = 2
+ATT.SortOrder = 13
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_919x", "nofg"}
 
@@ -246,7 +260,7 @@ ATT.Description = [[
 
 ]]
 
-ATT.SortOrder = 2
+ATT.SortOrder = -100
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_drum"}
 

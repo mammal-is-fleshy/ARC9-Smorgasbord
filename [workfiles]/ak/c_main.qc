@@ -84,6 +84,12 @@ $bodygroup "ak"
 	blank	
 }
 
+$bodygroup "mount2"
+{
+	blank
+	studio "ak47_fg_mount.smd"
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\gekolt_css_vmt\"
