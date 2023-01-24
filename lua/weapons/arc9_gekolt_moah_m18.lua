@@ -42,8 +42,8 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageType = DMG_BLAST + DMG_BULLET + DMG_AIRBOAT
-SWEP.DamageMax = 600 -- Damage done at point blank range
-SWEP.DamageMin = 200 -- Damage done at maximum range
+SWEP.DamageMax = 800 -- Damage done at point blank range
+SWEP.DamageMin = 300 -- Damage done at maximum range
 
 SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 

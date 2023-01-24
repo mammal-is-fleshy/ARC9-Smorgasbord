@@ -119,8 +119,8 @@ ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
 
 ATT.DamageTypeUBGL = DMG_BLAST + DMG_BULLET + DMG_AIRBOAT
-ATT.DamageMaxUBGL = 600 -- Damage done at point blank range
-ATT.DamageMinUBGL = 200 -- Damage done at maximum range
+ATT.DamageMaxUBGL = 800 -- Damage done at point blank range
+ATT.DamageMinUBGL = 300 -- Damage done at maximum range
 
 ATT.DamageRandUBGL = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
 

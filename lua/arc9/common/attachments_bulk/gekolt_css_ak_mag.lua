@@ -44,7 +44,7 @@ ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.5
 
 ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 5
+ATT.DamageMinMult = 4
 
 ATT.RecoilMult = 1.2
 
@@ -193,10 +193,21 @@ ATT.PrintName = [[Dobavoch-Rama]]
 ATT.CompactName = [[Aux]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_pp.png", "mips smooth")
 ATT.Description = [[
-
+Sub-machine configuration
+incase you need to downgrade your rifle
 ]]
 
 ATT.ClipSizeOverride = 32
+
+ATT.RPMMult = 900 / 600
+ATT.DamageMaxMult = 0.6
+ATT.DamageMinMult = 0.45
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 0.7
+
+ATT.RecoilMult = 0.625
+
+ATT.Ammo = "pistol"
 
 ATT.ShootSound = "oneshotof_cs16/mp5-1.wav"
 //ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
@@ -221,10 +232,21 @@ ATT.PrintName = [[Gelikoidal-Rama]]
 ATT.CompactName = [[Hex]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_bizon.png", "mips smooth")
 ATT.Description = [[
-
+Helical stacked pistol cartridge
+Actual «sub»-machine
 ]]
 
 ATT.ClipSizeOverride = 64
+
+ATT.RPMMult = 900 / 600
+ATT.DamageMaxMult = 0.6
+ATT.DamageMinMult = 0.45
+ATT.RangeMinMult = 1.2
+ATT.RangeMaxMult = 0.7
+
+ATT.RecoilMult = 0.625
+
+ATT.Ammo = "pistol"
 
 ATT.SortOrder = 13
 ATT.Category = "css_ak_up"
