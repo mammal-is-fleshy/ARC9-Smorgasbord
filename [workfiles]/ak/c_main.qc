@@ -20,7 +20,8 @@ $bodygroup "iron"
 	blank
 	studio "ak47_iron_saiga.smd"
 	studio "ak47_iron_burst.smd"
-	studio "ak47_iron_water.smd"	
+	studio "ak47_iron_water.smd"
+	studio "ak47_rear_12.smd"
 }
 
 $bodygroup "rear"
@@ -44,6 +45,7 @@ $bodygroup "handguard"
 	studio "ak47_hg_bizon.smd"
 	studio "ak47_hg_water.smd"
 	blank
+	studio "ak47_hg_12.smd"
 }
 
 $bodygroup "stock"

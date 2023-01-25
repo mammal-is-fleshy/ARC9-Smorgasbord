@@ -463,3 +463,20 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg9")
 
 
 ----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = [[Modernised Handguard]]
+ATT.CompactName = [[Modern]]
+//ATT.Icon = Material("entities/gekolt_css_ak_h_rpk.png", "mips smooth")
+ATT.Description = [[
+]]
+
+ATT.SortOrder = 3
+ATT.Category = "css_ak_handguard"
+ATT.ActivateElements = {"hg_12"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg10")
+
+
+----------------------------------------------------------------------------------

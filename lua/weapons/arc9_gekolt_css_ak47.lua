@@ -208,8 +208,8 @@ SWEP.IronSights = {
 
 SWEP.Crosshair = true
 
-SWEP.SprintAng = Angle(10, -15, -10)
-SWEP.SprintPos = Vector(0, 4, -1)
+SWEP.SprintAng = Angle(25, -15, -10)
+SWEP.SprintPos = Vector(3, 6, -1)
 
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0.5, 5, 0)
@@ -539,6 +539,7 @@ SWEP.AttachmentElements = {
 
 	["hg_poly"] = { Bodygroups = { {3, 4} },},
 	["hg_bizon"] = { Bodygroups = { {3, 9} },			AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
+	["hg_12"] = { Bodygroups = { {3, 12}, {1, 4}, {2, 2}, },			AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
 	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} }, 		AttPosMods = { [5] = { Pos = Vector(0, 2.25, 18.5), } }		},	
 	["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },		AttPosMods = { [7] = { Pos = Vector(0, 0.075, 20), } }		},
 	["hg_rpk"] = { Bodygroups = { {3, 5} },				AttPosMods = { [7] = { Pos = Vector(0, 0.075, 35), } }		},
@@ -566,7 +567,8 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data) 
     local model = data.model
-    if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(5,0) end
+    if wep:HasElement("rail_def") and wep:HasElement("hg_12") then model:SetBodygroup(5,0) end 
+	if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(5,0) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(1,0) end
     if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_sd") then model:SetBodygroup(5,2) end

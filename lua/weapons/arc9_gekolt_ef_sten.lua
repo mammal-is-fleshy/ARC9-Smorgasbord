@@ -111,12 +111,12 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.5
+SWEP.RecoilKick = 1.25
 SWEP.RecoilKickDamping = 60
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.0025
 
 SWEP.SpreadAddRecoil = 0.0025 -- Applied per unit of recoil.
 
@@ -137,9 +137,9 @@ SWEP.SwayMultSights = 0.3
 SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming down sights.
 SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
 
-SWEP.SpeedMult = 0.95
-SWEP.SpeedMultSights = 0.75
-SWEP.SpeedMultShooting = 0.7
+SWEP.SpeedMult = 0.975
+SWEP.SpeedMultSights = 0.775
+SWEP.SpeedMultShooting = 0.8
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.8
 SWEP.SpeedMultBlindFire = 0.9
