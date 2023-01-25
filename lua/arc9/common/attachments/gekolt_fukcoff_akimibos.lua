@@ -6,7 +6,7 @@ ATT.Description = [[h]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
-ATT.Ignore = true
+ATT.Ignore = false
 
 ATT.Category = {"css_akimbo"} -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"akimbose"}
@@ -15,12 +15,12 @@ ATT.HasSights = false
 
 ATT.Hook_Think = function(wep)
 -- HOW THE FUCK DO I DO CHAIN FUNCTION?????	
-	local howthefuckdoesthiswork = 0	
+--[[	local howthefuckdoesthiswork = 0	
 	local resetthisshit = false
-	local resettime = 0	
+	local resettime = 0	]]
 	
 
-    if wep:GetOwner():KeyPressed(IN_RELOAD) then
+--[[	if wep:GetOwner():KeyPressed(IN_RELOAD) then
 		if !resetthisshit then
 			resettime = 0
 		end
@@ -37,7 +37,7 @@ ATT.Hook_Think = function(wep)
 			wep:SetUBGL(false)	-- third	
 		end
 	resetthisshit = true
-	resettime = CurTime()		
+	resettime = CurTime() ]]
 	
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetUBGL(false)	

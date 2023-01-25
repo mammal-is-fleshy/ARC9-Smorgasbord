@@ -10,7 +10,7 @@ Counter Strike Source: (horrid)Models, Textures [AWP/M4/AK/M9]
 Day of Defeat Source: (horrid)Models [Garand/Mauser]
 FAS1: Claymore
 FAS2: M79/Sterling
-Brother In Arms: Sten
+Enemy Front: Sten
 Medal of Hounor Airborne: M18
 
 
