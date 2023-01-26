@@ -540,13 +540,13 @@ SWEP.AttachmentElements = {
 	["s_adaptor"] = { Bodygroups = { {4, 11} },},
 
 	["hg_poly"] = { Bodygroups = { {3, 4} },},
-	["hg_bizon"] = { Bodygroups = { {3, 9} },			AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
-	["hg_12"] = { Bodygroups = { {3, 12}, {1, 4}, {2, 2}, },			AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
-	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} }, 		AttPosMods = { [5] = { Pos = Vector(0, 2.25, 18.5), } }		},	
-	["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },		AttPosMods = { [7] = { Pos = Vector(0, 0.075, 20), } }		},
-	["hg_rpk"] = { Bodygroups = { {3, 5} },				AttPosMods = { [7] = { Pos = Vector(0, 0.075, 35), } }		},
-	["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },	AttPosMods = { [7] = { Pos = Vector(0, 0.075, 37.5), } }		},
-	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },	AttPosMods = { [7] = { Pos = Vector(0, 0.2, 29.5), } }		},		
+	["hg_bizon"] = { Bodygroups = { {3, 9} },					AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
+	["hg_12"] = { Bodygroups = { {3, 12}, {1, 4}, {2, 2}, },	AttPosMods = { [6] = { Pos = Vector(0, 0.15 , 3.5), }, [5] = { Pos = Vector(0, 1.35, 16), }, [7] = { Pos = Vector(0.05, 0.05, 27), } }		},	
+	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} }, 				AttPosMods = { [5] = { Pos = Vector(0, 2.25, 18.5), } }		},	
+	["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },				AttPosMods = { [7] = { Pos = Vector(0, 0.075, 20), } }		},
+	["hg_rpk"] = { Bodygroups = { {3, 5} },						AttPosMods = { [7] = { Pos = Vector(0, 0.075, 35), } }		},
+	["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },			AttPosMods = { [7] = { Pos = Vector(0, 0.075, 37.5), } }	},
+	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },		AttPosMods = { [7] = { Pos = Vector(0, 0.2, 29.5), } }		},		
 	["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },	AttPosMods = { [6] = { Pos = Vector(0, -0.35 , 5), }, [5] = { Pos = Vector(0, 2, 15), }, [7] = { Pos = Vector(0, 0.1, 27), } }		},	
 
 	["g_poly"] = { Bodygroups = { {6, 1} },},		
@@ -569,19 +569,21 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data) 
     local model = data.model
-    if wep:HasElement("rail_def") and wep:HasElement("hg_12") then model:SetBodygroup(5,0) end 
+    if wep:HasElement("rail_def") and wep:HasElement("hg_12") 	then model:SetBodygroup(5,0) end   
+	if wep:HasElement("rail_def") and wep:HasElement("hg_12") 	then model:SetBodygroup(1,0) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(5,0) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(1,0) end
     if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(5,2) end
-	if wep:HasElement("rail_def") and wep:HasElement("hg_sd") then model:SetBodygroup(5,2) end
-	if wep:HasElement("rail_def") and wep:HasElement("hg_94") then model:SetBodygroup(5,2) end
-	if wep:HasElement("rail_def") and wep:HasElement("u_566") then model:SetBodygroup(5,2) end
-	if wep:HasElement("rail_def") and wep:HasElement("u_566") then model:SetBodygroup(1,0) end
-	if wep:HasElement("rail_def") and wep:HasElement("u_disk") then model:SetBodygroup(5,0) end
-	if wep:HasElement("rail_def") and wep:HasElement("u_disk") then model:SetBodygroup(5,0) end
+	if wep:HasElement("rail_def") and wep:HasElement("hg_sd") 	then model:SetBodygroup(5,2) end
+	if wep:HasElement("rail_def") and wep:HasElement("hg_94") 	then model:SetBodygroup(5,2) end
+	if wep:HasElement("rail_def") and wep:HasElement("u_566") 	then model:SetBodygroup(5,2) end
+	if wep:HasElement("rail_def") and wep:HasElement("u_566") 	then model:SetBodygroup(1,0) end
+	if wep:HasElement("rail_def") and wep:HasElement("u_disk") 	then model:SetBodygroup(5,0) end
+	if wep:HasElement("rail_def") and wep:HasElement("u_disk") 	then model:SetBodygroup(5,0) end
 
-	if wep:HasElement("fg_def") and wep:HasElement("hg_sd") then model:SetBodygroup(8,0) end
-	if wep:HasElement("fg_def") and wep:HasElement("hg_rail") then model:SetBodygroup(8,0) end 	
+	if wep:HasElement("fg_def")	and wep:HasElement("hg_sd") 	then model:SetBodygroup(8,0) end
+	if wep:HasElement("fg_def") and wep:HasElement("hg_rail") 	then model:SetBodygroup(8,0) end
+	if wep:HasElement("fg_def") and wep:HasElement("hg_12") 	then model:SetBodygroup(8,0) end
 end
 
 SWEP.Attachments = {

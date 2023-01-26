@@ -468,7 +468,7 @@ ATT = {}
 
 ATT.PrintName = [[Modernised Handguard]]
 ATT.CompactName = [[Modern]]
-//ATT.Icon = Material("entities/gekolt_css_ak_h_rpk.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_12.png", "mips smooth")
 ATT.Description = [[
 ]]
 
