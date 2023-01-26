@@ -220,6 +220,8 @@ SWEP.CustomizePos = Vector(13, 32, 2)
 SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false
 
+SWEP.CustomizeRotateAnchor = Vector(12, -3.25, -5.23)
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "revolver"

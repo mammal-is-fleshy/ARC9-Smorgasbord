@@ -218,6 +218,8 @@ SWEP.CustomizePos = Vector(10, 32, 5)
 SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false
 
+SWEP.CustomizeRotateAnchor = Vector(10.5, -3.05, -4) 
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "ar2"

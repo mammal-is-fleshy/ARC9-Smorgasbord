@@ -253,10 +253,12 @@ SWEP.CrouchPos = Vector(-0.5, 2, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(13, 32, 2)
+SWEP.CustomizePos = Vector(12, 32, 2)
 
 SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false
+
+SWEP.CustomizeRotateAnchor = Vector(12, -1.94, -5.23)
 
 -------------------------- HoldTypes
 

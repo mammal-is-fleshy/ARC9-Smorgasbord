@@ -114,12 +114,14 @@ SWEP.ViewModelFOVBase = 90
 SWEP.ActivePos = Vector(0, -2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizePos = Vector(16, 32, 4)
+SWEP.CustomizeAng = Angle(90, -25, 13)
+SWEP.CustomizePos = Vector(9, 32, 4)
 SWEP.CustomizeSnapshotFOV = 110
 
 SWEP.CrouchPos = Vector(0, -3, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
+
+SWEP.CustomizeRotateAnchor = Vector(10.5, -10, -4) 
 -------------------------- HoldTypes
 
 SWEP.HoldType = "knife"
