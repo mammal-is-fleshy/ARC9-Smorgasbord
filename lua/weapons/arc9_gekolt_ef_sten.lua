@@ -544,6 +544,40 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},				
+    },    
+
+
+    ["reload_sterling"] = {
+        Source = "wet_sterling",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.9,
+        EventTable = {
+            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
+            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
+        },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+    },	
+    ["reload_empty_sterling"] = {
+        Source = "dry_sterling",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.9,
+        EventTable = {
+            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
+            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},				
+            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 75 / 40},	 
+			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
+			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},				
     },
 
     

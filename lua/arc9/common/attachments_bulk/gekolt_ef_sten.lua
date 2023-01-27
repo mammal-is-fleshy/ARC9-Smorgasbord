@@ -61,7 +61,7 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_lmg")
 
 ATT = {}
 
-ATT.PrintName = "Sterling Frame"
+ATT.PrintName = "Ezpieg-Frame"
 ATT.CompactName = "Sterling"
 //ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
 ATT.Description = [[50 year old submachine gun lol]]
@@ -82,6 +82,10 @@ ATT.Sights = {
     }
 }
 
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+	return anim .. "_sterling"
+end
+
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"f_sterling","pre_muzzed"}
 
@@ -91,7 +95,7 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_ster")
 
 ATT = {}
 
-ATT.PrintName = "Machinenpistole Frame"
+ATT.PrintName = "Volkstutzen-Frame"
 ATT.CompactName = "3008"
 //ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
 ATT.Description = [[The peoples]]
@@ -116,7 +120,7 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_3008")
 
 ATT = {}
 
-ATT.PrintName = "Mk4 Frame"
+ATT.PrintName = "Viper-Frame"
 ATT.CompactName = "MK4"
 //ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
 ATT.Description = [[The uzi at home:]]
@@ -141,7 +145,7 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_mk4")
 
 ATT = {}
 
-ATT.PrintName = "Owen Frame"
+ATT.PrintName = "Owen Frame"  --im not going to put some lame ass aussie stereotype         am i?
 ATT.CompactName = "Owen"
 //ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
 ATT.Description = [[Why the mag like]]
@@ -339,6 +343,10 @@ ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.Model = "models/weapons/geckololt_css/atts/fg.mdl"
 ATT.ModelBodygroups = "100000000000"
 
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+	return anim .. "_sterling"
+end
 
 ATT.Category = "ef_sten_hg" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"hg_mk1" ,"pre_maglow", "no_maglow"}
