@@ -287,7 +287,7 @@ SWEP.AttachmentElements = {
 	},
     ["f_3008"] = {
         Bodygroups = {{0, 1},{1, 4}},		
-        AttPosMods = { [3] = { Pos = Vector(0, 0, 11.2), }}	
+        AttPosMods = { [5] = { Pos = Vector(0, 0, 11.2), }}	
 	},
 
 	["s_mk2s"] = {
@@ -528,7 +528,7 @@ SWEP.Animations = {
             {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
         },	
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},			
     },	
     ["reload_empty_owen"] = {
@@ -544,7 +544,7 @@ SWEP.Animations = {
 			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
 			},
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},		
     },
 
@@ -562,7 +562,8 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.775, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 1, rhik = 1, },	
-		},			
+		},
+		MagSwapTime = 1.25
     },	
     ["reload_empty_lmg"] = {
         Source = "dry_lmg",
@@ -580,7 +581,8 @@ SWEP.Animations = {
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},				
+		},
+		MagSwapTime = 1.25
     },		
 	
 }

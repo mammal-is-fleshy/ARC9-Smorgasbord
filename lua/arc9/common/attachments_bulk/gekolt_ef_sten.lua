@@ -16,8 +16,8 @@ ATT.SortOrder = 30
 
 ATT.Sights = {
     {
-        Pos = Vector(5.3, 0.02, 12),
-        Ang = Angle(89.5, 0, -90),
+        Pos = Vector(-0.03, 12, -5.3),
+        Ang = Angle(0, 0, 0),
         Reticle = nil,
 
         Magnification = 1.05,
@@ -61,8 +61,8 @@ ATT.SortOrder = 30
 
 ATT.Sights = {
     {
-        Pos = Vector(4.2, 0, 18),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(-0.03, 20, -4.25),
+        Ang = Angle(0, 0, 0),
         Reticle = nil,
 
         Magnification = 1.05,
