@@ -37,7 +37,7 @@ ATT.Hook_Think = function(wep)
 			wep:SetUBGL(false)	-- third	
 		end
 	resetthisshit = true
-	resettime = CurTime() ]]
+	resettime = CurTime() 
 	
     elseif wep:GetOwner():KeyPressed(IN_ATTACK) then
         wep:SetUBGL(false)	
@@ -46,7 +46,7 @@ ATT.Hook_Think = function(wep)
         wep:SetUBGL(true)
         wep:DoPrimaryAttack()
     end
-	
+	]]
 end
 
 ATT.Model = "models/weapons/arccw/mifl_atts/fas2/c_deagle.mdl"
