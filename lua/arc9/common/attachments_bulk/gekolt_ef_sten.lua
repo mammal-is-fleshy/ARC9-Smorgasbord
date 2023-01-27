@@ -42,7 +42,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"f_mk5"}
+ATT.ActivateElements = {"f_mk5", "pre_stock"}
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_lmg")
 
@@ -115,7 +115,7 @@ ATT.SortOrder = 30
 
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"f_mk1","pre_muzzed"}
+ATT.ActivateElements = {"f_mk1","pre_muzzed", "pre_stock", "pre_hg"}
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_mk1")
@@ -141,7 +141,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"f_mk4"}
+ATT.ActivateElements = {"f_mk4", "pre_stock", "pre_hg"}
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_mk4")
@@ -161,8 +161,8 @@ ATT.SortOrder = 30
 
 ATT.Sights = {
     {
-        Pos = Vector(3.5, 1.16, 15),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(-4.3,2,2.9),
+        Ang = Angle(0, 0, 0), -- tilt it a bit
         Reticle = nil,
 
         Magnification = 1.05,
@@ -171,12 +171,101 @@ ATT.Sights = {
     }
 }
 
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-10.5, -3.75, 6.5)
+ATT.ModelAngleOffset = Angle(0, 0, 10)
+ATT.Model = "models/weapons/geckololt_css/c_sten.mdl"
+ATT.ModelBodygroups = "56570000000"
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
 	return anim .. "_owen"
 end
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"f_owen","pre_optic"}
+ATT.ActivateElements = {"f_owen", "pre_stock", "pre_hg"}
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_owen")
+
+
+
+---------------------------------------------------------------------------------- STOCK
+
+ATT = {}
+
+ATT.PrintName = [['Pistol' Stock]]
+ATT.CompactName = "Pistol"
+//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Description = [[wnolochy]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 1
+
+ATT.Category = "ef_sten_stock" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"s_mk2s"}
+
+
+ARC9.LoadAttachment(ATT, "gekolt_ef_sten_s1")
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = [[MK2 Stock]]
+ATT.CompactName = "MK2"
+//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Description = [[cymrag]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 1
+
+ATT.Category = "ef_sten_stock" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"s_mk2"}
+
+
+ARC9.LoadAttachment(ATT, "gekolt_ef_sten_s2")
+
+---------------------------------------------------------------------------------- HANDGUARD
+
+ATT = {}
+
+ATT.PrintName = [[Wooden Handguard]]
+ATT.CompactName = "WOOD"
+//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Description = [[wood]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 1
+
+ATT.Category = "ef_sten_hg" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"hg_wood"}
+
+
+ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low1")
+
+---------------------------------------------------------------------------------- 
+
+ATT = {}
+
+ATT.PrintName = [[No Handguard]]
+ATT.CompactName = "NO"
+//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Description = [[just no]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 1
+
+ATT.Category = "ef_sten_hg" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"hg_no"}
+
+
+ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low2")

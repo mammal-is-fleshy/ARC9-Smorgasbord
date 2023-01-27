@@ -27,7 +27,7 @@ SWEP.Firemodes = {
     },
 }
 
-SWEP.Description = [[Six bundled grenade is better than one lonely grenade.
+SWEP.Description = [[Seven bundled grenade is better than one lonely grenade.
 Guarantee to blow off your brain if you don't displace yourself after throwing]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_grenade_bundle.mdl"

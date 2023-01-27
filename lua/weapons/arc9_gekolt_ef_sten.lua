@@ -248,7 +248,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "gekolt_dod/mp40_shoot-old1.wav"
+SWEP.ShootSound = "gekolt_dod/mp40_shoot-old1.ogg"
 SWEP.ShootSoundSilenced = "gekolt_css/9mm_sd.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
@@ -289,6 +289,19 @@ SWEP.AttachmentElements = {
         Bodygroups = {{0, 1},{1, 4}},		
         AttPosMods = { [3] = { Pos = Vector(0, 0, 11.2), }}	
 	},
+
+	["s_mk2s"] = {
+        Bodygroups = {{3, 2}},		
+	},	
+	["s_mk2"] = {
+        Bodygroups = {{3, 1}},		
+	},
+	["hg_wood"] = {
+        Bodygroups = {{2, 4}},		
+	},	
+	["hg_no"] = {
+        Bodygroups = {{2, 5}},		
+	},
 	
 }
 
@@ -300,6 +313,27 @@ SWEP.Attachments = {
         Category = "ef_sten_frame", 
         Bone = "W_Main",
         Pos = Vector(0, 2.5, -0.75),
+        Ang = Angle(90, 0, -90),
+		Icon_Offset = Vector(-5, 0, 2.5)
+    },  
+	{
+        PrintName = "Handguard",
+        DefaultName = "Standard Handguard",
+		ExcludeElements = {"pre_hg"},	
+
+        Category = "ef_sten_hg", 
+        Bone = "W_Main",
+        Pos = Vector(0, 1.5, -0.75),
+        Ang = Angle(0, 0, 0),		
+    },	
+	{
+        PrintName = "Stock",
+        DefaultName = "Standard Stock",
+		ExcludeElements = {"pre_stock"},
+
+        Category = "ef_sten_stock", 
+        Bone = "W_Main",
+        Pos = Vector(0, 2.5, -9),
         Ang = Angle(0, 0, 0),		
     },
     {
@@ -312,8 +346,8 @@ SWEP.Attachments = {
         Category = {"optic_css_s"}, 
         Bone = "W_Main",
         Pos = Vector(0, -1.4, -3),
-        Ang = Angle(90, 0, -90),	
-        Scale = Vector(1.3, 1.3, 1.3)	
+        Ang = Angle(90, 0, -90),
+        Scale = Vector(1.3, 1.3, 1.3)
     },	
     {
         PrintName = "Muzzle",
@@ -494,8 +528,7 @@ SWEP.Animations = {
             {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
         },	
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},			
     },	
     ["reload_empty_owen"] = {
@@ -511,9 +544,8 @@ SWEP.Animations = {
 			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
 			},
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
+		},		
     },
 
     ["reload_lmg"] = {
