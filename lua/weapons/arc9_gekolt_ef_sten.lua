@@ -68,8 +68,8 @@ SWEP.PhysBulletMuzzleVelocity = 1280 * 12
 
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
-SWEP.ChamberSize = 1 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 20 -- Self-explanatory.
+SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
+SWEP.ClipSize = 30 -- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -270,11 +270,11 @@ SWEP.BulletBones = {
 }
 
 SWEP.AttachmentElements = {
-    ["f_mk1"] = {
-        Bodygroups = {{0, 2},{2, 1},{3, 3}},			
-	},
+    --[[ ["f_mk1"] = {
+        Bodygroups = {{0, 2},{2, 1},{3, 3}}, 
+	}, ]]
     ["f_mk4"] = {
-        Bodygroups = {{0, 3},{1, 1},{2, 2},{3, 4}},			
+        Bodygroups = {{1, 1},{2, 2},{3, 4}},			
 	},
     ["f_mk5"] = {
         Bodygroups = {{1, 2},{4, 2},{5, 1}},			
@@ -287,7 +287,7 @@ SWEP.AttachmentElements = {
 	},
     ["f_3008"] = {
         Bodygroups = {{0, 1},{1, 4}},		
-        AttPosMods = { [5] = { Pos = Vector(0, 0, 11.2), }}	
+        AttPosMods = { [6] = { Pos = Vector(0, 0, 11.2), }}	
 	},
 
 	["s_mk2s"] = {
@@ -296,11 +296,31 @@ SWEP.AttachmentElements = {
 	["s_mk2"] = {
         Bodygroups = {{3, 1}},		
 	},
+	["s_wood"] = {
+        Bodygroups = {{3, 6}},		
+	},
+	["s_mk1"] = {
+        Bodygroups = {{3, 3}},		
+	},
+
 	["hg_wood"] = {
         Bodygroups = {{2, 4}},		
-	},	
+	},
+	["hg_mk1"] = {
+        Bodygroups = {{2, 1}},		
+	},
 	["hg_no"] = {
         Bodygroups = {{2, 5}},		
+	},
+
+	["b_mk1"] = {
+        Bodygroups = {{0, 2}},		
+	},
+	["b_mk2"] = {
+        Bodygroups = {{0, 3}},		
+	},
+	["b_mk3"] = {
+        Bodygroups = {{0, 1}},		
 	},
 	
 }
@@ -324,7 +344,7 @@ SWEP.Attachments = {
         Category = "ef_sten_hg", 
         Bone = "W_Main",
         Pos = Vector(0, 1.5, -0.75),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(90, 0, -90),	
     },	
 	{
         PrintName = "Stock",
@@ -334,7 +354,17 @@ SWEP.Attachments = {
         Category = "ef_sten_stock", 
         Bone = "W_Main",
         Pos = Vector(0, 2.5, -9),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(90, 0, -90),
+    },
+	{
+        PrintName = "Barrel",
+        DefaultName = "Standard Barrel",
+		ExcludeElements = {"pre_barrel"},
+
+        Category = "ef_sten_barrel", 
+        Bone = "W_Main",
+        Pos = Vector(0, 0, 7),
+        Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "Optic",
@@ -429,7 +459,7 @@ SWEP.Animations = {
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
     },	
     ["reload_empty"] = {

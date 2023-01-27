@@ -296,7 +296,7 @@ ATT = {}
 
 ATT.PrintName = [[MTS-S]]
 ATT.CompactName = [[MTS-S]]
-ATT.Icon = Material("entities/gekolt_fas2_m79_mts.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fas2_m79_mtss.png", "mips smooth")
 ATT.Description = [[HOW
 ]]
 
