@@ -86,8 +86,17 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 	return anim .. "_sterling"
 end
 
+ATT.ActivePosOverride = Vector(0, 8, 0.5)
+ATT.ActiveAngOverride = Angle(0, 0, 0)
+
+ATT.MovingPosOverride = Vector(0, 7.5, 0.5)
+ATT.MovingAngOverride = Angle(0, -2, 0)
+
+ATT.CrouchPos = Vector(-0.5, 7.5, -1)
+ATT.CrouchAng = Angle(0, 0, -10)
+
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"f_sterling","pre_muzzed"}
+ATT.ActivateElements = {"f_sterling","pre_muzzed",  "pre_stock",  "pre_barrel",  "pre_hg"}
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_ster")
 
@@ -210,6 +219,15 @@ ATT.SortOrder = 1
 
 ATT.Category = "ef_sten_stock" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"s_mk2s"}
+
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-5, -4.5, 7)
+ATT.ModelAngleOffset = Angle(0, 0, 5)
+ATT.Model = "models/weapons/geckololt_css/c_m18.mdl"
+ATT.ModelBodygroups = "223043"
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_s1")
@@ -345,11 +363,11 @@ ATT.ModelBodygroups = "100000000000"
 
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
-	return anim .. "_sterling"
+	return anim .. "_mk1"
 end
 
 ATT.Category = "ef_sten_hg" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"hg_mk1" ,"pre_maglow", "no_maglow"}
+ATT.ActivateElements = {"hg_mk1" ,"pre_maglow", "no_maglow" ,    "pre_frame"}  -- only works on the normal frame anyway
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low3")
 
@@ -385,6 +403,25 @@ ATT.ActivateElements = {"b_mk1", "pre_muzzed"}
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b1")
+
+---------------------------------------------------------------------------------- 
+
+ATT = {}
+
+ATT.PrintName = [[MK3 Barrel]]
+ATT.CompactName = "MK3"
+//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Description = [[mk3]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 2
+
+ATT.Category = "ef_sten_barrel" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"b_mk3"}
+
+
+ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b2")
 
 ---------------------------------------------------------------------------------- 
 

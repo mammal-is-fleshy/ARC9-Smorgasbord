@@ -208,8 +208,8 @@ SWEP.IronSights = {
 
 SWEP.Crosshair = true
 
-SWEP.SprintAng = Angle(25, -15, -10)
-SWEP.SprintPos = Vector(3, 6, -1)
+SWEP.SprintAng = Angle(40, -15, -10)
+SWEP.SprintPos = Vector(3, 6, -2)
 
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0.5, 5, 0)
@@ -387,7 +387,7 @@ SWEP.Animations = {
 		MinProgress = 0.9,		
 		IKTimeLine = {
 		{ t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },
-		{ t = 0.85, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },			
+		{ t = 0.85, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },			
 		},	
         EventTable = {		
             {s =  "gekolt_css/p90_clipout.wav" ,   t = 15 / 40},
@@ -403,7 +403,7 @@ SWEP.Animations = {
 		MinProgress = 0.83,
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 1, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.125, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
             {s =  "gekolt_css/famas_clipout.wav" ,   t = 18 / 40},   
@@ -417,7 +417,7 @@ SWEP.Animations = {
 		MinProgress = 0.9,		
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 1, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },		
+        { t = 0.125, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },		
 		},	
         EventTable = {		
             {s =  "gekolt_css/famas_clipout.wav" ,   t = 18 / 40},   
@@ -629,7 +629,7 @@ SWEP.Attachments = {
         Category = "css_ak_g", 
         Bone = "W_Main",
         Pos = Vector(0, 2.5, 0.5),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),			
     },
 
     {
@@ -642,7 +642,8 @@ SWEP.Attachments = {
         Category = {"grip_css"}, 
         Bone = "W_Main",
         Pos = Vector(0, 2.6, 14),
-        Ang = Angle(90, 0, -90),			
+        Ang = Angle(90, 0, -90),
+		MergeSlots = {9},			
     },
 	
     {
@@ -680,4 +681,15 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.25, 20),
         Ang = Angle(90, 0, -90),		
     },
+
+    {   --9 permanent ubgl, affected separately from the changes of the above attachment
+        PrintName = "",
+        DefaultName = "",
+        Hidden = true,
+		ExcludeElements = {"nogrip", "u_disk", "u_919x", "u_566"},
+        Category = {"css_ubgl"}, 
+        Bone = "W_Main",
+        Pos = Vector(0, 1, 12),
+        Ang = Angle(90, 0, -90),				
+    },		
 }

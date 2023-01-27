@@ -138,10 +138,10 @@ SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming
 SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMult = 0.975
-SWEP.SpeedMultSights = 0.775
-SWEP.SpeedMultShooting = 0.8
+SWEP.SpeedMultSights = 0.785
+SWEP.SpeedMultShooting = 0.9
 SWEP.SpeedMultMelee = 0.75
-SWEP.SpeedMultCrouch = 0.8
+SWEP.SpeedMultCrouch = 0.85
 SWEP.SpeedMultBlindFire = 0.9
 
 -------------------------- BLIND FIRE
@@ -211,7 +211,7 @@ SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 5, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-0.5, 2, -1)
+SWEP.CrouchPos = Vector(-0.5, 4.5, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, -5, 0)
@@ -286,7 +286,7 @@ SWEP.AttachmentElements = {
         Bodygroups = {{0, 5},{1, 5},{2, 5},{3, 7},{5, 2}},			
 	},
     ["f_3008"] = {
-        Bodygroups = {{0, 1},{1, 4}},		
+        Bodygroups = {{1, 4}},		
         AttPosMods = { [6] = { Pos = Vector(0, 0, 11.2), }}	
 	},
 
@@ -329,6 +329,7 @@ SWEP.Attachments = {
     {
         PrintName = "Frame",
         DefaultName = "Standard Frame",
+		ExcludeElements = {"pre_frame"},
 
         Category = "ef_sten_frame", 
         Bone = "W_Main",
@@ -476,7 +477,7 @@ SWEP.Animations = {
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},				
     },
     
@@ -509,7 +510,7 @@ SWEP.Animations = {
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},				
     },
     
@@ -576,7 +577,40 @@ SWEP.Animations = {
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},				
+    },
+
+    ["reload_mk1"] = {
+        Source = "wet_mk1",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.9,
+        EventTable = {
+            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
+            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
+        },	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},			
+    },	
+    ["reload_empty_mk1"] = {
+        Source = "dry_mk1",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+		FireASAP = true,
+		MinProgress = 0.9,
+        EventTable = {
+            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
+            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},				
+            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 75 / 40},	 
+			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
+			},
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},				
     },
 
@@ -592,7 +626,7 @@ SWEP.Animations = {
             {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
         },	
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},			
     },	
     ["reload_empty_owen"] = {
@@ -608,7 +642,7 @@ SWEP.Animations = {
 			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
 			},
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
 		},		
     },
 

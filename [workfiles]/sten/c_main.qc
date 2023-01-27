@@ -209,6 +209,24 @@ $sequence "wet_sterling" {
 	fps 40
 }
 
+$sequence "dry_mk1" {
+	"anims\dry_mk1.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_mk1" {
+	"anims\wet_mk1.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "dry_ger" {
 	"anims\dry_ger.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		

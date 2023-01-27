@@ -227,6 +227,14 @@ ATT.SortOrder = 2
 ATT.Category = "css_ak_g"
 ATT.ActivateElements = {"g_rif", "nostock"}
 
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(1.5, -0.25, 0.5)
+ATT.ModelAngleOffset = Angle(90, -90, 0)
+ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_cali.mdl"
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip3")
 
 
@@ -241,6 +249,14 @@ ATT.Icon = Material("entities/gekolt_css_ak_s_cali2.png", "mips smooth")
 ATT.Description = [[
 
 ]]
+
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(1.1, -0.25, 0.75)
+ATT.ModelAngleOffset = Angle(90, -90, 0)
+ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_cali.mdl"
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_g"
