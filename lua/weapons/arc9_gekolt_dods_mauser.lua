@@ -4,8 +4,9 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
+SWEP.SubCategory = "Primaries"
 
-SWEP.PrintName = "Konstruktie 95" 
+SWEP.PrintName = "Konstruktie-95" 
 SWEP.TrueName = "M712 Schnellfeuer"
 
 SWEP.Class = "Pistol"

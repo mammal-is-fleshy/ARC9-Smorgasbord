@@ -144,7 +144,7 @@ ATT.Description = [[
 ]]
 
 ATT.ClipSizeOverride = 47
-
+ATT.ChamberSizeOverride = 0
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_dp"

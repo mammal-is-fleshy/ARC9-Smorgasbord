@@ -7,6 +7,7 @@ SWEP.Category = "ARC9 - Smorgasbord"
 
 SWEP.PrintName = "TDR-90"
 SWEP.TrueName = "M79"
+SWEP.SubCategory = "Auxilliaries"
 
 SWEP.Class = "Grenade Launcher"
 SWEP.Trivia = {

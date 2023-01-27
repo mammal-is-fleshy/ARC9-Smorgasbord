@@ -7,6 +7,7 @@ SWEP.Category = "ARC9 - Smorgasbord"
 
 SWEP.PrintName = "Kromusgen-18"
 SWEP.TrueName = "M18"
+SWEP.SubCategory = "Auxilliaries"
 
 SWEP.Class = "Anti-Tank Rifle"
 SWEP.Trivia = {

@@ -4,6 +4,7 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
+SWEP.SubCategory = "Primaries"
 
 SWEP.PrintName = "AMP-38"
 SWEP.TrueName = "AWP"

@@ -4,8 +4,9 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
+SWEP.SubCategory = "Secondaries"
 
-SWEP.PrintName = "P40A3"
+SWEP.PrintName = "P40-A3"
 SWEP.TrueName = "M9 Berreta"
 
 SWEP.Class = "Pistol"

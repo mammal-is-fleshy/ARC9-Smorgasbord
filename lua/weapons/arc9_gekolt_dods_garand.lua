@@ -4,6 +4,7 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
+SWEP.SubCategory = "Primaries"
 
 SWEP.PrintName = "MSA-30"
 SWEP.TrueName = "M1 Garand"

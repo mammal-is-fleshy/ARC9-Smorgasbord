@@ -4,8 +4,9 @@ SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
+SWEP.SubCategory = "Secondaries"
 
-SWEP.PrintName = "NAME NAME NAME" 
+SWEP.PrintName = "Athelanz-9" 
 SWEP.TrueName = "STEN"
 
 SWEP.Class = "Submachine Gun"

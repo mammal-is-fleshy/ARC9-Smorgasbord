@@ -4,6 +4,7 @@ SWEP.Base = "arc9_base_nade"
 
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
+SWEP.SubCategory = "Auxilliaries"
 
 SWEP.PrintName = "Grenade Bundle"
 
