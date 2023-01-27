@@ -13,7 +13,8 @@ low quality models stuff on even lower quality animations
 - AK (WIP)
 - M18
 - Grenade Bundle
-- Sten (Early Concept)
+- Sten (WIP)
+
 
 Future stuff??
 

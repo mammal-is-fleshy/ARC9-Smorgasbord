@@ -1,21 +1,22 @@
-Contre Srike Sorse et Nuit d'Honneur in 2022 Gmod Tactile Reelesm :tm: 
+[originally]Contre Srike Sorse in 2022 Gmod Tactile Reelesm :tm: 
 
 [ Created by Geckololt (all wrongs reserved, dont care didnt ask) ]
 
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Cylo - Annoying little burger -- i love this man as if he's my little cabbage :))
-CturiX - Mauser Sound -- and other sounds once hes done
+CturiX - Mauser Sound
 
 Counter Strike Source: (horrid)Models, Textures [AWP/M4/AK/M9]
++ Arctic - Incredibly doggy -original- restoration models (css)
 Day of Defeat Source: (horrid)Models [Garand/Mauser]
 FAS1: Claymore
 FAS2: M79/Sterling
-Enemy Front: Sten
+Enemy Front[??? honestly i cant remember]: Sten
 Medal of Hounor Airborne: M18
++ Moon - Ripping
 
 
 Google Images - ref
-Arctic - Incredibly doggy original restoration models (css)
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
 Counter Strike Online 2 - Some M4 Parts (  The Taiwanese looking stuff  )
 Fesiug??? - Nade ent
@@ -27,7 +28,7 @@ Tactical Intervention - Stuff (Holo/Acog2/Aimpoint/Silencer2)
 Rainbow Six Vegas 2 - Mass26
 CSGO, CSCZ, DOD:S - Sounds??
 https://gamebanana.com/mods/210646 - SPR Guard, Elcan
-https://gamebanana.com/mods/210602 - Targeter Guard
+https://gamebanana.com/mods/210602 - Targeter Guard [M4]
 Soldier of Fortune 3 - Muzzles and Tac/Flashlight
 
 https://gamebanana.com/models/3241 - T1
@@ -50,8 +51,8 @@ The entire Kingdom of Sweden - being so fvcking zased
 -------------
 [checklist]
 -------------
-AWP (receiver:2)
-Garand (receiver:4)
+AWP (receiver:3)
+Garand (receiver:5)
 M4 (handguard:18 | receiver:14 | stock:13 | grip:5)
 AK (handguard:9 | receiver:7 | stock:12 | grip:4)
 M9 (receiver:6)
@@ -62,7 +63,8 @@ Mac10?? -- or mp9 --
 M3 (handguard:4 | receiver:3 | stock:4) -- probably not --
 Makarov?? [NOPE NOPE NOPE]
 FAL??????????? [Only the canadian variants]
-M18 (receiver:2)
+M18 (receiver:3)
+STEN (receiver:4-5)
 
 
 -------------
@@ -78,6 +80,7 @@ M18 (receiver:2)
 [AK]
 - Drum (probably 545)
 - Bolt action
+- 12g Saiga
 
 [Uni]
 - Back up pistol/smg (ubgl)  -- mwii isnt real -- so darsu said not possible :((
@@ -88,7 +91,14 @@ M18 (receiver:2)
 - Bullpup Grenade Chasis mount -- gustavo fring
 - Shield -- unless akimbo is a thing, nope
 - Actual bipod animation with stock holding in deploy -- not possible for the latter yet, ik overides stuff
-- Muzzle department is lacking
+
+[UBGL]
+- RPG
+- M3
+- UMP??
+- AK??
+- M320 (hate m203)
+
 
 
 
@@ -164,11 +174,24 @@ ehhh not worth it, just window dressings but it feels necessary
 
 the fifth was the mauser and of course it was quick, dirty and fun, but this is the only gun that i feel like i shouldve done a Modular on
 
-the sixth will be a sten or m79, both will be made using a total conv method, though probably a hybrid for the m79 cuz funi 12g shotgun momento
+
+the sixth was the m79, well there's not much to write about, alofs does it job		for the mts, well i couldve separate it further so the short version is an attachment of the long version
+nope, glad i didnt
+
+finally i had enough shit around my ass to Do the ak
+it was
+fucking
+horrible
+never again
+during its development i constantly try to Do other things like attachment icons, naming convension, binged Bluey in 2 days (watch it or ill cut off your potato)       to balance out the drag, it was fucking slow
+well i think i got most of the feature (as in /frames/) done in 3 days but it felt like months
+
+final gun is the sten -- words, words
+
 
 the main reason the ak fell off so hard was because		ehhh lazy	but again like the m4 its too modular
 the m4 itself has some total conversion like the cs5, mass26 and so on but that was mostly because of bodygroup issue
-it was clear that my lazy arse no matter how much Time you grant me will refuse to finish the ak, too bloody much for an arse like mine to handle (dont take this out of context)
+/it was clear that my lazy arse no matter how much Time you grant me will refuse to finish the ak, too bloody much for an arse like mine to handle (dont take this out of context)/ -- this backfires :((
 
 from there Then on only the optics, foregrips and muzzles will be Modular
 
@@ -188,6 +211,7 @@ crossbow - duh
 shotgun(pump) - just a mass26
 suppressed - honey badger
 
+
  M9: [Italian] -- basic bitch part 2
 Suppressed - part PB9, part makarov
 Welrod - duh
@@ -197,42 +221,50 @@ Artillery - Same as above hence the snail mag to begin with
 Auto - its just a burst frame with shorter guard
 Burst - Robocock
 
- Garand: [French(lol)] -- something something canadian John Garand patented(is that the right word?) the garand   i keep the quebecois aspect of Jean Garand hence french   Common Canadian W
+
+ Garand: [French(lol)] -- something something canadian John Garand patented(is that the right word?) the garand		i keep the quebecois aspect of Jean Garand hence french		Common Canadian W
 M14 - Duh
 Mini 14 - Duh
 Scav - Part SKS, part mauser selbstlader/fedorov, part romanian ak, part one of those stripper clip mini 14, lever action because why not
-Slam - fortress 2
+Slam - i have never seen this in team fortress 2, stop fucking commenting about it you cunts
+
 
  AWP: [English-English] -- my brain keep telling me to translate this to Finnish cuz arctic warfare or something
 Lincoln - Cold War
 Howell - duh, ww1 [semi] auto lee enfield, Charlton is not real
 AX50 - De Lisle but 50AE --- thanks Cylo for the shout
 
+
  Mauser: [Dutch(lol)/German] -- im just more comfortable with Dutch
-Edgerunners 2077
+Shitberpunk 2077
 one of those trench variants [default]
 brazil [burst cuz reasons]
-what Do you mean beta mag And carbine frame doesnt exist In ww2
+what Do you mean beta mag and carbine frame doesnt exist in second war 2?
+
 
  M79: [English] -- basic bitch part 3
 Alofs is basically a magazine tube for single barrel self ejecting shotguns  -- STOP SAYING HUNT SHOWDOWN I HAVE NEVER PLAYED IT
 MTS but break action
 
+
  Sten: [English-English]
 MK 1,3,4,5
 MK2 but those "pistol" grip
 sterling mk4 (suppressed)
-saladmander from Fortuna returns
+saladmender from Fortuna returns, with an actual belt
+
 
  AK: [Russian? Maybe Finnish for the lol]
 919: saiga
-556: trolled
-566: aps underwater dart gun
+556: trolled, bolt release based on one of them mp5/10
+566: aps underwater dart gun -- maybe make it fires fletchette????
 disk: Tachanka units during the Russian Civil War in ehh 1921? or something either use DP27s as a prone mount or strapped them on a horse    driveby lmg shooting
 helica: bizon, the animala is defintely NOT mw22
 stalker: asval
-huntsman: ??? i saw something similar on tarkov once?? probably a saiga
+huntsman: ??? i saw something similar in tarkov once?? probably a saiga
 saiga: loosely based on one of them bullpup ak
+modern: its literally an ak12
+
 
  M18: [Swedish(lol)] --- thanks Cylo for the shout          Common Swedish W
 rpg convert -- obviously
@@ -242,8 +274,11 @@ xm70 -- this is based on a real thing, back in world war cold, the swedes wanted
 -- 762 cuz the m4 already exist, and currently lacking in battle rifle
 -- based on the second alteration, which i believe is a modern concept but the 'prototype' was like 70s
 
+
+
+ Ham and Sex -- it was lying around in blackocks 1 so why not		common sydicalism W		theres a block animation but since the base doesnt do blocking		rare TFA W
  Claymore on a stick -- during late war 2 pacific front, the japs used lunge mine to take out tanks, i was wondering why they didnt throw it, then i realise you need pressure, oh well, videogame logic
- Bundle grenade -- during second war 2, both the germans and the russiansd bundle up grenades to create a much bigger explosive device, cant remember if they could takeout tanks or not but oh well
+ Bundle grenade -- during second war 2, both the german and the russian bundle up grenades to create a much bigger explosive device, cant remember if they could takeout tanks or not but oh well
 -- oh you still need to remove the spoon thing irl       videogame logic
 
 
@@ -251,3 +286,30 @@ xm70 -- this is based on a real thing, back in world war cold, the swedes wanted
 
 free text zone for
 reasons
+
+
+
+
+
+-- concept weapons --
+
+Mosin
++ Artillery Guard (Kulakov grenade launcher): around 1942, second war 2, post-ish Barbarossa and all that		Kulakov person design basically the first rotary grenade launcher, the forerunner of the M32 or whatever
+gas from the firing thing would be redirected to rotate the cylinder, how does it eject? ehhh
+oh and yes, the firing base is a	mosin because its the soviet
++ That fucking small ass mosin from battlefield 1
++ Shock Guard (ROKS-2): during second war 2 (every cool soviet prototype starts with war 2) they made		flamethrowers, out of	mosin		of course its mosin  more reading required
++ That thing that looks like a Huot from Hunt Showdown
++ Auxiliary Guard (Pedersen Device): during first war 1, americunt people slap angled pistol stick magazine on their,   i assume springfield?  gun, fires in  semi		ofc videogame logic so full auto smg mosin
+
+obviously, during second war 2 and world war cold, the Eastern Bloc[and Finland] have their own variants, mostly stays the same, however in  either Hungary or Romania, there's a sporting version its a cut downed front guard??
+looks cool
+and in modern Time, there are loads of   modernised version, which im not planning to Do, cuz slapping picatinny rail on everything is not   gaming
+there are bullpup version    of course   no i wont be planning that
++ Darsu made ehh eft toz 106 with mosin frame, shotgun mosin? yeah im stealing
+
+
+
+
+
+
