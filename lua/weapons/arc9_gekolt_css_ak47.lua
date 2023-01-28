@@ -501,7 +501,38 @@ SWEP.Animations = {
             {s =  "gekolt_css/mp5_slide.wav"	,    t = 72 / 40},	 
 			{s =  "gekolt_css/mp5_slideback.wav"	,    t = 80 / 40},			
         },			
+    },		
+------------------ 12drum --------------------------------- PLEASE DO BETTER SOUND TABLES IM NOT RZEN1TH
+["reload_12"] = {
+    Source = "wet_12",
+    FireASAP = true,
+    MinProgress = 0.83,
+    IKTimeLine = {
+    { t = 0, lhik = 1, rhik = 1, },
+    { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+    },			
+    EventTable = {		
+        {s =  "gekolt_css/p90_clipout.wav" ,   t = 20 / 40},
+        {s =  "gekolt_css/p90_clipin.ogg" ,    t = 50 / 40},
+        {s =  "gekolt_css/p90_clipin2.ogg" ,    t = 65 / 40},	
+    },				
+},
+["reload_empty_12"] = {
+    Source = "dry_12",
+    FireASAP = true,
+    MinProgress = 0.9,		
+    IKTimeLine = {
+    { t = 0, lhik = 1, rhik = 1, },
+    { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },			
     },	
+    EventTable = {		
+        {s =  "gekolt_css/p90_clipout.wav" ,   t = 20 / 40},
+        --{s =  "gekolt_css/p90_clipin.ogg" ,    t = 50 / 40},
+        {s =  "gekolt_css/p90_clipin2.ogg" ,    t = 65 / 40},	
+        {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 87 / 40},	
+        {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 93 / 40},		
+    },					
+},	
 --------------------------------------------------------	
     ["draw"] = {
         Source = "draw",

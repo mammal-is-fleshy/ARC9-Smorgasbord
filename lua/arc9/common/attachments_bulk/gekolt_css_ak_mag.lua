@@ -274,16 +274,46 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag7")
 
 
 ATT = {}
----??? I should replace this with a shotgun mag
-ATT.PrintName = [[762 Drum]]
+ATT.PrintName = [[Sooga 12 Drum]]
 ATT.CompactName = [[Drum]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
-
+PLOW THROUGH ENEMIES!!!
 ]]
 
 ATT.SortOrder = -100
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_drum"}
+ATT.MuzzleParticle = "muzzleflash_shotgun"
+ATT.ShootSound = "gekolt_css/xm1014-1.wav"
+
+ATT.ClipSizeOverride = 20
+
+ATT.RPMMult = 300 / 600
+
+ATT.NumOverride = 8
+ATT.SpreadAdd = 0.03
+ATT.DamageMaxMult = 0.45
+ATT.DamageMinMult = 0.45
+
+ATT.RecoilMult = 4
+ATT.RecoilPatternDriftMult = 5
+
+ATT.Ammo = "buckshot"
+
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_12"
+end
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",		
+        Category = {"css_ammo_sg"},
+        Pos = Vector(-2, 0, 3.5),
+        Ang = Angle(0, 0, 0),
+    },		
+}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag8")
