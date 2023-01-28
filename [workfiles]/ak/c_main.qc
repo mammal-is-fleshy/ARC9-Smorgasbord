@@ -8,7 +8,7 @@ $bodygroup "mag"
 	studio "ak47_mag2.smd"
 	studio "ak47_mag_556.smd"
 	studio "ak47_mag_25.smd"
-	studio "ak47_mag_drum.smd"
+	studio "ak47_mag_drum_12g.smd"
 	studio "ak47_mag_disk.smd"
 	studio "ak47_mag_bizon.smd"
 	studio "ak47_mag_water.smd"
@@ -22,6 +22,7 @@ $bodygroup "iron"
 	studio "ak47_iron_burst.smd"
 	studio "ak47_iron_water.smd"
 	studio "ak47_rear_12.smd"
+	studio "ak47_iron_poly.smd"
 }
 
 $bodygroup "rear"
@@ -146,6 +147,15 @@ $sequence "dry" {
 
 $sequence "dry_54" {
 	"anims\dry_54.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_12" {
+	"anims\dry_12.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

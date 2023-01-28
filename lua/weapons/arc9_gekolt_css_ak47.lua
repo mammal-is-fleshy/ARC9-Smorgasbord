@@ -540,7 +540,7 @@ SWEP.AttachmentElements = {
 	["s_poly2"] = { Bodygroups = { {4, 8} },},		
 	["s_adaptor"] = { Bodygroups = { {4, 11} },},
 
-	["hg_poly"] = { Bodygroups = { {3, 4} },},
+	["hg_poly"] = { Bodygroups = { {3, 4}, {1, 5}, {2, 2}, },},
 	["hg_bizon"] = { Bodygroups = { {3, 9} },					AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
 	["hg_12"] = { Bodygroups = { {3, 12}, {1, 4}, {2, 2}, },	AttPosMods = { [6] = { Pos = Vector(0, 0.15 , 3.5), }, [5] = { Pos = Vector(0, 1.35, 16), }, [7] = { Pos = Vector(0.05, 0.05, 27), } }		},	
 	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} }, 				AttPosMods = { [5] = { Pos = Vector(0, 2.25, 18.5), } }		},	
@@ -574,6 +574,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("rail_def") and wep:HasElement("hg_12") 	then model:SetBodygroup(1,0) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(5,0) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_rail") then model:SetBodygroup(1,0) end
+	if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(1,0) end
     if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_sd") 	then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_94") 	then model:SetBodygroup(5,2) end

@@ -261,7 +261,7 @@ saladmender from Fortuna returns, with an actual belt
 disk: Tachanka units during the Russian Civil War in ehh 1921? or something either use DP27s as a prone mount or strapped them on a horse    driveby lmg shooting
 helica: bizon, the animala is defintely NOT mw22
 stalker: asval
-huntsman: ??? i saw something similar in tarkov once?? probably a saiga
+huntsman: ??? i saw something similar in tarkov once?? probably a saiga or a verp????
 saiga: loosely based on one of them bullpup ak
 modern: its literally an ak12
 
@@ -294,11 +294,16 @@ reasons
 -- concept weapons --
 
 Mosin
-+ Artillery Guard (Kulakov grenade launcher): around 1942, second war 2, post-ish Barbarossa and all that		Kulakov person design basically the first rotary grenade launcher, the forerunner of the M32 or whatever
-gas from the firing thing would be redirected to rotate the cylinder, how does it eject? ehhh
-oh and yes, the firing base is a	mosin because its the soviet
++ Artillery Guard (Kulakov Grenade Launcher): --around 1942, second war 2, post-ish Barbarossa and all that		Kulakov person design basically the first rotary grenade launcher, the forerunner of the M32 or whatever
+--gas from the firing thing would be redirected to rotate the cylinder, how does it eject? ehhh
+--oh and yes, the firing base is a	mosin because its the soviet
 + That fucking small ass mosin from battlefield 1
-+ Shock Guard (ROKS-2): during second war 2 (every cool soviet prototype starts with war 2) they made		flamethrowers, out of	mosin		of course its mosin  more reading required
++ Shock Guard (ROKS-2/3): --during second war 2 (every cool soviet prototype starts with war 2) they made		flamethrowers, that shaped like mosins   of course
+--flametroopers, snipers and machine gunners are highly targetted in any battle, snipers are usually hidden or at a longer range, machine gunners are fortified and flame troopers have to be EVEN closer than normal infantry
+--flamers were a bit better compare to first war 1 but its still very much hazardous, one simple way to improve this was to mixed them with infantry, and give them a thing that looks like a normal infantry weapon
+--the fuel storage is also just a backpack, so standard expidition force gear, the hose is smaller than normal flamethrower hose
+--brilliant, if war crimes wasnt a thing i suspect this would be the norm, just imagine flamethrowing ak and fal in world war cold
+because of videogame logic, ehhh its just a regular ass flamethrower but with mosin housing
 + That thing that looks like a Huot from Hunt Showdown
 + Auxiliary Guard (Pedersen Device): during first war 1, americunt people slap angled pistol stick magazine on their,   i assume springfield?  gun, fires in  semi		ofc videogame logic so full auto smg mosin
 
