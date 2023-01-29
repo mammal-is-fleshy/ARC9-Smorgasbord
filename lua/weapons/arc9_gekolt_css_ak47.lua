@@ -197,7 +197,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.55, 0, 0.7),
+    Pos = Vector(-2.58, 0, 0.65),
     Ang = Angle(0,0,-5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
@@ -315,7 +315,7 @@ SWEP.Animations = {
 		MinProgress = 0.83,
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.725, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},			
         EventTable = {		
             {s =  "oneshotof_cs16/ump45_clipout.wav" ,   t = 18 / 40},
@@ -502,7 +502,7 @@ SWEP.Animations = {
 			{s =  "gekolt_css/mp5_slideback.wav"	,    t = 80 / 40},			
         },			
     },		
------------------- 12drum --------------------------------- PLEASE DO BETTER SOUND TABLES IM NOT RZEN1TH
+------------------ 12drum ---------------------------------
 ["reload_12"] = {
     Source = "wet_12",
     FireASAP = true,
@@ -512,9 +512,9 @@ SWEP.Animations = {
     { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
     },			
     EventTable = {		
-        {s =  "gekolt_css/p90_clipout.wav" ,   t = 20 / 40},
-        {s =  "gekolt_css/p90_clipin.ogg" ,    t = 50 / 40},
-        {s =  "gekolt_css/p90_clipin2.ogg" ,    t = 65 / 40},	
+		{s =  "gekolt_css/p90_clipout.wav" ,   t = 28 / 40},
+		{s =  "gekolt_css/p90_clipin.ogg" ,    t = 70 / 40},
+		{s =  "gekolt_css/p90_clipin2.ogg" ,   t = 85 / 40},	
     },				
 },
 ["reload_empty_12"] = {
@@ -526,11 +526,10 @@ SWEP.Animations = {
     { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },			
     },	
     EventTable = {		
-        {s =  "gekolt_css/p90_clipout.wav" ,   t = 20 / 40},
-        --{s =  "gekolt_css/p90_clipin.ogg" ,    t = 50 / 40},
-        {s =  "gekolt_css/p90_clipin2.ogg" ,    t = 65 / 40},	
-        {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 87 / 40},	
-        {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 93 / 40},		
+		{s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
+		{s =  "gekolt_css/p90_clipin.ogg" ,    t = 60 / 40},
+		{s =  "gekolt_css/p90_clipin2.ogg" ,   t = 71 / 40},		
+		{s =  "gekolt_css/p90_boltpull.wav" ,  t = 95 / 40},				
     },					
 },	
 --------------------------------------------------------	
@@ -571,14 +570,15 @@ SWEP.AttachmentElements = {
 	["s_poly2"] = { Bodygroups = { {4, 8} },},		
 	["s_adaptor"] = { Bodygroups = { {4, 11} },},
 
-	["hg_poly"] = { Bodygroups = { {3, 4}, {1, 5}, {2, 2}, },},
+	["hg_poly"] = { Bodygroups = { {3, 4}, {1, 5}, {2, 2} },	AttPosMods = { [6] = { Pos = Vector(0, -0.4, 2.5), } }		},
+	["hg_amd"] = { Bodygroups = { {3, 13} },					AttPosMods = { [6] = { Pos = Vector(0, -0.4, 2.5), }, [7] = { Pos = Vector(0, 0.075, 24), } }		},
 	["hg_bizon"] = { Bodygroups = { {3, 9} },					AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},
 	["hg_12"] = { Bodygroups = { {3, 12}, {1, 4}, {2, 2}, },	AttPosMods = { [6] = { Pos = Vector(0, 0.15 , 3.5), }, [5] = { Pos = Vector(0, 1.35, 16), }, [7] = { Pos = Vector(0.05, 0.05, 27), } }		},	
-	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} }, 				AttPosMods = { [5] = { Pos = Vector(0, 2.25, 18.5), } }		},	
+	["hg_sd"] = { Bodygroups = { {3, 2}, {2, 2} }, 				AttPosMods = { [6] = { Pos = Vector(0, -0.4, 2.5), }, [5] = { Pos = Vector(0, 2.25, 18.5), } }		},	
 	["hg_u"] = { Bodygroups = { {3, 1}, {2, 1} },				AttPosMods = { [7] = { Pos = Vector(0, 0.075, 20), } }		},
 	["hg_rpk"] = { Bodygroups = { {3, 5} },						AttPosMods = { [7] = { Pos = Vector(0, 0.075, 35), } }		},
 	["hg_hunt"] = { Bodygroups = { {3, 6}, {2, 1} },			AttPosMods = { [7] = { Pos = Vector(0, 0.075, 37.5), } }	},
-	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },		AttPosMods = { [7] = { Pos = Vector(0, 0.2, 29.5), } }		},		
+	["hg_94"] = { Bodygroups = { {3, 8}, {2, 2}, {1, 2} },		AttPosMods = { [6] = { Pos = Vector(0, -0.4, 2.5), }, [7] = { Pos = Vector(0, 0.2, 29.5), } }		},		
 	["hg_rail"] = { Bodygroups = { {3, 3}, {2, 2}, {1, 1} },	AttPosMods = { [6] = { Pos = Vector(0, -0.35 , 5), }, [5] = { Pos = Vector(0, 2, 15), }, [7] = { Pos = Vector(0, 0.1, 27), } }		},	
 
 	["g_poly"] = { Bodygroups = { {6, 1} },},		
@@ -608,6 +608,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(1,0) end
     if wep:HasElement("rail_def") and wep:HasElement("hg_poly") then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_sd") 	then model:SetBodygroup(5,2) end
+	if wep:HasElement("rail_def") and wep:HasElement("hg_amd") 	then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("hg_94") 	then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("u_566") 	then model:SetBodygroup(5,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("u_566") 	then model:SetBodygroup(1,0) end
@@ -638,7 +639,7 @@ SWEP.Attachments = {
         Category = "css_ak_handguard", 
         Bone = "W_Main",
         Pos = Vector(0, -0.5, 15),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(90, 0, -90),	
     },
 
     {
@@ -685,7 +686,7 @@ SWEP.Attachments = {
 		InstalledElements = {"rail_def"}, 
 
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
-        Category = {"optic_css"}, 
+        Category = {"optic_css", "optic_css_free"}, 
         Bone = "W_Bolt_Disk",
         Pos = Vector(0, -0.4, 0.8),
         Ang = Angle(90, 0, -90),			

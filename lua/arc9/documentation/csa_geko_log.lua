@@ -78,9 +78,10 @@ STEN (receiver:4-5)
 - 22lr/9mm Ruger
 
 [AK]
-- Drum (probably 545)
 - Bolt action
-- 12g Saiga
+
+[M18]
+- Sounds
 
 [Uni]
 - Back up pistol/smg (ubgl)  -- mwii isnt real -- so darsu said not possible :((
@@ -112,10 +113,12 @@ M4: Done
 M9: Done
 Garand: Done
 Mauser: Done
-AK: WIP
 M79: Done
-Sten: Model Done?
 M18: Done?
+AK: Done?
+Sten: Done?
+Tishina: WIP
+
 
 M30: Scrapped???????
 M3: Model Done [SCRAPPED??]

@@ -326,8 +326,8 @@ ATT.ActivateElements = {"hg_rail"}
 
 ATT.Sights = {
     {
-        Pos = Vector(2.15, 0, 19),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(0, 18, -2.2),
+        Ang = Angle(0, -0.2, 0),
         Reticle = nil,
 
         Magnification = 1.05,
@@ -356,8 +356,8 @@ ATT.ActivateElements = {"hg_u"}
 
 ATT.Sights = {
     {
-        Pos = Vector(2.05, 0, 19),
-        Ang = Angle(90, 0, -90),
+        Pos = Vector(0, 18, -2.2),
+        Ang = Angle(0, -0.5, 0),
         Reticle = nil,
 
         Magnification = 1.05,
@@ -386,8 +386,8 @@ ATT.ActivateElements = {"hg_hunt"}
 
 ATT.Sights = {
     {
-        Pos = Vector(2.2, 0, 16),
-        Ang = Angle(90.5, 0, -90),
+        Pos = Vector(0, 18, -2.2),
+        Ang = Angle(0, -0.5, 0),
         Reticle = nil,
 
         Magnification = 1.05,
@@ -417,8 +417,8 @@ ATT.ActivateElements = {"hg_94"}
 
 ATT.Sights = {
     {
-        Pos = Vector(1.6, 0, 21),
-        Ang = Angle(89.75, 0, -90),
+        Pos = Vector(0, 19, -1.6),
+        Ang = Angle(0, 0, 0),
         Reticle = nil,
 
         Magnification = 1.05,
@@ -493,6 +493,33 @@ ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_12"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg10")
+
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = [[INSERT NAME2 Handguard]]
+ATT.CompactName = [[AMD]]
+ATT.Icon = Material("entities/gekolt_css_ak_h_hungary.png", "mips smooth")
+ATT.Description = [[
+]]
+
+ATT.SortOrder = 3
+ATT.Category = "css_ak_handguard"
+ATT.ActivateElements = {"hg_amd", "nofg", "no_bizon"}
+ATT.ExcludeElements = {"no_amd"}
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-22.5, -3.75, 4)
+ATT.ModelAngleOffset = Angle(-10, 90, -90)
+ATT.Model = "models/weapons/geckololt_css/c_sten.mdl"
+ATT.ModelBodygroups = "56570000000"
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg11")
 
 
 ----------------------------------------------------------------------------------

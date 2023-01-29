@@ -247,7 +247,8 @@ ATT.Ammo = "pistol"
 
 ATT.SortOrder = 13
 ATT.Category = "css_ak_up"
-ATT.ActivateElements = {"u_919x", "nofg"}
+ATT.ActivateElements = {"u_919x", "nofg", "no_amd"}
+ATT.ExcludeElements = {"no_bizon"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_bizon"
@@ -273,7 +274,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag7")
 ATT = {}
 ATT.PrintName = [[Dvornik-Rama]]
 ATT.CompactName = [[12G]]
-// ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_u_saiga.png", "mips smooth")
 ATT.Description = [[
 PLOW THROUGH ENEMIES!!!
 ]]

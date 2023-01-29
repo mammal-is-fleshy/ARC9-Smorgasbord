@@ -47,6 +47,7 @@ $bodygroup "handguard"
 	studio "ak47_hg_water.smd"
 	blank
 	studio "ak47_hg_12.smd"
+	studio "ak47_hg_hungary.smd"
 }
 
 $bodygroup "stock"
