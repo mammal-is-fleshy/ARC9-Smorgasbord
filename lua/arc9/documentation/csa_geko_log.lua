@@ -14,6 +14,7 @@ FAS2: M79/Sterling
 Enemy Front[??? honestly i cant remember]: Sten
 Medal of Hounor Airborne: M18
 + Moon - Ripping
+Soldier of Fortune 3 - Muzzles and Tac/Flashlight, some ak stuff, Tishina
 
 
 Google Images - ref
@@ -29,7 +30,6 @@ Rainbow Six Vegas 2 - Mass26
 CSGO, CSCZ, DOD:S - Sounds??
 https://gamebanana.com/mods/210646 - SPR Guard, Elcan
 https://gamebanana.com/mods/210602 - Targeter Guard [M4]
-Soldier of Fortune 3 - Muzzles and Tac/Flashlight
 
 https://gamebanana.com/models/3241 - T1
 https://gamebanana.com/skins/162976 - MRS 

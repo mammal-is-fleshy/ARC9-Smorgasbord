@@ -455,9 +455,9 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 53 / 40},
+            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 63 / 40},	
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -470,11 +470,10 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},				
-            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 75 / 40},	 
-			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 18 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 53 / 40},
+            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 63 / 40},				
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 84 / 40},	 
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -488,9 +487,9 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 55 / 40},
+            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 66 / 40},	
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -503,11 +502,10 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},				
-            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 75 / 40},	 
-			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 55 / 40},
+            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 66 / 40},			
+            {s =  "gekolt_dod/mp40_boltback.wav" ,  t = 92 / 40},	 	
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -521,9 +519,8 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},	
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -536,11 +533,9 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},				
-            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 75 / 40},	 
-			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},			
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},	 
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -555,9 +550,8 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},	
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -570,12 +564,10 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},				
-            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 75 / 40},	 
-			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
-			},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},			
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},	 
+		},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
@@ -588,9 +580,8 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -603,12 +594,10 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},				
-            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 75 / 40},	 
-			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
-			},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},			
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},	 
+		},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
@@ -622,9 +611,9 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 22 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 63 / 40},
+            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 70 / 40},				
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
@@ -636,11 +625,10 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 50 / 40},				
-            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 75 / 40},	 
-			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 82 / 40},	
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 22 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 63 / 40},
+            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 70 / 40},				
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 95 / 40},	 
 			},
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	

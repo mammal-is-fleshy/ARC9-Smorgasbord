@@ -97,10 +97,21 @@ ATT = {}
 ATT.PrintName = [[Podvod-Rama]]
 ATT.CompactName = [[Dart]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_aps.png", "mips smooth")
-ATT.Description = [[Fletchette dart underwater firing mechanism.
+ATT.Description = [[Fletchette dart underwater firing mechanism
+Wooden frame might actually be a bad idea.
 ]]
 
+ATT.CanFireUnderwater = true
 ATT.ClipSizeOverride = 25
+ATT.RPMMult = 520 / 600
+ATT.RicochetChanceOverride = 0
+ATT.SpreadMult = 0.5
+ATT.PhysBulletMuzzleVelocityMult = 2
+ATT.PenetrationMult = 3
+ATT.ArmorPiercingAdd = 2
+
+ATT.RangeMaxMult = 0.5
+ATT.RangeMinMult = 2
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_water"
@@ -142,6 +153,7 @@ ATT.Description = [[
 ]]
 
 ATT.ClipSizeOverride = 47
+ATT.RPMMult = 550 / 600
 ATT.ChamberSizeOverride = 0
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
