@@ -5,8 +5,7 @@ ATT = {}
 ATT.PrintName = [[Atakovat-Rama]]
 ATT.CompactName = [[Carbine]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_545.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[Intermediate solution.
 ]]
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -30,8 +29,8 @@ ATT = {}
 ATT.PrintName = [[Okhota-Rama]]
 ATT.CompactName = [[Marksman]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
-ATT.Description = [[
-Chamber the weapon in hunting rounds
+ATT.Description = [[Chamber the weapon in hunting rounds
+Powerful cartridge unsuitable for full-auto.
 ]]
 
 
@@ -72,8 +71,8 @@ ATT = {}
 ATT.PrintName = [[Erikoinen-Rama]]  -- this is finnish btw
 ATT.CompactName = [[Assault]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_556.png", "mips smooth")
-ATT.Description = [[
-
+ATT.Description = [[Magwell adaptor for foreign intermediate cartridge
+Made with Western Magic™.
 ]]
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -98,8 +97,7 @@ ATT = {}
 ATT.PrintName = [[Podvod-Rama]]
 ATT.CompactName = [[Dart]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_aps.png", "mips smooth")
-ATT.Description = [[
-Walter
+ATT.Description = [[Fletchette dart underwater firing mechanism.
 ]]
 
 ATT.ClipSizeOverride = 25
@@ -192,9 +190,8 @@ ATT = {}
 ATT.PrintName = [[Dobavoch-Rama]]
 ATT.CompactName = [[Aux]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_pp.png", "mips smooth")
-ATT.Description = [[
-Sub-machine configuration
-incase you need to downgrade your rifle
+ATT.Description = [[Sub-machine configuration
+For scenarios where you need to downgrade your rifle
 ]]
 
 ATT.ClipSizeOverride = 32
@@ -274,8 +271,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag7")
 
 
 ATT = {}
-ATT.PrintName = [[Sooga 12 Drum]]
-ATT.CompactName = [[Drum]]
+ATT.PrintName = [[Dvornik-Rama]]
+ATT.CompactName = [[12G]]
 // ATT.Icon = Material("entities/gekolt_css_m4_s_swire.png", "mips smooth")
 ATT.Description = [[
 PLOW THROUGH ENEMIES!!!
