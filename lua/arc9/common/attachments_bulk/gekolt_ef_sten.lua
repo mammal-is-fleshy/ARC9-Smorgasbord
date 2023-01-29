@@ -3,9 +3,9 @@ local ATT = {}
 
 Note:
 Volk - MP3008
-Prototpye - MK1
+Prototype - MK1
 Viper - MK4
-Ezpieg - Sterling
+Ezpieg - Sterling (polish because              ehhhhhhhh)
 should i just keep salad mender for mk5?????
 
 ]]
@@ -63,7 +63,7 @@ ATT = {}
 
 ATT.PrintName = "Ezpieg-Frame"
 ATT.CompactName = "Sterling"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_sterling.png", "mips smooth")
 ATT.Description = [[50 year old submachine gun lol]]
 
 ATT.Pros = {}
@@ -106,8 +106,10 @@ ATT = {}
 
 ATT.PrintName = "Volkstutzen-Frame"
 ATT.CompactName = "3008"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
-ATT.Description = [[The peoples]]
+ATT.Icon = Material("entities/gekolt_ef_sten_mp3008.png", "mips smooth")
+ATT.Description = [[Captured militian modification, they even fixed the sight for you
+Verticle design requires slower cycling
+Magically jammed in 2 more bullets.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -115,6 +117,7 @@ ATT.SortOrder = 2
 ATT.ExcludeElements = {"pre_maglow"}
 
 ATT.ClipSizeOverride = 32
+ATT.RPMMult = 550/600
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"f_3008", "no_maglow"}
@@ -131,7 +134,7 @@ ATT = {}
 
 ATT.PrintName = "Viper-Frame"
 ATT.CompactName = "MK4"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_mk4.png", "mips smooth")
 ATT.Description = [[The uzi at home:]]
 
 ATT.Pros = {}
@@ -156,7 +159,7 @@ ATT = {}
 
 ATT.PrintName = "Owen Frame"  --im not going to put some lame ass aussie stereotype         am i?
 ATT.CompactName = "Owen"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_owen.png", "mips smooth")
 ATT.Description = [[Why the mag like]]
 
 ATT.Pros = {}
@@ -210,7 +213,7 @@ ATT = {}
 
 ATT.PrintName = [['Pistol' Stock]]
 ATT.CompactName = "PISTOL"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_stock_mk2s.png", "mips smooth")
 ATT.Description = [[wnolochy]]
 
 ATT.Pros = {}
@@ -238,7 +241,7 @@ ATT = {}
 
 ATT.PrintName = [[MK2 Stock]]
 ATT.CompactName = "MK2"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_stock_mk2.png", "mips smooth")
 ATT.Description = [[cymrag]]
 
 ATT.Pros = {}
@@ -257,7 +260,7 @@ ATT = {}
 
 ATT.PrintName = [[Wooden Stock]]
 ATT.CompactName = "WOOD"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_stock_wood.png", "mips smooth")
 ATT.Description = [[cymrag]]
 
 ATT.Pros = {}
@@ -276,7 +279,7 @@ ATT = {}
 
 ATT.PrintName = [[Prototype Stock]]
 ATT.CompactName = "PROTO"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_stock_mk1.png", "mips smooth")
 ATT.Description = [[cymrag]]
 
 ATT.Pros = {}
@@ -306,7 +309,7 @@ ATT = {}
 
 ATT.PrintName = [[Wooden Handguard]]
 ATT.CompactName = "WOOD"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_grip_wood.png", "mips smooth")
 ATT.Description = [[wood]]
 
 ATT.Pros = {}
@@ -325,7 +328,7 @@ ATT = {}
 
 ATT.PrintName = [[No Handguard]]
 ATT.CompactName = "NO"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_blank.png", "mips smooth")
 ATT.Description = [[just no]]
 
 ATT.Pros = {}
@@ -344,8 +347,9 @@ ATT = {}
 
 ATT.PrintName = [[Prototype Handguard]]
 ATT.CompactName = "PROTO"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
-ATT.Description = [[First tested iteration, bulky]]
+ATT.Icon = Material("entities/gekolt_ef_sten_grip_mk1.png", "mips smooth")
+ATT.Description = [[First tested iteration, bulky
+Heavier grip negates the ability to reload like a retard.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

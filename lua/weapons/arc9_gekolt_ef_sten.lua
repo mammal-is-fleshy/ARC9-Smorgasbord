@@ -21,7 +21,7 @@ SWEP.Credits = {
     Assets = "Enemy Front"
 }
 
-SWEP.Description = [[lmao get a real carbine]]
+SWEP.Description = [[Humble tubular weapons. Quick for assembling and mass producting allowing for easy off-shoot variants]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_sten.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
