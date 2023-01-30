@@ -392,6 +392,7 @@ ATT.ActivateElements = {"up_pdw", "noguard", "nogrip", "short_clamp", "akantbo",
 ATT.ShootSound = "gekolt_css/p90-1.wav"
 ATT.MuzzleParticle = "muzzleflash_smg"
 
+ATT.CaseEffectQCA = 3
 ATT.ClipSizeOverride = 50
 
 ATT.RPMMult = 900 / 700

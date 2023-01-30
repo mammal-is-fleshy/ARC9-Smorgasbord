@@ -72,8 +72,8 @@ $illumposition 0 0 0
 $cdmaterials "models\gekolt_css_vmt\"
 $cdmaterials "models\weapons\v_models\rif_garand2\"
 
-$attachment "1" "W_Muzzle" 0 0 0 rotate -90 0 -90
-$attachment "2" "W_Belt_Open" -0.5 0 -1.5 rotate 0 -135 0
+$attachment "1" "W_Muzzle" 0 0 0 rotate -90 0 0
+$attachment "2" "W_Belt_Open" -4.00 0.00 0.00 rotate -0 -180 -180
 
 
 $sequence "wet_owen" {

@@ -152,6 +152,7 @@ ATT.Description = [[
 
 ]]
 
+ATT.CaseEffectQCA = 3
 ATT.ClipSizeOverride = 47
 ATT.RPMMult = 550 / 600
 ATT.ChamberSizeOverride = 0
