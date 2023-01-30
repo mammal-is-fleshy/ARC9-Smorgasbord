@@ -27,8 +27,8 @@ ATT.ExcludeElements = {"pre_maglow"}
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.03, 12, -5.3),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(-2.8475, -1, 1.2),
+        Ang = Angle(0, 0, -10),
         Reticle = nil,
 
         Magnification = 1.05,
@@ -36,6 +36,15 @@ ATT.Sights = {
         KeepBaseIrons = false
     }
 }
+
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-10.5, -3.75, 6.5)
+ATT.ModelAngleOffset = Angle(0, 0, 10)
+ATT.Model = "models/weapons/geckololt_css/c_sten_ik3.mdl"
+ATT.ModelBodygroups = "0000000"
 
 ATT.TriggerDelay = true
 ATT.TriggerDelayTime = 0.07
@@ -72,8 +81,8 @@ ATT.SortOrder = 1
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.03, 20, -4.25),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(-2.275, 7, 2.32),
+        Ang = Angle(0, 0, -10),
         Reticle = nil,
 
         Magnification = 1.05,
@@ -85,6 +94,17 @@ ATT.Sights = {
 ATT.Hook_TranslateAnimation = function(wep, anim) 
 	return anim .. "_sterling"
 end
+
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-10.5, -3, 6.5)
+ATT.ModelAngleOffset = Angle(0, 0, 10)
+ATT.Model = "models/weapons/geckololt_css/c_sten_ik2.mdl"
+ATT.ModelBodygroups = "0000000"
 
 ATT.ActivePosOverride = Vector(0, 8, 0.5)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
@@ -150,6 +170,17 @@ end
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"f_mk4", "pre_stock", "pre_hg"}
 
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.RHIK = true
+ATT.RHIK_Priority = 0
+
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-10.5, -3.75, 6.5)
+ATT.ModelAngleOffset = Angle(0, 0, 10)
+ATT.Model = "models/weapons/geckololt_css/c_sten_ik1.mdl"
+ATT.ModelBodygroups = "0000000"
+
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_mk4")
 
@@ -197,7 +228,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"f_owen", "pre_stock", "pre_hg", "pre_barrel"}
+ATT.ActivateElements = {"f_owen", "pre_stock", "pre_hg"}
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_owen")
@@ -400,7 +431,7 @@ ATT.Description = [[mk1]]
 
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = 1
 
 ATT.Category = "ef_sten_barrel" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"b_mk1", "pre_muzzed"}
@@ -419,7 +450,7 @@ ATT.Description = [[mk3]]
 
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = 3
 
 ATT.Category = "ef_sten_barrel" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"b_mk3"}
@@ -445,3 +476,22 @@ ATT.ActivateElements = {"b_mk2"}
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b3")
+
+---------------------------------------------------------------------------------- 
+
+ATT = {}
+
+ATT.PrintName = [[Owen Barrel]]
+ATT.CompactName = "OWEN"
+//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Description = [[owen]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 4
+
+ATT.Category = "ef_sten_barrel" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"b_owen"}
+
+
+ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b4")

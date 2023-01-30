@@ -278,17 +278,17 @@ SWEP.AttachmentElements = {
         Bodygroups = {{1, 1},{2, 2},{3, 4}},			
 	},
     ["f_mk5"] = {
-        Bodygroups = {{1, 2},{4, 2},{5, 1}},			
+        Bodygroups = {{1, 2},{4, 2},{3, 6},{5, 1}},			
 	},
     ["f_owen"] = {
-        Bodygroups = {{0, 4},{1, 3},{2, 3},{3, 5},{6, 1}},			
+        Bodygroups = {{1, 3},{2, 3},{3, 5},{6, 1}},
+		AttPosMods = { [5] = { Pos =  Vector(0.7, -1.2, 0), Ang = Angle(90, 0,-120) }}
 	},
     ["f_sterling"] = {
         Bodygroups = {{0, 5},{1, 5},{2, 5},{3, 7},{5, 2}},			
 	},
     ["f_3008"] = {
         Bodygroups = {{1, 4}},		
-        AttPosMods = { [6] = { Pos = Vector(0, 0, 11.2), }}	
 	},
 
 	["s_mk2s"] = {
@@ -315,13 +315,17 @@ SWEP.AttachmentElements = {
 	},
 
 	["b_mk1"] = {
-        Bodygroups = {{0, 2}},		
+        Bodygroups = {{0, 2}},
 	},
 	["b_mk2"] = {
-        Bodygroups = {{0, 3}},		
+        Bodygroups = {{0, 3}},
 	},
 	["b_mk3"] = {
-        Bodygroups = {{0, 1}},		
+        Bodygroups = {{0, 1}},
+        AttPosMods = { [6] = { Pos = Vector(0, 0, 11.2), }}	
+	},
+	["b_owen"] = {
+        Bodygroups = {{0, 4}},		
 	},
 	
 }
@@ -401,6 +405,7 @@ end
 SWEP.Hook_ModifyBodygroups = function(wep, data)  
     local model = data.model
 	if wep:HasElement("has_optic") and !wep:HasElement("f_mk5") then model:SetBodygroup(4,1) end	
+	if wep:HasElement("has_optic") and wep:HasElement("f_owen") then model:SetBodygroup(4,3) end	
     if wep:HasElement("has_optic") and wep:HasElement("f_mk5") then  model:SetBodygroup(5,0) end
     if wep:HasElement("has_optic") and wep:HasElement("f_sterling") then  model:SetBodygroup(5,0) end 
 end
@@ -641,14 +646,15 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 55 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 62 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 68 / 40},
+			{s =  "gekolt_css/m249_coverup.wav" ,   t = 6 / 40},		
+            {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 33 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 72 / 40},
+            {s =  "gekolt_css/m249_chain.wav" ,     t = 89 / 40},
+            {s =  "gekolt_css/m249_coverdown.wav" , t = 121 / 40},
         },	
 		IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.775, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 1, rhik = 1, },	
+        { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.775, lhik = 0, rhik = 0, },{ t = 0.85, lhik = 1, rhik = 1, },	
 		},
 		MagSwapTime = 1.25
     },	
@@ -658,16 +664,16 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgress = 0.9,
         EventTable = {
-            {s =  "gekolt_dod/c96_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 55 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 62 / 40},
-            {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 68 / 40},				
-            {s =  "gekolt_dod/c96_boltback.wav" ,    t = 92 / 40},	 
-			{s =  "gekolt_dod/c96_boltforward.wav" ,    t = 102 / 40},	
+            {s =  "gekolt_dod/mp40_boltback.wav" ,   t = 10 / 40},
+            {s =  "gekolt_dod/mp40_clipout.wav" ,    t = 37 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,  t = 74 / 40},
+			{s =  "gekolt_css/m249_coverup.wav" ,   t = 95 / 40},
+            {s =  "gekolt_css/m249_chain.wav" ,     t = 108 / 40},
+            {s =  "gekolt_css/m249_coverdown.wav" , t = 146 / 40},
 			},
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.05, lhik = 1, rhik = 0, },
+        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 1, },	
 		},
 		MagSwapTime = 1.25
     },		

@@ -49,7 +49,8 @@ $bodygroup "rail"
 {
 	blank
 	studio "sten_rail.smd"
-	studio "sten_rail_mk5.smd"	
+	studio "sten_rail_mk5.smd"
+	studio "sten_rail_owen.smd"	
 }
 
 $bodygroup "iron"
