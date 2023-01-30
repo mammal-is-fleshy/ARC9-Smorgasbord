@@ -5,4 +5,6 @@
 	"$phongexponenttexture" "models\gekolt_css_vmt\sten\sten_s"
 	
 	"$nocull" 1	
+	
+ 	$color2 "[2 2 2.15]"
 }
