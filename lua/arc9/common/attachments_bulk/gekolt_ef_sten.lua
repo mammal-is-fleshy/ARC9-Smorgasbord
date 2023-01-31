@@ -2,11 +2,11 @@ local ATT = {}
 --[[
 
 Note:
-Volk - MP3008
+Volkstutzen - MP3008
 Prototype - MK1
-Viper - MK4
+Viper/Adder - MK4
 Ezpieg - Sterling (polish because              ehhhhhhhh)
-should i just keep salad mender for mk5?????
+Walcaster - Salad Mender (Voorlopig Ontwerp[Provisional Design]   /    'First' Running Design) 
 
 ]]
 
@@ -14,11 +14,11 @@ should i just keep salad mender for mk5?????
 
 ATT = {}
 
-ATT.PrintName = "LMG-Frame"
+ATT.PrintName = "Walcaster-Frame"
 ATT.CompactName = "Salad Mender"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_saladmender.png", "mips smooth")
 ATT.Description = [[Belt-fed mechanicsm bollocks
-Heavier trigger is required]]
+Requires a heavier trigger to fire]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -376,7 +376,7 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low2")
 
 ATT = {}
 
-ATT.PrintName = [[Prototype Handguard]]
+ATT.PrintName = [[Walcaster Handguard]]
 ATT.CompactName = "PROTO"
 ATT.Icon = Material("entities/gekolt_ef_sten_grip_mk1.png", "mips smooth")
 ATT.Description = [[First tested iteration, bulky
@@ -424,7 +424,7 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low3")
 
 ATT = {}
 
-ATT.PrintName = [[Prototype Barrel]]
+ATT.PrintName = [[Walcaster Barrel]]
 ATT.CompactName = "PROTO"
 //ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
 ATT.Description = [[mk1]]
@@ -445,7 +445,7 @@ ATT = {}
 
 ATT.PrintName = [[MK3 Barrel]]
 ATT.CompactName = "MK3"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_barrel_mk1.png", "mips smooth")
 ATT.Description = [[mk3]]
 
 ATT.Pros = {}
@@ -464,7 +464,7 @@ ATT = {}
 
 ATT.PrintName = [[MK2 Barrel]]
 ATT.CompactName = "MK2"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_barrel_mk2.png", "mips smooth")
 ATT.Description = [[mk2]]
 
 ATT.Pros = {}
@@ -483,7 +483,7 @@ ATT = {}
 
 ATT.PrintName = [[Owen Barrel]]
 ATT.CompactName = "OWEN"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_barrel_owen.png", "mips smooth")
 ATT.Description = [[owen]]
 
 ATT.Pros = {}

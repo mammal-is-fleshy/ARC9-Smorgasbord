@@ -199,6 +199,9 @@ SWEP.IronSights = {
 SWEP.SprintAng = Angle(45, -15, -5)
 SWEP.SprintPos = Vector(5, 1.25, 0.25)
 
+SWEP.BipodPos = Vector(-3.935, 0, -1)
+SWEP.BipodAng = Angle(0, 0, -5)
+
 SWEP.SprintMidPoint = {
     Pos = Vector(-1, -5, -5),
     Ang = Angle(5, 20, 15)

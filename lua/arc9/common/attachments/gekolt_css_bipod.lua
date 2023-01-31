@@ -1,23 +1,23 @@
-ATT.PrintName = "BIPOD"
+ATT.PrintName = "Bipod"
 ATT.CompactName = "BIPOD"
 ATT.Description = [[pod means legs, bi means two.]]
 
 // ATT.Icon = Material("entities/gekolt_css_fore_troy.png", "mips smooth")
 
-ATT.SortOrder = 1
-ATT.Category = {"rail_bottom"}
+ATT.SortOrder = 20
+ATT.Category = {"grip_css"}
 
 ATT.Model = "models/weapons/geckololt_css/atts/bipod_sg550.mdl"
-ATT.ModelBodygroups = "00000"
-ATT.ModelAngleOffset = Angle(0, 0, 180)
-ATT.ModelOffset = Vector(0, 0, 0.5)
+ATT.ModelBodygroups = "3"
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.ModelOffset = Vector(1.5, 0, 0.25)
 
 ATT.Bipod = true
 
-ATT.DrawFunc = function(self, model)
-	if self:GetUBGL() then
-		model:SetBodygroup(6,1)
+ATT.DrawFunc = function(self, model, wm)
+	if self:GetBipod() then
+		model:SetBodygroup(0,1)
 	else 
-		model:SetBodygroup(6,2)
+		model:SetBodygroup(0,3)
 	end
 end
