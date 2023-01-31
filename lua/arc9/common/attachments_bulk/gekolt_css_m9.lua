@@ -5,8 +5,7 @@ ATT = {}
 ATT.PrintName = [[Carrista-Ossatura]]
 ATT.CompactName = [[Auto]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_auto.png", "mips smooth")
-ATT.Description = [[Semi-auto won't do much in this world of chaos
-Unstable recoil
+ATT.Description = [[The only way to improve anything.
 ]]
 
 ATT.SortOrder = 1
@@ -49,7 +48,7 @@ ATT.CompactName = [[Burst]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_burst.png", "mips smooth")
 ATT.Description = [[Encumbersome frontend device allowing for stable short burst in quick succession
 Raised front sight is just only a style points, there is no 80s action movie revolving about a mechanical police reference
-Despite using the exact same magazine as the Auto-Frame, only holds 20 for reasons undisclosable
+Despite using the exact same magazine as the Auto-Frame, only holds 20 for reasons undisclosable.
 ]]
 
 ATT.SortOrder = 2
@@ -104,11 +103,11 @@ ATT.PrintName = [[Bersagliere-Ossatura]]
 ATT.CompactName = [[Carbine]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_carbine.png", "mips smooth")
 ATT.Description = [[Pistols don't have to be short
-Fully automatic carbine kit along with a old fashion 42-round snail magazine
-Much more stable than those auto-frames
+Fully automatic carbine kit along with a old fashion 42-round snail magazine, how does it fit that much?
+Much more stable than those auto-frames.
 ]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 30
 ATT.Category = "css_m9_frame"
 ATT.ActivateElements = {"f_carbine", "akantbo"}
 
@@ -162,8 +161,9 @@ ATT = {}
 ATT.PrintName = [[Incursore-Ossatura]]
 ATT.CompactName = [[SD]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_sd.png", "mips smooth")
-ATT.Description = [[For quiet times and uneasy times
-For infiltration with styles
+ATT.Description = [[Finally they grip it like a normal human
+Compact frame fitted with an very much not intergral suppressor
+Even its silhouette is very resemblance so something else.
 ]]
 ATT.ClipSizeOverride = 8
 ATT.SortOrder = 4
@@ -216,7 +216,7 @@ ATT.PrintName = [[Bisbigliare-Ossatura]]
 ATT.CompactName = [[Welrod]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_welrod.png", "mips smooth")
 ATT.Description = [[Super compact manual action kit, the hammer doesn't even automatically reset
-Damage magically increases to compensate, imagine it use some sort of small .50AE
+Damage magically increases to compensate in the name of videogame logic, imagine it use some sort of small .50AE.
 ]]
 ATT.ClipSizeOverride = 7
 ATT.SortOrder = 5
@@ -259,8 +259,7 @@ ATT = {}
 ATT.PrintName = [[Centurione-Ossatura]]
 ATT.CompactName = [[Compact]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_p38.png", "mips smooth")
-ATT.Description = [[Shortened slide for certain types of officers
-Magically increases damage in the name of videogame balance
+ATT.Description = [[Shortened slide with single stacked magazine for increased fire power.
 ]]
 ATT.ClipSizeOverride = 8
 ATT.SortOrder = 6
@@ -301,12 +300,12 @@ ATT = {}
 ATT.PrintName = [[Artigliere-Ossatura]]
 ATT.CompactName = [[Artillery]]
 ATT.Icon = Material("entities/gekolt_css_m9_f_long.png", "mips smooth")
-ATT.Description = [[Polymer frame of an old fashion comically long barrel kit for artillery crew
-Artillery not included
-Stock however, does
+ATT.Description = [[Polymer frame of an old fashion comically long barrel and stock combo kit for artillery crew
+Uses specialised bullet type to somehow reverse damage range, it's almost like they want you to use it as a long range weapon
+Artillery not included.
 ]]
 ATT.ClipSizeOverride = 21
-ATT.SortOrder = 3.5
+ATT.SortOrder = 35
 ATT.Category = "css_m9_frame"
 ATT.ActivateElements = {"f_artillery", "pre_optic", "akantbo"}
 
