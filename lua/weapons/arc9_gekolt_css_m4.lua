@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
 SWEP.SubCategory = "Primaries"
 
-SWEP.PrintName = "CC4R"
+SWEP.PrintName = "CC4-R"
 SWEP.TrueName = "M4A1"
 
 SWEP.Class = "Assault Rifle"
@@ -21,7 +21,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike Source"
 }	
 
-SWEP.Description = [[Extremely versatile gun.
+SWEP.Description = [[Extremely versatile gun
 [Excessive(ly painful)] customisation.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m4a1.mdl"

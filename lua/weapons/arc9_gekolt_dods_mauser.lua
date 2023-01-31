@@ -21,7 +21,9 @@ SWEP.Credits = {
     Assets = "Counter-Strike Source"
 }
 
-SWEP.Description = [[lmao get a real carbine]]
+SWEP.Description = [[Scruffy carbine version of a strip loading pistol
+Strip loading not included
+Meant to be used as a DMR but of course full-auto is selectable.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_mauser.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -91,6 +93,9 @@ SWEP.RPM = 700
 SWEP.Firemodes = {
     {
         Mode = 1,
+    },
+	{
+        Mode = -1,
     }
 }
 -------------------------- RECOIL

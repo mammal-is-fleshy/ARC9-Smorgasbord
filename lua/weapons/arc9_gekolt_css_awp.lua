@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
 SWEP.SubCategory = "Primaries"
 
-SWEP.PrintName = "AMP-38"
+SWEP.PrintName = "Aldric-38"
 SWEP.TrueName = "AWP"
 
 SWEP.Class = "Sniper Rifle"
@@ -21,7 +21,7 @@ SWEP.Credits = {
     Assets = "Counter-Strike Source"
 }
 
-SWEP.Description = [[Long range gun used in any range but long.
+SWEP.Description = [[Long range gun used in any range but long
 [Limited] customisation.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_awp.mdl"

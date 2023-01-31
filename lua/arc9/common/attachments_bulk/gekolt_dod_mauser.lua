@@ -5,7 +5,8 @@ ATT = {}
 ATT.PrintName = [[Kantschapper-Gestell]]
 ATT.CompactName = [[Malorian]]
 ATT.Icon = Material("entities/gekolt_dod_c96_cyber.png", "mips smooth")
-ATT.Description = [[Samurai's choice of preference
+ATT.Description = [[Return to the basic with a peculiarity
+Magically increases damage in the name of style.
 ]]
 
 ATT.SortOrder = 1
@@ -59,7 +60,8 @@ ATT = {}
 ATT.PrintName = [[Kundschafter-Gestell]] -- it means scout methinks whatev
 ATT.CompactName = [[SD]]
 ATT.Icon = Material("entities/gekolt_dod_c96_sd.png", "mips smooth")
-ATT.Description = [[In case you accidentally wander into the enemy's trench
+ATT.Description = [[No, you cannae have a normal pistol configuration
+Also removed full-auto for you.
 ]]
 
 ATT.SortOrder = 1
@@ -109,7 +111,7 @@ ATT.PrintName = [[Karabiner-Gestell]]
 ATT.CompactName = [[Carbine]]
 ATT.Icon = Material("entities/gekolt_dod_c96_carbine.png", "mips smooth")
 ATT.Description = [[An attempt to modernise a rusty old pistol with a more stable but lower rate of fire and a long top rail system for full length optics
-Drum magazine for obvious reasons
+Drum magazine is the only real solution.
 ]]
 
 ATT.SortOrder = 1
@@ -201,6 +203,7 @@ ATT.PrintName = [[Aufplatzen-Gestell]]
 ATT.CompactName = [[Burst]]
 ATT.Icon = Material("entities/gekolt_dod_c96_burst.png", "mips smooth")
 ATT.Description = [[Aftermarket three-round burst system straight from the favelas of Brazil
+Grip is added to emotionally help you.
 ]]
 
 ATT.SortOrder = 1
