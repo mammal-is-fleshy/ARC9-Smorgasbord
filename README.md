@@ -14,6 +14,7 @@ low quality models stuff on even lower quality animations
 - M18
 - Grenade Bundle
 - Sten (WIP)
+- Tishina (Early Concept)
 
 
 Future stuff??

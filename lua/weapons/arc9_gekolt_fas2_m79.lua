@@ -177,7 +177,7 @@ SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being 
 
 SWEP.SpeedMult = 0.85
 SWEP.SpeedMultSights = 0.65
-SWEP.SpeedMultShooting = 0.725
+SWEP.SpeedMultShooting = 0.6
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.725
 SWEP.SpeedMultBlindFire = 0.9
@@ -288,6 +288,7 @@ SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.NoShellEject = true
 SWEP.NoShellEjectManualAction = true
+SWEP.ShellSmoke = false
 SWEP.EjectDelay = 0
 
 -------------------------- SOUNDS

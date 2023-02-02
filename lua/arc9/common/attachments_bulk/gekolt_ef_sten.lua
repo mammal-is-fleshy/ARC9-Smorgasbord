@@ -199,6 +199,7 @@ ATT.SortOrder = 4
 
 ATT.ClipSizeOverride = 25
 ATT.RPMMult = 900/600
+//ATT.CaseEffectQCA = 3
 
 ATT.Sights = {
     {

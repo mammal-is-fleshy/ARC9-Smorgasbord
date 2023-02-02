@@ -117,7 +117,7 @@ ATT.Description = [[Short
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
 ATT.ActivateElements = {"f_pirate", "nogrip"}
-
+ATT.SpeedMultShootingMult = 0.7/0.6
 
 
 ATT.MovingPosOverride = Vector(0, 4.5, -0.1)
@@ -219,6 +219,7 @@ ATT.Ammo = "buckshot"
 ATT.PhysBulletMuzzleVelocityOverride = 3100 * 12
 ATT.PhysBulletGravityOverride = 1
 ATT.PhysBulletDragOverride = 1
+ATT.SpeedMultShooting = 0.8/0.6
 
 ATT.SpreadAdd = 0.02
 
@@ -310,6 +311,7 @@ ATT.Ammo = "buckshot"
 ATT.PhysBulletMuzzleVelocityOverride = 2900 * 12
 ATT.PhysBulletGravityOverride = 1
 ATT.PhysBulletDragOverride = 1
+ATT.SpeedMultShootingMult = 0.9/0.6
 
 ATT.SpreadAdd = 0.03
 
