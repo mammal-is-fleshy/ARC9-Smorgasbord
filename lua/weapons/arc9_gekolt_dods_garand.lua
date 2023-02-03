@@ -21,8 +21,8 @@ SWEP.Credits = {
     Assets = "Day of Defeat"
 }
 
-SWEP.Description = [[Ancient forerunner of an array of modern marksman rifle.
-Surprisingly customisable for this era.]]
+SWEP.Description = [[Ancient forerunner of an array of modern marksman rifles
+Surprisingly customisable.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_garand.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"

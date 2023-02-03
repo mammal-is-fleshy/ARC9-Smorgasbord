@@ -21,8 +21,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike Source"
 }
 
-SWEP.Description = [[Outdated sidearm with huge reserve amounts.
-Popular amongst aftermarket gunsmiths.]]
+SWEP.Description = [[Outdated sidearm with huge reserve amounts
+Popular amongst aftermarket tinkers.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m9.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"

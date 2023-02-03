@@ -21,8 +21,9 @@ SWEP.Credits = {
     Assets = "Counter-Strike Source"
 }	
 
-SWEP.Description = [[If it walks, keep using it.
-If it's outdated but still functional, add junks to it]]
+SWEP.Description = [[Reliable under the harshest condition
+Survives through the ages, even be able to keep up to modern standard with a few
+Quirks.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_ak47.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"

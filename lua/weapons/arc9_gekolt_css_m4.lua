@@ -21,8 +21,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike Source"
 }	
 
-SWEP.Description = [[Extremely versatile gun
-[Excessive(ly painful)] customisation.]]
+SWEP.Description = [[Standard infantry weapon
+Various modifications ensure being serviceable on every front.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"

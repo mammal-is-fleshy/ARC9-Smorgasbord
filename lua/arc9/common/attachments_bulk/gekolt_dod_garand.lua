@@ -37,7 +37,8 @@ ATT = {}
 ATT.PrintName = "Chasseuse-Charpente"
 ATT.CompactName = "YSL"
 ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
-ATT.Description = [["Prototype" of a Mag-Fed conversion, fitted with 20 rounders capable of full-auto]]
+ATT.Description = [["Prototype" of a Mag-Fed conversion, fitted with 20 rounders
+Full-auto is not advised]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -63,8 +64,8 @@ ATT.ChamberSizeOverride = 1
 
 ATT.DamageMaxMult = 45/80
 ATT.DamageMinMult = 22/30
-ATT.RecoilMult = 1/0.75
-ATT.RecoilKickMult = 2/3
+ATT.RecoilMult = 1.25/0.75
+ATT.RecoilKickMult = 2.75/3
 
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.15

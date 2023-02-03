@@ -21,7 +21,8 @@ SWEP.Credits = {
     Assets = "Medal of Honor: Airborne"
 }	
 
-SWEP.Description = [[Finnish people are just Swedes but more sane]]
+SWEP.Description = [[The King's Guard is always ready to take out any armoured opponent
+Personnel or Mechanised.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m18.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"

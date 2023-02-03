@@ -21,8 +21,8 @@ SWEP.Credits = {
     Assets = "Counter-Strike Source"
 }
 
-SWEP.Description = [[Long range gun used in any range but long
-[Limited] customisation.]]
+SWEP.Description = [[Heavy duty bolt-action rifle
+Flexible chassis allowing for... less... bolt-action... actions.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_awp.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"

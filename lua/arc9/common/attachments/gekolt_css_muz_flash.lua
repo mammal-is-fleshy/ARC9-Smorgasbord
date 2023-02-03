@@ -10,7 +10,7 @@ ATT.ModelBodygroups = "2"
 ATT.Category = "muzzle_css"
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(0.25, 0, -0.075)
+ATT.ModelOffset = Vector(0.25, 0, 0)
 
 ATT.ShootVolumeMult = 1.1
 ATT.MuzzleParticleOverride = "muzzleflash_4"

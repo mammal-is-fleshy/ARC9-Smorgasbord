@@ -21,7 +21,8 @@ SWEP.Credits = {
     Assets = "Firearm: Source 2"
 }
 
-SWEP.Description = [[It goes floop and grenade goes out.]]
+SWEP.Description = [[Single shot explosive lobing device
+Miniature barage if you can get enough shot.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m79.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -508,7 +509,7 @@ SWEP.Animations = {
 	-- Agony --
     ["cycle"] = {
         Source = "pump",
-        EjectAt = 15/40,
+        EjectAt = 17/40,
 		FireASAP = true,		
         MinProgress = 25 / 40,
         EventTable = {
