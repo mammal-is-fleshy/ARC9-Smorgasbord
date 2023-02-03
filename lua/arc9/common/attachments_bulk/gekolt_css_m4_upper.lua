@@ -4,7 +4,8 @@ ATT = {}
 
 ATT.PrintName = "Prototype Receiver"
 ATT.CompactName = "Prototype"
-ATT.Description = [[Older design that allows the rifle to take larger bullets. Powerful bullets overpenetrate at close range.]]
+ATT.Description = [[Older design that allows the rifle to take larger bullets
+Powerful bullets overpenetrate at close range.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_u_10.png", "mips smooth")
 
@@ -43,7 +44,9 @@ ATT = {}
 
 ATT.PrintName = "Logistic Receiver"
 ATT.CompactName = "Logi"
-ATT.Description = [[Old-fashioned receiver for old-fashioned people. It only works in three-round burst mode. Pretty lousy.]]
+ATT.Description = [[Older model made for conservative doctrine
+Three-round burst is a requirement
+20-Rounder to fit the cost.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_u_a1.png", "mips smooth")
 
@@ -106,7 +109,7 @@ ATT = {}
 ATT.PrintName = "Chimera Receiver"
 ATT.CompactName = "Chimera"
 ATT.Icon = Material("entities/gekolt_css_m4_u_ak.png", "mips smooth")
-ATT.Description = [[Receiver modification bridging the gap between East and West by allowing your rifle to take AK-47 magazines.]]
+ATT.Description = [[Upgrades your rusty AR with this simple trick.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -143,7 +146,7 @@ ATT = {}
 ATT.PrintName = "Predator Receiver"
 ATT.CompactName = "Predator"
 ATT.Icon = Material("entities/gekolt_css_m4_u_bolt.png", "mips smooth")
-ATT.Description = [[Converts the rifle to bolt-action in order to improve its... ehhhhhhhhhh
+ATT.Description = [[High calibre long range module requires a manual bolt-action to function
 Comes with a built-in suppressor for obvious reasons.]]
 
 ATT.Pros = {}
@@ -231,8 +234,8 @@ ATT = {}
 ATT.PrintName = "Ranger Receiver"
 ATT.CompactName = "Ranger"
 ATT.Icon = Material("entities/gekolt_css_m4_u_bow.png", "mips smooth")
-ATT.Description = [[Why would you want to convert your gun into a crossbow? 
-Armed with explosive bolts because.]]
+ATT.Description = [[Foresters and marksmans alike would turn away this ugly product
+Armed with explosive bolts as a last ditch attempt for appeal.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -307,7 +310,8 @@ ATT = {}
 ATT.PrintName = "Gibhr Receiver"
 ATT.CompactName = "Gibhr"
 ATT.Icon = Material("entities/gekolt_css_m4_u_gih.png", "mips smooth")
-ATT.Description = [[Extra thicc receiver with two barrels and two firemodes.]]
+ATT.Description = [[What is better than one barrel
+A completely useless LMG.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -381,7 +385,7 @@ ATT.PrintName = "Defiant Receiver"
 ATT.CompactName = "Defiant"
 ATT.Icon = Material("entities/gekolt_css_m4_u_pdw.png", "mips smooth")
 ATT.Description = [[PDW is such a concept
-Turns your M4 into a non-PDW length PDW firing an intermediate calibre]]
+Turns your rifle into a non-PDW length PDW firing an intermediate calibre.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -488,7 +492,7 @@ ATT = {}
 ATT.PrintName = "Shrike Receiver"
 ATT.CompactName = "Shrike"
 ATT.Icon = Material("entities/gekolt_css_m4_u_lmg.png", "mips smooth")
-ATT.Description = [[Upper receiver that takes a 120-round box magazine
+ATT.Description = [[As the demand for heavier sustaining fire arises, it is clear that drum magazine won't cut it
 Complex system requires a heavier trigger.]]
 
 ATT.Pros = {}
@@ -545,7 +549,7 @@ ATT = {}
 ATT.PrintName = "Little Italy Receiver"
 ATT.CompactName = "Perosa"
 ATT.Icon = Material("entities/gekolt_css_m4_u_perosa.png", "mips smooth")
-ATT.Description = [[Twin barrel 9mm madness.
+ATT.Description = [[Twin barrel 9mm madness
 Comes with a preinstalled grip for recoil control.]]
 
 ATT.Pros = {}
@@ -623,9 +627,8 @@ ATT = {}
 ATT.PrintName = "Breacher Receiver"
 ATT.CompactName = "Breacher"
 ATT.Icon = Material("entities/gekolt_css_m4_u_pump.png", "mips smooth")
-ATT.Description = [[Compliment breaching device for your primary.
-Usually these are installed under the handguard.
-Not going to stop you from instaling it directly on the receiver]]
+ATT.Description = [[Compliment breaching device for your primary
+Usually these are installed under the handguard like the other mounted weapon you hopefully missed.]]
  
 ATT.Pros = {}
 ATT.Cons = {}
@@ -703,9 +706,9 @@ ATT = {}
 ATT.PrintName = "Sweeper Receiver"
 ATT.CompactName = "Sweeper"
 ATT.Icon = Material("entities/gekolt_css_m4_u_sg.png", "mips smooth")
-ATT.Description = [[The lord shan't forgive your sins.
-Of course it comes with a drum magazine.
-In case you haven't figure it out, it's an automatic shotgun receiver.]]
+ATT.Description = [[The lord shan't forgive your sins
+Of course it comes with a drum magazine
+In case your brain is slow to reception, it is an automatic shotgun receiver.]]
  
 ATT.Pros = {}
 ATT.Cons = {}
@@ -768,7 +771,8 @@ ATT = {}
 ATT.PrintName = "Blackout Receiver"
 ATT.CompactName = "Blackout"
 ATT.Icon = Material("entities/gekolt_css_m4_u_sd.png", "mips smooth")
-ATT.Description = [[Interally suppressed total conversion for barrel and receiver that chambers the gun in .300 Blackout.]]
+ATT.Description = [[Interally suppressed total conversion chambering the gun in sub sonic ammunition
+Flat top allowing extra gimmicks.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -817,7 +821,7 @@ ATT = {}
 ATT.PrintName = "Ancillary Receiver"
 ATT.CompactName = "Aux"
 ATT.Icon = Material("entities/gekolt_css_m4_u_smg.png", "mips smooth")
-ATT.Description = [[An adapter slapped onto a standard magwell to accept lower calibre.
+ATT.Description = [[Pistol calibre adapter slapped onto a standard magwell
 For scenarios where you need to downgrade your rifle.]]
 
 ATT.Pros = {}

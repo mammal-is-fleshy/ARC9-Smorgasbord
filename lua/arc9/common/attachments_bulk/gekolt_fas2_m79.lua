@@ -65,7 +65,8 @@ ATT = {}
 ATT.PrintName = [[Rifle Round]]
 ATT.CompactName = [[308]]
 ATT.Icon = Material("entities/gekolt_fas2_m79_rifle.png", "mips smooth")
-ATT.Description = [[LOL
+ATT.Description = [[Reconfigurate the not revolver into something
+similar.
 ]]
 
 ATT.SortOrder = 1

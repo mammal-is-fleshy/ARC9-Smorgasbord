@@ -8,8 +8,8 @@ ATT = {}
 ATT.PrintName = [[Hjaelpare-Stomme]]
 ATT.CompactName = [[XM70]]
 ATT.Icon = Material("entities/gekolt_moah_xm72.png", "mips smooth")
-ATT.Description = [[Least based Swedish gun
-A not G3 underbarrel weapon for your anti-tank rifle
+ATT.Description = [[You've heard of underbarrel anti-tank weapons, get ready for...
+A not G3 underbarrel weapon for your anti-tank rifle.
 ]]
 
 ATT.SortOrder = 1
@@ -191,8 +191,8 @@ ATT = {}
 ATT.PrintName = [[Landskap Yeagare-Stomme]] -- landship hunter???
 ATT.CompactName = [[RPG]]
 ATT.Icon = Material("entities/gekolt_moah_rpg2.png", "mips smooth")
-ATT.Description = [[Fuck it we ball
-]]
+ATT.Description = [[Ditch your anti-armour mindset and fully embrace madness
+They really tried to snuck an RPG in.]]
 
 ATT.SortOrder = 3
 ATT.Category = "moah_m18_kit"
@@ -217,8 +217,8 @@ ATT = {}
 ATT.PrintName = [[Rustning Genomtraengare-Stomme]] -- armour penetrator???
 ATT.CompactName = [[RPG]]
 ATT.Icon = Material("entities/gekolt_moah_rpg3.png", "mips smooth")
-ATT.Description = [[Tandem?????
-]]
+ATT.Description = [[Concentrated explosive to retain the normal anti-armour mindset
+Still madness.]]
 
 ATT.SortOrder = 3
 ATT.Category = "moah_m18_kit"

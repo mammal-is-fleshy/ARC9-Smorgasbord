@@ -5,7 +5,7 @@ ATT = {}
 ATT.PrintName = "ChainSAW Foregrip"
 ATT.CompactName = "ChainSAW"
 ATT.Icon = Material("entities/gekolt_css_m4_fg_saw.png", "mips smooth")
-ATT.Description = [[Obvious questions include why how and what.
+ATT.Description = [[Obvious questions include why how and what
 Horizontal grip dramatically increases hip fire potential
 Disables the ability to scope in.]]
 
@@ -103,8 +103,8 @@ ATT = {}
 ATT.PrintName = "Skeleton Grip"
 ATT.CompactName = "Skeleton"
 ATT.Icon = Material("entities/gekolt_css_m4_g_ske.png", "mips smooth")
-ATT.Description = [[Because that amount of weight saved is really the defactor of life and death.
-What do you think would happen if your grip is extremely floaty?]]
+ATT.Description = [[Because that amount of weight saved is really the defactor of life and death
+What do you think would happen if your grip weights nothing?]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -128,7 +128,7 @@ ATT = {}
 ATT.PrintName = "Curved Grip"
 ATT.CompactName = "Curved"
 ATT.Icon = Material("entities/gekolt_css_m4_g_tw.png", "mips smooth")
-ATT.Description = [[Revolver stype grip instead of the usual pistol one]]
+ATT.Description = [[Revolver stype grip instead of the usual pistol one.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -177,7 +177,7 @@ ATT = {}
 ATT.PrintName = "ChainSAW Grip"
 ATT.CompactName = "ChainSAW"
 ATT.Icon = Material("entities/gekolt_css_m4_g_saw.png", "mips smooth")
-ATT.Description = [[Extremely uncomfortable grip for hip firing.
+ATT.Description = [[Extremely uncomfortable grip for hip firing
 Don't ask how do you even engage the magazine release button.]]
 
 ATT.Pros = {}
@@ -209,8 +209,7 @@ ATT = {}
 ATT.PrintName = "Cali Compliance Grip"
 ATT.CompactName = "Cali"
 ATT.Icon = Material("entities/gekolt_css_m4_g_cali.png", "mips smooth")
-ATT.Description = [[Uncomfortable hunting grip for loopholes.
-Physically impossible to perform a mass shooting.]]
+ATT.Description = [[Uncomfortable hunting grip for bypassing loopholes.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -241,7 +240,7 @@ ATT = {}
 ATT.PrintName = "Hunting Grip"
 ATT.CompactName = "ADAR"
 ATT.Icon = Material("entities/gekolt_css_m4_g_adar.png", "mips smooth")
-ATT.Description = [[WOOD]]
+ATT.Description = [[Full grip and and stock combo for the infamous wood roleplay market.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -269,7 +268,7 @@ ATT = {}
 
 ATT.PrintName = "Compact Stock"
 ATT.CompactName = "Compact"
-ATT.Description = [[For those with long shoulder]]
+ATT.Description = [[For those with long shoulder.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_s_607.png", "mips smooth")
 

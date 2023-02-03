@@ -6,7 +6,6 @@ ATT.PrintName = [[Folding Stock A]]
 ATT.CompactName = [[F.A]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_fold.png", "mips smooth")
 ATT.Description = [[
-    
 ]]
 
 ATT.SortOrder = 1
@@ -80,8 +79,7 @@ ATT = {}
 ATT.PrintName = [[Heavy Stock]]
 ATT.CompactName = [[Heavy]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_rpk.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[Added braching point.
 ]]
 
 ATT.SortOrder = 6
@@ -99,8 +97,7 @@ ATT = {}
 ATT.PrintName = [[Full Stock]]
 ATT.CompactName = [[Full]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_full.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[The complete package.
 ]]
 
 ATT.SortOrder = 6
@@ -181,8 +178,7 @@ ATT = {}
 ATT.PrintName = [[Polymer Grip]]
 ATT.CompactName = [[Poly]]
 ATT.Icon = Material("entities/gekolt_css_ak_g_poly.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[The termites won't chew on this.
 ]]
 
 ATT.SortOrder = 3
@@ -200,7 +196,7 @@ ATT = {}
 ATT.PrintName = [[Skeleton Grip]]
 ATT.CompactName = [[SKE]]
 ATT.Icon = Material("entities/gekolt_css_ak_g_ske.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Did the termites eat it?
 How do you even drill it like that?
 ]]
 
@@ -279,7 +275,7 @@ ATT = {}
 ATT.PrintName = [[Stalker Handguard]]
 ATT.CompactName = [[SD]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_sd.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Long suppressed configuration.
 ]]
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.Silencer = true
@@ -299,7 +295,7 @@ ATT = {}
 ATT.PrintName = [[Polymer Handguard]]
 ATT.CompactName = [[Poly]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_poly.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[An attempt was made to prevent frostbite.
 ]]
 
 ATT.SortOrder = 2
@@ -317,7 +313,7 @@ ATT = {}
 ATT.PrintName = [[Railed Handguard]]
 ATT.CompactName = [[Saiga]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_saiga.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Early bulky design in an attempt to modernise the rusty rifle.
 ]]
 
 ATT.SortOrder = 3
@@ -347,7 +343,7 @@ ATT = {}
 ATT.PrintName = [[Krinkov Handguard]]
 ATT.CompactName = [[U]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_u.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[The little comrade is fitted with its own muzzle device.
 ]]
 
 ATT.SortOrder = 3
@@ -377,7 +373,7 @@ ATT = {}
 ATT.PrintName = [[Huntsman Handguard]]
 ATT.CompactName = [[Hunt]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_hunt.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Long and regulated handguard and barrel for hunting purpose.
 ]]
 
 ATT.SortOrder = 3
@@ -408,7 +404,7 @@ ATT.PrintName = [[Sputnik Handguard]]
 ATT.CompactName = [[N94]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_94.png", "mips smooth")
 ATT.Description = [[Magic non reciprocating floating barrel capable of performing first shot burst
-totally not a technical issue
+totally not a technical issue.
 ]]
 
 ATT.SortOrder = 3
@@ -450,7 +446,8 @@ ATT = {}
 ATT.PrintName = [[Auxilier Handguard]]
 ATT.CompactName = [[Aux]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_bizon.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Looks like the bottom is hollowed out
+It's like they want you to perhaps use a different magazine more fitted for this.
 ]]
 
 ATT.SortOrder = 3
@@ -465,10 +462,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg8")
 
 ATT = {}
 
-ATT.PrintName = [[INSERT NAME Handguard]]
+ATT.PrintName = [[Heavy Handguard]]
 ATT.CompactName = [[RPK]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_rpk.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Oi, they just make the thing longer
+Rounded front sight for... more... accuracy?
 ]]
 
 ATT.SortOrder = 3
@@ -485,7 +483,7 @@ ATT = {}
 ATT.PrintName = [[Modernised Handguard]]
 ATT.CompactName = [[Modern]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_12.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[«Latest» production of a truly modernised handguard
 ]]
 
 ATT.SortOrder = 3
@@ -499,10 +497,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg10")
 
 ATT = {}
 
-ATT.PrintName = [[INSERT NAME2 Handguard]]
+ATT.PrintName = [[Magyarie Handguard]]
 ATT.CompactName = [[AMD]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_hungary.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Special package from the quite lousy comrade.
+What do you mean you got the wrong comrade?
 ]]
 
 ATT.SortOrder = 3

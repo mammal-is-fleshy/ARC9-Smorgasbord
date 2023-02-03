@@ -21,7 +21,8 @@ ATT = {}
 
 ATT.PrintName = "No Handguard"
 ATT.CompactName = "No"
-ATT.Description = [[Handguards are a conspiracy to sell more useless gun crap you don't need. You can make do without one.]]
+ATT.Description = [[Handguards are a conspiracy to sell more useless junks you don't need
+You can make do without one.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_sten.png", "mips smooth")
 
@@ -61,7 +62,7 @@ ATT = {}
 
 ATT.PrintName = "Special-Purpose Rifle Handguard"
 ATT.CompactName = "SPR"
-ATT.Description = [[Small and slim, fit right in.
+ATT.Description = [[Slim and thin, fit right in
 Compact design with three extra rails.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_spr.png", "mips smooth")
@@ -110,7 +111,7 @@ ATT = {}
 
 ATT.PrintName = "RIS Handguard"
 ATT.CompactName = "RIS"
-ATT.Description = [[Railed hanguard for extra mounted devices.
+ATT.Description = [[Railed hanguard for extra mounted devices
 Fitted with four extra rails.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_ris.png", "mips smooth")
@@ -197,7 +198,7 @@ ATT = {}
 
 ATT.PrintName = "Targeter Handguard"
 ATT.CompactName = "Targeter"
-ATT.Description = [[Despite its name, it doesn't really help that much with targeting.
+ATT.Description = [[Despite its name, it doesn't really help that much with targeting
 Fitted with three extra rails.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_lr300.png", "mips smooth")
@@ -274,7 +275,7 @@ ATT = {}
 
 ATT.PrintName = "Dragoon Handguard"
 ATT.CompactName = "Dragoon"
-ATT.Description = [[Design fitted for mounting or moving. 
+ATT.Description = [[Design fitted for mounting or moving
 Hit them with that driveby whip.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_dragoon.png", "mips smooth")
@@ -322,8 +323,8 @@ ATT = {}
 
 ATT.PrintName = "Marksman Handguard"
 ATT.CompactName = "Marksman"
-ATT.Description = [[Extended guard with 4 extra rails.
-Why couln't there be a regular extended RIS guard?]]
+ATT.Description = [[Extended guard with 4 extra rails
+Why couldn't they make a regular extended RIS guard?]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_bn63.png", "mips smooth")
 
@@ -539,7 +540,8 @@ ATT = {}
 
 ATT.PrintName = "Precision Handguard"
 ATT.CompactName = "Precision"
-ATT.Description = [[Older design that's somehow more accurate than new ones. Makes you question the sanity of the devs.]]
+ATT.Description = [[Older design that's somehow more accurate than new ones
+Really makes you question the sanity of the devs.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_10.png", "mips smooth")
 

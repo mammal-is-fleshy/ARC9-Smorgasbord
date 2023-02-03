@@ -5,7 +5,7 @@ ATT = {}
 ATT.PrintName = [[Atakovat-Rama]]
 ATT.CompactName = [[Carbine]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_545.png", "mips smooth")
-ATT.Description = [[Intermediate solution.
+ATT.Description = [[Intermediate solution for normal infantry.
 ]]
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -30,7 +30,7 @@ ATT.PrintName = [[Okhota-Rama]]
 ATT.CompactName = [[Marksman]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
 ATT.Description = [[Chamber the weapon in hunting rounds
-Powerful cartridge unsuitable for full-auto.
+Powerful cartridge is unsuitable for full-auto.
 ]]
 
 
@@ -149,7 +149,8 @@ ATT.PrintName = [[Kavaleriya-Rama]]
 ATT.CompactName = [[LMG]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_cal.png", "mips smooth")
 ATT.Description = [[
-
+Mounted or on the move, embrace your Tachanka spirit and purge the royalist Whites
+Completely altered weapon requires a heavier trigger.
 ]]
 
 ATT.CaseEffectQCA = 3
@@ -204,7 +205,7 @@ ATT.PrintName = [[Dobavoch-Rama]]
 ATT.CompactName = [[Aux]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_pp.png", "mips smooth")
 ATT.Description = [[Sub-machine configuration
-For scenarios where you need to downgrade your rifle
+For scenarios where you need to downgrade your rifle.
 ]]
 
 ATT.ClipSizeOverride = 32
@@ -242,8 +243,8 @@ ATT.PrintName = [[Gelikoidal-Rama]]
 ATT.CompactName = [[Hex]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_bizon.png", "mips smooth")
 ATT.Description = [[
-Helical stacked pistol cartridge
-Actual «sub»-machine
+Helically stacked pistol cartridge
+Actual «sub»-machine.
 ]]
 
 ATT.ClipSizeOverride = 64
@@ -286,10 +287,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag7")
 
 ATT = {}
 ATT.PrintName = [[Dvornik-Rama]]
-ATT.CompactName = [[12G]]
+ATT.CompactName = [[16G]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_saiga.png", "mips smooth")
-ATT.Description = [[
-PLOW THROUGH ENEMIES!!!
+ATT.Description = [[How does small barrel fit big bullets?
+Why is mag so small?
+Are you still mental?
 ]]
 
 ATT.SortOrder = -100
