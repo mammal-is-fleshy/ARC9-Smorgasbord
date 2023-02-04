@@ -38,7 +38,7 @@ ATT.PrintName = "Chasseuse-Charpente"
 ATT.CompactName = "YSL"
 ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
 ATT.Description = [["Prototype" of a Mag-Fed conversion, fitted with 20 rounders
-Full-auto is not advised]]
+Full-auto is thrown in to be field tested though it is not advised]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -85,7 +85,8 @@ ATT = {}
 ATT.PrintName = "Sportive-Charpente"
 ATT.CompactName = "SCF"
 ATT.Icon = Material("entities/gekolt_dod_garand_mini.png", "mips smooth")
-ATT.Description = [[Modernised Mag-Fed system loaded in a lower calibre]]
+ATT.Description = [[Modernised Mag-Fed system loaded in a lower calibre
+Configurated with full-auto as its core.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -144,7 +145,7 @@ ATT = {}
 ATT.PrintName = "Trancheuse-Charpente"
 ATT.CompactName = "SLAM"
 ATT.Icon = Material("entities/gekolt_dod_garand_slam.png", "mips smooth")
-ATT.Description = [[Unholy creation for all your trench sweeping needs. Both the enemies and your allies will be confused]]
+ATT.Description = [[Unholy creation for all your trench sweeping needs.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -275,7 +276,7 @@ ATT.PrintName = "Rail"
 ATT.CompactName = "O"
 ATT.Description = [[Railing without attachments]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_mount_side.png", "mips smooth")
 
 ATT.SortOrder = -900
 ATT.Category = {"grip_css_free"}
@@ -288,9 +289,9 @@ ATT = {}
 
 ATT.PrintName = "Rail"
 ATT.CompactName = "O"
-ATT.Description = [[Railing without attachments.]]
+ATT.Description = [[Railing without attachments]]
 
-ATT.Icon = Material("")
+ATT.Icon = Material("entities/gekolt_css_mount_side.png", "mips smooth")
 
 ATT.SortOrder = -900
 ATT.Category = {"optic_css_free"}

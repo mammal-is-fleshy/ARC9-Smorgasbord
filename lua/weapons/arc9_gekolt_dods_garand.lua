@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
 SWEP.SubCategory = "Primaries"
 
-SWEP.PrintName = "MSA-30"
+SWEP.PrintName = "Toudranéant-30"  -- /tu-druh-nee-aun/
 SWEP.TrueName = "M1 Garand"
 
 SWEP.Class = "Marskman Rifle"

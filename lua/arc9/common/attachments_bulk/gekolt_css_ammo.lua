@@ -7,7 +7,8 @@ ATT = {}
 ATT.PrintName = "Pressured Magnum Shot"
 ATT.CompactName = "MAGNUM"
 ATT.Icon = Material("entities/gekolt_css_ammo/mag.png", "mips smooth")
-ATT.Description = [[less shots.]]
+ATT.Description = [[Pressurised powder load can only be carried in such few quantities per shot
+What it lacks in dispersion makes up in up close firepower.]]
 ATT.SortOrder = 6
 
 ATT.Category = {"css_ammo_sg"}
@@ -32,7 +33,8 @@ ATT = {}
 ATT.PrintName = "Foule Drone Shot" -- get it, cuz its bird shot, and foule looks like fowl but it means mob shot as in crowd control multi pellets  haha  ehh ill see myself out
 ATT.CompactName = "DRONE"
 ATT.Icon = Material("entities/gekolt_css_ammo/drone.png", "mips smooth")
-ATT.Description = [[more shots.]]
+ATT.Description = [[Condensed with a greater number of pellets allowing for wider spreading and looser clums
+Take out those drones, birds, whatever in the sky.]]
 ATT.SortOrder = 20
 
 ATT.Category = {"css_ammo_sg"}
@@ -148,7 +150,7 @@ ATT.SortOrder = 4
 ATT.Category = {"css_ammo_sg"}
 ATT.AutoStats = true
 
--- stolen from urbna, maybe dont touch it
+-- stolen from urbna
 --[[local dontburn = { -- zombies don't take damage from DMG_BURN (hardcoded to set them on fire)
     npc_zombie = true,
     npc_zombie_torso = true,
@@ -159,10 +161,10 @@ ATT.AutoStats = true
     npc_headcrab_fast = true,
     npc_headcrab_black = true,
 }]]
-
---[[ATT.Hook_PhysBulletHit = function(wep, data)
+-- doesnt fucking work
+--[[ATT.HookP_ModifyBullet = function(wep, data)
     if SERVER and data.tr.Entity then
-        local d = data.bullet.Travelled * ArcCW.HUToM
+        local d = data.bullet.Travelled
         local dur = 6 - d * 2 / wep.Range
         if dur > 0 then
             data.tr.Entity:Extinguish()
@@ -197,15 +199,15 @@ ATT.RicochetChanceOverride = 0
 
 ATT.DamageTypeOverride = DMG_BURN + DMG_BUCKSHOT
 
-ATT.HullSizeMult = 2
-ATT.HullSize_PriorityMult = 100
-ATT.AccuracyMOAMult = 35
+ATT.TracerSizeMult = 1.5
+ATT.AccuracyMOAMult = 30
 ATT.DamageMult = 0.5
 ATT.DamageMinMult = 0.5
+--ATT.TracerEffect = "burning_engine_01"
 
 ATT.AlwaysPhysBulletOverride = true
-ATT.PhysBulletMuzzleVelocityMult = 0.1
+ATT.PhysBulletMuzzleVelocityMult = 0.25
 ATT.PhysBulletGravityMult = 0.75
-ATT.PhysBulletDragMult = 3
+ATT.PhysBulletDragMult = 5
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_flame")

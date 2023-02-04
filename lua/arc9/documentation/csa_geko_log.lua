@@ -16,6 +16,7 @@ Medal of Hounor Airborne: M18
 + Moon - Ripping
 Soldier of Fortune 3 - Muzzles and Tac/Flashlight, some ak stuff, Tishina
 
+https://gamebanana.com/sounds/56985 - M712 Sound
 
 Google Images - ref
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )

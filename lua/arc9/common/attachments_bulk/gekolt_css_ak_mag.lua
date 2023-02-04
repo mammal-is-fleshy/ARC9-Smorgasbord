@@ -220,7 +220,7 @@ ATT.RecoilMult = 0.625
 
 ATT.Ammo = "pistol"
 
-ATT.ShootSound = "oneshotof_cs16/mp5-1.wav"
+ATT.ShootSound = {"oneshotof_cs16/mp5-1.wav", "oneshotof_cs16/mp5-2.wav"}
 //ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.SortOrder = 12
