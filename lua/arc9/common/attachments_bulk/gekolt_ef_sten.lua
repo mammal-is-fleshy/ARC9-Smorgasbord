@@ -427,7 +427,7 @@ ATT = {}
 
 ATT.PrintName = [[Walcaster Barrel]]
 ATT.CompactName = "PROTO"
-//ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_barrel_mk1.png", "mips smooth")
 ATT.Description = [[mk1]]
 
 ATT.Pros = {}
@@ -446,7 +446,7 @@ ATT = {}
 
 ATT.PrintName = [[MK3 Barrel]]
 ATT.CompactName = "MK3"
-ATT.Icon = Material("entities/gekolt_ef_sten_barrel_mk1.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ef_sten_barrel_mk3.png", "mips smooth")
 ATT.Description = [[mk3]]
 
 ATT.Pros = {}

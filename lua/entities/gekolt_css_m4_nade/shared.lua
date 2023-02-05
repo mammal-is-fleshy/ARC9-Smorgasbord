@@ -91,7 +91,7 @@ function ENT:Detonate()
         attacker = self.Owner
     end
 
-    util.BlastDamage(self, attacker, self:GetPos(), 300, 150)
+    util.BlastDamage(self, attacker, self:GetPos(), 256, 150)
 
     self:FireBullets({
         Attacker = attacker,
