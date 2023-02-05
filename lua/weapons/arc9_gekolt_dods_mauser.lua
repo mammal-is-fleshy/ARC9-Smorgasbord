@@ -401,7 +401,7 @@ SWEP.Animations = {
         Source = "wet",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.85,
         EventTable = {
             {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
@@ -416,7 +416,7 @@ SWEP.Animations = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.85,
         EventTable = {
             {s =  "gekolt_dod/c96_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 43 / 40},
@@ -437,7 +437,7 @@ SWEP.Animations = {
         Source = "wet_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.785,
         EventTable = {
             {s =  "gekolt_dod/c96_clipout.wav" ,   t = 12 / 40},
             {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 55 / 40},
@@ -453,7 +453,7 @@ SWEP.Animations = {
         Source = "dry_roni",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.815,
         EventTable = {
             {s =  "gekolt_dod/c96_clipout.wav" ,   t = 12 / 40},
             {s =  "gekolt_dod/c96_clipin1.wav" ,    t = 55 / 40},

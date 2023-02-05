@@ -407,7 +407,7 @@ SWEP.Animations = {
         Source = "wet",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.85,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
@@ -421,7 +421,7 @@ SWEP.Animations = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.85,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},					
@@ -438,7 +438,7 @@ SWEP.Animations = {
         Source = "wet",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.8,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
@@ -452,7 +452,7 @@ SWEP.Animations = {
         Source = "dry_p38",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.9,
+		MinProgress = 0.8,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},					
@@ -491,7 +491,7 @@ SWEP.Animations = {
         Source = "dry_carbine",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.86,
+		MinProgress = 0.92,
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
             {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},				
@@ -503,7 +503,7 @@ SWEP.Animations = {
 		},				
     },	
 
-    -- Carbine --
+    -- Artillery --
     ["fire_artillery"] = {
         Source = "fire_carbine",	
     },
@@ -529,7 +529,7 @@ SWEP.Animations = {
         Source = "dry_artillery",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
 		FireASAP = true,
-		MinProgress = 0.86,
+		MinProgress = 0.92,
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
             {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},				

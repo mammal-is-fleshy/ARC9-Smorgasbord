@@ -7,7 +7,6 @@ ATT.Icon = Material("")
 ATT.SortOrder = 0
 ATT.Category = {"tac_css","mountr_css","mountl_css"}
 ATT.Model = "models/weapons/geckololt_css/atts/tac_ti_range.mdl"
-ATT.Folder = "LIGHT-LAM"
 
 ATT.AimDownSightsTimeMult = 1.03
 ATT.SprintToFireTimeMult = 1.03
