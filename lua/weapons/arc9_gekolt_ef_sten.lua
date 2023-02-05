@@ -518,7 +518,22 @@ SWEP.Animations = {
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
 		},				
     },
-    
+
+    ["fire_mk4"] = {
+        Source = "fire_mk4",	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
+		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},
+    },
+    ["fire_owen"] = {
+        Source = "fire_owen",	
+		IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
+		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+		},
+    },
+
     ["reload_mk4"] = {
         Source = "wet_mk4",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
