@@ -176,7 +176,7 @@ ATT.RHIK = true
 ATT.RHIK_Priority = 0
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-10.5, -3.75, 6.5)
+ATT.ModelOffset = Vector(-10.5, -3.4, 6.45)
 ATT.ModelAngleOffset = Angle(0, 0, 10)
 ATT.Model = "models/weapons/geckololt_css/c_sten_ik1.mdl"
 ATT.ModelBodygroups = "0000000"
@@ -203,7 +203,7 @@ ATT.RPMMult = 900/600
 
 ATT.Sights = {
     {
-        Pos = Vector(-4.3,2,2.9),
+        Pos = Vector(-4, 1.5, 2.85),
         Ang = Angle(0, 0, 0), -- tilt it a bit
         Reticle = nil,
 
@@ -219,7 +219,7 @@ ATT.RHIK = true
 ATT.RHIK_Priority = 0
 
 ATT.Scale = 1
-ATT.ModelOffset = Vector(-10.5, -3.75, 6.5)
+ATT.ModelOffset = Vector(-10.5, -3.4, 6.45)
 ATT.ModelAngleOffset = Angle(0, 0, 10)
 ATT.Model = "models/weapons/geckololt_css/c_sten.mdl"
 ATT.ModelBodygroups = "56570000000"

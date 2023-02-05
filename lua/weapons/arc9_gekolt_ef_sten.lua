@@ -446,14 +446,17 @@ SWEP.Animations = {
         Source = "fire",	
     },	
     ["fire_iron"] = {
-        Source = "fire_iron",	
+        Source = "fire_iron",
+		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
     },		
     ["fire_empty"] = {
-        Source = "fire_emp",	
+        Source = "fire_emp",
+		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
     },	
     ["fire_iron_empty"] = {
         Source = "fire_iron_emp",
-    },			
+		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
+    },
 
     ["reload"] = {
         Source = "wet",
@@ -522,15 +525,15 @@ SWEP.Animations = {
     ["fire_mk4"] = {
         Source = "fire_mk4",	
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
-		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },
+		{ t = 0.8, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
 		},
     },
     ["fire_owen"] = {
-        Source = "fire_owen",	
+        Source = "fire_owen",
 		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
-		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },
+		{ t = 0.8, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
 		},
     },
 
