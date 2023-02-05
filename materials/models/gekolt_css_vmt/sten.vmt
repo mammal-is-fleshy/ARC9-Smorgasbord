@@ -1,10 +1,11 @@
 "VertexLitGeneric"
 {
-	"$baseTexture" "models\gekolt_css_vmt\sten\sten"
+	"$baseTexture" "models\gekolt_css_vmt\sten\sten_2"
 	"$bumpmap" "models\gekolt_css_vmt\sten\sten_n"
 	"$phongexponenttexture" "models\gekolt_css_vmt\sten\sten_s"
+
 	
 	"$nocull" 1	
 	
- 	$color2 "[2 2 2.15]"
+ 	$color2 "[1 1 1.15]"
 }

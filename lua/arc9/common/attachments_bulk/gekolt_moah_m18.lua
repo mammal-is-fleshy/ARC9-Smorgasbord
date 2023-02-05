@@ -114,7 +114,7 @@ ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"
 ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "M18"
+ATT.UBGLFiremodeName = "Anti-Armour"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
 
