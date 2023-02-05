@@ -2,7 +2,7 @@ ATT.PrintName = "Bipod"
 ATT.CompactName = "BIPOD"
 ATT.Description = [[pod means legs, bi means two.]]
 
-// ATT.Icon = Material("entities/gekolt_css_fore_troy.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_bipod.png", "mips smooth")
 
 ATT.SortOrder = 20
 ATT.Category = {"grip_css"}

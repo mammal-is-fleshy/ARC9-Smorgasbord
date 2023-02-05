@@ -17,8 +17,8 @@ ATT = {}
 ATT.PrintName = "Walcaster-Frame"
 ATT.CompactName = "Salad Mender"
 ATT.Icon = Material("entities/gekolt_ef_sten_saladmender.png", "mips smooth")
-ATT.Description = [[Belt-fed mechanicsm bollocks
-Requires a heavier trigger to fire]]
+ATT.Description = [[Unholy belt-fed mechanism bollocks allowing feeding from small box magazine
+Requires a heavier trigger to start firing.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -73,7 +73,7 @@ ATT = {}
 ATT.PrintName = "Ezpieg-Frame"
 ATT.CompactName = "Sterling"
 ATT.Icon = Material("entities/gekolt_ef_sten_sterling.png", "mips smooth")
-ATT.Description = [[50 year old submachine gun lol]]
+ATT.Description = [[Bulky suppressed build with added junk for no apparent reasons.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -155,13 +155,15 @@ ATT = {}
 ATT.PrintName = "Viper-Frame"
 ATT.CompactName = "MK4"
 ATT.Icon = Material("entities/gekolt_ef_sten_mk4.png", "mips smooth")
-ATT.Description = [[The uzi at home:]]
+ATT.Description = [[An attempt to further shorten the tube, more fitting to be a secondary weapon
+Burst-fire only.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 3
 
-ATT.ClipSizeOverride = 15
+ATT.ClipSizeOverride = 20
+ATT.Firemodes = {{Mode = 3,}}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
 	return anim .. "_mk4"
@@ -188,10 +190,11 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_mk4")
 
 ATT = {}
 
-ATT.PrintName = "Owen Frame"  --im not going to put some lame ass aussie stereotype         am i?
-ATT.CompactName = "Owen"
+ATT.PrintName = "Pacific Frame"
+ATT.CompactName = "OWEN"
 ATT.Icon = Material("entities/gekolt_ef_sten_owen.png", "mips smooth")
-ATT.Description = [[Why the mag like]]
+ATT.Description = [[Top-fed chamber allowing for better feeding reliability.
+Increases RPM dramatically.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -246,7 +249,7 @@ ATT = {}
 ATT.PrintName = [['Pistol' Stock]]
 ATT.CompactName = "PISTOL"
 ATT.Icon = Material("entities/gekolt_ef_sten_stock_mk2s.png", "mips smooth")
-ATT.Description = [[wnolochy]]
+ATT.Description = [[More 'convetional' hollow grip.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -274,7 +277,7 @@ ATT = {}
 ATT.PrintName = [[MK2 Stock]]
 ATT.CompactName = "MK2"
 ATT.Icon = Material("entities/gekolt_ef_sten_stock_mk2.png", "mips smooth")
-ATT.Description = [[cymrag]]
+ATT.Description = [[Simple straight stock with a small pad.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -293,7 +296,7 @@ ATT = {}
 ATT.PrintName = [[Wooden Stock]]
 ATT.CompactName = "WOOD"
 ATT.Icon = Material("entities/gekolt_ef_sten_stock_wood.png", "mips smooth")
-ATT.Description = [[cymrag]]
+ATT.Description = [[Entirely wooded hull for better resting surface.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -312,7 +315,7 @@ ATT = {}
 ATT.PrintName = [[Prototype Stock]]
 ATT.CompactName = "PROTO"
 ATT.Icon = Material("entities/gekolt_ef_sten_stock_mk1.png", "mips smooth")
-ATT.Description = [[cymrag]]
+ATT.Description = [[Stock design mixes between wood and steel for better bracing while retaining a fairly small size.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -342,7 +345,7 @@ ATT = {}
 ATT.PrintName = [[Wooden Handguard]]
 ATT.CompactName = "WOOD"
 ATT.Icon = Material("entities/gekolt_ef_sten_grip_wood.png", "mips smooth")
-ATT.Description = [[wood]]
+ATT.Description = [[Clunky termite home adds weight for the tube.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -361,7 +364,7 @@ ATT = {}
 ATT.PrintName = [[No Handguard]]
 ATT.CompactName = "NO"
 ATT.Icon = Material("entities/gekolt_css_blank.png", "mips smooth")
-ATT.Description = [[just no]]
+ATT.Description = [[Removes any sense of gripping and possibly also the firing mechanism.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -428,7 +431,7 @@ ATT = {}
 ATT.PrintName = [[Walcaster Barrel]]
 ATT.CompactName = "PROTO"
 ATT.Icon = Material("entities/gekolt_ef_sten_barrel_mk1.png", "mips smooth")
-ATT.Description = [[mk1]]
+ATT.Description = [[Completely shrouded handguard with a muzzleflash built-in.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -444,10 +447,10 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b1")
 
 ATT = {}
 
-ATT.PrintName = [[MK3 Barrel]]
-ATT.CompactName = "MK3"
+ATT.PrintName = [[Shrouded Barrel]]
+ATT.CompactName = "FULL"
 ATT.Icon = Material("entities/gekolt_ef_sten_barrel_mk3.png", "mips smooth")
-ATT.Description = [[mk3]]
+ATT.Description = [[Standard shrouding with added weight for balancing.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -463,10 +466,10 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b2")
 
 ATT = {}
 
-ATT.PrintName = [[MK2 Barrel]]
-ATT.CompactName = "MK2"
+ATT.PrintName = [[Vented Barrel]]
+ATT.CompactName = "VENTED"
 ATT.Icon = Material("entities/gekolt_ef_sten_barrel_mk2.png", "mips smooth")
-ATT.Description = [[mk2]]
+ATT.Description = [[Small shroud with ventilating holes helps cooling.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -482,10 +485,10 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b3")
 
 ATT = {}
 
-ATT.PrintName = [[Owen Barrel]]
-ATT.CompactName = "OWEN"
+ATT.PrintName = [[Partially Shrouded Barrel]]
+ATT.CompactName = "HALF"
 ATT.Icon = Material("entities/gekolt_ef_sten_barrel_owen.png", "mips smooth")
-ATT.Description = [[owen]]
+ATT.Description = [[Smaller shourding mainly for aesthetic.]]
 
 ATT.Pros = {}
 ATT.Cons = {}

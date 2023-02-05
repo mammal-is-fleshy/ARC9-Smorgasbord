@@ -5,7 +5,7 @@ ATT = {}
 ATT.PrintName = [[Kantschapper-Gestell]]
 ATT.CompactName = [[Malorian]]
 ATT.Icon = Material("entities/gekolt_dod_c96_cyber.png", "mips smooth")
-ATT.Description = [[Return to the basic with a peculiarity
+ATT.Description = [[Return to the basic with peculiarity
 Magically increases damage in the name of style.
 ]]
 
