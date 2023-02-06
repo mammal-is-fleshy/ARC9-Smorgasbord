@@ -51,6 +51,25 @@ ATT.ActivateElements = {"s_fold3"}
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock3")
 
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Folded Stock]]
+ATT.CompactName = [[F.D]]
+ATT.Icon = Material("entities/gekolt_css_ak_s_fold3.png", "mips smooth")
+ATT.Description = [[
+    
+]]
+ATT.Ignore = true
+
+ATT.SortOrder = 2
+ATT.Category = "css_ak_stock"
+ATT.ActivateElements = {"s_fold4"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock3")
+
 
 ----------------------------------------------------------------------------------
 
@@ -298,7 +317,7 @@ ATT.Icon = Material("entities/gekolt_css_ak_h_poly.png", "mips smooth")
 ATT.Description = [[An attempt was made to prevent frostbite.
 ]]
 
-ATT.SortOrder = 2
+ATT.SortOrder = 0.5
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_poly"}
 
@@ -316,7 +335,7 @@ ATT.Icon = Material("entities/gekolt_css_ak_h_saiga.png", "mips smooth")
 ATT.Description = [[Early bulky design in an attempt to modernise the rusty rifle.
 ]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 0.55
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rail"}
 
@@ -346,7 +365,7 @@ ATT.Icon = Material("entities/gekolt_css_ak_h_u.png", "mips smooth")
 ATT.Description = [[The little comrade is fitted with its own muzzle device.
 ]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 0.1
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_u"}
 
@@ -407,7 +426,7 @@ ATT.Description = [[Magic non reciprocating floating barrel capable of performin
 totally not a technical issue.
 ]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 0.6
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_94"}
 
@@ -450,7 +469,7 @@ ATT.Description = [[Looks like the bottom is hollowed out
 It's like they want you to perhaps use a different magazine more fitted for this.
 ]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 0.2
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_bizon"}
 
@@ -469,7 +488,7 @@ ATT.Description = [[Oi, they just make the thing longer
 Rounded front sight for... more... accuracy?
 ]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 2
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rpk"}
 
@@ -486,7 +505,7 @@ ATT.Icon = Material("entities/gekolt_css_ak_h_12.png", "mips smooth")
 ATT.Description = [[«Latest» production of a truly modernised handguard
 ]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 0.4
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_12"}
 
@@ -504,7 +523,7 @@ ATT.Description = [[Special package from the quite lousy comrade.
 What do you mean you got the wrong comrade?
 ]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 0.3
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_amd", "nofg", "no_bizon"}
 ATT.ExcludeElements = {"no_amd"}

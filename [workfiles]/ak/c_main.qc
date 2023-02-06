@@ -64,12 +64,13 @@ $bodygroup "stock"
 	studio "ak47_stock_rpk.smd"
 	studio "ak47_stock_slide.smd"
 	studio "ak47_stock_adapt.smd"
+	studio "ak47_stock_folded.smd"
 }
 
 $bodygroup "rail_top"
 {
 	blank	
-	studio "ak47_top_mount.smd"
+	studio "ak47_top_mount4.smd"
 	studio "ak47_top_mount2.smd"
 	studio "ak47_top_mount3.smd"		
 }
