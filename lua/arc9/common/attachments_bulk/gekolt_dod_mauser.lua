@@ -17,13 +17,13 @@ ATT.Firemodes = { { Mode = 1, } }
 
 ATT.ClipSizeOverride = 5
 
-ATT.RPMMult = 300/800
+ATT.RPMMult = 300 / 800
 ATT.RecoilMult = 3
 ATT.RecoilSideMult = 8
-ATT.RecoilRandomSideMult = 0.75/0.3
+ATT.RecoilRandomSideMult = 0.75 / 0.3
 
-ATT.DamageMaxMult = 92/34
-ATT.DamageMinMult = 60/19 
+ATT.DamageMaxMult = 92 / 34
+ATT.DamageMinMult = 60 / 19
 
 ATT.MovingPosOverride = Vector(0, 4.5, -0.1)
 ATT.MovingAngOverride = Angle(0, -2, 0)
@@ -122,7 +122,7 @@ ATT.Firemodes = { { Mode = -1, } }
 
 ATT.ClipSizeOverride = 80
 
-ATT.RPMMult = 700/800
+ATT.RPMMult = 700 / 800
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
@@ -149,29 +149,29 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"has_optic"},	
-		
+		InstalledElements = {"has_optic"},
+
         Category = {"optic_css"},
         Pos = Vector(0, -3.85, 0),
-        Ang = Angle(90, 0, -90),		
-    },	
-	
+        Ang = Angle(90, 0, -90),
+    },
+
     {
         PrintName = "MOUNT Right",
         Category = "mountl_css",
         Pos = Vector(1.25, -2.15, -7.25),
         Ang = Angle(90, 0, 0),
-        ExtraSightDistance = 5			
-    },		
-	
+        ExtraSightDistance = 5
+    },
+
     {
         PrintName = "Foregrip",
         DefaultName = "None",
 
-        Category = {"grip_css"}, 
+        Category = {"grip_css"},
         Pos = Vector(0, 0.3, -7),
-        Ang = Angle(90, 0, -90),		
-    },		
+        Ang = Angle(90, 0, -90),
+    },
 }
 
 
@@ -216,7 +216,7 @@ ATT.PostBurstDelay = 0.2
 
 ATT.ClipSizeOverride = 20
 
-ATT.RPMMult = 1200/800
+ATT.RPMMult = 1200 / 800
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_brazil"

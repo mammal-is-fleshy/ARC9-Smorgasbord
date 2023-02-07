@@ -12,7 +12,7 @@ ATT.Folder = "SCOPE"
 ATT.ActivateElements = {"m16_on"}
 ATT.RequireElements = {"keep_rs"}
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(0, 10, -1.51),

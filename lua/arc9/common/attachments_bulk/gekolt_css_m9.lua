@@ -20,18 +20,18 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ex"
 end
 
-ATT.RPMMult = 950/800
+ATT.RPMMult = 950 / 800
 ATT.RecoilMult = 1.25
 ATT.RecoilSideMult = 4
-ATT.RecoilRandomSideMult = 0.75/0.3
+ATT.RecoilRandomSideMult = 0.75 / 0.3
 
 ATT.Attachments = {
     {
         PrintName = "Stock",
-        DefaultName = "None",		
+        DefaultName = "None",
         Category = {"css_m9_stock"},
         Pos = Vector(0, 2, 5),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),
     },
 }
 
@@ -83,11 +83,11 @@ end
 ATT.Attachments = {
     {
         PrintName = "Grip",
-        DefaultName = "None",		
+        DefaultName = "None",
         Category = {"css_m9_grip"},
         Pos = Vector(0, 0.5, -4),
-        Ang = Angle(90, 0, -90),		
-    },		
+        Ang = Angle(90, 0, -90),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f2")
@@ -115,15 +115,15 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_carbine"
 end
 
-ATT.RPMMult = 750/800
+ATT.RPMMult = 750 / 800
 ATT.Firemodes = {	{ Mode = -1, }	}
 ATT.ClipSizeOverride = 42
 
-ATT.DamageMaxMult = 24/26
-ATT.DamageMinMult = 12/16 
+ATT.DamageMaxMult = 24 / 26
+ATT.DamageMinMult = 12 / 16
 ATT.RecoilMult = 0.875
-ATT.RecoilKickMult = 0.8/1
-ATT.RecoilRandomSideMult = 0.2/0.3
+ATT.RecoilKickMult = 0.8 / 1
+ATT.RecoilRandomSideMult = 0.2 / 0.3
 
 ATT.SpeedMultSightsMult = 0.75
 ATT.SpeedMultShootingMult = 0.85
@@ -174,7 +174,7 @@ ATT.ShootSound = "gekolt_css/usp1.wav"
 
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 
-ATT.RPMMult = 720/800
+ATT.RPMMult = 720 / 800
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.9
 
@@ -224,10 +224,10 @@ ATT.Category = "css_m9_frame"
 ATT.ActivateElements = {"f_welrod", "pre_muzzed", "akantbo"}
 ATT.ShootSound = "gekolt_css/usp1.wav"
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
-ATT.RPMMult = 60/800
+ATT.RPMMult = 60 / 800
 
-ATT.DamageMaxMult = 54/26
-ATT.DamageMinMult = 39/16 
+ATT.DamageMaxMult = 54 / 26
+ATT.DamageMinMult = 39 / 16
 ATT.SpreadMultSights = 0.15
 ATT.SpreadMult = 0.15
 
@@ -267,10 +267,10 @@ ATT.Category = "css_m9_frame"
 ATT.ActivateElements = {"f_p38"}
 
 
-ATT.RPMMult = 600/800
+ATT.RPMMult = 600 / 800
 
-ATT.DamageMaxMult = 32/26
-ATT.DamageMinMult = 21/16 
+ATT.DamageMaxMult = 32 / 26
+ATT.DamageMinMult = 21 / 16
 
 ATT.SprintAngOverride = Angle(-5, 60, -5)
 ATT.SprintPosOverride = Vector(0.5, 1.5, -10)
@@ -310,10 +310,10 @@ ATT.Category = "css_m9_frame"
 ATT.ActivateElements = {"f_artillery", "pre_optic", "akantbo"}
 
 
-ATT.RPMMult = 400/800
+ATT.RPMMult = 400 / 800
 
-ATT.DamageMaxMult = 15/26
-ATT.DamageMinMult = 62/16 
+ATT.DamageMaxMult = 15 / 26
+ATT.DamageMinMult = 62 / 16
 ATT.SpeedMult = 0.85
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 1.15
@@ -339,13 +339,13 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"has_optic"},	
-		
+		InstalledElements = {"has_optic"},
+
         Category = {"optic_css"},
         Pos = Vector(0, -3.7, -5),
         Ang = Angle(90, 0, -90),
-        ExtraSightDistance = 0.5		
-    },		
+        ExtraSightDistance = 0.5
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m9_f7")

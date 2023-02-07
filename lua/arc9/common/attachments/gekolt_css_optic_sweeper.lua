@@ -10,7 +10,7 @@ ATT.ModelBodygroups = "00"
 ATT.Category = {"optic_css", "optic_css_l", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(0.015, 11.25, -1.6475),

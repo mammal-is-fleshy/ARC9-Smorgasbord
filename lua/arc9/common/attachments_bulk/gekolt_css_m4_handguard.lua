@@ -42,15 +42,15 @@ ATT.ModelAngleOffset = Angle(90, 0, -90)
 ATT.LHIK_Priority = 5
 ATT.LHIK = true
 
-ATT.Attachments = {	
+ATT.Attachments = {
     {
         PrintName = "Clamp",
         Category = {"clamp_s_css"},
         Pos = Vector(0,0.25, 0.5),
         Ang = Angle(90, 0, -90),
         Icon_Offset = Vector(5, 0, 0)
-    },	
-	
+    },
+
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_sten")
@@ -81,24 +81,24 @@ ATT.Attachments = {
         Category = "mountr_css",
         Pos = Vector(-1.25,0.2, -4),
         Ang = Angle(90, 180, 0),
-        ExtraSightDistance = 7				
+        ExtraSightDistance = 7
     },
-	
+
     {
         PrintName = "MOUNT Right",
         Category = "mountl_css",
         Pos = Vector(1.25,0.2, -4),
         Ang = Angle(90, 0, 0),
-        ExtraSightDistance = 7				
-    },	
-	
+        ExtraSightDistance = 7
+    },
+
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-1.1, -3.25),
         Ang = Angle(90, 0, -90),
-        ExtraSightDistance = 7		
-    },		
+        ExtraSightDistance = 7
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_spr")
@@ -127,32 +127,32 @@ ATT.Attachments = {
         Category = "mountr_css",
         Pos = Vector(-1.25,0.3, -4),
         Ang = Angle(90, 180, 0),
-        ExtraSightDistance = 7		
+        ExtraSightDistance = 7
     },
-	
+
     {
         PrintName = "MOUNT Right",
         Category = "mountl_css",
         Pos = Vector(1.25,0.3, -4),
         Ang = Angle(90, 0, 0),
-        ExtraSightDistance = 7		
-    },	
-	
+        ExtraSightDistance = 7
+    },
+
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-1.1, -2),
         Ang = Angle(90, 0, -90),
 		ExtraSightDistance = 7
-    },	
+    },
 
     {
         PrintName = "MOUNT Bottom",
         Category = {"tac_css"},
         Pos = Vector(0,1.65, -5),
         Ang = Angle(90, 0, 90),
-		ExcludeElements = {"bottom_long"},		
-    },		
+		ExcludeElements = {"bottom_long"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_ris")
@@ -218,24 +218,24 @@ ATT.Attachments = {
         Category = "mountr_css",
         Pos = Vector(-1,0.3, -8.25),
         Ang = Angle(90, 180, 0),
-        ExtraSightDistance = 7				
+        ExtraSightDistance = 7
     },
-	
+
     {
         PrintName = "MOUNT Right",
         Category = "mountl_css",
         Pos = Vector(1,0.3, -8.25),
         Ang = Angle(90, 0, 0),
-        ExtraSightDistance = 7				
-    },	
+        ExtraSightDistance = 7
+    },
 
     {
         PrintName = "MOUNT Bottom",
         Category = {"tac_css"},
         Pos = Vector(0,1.6, -8.5),
         Ang = Angle(90, 0, 90),
-		ExcludeElements = {"bottom_long"},		
-    },		
+		ExcludeElements = {"bottom_long"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_lr300")
@@ -287,7 +287,7 @@ ATT.ActivateElements = {"guard_drg"}
 ATT.AimDownSightsTimeMult = 0.875
 ATT.SprintToFireTimeMult = 0.875
 
-ATT.RPMMult = 750/600
+ATT.RPMMult = 750 / 600
 
 ATT.RecoilMult = 1.05
 
@@ -341,32 +341,32 @@ ATT.Attachments = {
         Category = "mountr_css",
         Pos = Vector(-1.25,0.3, -8.25),
         Ang = Angle(90, 180, 0),
-        ExtraSightDistance = 10				
+        ExtraSightDistance = 10
     },
-	
+
     {
         PrintName = "MOUNT Right",
         Category = "mountl_css",
         Pos = Vector(1.25,0.3, -8.25),
         Ang = Angle(90, 0, 0),
-        ExtraSightDistance = 10		
-    },	
-	
+        ExtraSightDistance = 10
+    },
+
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-1.25, -6.5),
         Ang = Angle(90, 0, -90),
 		ExtraSightDistance = 7
-    },	
+    },
 
     {
         PrintName = "MOUNT Bottom",
         Category = {"tac_css"},
         Pos = Vector(0,2, -9.5),
         Ang = Angle(90, 0, 90),
-		// ExcludeElements = {"bottom_long"},		
-    },		
+		-- ExcludeElements = {"bottom_long"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_bn63")
@@ -516,7 +516,7 @@ ATT.ShootEntUBGL = "gekolt_css_m4_nade"
 ATT.ShootEntForceUBGL = 20000
 ATT.ShootSoundUBGL = "gekolt_css/deagle-1.wav"
 
-// ATT.HasSightsUBGL = false
+-- ATT.HasSightsUBGL = false
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 

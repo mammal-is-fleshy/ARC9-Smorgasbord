@@ -20,8 +20,8 @@ ATT.ActivateElements = {"garand_vanguard"}
 ATT.DrawFunc = function(swep, model, wm) end
 
 
-ATT.RecoilMult = 0.775/0.75
-ATT.RecoilKickMult = 3.1/3
+ATT.RecoilMult = 0.775 / 0.75
+ATT.RecoilKickMult = 3.1 / 3
 
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.75
@@ -50,7 +50,7 @@ ATT.ActivateElements = {"garand_m14", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 500/300
+ATT.RPMMult = 500 / 300
 ATT.Firemodes = {
     {
         Mode = 1
@@ -62,10 +62,10 @@ ATT.Firemodes = {
 ATT.ClipSizeOverride = 20
 ATT.ChamberSizeOverride = 1
 
-ATT.DamageMaxMult = 45/80
-ATT.DamageMinMult = 22/30
-ATT.RecoilMult = 1.25/0.75
-ATT.RecoilKickMult = 2.75/3
+ATT.DamageMaxMult = 45 / 80
+ATT.DamageMinMult = 22 / 30
+ATT.RecoilMult = 1.25 / 0.75
+ATT.RecoilKickMult = 2.75 / 3
 
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.15
@@ -98,7 +98,7 @@ ATT.ActivateElements = {"garand_mini", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 650/300
+ATT.RPMMult = 650 / 300
 ATT.Firemodes = {
     {
         Mode = -1
@@ -110,10 +110,10 @@ ATT.Firemodes = {
 ATT.ClipSizeOverride = 30
 ATT.ChamberSizeOverride = 1
 
-ATT.DamageMaxMult = 32/80
-ATT.DamageMinMult = 18/30
-ATT.RecoilMult = 0.5/0.75
-ATT.RecoilKickMult = 1.5/3
+ATT.DamageMaxMult = 32 / 80
+ATT.DamageMinMult = 18 / 30
+ATT.RecoilMult = 0.5 / 0.75
+ATT.RecoilKickMult = 1.5 / 3
 
 ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
@@ -159,26 +159,26 @@ ATT.ShellModelOverride = "models/shells/shell_12gauge.mdl"
 ATT.ShellScaleOverride = 1
 
 ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 120/300
+ATT.RPMMult = 120 / 300
 ATT.Firemodes = {
     {
         Mode = 1,
-		PrintName = "Pump"		
+		PrintName = "Pump"
     },
     {
         Mode = -1,
-		PrintName = "SLAM"			
+		PrintName = "SLAM"
     }
 }
 
 ATT.Attachments = {
     {
         PrintName = "Ammo Type",
-        DefaultName = "Default Type",		
+        DefaultName = "Default Type",
         Category = {"css_ammo_sg"},
         Pos = Vector(0,2,-3),
         Ang = Angle(0, 0, 0),
-    },		
+    },
 }
 
 ATT.ClipSizeOverride = 7
@@ -186,8 +186,8 @@ ATT.ClipSizeOverride = 7
 ATT.FreeAimRadiusAdd = 5
 ATT.NumOverride = 10
 ATT.SpreadAdd = 0.0175
-ATT.DamageMaxMult = 12/80
-ATT.DamageMinMult = 6/30
+ATT.DamageMaxMult = 12 / 80
+ATT.DamageMinMult = 6 / 30
 
 ATT.RecoilMult = 3
 
@@ -198,7 +198,7 @@ ATT.ShotgunReload = true
 ATT.Hook_TranslateAnimation = function(wep, anim)
 	if anim == "reload_start_empty" then return "reload_start_empty_slam" end
 	if anim == "reload_insert_1" then return "reload_insert_slam" end
-	if anim == "reload_insert_5" then return "reload_insert_slam_5" end	
+	if anim == "reload_insert_5" then return "reload_insert_slam_5" end
     return anim .. "_slam"
 end
 
@@ -223,20 +223,20 @@ ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"
 ATT.ActivateElements = {"garand_sks", "nogrip", "ubgl_maghold"}
 
 ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 60/300
+ATT.RPMMult = 60 / 300
 ATT.Firemodes = {
     {
-        Mode = 1,	
+        Mode = 1,
     },
 }
 
 ATT.ClipSizeOverride = 12
 ATT.ChamberSizeOverride = 1
 
-ATT.DamageMaxMult = 105/80
-ATT.DamageMinMult = 45/30
-ATT.RecoilMult = 0.8/0.7
-ATT.RecoilKickMult = 2.5/3
+ATT.DamageMaxMult = 105 / 80
+ATT.DamageMinMult = 45 / 30
+ATT.RecoilMult = 0.8 / 0.7
+ATT.RecoilKickMult = 2.5 / 3
 
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 1.05
@@ -247,7 +247,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 	if anim == "reload_start_empty" then return "reload_start_empty_sks" end
 	if anim == "reload_insert_1" then return "reload_insert_sks_1" end
 	if anim == "reload_insert_5" then return "reload_insert_sks_5" end
-	
+
     return anim .. "_sks"
 end
 

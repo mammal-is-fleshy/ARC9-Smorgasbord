@@ -62,11 +62,11 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "fire" then return "fire_iron" end
     if anim == "fire_lmg" then return "fire_iron" end
     if anim == "fire_sg" then return "fire_iron" end
-    if anim == "fire_ak" then return "fire_iron" end 
+    if anim == "fire_ak" then return "fire_iron" end
 	if anim == "fire_smg" then return "fire_iron" end
     if anim == "fire_acr" then return "fire_iron" end
 	if anim == "fire_gih" then return "fire_iron" end
-    if anim == "fire_proto" then return "fire_iron" end	
+    if anim == "fire_proto" then return "fire_iron" end
 end
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_fg_saw")
@@ -259,7 +259,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_m4_g_adar")
 
 ----------------------------------------------------------------------------------
 
-// STOCK
+-- STOCK
 
 ----------------------------------------------------------------------------------
 
@@ -326,7 +326,7 @@ ATT = {}
 
 ATT.PrintName = "Precision Stock"
 ATT.CompactName = "Precision"
-ATT.Description = [[Sniper-style stock for single fire compensation. 
+ATT.Description = [[Sniper-style stock for single fire compensation.
 Your cheek and shoulder would thank you for this]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_s_bolt.png", "mips smooth")

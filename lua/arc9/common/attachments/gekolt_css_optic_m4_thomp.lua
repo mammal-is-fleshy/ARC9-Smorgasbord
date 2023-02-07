@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/rail_iron.mdl"
 
 ATT.Category = {"optic_css","optic_css_scope"}
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(0, 8, -2.1),

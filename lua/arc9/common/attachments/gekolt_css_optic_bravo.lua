@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/sig.mdl"
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(-0.00325, 7.25, -1.285),
@@ -50,5 +50,5 @@ ATT.Attachments = {
         Category = {"tac_css_flat", "mount_css", "optic_css_holo"},
         Pos = Vector(1,0, -2.4),
         Ang = Angle(0, 0, 0),
-    },		
+    },
 }

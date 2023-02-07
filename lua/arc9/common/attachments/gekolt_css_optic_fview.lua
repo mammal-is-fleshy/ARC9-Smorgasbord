@@ -10,7 +10,7 @@ ATT.ModelBodygroups = "00"
 ATT.Category = {"optic_css", "optic_css_l", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(0.015, 10, -1.8),
@@ -33,14 +33,14 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"acog_mount_rail"},	
-		
+		InstalledElements = {"acog_mount_rail"},
+
         Category = {"optic_css_s",},
         Pos = Vector(6, 0, -4),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -4,
 		Scale = 0.8,
-    },		
+    },
 }
 
 

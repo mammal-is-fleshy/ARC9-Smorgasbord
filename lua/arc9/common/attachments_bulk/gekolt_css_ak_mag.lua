@@ -8,12 +8,12 @@ ATT.Icon = Material("entities/gekolt_css_ak_u_545.png", "mips smooth")
 ATT.Description = [[Intermediate solution for normal infantry.
 ]]
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_54"
 end
 
 ATT.ShootSound = "oneshotof_cs16/galil-1.wav"
-//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+--ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.SortOrder = 1
 ATT.Category = "css_ak_up"
@@ -38,7 +38,7 @@ ATT.Firemodes = {{Mode = 1,}}
 
 ATT.ClipSizeOverride = 15
 
-ATT.RPMMult = 400/600
+ATT.RPMMult = 400 / 600
 ATT.RangeMaxMult = 1.25
 ATT.RangeMinMult = 1.5
 
@@ -49,12 +49,12 @@ ATT.RecoilMult = 1.2
 
 ATT.Ammo = "357"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_25"
 end
 
 ATT.ShootSound = "oneshotof_cs16/sg552-1.wav"
-//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+--ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.SortOrder = 10
 ATT.Category = "css_ak_up"
@@ -75,12 +75,12 @@ ATT.Description = [[Magwell adaptor for foreign intermediate cartridge
 Made with Western Magic™.
 ]]
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_56"
 end
 
 ATT.ShootSound = {"oneshotof_cs16/m4a1_unsil-1.wav", "oneshotof_cs16/m4a1_unsil-2.wav"}
-//ATT.ShootSoundSilenced = "oneshotof_cs16/m4a1-1.wav"
+--ATT.ShootSoundSilenced = "oneshotof_cs16/m4a1-1.wav"
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
@@ -113,12 +113,12 @@ ATT.ArmorPiercingAdd = 2
 ATT.RangeMaxMult = 0.5
 ATT.RangeMinMult = 2
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_water"
 end
 
 ATT.ShootSound = "oneshotof_cs16/sg550-1.wav"
-//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+--ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 
 ATT.Sights = {
@@ -158,17 +158,17 @@ ATT.ClipSizeOverride = 47
 ATT.RPMMult = 550 / 600
 ATT.ChamberSizeOverride = 0
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_dp"
 end
 
 ATT.TriggerDelay = true
 ATT.TriggerDelayTime = 0.07
 ATT.TriggerDownSound = "gekolt_css/weaponclick.wav"
-//ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
+--ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
 
 ATT.ShootSound = "oneshotof_cs16/m249-1.wav"
-//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+--ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.ActivePosOverride = Vector(0, 6, -1.5)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
@@ -221,13 +221,13 @@ ATT.RecoilMult = 0.625
 ATT.Ammo = "pistol"
 
 ATT.ShootSound = {"oneshotof_cs16/mp5-1.wav", "oneshotof_cs16/mp5-2.wav"}
-//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+--ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.SortOrder = 12
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_919"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_9mm"
 end
 
@@ -264,12 +264,12 @@ ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_919x", "nofg", "no_amd"}
 ATT.ExcludeElements = {"no_bizon"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_bizon"
 end
 
 ATT.ShootSound = "oneshotof_cs16/ump45-1.wav"
-//ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+--ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
@@ -315,18 +315,18 @@ ATT.RecoilPatternDriftMult = 5
 ATT.Ammo = "buckshot"
 
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_12"
 end
 
 ATT.Attachments = {
     {
         PrintName = "Ammo Type",
-        DefaultName = "Default Type",		
+        DefaultName = "Default Type",
         Category = {"css_ammo_sg"},
         Pos = Vector(-2, 0, 3.5),
         Ang = Angle(0, 0, 0),
-    },		
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag8")

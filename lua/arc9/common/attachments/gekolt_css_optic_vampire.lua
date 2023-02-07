@@ -10,7 +10,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/vampire.mdl"
 ATT.Category = {"optic_css", "optic_css_l", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(-0.00, 10.5, -1.93),

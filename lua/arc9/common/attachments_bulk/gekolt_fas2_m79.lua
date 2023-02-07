@@ -11,11 +11,11 @@ ATT.Description = [[Oversized buckshot round for your angry tube
 ATT.Attachments = {
     {
         PrintName = "Ammo Type",
-        DefaultName = "Default Type",		
+        DefaultName = "Default Type",
         Category = {"css_ammo_sg"},
         Pos = Vector(0,3,0),
         Ang = Angle(0, 0, 0),
-    },		
+    },
 }
 
 
@@ -118,7 +118,7 @@ ATT.Description = [[Short
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
 ATT.ActivateElements = {"f_pirate", "nogrip"}
-ATT.SpeedMultShootingMult = 0.7/0.6
+ATT.SpeedMultShootingMult = 0.7 / 0.6
 
 
 ATT.MovingPosOverride = Vector(0, 4.5, -0.1)
@@ -220,7 +220,7 @@ ATT.Ammo = "buckshot"
 ATT.PhysBulletMuzzleVelocityOverride = 3100 * 12
 ATT.PhysBulletGravityOverride = 1
 ATT.PhysBulletDragOverride = 1
-ATT.SpeedMultShooting = 0.8/0.6
+ATT.SpeedMultShooting = 0.8 / 0.6
 
 ATT.SpreadAdd = 0.02
 
@@ -275,18 +275,18 @@ ATT.Attachments = {
     {
         PrintName = "Ammo",
         DefaultName = "12 Gauge",
-		
-        Category = {"fas2_m79_ammo2", "css_ammo_sg"}, 
+
+        Category = {"fas2_m79_ammo2", "css_ammo_sg"},
         Bone = "W_Main",
         Pos = Vector(0, 0, 4),
-        Ang = Angle(0, 0, 0),		
-    },	
+        Ang = Angle(0, 0, 0),
+    },
 }
-ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit	
+ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
 	if anim == "reload" then return "reload_mts" end
 	if anim == "reload_empty" then return "reload_mts" end
 	if anim == "fire" then return "fire_rev" end
-	if anim == "fire_iron" then return "fire_rev" end	
+	if anim == "fire_iron" then return "fire_rev" end
 end
 
 ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_f3")
@@ -312,7 +312,7 @@ ATT.Ammo = "buckshot"
 ATT.PhysBulletMuzzleVelocityOverride = 2900 * 12
 ATT.PhysBulletGravityOverride = 1
 ATT.PhysBulletDragOverride = 1
-ATT.SpeedMultShootingMult = 0.9/0.6
+ATT.SpeedMultShootingMult = 0.9 / 0.6
 
 ATT.SpreadAdd = 0.03
 
@@ -342,11 +342,11 @@ ATT.TracerColor = Color(255, 225, 200)
 ATT.TracerSize = 0.5
 
 
-ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit	
+ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
 	if anim == "reload" then return "reload_rev" end
 	if anim == "reload_empty" then return "reload_rev" end
 	if anim == "fire" then return "fire_rev" end
-	if anim == "fire_iron" then return "fire_rev" end	
+	if anim == "fire_iron" then return "fire_rev" end
 end
 
 ATT.MovingPosOverride = Vector(0, 4.5, -0.1)
@@ -376,12 +376,12 @@ ATT.Attachments = {
     {
         PrintName = "Ammo",
         DefaultName = "12 Gauge",
-		
-        Category = {"fas2_m79_ammo2", "css_ammo_sg"}, 
+
+        Category = {"fas2_m79_ammo2", "css_ammo_sg"},
         Bone = "W_Main",
         Pos = Vector(0, 0, 4),
-        Ang = Angle(0, 0, 0),		
-    },		
+        Ang = Angle(0, 0, 0),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_f4")

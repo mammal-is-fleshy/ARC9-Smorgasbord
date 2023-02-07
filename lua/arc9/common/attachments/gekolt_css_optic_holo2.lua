@@ -10,7 +10,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/holo2.mdl"
 ATT.Category = {"optic_css","optic_css_l","optic_css_holo"}
 ATT.Folder = "REFLEX"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(-0.015, 6, -1.07),
@@ -43,9 +43,9 @@ ATT.RTScopeFLIR = true
 ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
 ATT.RTScopeFLIRMonochrome = true
 ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 11/255,
-    ["$pp_colour_addg"] = 11/255,
-    ["$pp_colour_addb"] = 11/255,
+    ["$pp_colour_addr"] = 11 / 255,
+    ["$pp_colour_addg"] = 11 / 255,
+    ["$pp_colour_addb"] = 11 / 255,
     ["$pp_colour_brightness"] = 0.07,
     ["$pp_colour_contrast"] = 2,
     ["$pp_colour_colour"] = 0.12,
@@ -54,9 +54,9 @@ ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
     ["$pp_colour_mulb"] = 0
 }
 ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 0/255,
-    ["$pp_colour_addg"] = 222/255,
-    ["$pp_colour_addb"] = 255/255,
+    ["$pp_colour_addr"] = 0 / 255,
+    ["$pp_colour_addg"] = 222 / 255,
+    ["$pp_colour_addb"] = 255 / 255,
     ["$pp_colour_brightness"] = -0.6,
     ["$pp_colour_contrast"] = 0.5,
     ["$pp_colour_colour"] = 0.9,
@@ -66,7 +66,7 @@ ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
 }
 
 ATT.RTScopeCustomPPFunc = function(swep)
-    -- DrawMotionBlur(0.7, 0.85, 1/40)
+    -- DrawMotionBlur(0.7, 0.85, 1 / 40)
     DrawBloom(0.31, 1.4, 1.15, 0, 0, 1, 1, 1, 1)
     DrawSharpen(4, 0.6)
 end

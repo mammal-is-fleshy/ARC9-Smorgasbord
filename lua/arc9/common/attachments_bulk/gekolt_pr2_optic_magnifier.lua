@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "1"
 ATT.CompactName = "1"
-//ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
+--ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
 
@@ -71,7 +71,7 @@ ATT = {}
 
 ATT.PrintName = "2"
 ATT.CompactName = "2"
-//ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
+--ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
 
@@ -137,7 +137,7 @@ ATT = {}
 
 ATT.PrintName = "3"
 ATT.CompactName = "3"
-//ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
+--ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
 
@@ -203,7 +203,7 @@ ATT = {}
 
 ATT.PrintName = "4"
 ATT.CompactName = "4"
-//ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
+--ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
 
@@ -269,7 +269,7 @@ ATT = {}
 
 ATT.PrintName = "5"
 ATT.CompactName = "5"
-//ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
+--ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
 
@@ -336,7 +336,7 @@ ATT = {}
 
 ATT.PrintName = "6"
 ATT.CompactName = "6"
-//ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
+--ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
 
@@ -409,7 +409,7 @@ ATT = {}
 
 ATT.PrintName = "7"
 ATT.CompactName = "7"
-//ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
+--ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
 

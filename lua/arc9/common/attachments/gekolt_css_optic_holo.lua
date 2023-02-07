@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/holo.mdl"
 ATT.Category = {"optic_css","optic_css_l","optic_css_holo"}
 ATT.Folder = "REFLEX"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(0, 7, -1.25),

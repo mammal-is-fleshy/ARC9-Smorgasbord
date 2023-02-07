@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/holo3.mdl"
 ATT.Category = {"optic_css","optic_css_s","optic_css_holo"}
 ATT.Folder = "REFLEX"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(0, 7.5, -1.25),
@@ -25,7 +25,7 @@ ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.ModelOffset = Vector(0.5, 0, -0.1)
- 
+
 ATT.SwayAdd = 0.01
 ATT.FreeAimRadiusMultSights = 0.225
 ATT.SprintToFireTimeAdd = 0.0325

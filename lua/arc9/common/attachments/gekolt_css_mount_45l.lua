@@ -10,7 +10,7 @@ ATT.Category = {"mount_css", "mountl_css"}
 ATT.Folder = "MOUNT"
 ATT.Max = 6
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 
 ATT.ModelOffset = Vector(0, 0, -0)
 ATT.Scale = 1.25

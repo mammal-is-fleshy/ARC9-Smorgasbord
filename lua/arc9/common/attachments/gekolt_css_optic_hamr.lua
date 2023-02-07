@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/hamr.mdl"
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(0, 8, -2.05),
@@ -22,7 +22,7 @@ ATT.Sights = {
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         ViewModelFOV = 60,
-        Disassociate = true			
+        Disassociate = true
     },
 }
 

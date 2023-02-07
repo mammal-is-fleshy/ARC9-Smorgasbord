@@ -191,7 +191,7 @@ ATT.Ammo = "SniperRound"
 ATT.PhysBulletMuzzleVelocityMult = 2.5
 ATT.PenetrationMult = 2
 ATT.DamageMaxMult = 2
-ATT.DamageMinMult = 150/20
+ATT.DamageMinMult = 150 / 20
 ATT.RangeMult = 2
 ATT.SpreadMultSights = 0.5
 
@@ -506,7 +506,7 @@ ATT.ShootSound = "gekolt_css/m249-1.wav"
 ATT.TriggerDelay = true
 ATT.TriggerDelayTime = 0.07
 ATT.TriggerDownSound = "gekolt_css/weaponclick.wav"
-//ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
+--ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
 
 ATT.ClipSizeOverride = 120
 ATT.AimDownSightsTimeMult = 1.5
@@ -785,7 +785,7 @@ ATT.ShootSound = "gekolt_css/hb_sd.wav"
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.Silencer = true
 
-ATT.RPMMult = 650/700
+ATT.RPMMult = 650 / 700
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.9
 

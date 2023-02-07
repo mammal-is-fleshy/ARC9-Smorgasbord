@@ -16,7 +16,7 @@ ATT.Category = {"css_ammo_sg"}
 ATT.PhysBulletMuzzleVelocityMult = 1.5
 ATT.PhysBulletDragMult = 3
 
-ATT.NumMult = 6/8
+ATT.NumMult = 6 / 8
 ATT.RecoilKickMult = 1.25
 ATT.RecoilAutoControlMult = 0.75
 
@@ -42,8 +42,8 @@ ATT.Category = {"css_ammo_sg"}
 ATT.NumMult = 3
 ATT.SpreadMult = 2
 
-ATT.DamageMaxMult = 1/3
-ATT.DamageMinMult = 1/3
+ATT.DamageMaxMult = 1 / 3
+ATT.DamageMinMult = 1 / 3
 ATT.RicochetChanceMult = 0.5
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_drone")
@@ -73,11 +73,11 @@ ATT.RicochetChanceOverride = 1
 ATT.DamageMinMult = 6
 ATT.DamageMaxMult = 14
 
-//ATT.DamageMaxOverride = 180
-//ATT.DamageMinOverride = 70
+--ATT.DamageMaxOverride = 180
+--ATT.DamageMinOverride = 70
 
 ATT.NumOverride = 1
-//ATT.Num_Priority = 1000 -- if it works  just to make sure
+--ATT.Num_Priority = 1000 -- if it works  just to make sure
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_slug")
 
@@ -188,7 +188,7 @@ ATT.AutoStats = true
     local effect = EffectData()
     effect:SetOrigin(data.tr.HitPos)
     util.Effect("StunstickImpact",effect)
-    
+
     if data.tr.HitWorld then
         util.Decal("FadingScorch",data.tr.HitPos - data.tr.HitNormal,data.tr.HitPos + data.tr.HitNormal)
     end

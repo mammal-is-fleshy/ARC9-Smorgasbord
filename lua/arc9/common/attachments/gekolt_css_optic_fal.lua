@@ -9,7 +9,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/trilux.mdl"
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 ATT.Sights = {
     {
         Pos = Vector(0.022, 7.5, -1.52),

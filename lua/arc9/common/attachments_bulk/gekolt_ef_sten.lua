@@ -6,7 +6,7 @@ Volkstutzen - MP3008
 Prototype - MK1
 Viper/Adder - MK4
 Ezpieg - Sterling (polish because              ehhhhhhhh)
-Walcaster - Salad Mender (Voorlopig Ontwerp[Provisional Design]   /    'First' Running Design) 
+Walcaster - Salad Mender (Voorlopig Ontwerp[Provisional Design]   /    'First' Running Design)
 
 ]]
 
@@ -49,7 +49,7 @@ ATT.ModelBodygroups = "0000000"
 ATT.TriggerDelay = true
 ATT.TriggerDelayTime = 0.07
 ATT.TriggerDownSound = "gekolt_css/weaponclick.wav"
-//ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
+--ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
 
 ATT.ClipSizeOverride = 90
 ATT.AimDownSightsTimeMult = 1.5
@@ -57,7 +57,7 @@ ATT.SprintToFireTimeMult = 1.5
 ATT.SpeedMult = 0.9
 ATT.RecoilPatternDriftMult = 3
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
 	return anim .. "_lmg"
 end
 
@@ -91,7 +91,7 @@ ATT.Sights = {
     }
 }
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
 	return anim .. "_sterling"
 end
 
@@ -137,12 +137,12 @@ ATT.SortOrder = 2
 ATT.ExcludeElements = {"pre_maglow"}
 
 ATT.ClipSizeOverride = 32
-ATT.RPMMult = 550/600
+ATT.RPMMult = 550 / 600
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"f_3008", "no_maglow"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
 	return anim .. "_3008"
 end
 
@@ -165,7 +165,7 @@ ATT.SortOrder = 3
 ATT.ClipSizeOverride = 20
 ATT.Firemodes = {{Mode = 3,}}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
 	return anim .. "_mk4"
 end
 
@@ -214,7 +214,7 @@ ATT.RecoilPatternDriftMult = 5
 
 ATT.Ammo = "buckshot"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
 	return anim .. "_sg"
 end
 
@@ -239,8 +239,8 @@ ATT.Cons = {}
 ATT.SortOrder = 4
 
 ATT.ClipSizeOverride = 25
-ATT.RPMMult = 900/600
-//ATT.CaseEffectQCA = 3
+ATT.RPMMult = 900 / 600
+--ATT.CaseEffectQCA = 3
 
 ATT.Sights = {
     {
@@ -265,7 +265,7 @@ ATT.ModelAngleOffset = Angle(0, 0, 10)
 ATT.Model = "models/weapons/geckololt_css/c_sten.mdl"
 ATT.ModelBodygroups = "56570000000"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
 	return anim .. "_owen"
 end
 
@@ -395,7 +395,7 @@ ATT.ActivateElements = {"hg_wood"}
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low1")
 
----------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------
 
 ATT = {}
 
@@ -414,7 +414,7 @@ ATT.ActivateElements = {"hg_no"}
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low2")
 
----------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------
 
 ATT = {}
 
@@ -439,7 +439,7 @@ ATT.Model = "models/weapons/geckololt_css/atts/fg.mdl"
 ATT.ModelBodygroups = "100000000000"
 
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
 	return anim .. "_mk1"
 end
 
@@ -481,7 +481,7 @@ ATT.ActivateElements = {"b_mk1", "pre_muzzed"}
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b1")
 
----------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------
 
 ATT = {}
 
@@ -500,7 +500,7 @@ ATT.ActivateElements = {"b_mk3"}
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b2")
 
----------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------
 
 ATT = {}
 
@@ -519,7 +519,7 @@ ATT.ActivateElements = {"b_mk2"}
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b3")
 
----------------------------------------------------------------------------------- 
+----------------------------------------------------------------------------------
 
 ATT = {}
 

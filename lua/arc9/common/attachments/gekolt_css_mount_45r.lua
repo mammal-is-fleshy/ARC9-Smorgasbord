@@ -11,7 +11,7 @@ ATT.Folder = "MOUNT"
 ATT.Max = 6
 ATT.InvAtt = "mount_45l"
 
-// Allows a custom sight position to be defined
+-- Allows a custom sight position to be defined
 
 ATT.ModelOffset = Vector(0, 0, -0)
 ATT.Scale = 1.25

@@ -46,7 +46,7 @@ ATT.MuzzleParticle = "muzzleflash_smg"
 --ATT.ShootSound = "gekolt_css/ak47-1.wav"
 
 ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 350/50
+ATT.RPMMult = 350 / 50
 ATT.Firemodes = {
     {
         Mode = -1,
@@ -54,10 +54,10 @@ ATT.Firemodes = {
 }
 ATT.ClipSizeOverride = 20
 
-ATT.DamageMaxMult = 90/60
-ATT.DamageMinMult = 60/160
+ATT.DamageMaxMult = 90 / 60
+ATT.DamageMinMult = 60 / 160
 ATT.RecoilMult = 1.15
-ATT.RecoilKickMult = 2/3
+ATT.RecoilKickMult = 2 / 3
 
 ATT.SpeedMultSights = 1.15
 ATT.SpeedMultShooting = 1.15
@@ -133,14 +133,14 @@ ATT.ClipSizeOverride = 25
 
 
 ATT.AimDownSightsTimeMult = 0.75
-ATT.DamageMaxMult = 45/60
-ATT.DamageMinMult = 20/160
+ATT.DamageMaxMult = 45 / 60
+ATT.DamageMinMult = 20 / 160
 ATT.RangeMinMult = 0.8
 ATT.RangeMaxMult = 0.8
 ATT.RecoilMult = 0.4
-ATT.RecoilKickMult = 1.2/3
+ATT.RecoilKickMult = 1.2 / 3
 
-ATT.RPMMult = 900/50
+ATT.RPMMult = 900 / 50
 ATT.Firemodes = {
     {
         Mode = -1,
@@ -227,14 +227,14 @@ ATT.SightTimeMult = 0.85
 ATT.SpeedMultSights = 1.45
 ATT.SpeedMultShooting = 1.5
 
-ATT.DamageMaxMult = 70/60
-ATT.DamageMinMult = 30/160
+ATT.DamageMaxMult = 70 / 60
+ATT.DamageMinMult = 30 / 160
 
 ATT.Ammo = "357"
 
 ATT.ClipSizeOverride = 7
 ATT.Firemodes = { { Mode = -1,	PrintName = "BOLT" } }
-ATT.RPMMult = 80/50
+ATT.RPMMult = 80 / 50
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_sd"

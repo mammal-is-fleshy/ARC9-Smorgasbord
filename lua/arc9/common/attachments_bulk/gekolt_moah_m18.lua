@@ -23,10 +23,10 @@ ATT.Attachments = {
 
         DefaultIcon = Material("arc9/def_att_icons/barrel.png"),
 		ExcludeElements = {"pre_muzzed"},
-        Category = {"muzzle_css"}, 
+        Category = {"muzzle_css"},
         Pos = Vector(-15,0, 0.1),
-        Ang = Angle(0, 0, 0),		
-    },		
+        Ang = Angle(0, 0, 0),
+    },
 }
 
 ATT.LHIK = true
@@ -44,7 +44,7 @@ ATT.ShootSound = "gekolt_css/g3sg1-1.wav"
 ATT.ShootSoundUBGL = "gekolt_dod/1887_fire01.wav"
 ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_xm"
 end
 
@@ -167,16 +167,16 @@ ATT.VisualRecoilMultUBGL = 2
 
 ATT.VisualRecoilHipFireUBGL = true
 
-// ATT.HasSightsUBGL = false
+-- ATT.HasSightsUBGL = false
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
 ATT.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-	
+
 	if wep:GetUBGL() then
 		model:SetBodygroup(6,1)
-	else 
+	else
 		model:SetBodygroup(6,2)
 	end
 end
@@ -198,7 +198,7 @@ ATT.SortOrder = 3
 ATT.Category = "moah_m18_kit"
 ATT.ActivateElements = {"kit_rpg"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_rpg"
 end
 
@@ -227,7 +227,7 @@ ATT.ActivateElements = {"kit_rpg2"}
 ATT.ShootEnt = "gekolt_moah_m18_rocket_tandem"
 ATT.ShootEntForce = 200000
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_rpg"
 end
 
