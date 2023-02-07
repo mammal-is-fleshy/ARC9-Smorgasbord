@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
 SWEP.SubCategory = "Secondaries"
 
-SWEP.PrintName = "Athelanz-9" 
+SWEP.PrintName = "Athelanz-9"
 SWEP.TrueName = "STEN"
 
 SWEP.Class = "Submachine Gun"
@@ -190,13 +190,13 @@ SWEP.IronSights = {
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(-10, 0, -25),
-    },	
+    },
     Magnification = 1,
     AssociatedSlot = 0, -- Attachment slot to associate the sights with. Causes RT scopes to render.
     CrosshairInSights = false,
 }
 
-SWEP.Crosshair = true
+SWEP.Crosshair = false
 
 SWEP.SprintAng = Angle(10, -15, -10)
 SWEP.SprintPos = Vector(0, 4, -0.5)
@@ -273,102 +273,102 @@ SWEP.BulletBones = {
 
 SWEP.AttachmentElements = {
     --[[ ["f_mk1"] = {
-        Bodygroups = {{0, 2},{2, 1},{3, 3}}, 
-	}, ]]
+        Bodygroups = {{0, 2},{2, 1},{3, 3}},
+    }, ]]
     ["f_mk4"] = {
-        Bodygroups = {{1, 1},{2, 2},{3, 4}},			
-	},
+        Bodygroups = {{1, 1},{2, 2},{3, 4}},
+    },
     ["f_mk5"] = {
-        Bodygroups = {{1, 2},{4, 2},{3, 6},{5, 1}},			
-	},
+        Bodygroups = {{1, 2},{4, 2},{3, 6},{5, 1}},
+    },
     ["f_owen"] = {
         Bodygroups = {{1, 3},{2, 3},{3, 5},{6, 1}},
-		AttPosMods = { [5] = { Pos =  Vector(0.7, -1.2, 0), Ang = Angle(90, 0,-120) }}
-	},
+        AttPosMods = { [5] = { Pos =  Vector(0.7, -1.2, 0), Ang = Angle(90, 0,-120) }}
+    },
     ["f_sterling"] = {
-        Bodygroups = {{0, 5},{1, 5},{2, 5},{3, 7},{5, 2}},			
-	},
+        Bodygroups = {{0, 5},{1, 5},{2, 5},{3, 7},{5, 2}},
+    },
     ["f_3008"] = {
-        Bodygroups = {{1, 4}},		
-	},
+        Bodygroups = {{1, 4}},
+    },
 
-	["s_mk2s"] = {
-        Bodygroups = {{3, 2}},		
-	},	
-	["s_mk2"] = {
-        Bodygroups = {{3, 1}},		
-	},
-	["s_wood"] = {
-        Bodygroups = {{3, 6}},		
-	},
-	["s_mk1"] = {
-        Bodygroups = {{3, 3}},		
-	},
+    ["s_mk2s"] = {
+        Bodygroups = {{3, 2}},
+    },
+    ["s_mk2"] = {
+        Bodygroups = {{3, 1}},
+    },
+    ["s_wood"] = {
+        Bodygroups = {{3, 6}},
+    },
+    ["s_mk1"] = {
+        Bodygroups = {{3, 3}},
+    },
 
-	["hg_wood"] = {
-        Bodygroups = {{2, 4}},		
-	},
-	["hg_mk1"] = {
-        Bodygroups = {{2, 1}},		
-	},
-	["hg_no"] = {
-        Bodygroups = {{2, 5}},		
-	},
+    ["hg_wood"] = {
+        Bodygroups = {{2, 4}},
+    },
+    ["hg_mk1"] = {
+        Bodygroups = {{2, 1}},
+    },
+    ["hg_no"] = {
+        Bodygroups = {{2, 5}},
+    },
 
-	["b_mk1"] = {
+    ["b_mk1"] = {
         Bodygroups = {{0, 2}},
-	},
-	["b_mk2"] = {
+    },
+    ["b_mk2"] = {
         Bodygroups = {{0, 3}},
-	},
-	["b_mk3"] = {
+    },
+    ["b_mk3"] = {
         Bodygroups = {{0, 1}},
-        AttPosMods = { [6] = { Pos = Vector(0, 0, 11.2), }}	
-	},
-	["b_owen"] = {
-        Bodygroups = {{0, 4}},		
-	},
-	
+        AttPosMods = { [6] = { Pos = Vector(0, 0, 11.2), }}
+    },
+    ["b_owen"] = {
+        Bodygroups = {{0, 4}},
+    },
+
 }
 
 SWEP.Attachments = {
     {
         PrintName = "Frame",
         DefaultName = "Standard Frame",
-		ExcludeElements = {"pre_frame"},
+        ExcludeElements = {"pre_frame"},
 
-        Category = "ef_sten_frame", 
+        Category = "ef_sten_frame",
         Bone = "W_Main",
         Pos = Vector(0, 2.5, -0.75),
         Ang = Angle(90, 0, -90),
-		Icon_Offset = Vector(-5, 0, 2.5)
-    },  
-	{
+        Icon_Offset = Vector(-5, 0, 2.5)
+    },
+    {
         PrintName = "Handguard",
         DefaultName = "Standard Handguard",
-		ExcludeElements = {"pre_hg"},	
+        ExcludeElements = {"pre_hg"},
 
-        Category = "ef_sten_hg", 
+        Category = "ef_sten_hg",
         Bone = "W_Main",
         Pos = Vector(0, 1.5, -0.75),
-        Ang = Angle(90, 0, -90),	
-    },	
-	{
+        Ang = Angle(90, 0, -90),
+    },
+    {
         PrintName = "Stock",
         DefaultName = "Standard Stock",
-		ExcludeElements = {"pre_stock"},
+        ExcludeElements = {"pre_stock"},
 
-        Category = "ef_sten_stock", 
+        Category = "ef_sten_stock",
         Bone = "W_Main",
         Pos = Vector(0, 2.5, -9),
         Ang = Angle(90, 0, -90),
     },
-	{
+    {
         PrintName = "Barrel",
         DefaultName = "Standard Barrel",
-		ExcludeElements = {"pre_barrel"},
+        ExcludeElements = {"pre_barrel"},
 
-        Category = "ef_sten_barrel", 
+        Category = "ef_sten_barrel",
         Bone = "W_Main",
         Pos = Vector(0, 0, 7),
         Ang = Angle(90, 0, -90),
@@ -376,39 +376,39 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"has_optic"},		
-	
+        InstalledElements = {"has_optic"},
+
         KeepBaseIrons = false,
-		ExcludeElements = {"pre_optic"},
-        Category = {"optic_css_s"}, 
+        ExcludeElements = {"pre_optic"},
+        Category = {"optic_css_s"},
         Bone = "W_Main",
         Pos = Vector(0, -1.4, -3),
         Ang = Angle(90, 0, -90),
         Scale = Vector(1.3, 1.3, 1.3)
-    },	
+    },
     {
         PrintName = "Muzzle",
         DefaultName = "None",
 
-		ExcludeElements = {"pre_muzzed"},
-        Category = {"muzzle_css"}, 
+        ExcludeElements = {"pre_muzzed"},
+        Category = {"muzzle_css"},
         Bone = "W_Main",
         Pos = Vector(0, 0, 12.1),
-        Ang = Angle(90, 0, -90),		
-    },	
-    
+        Ang = Angle(90, 0, -90),
+    },
+
 }
 
-SWEP.Hook_TranslateAnimation = function(wep, anim) 
+SWEP.Hook_TranslateAnimation = function(wep, anim)
 
 end
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)  
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-	if wep:HasElement("has_optic") and !wep:HasElement("f_mk5") then model:SetBodygroup(4,1) end	
-	if wep:HasElement("has_optic") and wep:HasElement("f_owen") then model:SetBodygroup(4,3) end	
+    if wep:HasElement("has_optic") and !wep:HasElement("f_mk5") then model:SetBodygroup(4,1) end
+    if wep:HasElement("has_optic") and wep:HasElement("f_owen") then model:SetBodygroup(4,3) end
     if wep:HasElement("has_optic") and wep:HasElement("f_mk5") then  model:SetBodygroup(5,0) end
-    if wep:HasElement("has_optic") and wep:HasElement("f_sterling") then  model:SetBodygroup(5,0) end 
+    if wep:HasElement("has_optic") and wep:HasElement("f_sterling") then  model:SetBodygroup(5,0) end
 end
 
 SWEP.Animations = {
@@ -417,284 +417,284 @@ SWEP.Animations = {
     },
     ["idle_empty"] = {
         Source = "idle_emp",
-    },	 
+    },
     ["draw"] = {
-        Source = "draw", -- QC sequence source, can be {"table", "of", "strings"} or "string" 
-		--Time = 0.5, -- overrides the duration of the sequence
+        Source = "draw", -- QC sequence source, can be {"table", "of", "strings"} or "string"
+        --Time = 0.5, -- overrides the duration of the sequence
         Mult = 1, -- multiplies time
         EventTable = {
             {s =  "gekolt_css/elite_twirl.wav" ,   t = 0 / 40},
-        },			
-	},
+        },
+    },
     ["draw_empty"] = {
-        Source = "draw_emp", -- QC sequence source, can be {"table", "of", "strings"} or "string" 
-		--Time = 0.5, -- overrides the duration of the sequence
+        Source = "draw_emp", -- QC sequence source, can be {"table", "of", "strings"} or "string"
+        --Time = 0.5, -- overrides the duration of the sequence
         Mult = 1, -- multiplies time
         EventTable = {
             {s =  "gekolt_css/elite_twirl.wav" ,   t = 0 / 40},
-        },			
-	},	
+        },
+    },
     ["holster"] = {
         Source = "idle",
-		Time = 0
-    },	
+        Time = 0
+    },
     ["holster_empty"] = {
         Source = "idle_emp",
-		Time = 0		
-    },	
+        Time = 0
+    },
     ["fire"] = {
-        Source = "fire",	
-    },	
+        Source = "fire",
+    },
     ["fire_iron"] = {
         Source = "fire_iron",
-		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
-    },		
+        IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
+    },
     ["fire_empty"] = {
         Source = "fire_emp",
-		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
-    },	
+        IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
+    },
     ["fire_iron_empty"] = {
         Source = "fire_iron_emp",
-		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
+        IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
     },
 
     ["reload"] = {
         Source = "wet",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 18 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 53 / 40},
-            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 63 / 40},	
-        },	
-		IKTimeLine = {
+            -- {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 63 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_empty"] = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 18 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 53 / 40},
-            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 63 / 40},				
-            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 84 / 40},	 
-			},
-		IKTimeLine = {
+            -- {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 63 / 40},
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 84 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
+        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
-    
+
     ["reload_3008"] = {
         Source = "wet_ger",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 55 / 40},
-            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 66 / 40},	
-        },	
-		IKTimeLine = {
+            -- {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 66 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_empty_3008"] = {
         Source = "dry_ger",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 55 / 40},
-            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 66 / 40},			
-            {s =  "gekolt_dod/mp40_boltback.wav" ,  t = 92 / 40},	 	
-			},
-		IKTimeLine = {
+            -- {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 66 / 40},
+            {s =  "gekolt_dod/mp40_boltback.wav" ,  t = 92 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
 
     ["fire_mk4"] = {
-        Source = "fire_mk4",	
-		IKTimeLine = {
+        Source = "fire_mk4",
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },
-		{ t = 0.8, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
-		},
+        { t = 0.8, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },
+        },
     },
     ["fire_owen"] = {
         Source = "fire_owen",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },
-		{ t = 0.8, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },	
-		},
+        { t = 0.8, lhik = 0, rhik = 0, },{ t = 1, lhik = 1, rhik = 1, },
+        },
     },
 
     ["reload_mk4"] = {
         Source = "wet_mk4",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
-            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},	
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_empty_mk4"] = {
         Source = "dry_mk4",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
-            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},			
-            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},	 
-			},
-		IKTimeLine = {
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
-    },    
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
 
 
     ["reload_sterling"] = {
         Source = "wet_sterling",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
-            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},	
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_empty_sterling"] = {
         Source = "dry_sterling",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
-            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},			
-            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},	 
-		},
-		IKTimeLine = {
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
 
     ["reload_mk1"] = {
         Source = "wet_mk1",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},
-        },	
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_empty_mk1"] = {
         Source = "dry_mk1",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 14 / 40},
-            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},			
-            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},	 
-		},
-		IKTimeLine = {
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 48 / 40},
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 74 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
 
-    
+
     ["reload_owen"] = {
         Source = "wet_owen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 22 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 63 / 40},
-            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 70 / 40},				
-        },	
-		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
-		},			
-    },	
+            -- {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 70 / 40},
+        },
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_empty_owen"] = {
         Source = "dry_owen",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 22 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 63 / 40},
-            //{s =  "gekolt_dod/c96_clipin2.wav" ,    t = 70 / 40},				
-            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 95 / 40},	 
-			},
-		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
-		},		
+            -- {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 70 / 40},
+            {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 95 / 40},
+            },
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
+        },
     },
 
     ["reload_lmg"] = {
         Source = "wet_lmg",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
-			{s =  "gekolt_css/m249_coverup.wav" ,   t = 6 / 40},		
+            {s =  "gekolt_css/m249_coverup.wav" ,   t = 6 / 40},
             {s =  "gekolt_dod/mp40_clipout.wav" ,   t = 33 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,    t = 72 / 40},
             {s =  "gekolt_css/m249_chain.wav" ,     t = 89 / 40},
             {s =  "gekolt_css/m249_coverdown.wav" , t = 121 / 40},
-        },	
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.775, lhik = 0, rhik = 0, },{ t = 0.85, lhik = 1, rhik = 1, },	
-		},
-		MagSwapTime = 1.25
-    },	
+        { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.775, lhik = 0, rhik = 0, },{ t = 0.85, lhik = 1, rhik = 1, },
+        },
+        MagSwapTime = 1.25
+    },
     ["reload_empty_lmg"] = {
         Source = "dry_lmg",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
+        FireASAP = true,
+        MinProgress = 0.9,
         EventTable = {
             {s =  "gekolt_dod/mp40_boltback.wav" ,   t = 10 / 40},
             {s =  "gekolt_dod/mp40_clipout.wav" ,    t = 37 / 40},
             {s =  "gekolt_dod/mp40_clipin.wav" ,  t = 74 / 40},
-			{s =  "gekolt_css/m249_coverup.wav" ,   t = 95 / 40},
+            {s =  "gekolt_css/m249_coverup.wav" ,   t = 95 / 40},
             {s =  "gekolt_css/m249_chain.wav" ,     t = 108 / 40},
             {s =  "gekolt_css/m249_coverdown.wav" , t = 146 / 40},
-			},
-		IKTimeLine = {
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.05, lhik = 1, rhik = 0, },
-        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},
-		MagSwapTime = 1.25
-    },		
-	
+        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+        MagSwapTime = 1.25
+    },
+
 }

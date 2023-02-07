@@ -138,7 +138,7 @@ SWEP.Animations = {
     ["bash"] = {
         Source = {"slash", "slash2", "slash3", "bash1", "bash2", "bash3"}
     },
-	
+
 --[[    ["impact"] = {
      Source = {"slash_hit", "slash2_hit", "slash3_hit", "bash1", "bash2", "bash3"}
     },	]]

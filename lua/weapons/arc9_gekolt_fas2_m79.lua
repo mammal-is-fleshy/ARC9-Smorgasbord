@@ -149,7 +149,7 @@ SWEP.RecoilRandomSide = 0.125
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0 
+SWEP.RecoilAutoControl = 0
 
 SWEP.RecoilKick = 1.5
 
@@ -228,13 +228,13 @@ SWEP.IronSights = {
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(-10, 0, -25),
-    },	
+    },
     Magnification = 1,
     AssociatedSlot = 0, -- Attachment slot to associate the sights with. Causes RT scopes to render.
     CrosshairInSights = false,
 }
 
-SWEP.Crosshair = true
+SWEP.Crosshair = false
 
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(2, 2, 0)
@@ -305,56 +305,56 @@ SWEP.DefaultBodygroups = "000000000000000"
 SWEP.AttachmentElements = {
     ["f_mts"] = {
         Bodygroups = {{1, 2},{2, 2},{3, 2},{4, 1},{6, 2},{7, 2}},
-        AttPosMods = { [4] = { Pos = Vector(0, 0.4, 5.5), }, [3] = { Pos = Vector(0, -3.275, -1), } }				
-	},
+        AttPosMods = { [4] = { Pos = Vector(0, 0.4, 5.5), }, [3] = { Pos = Vector(0, -3.275, -1), } }
+    },
     ["f_mtss"] = {
         Bodygroups = {{1, 3},{2, 1},{3, 2},{4, 1},{6, 2},{7, 2},},
-        AttPosMods = { [3] = { Pos = Vector(0, -3.275, -1), } }			
-	},
+        AttPosMods = { [3] = { Pos = Vector(0, -3.275, -1), } }
+    },
     ["f_pirate"] = {
-        Bodygroups = {{1, 1},{2, 1},{3, 2},{6, 2},{7, 2},},	
-        AttPosMods = { [3] = { Pos = Vector(0, -3.4, -1.5), } }		
-	},
-	["f_alofs"] = {
+        Bodygroups = {{1, 1},{2, 1},{3, 2},{6, 2},{7, 2},},
+        AttPosMods = { [3] = { Pos = Vector(0, -3.4, -1.5), } }
+    },
+    ["f_alofs"] = {
         Bodygroups = {{3, 1},{5, 1},{6, 1},{7, 1}},
         AttPosMods = { [4] = { Pos = Vector(0, 1.6, 3.6), } }
-	},
-	["a_12g"] = {
-        Bodygroups = {{4, 2}},				
-	},	
-	["a_308"] = {
-        Bodygroups = {{4, 3}},				
-	},	
-	
-	["rail_top"] = {
-        Bodygroups = {{8, 1},{7, 1}},				
-	},	
-	["rail_bot"] = {
-        Bodygroups = {{3, 3}},				
-	},		
+    },
+    ["a_12g"] = {
+        Bodygroups = {{4, 2}},
+    },
+    ["a_308"] = {
+        Bodygroups = {{4, 3}},
+    },
+
+    ["rail_top"] = {
+        Bodygroups = {{8, 1},{7, 1}},
+    },
+    ["rail_bot"] = {
+        Bodygroups = {{3, 3}},
+    },
 }
 
-SWEP.Hook_ModifyBodygroups = function(wep, data) 
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("a_12g") and wep:HasElement("f_alofs") then model:SetBodygroup(5,2) end	--- shotgun bodge ---	
-    if wep:HasElement("a_308") then model:SetBodygroup(4,3) end	--- revolver bodge ---	
+    if wep:HasElement("a_12g") and wep:HasElement("f_alofs") then model:SetBodygroup(5,2) end	--- shotgun bodge ---
+    if wep:HasElement("a_308") then model:SetBodygroup(4,3) end	--- revolver bodge ---
 
-    if wep:HasElement("rail_top") and wep:HasElement("f_pirate") then model:SetBodygroup(8, 2) end	--- railing pirate ---	 
-	if wep:HasElement("rail_top") and wep:HasElement("f_pirate") then model:SetBodygroup(7, 2) end	--- railing pirate2 ---	
-    if wep:HasElement("rail_top") and wep:HasElement("f_mts") then model:SetBodygroup(8, 0) end	--- railing mts ---	 	
-	if wep:HasElement("rail_top") and wep:HasElement("f_mts") then model:SetBodygroup(7, 2) end	--- railing mts2 ---
-    if wep:HasElement("rail_top") and wep:HasElement("f_mtss") then model:SetBodygroup(8, 0) end	--- railing mtss ---	 	
-	if wep:HasElement("rail_top") and wep:HasElement("f_mtss") then model:SetBodygroup(7, 2) end	--- railing mtss2 ---		
-	
-    if wep:HasElement("rail_bot") and wep:HasElement("f_alofs") then model:SetBodygroup(3,4) end	--- railing alofs ---	
-    if wep:HasElement("rail_bot") and wep:HasElement("f_mts") then model:SetBodygroup(3,5) end	--- railing mts ---		
+    if wep:HasElement("rail_top") and wep:HasElement("f_pirate") then model:SetBodygroup(8, 2) end	--- railing pirate ---
+    if wep:HasElement("rail_top") and wep:HasElement("f_pirate") then model:SetBodygroup(7, 2) end	--- railing pirate2 ---
+    if wep:HasElement("rail_top") and wep:HasElement("f_mts") then model:SetBodygroup(8, 0) end	--- railing mts ---
+    if wep:HasElement("rail_top") and wep:HasElement("f_mts") then model:SetBodygroup(7, 2) end	--- railing mts2 ---
+    if wep:HasElement("rail_top") and wep:HasElement("f_mtss") then model:SetBodygroup(8, 0) end	--- railing mtss ---
+    if wep:HasElement("rail_top") and wep:HasElement("f_mtss") then model:SetBodygroup(7, 2) end	--- railing mtss2 ---
+
+    if wep:HasElement("rail_bot") and wep:HasElement("f_alofs") then model:SetBodygroup(3,4) end	--- railing alofs ---
+    if wep:HasElement("rail_bot") and wep:HasElement("f_mts") then model:SetBodygroup(3,5) end	--- railing mts ---
 end
 
-SWEP.Hook_TranslateAnimation = function(wep, anim) 
-	
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+
     if wep:HasElement("rail_bot") and wep:HasElement("f_alofs") then
-		return anim .. "_grip"		
-    end	
+        return anim .. "_grip"
+    end
 
 end
 
@@ -363,42 +363,42 @@ SWEP.Attachments = {
         PrintName = "Frame",
         DefaultName = "Standard Frame",
 
-        Category = "fas2_m79_frame", 
+        Category = "fas2_m79_frame",
         Bone = "W_Main",
         Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Ammo",
         DefaultName = "40mm",
-		ExcludeElements = {"pre_ammo"},
-		
-        Category = "fas2_m79_ammo", 
+        ExcludeElements = {"pre_ammo"},
+
+        Category = "fas2_m79_ammo",
         Bone = "W_Main",
         Pos = Vector(0, 0, -4),
-        Ang = Angle(0, 0, 0),		
-    },	
+        Ang = Angle(0, 0, 0),
+    },
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"rail_top"},
+        InstalledElements = {"rail_top"},
 
-        Category = {"optic_css", "optic_css_free"}, 
+        Category = {"optic_css", "optic_css_free"},
         Bone = "W_Break",
         Pos = Vector(0, -3.4, -0.5),
-        Ang = Angle(90, 0, -90),		
-    },		
+        Ang = Angle(90, 0, -90),
+    },
     {
         PrintName = "Foregrip",
         DefaultName = "None",
-		InstalledElements = {"rail_bot"},
+        InstalledElements = {"rail_bot"},
 
-		ExcludeElements = {"nogrip"},
-        Category = {"grip_css"}, 
+        ExcludeElements = {"nogrip"},
+        Category = {"grip_css"},
         Bone = "W_Break",
         Pos = Vector(0, 0.75, 3.6),
-        Ang = Angle(90, 0, -90),			
-    },	
+        Ang = Angle(90, 0, -90),
+    },
 }
 
 SWEP.BulletBones = {
@@ -413,39 +413,39 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         Mult = 1,
-        EventTable = {		
-            {s =  "gekolt_css_foley/draw_smg.wav" ,   t = 0 / 40},		
-        },			
-	},
+        EventTable = {
+            {s =  "gekolt_css_foley/draw_smg.wav" ,   t = 0 / 40},
+        },
+    },
     ["holster"] = {
         Source = "idle",
-		Time = 0
-    },	
+        Time = 0
+    },
     ["fire"] = {
         Source = "fire",
-    },	
+    },
     ["fire_rev"] = {
         Source = "fire_rev",
-    },		
+    },
     ["fire_iron"] = {
         Source = "fire",
-    },			
+    },
     ["reload"] = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 3 / 40},
             {s =  "gekolt_fas2/m79_remove.wav" ,   t = 11 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40}, 
-            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50/ 40},
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},			
-			{s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40},
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},
+            {s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},
         },
-		FireASAP = true,	
-		MinProgress = 0.85,		
-		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
-		},			
+        FireASAP = true,
+        MinProgress = 0.85,
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_mts"] = {
         Source = "dry_mts",
@@ -453,191 +453,191 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 3 / 40},
             {s =  "gekolt_fas2/m79_remove.wav" ,   t = 11 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40}, 
-            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50/ 40},
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},			
-			{s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40},
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},
+            {s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},
         },
-		FireASAP = true,	
-		MinProgress = 0.85,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.85,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},		
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
 
     ["reload_pirate"] = {
         Source = "dry_pirate",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
-        EventTable = {	
+        FireASAP = true,
+        MinProgress = 0.83,
+        EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 12 / 40},
             {s =  "gekolt_fas2/m79_remove.wav" ,   t = 30 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 65/ 40}, 
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 70 / 40},					
-            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 64/ 40},		
-			{s =  "gekolt_fas2/m79_close.wav" ,    t = 86 / 40},			
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 65 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 70 / 40},
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 64 / 40},
+            {s =  "gekolt_fas2/m79_close.wav" ,    t = 86 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_rev"] = {
         Source = "dry_rev",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
-        EventTable = {	
+        FireASAP = true,
+        MinProgress = 0.83,
+        EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 12 / 40},
             {s =  "gekolt_fas2/m79_remove.wav" ,   t = 30 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 65/ 40}, 
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 70 / 40},					
-            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 64/ 40},		
-			{s =  "gekolt_fas2/m79_close.wav" ,    t = 86 / 40},			
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 65 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 70 / 40},
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 64 / 40},
+            {s =  "gekolt_fas2/m79_close.wav" ,    t = 86 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
 
 
 
 
-	-- Agony --
+    -- Agony --
     ["cycle"] = {
         Source = "pump",
-        EjectAt = 17/40,
-		FireASAP = true,		
+        EjectAt = 17 / 40,
+        FireASAP = true,
         MinProgress = 25 / 40,
         EventTable = {
-            {s =  "gekolt_fas2/m79_open.wav" ,   t = 13 / 40},		
-            {s =  "gekolt_fas2/m79_remove.wav" ,   t = 15 / 40},			
-			{s =  "gekolt_fas2/m79_close.wav" ,    t = 27 / 40},
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32/ 40},		
-			
+            {s =  "gekolt_fas2/m79_open.wav" ,   t = 13 / 40},
+            {s =  "gekolt_fas2/m79_remove.wav" ,   t = 15 / 40},
+            {s =  "gekolt_fas2/m79_close.wav" ,    t = 27 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32 / 40},
+
         },
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, }, { t = 0.8, lhik = 0, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, }	},			
-    },		
+        IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, }, { t = 0.8, lhik = 0, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, }	},
+    },
     ["reload_start"] = {
         Source = "alofs_start",
-        RestoreAmmo = 1,		
+        RestoreAmmo = 1,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 20 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 24 / 40}, 
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 24 / 40},
             {s =  "gekolt_fas2/m79_insert.wav" ,    t = 25 / 40},
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 33 / 40},		
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 44/ 40},		
-        },	
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, }	},			
-    }, 
-	["reload_insert"] = {
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 33 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 44 / 40},
+        },
+        IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, }	},
+    },
+    ["reload_insert"] = {
         Source = "alofs_load",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 8 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 12 / 40}, 
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 12 / 40},
             {s =  "gekolt_fas2/m79_insert.wav" ,    t = 13 / 40},
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 21 / 40},		
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32/ 40},	
-        },	
-		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},			
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 21 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32 / 40},
+        },
+        IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},
     },
-	["reload_finish"] = {
+    ["reload_finish"] = {
         Source = "alofs_end",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.5,
+        FireASAP = true,
+        MinProgress = 0.5,
         EventTable = {
-		
-        },	
-		IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
-    },	
+
+        },
+        IKTimeLine = {	{ t = 0, lhik = 0, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},
+    },
     ["reload_start_empty"] = {
         Source = "alofs_dry",
         RestoreAmmo = 1,
-        EjectAt = 15/40,		
+        EjectAt = 15 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 3 / 40},
             {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 9 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40}, 
-            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50/ 40},
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},		
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 88 / 40},			
-			{s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},		
-		},
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},				
-    },	
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40},
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 88 / 40},
+            {s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},
+        },
+        IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, }, { t = 1, lhik = 0, rhik = 0, },	},
+    },
 
 
-	-- Agony GRIP --
+    -- Agony GRIP --
     ["cycle_grip"] = {
         Source = "pump",
-        EjectAt = 15/40,
-		FireASAP = true,		
+        EjectAt = 15 / 40,
+        FireASAP = true,
         MinProgress = 25 / 40,
         EventTable = {
-            {s =  "gekolt_fas2/m79_open.wav" ,   t = 13 / 40},		
-            {s =  "gekolt_fas2/m79_remove.wav" ,   t = 15 / 40},			
-			{s =  "gekolt_fas2/m79_close.wav" ,    t = 27 / 40},
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32/ 40},		
-			
+            {s =  "gekolt_fas2/m79_open.wav" ,   t = 13 / 40},
+            {s =  "gekolt_fas2/m79_remove.wav" ,   t = 15 / 40},
+            {s =  "gekolt_fas2/m79_close.wav" ,    t = 27 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32 / 40},
+
         },
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 1, rhik = 0, }, { t = 0.8, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, }	},			
-    },		
+        IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 1, rhik = 0, }, { t = 0.8, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, }	},
+    },
     ["reload_start_grip"] = {
         Source = "alofs_start",
-        RestoreAmmo = 1,		
+        RestoreAmmo = 1,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 20 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 24 / 40}, 
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 24 / 40},
             {s =  "gekolt_fas2/m79_insert.wav" ,    t = 25 / 40},
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 33 / 40},		
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 44/ 40},		
-        },	
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 0, }	},			
-    }, 
-	["reload_insert_grip"] = {
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 33 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 44 / 40},
+        },
+        IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 0, }	},
+    },
+    ["reload_insert_grip"] = {
         Source = "alofs_load",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 8 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 12 / 40}, 
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 12 / 40},
             {s =  "gekolt_fas2/m79_insert.wav" ,    t = 13 / 40},
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 21 / 40},		
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32/ 40},	
-        },	
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 0, },	},			
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 21 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 32 / 40},
+        },
+        IKTimeLine = {	{ t = 0, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 0, },	},
     },
-	["reload_finish_grip"] = {
+    ["reload_finish_grip"] = {
         Source = "alofs_end",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.5,
+        FireASAP = true,
+        MinProgress = 0.5,
         EventTable = {
-		
-        },	
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},			
-    },	
+
+        },
+        IKTimeLine = {	{ t = 0, lhik = 1, rhik = 0, }, { t = 0.5, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }	},
+    },
     ["reload_start_grip_empty"] = {
         Source = "alofs_dry",
         RestoreAmmo = 1,
-        EjectAt = 15/40,		
+        EjectAt = 15 / 40,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 3 / 40},
             {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 9 / 40},
-            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40}, 
-            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50/ 40},
-			{s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},		
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 88 / 40},			
-			{s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},		
-		},
-		IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 0, },	},				
-    },		
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40},
+            {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,   t = 88 / 40},
+            {s =  "gekolt_fas2/m79_close.wav" ,    t = 83 / 40},
+        },
+        IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 0, },	},
+    },
 }

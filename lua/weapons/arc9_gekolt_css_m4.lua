@@ -118,7 +118,7 @@ SWEP.RecoilKickMultRecoil = 1.015
 
 -------------------------- SPREAD
 
-SWEP.Spread = 0.001
+SWEP.Spread = 0.0015
 
 SWEP.SpreadAddRecoil = 0.0006 -- Applied per unit of recoil.
 SWEP.SpreadMultRecoil = 1.05
@@ -197,7 +197,7 @@ SWEP.IronSights = {
     CrosshairInSights = false
 }
 
-SWEP.Crosshair = true
+SWEP.Crosshair = false
 
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(3, 2, -0.5)

@@ -110,7 +110,7 @@ SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
-SWEP.RecoilAutoControl = 0 
+SWEP.RecoilAutoControl = 0
 
 SWEP.RecoilKick = 2
 
@@ -190,7 +190,7 @@ SWEP.IronSights = {
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(-10, 0, -25),
-    },	
+    },
     Magnification = 1,
     AssociatedSlot = 0, -- Attachment slot to associate the sights with. Causes RT scopes to render.
     CrosshairInSights = false,
@@ -223,7 +223,7 @@ SWEP.CustomizePos = Vector(16.25, 32, 4)
 SWEP.CustomizeSnapshotFOV = 90
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeRotateAnchor = Vector(16.5, -3, -3.23) 
+SWEP.CustomizeRotateAnchor = Vector(16.5, -3, -3.23)
 
 -------------------------- HoldTypes
 
@@ -263,38 +263,38 @@ SWEP.DefaultBodygroups = "0000000000"
 SWEP.AttachmentElements = {
     ["awp_f_howell"] = {
         Bodygroups = {{0, 2}},
-        AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 3.25, 11.5), },	[6] = { Pos = Vector(1.15, 1.25, 13), },	[7] = { Pos = Vector(-1.35, 1.25, 13), } }			
-	},
-	
+        AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 3.25, 11.5), },	[6] = { Pos = Vector(1.15, 1.25, 13), },	[7] = { Pos = Vector(-1.35, 1.25, 13), } }
+    },
+
     ["awp_s_smg"] = {Bodygroups = {{2, 1}},},
     ["awp_s_no"] = {Bodygroups = { {2, 2}},},
-	["awp_s_short"] = {Bodygroups = { {2, 3}},},
-	
+    ["awp_s_short"] = {Bodygroups = { {2, 3}},},
+
     ["rail_bot"] = {Bodygroups = {{3, 1}},},
     ["rail_side"] = {Bodygroups = { {4, 1}},},
-	["rail_top"] = {Bodygroups = { {5, 1}},},	
+    ["rail_top"] = {Bodygroups = { {5, 1}},},
 
     ["awp_f_smg"] = {
-        Bodygroups = {{0, 1},{1, 1}},			
-		AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 3.4, 9), },	[6] = { Pos = Vector(1.15, 1.25, 10), },	[7] = { Pos = Vector(-1.35, 1.25, 10), },	[9] = { Pos = Vector(0, 2.25, 6), } }			
-	},	
+        Bodygroups = {{0, 1},{1, 1}},
+        AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 3.4, 9), },	[6] = { Pos = Vector(1.15, 1.25, 10), },	[7] = { Pos = Vector(-1.35, 1.25, 10), },	[9] = { Pos = Vector(0, 2.25, 6), } }
+    },
     ["awp_f_sd"] = {
-        Bodygroups = {{0, 4}},			
-	},	
+        Bodygroups = {{0, 4}},
+    },
 }
 
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local model = data.model	
-	if wep.Attachments[3].Installed then model:SetBodygroup(1,3) end		
-	if wep.Attachments[3].Installed and wep:HasElement("awp_f_smg") then model:SetBodygroup(1,4) end	
+    local model = data.model
+    if wep.Attachments[3].Installed then model:SetBodygroup(1,3) end
+    if wep.Attachments[3].Installed and wep:HasElement("awp_f_smg") then model:SetBodygroup(1,4) end
 
-	if wep:HasElement("rail_bot") and wep:HasElement("awp_f_smg") then model:SetBodygroup(3,3) end	
-	if wep:HasElement("rail_side") and wep:HasElement("awp_f_smg") then model:SetBodygroup(4,3) end	
+    if wep:HasElement("rail_bot") and wep:HasElement("awp_f_smg") then model:SetBodygroup(3,3) end
+    if wep:HasElement("rail_side") and wep:HasElement("awp_f_smg") then model:SetBodygroup(4,3) end
 
-	if wep:HasElement("rail_bot") and wep:HasElement("awp_f_howell") then model:SetBodygroup(3,2) end	
-	if wep:HasElement("rail_side") and wep:HasElement("awp_f_howell") then model:SetBodygroup(4,2) end	
-	if wep:HasElement("rail_top") and wep:HasElement("awp_f_howell") then model:SetBodygroup(5,2) end		
+    if wep:HasElement("rail_bot") and wep:HasElement("awp_f_howell") then model:SetBodygroup(3,2) end
+    if wep:HasElement("rail_side") and wep:HasElement("awp_f_howell") then model:SetBodygroup(4,2) end
+    if wep:HasElement("rail_top") and wep:HasElement("awp_f_howell") then model:SetBodygroup(5,2) end
 end
 
 SWEP.Attachments = {
@@ -302,97 +302,97 @@ SWEP.Attachments = {
         PrintName = "Frame",
         DefaultName = "Bolt Action Frame",
 
-        Category = "css_awp_frame", 
+        Category = "css_awp_frame",
         Bone = "W_Main",
         Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Stock",
         DefaultName = "Polymer Stock",
 
-        Category = "css_awp_stock", 
+        Category = "css_awp_stock",
         Bone = "W_Main",
         Pos = Vector(0, 2, -10),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Optic",
         DefaultName = "None",
 
-        Category = {"optic_css"}, 
+        Category = {"optic_css"},
         Bone = "W_Main",
         Pos = Vector(0, -1, 4),
-        Ang = Angle(90, 0, -90),		
-    },	
+        Ang = Angle(90, 0, -90),
+    },
     {
         PrintName = "Muzzle",
         DefaultName = "None",
 
-		ExcludeElements = {"pre_muzzed"},
-        Category = {"muzzle_css"}, 
+        ExcludeElements = {"pre_muzzed"},
+        Category = {"muzzle_css"},
         Bone = "W_Main",
         Pos = Vector(0, 0.1, 30),
-        Ang = Angle(90, 0, -90),		
-    },		
+        Ang = Angle(90, 0, -90),
+    },
     {
         PrintName = "Foregrip",
         DefaultName = "None",
-		InstalledElements = {"rail_bot", "optic_css_free"}, 		
+        InstalledElements = {"rail_bot", "optic_css_free"},
 
-		ExcludeElements = {"nogrip"},
-        Category = {"grip_css", "optic_css_free"}, 
+        ExcludeElements = {"nogrip"},
+        Category = {"grip_css", "optic_css_free"},
         Bone = "W_Main",
         Pos = Vector(0, 3.25, 12),
         Ang = Angle(90, 0, -90),
-		MergeSlots = {9}	
-    },	
-	
+        MergeSlots = {9}
+    },
+
     {
         PrintName = "MOUNT Left",
         Category = {"mountr_css", "optic_css_free"},
-		InstalledElements = {"rail_side"}, 		
+        InstalledElements = {"rail_side"},
 
-        Bone = "W_Main",		
+        Bone = "W_Main",
         Pos = Vector(1.15, 1.25, 15),
         Ang = Angle(90, 0, 180),
         ExtraSightDistance = 10,
-        Icon_Offset = Vector(1, 0, 0)			
-    },	
+        Icon_Offset = Vector(1, 0, 0)
+    },
 
     {
         PrintName = "MOUNT Right",
         Category = {"mountl_css", "optic_css_free"},
-		InstalledElements = {"rail_side"}, 		
+        InstalledElements = {"rail_side"},
 
-        Bone = "W_Main",			
+        Bone = "W_Main",
         Pos = Vector(-1.35, 1.25, 15),
         Ang = Angle(90, 0, 0),
         ExtraSightDistance = 10,
-        Icon_Offset = Vector(-2, 0, 0)			
-    },		
+        Icon_Offset = Vector(-2, 0, 0)
+    },
     {
         PrintName = "Mount Top",
         DefaultName = "None",
-		InstalledElements = {"rail_top"}, 		
+        InstalledElements = {"rail_top"},
 
-		ExcludeElements = {"notop"},
-        Category = {"tac_css_flat", "mount_css", "optic_css_free"}, 
+        ExcludeElements = {"notop"},
+        Category = {"tac_css_flat", "mount_css", "optic_css_free"},
         Bone = "W_Main",
         Pos = Vector(0, -0.9, 13),
-        Ang = Angle(90, 0, -90),			
+        Ang = Angle(90, 0, -90),
     },
-	
+
     {   -- permanent ubgl, unaffected by the changes of the above attachment
-		PrintName = "",
-		DefaultName = "",
-		Hidden = true,
-		Category = {"css_ubgl"}, 
-		RequireElements = {"ubgl_maghold"},
-		Bone = "W_Main",
-		Pos = Vector(0, 2.25, 7.5),
-		Ang = Angle(90, 0, -90),				
-    },			
+        PrintName = "",
+        DefaultName = "",
+        Hidden = true,
+        Category = {"css_ubgl"},
+        RequireElements = {"ubgl_maghold"},
+        Bone = "W_Main",
+        Pos = Vector(0, 2.25, 7.5),
+        Ang = Angle(90, 0, -90),
+    },
 }
 
 SWEP.Animations = {
@@ -401,96 +401,96 @@ SWEP.Animations = {
      },
     ["draw"] = {
         Source = "draw",
-        EventTable = {		
-            {s =  "gekolt_css_foley/draw_rif2.wav" ,   t = 0 / 40},		
-        },	
-	},
+        EventTable = {
+            {s =  "gekolt_css_foley/draw_rif2.wav" ,   t = 0 / 40},
+        },
+    },
     ["holster"] = {
         Source = "idle",
-     },	
+     },
 
     ["fire_cycle"] = {
         Source = "fire",
     },
-	
+
     ["fire"] = {
         Source = "fire_full",
-		EjectAt = 32/40,
-        EventTable = {
-            {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
-            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
-        },		
-		FireASAP = true,
-		MinProgress = 0.83,		
-    },	
-    ["fire_iron"] = {
-        Source = "fire_full",
-		EjectAt = 32/40,		
-		MinProgress = 0.05,
+        EjectAt = 32 / 40,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
-        },		
-    },		
+        },
+        FireASAP = true,
+        MinProgress = 0.83,
+    },
+    ["fire_iron"] = {
+        Source = "fire_full",
+        EjectAt = 32 / 40,
+        MinProgress = 0.05,
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
+        },
+    },
     ["fire_empty"] = {
         Source = "fire",
-		MinProgress = 0.05,
-    },	
+        MinProgress = 0.05,
+    },
     ["fire_iron_empty"] = {
         Source = "fire",
-		MinProgress = 0.05,
-    },		
+        MinProgress = 0.05,
+    },
 
 
 
     ["fire_smg"] = {
         Source = "fire_smg",
-		MinProgress = 0.05,
-        EjectAt = 1/40,			
-    },	
+        MinProgress = 0.05,
+        EjectAt = 1 / 40,
+    },
     ["fire_empty_smg"] = {
         Source = "fire_smg",
-		MinProgress = 0.05,
-        EjectAt = 1/40,			
-    },	
+        MinProgress = 0.05,
+        EjectAt = 1 / 40,
+    },
     ["fire_iron_smg"] = {
         Source = "fire_iron_smg",
-		MinProgress = 0.05,
-        EjectAt = 1/40,			
-    },		
-	
+        MinProgress = 0.05,
+        EjectAt = 1 / 40,
+    },
+
     ["fire_br"] = {
         Source = "fire_br",
-		MinProgress = 0.05,
-		Mult =1,
-        EjectAt = 1/40,
-        EventTable = {			
+        MinProgress = 0.05,
+        Mult = 1,
+        EjectAt = 1 / 40,
+        EventTable = {
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 0 / 40},
-        },		
-    },	
+        },
+    },
     ["fire_iron_br"] = {
         Source = "fire_br_iron",
-		MinProgress = 0.05,
-		Mult =1,
-        EjectAt = 1/40,		
-        EventTable = {			
+        MinProgress = 0.05,
+        Mult = 1,
+        EjectAt = 1 / 40,
+        EventTable = {
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 0 / 40},
-        },			
-    },		
+        },
+    },
     ["fire_empty_br"] = {
         Source = "fire_br",
-		MinProgress = 0.05,
-		Mult =1,
-        EjectAt = 1/40,		
-        EventTable = {			
+        MinProgress = 0.05,
+        Mult = 1,
+        EjectAt = 1 / 40,
+        EventTable = {
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 0 / 40},
-        },			
-    },		
-	
-	
-	
+        },
+    },
+
+
+
     -- AWP --
 
     ["reload"] = {
@@ -500,52 +500,52 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/awp_clipin.wav" ,    t = 50 / 40},
         },
-		FireASAP = true,
-		MinProgress = 0.83,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_empty"] = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
-		EjectAt = 120/40,		
+        FireASAP = true,
+        MinProgress = 0.9,
+        EjectAt = 120 / 40,
         EventTable = {
             {s =  "gekolt_css/awp_clipout.wav" ,   t = 20 / 40},
-            {s =  "gekolt_css/awp_clipin.wav" ,    t = 60 / 40},		
+            {s =  "gekolt_css/awp_clipin.wav" ,    t = 60 / 40},
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 105 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 112 / 40},			
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 112 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 125 / 40},
-        },			
-    },	
-	
+        },
+    },
+
     -- AX50 --
-	
+
     ["fire_sd"] = {
         Source = "fire_full_sd",
-		EjectAt = 15/40,
+        EjectAt = 15 / 40,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 9 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},			
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 18 / 40},
-        },		
-		FireASAP = true,
-		MinProgress = 0.83,		
-    },	
+        },
+        FireASAP = true,
+        MinProgress = 0.83,
+    },
     ["fire_iron_sd"] = {
         Source = "fire_full_sd",
-		EjectAt = 15/40,
+        EjectAt = 15 / 40,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 9 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},			
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 18 / 40},
-        },		
-		FireASAP = true,
-		MinProgress = 0.83,		
-    },	
+        },
+        FireASAP = true,
+        MinProgress = 0.83,
+    },
     ["reload_sd"] = {
         Source = "wet_sd",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
@@ -553,30 +553,30 @@ SWEP.Animations = {
             {s =  "gekolt_css/awp_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/awp_clipin.wav" ,    t = 48 / 40},
         },
-		FireASAP = true,
-		MinProgress = 0.83,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_empty_sd"] = {
         Source = "dry_sd",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.9,
-		EjectAt = 100/40,
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.9,
+        EjectAt = 100 / 40,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.6, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 1, rhik = 1, },
+        },
         EventTable = {
             {s =  "gekolt_css/awp_clipout.wav"	,	t = 10 / 40},
-            {s =  "gekolt_css/awp_clipin.wav"	,	t = 48 / 40},		
+            {s =  "gekolt_css/awp_clipin.wav"	,	t = 48 / 40},
             {s =  "gekolt_css/awp_boltup.wav"	,	t = 72 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,	t = 79 / 40},			
+            {s =  "gekolt_css/awp_boltpull.wav" ,	t = 79 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,	t = 82 / 40},
-        },			
+        },
     },
 
     -- BR --
@@ -584,67 +584,67 @@ SWEP.Animations = {
     ["reload_br"] = {
         Source = "wet_br",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
+        FireASAP = true,
+        MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/ak47_clipout.wav" ,	t = 10 / 40},
             {s =  "gekolt_css/ak47_clipin1.wav" ,	t = 58 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,	t = 62 / 40},			
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_css/ak47_clipin2.wav" ,	t = 62 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_empty_br"] = {
         Source = "dry_br",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.86,
+        FireASAP = true,
+        MinProgress = 0.86,
         EventTable = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 58 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 62 / 40},	
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 100 / 40},	
-            {s =  "gekolt_css/awp_boltup.wav" ,   t = 101 / 40},		
-            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 109 / 40},			
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 110 / 40},	
-			},
-		IKTimeLine = {
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 62 / 40},
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 100 / 40},
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 101 / 40},
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 109 / 40},
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 110 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.55, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },
-		},				
-    },	
+        },
+    },
     -- SMG --
 
     ["reload_smg"] = {
         Source = "wet_smg",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.85,
+        FireASAP = true,
+        MinProgress = 0.85,
         EventTable = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/mp5_clipin.wav" ,    t = 58 / 40},
-        },	
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_empty_smg"] = {
         Source = "dry_smg",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
+        FireASAP = true,
+        MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/mp5_clipin.wav" ,    t = 58 / 40},
-            {s =  "gekolt_css/mp5_slide.wav" ,    t = 75 / 40},				
-            {s =  "gekolt_css/mp5_slideback.wav" ,    t = 85 / 40},	
-			},
-		IKTimeLine = {
+            {s =  "gekolt_css/mp5_slide.wav" ,    t = 75 / 40},
+            {s =  "gekolt_css/mp5_slideback.wav" ,    t = 85 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
-    },		
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
 }

@@ -42,7 +42,7 @@ SWEP.BottomlessClip = true
 SWEP.ClipSize = 3
 SWEP.ChamberSize = 0
 SWEP.SupplyLimit = 1
-SWEP.Crosshair = true
+SWEP.Crosshair = false
 
 -------------------------- ENTITY LAUNCHING
 
@@ -122,7 +122,7 @@ SWEP.CustomizeSnapshotFOV = 110
 SWEP.CrouchPos = Vector(0, -3, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
-SWEP.CustomizeRotateAnchor = Vector(10.5, -10, -4) 
+SWEP.CustomizeRotateAnchor = Vector(10.5, -10, -4)
 -------------------------- HoldTypes
 
 SWEP.HoldType = "knife"
@@ -142,7 +142,7 @@ SWEP.BlindFirePos = Vector(-2, -5, 5)
 SWEP.BlindFireAng = Angle(0, 10, -20)
 
 
-// theres no grenade base yet  --- before 22/11/08
+-- theres no grenade base yet  --- before 22/11/08
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
@@ -155,27 +155,27 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-		FireASAP = true,
-		MinProgress = 0.35,	
-        EventTable = {		
+        FireASAP = true,
+        MinProgress = 0.35,
+        EventTable = {
             {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 1 / 40},
-            {s =  "gekolt_css/clay/pinpull.wav" ,   t = 15 / 40},			
-        },			
+            {s =  "gekolt_css/clay/pinpull.wav" ,   t = 15 / 40},
+        },
     },
     ["throw"] = {
         Source = "throw",
-        EventTable = {		
-            {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 1 / 40},		
-        },			
+        EventTable = {
+            {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 1 / 40},
+        },
     },
     ["draw_empty"] = {
-        Source = "idle_empty",	
+        Source = "idle_empty",
     },
     ["pullpin"] = {
         Source = {"prep"},
-		FireASAP = true,
-		MinProgress = 0.4,			
-    }, 	
+        FireASAP = true,
+        MinProgress = 0.4,
+    },
     ["holster"] = {
         Source = "idle",
     },

@@ -189,13 +189,13 @@ SWEP.IronSights = {
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(-10, 60, -25),
-    },	
+    },
     Magnification = 1,
     AssociatedSlot = 0, -- Attachment slot to associate the sights with. Causes RT scopes to render.
     CrosshairInSights = false,
 }
 
-SWEP.Crosshair = true
+SWEP.Crosshair = false
 
 SWEP.SprintAng = Angle(10, -15, -10)
 SWEP.SprintPos = Vector(0, 2, 0)
@@ -261,38 +261,38 @@ SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
     ["f_auto"] = {
-        Bodygroups = {{3, 1},{2, 3}},			
-		AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
-	},
+        Bodygroups = {{3, 1},{2, 3}},
+        AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
+    },
     ["f_burst"] = {
-        Bodygroups = {{3, 2},{1, 1},{2, 3},{0, 3}},	
-		AttPosMods = { [3] = { Pos = Vector(0, 0, 10.25), } }		
-	},
+        Bodygroups = {{3, 2},{1, 1},{2, 3},{0, 3}},
+        AttPosMods = { [3] = { Pos = Vector(0, 0, 10.25), } }
+    },
     ["f_carbine"] = {
-        Bodygroups = {{3, 5},{1, 2},{2, 1},{4, 2}},		
-		AttPosMods = { [2] = { Pos = Vector(0, -1.3, -4.75), },  [3] = { Pos = Vector(0, 0, 9.25), } }		
-	},
+        Bodygroups = {{3, 5},{1, 2},{2, 1},{4, 2}},
+        AttPosMods = { [2] = { Pos = Vector(0, -1.3, -4.75), },  [3] = { Pos = Vector(0, 0, 9.25), } }
+    },
     ["f_artillery"] = {
-        Bodygroups = {{3, 6},{1, 2},{2, 1},{5, 2}},				
-		AttPosMods = { [3] = { Pos = Vector(0, 0, 15.75), } }				
-	},		
+        Bodygroups = {{3, 6},{1, 2},{2, 1},{5, 2}},
+        AttPosMods = { [3] = { Pos = Vector(0, 0, 15.75), } }
+    },
     ["f_sd"] = {
-        Bodygroups = {{3, 4},{1, 2}},				
-	},
+        Bodygroups = {{3, 4},{1, 2}},
+    },
     ["f_p38"] = {
-        Bodygroups = {{3, 3},{1, 2}},				
-	},	
+        Bodygroups = {{3, 3},{1, 2}},
+    },
     ["f_welrod"] = {
-        Bodygroups = {{3, 4},{1, 3},{2, 2},{0, 1}},				
-	},
+        Bodygroups = {{3, 4},{1, 3},{2, 2},{0, 1}},
+    },
 
     ["g_1"] = { Bodygroups = {{6, 1}}, },
-    ["s_1"] = { Bodygroups = {{5, 1}}, },	
+    ["s_1"] = { Bodygroups = {{5, 1}}, },
 
-    ["akimbose"] = { 
-		SprintPosOverride = Vector(0, 2, -3),
-		SprintAngOverride = Angle(0, 18, 0),
-	},	
+    ["akimbose"] = {
+        SprintPosOverride = Vector(0, 2, -3),
+        SprintAngOverride = Angle(0, 18, 0),
+    },
 }
 
 SWEP.Attachments = {
@@ -300,65 +300,65 @@ SWEP.Attachments = {
         PrintName = "Frame",
         DefaultName = "Standard Frame",
 
-        Category = "css_m9_frame", 
+        Category = "css_m9_frame",
         Bone = "W_Main",
         Pos = Vector(0, 3, -0.5),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"has_optic"},		
-		
-		ExcludeElements = {"pre_optic"},
-        Category = {"optic_css_s"}, 
+        InstalledElements = {"has_optic"},
+
+        ExcludeElements = {"pre_optic"},
+        Category = {"optic_css_s"},
         Bone = "W_Main",
         Pos = Vector(0, -1.1, 2),
-        Ang = Angle(90, 0, -90),		
-    },	
+        Ang = Angle(90, 0, -90),
+    },
     {
         PrintName = "Muzzle",
         DefaultName = "None",
 
-		ExcludeElements = {"pre_muzzed"},
-        Category = {"muzzle_css"}, 
+        ExcludeElements = {"pre_muzzed"},
+        Category = {"muzzle_css"},
         Bone = "W_Main",
         Pos = Vector(0, 0, 6),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),
     },
-	
+
     {
         PrintName = "Off-Hand",
         DefaultName = "None",
-		InstalledElements = {"akimbo"},		
+        InstalledElements = {"akimbo"},
 
-		ExcludeElements = {"akantbo"},
-        Category = {"css_akimbo"}, 
+        ExcludeElements = {"akantbo"},
+        Category = {"css_akimbo"},
         Bone = "Akimbo_Base",
         Pos = Vector(0, 0, 0),
-        Ang = Angle(90, 0, -90),		
-    },		
+        Ang = Angle(90, 0, -90),
+    },
 }
 
-SWEP.Hook_TranslateAnimation = function(wep, anim) 
+SWEP.Hook_TranslateAnimation = function(wep, anim)
 
-	-- att add _[attachment] + this replace animala with _akimbo   >   replace animala with _akimbo_[attachment]???   HOW DOES LOGIC WORK?
+    -- att add _[attachment] + this replace animala with _akimbo   >   replace animala with _akimbo_[attachment]???   HOW DOES LOGIC WORK?
 
     if wep:HasElement("akimbo") then
-    		if anim == "reload" then  return "reload_akimbo" end
-    		if anim == "reload_empty" then  return "reload_empty_akimbo" end
-			if anim == "reload_akimbo_p38" then  return "reload_akimbo" end
-    		if anim == "reload_empty_akimbo_p38" then  return "reload_empty_akimbo" end
-			if anim == "reload_akimbo_ex" then  return "reload_akimbo" end
-    		if anim == "reload_empty_akimbo_ex" then  return "reload_empty_akimbo" end
-    end	
+            if anim == "reload" then  return "reload_akimbo" end
+            if anim == "reload_empty" then  return "reload_empty_akimbo" end
+            if anim == "reload_akimbo_p38" then  return "reload_akimbo" end
+            if anim == "reload_empty_akimbo_p38" then  return "reload_empty_akimbo" end
+            if anim == "reload_akimbo_ex" then  return "reload_akimbo" end
+            if anim == "reload_empty_akimbo_ex" then  return "reload_empty_akimbo" end
+    end
 end
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)  
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-	if wep:HasElement("has_optic") then model:SetBodygroup(4,1) end	
-    if wep:HasElement("has_optic") and wep:HasElement("f_carbine") then model:SetBodygroup(4,3) end 
-    if wep:HasElement("has_optic") and wep:HasElement("f_artillery") then model:SetBodygroup(4,4) end 	
+    if wep:HasElement("has_optic") then model:SetBodygroup(4,1) end
+    if wep:HasElement("has_optic") and wep:HasElement("f_carbine") then model:SetBodygroup(4,3) end
+    if wep:HasElement("has_optic") and wep:HasElement("f_artillery") then model:SetBodygroup(4,4) end
 end
 
 SWEP.Animations = {
@@ -367,331 +367,331 @@ SWEP.Animations = {
     },
     ["idle_empty"] = {
         Source = "idle_emp",
-    },	 
+    },
     ["draw"] = {
         Source = "draw",
-        EventTable = {		
-            {s =  "gekolt_css_foley/draw_pist.wav" ,   t = 0 / 40},		
-        },			
-	},
+        EventTable = {
+            {s =  "gekolt_css_foley/draw_pist.wav" ,   t = 0 / 40},
+        },
+    },
     ["draw_empty"] = {
-        Source = "draw_emp", -- QC sequence source, can be {"table", "of", "strings"} or "string" 
-		--Time = 0.5, -- overrides the duration of the sequence
+        Source = "draw_emp", -- QC sequence source, can be {"table", "of", "strings"} or "string"
+        --Time = 0.5, -- overrides the duration of the sequence
         Mult = 1, -- multiplies time
         EventTable = {
             {s =  "gekolt_css/elite_twirl.wav" ,   t = 1 / 40},
-        },			
-	},	
+        },
+    },
     ["holster"] = {
         Source = "idle",
-		Time = 0
-    },	
+        Time = 0
+    },
     ["holster_empty"] = {
         Source = "idle_emp",
-		Time = 0		
-    },	
+        Time = 0
+    },
     ["fire"] = {
-        Source = "fire",	
-    },	
+        Source = "fire",
+    },
     ["fire_iron"] = {
-        Source = "fire_iron",	
-    },		
+        Source = "fire_iron",
+    },
     ["fire_empty"] = {
-        Source = "fire_emp",	
-    },	
+        Source = "fire_emp",
+    },
     ["fire_iron_empty"] = {
         Source = "fire_iron_emp",
-    },			
+    },
 
     ["reload"] = {
         Source = "wet",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.85,
+        FireASAP = true,
+        MinProgress = 0.85,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
-        },	
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_empty"] = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.85,
+        FireASAP = true,
+        MinProgress = 0.85,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},					
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 57 / 40},	
-			},
-		IKTimeLine = {
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 57 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
-		},				
-    },		
-	
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
+        },
+    },
+
 
     ["reload_p38"] = {
         Source = "wet",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.8,
+        FireASAP = true,
+        MinProgress = 0.8,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
-        },	
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-    },	
+        { t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_empty_p38"] = {
         Source = "dry_p38",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.8,
+        FireASAP = true,
+        MinProgress = 0.8,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},					
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 55 / 40},	
-			},
-		IKTimeLine = {
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 55 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},				
-    },		
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+    },
 
 
     -- Carbine --
     ["fire_carbine"] = {
-        Source = "fire_carbine",	
+        Source = "fire_carbine",
     },
     ["fire_empty_carbine"] = {
-        Source = "fire_carbine_emp",		
-    },		
+        Source = "fire_carbine_emp",
+    },
 
     ["reload_carbine"] = {
         Source = "wet_carbine",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
+        FireASAP = true,
+        MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},						
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_empty_carbine"] = {
         Source = "dry_carbine",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.92,
+        FireASAP = true,
+        MinProgress = 0.92,
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},				
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},
             {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 113 / 40},
-			},
-		IKTimeLine = {
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
-		},				
-    },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
+        },
+    },
 
     -- Artillery --
     ["fire_artillery"] = {
-        Source = "fire_carbine",	
+        Source = "fire_carbine",
     },
     ["fire_empty_artillery"] = {
-        Source = "fire_carbine_emp",		
-    },		
+        Source = "fire_carbine_emp",
+    },
 
     ["reload_artillery"] = {
         Source = "wet_carbine",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
+        FireASAP = true,
+        MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},						
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_empty_artillery"] = {
         Source = "dry_artillery",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.92,
+        FireASAP = true,
+        MinProgress = 0.92,
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},				
-            {s =  "gekolt_css/p228_slidepull.wav" ,    t = 100 / 40},	
-			},
-		IKTimeLine = {
+            {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},
+            {s =  "gekolt_css/p228_slidepull.wav" ,    t = 100 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
-		},				
-    },		
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
+        },
+    },
 
 
 
     ["reload_ex"] = {
         Source = "wet_ex",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
+        FireASAP = true,
+        MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},									
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_empty_ex"] = {
         Source = "dry_ex",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.86,
+        FireASAP = true,
+        MinProgress = 0.86,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 40 / 40},					
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 73 / 40},	
-			},
-		IKTimeLine = {
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 40 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 73 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
-		},				
-    },	
-	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
+        },
+    },
+
     ["reload_akimbo"] = {
         Source = "wet_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
+        FireASAP = true,
+        MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},									
-        },	
-		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},			
-    },   
-	["reload_akimbo_p38"] ={
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},
+        },
+        IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
+    },
+    ["reload_akimbo_p38"] = {
         Source = "wet_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
+        FireASAP = true,
+        MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},									
-        },	
-		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},			
-    },  
-	["reload_empty_akimbo_p38"] = {
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},
+        },
+        IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
+    },
+    ["reload_empty_akimbo_p38"] = {
         Source = "dry_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.86,
+        FireASAP = true,
+        MinProgress = 0.86,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},					
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 70 / 40},	
-			},
-		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},				
-    },	
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 70 / 40},
+            },
+        IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
+    },
     ["reload_empty_akimbo"] = {
         Source = "dry_akimbo",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.86,
+        FireASAP = true,
+        MinProgress = 0.86,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},					
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 70 / 40},	
-			},
-		IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},				
-    },		
-	
-	-- Welrod --
-	
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 70 / 40},
+            },
+        IKTimeLine = {{ t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	},
+    },
+
+    -- Welrod --
+
 
 
     ["reload_sd"] = {
         Source = "wet_sd",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.83,
+        FireASAP = true,
+        MinProgress = 0.83,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},								
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
     },
     ["reload_empty_sd"] = {
         Source = "dry_sd",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-		FireASAP = true,
-		MinProgress = 0.86,
-		EjectAt = 73/40,			
+        FireASAP = true,
+        MinProgress = 0.86,
+        EjectAt = 73 / 40,
         EventTable = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},					
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 68 / 40},	
-			},
-		IKTimeLine = {
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 68 / 40},
+            },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },	
-		},				
-    },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
+        },
+    },
 
     ["idle_empty_sd"] = {
         Source = "idle",
-    },	 
+    },
     ["draw_empty_sd"] = {
-        Source = "draw", -- QC sequence source, can be {"table", "of", "strings"} or "string" 
-		--Time = 0.5, -- overrides the duration of the sequence
+        Source = "draw", -- QC sequence source, can be {"table", "of", "strings"} or "string"
+        --Time = 0.5, -- overrides the duration of the sequence
         Mult = 1, -- multiplies time
         EventTable = {
             {s =  "gekolt_css/elite_twirl.wav" ,   t = 1 / 40},
-        },			
-	},	
+        },
+    },
     ["fire_sd"] = {
-        Source = "fire_sd",	
-		EjectAt = 36/40,		
-        EventTable = {				
-            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},	
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
-		},		
-    },	
+        Source = "fire_sd",
+        EjectAt = 36 / 40,
+        EventTable = {
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},
+        },
+    },
     ["fire_iron_sd"] = {
-        Source = "fire_sd",	
-		EjectAt = 36/40,		
-        EventTable = {				
-            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},	
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},				
-		},	
-    },		
+        Source = "fire_sd",
+        EjectAt = 36 / 40,
+        EventTable = {
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 30 / 40},
+        },
+    },
     ["fire_empty_sd"] = {
-        Source = "fire_sd_emp",		
-        EventTable = {				
-            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},			
-		},	
-    },	
+        Source = "fire_sd_emp",
+        EventTable = {
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},
+        },
+    },
     ["fire_iron_empty_sd"] = {
-        Source = "fire_sd_emp",			
-        EventTable = {				
-            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},				
-		},	
-    },				
+        Source = "fire_sd_emp",
+        EventTable = {
+            {s =  "gekolt_css/weaponclick.wav" ,    t = 16 / 40},
+        },
+    },
 }

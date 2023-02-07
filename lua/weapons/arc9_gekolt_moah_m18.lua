@@ -19,7 +19,7 @@ SWEP.Credits = {
     Author = "Geckololt",
     Contact = "SlogoKolt#6648",
     Assets = "Medal of Honor: Airborne"
-}	
+}
 
 SWEP.Description = [[The King's Guard is always ready to take out any armoured opponent
 Personnel or Mechanised.]]
@@ -207,7 +207,7 @@ SWEP.IronSights = {
     CrosshairInSights = false
 }
 
-SWEP.Crosshair = true
+SWEP.Crosshair = false
 
 SWEP.SprintAng = Angle(30, -15, -10)
 SWEP.SprintPos = Vector(3, 4, -0.5)
@@ -277,155 +277,155 @@ SWEP.Animations = {
     },
     ["enter_ubgl"] = {
         Source = "idle",
-        EventTable = { {s =  "arc9/firemode.wav" ,   t = 0 / 40}, },			
-    },  
-	["exit_ubgl"] = {
-        Source = "idle",
-        EventTable = { {s =  "arc9/firemode.wav" ,   t = 0 / 40}, },					
+        EventTable = { {s =  "arc9/firemode.wav" ,   t = 0 / 40}, },
     },
-	
+    ["exit_ubgl"] = {
+        Source = "idle",
+        EventTable = { {s =  "arc9/firemode.wav" ,   t = 0 / 40}, },
+    },
+
     ["fire_xm"] = {
         Source = {"fire_xm"},
     },
     ["fire_iron_xm"] = {
         Source = {"fire_iron_xm"},
-    },	
+    },
     ["fire_iron"] = {
         Source = {"fire"},
-    },	
+    },
     ["fire_ubgl"] = {
         Source = {"fire"},
-    },	
+    },
     ["fire_iron_ubgl"] = {
         Source = {"fire"},
-    },	
-	["reload_ubgl"] = {
+    },
+    ["reload_ubgl"] = {
         Source = "dry",
-		FireASAP = true,
-		MinProgress = 0.83,
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-        EventTable = {		
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
             {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
             {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},			
-        },			
-    },  	
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},
+        },
+    },
     ["reload"] = {
         Source = "dry",
-		FireASAP = true,
-		MinProgress = 0.83,
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-        EventTable = {		
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
             {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
             {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},			
-        },				
-    }, 
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},
+        },
+    },
     ["reload_empty"] = {
         Source = "dry",
-		FireASAP = true,
-		MinProgress = 0.9,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.9,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },				
-		},	
-        EventTable = {		
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
             {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
             {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},				
-        },			
-    },	
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},
+        },
+    },
     ["reload_rpg"] = {
         Source = "dry_rpg",
-		FireASAP = true,
-		MinProgress = 0.83,
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-        EventTable = {		
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 30 / 40},		
-            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},				
-        },				
-    }, 
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 30 / 40},
+            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},
+        },
+    },
     ["reload_empty_rpg"] = {
         Source = "dry_rpg",
-		FireASAP = true,
-		MinProgress = 0.9,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.9,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },				
-		},	
-        EventTable = {		
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 30 / 40},		
-            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},				
-        },			
-    },	
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 30 / 40},
+            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},
+        },
+    },
     ["reload_xm"] = {
         Source = "wet_xm",
-		FireASAP = true,
-		MinProgress = 0.83,
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-        EventTable = {		
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 15 / 40},
-            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},			
-        },				
-    }, 
+            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},
+        },
+    },
     ["reload_empty_xm"] = {
         Source = "dry_xm",
-		FireASAP = true,
-		MinProgress = 0.9,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.9,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },				
-		},	
-        EventTable = {		
+        { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 15 / 40},
-            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},		
-            {s =  "gekolt_css/g3sg1_slide.wav" ,    t = 85 / 40},				
-        },			
-    },	
---------------------------------------------------------	
+            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 60 / 40},
+            {s =  "gekolt_css/g3sg1_slide.wav" ,    t = 85 / 40},
+        },
+    },
+--------------------------------------------------------
     ["draw"] = {
         Source = "draw",
-        EventTable = {		
-            {s =  "gekolt_css_foley/draw_rif2.wav" ,   t = 0 / 40},		
-        },				
+        EventTable = {
+            {s =  "gekolt_css_foley/draw_rif2.wav" ,   t = 0 / 40},
+        },
     },
     ["holster"] = {
         Source = "idle",
     },
     ["idle"] = {
         Source = "idle",
-    }, 
-	["firemode"] = {
+    },
+    ["firemode"] = {
         Source = "firemode",
     },
     ["idle_empty"] = {
         Source = "idle",
-    },	
+    },
 
     ["fire_empty"] = {
-        Source = {"fire"},	
-	},
+        Source = {"fire"},
+    },
 }
 
 -------------------------- ATTACHMENTS
 
-SWEP.AttachmentElements = {		
-	["kit_xm70"] = { Bodygroups = { {3, 1}, {4, 3}, {5, 1}, {6, 2} },},
-	["kit_rpg"] = { Bodygroups = { {0, 1}, {4, 2} },},	
-	["kit_rpg2"] = { Bodygroups = { {0, 1}, {4, 1} },},
-	["rail_def"] = { Bodygroups = { {1, 2}, {2, 1} },},
+SWEP.AttachmentElements = {
+    ["kit_xm70"] = { Bodygroups = { {3, 1}, {4, 3}, {5, 1}, {6, 2} },},
+    ["kit_rpg"] = { Bodygroups = { {0, 1}, {4, 2} },},
+    ["kit_rpg2"] = { Bodygroups = { {0, 1}, {4, 1} },},
+    ["rail_def"] = { Bodygroups = { {1, 2}, {2, 1} },},
 }
 
 SWEP.Attachments = {
@@ -433,21 +433,21 @@ SWEP.Attachments = {
         PrintName = "Kit",
         DefaultName = "Standard Kit",
 
-        Category = "moah_m18_kit", 
+        Category = "moah_m18_kit",
         Bone = "W_Main",
         Pos = Vector(0, 2, 2),
-        Ang = Angle(90, 0, -90),		
-    },	
+        Ang = Angle(90, 0, -90),
+    },
 
     {
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"rail_def"}, 
+        InstalledElements = {"rail_def"},
 
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
-        Category = {"optic_css"}, 
+        Category = {"optic_css"},
         Bone = "W_Main",
         Pos = Vector(2.2, -2.25, 5.5),
-        Ang = Angle(90, 0, -90),			
+        Ang = Angle(90, 0, -90),
     },
 }
