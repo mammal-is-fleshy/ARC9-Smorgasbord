@@ -15,7 +15,7 @@ ATT.ActivateElements = {"up_proto", "keep_rs"}
 ATT.ShootSound = "gekolt_css/sg550-1.wav"
 ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
 
     return anim .. "_proto"
 
@@ -28,7 +28,7 @@ ATT.DamageMinMult = 4.5
 ATT.RangeMinMult = 1.25
 ATT.RangeMaxMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.34
-ATT.RPMMult = 520/700
+ATT.RPMMult = 520 / 700
 ATT.RecoilUpMult = 1.5
 ATT.RecoilSideMult = 0.5
 ATT.RecoilPatternDriftMult = 2
@@ -120,7 +120,7 @@ ATT.MuzzleParticle = "muzzleflash_ak47"
 ATT.ActivateElements = {"up_ak"}
 ATT.ShootSound = "gekolt_css/ak47-1.wav"
 
-// ATT.ClipSizeOverride = 30
+-- ATT.ClipSizeOverride = 30
 
 ATT.RecoilMult = 1.5
 ATT.DamageMinMult = 1.5
@@ -128,7 +128,7 @@ ATT.DamageMaxMult = 1.25
 ATT.PhysBulletMuzzleVelocityMult = 1.25
 ATT.RPMMult = 600 / 700
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ak"
 
 end
@@ -203,24 +203,24 @@ ATT.Attachments = {
         Category = "mountr_css",
         Pos = Vector(-1.5,-0.3, -18),
         Ang = Angle(90, 180, 0),
-        ExtraSightDistance = 10			
+        ExtraSightDistance = 10
     },
-	
+
     {
         PrintName = "MOUNT Right",
         Category = "mountl_css",
         Pos = Vector(1.5,-0.3, -18),
         Ang = Angle(90, 0, 0),
-        ExtraSightDistance = 10	
-    },	
+        ExtraSightDistance = 10
+    },
 
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-1.95, -18),
         Ang = Angle(90, 0, -90),
-        ExtraSightDistance = 10		
-    },		
+        ExtraSightDistance = 10
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_u_bolt")
@@ -325,17 +325,17 @@ ATT.ChamberSize = 2
 
 ATT.Firemodes = {
     {
-		PrintName = "Alternating",
+        PrintName = "Alternating",
         Mode = -1,
-		RPMMult = 1200 / 700
+        RPMMult = 1200 / 700
     },
     {
-		PrintName = "Simutaneous",
+        PrintName = "Simutaneous",
         Mode = -1,
-		NumOverride = 2,
-		AmmoPerShot = 2,
-		RPMMult = 600 / 700		
-    },	
+        NumOverride = 2,
+        AmmoPerShot = 2,
+        RPMMult = 600 / 700
+    },
 }
 
 ATT.LHIK = true
@@ -370,7 +370,7 @@ ATT.Attachments = {
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-2.3, -10.5),
         Ang = Angle(90, 0, -90),
-    },		
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_u_gih")
@@ -437,48 +437,48 @@ ATT.Attachments = {
     {
         PrintName = "Optic",
         Category = "mountr_css",
-		InstalledElements = {"no_irons", "no_optic", "optic_main"},
+        InstalledElements = {"no_irons", "no_optic", "optic_main"},
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
-		ExcludeElements = {"fg_saw"},
-        Category = {"optic_css_s", "optic_css_m" }, 
-		
+        ExcludeElements = {"fg_saw"},
+        Category = {"optic_css_s", "optic_css_m" },
+
         Pos = Vector(0,-2.55, -0.5),
-        Ang = Angle(90, 0, -90),	
+        Ang = Angle(90, 0, -90),
     },
-	
+
     {
         PrintName = "MOUNT LEFT",
         Category = "mountr_css",
         Pos = Vector(-1.25,-0.25, -16.75),
         Ang = Angle(90, 180, 0),
-        ExtraSightDistance = 7		
+        ExtraSightDistance = 7
     },
-	
+
     {
         PrintName = "MOUNT Right",
         Category = "mountl_css",
         Pos = Vector(1.25,-0.25, -16.75),
         Ang = Angle(90, 0, 0),
-        ExtraSightDistance = 7		
-    },	
+        ExtraSightDistance = 7
+    },
 
     {
         PrintName = "MOUNT Bottom",
         Category = {"tac_css", "rail_bottom"},
         Pos = Vector(0,1, -17),
         Ang = Angle(90, 0, 90),
-		ExcludeElements = {"bottom_long"},		
+        ExcludeElements = {"bottom_long"},
     },
-	
+
     {
         PrintName = "Foregrip",
         DefaultName = "None",
-        DefaultIcon = Material("arc9/def_att_icons/grip.png"),	
-		
+        DefaultIcon = Material("arc9/def_att_icons/grip.png"),
+
         Category = "grip_css",
         Pos = Vector(0, 0.45, -10),
         Ang = Angle(90, 0, -90),
-    },			
+    },
 }
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_u_pdw")
@@ -520,21 +520,21 @@ ATT.ActiveAngOverride = Angle(0, 0, 0)
 ATT.MovingPosOverride = Vector(-0.5, 1.5, -0.5)
 ATT.MovingAngOverride = Angle(0, -2, 0)
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
-	return anim .. "_lmg"
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_lmg"
 end
 
 ATT.Attachments = {
     {
         PrintName = "Optic",
         Category = "mountr_css",
-		InstalledElements = {"no_irons", "no_optic", "optic_main"},
+        InstalledElements = {"no_irons", "no_optic", "optic_main"},
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
-		ExcludeElements = {"fg_saw"},
-        Category = {"optic_css_s", "optic_css_m" }, 
-		
+        ExcludeElements = {"fg_saw"},
+        Category = {"optic_css_s", "optic_css_m" },
+
         Pos = Vector(0, -2.65, -0.05),
-        Ang = Angle(90, 0, -90),	
+        Ang = Angle(90, 0, -90),
     },
 }
 
@@ -577,17 +577,17 @@ ATT.ModelBodygroups = "0"
 
 ATT.Firemodes = {
     {
-		PrintName = "Alternating",
+        PrintName = "Alternating",
         Mode = -1,
-		RPMMult = 1800 / 700
+        RPMMult = 1800 / 700
     },
     {
-		PrintName = "Simutaneous",
+        PrintName = "Simutaneous",
         Mode = -1,
-		NumOverride = 2,
-		AmmoPerShot = 2,
-		RPMMult = 900 / 700		
-    },	
+        NumOverride = 2,
+        AmmoPerShot = 2,
+        RPMMult = 900 / 700
+    },
 }
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -629,7 +629,7 @@ ATT.CompactName = "Breacher"
 ATT.Icon = Material("entities/gekolt_css_m4_u_pump.png", "mips smooth")
 ATT.Description = [[Compliment breaching device for your primary
 Usually these are installed under the handguard like the other mounted weapon you hopefully missed.]]
- 
+
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
@@ -666,11 +666,11 @@ ATT.Firemodes = {
 ATT.Attachments = {
     {
         PrintName = "Ammo Type",
-        DefaultName = "Default Type",		
+        DefaultName = "Default Type",
         Category = {"css_ammo_sg"},
         Pos = Vector(0,3,-7),
         Ang = Angle(0, 0, 0),
-    },		
+    },
 }
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -709,7 +709,7 @@ ATT.Icon = Material("entities/gekolt_css_m4_u_sg.png", "mips smooth")
 ATT.Description = [[The lord shan't forgive your sins
 Of course it comes with a drum magazine
 In case your brain is slow to reception, it is an automatic shotgun receiver.]]
- 
+
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 5
@@ -743,11 +743,11 @@ end
 ATT.Attachments = {
     {
         PrintName = "Ammo Type",
-        DefaultName = "Default Type",		
+        DefaultName = "Default Type",
         Category = {"css_ammo_sg"},
         Pos = Vector(0,3,-6),
         Ang = Angle(0, 0, 0),
-    },		
+    },
 }
 
 ATT.NumOverride = 8
@@ -802,11 +802,11 @@ ATT.Attachments = {
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-1.8, -12),
         Ang = Angle(90, 0, -90),
-    },		
+    },
 }
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	if anim == "reload_empty" then return "reload_empty_sd" end	
+    if anim == "reload_empty" then return "reload_empty_sd" end
 end
 
 
@@ -838,7 +838,7 @@ ATT.ClipSizeOverride = 32
 
 ATT.RPMMult = 900 / 700
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_smg"
 
 end

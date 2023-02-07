@@ -16,13 +16,13 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Geckololt",
+    Author = "Geckololt, 8Z",
     Contact = "SlogoKolt#6648",
     Assets = "Counter-Strike Source"
-}	
+}
 
-SWEP.Description = [[Standard infantry weapon
-Various modifications ensure being serviceable on every front.]]
+SWEP.Description = [[Standard infantry weapon that is also absurdly popular in civilian markets.
+Has countless models and variations, some less stupid than others]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m4a1.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
@@ -219,7 +219,7 @@ SWEP.CustomizePos = Vector(10, 32, 5)
 SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false
 
-SWEP.CustomizeRotateAnchor = Vector(10.5, -3.05, -4) 
+SWEP.CustomizeRotateAnchor = Vector(10.5, -3.05, -4)
 
 -------------------------- HoldTypes
 
@@ -273,36 +273,35 @@ SWEP.BulletBones = {
 }
 
 
-SWEP.Hook_TranslateAnimation = function(wep, data, anim) 
-    local model = data.model	
-    if wep:GetUBGL() and wep:HasElement("pre_ubgl") then  // this is very very very wrong
-    		if anim == "idle" then  return "idle_ubgl" end	
-    		if anim == "idle_empty" then  return "idle_ubgl" end				
-    		if anim == "fire" then  return "fire_ubgl" end		
-    		if anim == "fire_empty" then  return "fire_ubgl" end
-    		if anim == "fire_iron" then  return "fire_ubgl" end		
-    		if anim == "fire_iron_empty" then  return "fire_ubgl" end			
-    end	
+SWEP.Hook_TranslateAnimation = function(wep, data, anim)
+    if wep:GetUBGL() and wep:HasElement("pre_ubgl") then  -- this is very very very wrong
+            if anim == "idle" then  return "idle_ubgl" end
+            if anim == "idle_empty" then  return "idle_ubgl" end
+            if anim == "fire" then  return "fire_ubgl" end
+            if anim == "fire_empty" then  return "fire_ubgl" end
+            if anim == "fire_iron" then  return "fire_ubgl" end
+            if anim == "fire_iron_empty" then  return "fire_ubgl" end
+    end
 
     if wep.Attachments[10].Installed then
-    		if anim == "reload" then  return "reload_akimbo" end
-    		if anim == "reload_empty" then  return "reload_empty_akimbo" end	
-    		if anim == "reload_acr" then  return "reload_akimbo" end
-    		if anim == "reload_empty_acr" then  return "reload_empty_akimbo" end
-    		if anim == "reload_proto" then  return "reload_akimbo" end
-    		if anim == "reload_empty_proto" then  return "reload_empty_akimbo" end
-    		if anim == "reload_a1" then  return "reload_akimbo" end
-    		if anim == "reload_empty_a1" then  return "reload_empty_akimbo" end		
-    		if anim == "reload_smg" then  return "reload_akimbo" end
-    		if anim == "reload_empty_smg" then  return "reload_empty_akimbo" end		
-    		if anim == "reload_ak" then  return "reload_akimbo" end
-    		if anim == "reload_empty_ak" then  return "reload_empty_akimbo" end	 
-			if anim == "reload_empty_sd" then  return "reload_empty_akimbo" end	
-    		if anim == "reload_perosa" then  return "reload_akimbo" end
-    		if anim == "reload_empty_perosa" then  return "reload_empty_akimbo" end		
-    		if anim == "reload_gih" then  return "reload_akimbo" end
-    		if anim == "reload_empty_gih" then  return "reload_empty_akimbo" end		
-    end	
+            if anim == "reload" then  return "reload_akimbo" end
+            if anim == "reload_empty" then  return "reload_empty_akimbo" end
+            if anim == "reload_acr" then  return "reload_akimbo" end
+            if anim == "reload_empty_acr" then  return "reload_empty_akimbo" end
+            if anim == "reload_proto" then  return "reload_akimbo" end
+            if anim == "reload_empty_proto" then  return "reload_empty_akimbo" end
+            if anim == "reload_a1" then  return "reload_akimbo" end
+            if anim == "reload_empty_a1" then  return "reload_empty_akimbo" end
+            if anim == "reload_smg" then  return "reload_akimbo" end
+            if anim == "reload_empty_smg" then  return "reload_empty_akimbo" end
+            if anim == "reload_ak" then  return "reload_akimbo" end
+            if anim == "reload_empty_ak" then  return "reload_empty_akimbo" end
+            if anim == "reload_empty_sd" then  return "reload_empty_akimbo" end
+            if anim == "reload_perosa" then  return "reload_akimbo" end
+            if anim == "reload_empty_perosa" then  return "reload_empty_akimbo" end
+            if anim == "reload_gih" then  return "reload_akimbo" end
+            if anim == "reload_empty_gih" then  return "reload_empty_akimbo" end
+    end
 end
 
 SWEP.Animations = {
@@ -311,904 +310,907 @@ SWEP.Animations = {
     },
     ["enter_ubgl"] = {
         Source = "r2n",
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},	
+        IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, { t = 0.8, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},
         EventTable = {
             {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 0 / 40},
-        },			
-    },  
-	["exit_ubgl"] = {
+        },
+    },
+    ["exit_ubgl"] = {
         Source = "n2r",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }},		
+        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 0.8, lhik = 1, rhik = 1, }, { t = 1, lhik = 1, rhik = 1, }},
         EventTable = {
             {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 0 / 40},
-        },			
-    },  
-	["reload_ubgl"] = {
+        },
+    },
+    ["reload_ubgl"] = {
         Source = "nade_reload",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},			
+        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 6 / 40},	
-            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 50 / 40},				
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 6 / 40},
+            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 50 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 80 / 40},
-        },				
-    },  	
-	["idle_ubgl"] = {
+        },
+    },
+    ["idle_ubgl"] = {
         Source = "nade_idle",
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},				
+        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},
     },
     ["fire_ubgl"] = {
-        Source = {"nade_fire"},	
-		IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},			
+        Source = {"nade_fire"},
+        IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},
     },
-	
+
     ["fire"] = {
-        Source = {"fire"},			
+        Source = {"fire"},
     },
     ["fire_iron"] = {
         Source = {"fire_iron"},
-    },	
+    },
     ["reload"] = {
         Source = "wet",
-		FireASAP = true,
-		MinProgress = 0.83,
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},			
-        EventTable = {		
+        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},			
-        },				
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},
+        },
     },
     ["reload_empty"] = {
         Source = "dry_3",
-		FireASAP = true,
-		MinProgress = 0.9,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.9,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },	
-		{ t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 1, },			
-		},	
-        EventTable = {		
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },
+        { t = 0.7, lhik = 1, rhik = 0, },{ t = 0.8, lhik = 1, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 48 / 40},	
-            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 75 / 40},			
-        },			
-    },	
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 48 / 40},
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 75 / 40},
+        },
+    },
     ["draw"] = {
         Source = "draw",
-        EventTable = {		
-            {s =  "gekolt_css_foley/draw_rif.wav" ,   t = 0 / 40},		
-        },	
+        EventTable = {
+            {s =  "gekolt_css_foley/draw_rif.wav" ,   t = 0 / 40},
+        },
     },
     ["holster"] = {
         Source = "idle",
     },
     ["idle"] = {
         Source = "idle",
-    }, 
-	["firemode"] = {
+    },
+    ["firemode"] = {
         Source = "firemode",
     },
     ["idle_empty"] = {
         Source = "idle",
-    },	
+    },
 
     ["fire_empty"] = {
-        Source = {"fire"},	
-	},
+        Source = {"fire"},
+    },
     ["fire_empty_bolt"] = {
-        Source = {"fire"},	
-		FireASAP = true,
-		MinProgress = 0,			
-	},	
+        Source = {"fire"},
+        FireASAP = true,
+        MinProgress = 0,
+    },
     ["fire_iron_empty"] = {
-        Source = {"fire"},	
-		FireASAP = true,
-		MinProgress = 0,		
-	},		
+        Source = {"fire"},
+        FireASAP = true,
+        MinProgress = 0,
+    },
     ["fire_iron_empty_bolt"] = {
-        Source = {"fire"},	
-		FireASAP = true,
-		MinProgress = 0,		
-	},		
+        Source = {"fire"},
+        FireASAP = true,
+        MinProgress = 0,
+    },
     ["fire_bolt"] = {
-		Mult = 0.8,
+        Mult = 0.8,
         Source = {"fire_bolt"},
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
-        },				
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 1, rhik = 1, },
-        { t = 0.5, lhik = 1, rhik = 0, }, { t = 0.7, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
-		},		
-	},	
+        { t = 0.5, lhik = 1, rhik = 0, }, { t = 0.7, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },
+        },
+    },
     ["fire_iron_bolt"] = {
-		Mult = 0.8,	
+        Mult = 0.8,
         Source = {"fire_bolt"},
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 26 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},			
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 30 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 40 / 40},
-        },				
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 1, rhik = 1, },
-        { t = 0.5, lhik = 1, rhik = 0, }, { t = 0.7, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },	
-		},		
-	},		
+        { t = 0.5, lhik = 1, rhik = 0, }, { t = 0.7, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_bolt"] = {
         Source = "wet_sniper",
-		IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 0, rhik = 1, }, 
-		{ t = 0.3, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, }, { t = 0.9, lhik = 1, rhik = 1, },	
-		},			
-		FireASAP = true,
-		MinProgress = 0.85,	
-        EventTable = {		
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },{ t = 0.2, lhik = 0, rhik = 1, },
+        { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, }, { t = 0.9, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.85,
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 65 / 40},			
-        },		
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 65 / 40},
+        },
     },
     ["reload_empty_bolt"] = {
         Source = "dry_sniper",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.2, lhik = 1, rhik = 0, },
         { t = 0.3, lhik = 0, rhik = 1, }, { t = 0.6, lhik = 0, rhik = 1, }, { t = 0.7, lhik = 0, rhik = 1, },
-		{ t = 0.85, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, },	
-		},		
-		FireASAP = true,
-		MinProgress = 0.9,		
-        EventTable = {		
+        { t = 0.85, lhik = 1, rhik = 0, }, { t = 0.9, lhik = 1, rhik = 0, }, { t = 1, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+        EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 15 / 40},	
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 15 / 40},
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 40 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 95 / 40},			
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 95 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 130 / 40},
         },
     },
 
     ["reload_akimbo"] = {
         Source = "wet_akimbo",
-		FireASAP = true,
-		MinProgress = 0.83,
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, },			
-        EventTable = {		
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, },
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},			
-        },				
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},
+        },
     },
     ["reload_empty_akimbo"] = {
         Source = "dry_akimbo",
-		FireASAP = true,
-		MinProgress = 0.9,		
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, },	
-        EventTable = {		
+        FireASAP = true,
+        MinProgress = 0.9,
+        IKTimeLine = { { t = 0, lhik = 1, rhik = 1, }, },
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},	
-            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 88 / 40},			
-        },			
-    },		
-	
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},
+            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 88 / 40},
+        },
+    },
+
 
     ["fire_empty_pump"] = {
-        Source = {"fire"},	
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },},			
-	},
+        Source = {"fire"},
+        IKTimeLine = { { t = 0, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },},
+    },
     ["fire_iron_empty_pump"] = {
-        Source = {"fire"},		
-		IKTimeLine = { { t = 0, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },},			
-	},		
+        Source = {"fire"},
+        IKTimeLine = { { t = 0, lhik = 1, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },},
+    },
     ["fire_pump"] = {
         Source = {"fire_pump"},
         EventTable = {
             {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
-        },				
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},		
-	},	
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["fire_iron_pump"] = {
         Source = {"fire_pump"},
         EventTable = {
             {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
-        },				
-		IKTimeLine = {
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-	},		
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
     ["reload_pump"] = {
         Source = "wet_pump",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},				
-		FireASAP = true,
-		MinProgress = 0.85,		
-        EventTable = {		
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.85,
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 42 / 40},			
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 42 / 40},
         },
     },
     ["reload_empty_pump"] = {
         Source = "dry_pump",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 0.99, lhik = 1, rhik = 1, },	
-		},
-		FireASAP = true,
-		MinProgress = 0.95,				
-        EventTable = {		
+        { t = 0.01, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 0, rhik = 1, },{ t = 0.99, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 10 / 40},	
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 10 / 40},
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 50 / 40},			
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 50 / 40},
             {s =  "gekolt_css/awp_boltdown.wav" ,    t = 75 / 40},
-        },		
-        MinProgress = 0.925,		
-    },	
+        },
+        MinProgress = 0.925,
+    },
 
 
     ["reload_lmg"] = {
         Source = "wet_120_lmg",
-        MagSwapTime = 80/40,		
-		IKTimeLine = {
+        MagSwapTime = 80 / 40,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
-		},
-		FireASAP = true,
-		MinProgress = 0.95,				
-        EventTable = {		
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.95,
+        EventTable = {
             {s =  "gekolt_css/m249_coverup.wav" ,   t = 20 / 40},
-            {s =  "gekolt_css/m249_boxout.wav" ,    t = 45 / 40},	
-            {s =  "gekolt_css/m249_boxin.wav" ,    t = 102 / 40},	
-            {s =  "gekolt_css/m249_chain.wav" ,    t = 135 / 40},	
-            {s =  "gekolt_css/m249_coverdown.wav" ,   t = 180 / 40},	
-            {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 190 / 40},		
-        },		
+            {s =  "gekolt_css/m249_boxout.wav" ,    t = 45 / 40},
+            {s =  "gekolt_css/m249_boxin.wav" ,    t = 102 / 40},
+            {s =  "gekolt_css/m249_chain.wav" ,    t = 135 / 40},
+            {s =  "gekolt_css/m249_coverdown.wav" ,   t = 180 / 40},
+            {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 190 / 40},
+        },
     },
     ["reload_empty_lmg"] = {
         Source = "dry_120_lmg",
-        MagSwapTime = 75/40,	
-        EventTable = {		
-            {s =  "gekolt_css/galil_boltpull.wav" ,   t = 15 / 40},		
+        MagSwapTime = 75 / 40,
+        EventTable = {
+            {s =  "gekolt_css/galil_boltpull.wav" ,   t = 15 / 40},
             {s =  "gekolt_css/m249_boxout.wav" ,   t = 45 / 40},
-            {s =  "gekolt_css/m249_coverup.wav" ,    t = 90 / 40},	
-            {s =  "gekolt_css/m249_boxin.wav" ,    t = 142 / 40},	
-            {s =  "gekolt_css/m249_chain.wav" ,    t = 175 / 40},	
-            {s =  "gekolt_css/m249_coverdown.wav" ,   t = 220 / 40},	
-            {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 230 / 40},		
-        },			
-		IKTimeLine = {
+            {s =  "gekolt_css/m249_coverup.wav" ,    t = 90 / 40},
+            {s =  "gekolt_css/m249_boxin.wav" ,    t = 142 / 40},
+            {s =  "gekolt_css/m249_chain.wav" ,    t = 175 / 40},
+            {s =  "gekolt_css/m249_coverdown.wav" ,   t = 220 / 40},
+            {s =  "gekolt_css/m4a1_magtap.wav" ,   t = 230 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.075, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },	
-		},		
-		FireASAP = true,
-		MinProgress = 0.95,	
-    },	
+        { t = 0.075, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.95,
+    },
 
     ["reload_empty_proto"] = {
         Source = "dry_proto",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 55/ 40},	
-            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 78 / 40},					
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 55 / 40},
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 78 / 40},
         },
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},
-		FireASAP = true,
-		MinProgress = 0.925,		
-    },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.925,
+    },
     ["fire_proto"] = { Source = {"fire_proto"},
     },
     ["fire_iron_proto"] = { Source = {"fire_iron_proto"},
-    },		
+    },
 
     ["reload_empty_pdw"] = {
         Source = "dry_57",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
-		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},		
-        EventTable = {		
-            {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40}, 
-			{s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 60 / 40},	
-            {s =  "gekolt_css/sg552_boltpull.wav" ,    t = 88 / 40},					
+        { t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
         },
-		FireASAP = true,
-		MinProgress = 0.9,				
-    },	
+        EventTable = {
+            {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 60 / 40},
+            {s =  "gekolt_css/sg552_boltpull.wav" ,    t = 88 / 40},
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+    },
     ["reload_pdw"] = {
         Source = "wet_57",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 1, },
-		{ t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 0.95, rhik = 1, },	
-		},	
-        EventTable = {		
-            {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40}, 
-			{s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 60 / 40},				
+        { t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 0.95, rhik = 1, },
         },
-		FireASAP = true,
-		MinProgress = 0.95,				
-    },		
-	
+        EventTable = {
+            {s =  "gekolt_css/p90_cliprelease.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/p90_clipout.wav" ,   t = 25 / 40},
+            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 60 / 40},
+        },
+        FireASAP = true,
+        MinProgress = 0.95,
+    },
+
     ["reload_empty_sg"] = {
         Source = "dry_sg",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},			
-        EventTable = {		
-            {s =  "gekolt_css/famas_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/famas_clipin.wav" ,    t = 62 / 40},	
-            {s =  "gekolt_css/famas_boltpull.wav" ,    t = 95 / 40},				
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
         },
-		FireASAP = true,
-		MinProgress = 0.95,				
-    },	
+        EventTable = {
+            {s =  "gekolt_css/famas_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/famas_clipin.wav" ,    t = 62 / 40},
+            {s =  "gekolt_css/famas_boltpull.wav" ,    t = 95 / 40},
+        },
+        FireASAP = true,
+        MinProgress = 0.95,
+    },
     ["reload_sg"] = {
         Source = "wet_sg",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},		
-        EventTable = {		
-            {s =  "gekolt_css/famas_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/famas_clipin.wav" ,    t = 62 / 40},					
+        { t = 0.15, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
         },
-		FireASAP = true,
-		MinProgress = 0.9,				
-    },		
+        EventTable = {
+            {s =  "gekolt_css/famas_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/famas_clipin.wav" ,    t = 62 / 40},
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+    },
     ["fire_sg"] = { Source = {"fire_proto"},
     },
     ["fire_iron_sg"] = { Source = {"fire_iron_proto"},
-    },		
+    },
 
     ["reload_empty_ak"] = {
         Source = {"dry_ak","dry_ak2"},
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},	
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 90 / 40},	
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 95 / 40},				
-        },		
-		IKTimeLine = {
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 90 / 40},
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 95 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},
-		FireASAP = true,
-		MinProgress = 0.95,				
-    },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.95,
+    },
     ["reload_ak"] = {
         Source = "wet_ak",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 58 / 40},			
-        },		
-		IKTimeLine = {
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 58 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},
-		FireASAP = true,
-		MinProgress = 0.9,				
-    },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+    },
 
     ["reload_empty_smg"] = {
         Source = "dry_smg",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 48 / 40},	
-            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 75 / 40},			
-        },			
-		IKTimeLine = {
+            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 48 / 40},
+            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 75 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},
-		FireASAP = true,
-		MinProgress = 0.9,				
-    },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+    },
     ["reload_smg"] = {
         Source = "wet_smg",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 45 / 40},				
-        },	
-		IKTimeLine = {
+            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 45 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},
-		FireASAP = true,
-		MinProgress = 0.9,		
-    },		
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+    },
     ["reload_empty_sd"] = {
         Source = "dry_sd",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
-            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 75 / 40},			
-        },			
-		IKTimeLine = {
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},
+            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 75 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},
-		FireASAP = true,
-		MinProgress = 0.9,				
-    },		
-	
-    ["idle_bow"] = { Source = "idle_bow", },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+    },
+
+    ["idle_bow"] = { Source = "idle_bow", },
     ["idle_empty_bow"] = { Source = "idle_empty_bow", },
-    ["fire_bow"] = { Source = "fire_bow", },	
+    ["fire_bow"] = { Source = "fire_bow", },
     ["reload_bow"] = {
         Source = "dry_bow",
-        EventTable = {					
-        },			
+        EventTable = {
+        },
     },
     ["reload_empty_bow"] = {
         Source = "dry_bow",
-        EventTable = {		
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 5 / 40},		
-            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 50 / 40},		
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 80 / 40},				
-        },		
-		IKTimeLine = {
+        EventTable = {
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 5 / 40},
+            {s =  "gekolt_css/g3sg1_clipin.wav" ,    t = 50 / 40},
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 80 / 40},
+        },
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.02, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},			
-    },	
-	
+        { t = 0.02, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+    },
+
 
     ["reload_empty_a1"] = {
         Source = "dry_2",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 48 / 40},	
-            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 68 / 40},					
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 48 / 40},
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 68 / 40},
         },
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},	
-		FireASAP = true,
-		MinProgress = 0.9,		
-    },	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+    },
     ["reload_empty_acr"] = {
         Source = "dry_4",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},	
-            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 72 / 40},					
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 52 / 40},
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 72 / 40},
         },
-		FireASAP = true,
-		MinProgress = 0.9,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.9,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },	
-		},	
-    },	
-		
-	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+    },
+
+
     ["reload_gih"] = {
         Source = "wet_gih",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-        EventTable = {		
-            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},			
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
         },
-		FireASAP = true,
-		MinProgress = 0.9,		
+        EventTable = {
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
     },
     ["reload_empty_gih"] = {
         Source = "dry_gih",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},	
-            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},					
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 62 / 40},
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},
         },
-		FireASAP = true,
-		MinProgress = 0.9,		
-		IKTimeLine = {
+        FireASAP = true,
+        MinProgress = 0.9,
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},	
-    },	
-	
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
+
     ["reload_perosa"] = {
         Source = "wet_perosa",
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},			
-		FireASAP = true,
-		MinProgress = 0.9,		
-        EventTable = {		
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+        EventTable = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 53 / 40},			
-        },				
+            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 53 / 40},
+        },
     },
     ["reload_empty_perosa"] = {
         Source = "dry_perosa",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_css/mp5_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 62 / 40},	
-            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},					
+            {s =  "gekolt_css/mp5_clipin.wav" ,    t = 62 / 40},
+            {s =  "gekolt_css/m4a1_boltpull.wav" ,    t = 92 / 40},
         },
-		IKTimeLine = {
+        IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },	
-		},	
-		FireASAP = true,
-		MinProgress = 0.9,		
-    },		
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+        FireASAP = true,
+        MinProgress = 0.9,
+    },
 }
 
 -------------------------- ATTACHMENTS
 
-SWEP.AttachmentElements = {	
+SWEP.AttachmentElements = {
     ["up_bolt"] = {
         Bodygroups = { {0, 6},{1, 2},{4, 5},{5, 4},{6, 7},{10,7}, },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), }, [11] = { Pos = Vector(0, 1, 10), } }		
-	},
+        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 14), }, [7] = { Pos = Vector(0, -2.4, 4.5), }, [11] = { Pos = Vector(0, 1, 10), } }
+    },
     ["up_bow"] = {
         Bodygroups = { {0, 7},{4, 5},{5, 7},{6, 7},{10,7}, },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.25, 3), } }				
-	},	
+        AttPosMods = { [7] = { Pos = Vector(0, -3.25, 3), } }
+    },
     ["up_lmg"] = {
         Bodygroups = { {0, 4},{4, 4},{5, 9} },
-        AttPosMods = { [7] = { Pos = Vector(0, -2.677, 0.15), }, [11] = { Pos = Vector(0, 1, 9.5), } }	
-	},
+        AttPosMods = { [7] = { Pos = Vector(0, -2.677, 0.15), }, [11] = { Pos = Vector(0, 1, 9.5), } }
+    },
     ["up_proto"] = {
         Bodygroups = { {0, 1},{4, 2},{5, 8} },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.9, 4.25), } }			
-	},
+        AttPosMods = { [7] = { Pos = Vector(0, -3.9, 4.25), } }
+    },
     ["up_a1"] = {
         Bodygroups = { {0, 11},{4, 3},{5, 8} },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }			
-	},	
+        AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }
+    },
     ["up_acr"] = {
         Bodygroups = { {0, 12},{4, 6},{5, 8} },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }			
-	},		
+        AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), } }
+    },
     ["up_ak"] = {
         Bodygroups = { {1, 1},{3, 1},{4, 5},{5, 1} },
-        AttPosMods = { [11] = { Pos = Vector(0, 1, 9), } }	
-	},	
+        AttPosMods = { [11] = { Pos = Vector(0, 1, 9), } }
+    },
     ["up_9mm"] = {
         Bodygroups = { {4, 1},{5, 11} },
-	},	
+    },
     ["up_sd"] = {
         Bodygroups = {
             {0, 2},{5, 3},{6, 7},{10,7}
         },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5), }, [9] = { Pos = Vector(0, -0.25, 15.75), }, }		
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5), }, [9] = { Pos = Vector(0, -0.25, 15.75), }, }
+    },
     ["up_gih"] = {
         Bodygroups = {
             {0, 8},{1, 2},{4, 5},{5, 6},{6, 7},{10,7}
         },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }, [11] = { Pos = Vector(0, 1, 9.5), }  }			
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }, [11] = { Pos = Vector(0, 1, 9.5), }  }
+    },
     ["up_perosa"] = {
         Bodygroups = {
             {0, 13},{1, 2},{4, 5},{5, 10},{6, 7},{10,7}
         },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }	
-	},		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [7] = { Pos = Vector(0, -2.1, 4.5), }  }
+    },
     ["up_pdw"] = {
         Bodygroups = {
             {0, 3},{4, 5},{5, 2},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -2.5, 1), }, [8] = { Pos = Vector(0, -0.375, 19.75), } }				
-	},	
+        AttPosMods = { [7] = { Pos = Vector(0, -2.5, 1), }, [8] = { Pos = Vector(0, -0.375, 19.75), } }
+    },
     ["up_sg"] = {
         Bodygroups = {
             {0, 5},{1, 2},{4, 5},{5, 8},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), }, [8] = { Pos = Vector(0, -0.25, 25), } , [9] = { Pos = Vector(0, -0.25, 18.5), },[11] = { Pos = Vector(0, 1, 10), } }				
-	},		
+        AttPosMods = { [7] = { Pos = Vector(0, -3.75, 4.25), }, [8] = { Pos = Vector(0, -0.25, 25), } , [9] = { Pos = Vector(0, -0.25, 18.5), },[11] = { Pos = Vector(0, 1, 10), } }
+    },
     ["up_pump"] = {
         Bodygroups = {
             {0, 9},{1, 2},{4, 5},{5, 5},{6, 7},{10,7}
         },
-		AttPosMods = { [7] = { Pos = Vector(0, -1.5, 4.25), }, [9] = { Pos = Vector(0, -0.25, 12), }, }			
-	},	
-	
+        AttPosMods = { [7] = { Pos = Vector(0, -1.5, 4.25), }, [9] = { Pos = Vector(0, -0.25, 12), }, }
+    },
+
     ["guard_lmg"] = {
         Bodygroups = { {6, 5}, {10, 5} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.85, 11.9),}, [8] = { Pos = Vector(0, -0.25, 30), }, [9] = { Pos = Vector(0, -0.25, 23.5), }, }
-	},		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.85, 11.9),}, [8] = { Pos = Vector(0, -0.25, 30), }, [9] = { Pos = Vector(0, -0.25, 23.5), }, }
+    },
     ["guard_a1"] = {
         Bodygroups = { {6, 2}, {10, 1} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.7, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }
+    },
     ["guard_drg"] = {
         Bodygroups = { {6, 13}, {10, 11} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.25, 11.9),}, [8] = { Pos = Vector(0, -0.25, 22), }, [9] = { Pos = Vector(0, -0.25, 19.55), }, }		
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.25, 11.9),}, [8] = { Pos = Vector(0, -0.25, 22), }, [9] = { Pos = Vector(0, -0.25, 19.55), }, }
+    },
     ["guard_doe"] = {
         Bodygroups = { {6, 15}, {10, 13} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [8] = { Pos = Vector(0, -0.25, 15), } }		
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.5),}, [8] = { Pos = Vector(0, -0.25, 15), } }
+    },
     ["guard_608"] = {
         Bodygroups = { {6, 16}, {10, 2} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.75),}, [8] = { Pos = Vector(0, -0.25, 22), } }			
-	},		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.2, 11.75),}, [8] = { Pos = Vector(0, -0.25, 22), } }
+    },
     ["guard_acr"] = {
         Bodygroups = { {6, 11}, {10, 7} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.95, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }		
-	},		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.95, 12.2),}, [8] = { Pos = Vector(0, -0.25, 28.75), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }
+    },
     ["guard_a2"] = {
         Bodygroups = { {6, 3}, {10, 1} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }				
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.75, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 24.75), }, }
+    },
     ["guard_bn63"] = {
         Bodygroups = { {6, 17}, {10, 3} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.5, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }	
-	},		
+        AttPosMods = { [5] = { Pos = Vector(0, 1.5, 12.7),},[8] = { Pos = Vector(0, -0.25, 32), }, [9] = { Pos = Vector(0, -0.25, 23.75), }, }
+    },
     ["guard_10"] = {
         Bodygroups = { {6, 1}, {10, 1} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), }, [9] = { Pos = Vector(0, -0.25, 24.25), }, }
-	},
+        AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), }, [9] = { Pos = Vector(0, -0.25, 24.25), }, }
+    },
     ["guard_148"] = {
-        Bodygroups = { {6, 12} },		
-	},	
+        Bodygroups = { {6, 12} },
+    },
     ["guard_adar"] = {
         Bodygroups = { {6, 4}, {10, 1} },
-		AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), }, [9] = { Pos = Vector(0, -0.25, 24.1), }, }	
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), }, [9] = { Pos = Vector(0, -0.25, 24.1), }, }
+    },
     ["guard_no"] = {
         Bodygroups = { {6, 6}, {10, 6} },
-		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 12.75), } }			
-	},	
+        AttPosMods = { [8] = { Pos = Vector(0, -0.25, 12.75), } }
+    },
     ["guard_sten"] = {
         Bodygroups = { {6, 14}, {10, 12} },
-		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 19), } }			
-	},		
+        AttPosMods = { [8] = { Pos = Vector(0, -0.25, 19), } }
+    },
     ["guard_lr300"] = {
         Bodygroups = { {6, 9}, {10, 9} },
-		AttPosMods = { [8] = { Pos = Vector(0, -0.25, 23), } }			
-	},	
+        AttPosMods = { [8] = { Pos = Vector(0, -0.25, 23), } }
+    },
     ["guard_ris"] = {
         Bodygroups = { {6, 10}, {10, 10} },
         AttPosMods = { [5] = { Pos = Vector(0, 1.3, 12), },[8] = { Pos = Vector(0, -0.25, 21.2), }, [9] = { Pos = Vector(0, -0.25, 18.75), }, }
-	},		
+    },
     ["guard_spr"] = {
         Bodygroups = { {6, 8}, {10, 8} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), }, [9] = { Pos = Vector(0, -0.25, 18.25), }, }			
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.1, 13), },[8] = { Pos = Vector(0, -0.25, 22.5), }, [9] = { Pos = Vector(0, -0.25, 18.25), }, }
+    },
     ["guard_t86"] = {
         Bodygroups = { {6, 18}, {10, 4} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.25, 13.15), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 19.5), }, }			
-	},	
+        AttPosMods = { [5] = { Pos = Vector(0, 1.25, 13.15), },[8] = { Pos = Vector(0, -0.25, 25.5), }, [9] = { Pos = Vector(0, -0.25, 19.5), }, }
+    },
     ["s_a1"] = {
         Bodygroups = { {2, 1} },
-	},	
+    },
     ["s_bolt"] = {
         Bodygroups = { {2, 6} },
-	},	
+    },
     ["s_wire"] = {
         Bodygroups = { {2, 3} },
-	},		
+    },
     ["s_slide"] = {
         Bodygroups = { {2, 2} },
-	},
+    },
     ["s_pdw"] = {
         Bodygroups = { {2, 4} },
-	},	
+    },
     ["s_no"] = {
         Bodygroups = { {2, 5} },
-	},	
+    },
     ["s_light"] = {
         Bodygroups = { {2, 8} },
-	},		
+    },
     ["s_swire"] = {
         Bodygroups = { {2, 9} },
-	},			
+    },
     ["s_608"] = {
         Bodygroups = { {2, 10} },
-	},	
+    },
     ["s_thomp"] = {
         Bodygroups = { {2, 12} },
-	},
+    },
     ["s_607"] = {
         Bodygroups = { {2, 11} },
-	},	
+    },
     ["s_x79"] = {
         Bodygroups = { {2, 14} },
-	},
+    },
     ["s_t91"] = {
         Bodygroups = { {2, 13} },
-	},		
-	
+    },
+
     ["g_ske"] = {
         Bodygroups = { {7, 3} },
-	},	
+    },
     ["g_wood"] = {
         Bodygroups = { {7, 6} },
-	},		
+    },
     ["g_short"] = {
         Bodygroups = { {7, 5} },
-	},	
+    },
     ["g_tw"] = {
         Bodygroups = { {7, 7} },
-	},		
+    },
     ["g_hunt"] = {
         Bodygroups = { {7, 1},{2, 5} },
-	},	
+    },
     ["g_adar"] = {
         Bodygroups = { {7, 8},{2, 5} },
-	},		
+    },
     ["g_saw"] = {
         Bodygroups = { {7, 2},{2, 7} },
-	},	
+    },
 
     ["fg_saw"] = {
         Bodygroups = { {8, 1} },
-	},
+    },
     ["akimbo"] = {
         Bodygroups = { {8, 2} },
-	},
+    },
 }
 
---- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
-SWEP.Hook_ModifyBodygroups = function(wep, data)  -- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
+local lookup = {
+    ["default"] = 1,
+    ["gekolt_css_m4_u_lmg"] = 4,
+    ["gekolt_css_m4_u_acr"] = 2,
+    ["gekolt_css_m4_u_a1"] = 2,
+    ["gekolt_css_m4_u_sg"] = 2,
+    ["gekolt_css_m4_u_10"] = 3,
+}
+
+SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
-    if wep:HasElement("optic_main") and wep:HasElement("keep_rs") then model:SetBodygroup(5,8) end	
-	if wep:HasElement("optic_main") then model:SetBodygroup(5,8) end
-	if wep:HasElement("optic_main") and not wep:HasElement("keep_rs") then model:SetBodygroup(10,7) end	
--- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY
-	if wep:HasElement("optic_main") and wep:HasElement("up_9mm") then model:SetBodygroup(3,1) end	
-	if wep:HasElement("optic_main") and wep:HasElement("up_lmg") then model:SetBodygroup(3,4) end	
--- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
-	if wep:HasElement("optic_main") and wep:HasElement("up_acr") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
-	if wep:HasElement("optic_main") and wep:HasElement("up_a1") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end	
-	if wep:HasElement("optic_main") and wep:HasElement("up_sg") and not wep:HasElement("m16_on") then model:SetBodygroup(3,2) end		
-	if wep:HasElement("optic_main") and wep:HasElement("up_proto") and not wep:HasElement("m16_on") then model:SetBodygroup(3,3) end		
--- IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY IM SORRY	
-	if wep:HasElement("optic_main") and not wep.Attachments[1].Installed then model:SetBodygroup(3,1) end		
+
+    if wep:HasElement("optic_main") then
+        model:SetBodygroup(5, 8)
+        if not wep:HasElement("keep_rs") then
+            model:SetBodygroup(10, 7)
+        end
+
+        local bg = lookup[wep.Attachments[1].Installed or "default"]
+        if bg and ((bg ~= 2 and bg ~= 3) or not wep:HasElement("m16_on")) then
+            model:SetBodygroup(3, bg)
+        end
+    end
 end
---- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
---- surely theres a much much much much much better alternative
---- dont look at me i cant code nor logic
 
 SWEP.Attachments = {
     {	--1
         PrintName = "Receiver",
         DefaultName = "Standard Receiver",
 
-        Category = "css_m4_up", 
+        Category = "css_m4_up",
         Bone = "W_Main",
         Pos = Vector(0, 0, 0),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),
     },
 
     {	--2
         PrintName = "Handguard",
         DefaultName = "Standard Handguard",
 
-		ExcludeElements = {"noguard"},
-        Category = "css_m4_handguard", 
+        ExcludeElements = {"noguard"},
+        Category = "css_m4_handguard",
         Bone = "W_Main",
         Pos = Vector(0, -0.5, 10),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),
     },
 
     {	--3
         PrintName = "Stock",
         DefaultName = "Standard Stock",
-		ExcludeElements = {"nostock"},
+        ExcludeElements = {"nostock"},
 
-        DefaultIcon = Material("arc9/def_att_icons/stock_ak.png"),		
-        Category = "css_m4_stock", 
+        DefaultIcon = Material("arc9/def_att_icons/stock_ak.png"),
+        Category = "css_m4_stock",
         Bone = "W_Main",
         Pos = Vector(0, -0.75, -3),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),
     },
 
     {	--4
         PrintName = "Grip",
         DefaultName = "Standard Grip",
 
-        DefaultIcon = Material("arc9/def_att_icons/grip_ar.png"),	
-        Category = "css_m4_g", 
+        DefaultIcon = Material("arc9/def_att_icons/grip_ar.png"),
+        Category = "css_m4_g",
         Bone = "W_Main",
         Pos = Vector(0, 2.5, 0.5),
-        Ang = Angle(0, 0, 0),		
+        Ang = Angle(0, 0, 0),
     },
 
     {	--5
         PrintName = "Foregrip",
         DefaultName = "None",
 
-        DefaultIcon = Material("arc9/def_att_icons/grip.png"),	
-		ExcludeElements = {"nogrip"},
-        Category = {"grip_css", "css_m4_fg"}, 
+        DefaultIcon = Material("arc9/def_att_icons/grip.png"),
+        ExcludeElements = {"nogrip"},
+        Category = {"grip_css", "css_m4_fg"},
         Bone = "W_Main",
         Pos = Vector(0, 1.6, 12),
-        Ang = Angle(90, 0, -90),	
-		MergeSlots = {6, 11},	
+        Ang = Angle(90, 0, -90),
+        MergeSlots = {6, 11},
     },
 
     {   --6 permanent saw grip location, unaffected by the changes of the above attachment
         PrintName = "",
         DefaultName = "",
         Hidden = true,
-		ExcludeElements = {"nogrip"},
-        Category = {"css_m4_fg"}, 
+        ExcludeElements = {"nogrip"},
+        Category = {"css_m4_fg"},
         Bone = "W_Main",
         Pos = Vector(0, 1.5, 12),
-        Ang = Angle(90, 0, -90),	
-		//MergeSlots = {11}			
+        Ang = Angle(90, 0, -90),
+        -- MergeSlots = {11}
     },
 
     {	--7
         PrintName = "Optic",
         DefaultName = "None",
-		InstalledElements = {"no_irons", "no_optic", "optic_main"},  -- i forgot why i did this
+        InstalledElements = {"no_irons", "no_optic", "optic_main"},  -- i forgot why i did this
 
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
-		ExcludeElements = {"fg_saw", "alt_optic"},
-        Category = {"optic_css", "mount_css_m16"}, 
+        ExcludeElements = {"fg_saw", "alt_optic"},
+        Category = {"optic_css", "mount_css_m16"},
         Bone = "W_Main",
         Pos = Vector(0, -1.7, 3),
-        Ang = Angle(90, 0, -90),			
+        Ang = Angle(90, 0, -90),
     },
-	
+
 
     {	--8
         PrintName = "Muzzle",
         DefaultName = "None",
 
         DefaultIcon = Material("arc9/def_att_icons/barrel.png"),
-		ExcludeElements = {"pre_muzzed"},
-        Category = {"muzzle_css"}, 
+        ExcludeElements = {"pre_muzzed"},
+        Category = {"muzzle_css"},
         Bone = "W_Main",
         Pos = Vector(0, -0.25, 20),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),
     },
 
     {	--9
         PrintName = "Clamp",
         DefaultName = "None",
 
-		ExcludeElements = {"short_clamp"},
-        Category = {"clamp_css"}, 
+        ExcludeElements = {"short_clamp"},
+        Category = {"clamp_css"},
         Bone = "W_Main",
         Pos = Vector(0, -0.25, 17.5),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),
     },
 
     {	--10
-        Hidden = true,	
+        Hidden = true,
         PrintName = "Off-Hand",
         DefaultName = "None",
-		InstalledElements = {"akimbo"},		
+        InstalledElements = {"akimbo"},
 
-		ExcludeElements = {"akantbo"},
-        Category = {"css_akimbo"}, 
+        ExcludeElements = {"akantbo"},
+        Category = {"css_akimbo"},
         Bone = "Akimbo_Base",
         Pos = Vector(0, 0, 0),
-        Ang = Angle(90, 0, -90),		
+        Ang = Angle(90, 0, -90),
     },
 
     {   --11 permanent ubgl, affected separately from the changes of the above attachment
         PrintName = "",
         DefaultName = "",
         Hidden = true,
-		ExcludeElements = {"nogrip"},
-        Category = {"css_ubgl"}, 
+        ExcludeElements = {"nogrip"},
+        Category = {"css_ubgl"},
         Bone = "W_Main",
         Pos = Vector(0, 1, 8.75),
-        Ang = Angle(90, 0, -90),				
-    },	
+        Ang = Angle(90, 0, -90),
+    },
 }

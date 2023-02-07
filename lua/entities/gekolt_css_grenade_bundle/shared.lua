@@ -83,7 +83,7 @@ function ENT:Detonate()
             ent:Spawn()
 
             local ang = Angle(math.Rand(-60, -15), add + (i / 6) * 360 + math.Rand(-15, 15), 0)
-            ent:GetPhysicsObject():SetVelocityInstantaneous(ang:Forward() * math.Rand(256, 512))
+            ent:GetPhysicsObject():SetVelocityInstantaneous(self:GetVelocity() + ang:Forward() * math.Rand(256, 512))
         end
         self:Remove()
     end
