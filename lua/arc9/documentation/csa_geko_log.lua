@@ -3,8 +3,10 @@
 [ Created by Geckololt (all wrongs reserved, dont care didnt ask) ]
 
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Cylo - Annoying little burger -- i love this man as if he's my little cabbage :))
+TheOnly8Z - Major assistance in cleaning and stats department
+CyloWalker - Annoying little burger -- i love this man as if he's my little cabbage :))
 CturiX - Mauser Sound
+
 
 Counter Strike Source: (horrid)Models, Textures [AWP/M4/AK/M9]
 + Arctic - Incredibly doggy -original- restoration models (css)
@@ -35,7 +37,7 @@ https://gamebanana.com/mods/210602 - Targeter Guard [M4]
 https://gamebanana.com/models/3241 - T1
 https://gamebanana.com/skins/162976 - MRS 
 https://gamebanana.com/models/4134 - OKP7
--- the attachment models are probably from contract wars
+-- links are dead lol. the attachment models are probably from contract wars
 
 https://gamebanana.com/mods/39876 - Muzzle/Grip/T1
 
@@ -95,11 +97,14 @@ STEN (receiver:4-5)
 - Actual bipod animation with stock holding in deploy -- not possible for the latter yet, ik overides stuff
 
 [UBGL]
-- RPG
+- Upsidedown Garand Grenade Rifle thing
+- RPG??
+- Tishina
+- GP30??
 - M3
 - UMP??
 - AK??
-- M320 (hate m203)
+- M320??? (hate m203)
 
 
 
@@ -256,9 +261,10 @@ MK 1,3,4,5
 MK2 but those "pistol" grip
 sterling mk4 (suppressed)
 saladmender from Fortuna returns, with an actual belt
+Cobray Terminator
 
 
- AK: [Russian? Maybe Finnish for the lol]
+ AK: [Russian]
 919: saiga
 556: trolled, bolt release based on one of them mp5/10
 566: aps underwater dart gun -- maybe make it fires fletchette????
@@ -271,8 +277,8 @@ modern: its literally an ak12
 
 
  M18: [Swedish(lol)] --- thanks Cylo for the shout          Common Swedish W
-rpg convert -- obviously
-tandem convert -- i knew this would happen
+rpg -- obviously
+tandem -- i knew this would happen
 xm70 -- this is based on a real thing, back in world war cold, the swedes wanted to arm their infantry with an anti-tank 'auxiliary' option, this was back during the coldwar
 -- the concept of oicw or multi-purpose weapons only takes form around ~90s so this is one of the forerunner, even then those are made to counter infantry, this was a panzerjaeger
 -- 762 cuz the m4 already exist, and currently lacking in battle rifle
@@ -297,6 +303,8 @@ reasons
 
 -- concept weapons --
 
+Tishina
+
 Mosin
 + Artillery Guard (Kulakov Grenade Launcher): --around 1942, second war 2, post-ish Barbarossa and all that		Kulakov person design basically the first rotary grenade launcher, the forerunner of the M32 or whatever
 --gas from the firing thing would be redirected to rotate the cylinder, how does it eject? ehhh
@@ -316,6 +324,9 @@ looks cool
 and in modern Time, there are loads of   modernised version, which im not planning to Do, cuz slapping picatinny rail on everything is not   gaming
 there are bullpup version    of course   no i wont be planning that
 + Darsu made ehh eft toz 106 with mosin frame, shotgun mosin? yeah im stealing
+
+M2 Browning
+
 
 
 

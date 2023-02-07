@@ -190,6 +190,44 @@ ARC9.LoadAttachment(ATT, "gekolt_ef_sten_mk4")
 
 ATT = {}
 
+ATT.PrintName = "Shock-Frame"
+ATT.CompactName = "CTR"
+ATT.Icon = Material("entities/gekolt_ef_sten_sg.png", "mips smooth")
+ATT.Description = [[Widened up barrel for larger calibre
+Shotgun size large calibre.]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 150
+
+ATT.ClipSizeOverride = 1
+ATT.MuzzleParticle = "muzzleflash_shotgun"
+ATT.ShootSound = "gekolt_css/xm1014-1.wav"
+
+ATT.NumOverride = 10
+ATT.SpreadAdd = 0.05
+ATT.DamageMaxMult = 0.6
+ATT.DamageMinMult = 0.6
+
+ATT.RecoilMult = 6
+ATT.RecoilPatternDriftMult = 5
+
+ATT.Ammo = "buckshot"
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+	return anim .. "_sg"
+end
+
+ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"f_sg", "pre_muzzed", "pre_barrel"}
+
+
+ARC9.LoadAttachment(ATT, "gekolt_ef_sten_sg")
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
 ATT.PrintName = "Pacific Frame"
 ATT.CompactName = "OWEN"
 ATT.Icon = Material("entities/gekolt_ef_sten_owen.png", "mips smooth")
@@ -389,7 +427,7 @@ Heavier grip negates the ability to reload like a retard.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 3
-ATT.ExcludeElements = {"f_mk5", "f_3008"}
+ATT.ExcludeElements = {"f_mk5", "f_3008", "f_sg"}
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0

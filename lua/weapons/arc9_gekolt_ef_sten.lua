@@ -291,6 +291,9 @@ SWEP.AttachmentElements = {
     ["f_3008"] = {
         Bodygroups = {{1, 4}},
     },
+    ["f_sg"] = {
+        Bodygroups = {{0, 5},{1, 7}},
+    },
 
     ["s_mk2s"] = {
         Bodygroups = {{3, 2}},
@@ -519,6 +522,37 @@ SWEP.Animations = {
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.5, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    }, 
+
+	["reload_sg"] = {
+        Source = "dry_sg",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        FireASAP = true,
+        MinProgress = 0.9,
+        EventTable = {
+            {s =  "gekolt_dod/mp40_boltback.wav" ,   t = 8 / 40},
+            --{s =  "gekolt_dod/mp40_clipin.wav" ,    t = 55 / 40},
+            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 48 / 40},
+        },
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.05, lhik = 1, rhik = 0, },
+        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+    },
+    ["reload_empty_sg"] = {
+        Source = "dry_sg",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        FireASAP = true,
+        MinProgress = 0.9,
+        EventTable = {
+            {s =  "gekolt_dod/mp40_boltback.wav" ,   t = 8 / 40},
+            --{s =  "gekolt_dod/mp40_clipin.wav" ,    t = 55 / 40},
+            {s =  "gekolt_dod/1887_shell1.wav" ,   t = 48 / 40},
+            },
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.05, lhik = 1, rhik = 0, },
+        { t = 0.2, lhik = 0, rhik = 0, },{ t = 0.8, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 1, rhik = 1, },
         },
     },
 

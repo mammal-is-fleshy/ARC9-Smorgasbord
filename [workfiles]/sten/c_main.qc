@@ -21,6 +21,7 @@ $bodygroup "rec"
 	studio "sten_up_3008.smd"
 	studio "sten_up_sterling.smd"
 	blank
+	studio "sten_up_sg.smd"
 }
 
 $bodygroup "low"
@@ -87,6 +88,15 @@ $sequence "wet_owen" {
 
 $sequence "dry_owen" {
 	"anims\dry_owen.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_sg" {
+	"anims\dry_sg.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2
