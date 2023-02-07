@@ -1,13 +1,13 @@
 ENT.Type = "anim"
 ENT.Base = "base_entity"
-ENT.PrintName = "Frag Grenade"
+ENT.PrintName = "Like a goblet but grenade"
 ENT.Author = ""
 ENT.Information = ""
 ENT.Spawnable = false
 ENT.AdminSpawnable = false
 
-ENT.Model = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
-ENT.LifeTime = 3.5
+ENT.Model = "models/weapons/w_eq_fraggrenade_thrown.mdl"
+ENT.FuseTime = 1
 ENT.ArmTime = 0
 ENT.ImpactFuse = false
 
@@ -30,6 +30,10 @@ function ENT:Initialize()
         self:SetCollisionGroup(COLLISION_GROUP_PROJECTILE)
 
         self.SpawnTime = CurTime()
+
+        if self.FuseTime <= 0 then
+            self:Detonate()
+        end
     end
 end
 
@@ -48,15 +52,15 @@ function ENT:PhysicsCollide(data, physobj)
 end
 
 function ENT:Think()
-    if SERVER and CurTime() - self.SpawnTime >= self.LifeTime then
+    if SERVER and CurTime() - self.SpawnTime >= self.FuseTime then
         self:Detonate()
     end
 end
 
+
 function ENT:Detonate()
     if SERVER and not self.Exploded then
         self.Exploded = true
-
         local pos = self:GetPos()
         local effectdata = EffectData()
         effectdata:SetOrigin(pos)
@@ -69,22 +73,6 @@ function ENT:Detonate()
         end
 
         util.BlastDamage(self, self:GetOwner(), pos, 350, 150)
-
-        local add = math.Rand(0, 60)
-        local t = {1, 2, 3, 4, 5, 6} -- it looks funny but I need grenades to explode in a ring but also in random order
-        for i = 1, 6 do
-            local j = math.random(1, #t)
-            local k = table.remove(t, j)
-            local ent = ents.Create("gekolt_css_nadelet")
-            ent.FuseTime = 0.4 + k * 0.2 + math.Rand(0, 0.15)
-            ent:SetOwner(self:GetOwner())
-            ent:SetPos(self:GetPos())
-            ent:SetAngles(AngleRand())
-            ent:Spawn()
-
-            local ang = Angle(math.Rand(-60, -15), add + (i / 6) * 360 + math.Rand(-15, 15), 0)
-            ent:GetPhysicsObject():SetVelocityInstantaneous(ang:Forward() * math.Rand(256, 512))
-        end
         self:Remove()
     end
 end

@@ -44,7 +44,7 @@ end
 else
 
 function ENT:Think()
-	if self.Ticks % 5 == 0 then
+    if self.Ticks % 5 == 0 then
 
         if !self:IsValid() or self:WaterLevel() > 2 then return end
         if !IsValid(emitter) then return end
@@ -85,16 +85,10 @@ function ENT:Detonate()
         --self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
     end
 
-    local attacker = self
-
-    if self.Owner:IsValid() then
-        attacker = self.Owner
-    end
-
-    util.BlastDamage(self, attacker, self:GetPos(), 256, 150)
+    util.BlastDamage(self, self:GetOwner(), self:GetPos(), 256, 150)
 
     self:FireBullets({
-        Attacker = attacker,
+        Attacker = self:GetOwner(),
         Damage = 0,
         Tracer = 0,
         Distance = 20000,
@@ -109,18 +103,18 @@ function ENT:Detonate()
 end
 
 function ENT:PhysicsCollide(colData, collider)
-	if CurTime() - self.SpawnTime >= self.FuseTime then
-		self:Detonate()
-	else
-		self:Defuse()
-	end
+    if CurTime() - self.SpawnTime >= self.FuseTime then
+        self:Detonate()
+    else
+        self:Defuse()
+    end
 end
 
 function ENT:Defuse()
-	self.Defused = true
-	self.Defused_RemoveIn = 5
-	self.Defused_When = CurTime()
-	--self:Remove()
+    self.Defused = true
+    self.Defused_RemoveIn = 5
+    self.Defused_When = CurTime()
+    --self:Remove()
 end
 
 function ENT:Draw()

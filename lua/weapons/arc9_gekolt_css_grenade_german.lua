@@ -13,7 +13,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Geckololt",
+    Author = "Geckololt, 8Z",
     Contact = "SlogoKolt#6648",
     Assets = "Counter Strike: Source"
 }
@@ -29,7 +29,7 @@ SWEP.Firemodes = {
 }
 
 SWEP.Description = [[Seven bundled grenade is better than one lonely grenade.
-Guarantee to blow off your brain if you don't displace yourself after throwing]]
+One of them is almost certainly going to fly in your direction for revenge so back the hell off]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
@@ -45,7 +45,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
-SWEP.ClipSize = 3
+SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
 SWEP.SupplyLimit = 1
 SWEP.Crosshair = true
@@ -70,7 +70,7 @@ SWEP.ShootEntInheritPlayerVelocity = true
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
-SWEP.Disposable = true 
+SWEP.Disposable = true
 
 -------------------------- HANDLING
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
@@ -110,7 +110,7 @@ SWEP.CustomizeNoRotate = false
 
 SWEP.ShootPosOffset = Vector(1, 1, 0)
 
-SWEP.CustomizeRotateAnchor = Vector(10, -7, 0) 
+SWEP.CustomizeRotateAnchor = Vector(10, -7, 0)
 
 -------------------------- HoldTypes
 
@@ -135,11 +135,11 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-		FireASAP = true,
-		MinProgress = 0.2,		
-        EventTable = {		
-            {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 1 / 40},		
-        },		
+        FireASAP = true,
+        MinProgress = 0.2,
+        EventTable = {
+            {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 1 / 40},
+        },
     },
     ["holster"] = {
         Source = "idle",
@@ -149,13 +149,13 @@ SWEP.Animations = {
         MinProgress = 0.666,
         FireASAP = true,
         EventTable = {
-            {s =  "gekolt_css/clay/pinpull.wav" ,   t = 15 / 40},	
+            {s =  "gekolt_css/clay/pinpull.wav" ,   t = 15 / 40},
         },
     },
     ["throw"] = {
         Source = "throw",
         EventTable = {
-            {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 1 / 40},		
+            {s =  "gekolt_css/clay/grenade_throw.wav" ,   t = 1 / 40},
         },
         MinProgress = 0.4
     },
