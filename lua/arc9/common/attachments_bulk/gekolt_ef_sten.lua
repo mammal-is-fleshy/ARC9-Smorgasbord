@@ -214,6 +214,17 @@ ATT.RecoilPatternDriftMult = 5
 
 ATT.Ammo = "buckshot"
 
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",		
+        Category = {"css_ammo_sg"},
+        Pos = Vector(-5,0,-2.5),
+        Ang = Angle(0, 0, 0),
+    },		
+}
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
 	return anim .. "_sg"
 end

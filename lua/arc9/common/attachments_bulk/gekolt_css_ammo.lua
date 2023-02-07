@@ -58,7 +58,7 @@ ATT.Description = [[play rainworld
 play rainworld
 play rainworld
 play rainworld
-play rainworld.]]
+play rainworld]] --- dont change this
 ATT.SortOrder = 1
 
 ATT.Category = {"css_ammo_sg"}
@@ -113,7 +113,7 @@ ATT = {}
 ATT.PrintName = [[FRAG-12 High Explosive]]
 ATT.CompactName = "EXPLOSIVE"
 ATT.Icon = Material("entities/gekolt_css_ammo/exp.png", "mips smooth")
-ATT.Description = [[bombe.]]
+ATT.Description = [[Small explosive powder loaded shell.]]
 ATT.SortOrder = 1
 
 ATT.Category = {"css_ammo_sg"}
@@ -144,7 +144,7 @@ ATT = {}
 ATT.PrintName = "Inflamma Dragon's Breath"
 ATT.CompactName = "FLAME"
 ATT.Icon = Material("entities/gekolt_css_ammo/dragon.png", "mips smooth")
-ATT.Description = [[la fleur du cul]]
+ATT.Description = [[Highly unethical flaming round loaded with combustible fuel.]]
 ATT.SortOrder = 4
 
 ATT.Category = {"css_ammo_sg"}
