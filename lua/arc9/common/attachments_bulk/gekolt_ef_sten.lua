@@ -58,7 +58,7 @@ ATT.SpeedMult = 0.9
 ATT.RecoilPatternDriftMult = 3
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	return anim .. "_lmg"
+    return anim .. "_lmg"
 end
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
@@ -92,7 +92,7 @@ ATT.Sights = {
 }
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	return anim .. "_sterling"
+    return anim .. "_sterling"
 end
 
 ATT.LHIK = true
@@ -143,7 +143,7 @@ ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"f_3008", "no_maglow"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	return anim .. "_3008"
+    return anim .. "_3008"
 end
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_3008")
@@ -166,7 +166,7 @@ ATT.ClipSizeOverride = 20
 ATT.Firemodes = {{Mode = 3,}}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	return anim .. "_mk4"
+    return anim .. "_mk4"
 end
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
@@ -214,8 +214,19 @@ ATT.RecoilPatternDriftMult = 5
 
 ATT.Ammo = "buckshot"
 
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",
+        Category = {"css_ammo_sg"},
+        Pos = Vector(-5,0,-2.5),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	return anim .. "_sg"
+    return anim .. "_sg"
 end
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
@@ -266,7 +277,7 @@ ATT.Model = "models/weapons/geckololt_css/c_sten.mdl"
 ATT.ModelBodygroups = "56570000000"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	return anim .. "_owen"
+    return anim .. "_owen"
 end
 
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
@@ -440,7 +451,7 @@ ATT.ModelBodygroups = "100000000000"
 
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	return anim .. "_mk1"
+    return anim .. "_mk1"
 end
 
 ATT.Category = "ef_sten_hg" -- can be "string" or {"list", "of", "strings"}
