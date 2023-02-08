@@ -53,8 +53,9 @@ $cdmaterials "models\gekolt_css_vmt\"
 $cdmaterials "models\weapons\v_models\pist_c962"
 
 
-$attachment "1" "W_Muz" 0 0 0 rotate -90 0 -90
-$attachment "2" "W_Shell" 0 0 0 rotate 0 -135 0
+$attachment "1" "W_Muz" 0.00 0.00 5.00 rotate -90 0 0
+$attachment "2" "W_Shell" 0.00 0.00 0.00 rotate -0 90 180
+$attachment "3" "W_Shell" 0.00 0.00 0.00 rotate -0 150 180
 $bonemerge "Akimbo_Base"
 
 $sequence "idle" {
