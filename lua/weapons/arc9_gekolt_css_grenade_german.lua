@@ -23,13 +23,19 @@ SWEP.Slot = 4
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "Throwable"
-        -- add other attachment modifiers
+        PrintName = "Cluster"
+        ShootEnt = "gekolt_css_grenade_bundle"
     },
+    {
+        Mode = 1,
+        PrintName = "Condensed"
+        ShootEnt = "gekolt_css_grenade_bundle_cds"
+    },	
 }
 
-SWEP.Description = [[Seven bundled grenade is better than one lonely grenade.
-One of them is almost certainly going to fly in your direction for revenge so back the hell off]]
+SWEP.Description = [[Seven bundled grenade is better than one lonely grenade
+One of them is almost certainly going to fly in your direction for revenge so back the hell off
+Switch between detonation type with firemode.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
