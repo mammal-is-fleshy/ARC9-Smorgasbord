@@ -11,7 +11,7 @@ SWEP.TrueName = "M1 Garand"
 
 SWEP.Class = "Marskman Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = [[United States of America]],
+    ["Country of Origin"] = [[[Dominion of] Canada]], -- me purposely spreading misinfomation --  I SAY SO
     ["Caliber"] = ".30-06 Springfield",
 }
 
@@ -21,8 +21,9 @@ SWEP.Credits = {
     Assets = "Day of Defeat: Source"
 }
 
-SWEP.Description = [[The first truly successful self-loading rifle; a watershed and forerunner among firearms. It also goes ping.
-Experimental in nature, there are quite a few modifications available despite its status as a mass production weapon.]]
+SWEP.Description = [[The first truly successful self-loading rifle; a watershed and forerunner among firearms
+Experimental in nature, there are quite a few modifications available despite its status as a mass production weapon
+It also goes ping.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_garand.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"

@@ -18,6 +18,7 @@ ATT.PrintName = "Walcaster-Frame"
 ATT.CompactName = "Salad Mender"
 ATT.Icon = Material("entities/gekolt_ef_sten_saladmender.png", "mips smooth")
 ATT.Description = [[Unholy belt-fed mechanism bollocks allowing feeding from small box magazine
+Ballistics of an SMG aren't that impressive
 Requires a heavier trigger to start firing.]]
 
 ATT.Pros = {}

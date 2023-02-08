@@ -42,7 +42,7 @@ ATT.Attachments = {
         Category = {"optic_css_s",},
         Pos = Vector(3.85, 0, -2.4),
         Ang = Angle(0, 0, 0),
-        ExtraSightDistance = -4,
+        ExtraSightDistance = -1,
 		Scale = 0.8,
     },
 }
@@ -225,7 +225,7 @@ ATT.Attachments = {
         Category = {"optic_css_s",},
         Pos = Vector(6, 0, -4),
         Ang = Angle(0, 0, 0),
-        ExtraSightDistance = -4,
+        ExtraSightDistance = -1,
 		Scale = 0.8,
     },
 }
