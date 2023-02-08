@@ -119,6 +119,7 @@ ATT.Category = "dod_mauser_frame"
 ATT.ActivateElements = {"f_carbine", "pre_optic", "akantbo"}
 
 ATT.Firemodes = { { Mode = -1, } }
+ATT.CaseEffectQCA = 3
 
 ATT.ClipSizeOverride = 80
 

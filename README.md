@@ -10,10 +10,10 @@ low quality models stuff on even lower quality animations
 - M9
 - Mauser
 - M79
-- AK (WIP)
+- AK47
 - M18
 - Grenade Bundle
-- Sten (WIP)
+- Sten
 - Tishina (Early Concept)
 
 
