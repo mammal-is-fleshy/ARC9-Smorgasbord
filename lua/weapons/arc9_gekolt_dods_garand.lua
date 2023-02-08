@@ -11,18 +11,18 @@ SWEP.TrueName = "M1 Garand"
 
 SWEP.Class = "Marskman Rifle"
 SWEP.Trivia = {
-    ["Country of Origin"] = [[[Dominion of] Canada]], -- me purposely spreading misinfomation --
+    ["Country of Origin"] = [[United States of America]],
     ["Caliber"] = ".30-06 Springfield",
 }
 
 SWEP.Credits = {
-    Author = "Geckololt",
+    Author = "Geckololt, 8Z",
     Contact = "SlogoKolt#6648",
-    Assets = "Day of Defeat"
+    Assets = "Day of Defeat: Source"
 }
 
-SWEP.Description = [[Ancient forerunner of an array of modern marksman rifles
-Surprisingly customisable.]]
+SWEP.Description = [[The first truly successful self-loading rifle; a watershed and forerunner among firearms. It also goes ping.
+Experimental in nature, there are quite a few modifications available despite its status as a mass production weapon.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_garand.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -39,29 +39,24 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.SpreadMultHipFire = 3
-SWEP.RecoilMultHipFire = 1.2
-SWEP.RecoilAutoControlMultHipFire = 0.5
-
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 80 -- Damage done at point blank range
-SWEP.DamageMin = 30 -- Damage done at maximum range
+SWEP.DamageMax = 70 -- Damage done at point blank range
+SWEP.DamageMin = 45 -- Damage done at maximum range
 
-SWEP.DamageRand = 0.5 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
-
-SWEP.RangeMin = 60 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 1500 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 1500 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 10000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 12 -- Units of wood that can be penetrated by this gun.
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_LEFTARM] = 0.85,
-    [HITGROUP_RIGHTARM] = 0.85,
+    [HITGROUP_LEFTARM] = 0.75,
+    [HITGROUP_RIGHTARM] = 0.75,
+    [HITGROUP_LEFTLEG] = 0.6,
+    [HITGROUP_RIGHTLEG] = 0.6,
 }
-
 -------------------------- PHYS BULLET BALLISTICS
 
 SWEP.PhysBulletMuzzleVelocity = 3000 * 12
@@ -100,7 +95,7 @@ SWEP.Firemodes = {
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
 SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
@@ -108,35 +103,42 @@ SWEP.RecoilSide = 0.2 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.15
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 10 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0
 
 SWEP.RecoilKick = 2
 
+SWEP.RecoilMultRecoil = 1.75 -- Looks stupid but it means expoential recoil growth.
+
 -------------------------- SPREAD
 
-SWEP.Spread = 0.003
+SWEP.Spread = 0.0012
 
-SWEP.SpreadAddRecoil = 0.02 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0.003
+SWEP.SpreadMultRecoil = 1.25
+SWEP.RecoilModifierCap = 4
+
+SWEP.SpreadAddHipFire = 0.015
+SWEP.SpreadMultHipFire = 1.25
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 7 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 0.75 -- How much the gun sways.
-
-SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
-SWEP.SwayMultCrouch = 0.66
-SWEP.SwayMultShooting = 1.2
-
+SWEP.FreeAimRadius = 12
 SWEP.FreeAimRadiusSights = 0
 
-SWEP.SwayMultSights = 0.3
+SWEP.Sway = 1.2
 
-SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SwayMultMidAir = 2
+SWEP.SwayAddMove = 0.75
+SWEP.SwayMultMove = 1
+SWEP.SwayMultCrouch = 0.5
+SWEP.SwayMultShooting = 2
+SWEP.SwayMultSights = 0.33
+
+SWEP.AimDownSightsTime = 0.35
+SWEP.SprintToFireTime = 0.4
 
 SWEP.SpeedMult = 0.85
 SWEP.SpeedMultSights = 0.65

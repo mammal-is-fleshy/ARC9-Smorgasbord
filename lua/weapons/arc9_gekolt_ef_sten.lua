@@ -16,13 +16,13 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Geckololt",
+    Author = "Geckololt, 8Z",
     Contact = "SlogoKolt#6648",
     Assets = "Enemy Front"
 }
 
-SWEP.Description = [[Humble tubular weapons
- Quick for assembling and mass producting allowing for easy off-shoot variants.]]
+SWEP.Description = [[Humble piece of steel that looks like it was clobbered together from rusty pipes. For its cheap cost, it might as well be.
+Absurdly simple design lends itself to both pragmatic and unorthodox modifications.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_sten.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -39,27 +39,23 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.SpreadMultHipFire = 3
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
-
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 34 -- Damage done at point blank range
-SWEP.DamageMin = 19 -- Damage done at maximum range
+SWEP.DamageMax = 34
+SWEP.DamageMin = 17
 
-SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
+SWEP.RangeMin = 700
+SWEP.RangeMax = 3000
 
-SWEP.RangeMin = 700 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
-
-SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
+SWEP.Penetration = 2
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 1.25,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_LEFTARM] = 0.95,
-    [HITGROUP_RIGHTARM] = 0.95,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.75,
+    [HITGROUP_RIGHTLEG] = 0.75,
 }
 
 -------------------------- PHYS BULLET BALLISTICS
@@ -79,7 +75,7 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 600
+SWEP.RPM = 550
 
 -- Works different to ArcCW
 
@@ -94,50 +90,61 @@ SWEP.Firemodes = {
         Mode = -1,
     }
 }
+
+SWEP.TriggerDelay = true
+SWEP.TriggerDelayTime = 0.04
+SWEP.TriggerDownSound = "gekolt_css/weaponclick.wav"
+
 -------------------------- RECOIL
 
 -- General recoil multiplier
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.85 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.5 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.2 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.3 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 28
+SWEP.RecoilResetTime = 0
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.25
 SWEP.RecoilKickDamping = 60
 
+SWEP.RecoilMultRecoil = 1.08 -- Looks stupid but it means expoential recoil growth.
+
 -------------------------- SPREAD
 
-SWEP.Spread = 0.0025
+SWEP.Spread = 0.005
 
-SWEP.SpreadAddRecoil = 0.0025 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0
+SWEP.SpreadMultRecoil = 1.12
+SWEP.RecoilModifierCap = 14
+
+SWEP.SpreadAddHipFire = 0.0015
+SWEP.SpreadMultHipFire = 1.25
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 7.5 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 1.5 -- How much the gun sways.
+SWEP.FreeAimRadius = 5
+SWEP.FreeAimRadiusSights = 0
+SWEP.Sway = 0.8
 
 SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
-SWEP.SwayMultCrouch = 0.66
-SWEP.SwayMultShooting = 1.2
+SWEP.SwayAddMove = 0.5
+SWEP.SwayMultMove = 1
+SWEP.SwayMultCrouch = 0.667
+SWEP.SwayMultShooting = 1.5
+SWEP.SwayMultSights = 0.8
 
-SWEP.FreeAimRadiusSights = 0
-
-SWEP.SwayMultSights = 0.3
-
-SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.24
+SWEP.SprintToFireTime = 0.22
 
 SWEP.SpeedMult = 0.975
 SWEP.SpeedMultSights = 0.785
@@ -145,26 +152,6 @@ SWEP.SpeedMultShooting = 0.9
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.85
 SWEP.SpeedMultBlindFire = 0.9
-
--------------------------- BLIND FIRE
-
-SWEP.CanBlindFire = true -- This weapon is capable of blind firing.
-SWEP.BlindFireLHIK = true -- Hide the left hand while blind firing forward.
-
-SWEP.BlindFireLeft = true
-SWEP.BlindFireRight = true -- This weapon can blind fire towards the right. Generally keep this off.
-
-SWEP.BlindFireOffset = Vector(0, 0, 32) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFirePos = Vector(-2, -2, 8)
-SWEP.BlindFireAng = Angle(0, 0, -45)
-
-SWEP.BlindFireRightOffset = Vector(0, 24, 0) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFireRightPos = Vector(-5, 10, -1)
-SWEP.BlindFireRightAng = Angle(-45, 0, 0)
-
-SWEP.BlindFireLeftOffset = Vector(0, 24, 0) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFireLeftPos = Vector(2, 2, 0)
-SWEP.BlindFireLeftAng = Angle(60, 0, 0)
 
 -------------------------- MELEE
 

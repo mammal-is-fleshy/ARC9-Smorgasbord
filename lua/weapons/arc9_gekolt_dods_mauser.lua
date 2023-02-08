@@ -9,21 +9,20 @@ SWEP.SubCategory = "Primaries"
 SWEP.PrintName = "Roteernte-95"
 SWEP.TrueName = "M712 Schnellfeuer"
 
-SWEP.Class = "Pistol"
+SWEP.Class = "Pistol Carbine"
 SWEP.Trivia = {
     ["Country of Origin"] = "[Empire of] Germany",
     ["Caliber"] = "9×19mm Parabellum",
 }
 
 SWEP.Credits = {
-    Author = "Geckololt",
+    Author = "Geckololt, 8Z",
     Contact = "SlogoKolt#6648",
-    Assets = "Counter-Strike Source"
+    Assets = "Day of Defeat: Source"
 }
 
-SWEP.Description = [[Scruffy carbine version of a strip loading pistol
-Strip loading not included
-Meant to be used as a DMR but of course full-auto is selectable.]]
+SWEP.Description = [[An old as hell pistol given a carbine kit and absurdly fast auto sear.
+Sold en masse to Chinese warlords in the 1930s, so you're a little late to the party.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_mauser.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -35,32 +34,28 @@ SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_mauser.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-4, 5, -5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-14, 2, -6),
+    TPIKPos = Vector(-4, 4, -6),
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
-
-SWEP.SpreadMultHipFire = 3
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
 SWEP.DamageMax = 34 -- Damage done at point blank range
 SWEP.DamageMin = 19 -- Damage done at maximum range
 
-SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
-
-SWEP.RangeMin = 700 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 8000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 1000 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 7000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 
 SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 1.25,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_LEFTARM] = 0.95,
-    [HITGROUP_RIGHTARM] = 0.95,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.75,
+    [HITGROUP_RIGHTLEG] = 0.75,
 }
 
 -------------------------- PHYS BULLET BALLISTICS
@@ -80,7 +75,7 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 700
+SWEP.RPM = 900
 
 -- Works different to ArcCW
 
@@ -93,6 +88,8 @@ SWEP.RPM = 700
 SWEP.Firemodes = {
     {
         Mode = 1,
+        RPMMult = 500 / 900,
+        RecoilDissipationRateMult = 1.25,
     },
     {
         Mode = -1,
@@ -101,18 +98,18 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1.25
+SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.7 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.7 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.18 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.14 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 70 -- How much recoil dissipates per second.
+SWEP.RecoilDissipationRate = 25 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
@@ -120,28 +117,35 @@ SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 SWEP.RecoilKick = 1.5
 SWEP.RecoilKickDamping = 60
 
+SWEP.RecoilAddRecoil = 0.2
+SWEP.RecoilMultRecoil = 1.15 -- Looks stupid but it means expoential recoil growth.
+
 -------------------------- SPREAD
 
 SWEP.Spread = 0.003
 
-SWEP.SpreadAddRecoil = 0.0025 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0
+SWEP.SpreadMultRecoil = 1.45
+SWEP.RecoilModifierCap = 7
+
+SWEP.SpreadAddHipFire = 0.001
+SWEP.SpreadMultHipFire = 1.25
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 7.5 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 1.5 -- How much the gun sways.
+SWEP.FreeAimRadius = 8.5
+SWEP.FreeAimRadiusSights = 0
+
+SWEP.Sway = 1.2
 
 SWEP.SwayMultMidAir = 2
 SWEP.SwayMultMove = 1.15
 SWEP.SwayMultCrouch = 0.66
 SWEP.SwayMultShooting = 1.2
-
-SWEP.FreeAimRadiusSights = 0
-
 SWEP.SwayMultSights = 0.3
 
-SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
+SWEP.AimDownSightsTime = 0.27
+SWEP.SprintToFireTime = 0.3
 
 SWEP.SpeedMult = 0.95
 SWEP.SpeedMultSights = 0.75
@@ -149,26 +153,6 @@ SWEP.SpeedMultShooting = 0.7
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.8
 SWEP.SpeedMultBlindFire = 0.9
-
--------------------------- BLIND FIRE
-
-SWEP.CanBlindFire = true -- This weapon is capable of blind firing.
-SWEP.BlindFireLHIK = false -- Hide the left hand while blind firing forward.
-
-SWEP.BlindFireLeft = true
-SWEP.BlindFireRight = true -- This weapon can blind fire towards the right. Generally keep this off.
-
-SWEP.BlindFireOffset = Vector(0, 0, 32) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFirePos = Vector(-2, -2, 8)
-SWEP.BlindFireAng = Angle(0, 0, -45)
-
-SWEP.BlindFireRightOffset = Vector(0, 24, 0) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFireRightPos = Vector(-5, 10, -1)
-SWEP.BlindFireRightAng = Angle(-45, 0, 0)
-
-SWEP.BlindFireLeftOffset = Vector(0, 24, 0) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFireLeftPos = Vector(2, 2, 0)
-SWEP.BlindFireLeftAng = Angle(60, 0, 0)
 
 -------------------------- MELEE
 
@@ -230,10 +214,10 @@ SWEP.CustomizeRotateAnchor = Vector(9, -3.025, -3.23)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "revolver"
+SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = "passive"
-SWEP.HoldTypeSights = "revolver"
+SWEP.HoldTypeSights = "ar2"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 

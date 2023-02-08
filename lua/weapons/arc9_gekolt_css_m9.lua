@@ -6,23 +6,23 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
 SWEP.SubCategory = "Secondaries"
 
-SWEP.PrintName = "Arditi-A2"
-SWEP.TrueName = "M9 Berreta"
+SWEP.PrintName = "Arditi Elite"
+SWEP.TrueName = "Beretta 92G Elite II"
 
 SWEP.Class = "Pistol"
 SWEP.Trivia = {
     ["Country of Origin"] = "Italy",
-    ["Caliber"] = ".40 S&W",
+    ["Caliber"] = "9x19mm",
 }
 
 SWEP.Credits = {
-    Author = "Geckololt",
+    Author = "Geckololt, 8Z",
     Contact = "SlogoKolt#6648",
     Assets = "Counter-Strike Source"
 }
 
-SWEP.Description = [[Outdated sidearm with huge reserve amounts
-Popular amongst aftermarket tinkers.]]
+SWEP.Description = [[A turn-of-the-century update to a straightforward double-stack pistol.
+Some aftermarket tinker options exist, though few of them deserve the "Elite" moniker.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m9.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -45,21 +45,21 @@ SWEP.RecoilAutoControlMultHipFire = 0.5
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.DamageMax = 26 -- Damage done at point blank range
-SWEP.DamageMin = 16 -- Damage done at maximum range
+SWEP.DamageMax = 35
+SWEP.DamageMin = 16
 
-SWEP.DamageRand = 0.1 -- Damage varies randomly per shot by this fraction. 0.1 = +- 10% damage per shot.
-
-SWEP.RangeMin = 600 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 4000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 500
+SWEP.RangeMax = 3000
 
 SWEP.Penetration = 2 -- Units of wood that can be penetrated by this gun.
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.25,
+    [HITGROUP_HEAD] = 1.75,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_LEFTARM] = 0.95,
-    [HITGROUP_RIGHTARM] = 0.95,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.75,
+    [HITGROUP_RIGHTLEG] = 0.75,
 }
 
 -------------------------- PHYS BULLET BALLISTICS
@@ -108,62 +108,45 @@ SWEP.RecoilSide = 0.25 -- Multiplier for vertical recoil
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 
-SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
-SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
+SWEP.RecoilDissipationRate = 10
+SWEP.RecoilResetTime = 0
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 
+SWEP.RecoilMultRecoil = 1.15 -- Looks stupid but it means expoential recoil growth.
+
 -------------------------- SPREAD
 
-SWEP.Spread = 0.01
+SWEP.Spread = 0.004
 
-SWEP.SpreadAddRecoil = 0.005 -- Applied per unit of recoil.
+SWEP.SpreadAddRecoil = 0
+SWEP.SpreadMultRecoil = 1.3
+SWEP.RecoilModifierCap = 7
+
+SWEP.SpreadAddHipFire = 0.0012
+SWEP.SpreadMultHipFire = 1.3
 
 -------------------------- HANDLING
 
-SWEP.FreeAimRadius = 7 -- In degrees, how much this gun can free aim in hip fire.
-SWEP.Sway = 1.1 -- How much the gun sways.
+SWEP.FreeAimRadius = 4 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.Sway = 1.25
 
 SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
-SWEP.SwayMultCrouch = 0.66
-SWEP.SwayMultShooting = 1.2
+SWEP.SwayMultMove = 1.5
+SWEP.SwayMultCrouch = 0.667
+SWEP.SwayMultShooting = 1.5
+SWEP.SwayMultSights = 0.5
 
-SWEP.FreeAimRadiusSights = 0
+SWEP.AimDownSightsTime = 0.2
+SWEP.SprintToFireTime = 0.17
 
-SWEP.SwayMultSights = 0.3
-
-SWEP.AimDownSightsTime = 0.25 -- How long it takes to go from hip fire to aiming down sights.
-SWEP.SprintToFireTime = 0.25 -- How long it takes to go from sprinting to being able to fire.
-
-SWEP.SpeedMult = 0.95
+SWEP.SpeedMult = 1
 SWEP.SpeedMultSights = 0.75
 SWEP.SpeedMultShooting = 0.7
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.8
-SWEP.SpeedMultBlindFire = 0.9
-
--------------------------- BLIND FIRE
-
-SWEP.CanBlindFire = true -- This weapon is capable of blind firing.
-SWEP.BlindFireLHIK = false -- Hide the left hand while blind firing forward.
-
-SWEP.BlindFireLeft = true
-SWEP.BlindFireRight = true -- This weapon can blind fire towards the right. Generally keep this off.
-
-SWEP.BlindFireOffset = Vector(0, 0, 32) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFirePos = Vector(-2, -2, 8)
-SWEP.BlindFireAng = Angle(0, 0, -45)
-
-SWEP.BlindFireRightOffset = Vector(0, 24, 0) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFireRightPos = Vector(-5, 10, -1)
-SWEP.BlindFireRightAng = Angle(-45, 0, 0)
-
-SWEP.BlindFireLeftOffset = Vector(0, 24, 0) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFireLeftPos = Vector(2, 2, 0)
-SWEP.BlindFireLeftAng = Angle(60, 0, 0)
 
 -------------------------- MELEE
 
