@@ -1,0 +1,7 @@
+VertexLitGeneric
+{
+	"$basetexture"	"arc9_css\sigbody3"
+	"$envmap" "env_cubemap"
+	"$envmapmask" "arc9_css\sigbody3_ref"
+
+}

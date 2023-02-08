@@ -23,13 +23,13 @@ SWEP.Slot = 4
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "Cluster"
-        ShootEnt = "gekolt_css_grenade_bundle"
+        PrintName = "Cluster",
+        ShootEnt = "gekolt_css_grenade_bundle",
     },
     {
         Mode = 1,
-        PrintName = "Condensed"
-        ShootEnt = "gekolt_css_grenade_bundle_cds"
+        PrintName = "Condensed",
+        ShootEnt = "gekolt_css_grenade_bundle_cds",
     },	
 }
 

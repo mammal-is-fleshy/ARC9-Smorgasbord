@@ -25,11 +25,13 @@ ATT.Sights = {
 }
 
 ATT.DrawFunc = function(swep, model, wm)
-    if swep:GetElements()["acog_mount_rail"] then
+    if swep:GetElements()["acog_sight_on"] then
+        model:SetBodygroup(1,1)
+	elseif	swep:GetElements()["acog_mount_rail"] then
         model:SetBodygroup(1,2)
     else
         model:SetBodygroup(1,0)
-    end
+    end    
 end
 
 
@@ -39,10 +41,10 @@ ATT.Attachments = {
         DefaultName = "None",
 		InstalledElements = {"acog_mount_rail"},
 
-        Category = {"optic_css_s",},
+        Category = {"optic_css_s", "optic_css_acog_iron"},
         Pos = Vector(3.85, 0, -2.4),
         Ang = Angle(0, 0, 0),
-        ExtraSightDistance = -1,
+        ExtraSightDistance = -0.5,
 		Scale = 0.8,
     },
 }
@@ -67,6 +69,31 @@ ATT.AimDownSightsTimeAdd = 0.12
 ATT.SprintToFireTimeAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "gekolt_css_optic_acog")
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "Iron Sight"
+ATT.CompactName = "IRONS"
+ATT.Icon = Material("entities/gekolt_css_optic/acog.png", "mips smooth")
+ATT.Description = [[Simple backup sight for your optic.]]
+ATT.SortOrder = 4
+
+ATT.Category = {"optic_css_acog_iron"}
+ATT.ActivateElements = {"acog_sight_on"}
+
+-- Allows a custom sight position to be defined
+ATT.Sights = {
+    {
+        Pos = Vector(0, 9, 0.1),
+        Ang = Angle(0, 2.6, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 40
+    },
+}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_optic_acog_iron")
 
 ----------------------------------------------------------------------------------
 
@@ -244,7 +271,7 @@ ATT.Folder = "SCOPE"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(-0.001, 7.75, -2.12),
+        Pos = Vector(-0.001, 7.75, -1.695),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
@@ -288,15 +315,15 @@ ATT.Folder = "SCOPE"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 8, -2.05),
+        Pos = Vector(0, 7, -1.63),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
     },
     {
-        Pos = Vector(0, 7, -4),
+        Pos = Vector(0, 6.5, -3.2),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.25,
+        Magnification = 1.2,
         ViewModelFOV = 60,
         Disassociate = true
     },
@@ -553,7 +580,8 @@ ATT = {}
 ATT.PrintName = "Micro Scope"
 ATT.CompactName = "Micro"
 ATT.Icon = Material("entities/gekolt_css_optic/micro.png", "mips smooth")
-ATT.Description = [[2x magnifying scope with three mounted rails for even more attachments]]
+ATT.Description = [[No not that microscope
+2x magnifying scope with three mounted rails for even more attachments]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/micro2.mdl"
@@ -564,7 +592,7 @@ ATT.Folder = "SCOPE"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0.005, 8.25, -1.87),
+        Pos = Vector(0, 7.75, -1.49),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 40
