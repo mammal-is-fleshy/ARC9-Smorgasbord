@@ -17,7 +17,7 @@ ATT.Folder = "SCOPE"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0.005, 8, -1.05),
+        Pos = Vector(0.005, 8, -1.095),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 40
@@ -86,14 +86,14 @@ ATT.Folder = "SCOPE"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0.0075, 7.75, -1.725),
+        Pos = Vector(0.0075, 6.5, -1.38),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
     },
 
     {
-        Pos = Vector(0.0075, 10, -2.9),
+        Pos = Vector(0.0075, 8, -2.35),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 60,
@@ -111,8 +111,8 @@ ATT.RTScopeShadowIntensity = 7
 
 ATT.ScopeScreenRatio = 0.9
 
-ATT.Scale = 1.25
-ATT.ModelOffset = Vector(0, 0, -0.1)
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0, 0, -0.2)
 
 ATT.SwayAdd = 0.05
 ATT.FreeAimRadiusMultSights = 0.1
@@ -201,7 +201,7 @@ ATT.Folder = "SCOPE"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0.015, 10, -1.8),
+        Pos = Vector(0.063, 10, -1.95),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
@@ -215,7 +215,6 @@ ATT.DrawFunc = function(swep, model, wm)
         model:SetBodygroup(1,0)
     end
 end
-
 
 ATT.Attachments = {
     {
@@ -238,7 +237,7 @@ ATT.RTScopeReticleScale = 1.05
 ATT.RTScopeColorable = true
 
 ATT.RTScopeFOVMax = 1.5
-ATT.RTScopeFOVMin = 15
+ATT.RTScopeFOVMin = 12
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 4
 
@@ -278,12 +277,35 @@ ATT.Folder = "SCOPE"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0.015, 11.25, -1.6475),
+        Pos = Vector(0.009, 8, -1.48),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
     },
 }
+
+ATT.DrawFunc = function(swep, model, wm)
+    if swep:GetElements()["acog_mount_rail"] then
+        model:SetBodygroup(1,1)
+    else
+        model:SetBodygroup(1,0)
+    end
+end
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+		InstalledElements = {"acog_mount_rail"},
+
+        Category = {"optic_css_s",},
+        Pos = Vector(4.2, 0, -3.2),
+        Ang = Angle(0, 0, 0),
+        ExtraSightDistance = -1,
+		Scale = 0.8,
+    },
+}
+
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
@@ -299,8 +321,8 @@ ATT.RTScopeAdjustmentLevels = 4
 ATT.ScopeScreenRatio = 0.9
 ATT.ScopeLength = 30
 
-ATT.Scale = 1.1
-ATT.ModelOffset = Vector(0, 0, -0.25)
+ATT.Scale = 1
+ATT.ModelOffset = Vector(0, 0, -0.1)
 
 ATT.SwayAdd = 0.1
 ATT.FreeAimRadiusMultSights = 0.12
@@ -623,7 +645,7 @@ ATT.Folder = "REFLEX"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(-0.015, 6, -1.07),
+        Pos = Vector(-0.0075, 6, -1.07),
         Ang = Angle(0, 0, 0),
         Magnification = 1.3,
         ViewModelFOV = 60,
