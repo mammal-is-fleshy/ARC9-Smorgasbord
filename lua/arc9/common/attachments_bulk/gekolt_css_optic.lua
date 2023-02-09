@@ -439,7 +439,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_fview")
 ATT = {}
 
 ATT.PrintName = "Sweeper Scope"
-ATT.CompactName = "FView"
+ATT.CompactName = "Sweeper"
 ATT.Icon = Material("entities/gekolt_css_optic/farv.png", "mips smooth")
 ATT.Description = [[]]
 ATT.SortOrder = 6.3
@@ -453,7 +453,7 @@ ATT.Folder = "SCOPE"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0.009, 8, -1.48),
+        Pos = Vector(0, 7.5, -1.48),
         Ang = Angle(0, 0, 0),
         Magnification = 1.5,
         ViewModelFOV = 60
@@ -546,8 +546,8 @@ ATT.RTScopeShadowIntensity = 7
 
 ATT.ScopeScreenRatio = 0.9
 
-ATT.Scale = 1
-ATT.ModelOffset = Vector(0, 0, -0.1)
+ATT.Scale = 1.25
+ATT.ModelOffset = Vector(0, 0, -0.2)
 
 ATT.SwayAdd = 0.05
 ATT.FreeAimRadiusMultSights = 0.1
@@ -1233,7 +1233,7 @@ ATT.Folder = "REFLEX"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -0.9),
+        Pos = Vector(0, 7.5, -0.9),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 60
@@ -1271,7 +1271,7 @@ ATT.Folder = "REFLEX"
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 8, -0.75),
+        Pos = Vector(0, 8, -0.65),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 60
@@ -1291,6 +1291,44 @@ ATT.FreeAimRadiusMultSights = 0.25
 ATT.SprintToFireTimeAdd = 0.035
 
 ARC9.LoadAttachment(ATT, "gekolt_css_optic_t1")
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "Reddot Sight"
+ATT.CompactName = "Reddot"
+ATT.Icon = Material("entities/gekolt_css_optic/aimpoint.png", "mips smooth")
+ATT.Description = [[Cylindrical optics with lot's of circles.]]
+ATT.SortOrder = 0.2
+
+ATT.Model = "models/weapons/geckololt_css/atts/reddot.mdl"
+
+ATT.Category = {"optic_css","optic_css_s","optic_css_holo"}
+ATT.Folder = "REFLEX"
+
+-- Allows a custom sight position to be defined
+ATT.Sights = {
+    {
+        Pos = Vector(0, 7, -1.375),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 60
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("arc9_css/reddot.png", "mips smooth")
+ATT.HoloSightSize = 900
+ATT.HoloSightColorable = true
+
+ATT.ModelOffset = Vector(0, 0, -0.1)
+
+ATT.SwayAdd = 0.02
+ATT.FreeAimRadiusMultSights = 0.25
+ATT.SprintToFireTimeAdd = 0.035
+
+ARC9.LoadAttachment(ATT, "gekolt_css_optic_reddot")
 
 ----------------------------------------------------------------------------------
 
