@@ -63,6 +63,12 @@ $sequence "throw" {
 	fadeout 0.2
 	fps 40
 }
+$sequence "melee" {
+	"anims\melee.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"

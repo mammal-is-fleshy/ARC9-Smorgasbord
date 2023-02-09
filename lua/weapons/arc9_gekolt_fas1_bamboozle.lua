@@ -178,8 +178,16 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "idle",
+		Time = 0
     },
+    ["bash"] = {
+        Source = {"melee"}
+    },	
 }
+
+function SWEP:SecondaryAttack()
+    return self:MeleeAttack()
+end
 
 -------------------------- ATTACHMENTS
 
