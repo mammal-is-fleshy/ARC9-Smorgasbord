@@ -1,3 +1,5 @@
+AddCSLuaFile()
+
 ENT.Type = "anim"
 ENT.Base = "base_entity"
 ENT.PrintName = "Frag Grenade"
