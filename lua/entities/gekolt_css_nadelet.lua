@@ -66,10 +66,10 @@ function ENT:Detonate()
         effectdata:SetOrigin(pos)
         if self:WaterLevel() >= 1 then
             util.Effect("WaterSurfaceExplosion", effectdata)
-            self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
+            self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_WEAPON)
         else
-            util.Effect("Explosion", effectdata)
-            self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
+            util.Effect("HelicopterMegaBomb", effectdata)
+            self:EmitSound("^weapons/explode4.wav", 125, math.Rand(100, 110), 1, CHAN_WEAPON)
         end
 
         util.BlastDamage(self, self:GetOwner(), pos, 350, 150)
