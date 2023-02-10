@@ -255,7 +255,8 @@ SWEP.Animations = {
         },
         EventTable = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 18 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},
+            {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 54 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 64 / 40},
         },
     },
     ["reload_empty"] = {
@@ -269,9 +270,10 @@ SWEP.Animations = {
         },
         EventTable = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
-            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 63 / 40},
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 87 / 40},
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 93 / 40},
+            {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 51 / 40},
+            {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 61 / 40},
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 84 / 40},
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 92 / 40},
         },
     },
 
