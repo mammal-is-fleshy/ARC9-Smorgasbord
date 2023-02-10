@@ -117,7 +117,8 @@ ATT.SortOrder = 0
 ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"awp_f_smg", "short_clamp", "notop", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_ak47"
-ATT.ShootSound = "gekolt_css/mp5-1.wav"
+ATT.ShootSound = {"magmacow_smor/mp5n-1.wav", "magmacow_smor/mp5n-2.wav","magmacow_smor/mp5n-3.wav" }
+ATT.ShootSoundSilenced = "magmacow_smor/mp5k-supv.wav"
 
 ATT.SwayMult = 1.5
 ATT.AccuracyMOAMult = 3
@@ -214,7 +215,7 @@ ATT.SortOrder = 0
 
 ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"awp_f_sd", "ubgl_maghold", "pre_muzzed"}
-ATT.ShootSound = "gekolt_css/hb_sd.wav"
+ATT.ShootSoundSilenced = "magmacow_smor/AWM-50.wav"
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.Silencer = true
 

@@ -233,8 +233,8 @@ SWEP.NoShellEject = true
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "gekolt_css/awp1.wav"
-SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
+SWEP.ShootSound = {"magmacow_smor/AWM-1.wav", "magmacow_smor/AWM-2.wav", "magmacow_smor/AWM-3.wav"}
+SWEP.ShootSoundSilenced = "magmacow_smor/AWM-SIL.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
