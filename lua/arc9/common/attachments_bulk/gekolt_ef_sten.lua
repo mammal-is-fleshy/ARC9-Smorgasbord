@@ -129,7 +129,7 @@ ATT.PrintName = "Volkstutzen-Frame"
 ATT.CompactName = "3008"
 ATT.Icon = Material("entities/gekolt_ef_sten_mp3008.png", "mips smooth")
 ATT.Description = [[Captured militian modification, they even fixed the sight for you
-Verticle design requires slower cycling
+Vertical design requires slower cycling rate
 Magically jammed in 2 more bullets.]]
 
 ATT.Pros = {}

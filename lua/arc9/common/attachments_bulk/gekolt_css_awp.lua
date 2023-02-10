@@ -118,7 +118,7 @@ ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"awp_f_smg", "short_clamp", "notop", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_ak47"
 ATT.ShootSound = {"magmacow_smor/mp5n-1.wav", "magmacow_smor/mp5n-2.wav","magmacow_smor/mp5n-3.wav" }
-ATT.ShootSoundSilenced = "magmacow_smor/mp5k-supv.wav"
+ATT.ShootSoundSilenced = "magmacow_smor/mp5k-sup.wav"
 
 ATT.SwayMult = 1.5
 ATT.AccuracyMOAMult = 3
