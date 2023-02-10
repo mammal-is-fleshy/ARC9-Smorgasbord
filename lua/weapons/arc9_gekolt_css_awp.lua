@@ -77,6 +77,12 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 SWEP.RPM = 40
 
+SWEP.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
+	if wep:Clip1() == 0 then
+		wep:SetNextPrimaryFire(1/300)
+	end
+end
+
 -- Works different to ArcCW
 
 -- -1: Automatic
