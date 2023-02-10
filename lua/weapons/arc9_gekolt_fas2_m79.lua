@@ -283,6 +283,7 @@ SWEP.MuzzleEffectQCA = 1
 
 SWEP.CaseEffectQCA = 2
 SWEP.ShellModel = "models/weapons/geckololt_css/shell_40mm.mdl"
+SWEP.ShellSounds = {"cturix_m79/nadeshell-1.wav", "cturix_m79/nadeshell-2.wav", "cturix_m79/nadeshell-3.wav", "cturix_m79/nadeshell-4.wav", "cturix_m79/nadeshell-5.wav", "cturix_m79/nadeshell-6.wav", "cturix_m79/nadeshell-7.wav", "cturix_m79/nadeshell-8.wav", "cturix_m79/nadeshell-9.wav", "cturix_m79/nadeshell-10.wav"}
 SWEP.ShellCorrectPos = Vector(0, 0, 0)
 SWEP.ShellCorrectAng = Angle(0, 180, 0)
 SWEP.ShellScale = 1
@@ -294,7 +295,7 @@ SWEP.EjectDelay = 0
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "gekolt_fas2/m79_fire1.wav"
+SWEP.ShootSound = {"cturix_m79/fire_grenade1.wav", "cturix_m79/fire_grenade2.wav", "cturix_m79/fire_grenade3.wav", "cturix_m79/fire_grenade4.wav", "cturix_m79/fire_grenade5.wav", "cturix_m79/fire_grenade6.wav"}
 SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
@@ -435,7 +436,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 3 / 40},
-            {s =  "gekolt_fas2/m79_remove.wav" ,   t = 11 / 40},
+            {s =  "gekolt_fas2/nadeshell_release.wav" ,   t = 11 / 40},
             {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 49 / 40},
             {s =  "gekolt_fas2/m79_insert.wav" ,    t = 50 / 40},
             {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 58 / 40},

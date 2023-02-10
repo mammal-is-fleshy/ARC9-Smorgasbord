@@ -49,7 +49,9 @@ ATT.SuppressSmokeTrail = true
 ATT.ExplosionDamageOverride = 0
 ATT.ExplosionEffect = false
 
-ATT.ShootSound = "gekolt_css/xm1014-1.wav"
+ATT.ShootSound = {"cturix_m79/fire_buck_large-1.wav", "cturix_m79/fire_buck_large-2.wav", "cturix_m79/fire_buck_large-3.wav", "cturix_m79/fire_buck_large-4.wav"}
+ATT.ShellSounds = {"cturix_m79/shotshell_large-1.wav", "cturix_m79/shotshell_large-2.wav", "cturix_m79/shotshell_large-3.wav", "cturix_m79/shotshell_large-4.wav"}
+
 
 ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
 
@@ -242,7 +244,8 @@ ATT.SuppressSmokeTrail = true
 ATT.ExplosionDamageOverride = 0
 ATT.ExplosionEffect = false
 
-ATT.ShootSound = "gekolt_css/xm1014-1.wav"
+ATT.ShootSound = {"cturix_m79/fire_buck_small_long-1.wav", "cturix_m79/fire_buck_small_long-2.wav", "cturix_m79/fire_buck_small_long-3.wav", "cturix_m79/fire_buck_small_long-4.wav"}
+ATT.ShellSounds = {"cturix_m79/shotshell_large-1.wav", "cturix_m79/shotshell_large-2.wav", "cturix_m79/shotshell_large-3.wav", "cturix_m79/shotshell_large-4.wav"}
 
 ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
 
@@ -334,7 +337,8 @@ ATT.SuppressSmokeTrail = true
 ATT.ExplosionDamageOverride = 0
 ATT.ExplosionEffect = false
 
-ATT.ShootSound = "gekolt_css/xm1014-1.wav"
+ATT.ShootSound = {"cturix_m79/fire_buck_small1.wav", "cturix_m79/fire_buck_small2.wav", "cturix_m79/fire_buck_small3.wav"}
+ATT.ShellSounds = {"cturix_m79/shotshell_large-1.wav", "cturix_m79/shotshell_large-2.wav", "cturix_m79/shotshell_large-3.wav", "cturix_m79/shotshell_large-4.wav"}
 
 ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
 
