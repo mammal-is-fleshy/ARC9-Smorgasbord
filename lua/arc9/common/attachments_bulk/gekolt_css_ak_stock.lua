@@ -546,7 +546,7 @@ ATT = {}
 
 ATT.PrintName = [[Naked Handguard]]
 ATT.CompactName = [[Naked]]
-ATT.Icon = Material("entities/gekolt_css_ak_h_hungary.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_ak_h_naked.png", "mips smooth")
 ATT.Description = [[Stripped down to the bare miminum.
 ]]
 
