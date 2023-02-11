@@ -5,9 +5,15 @@
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TheOnly8Z - Major assistance in cleaning and stats department
 CyloWalker - Annoying little burger -- i love this man as if he's my little cabbage :))
-CturiX - Mauser Sound
+CturiX - Mauser, M79 and other Sounds
+Zenith - Sounds
+
+-General-
+Google Images - ref
+Fesiug??? - Nade ent
 
 
+-Models/Textures-
 Counter Strike Source: (horrid)Models, Textures [AWP/M4/AK/M9]
 + Arctic - Incredibly doggy -original- restoration models (css)
 Day of Defeat Source: (horrid)Models [Garand/Mauser]
@@ -17,14 +23,10 @@ Enemy Front[??? honestly i cant remember]: Sten
 Medal of Hounor Airborne: M18
 + Moon - Ripping
 Soldier of Fortune 3 - Muzzles and Tac/Flashlight, some ak stuff, Tishina
-
-https://gamebanana.com/sounds/56985 - M712 Sound
-
-Google Images - ref
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
 Counter Strike Online 2 - Some M4 Parts (  The Taiwanese looking stuff  )
-Fesiug??? - Nade ent
 
+-Models/Textures-
 https://gamebanana.com/mods/173290 - Garand??? --(genuinely forgo :skull::skull::skull::skull:)
 https://gamebanana.com/mods/173805 - Mauser
 
@@ -41,12 +43,16 @@ https://gamebanana.com/models/4134 - OKP7
 
 https://gamebanana.com/mods/39876 - Muzzle/Grip/T1
 
--- sounds --
+- Sounds -
 https://gamebanana.com/sounds/18970
 https://gamebanana.com/sounds/18302
 https://gamebanana.com/sounds/21639
 https://gamebanana.com/sounds/57239
 
+https://gamebanana.com/sounds/56985 - M712 Sound
+https://gamebanana.com/sounds/28249 - Random
+https://gamebanana.com/sounds/43486 - Random2
+https://gamebanana.com/sounds/27178 - AWP
 
 The entire Kingdom of Sweden - being so fvcking zased
 
@@ -120,9 +126,9 @@ M9: Done
 Garand: Done
 Mauser: Done
 M79: Done
-M18: Done?
-AK: Done?
-Sten: Done?
+M18: Done
+AK: Done
+Sten: Done
 Tishina: WIP
 
 
@@ -136,7 +142,7 @@ Makarov: Model Half [SCRAPPED]
 note myself: 
 -use elements instead of attachment check
 -you cant use $attachment as a spare point For offhand stuff       use $bonemerge instead
-+you have to apply the animation point before exporting
++you HAVE to apply the animation point before exporting
 -use a different path for material FUCK YOU CSGO  -- nope doesn't work
 -maybe Write the calibre vague to keep the larping hardcore tactile realischism wankers away
 -you suck at ubgl
@@ -249,7 +255,7 @@ Shitberpunk 2077
 one of those trench variants [default]
 brazil [burst cuz reasons]
 what Do you mean beta mag and carbine frame doesnt exist in second war 2?
-
+silencer is a fleshy moment
 
  M79: [English] -- basic bitch part 3
 Alofs is basically a magazine tube for single barrel self ejecting shotguns  -- STOP SAYING HUNT SHOWDOWN I HAVE NEVER PLAYED IT

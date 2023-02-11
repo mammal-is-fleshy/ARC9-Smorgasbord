@@ -552,6 +552,7 @@ SWEP.AttachmentElements = {
     ["s_poly2"] = { Bodygroups = { {4, 8} },},
     ["s_adaptor"] = { Bodygroups = { {4, 11} },},
 
+    ["hg_naked"] = { Bodygroups = { {3, 14}, {8, 2} },			AttPosMods = { [6] = { Pos = Vector(0, -0.9, 8), } }		},
     ["hg_poly"] = { Bodygroups = { {3, 4}, {1, 5}, {2, 2} },	AttPosMods = { [6] = { Pos = Vector(0, -0.4, 2.5), } }		},
     ["hg_amd"] = { Bodygroups = { {3, 13} },					AttPosMods = { [6] = { Pos = Vector(0, -0.4, 2.5), }, [7] = { Pos = Vector(0, 0.075, 24), } }		},
     ["hg_bizon"] = { Bodygroups = { {3, 9} },					AttPosMods = { [7] = { Pos = Vector(0, 0.075, 21), } }		},

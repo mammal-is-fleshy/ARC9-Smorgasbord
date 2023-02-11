@@ -541,3 +541,20 @@ ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg11")
 
 
 ----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = [[Naked Handguard]]
+ATT.CompactName = [[Naked]]
+ATT.Icon = Material("entities/gekolt_css_ak_h_hungary.png", "mips smooth")
+ATT.Description = [[Stripped down to the bare miminum.
+]]
+
+ATT.SortOrder = 0.45
+ATT.Category = "css_ak_handguard"
+ATT.ActivateElements = {"hg_naked"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg12")
+
+
+----------------------------------------------------------------------------------

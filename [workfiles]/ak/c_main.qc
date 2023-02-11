@@ -48,6 +48,7 @@ $bodygroup "handguard"
 	blank
 	studio "ak47_hg_12.smd"
 	studio "ak47_hg_hungary.smd"
+	studio "ak47_hg_naked.smd"
 }
 
 $bodygroup "stock"
@@ -86,7 +87,8 @@ $bodygroup "grip"
 $bodygroup "ak"
 {
 	studio "ak47.smd"
-	blank	
+	blank
+	studio "ak47_naked.smd"
 }
 
 $bodygroup "mount2"
