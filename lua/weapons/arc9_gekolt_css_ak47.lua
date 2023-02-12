@@ -542,7 +542,8 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["s_fold1"] = { Bodygroups = { {4, 3} },},
+    ["s_no"] = { Bodygroups = { {4, 13} },}, 
+	["s_fold1"] = { Bodygroups = { {4, 3} },},
     ["s_fold2"] = { Bodygroups = { {4, 4} },},
     ["s_fold3"] = { Bodygroups = { {4, 5} },},
     ["s_slide"] = { Bodygroups = { {4, 10} },},

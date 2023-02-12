@@ -13,6 +13,7 @@ $bodygroup "mag"
 	studio "ak47_mag_bizon.smd"
 	studio "ak47_mag_water.smd"
 	studio "ak47_mag_9mm.smd"	
+	blank
 }
 
 $bodygroup "iron"
@@ -66,6 +67,7 @@ $bodygroup "stock"
 	studio "ak47_stock_slide.smd"
 	studio "ak47_stock_adapt.smd"
 	studio "ak47_stock_folded.smd"
+	blank
 }
 
 $bodygroup "rail_top"

@@ -2,6 +2,22 @@ local ATT = {}
 
 ATT = {}
 
+ATT.PrintName = [[No Stock]]
+ATT.CompactName = [[No]]
+ATT.Icon = Material("entities/gekolt_css_blank.png", "mips smooth")
+ATT.Description = [[no
+]]
+
+ATT.SortOrder = -0.1
+ATT.Category = "css_ak_stock"
+ATT.ActivateElements = {"s_no"}
+
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock0")
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
 ATT.PrintName = [[Folding Stock A]]
 ATT.CompactName = [[F.A]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_fold.png", "mips smooth")
