@@ -19,8 +19,8 @@ ATT.Attachments = {
         DefaultName = "None",
 		InstalledElements = {"scope_rail"},
 
-        Category = {"optic_css_s"},
-        Pos = Vector(-0.5, 0, -1.45),
+        Category = {"optic_css_s", "tac_css"},
+        Pos = Vector(-0.5, 0, -1.35),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -0.5,
 		Scale = 1,
@@ -39,7 +39,8 @@ if CLIENT then
     })
 end
 
-local textoffset = Vector(-0.55, 0, 0.35)	-- pos
+
+local textoffset = Vector(-0.55, 0, 0.275)	-- pos
 local textbgcolor = Color(19, 48, 33, 58)
 local textcolor = Color(255, 255, 0)
 local text = ""
@@ -90,6 +91,40 @@ ARC9.LoadAttachment(ATT, "gekolt_css_scope_rangefider")
 
 ATT = {}
 
+ATT.PrintName = "Radar"
+ATT.CompactName = "Radar"
+ATT.Icon = Material("entities/gekolt_css_optic/range.png", "mips smooth")
+ATT.Description = [[Very slow radar unit]]
+ATT.SortOrder = 1401
+
+ATT.Model = "models/weapons/geckololt_css/atts/rangefider.mdl"
+ATT.ModelBodygroups = "10"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-0.1, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+		InstalledElements = {"scope_rail"},
+
+        Category = {"optic_css_s"},
+        Pos = Vector(-0.5, 0, -1.45),
+        Ang = Angle(0, 0, 0),
+        ExtraSightDistance = -0.5,
+		Scale = 1,
+    },
+}
+
+ATT.Category = {"css_scope_extra", "tac_css_flat", "mount_css", "mountr_css","mountl_css"}
+ATT.Folder = "GADGET"
+
+ARC9.LoadAttachment(ATT, "gekolt_css_scope_radar")
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
 ATT.PrintName = "ACOG"
 ATT.CompactName = "ACOG"
 ATT.Icon = Material("entities/gekolt_css_optic/acog.png", "mips smooth")
@@ -97,7 +132,7 @@ ATT.Description = [[Simple mid-ranged scope]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/acog.mdl"
-ATT.ModelBodygroups = "00"
+ATT.ModelBodygroups = "000"
 
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "SCOPE"
@@ -119,7 +154,13 @@ ATT.DrawFunc = function(swep, model, wm)
         model:SetBodygroup(1,2)
     else
         model:SetBodygroup(1,0)
-    end    
+    end
+
+    if swep:GetElements()["acog_mount_rail2"] then
+        model:SetBodygroup(2,1)
+    else
+        model:SetBodygroup(2,0)
+    end    	
 end
 
 
@@ -132,6 +173,18 @@ ATT.Attachments = {
         Category = {"optic_css_s", "optic_css_acog_iron", "css_scope_extra", "tac_css"},
         Pos = Vector(2.7, 0, -2),
         Ang = Angle(0, 0, 0),
+        ExtraSightDistance = -0.5,
+		Scale = 1,
+    },
+	
+	{
+        PrintName = "Angled Optic",
+        DefaultName = "None",
+		InstalledElements = {"acog_mount_rail2"},
+
+        Category = {"optic_css_s", "css_scope_extra", "tac_css"},
+        Pos = Vector(-0.9, -0.85, -1.85),
+        Ang = Angle(0, -45, 0),
         ExtraSightDistance = -0.5,
 		Scale = 1,
     },
@@ -270,7 +323,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
 ATT.RTScopeFOV = 10
 ATT.RTScopeReticle = Material("arc9_css/scope5_border.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.05
+ATT.RTScopeReticleScale = 0.95
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 
@@ -427,10 +480,10 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 10
 ATT.RTScopeReticle = Material("arc9_css/scope3_border.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.05
+ATT.RTScopeReticleScale = 0.95
 ATT.RTScopeColorable = true
 
-ATT.ScopeScreenRatio = 0.7
+ATT.ScopeScreenRatio = 0.9
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(0, 0, -0.1)
