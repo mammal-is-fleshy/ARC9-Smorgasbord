@@ -2,6 +2,94 @@ local ATT = {}
 
 ATT = {}
 
+ATT.PrintName = "Range Finder"
+ATT.CompactName = "Range.F"
+ATT.Icon = Material("entities/gekolt_css_optic/range.png", "mips smooth")
+ATT.Description = [[Range fiding gadget. As useless as it sounds]]
+ATT.SortOrder = 1400
+
+ATT.Model = "models/weapons/geckololt_css/atts/rangefider.mdl"
+ATT.ModelBodygroups = "00"
+ATT.Scale = 1
+ATT.ModelOffset = Vector(-0.1, 0, 0)
+
+ATT.Attachments = {
+    {
+        PrintName = "Optic",
+        DefaultName = "None",
+		InstalledElements = {"scope_rail"},
+
+        Category = {"optic_css_s"},
+        Pos = Vector(-0.5, 0, -1.45),
+        Ang = Angle(0, 0, 0),
+        ExtraSightDistance = -0.5,
+		Scale = 1,
+    },
+}
+
+ATT.Category = {"css_scope_extra", "tac_css_flat", "mount_css", "mountr_css","mountl_css"}
+ATT.Folder = "GADGET"
+
+if CLIENT then
+    surface.CreateFont("smor_digi", {
+        font = "DSEG7 Classic",
+        size = 140,
+        weight = 500,
+        antialias = true,
+    })
+end
+
+local textoffset = Vector(-0.55, 0, 0.35)
+local textbgcolor = Color(19, 48, 33, 58)
+local textcolor = Color(255, 255, 0)
+local text = ""
+local nextcall = CurTime()
+
+ATT.DrawFunc = function(swep, model, wm)
+    if swep:GetElements()["scope_rail"] then
+        model:SetBodygroup(1,1)
+    else
+        model:SetBodygroup(1,0)
+    end
+
+	if !IsValid(swep:GetOwner()) or !swep:GetOwner():IsPlayer() then return end
+
+    if CurTime() > nextcall then
+		nextcall = CurTime() + 0.2
+
+		local trace = util.TraceLine({
+			start = swep:GetShootPos(),
+			endpos = swep:GetShootPos() + (swep:GetShootDir():Forward() * 64000),
+			mask = MASK_SHOT,
+			filter = swep:GetOwner()
+		})
+
+		if trace.HitSky then
+			text = "----"
+		else
+			text = string.format("%04d", math.ceil(trace.Fraction * 64000 * ARC9.HUToM))
+		end
+	end
+
+	local pos = model:GetPos()
+	pos = model:LocalToWorld(textoffset)
+
+	local ang = model:GetAngles()
+	ang:RotateAroundAxis(ang:Forward(), 90)
+	ang:RotateAroundAxis(ang:Right(), 90)
+
+	cam.Start3D2D(pos, ang, 0.002)
+		draw.SimpleText("0000", "smor_digi", 0, 1, textbgcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+		draw.SimpleText(text, "smor_digi", 0, 1, textcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+    cam.End3D2D()
+end
+
+ARC9.LoadAttachment(ATT, "gekolt_css_scope_rangefider")
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
 ATT.PrintName = "ACOG"
 ATT.CompactName = "ACOG"
 ATT.Icon = Material("entities/gekolt_css_optic/acog.png", "mips smooth")
@@ -41,11 +129,11 @@ ATT.Attachments = {
         DefaultName = "None",
 		InstalledElements = {"acog_mount_rail"},
 
-        Category = {"optic_css_s", "optic_css_acog_iron"},
-        Pos = Vector(3.85, 0, -2.4),
+        Category = {"optic_css_s", "optic_css_acog_iron", "css_scope_extra", "tac_css"},
+        Pos = Vector(2.7, 0, -2),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -0.5,
-		Scale = 0.8,
+		Scale = 1,
     },
 }
 
@@ -76,7 +164,7 @@ ATT = {}
 
 ATT.PrintName = "Iron Sight"
 ATT.CompactName = "IRONS"
-ATT.Icon = Material("entities/gekolt_css_optic/acog.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_optic/acog_irons.png", "mips smooth")
 ATT.Description = [[Simple backup sight for your optic.]]
 ATT.SortOrder = 4
 
@@ -86,8 +174,8 @@ ATT.ActivateElements = {"acog_sight_on"}
 -- Allows a custom sight position to be defined
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, 0.1),
-        Ang = Angle(0, 2.6, 0),
+        Pos = Vector(0, 8.5, 0.25),
+        Ang = Angle(0, 2.78, 0),
         Magnification = 1.25,
         ViewModelFOV = 40
     },
@@ -160,7 +248,7 @@ ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/sig.mdl"
 
-ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
+ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope", "css_scope_extra", "tac_css"}
 ATT.Folder = "SCOPE"
 
 -- Allows a custom sight position to be defined
@@ -398,7 +486,7 @@ ATT.Attachments = {
         DefaultName = "None",
 		InstalledElements = {"acog_mount_rail"},
 
-        Category = {"optic_css_s",},
+        Category = {"optic_css_s", "css_scope_extra", "tac_css"},
         Pos = Vector(6, 0, -4),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -1,
@@ -474,7 +562,7 @@ ATT.Attachments = {
         DefaultName = "None",
 		InstalledElements = {"acog_mount_rail"},
 
-        Category = {"optic_css_s",},
+        Category = {"optic_css_s", "css_scope_extra", "tac_css"},
         Pos = Vector(4.2, 0, -3.2),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -1,
@@ -648,20 +736,20 @@ ATT.SprintToFireTimeAdd = 0.05
 ATT.Attachments = {
     {
         PrintName = "MOUNT TOP",
-        Category = {"tac_css", "mount_css", "optic_css_holo"},
+        Category = {"tac_css", "mount_css", "optic_css_holo", "css_scope_extra"},
         Pos = Vector(-1,0, -2.6),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "MOUNT LEFT",
-        Category = {"mountr_css", "tac_css"},
+        Category = {"mountr_css", "tac_css", "css_scope_extra"},
         Pos = Vector(-1, -1.05, -1.5),
         Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(1, 0, 0),
     },
     {
         PrintName = "MOUNT Right",
-        Category = {"mountl_css", "tac_css"},
+        Category = {"mountl_css", "tac_css", "css_scope_extra"},
         Pos = Vector(-1,1.05, -1.5),
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(-2, 0, 0),

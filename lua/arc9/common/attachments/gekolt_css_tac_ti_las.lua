@@ -7,6 +7,7 @@ ATT.Icon = Material("entities/gekolt_css_tac_las2.png", "mips smooth")
 ATT.SortOrder = 0
 ATT.Category = {"tac_css","mountr_css","mountl_css"}
 ATT.Model = "models/weapons/geckololt_css/atts/tac_ti_laser.mdl"
+ATT.Folder = "GADGET"
 
 ATT.AimDownSightsTimeMult = 1.03
 ATT.SprintToFireTimeMult = 1.03

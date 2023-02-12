@@ -806,7 +806,7 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css_flat", "mount_css"},
-        Pos = Vector(0,-1.8, -12),
+        Pos = Vector(0,-1.7, -10.5),
         Ang = Angle(90, 0, -90),
     },
 }
