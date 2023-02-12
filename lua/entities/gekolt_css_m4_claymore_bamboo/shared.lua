@@ -25,6 +25,8 @@ function ENT:Initialize()
         if phys:IsValid() then
             phys:Wake()
             phys:SetBuoyancyRatio(0)
+            phys:SetMass(10)
+            phys:SetDragCoefficient(5)
         end
 
         self.SpawnTime = CurTime()
@@ -75,7 +77,7 @@ function ENT:Detonate()
         if self.Owner:IsValid() then
             attacker = self.Owner
         end
-        util.BlastDamage(self, attacker, self:GetPos(), 256, 400)
+        util.BlastDamage(self, attacker, self:GetPos(), 256, 200)
 
         self:Remove()
 

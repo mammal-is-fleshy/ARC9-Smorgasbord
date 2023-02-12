@@ -39,7 +39,7 @@ SWEP.WorldModelOffset = {
 
 SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
-SWEP.ClipSize = 3
+SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
 SWEP.SupplyLimit = 1
 SWEP.Crosshair = false
@@ -50,11 +50,11 @@ SWEP.ShootEnt = "gekolt_css_m4_claymore_bamboo" -- Set to an entity to launch it
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
 SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
-SWEP.ThrowSpeed = 1
+SWEP.ThrowSpeed = 0.5
 
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
-SWEP.ThrowForceMin = 2500 -- Minimum force that the grenade will be thrown with.
+SWEP.ThrowForceMin = 2000 -- Minimum force that the grenade will be thrown with.
 SWEP.ThrowForceMax = 5000 -- Maximum force that the grenade will be thrown with.
 SWEP.TossForce = 2500 -- Force that the grenade will be thrown with when right clicked.
 
@@ -87,6 +87,7 @@ SWEP.SpeedMultCrouch = 1
 SWEP.SpeedMultBlindFire = 1
 
 SWEP.ShootWhileSprint = true
+SWEP.BashWhileSprint = true
 
 -------------------------- MELEE
 
@@ -94,10 +95,10 @@ SWEP.Bash = true
 SWEP.PrimaryBash = false
 
 SWEP.BashDamage = 70
-SWEP.BashLungeRange = 0
-SWEP.BashRange = 64
+SWEP.BashLungeRange = 128
+SWEP.BashRange = 72
 SWEP.PreBashTime = 0.275
-SWEP.PostBashTime = 0.3
+SWEP.PostBashTime = 1
 
 -------------------------- TRACERS
 
@@ -108,8 +109,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 
 SWEP.HasSights = false
 
-SWEP.SprintAng = Angle(0, -20, 0)
-SWEP.SprintPos = Vector(0, -2, 0)
+SWEP.SprintAng = Angle(0, 15, 0)
+SWEP.SprintPos = Vector(0, -2, -2)
 
 SWEP.ViewModelFOVBase = 90
 SWEP.ActivePos = Vector(0, -2, 0)
@@ -178,7 +179,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "idle",
-		Time = 0
+        Time = 0
     },
     ["bash"] = {
         Source = {"melee"}
@@ -193,3 +194,30 @@ end
 
 SWEP.AttachmentElements = {
 }
+
+SWEP.Hook_BashHit = function(wep, data)
+    local pos = data.tr.HitPos
+    local eff = EffectData()
+    eff:SetOrigin(pos)
+    if bit.band(util.PointContents(pos), CONTENTS_WATER) == CONTENTS_WATER then
+        util.Effect( "WaterSurfaceExplosion", eff )
+        wep:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
+    else
+        util.Effect( "Explosion", eff)
+        wep:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
+    end
+
+    util.BlastDamage(wep, wep:GetOwner(), pos, 256, 200)
+end
+
+hook.Add("EntityTakeDamage", "arc9_gekolt_bamboozle", function(ent, dmg)
+    if IsValid(dmg:GetInflictor()) and (dmg:GetInflictor():GetClass() == "arc9_gekolt_fas1_bamboozle" or dmg:GetInflictor():GetClass() == "gekolt_css_m4_claymore_bamboo") and ent == dmg:GetInflictor():GetOwner() then
+        if dmg:GetInflictor():IsWeapon() then
+            dmg:ScaleDamage(0.4)
+            ent:SetVelocity(ent:EyeAngles():Forward() * -500)
+        else
+            dmg:ScaleDamage(0.75)
+            ent:SetVelocity((ent:GetPos() - dmg:GetInflictor():GetPos()):GetNormalized() * 1000)
+        end
+    end
+end)
