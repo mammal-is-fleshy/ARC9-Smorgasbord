@@ -39,7 +39,7 @@ if CLIENT then
     })
 end
 
-local textoffset = Vector(-0.45, 0, 0.275)
+local textoffset = Vector(-0.55, 0, 0.35)	-- pos
 local textbgcolor = Color(19, 48, 33, 58)
 local textcolor = Color(255, 255, 0)
 local text = ""
@@ -78,7 +78,7 @@ ATT.DrawFunc = function(swep, model, wm)
 	ang:RotateAroundAxis(ang:Forward(), 90)
 	ang:RotateAroundAxis(ang:Right(), 90)
 
-	cam.Start3D2D(pos, ang, 0.002)
+	cam.Start3D2D(pos, ang, 0.0025)	-- scale
 		draw.SimpleText("0000", "smor_digi", 0, 1, textbgcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 		draw.SimpleText(text, "smor_digi", 0, 1, textcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
     cam.End3D2D()
@@ -487,10 +487,10 @@ ATT.Attachments = {
 		InstalledElements = {"acog_mount_rail"},
 
         Category = {"optic_css_s", "css_scope_extra", "tac_css"},
-        Pos = Vector(6, 0, -4),
+        Pos = Vector(4.9, 0, -3.3),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -1,
-		Scale = 0.8,
+		Scale = 1,
     },
 }
 
@@ -563,10 +563,10 @@ ATT.Attachments = {
 		InstalledElements = {"acog_mount_rail"},
 
         Category = {"optic_css_s", "css_scope_extra", "tac_css"},
-        Pos = Vector(4.2, 0, -3.2),
+        Pos = Vector(3.35, 0, -2.55),
         Ang = Angle(0, 0, 0),
         ExtraSightDistance = -1,
-		Scale = 0.8,
+		Scale = 1,
     },
 }
 
@@ -737,7 +737,7 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT TOP",
         Category = {"tac_css", "mount_css", "optic_css_holo", "css_scope_extra"},
-        Pos = Vector(-1,0, -2.6),
+        Pos = Vector(-1,0, -2.3),
         Ang = Angle(0, 0, 0),
     },
     {
