@@ -171,6 +171,12 @@ ATT.Firemodes = {
     }
 }
 
+ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
+	if wep:Clip1() == 0 then
+		wep:SetNextPrimaryFire(1/300)
+	end
+end
+
 ATT.Attachments = {
     {
         PrintName = "Ammo Type",
@@ -221,6 +227,12 @@ ATT.SortOrder = 4
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_sks", "nogrip", "ubgl_maghold"}
+
+ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
+	if wep:Clip1() == 0 then
+		wep:SetNextPrimaryFire(1/300)
+	end
+end
 
 ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 60 / 300

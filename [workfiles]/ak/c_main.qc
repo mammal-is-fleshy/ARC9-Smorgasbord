@@ -13,6 +13,7 @@ $bodygroup "mag"
 	studio "ak47_mag_bizon.smd"
 	studio "ak47_mag_water.smd"
 	studio "ak47_mag_9mm.smd"	
+	blank
 }
 
 $bodygroup "iron"
@@ -48,6 +49,7 @@ $bodygroup "handguard"
 	blank
 	studio "ak47_hg_12.smd"
 	studio "ak47_hg_hungary.smd"
+	studio "ak47_hg_naked.smd"
 }
 
 $bodygroup "stock"
@@ -65,6 +67,7 @@ $bodygroup "stock"
 	studio "ak47_stock_slide.smd"
 	studio "ak47_stock_adapt.smd"
 	studio "ak47_stock_folded.smd"
+	blank
 }
 
 $bodygroup "rail_top"
@@ -86,7 +89,8 @@ $bodygroup "grip"
 $bodygroup "ak"
 {
 	studio "ak47.smd"
-	blank	
+	blank
+	studio "ak47_naked.smd"
 }
 
 $bodygroup "mount2"

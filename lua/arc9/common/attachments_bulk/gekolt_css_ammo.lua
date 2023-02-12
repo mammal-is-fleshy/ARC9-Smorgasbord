@@ -84,10 +84,47 @@ ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_slug")
 -------------------------------------------------------------------------------
 ATT = {}
 
+ATT.PrintName = "Rebounder Spring Shot"
+ATT.CompactName = "SRPING"
+ATT.Icon = Material("entities/gekolt_css_ammo/spring.png", "mips smooth")
+ATT.Description = [[Boucy projectile]]
+ATT.SortOrder = 1.2
+
+ATT.Category = {"css_ammo_sg"}
+
+ATT.SpreadMult = 0.2
+ATT.SpreadMultHipFire = 0.7
+ATT.RangeMaxMult = 2
+ATT.RangeMinMult = 1.25
+
+ATT.PhysBulletMuzzleVelocityMult = 2
+ATT.PhysBulletDragMult = 2
+
+ATT.RicochetChanceOverride = 1
+ATT.RicochetAngleMaxOverride = 90
+ATT.RicochetSeeking = true
+ATT.RicochetSeekingRange = 1024
+ATT.RicochetSeekingAngle = 90
+
+-- this weird system of converting total damage back to single back to total is very not hog
+ATT.DamageMinMult = 4
+ATT.DamageMaxMult = 12
+
+--ATT.DamageMaxOverride = 180
+--ATT.DamageMinOverride = 70
+
+ATT.NumOverride = 1
+--ATT.Num_Priority = 1000 -- if it works  just to make sure
+
+ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_spring")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
 ATT.PrintName = "Piercing Flechettes"
 ATT.CompactName = "FLECHT"
 ATT.Icon = Material("entities/gekolt_css_ammo/flecht.png", "mips smooth")
-ATT.Description = [[pointy.]]
+ATT.Description = [[Hollowed shell loaded with 4 sharps piercing projectile.]]
 ATT.SortOrder = 4
 
 ATT.Category = {"css_ammo_sg"}

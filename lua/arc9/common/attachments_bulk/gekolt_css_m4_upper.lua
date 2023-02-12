@@ -161,6 +161,12 @@ ATT.ClipSizeOverride = 5
 
 ATT.RPMMult = 60 / 700
 
+ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
+	if wep:Clip1() == 0 then
+		wep:SetNextPrimaryFire(1/300)
+	end
+end
+
 ATT.Sights = {
     {
         Pos = Vector(3.8, 0, 5),

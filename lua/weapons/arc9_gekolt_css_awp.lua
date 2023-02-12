@@ -77,6 +77,12 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 SWEP.RPM = 40
 
+SWEP.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
+	if wep:Clip1() == 0 then
+		wep:SetNextPrimaryFire(1/300)
+	end
+end
+
 -- Works different to ArcCW
 
 -- -1: Automatic
@@ -233,8 +239,8 @@ SWEP.NoShellEject = true
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "gekolt_css/awp1.wav"
-SWEP.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
+SWEP.ShootSound = {"magmacow_smor/AWM-1.wav", "magmacow_smor/AWM-2.wav", "magmacow_smor/AWM-3.wav"}
+SWEP.ShootSoundSilenced = "magmacow_smor/AWM-SIL.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
