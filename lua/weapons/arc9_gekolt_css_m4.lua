@@ -9,7 +9,7 @@ SWEP.SubCategory = "Primaries"
 SWEP.PrintName = "CC4-R"
 SWEP.TrueName = "M4A1"
 
-SWEP.Class = "Assault Rifle"
+SWEP.Class = "Assault Carbine"
 SWEP.Trivia = {
     ["Country of Origin"] = "United States of America",
     ["Caliber"] = "5.56x45mm NATO",

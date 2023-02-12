@@ -6,7 +6,7 @@ ATT.PrintName = [[Atakovat-Rama]]
 ATT.CompactName = [[Carbine]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_545.png", "mips smooth")
 ATT.Description = [[Intermediate solution for normal infantry.
-]]
+Better at sustained fire, but slightly less stopping power.]]
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_54"
@@ -19,6 +19,27 @@ ATT.SortOrder = 1
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_545"}
 
+ATT.Trivia = {
+    ["Country of Origin"] = [[[Soviet] Russia]],
+    ["Caliber"] = "5.45x39mm",
+}
+
+ATT.DamageMax = 40
+ATT.DamageMin = 20
+
+ATT.RangeMin = 900
+ATT.RangeMax = 7000
+
+ATT.RecoilUp = 0.2
+ATT.RecoilSide = 0.12
+
+ATT.RecoilRandomUp = 0.2
+ATT.RecoilRandomSide = 0.3
+
+ATT.SpreadAddHipFire = -0.0006
+ATT.RecoilMultRecoil = 0.98
+ATT.SpreadMultRecoil = 0.985
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag1")
 
 ----------------------------------------------------------------------------------
@@ -29,25 +50,41 @@ ATT = {}
 ATT.PrintName = [[Okhota-Rama]]
 ATT.CompactName = [[Marksman]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
-ATT.Description = [[Chamber the weapon in hunting rounds
-Powerful cartridge is unsuitable for full-auto.
-]]
+ATT.Description = [[Battle rifle caliber conversion. More accurate, more powerful, longer range.
+Punishing recoil makes firing more than one shot at a time difficult.]]
 
-
-ATT.Firemodes = {{Mode = 1,}}
+ATT.Firemodes = {
+    {
+        Mode = 1
+    },
+    {
+        Mode = -1,
+    },
+}
 
 ATT.ClipSizeOverride = 15
 
 ATT.RPMMult = 400 / 600
-ATT.RangeMaxMult = 1.25
-ATT.RangeMinMult = 1.5
 
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 4
+ATT.DamageMax = 65
+ATT.DamageMin = 34
 
-ATT.RecoilMult = 1.2
+ATT.RangeMin = 1200
+ATT.RangeMax = 12000
 
-ATT.Ammo = "357"
+ATT.RecoilUp = 0.4
+ATT.RecoilSide = 0.3
+
+ATT.Spread = 0.0005
+
+ATT.RecoilKick = 2
+
+ATT.RecoilMultRecoil = 1.3
+ATT.SpreadAddRecoil = 0.001
+ATT.SpreadMultRecoil = 1.05
+ATT.SpreadAddHipFire = 0.0006
+ATT.RecoilModifierCap = 7
+ATT.RecoilDissipationRate = 20
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_25"
@@ -60,6 +97,11 @@ ATT.SortOrder = 10
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_308"}
 
+ATT.Trivia = {
+    ["Country of Origin"] = [[[Soviet] Russia]],
+    ["Caliber"] = "7.62x51mm NATO",
+}
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag2")
 
 
@@ -71,9 +113,8 @@ ATT = {}
 ATT.PrintName = [[Erikoinen-Rama]]  -- this is finnish btw
 ATT.CompactName = [[Assault]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_556.png", "mips smooth")
-ATT.Description = [[Magwell adaptor for foreign intermediate cartridge
-Made with Western Magic™.
-]]
+ATT.Description = [[Magwell adaptor to use a NATO caliber through Western Magic™.
+Mediocre stopping power, but has very controlable recoil on a heavy gun like this.]]
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_56"
@@ -86,6 +127,32 @@ ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_556"}
 
+ATT.Trivia = {
+    ["Country of Origin"] = [[[Soviet] Russia]],
+    ["Caliber"] = "5.56x45mm NATO",
+}
+
+ATT.DamageMax = 35
+ATT.DamageMin = 20
+
+ATT.RangeMin = 700
+ATT.RangeMax = 6000
+
+ATT.RecoilUp = 0.17
+ATT.RecoilSide = 0.1
+
+ATT.RecoilRandomUp = 0.15
+ATT.RecoilRandomSide = 0.2
+
+ATT.RecoilKick = 1.2
+
+ATT.SpreadAddHipFire = -0.0008
+ATT.RecoilMultRecoil = 0.975
+ATT.SpreadMultRecoil = 0.95
+
+ATT.RecoilModifierCap = 18
+ATT.RecoilDissipationRate = 20
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_mag3")
 
 
@@ -97,24 +164,45 @@ ATT = {}
 ATT.PrintName = [[Podvod-Rama]]
 ATT.CompactName = [[Dart]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_aps.png", "mips smooth")
-ATT.Description = [[Fletchette dart underwater firing mechanism
-Wooden frame might actually be a bad idea.
-]]
+ATT.Description = [[Fletchette dart underwater firing mechanism that also works on land.
+Unimpressive ballistics profile, but does extra damage underwater.
+Long steel projectile penetrates well and is very lethal on headshot.]]
+
+ATT.Trivia = {
+    ["Country of Origin"] = [[[Soviet] Russia]],
+    ["Caliber"] = "5.66x39mm MPS",
+}
+
+ATT.HeadshotDamage = 2
+
+ATT.DamageMax = 34
+ATT.DamageMin = 15
+
+ATT.RangeMin = 900
+ATT.RangeMax = 2500
 
 ATT.CanFireUnderwater = true
-ATT.ClipSizeOverride = 25
-ATT.RPMMult = 520 / 600
+ATT.ClipSizeOverride = 26
+
+ATT.RecoilUp = 0.2
+ATT.RecoilSide = 0.2
+
+ATT.RecoilRandomUp = 0.15
+ATT.RecoilRandomSide = 0.15
+
 ATT.RicochetChanceOverride = 0
-ATT.SpreadMult = 0.5
-ATT.PhysBulletMuzzleVelocityMult = 2
 ATT.PenetrationMult = 3
 ATT.ArmorPiercingAdd = 2
-
-ATT.RangeMaxMult = 0.5
-ATT.RangeMinMult = 2
+ATT.PhysBulletMuzzleVelocityMult = 0.5
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_water"
+end
+
+ATT.Hook_BulletImpact = function(wep, data)
+    if bit.band(util.PointContents(data.tr.HitPos), CONTENTS_WATER) == CONTENTS_WATER or bit.band(util.PointContents(wep:GetPos()), CONTENTS_WATER) == CONTENTS_WATER then
+        data.dmgv = data.dmgv * 1.5
+    end
 end
 
 ATT.ShootSound = "oneshotof_cs16/sg550-1.wav"

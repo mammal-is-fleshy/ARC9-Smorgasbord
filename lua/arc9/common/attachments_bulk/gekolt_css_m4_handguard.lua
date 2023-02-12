@@ -4,13 +4,23 @@ ATT = {}
 
 ATT.PrintName = "Naval Handguard"
 ATT.CompactName = "Naval"
-ATT.Description = [[Take a deep dive in the island hopping campaign of the Pacific.]]
+ATT.Description = [[Take a deep dive in the island hopping campaign of the Pacific.
+Improves accuracy and range with moderate penalty to handling.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_t86.png", "mips smooth")
 
-ATT.SortOrder = 2.8
+ATT.SortOrder = 15
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_t86"}
+
+ATT.FreeAimRadiusAdd = 1
+ATT.SwayAdd = -0.02
+
+ATT.RangeMaxMult = 1.5
+ATT.SpreadAdd = -0.0003
+
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_t86")
 
@@ -21,8 +31,7 @@ ATT = {}
 
 ATT.PrintName = "No Handguard"
 ATT.CompactName = "No"
-ATT.Description = [[Handguards are a conspiracy to sell more useless junks you don't need
-You can make do without one.]]
+ATT.Description = [[Handguards are just another piece of superfluous accessory, you can make do without one.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_sten.png", "mips smooth")
 
@@ -30,10 +39,14 @@ ATT.SortOrder = 0.1
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_sten", "nogrip", "short_clamp"}
 
-ATT.SpeedMult = 1.15
-ATT.AimDownSightsTimeMult = 0.8
-ATT.SprintToFireTimeMult = 0.85
-ATT.PhysBulletMuzzleVelocityMult = 0.5
+ATT.SpeedMult = 1.05
+
+ATT.AimDownSightsTimeAdd = -0.08
+ATT.SprintToFireTimeAdd = -0.12
+
+ATT.RangeMaxMult = 0.75
+ATT.SwayMult = 1.15
+ATT.RecoilMultRecoil = 1.1
 
 ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_rest.mdl"
 ATT.ModelOffset = Vector(-16, -2.5, 2)
@@ -62,18 +75,21 @@ ATT = {}
 
 ATT.PrintName = "Special-Purpose Rifle Handguard"
 ATT.CompactName = "SPR"
-ATT.Description = [[Slim and thin, fit right in
-Compact design with three extra rails.]]
+ATT.Description = [[Short cylinder handguard with lower weight.
+Slim and thin, fits right in.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_spr.png", "mips smooth")
+
+ATT.FreeAimRadiusAdd = -1
+ATT.SpreadAdd = 0.0005
+ATT.RecoilMult = 1.1
+
+ATT.AimDownSightsTimeAdd = -0.01
+ATT.SprintToFireTimeAdd = -0.03
 
 ATT.SortOrder = 1
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_spr"}
-
-ATT.RPMMult = 1.05
-ATT.RecoilSideMult = 1.25
-ATT.SprintToFireTimeMult = 0.95
 
 ATT.Attachments = {
     {
@@ -111,7 +127,7 @@ ATT = {}
 
 ATT.PrintName = "RIS Handguard"
 ATT.CompactName = "RIS"
-ATT.Description = [[Railed hanguard for extra mounted devices
+ATT.Description = [[Railed hanguard for extra mounted devices.
 Fitted with four extra rails.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_ris.png", "mips smooth")
@@ -120,6 +136,8 @@ ATT.SortOrder = 0.5
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_ris"}
 
+ATT.RecoilMult = 0.95
+ATT.SwayAdd = 0.05
 
 ATT.Attachments = {
     {
@@ -143,7 +161,7 @@ ATT.Attachments = {
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-1.1, -2),
         Ang = Angle(90, 0, -90),
-		ExtraSightDistance = 7
+        ExtraSightDistance = 7
     },
 
     {
@@ -151,7 +169,7 @@ ATT.Attachments = {
         Category = {"tac_css"},
         Pos = Vector(0,1.65, -5),
         Ang = Angle(90, 0, 90),
-		ExcludeElements = {"bottom_long"},
+        ExcludeElements = {"bottom_long"},
     },
 }
 
@@ -173,12 +191,15 @@ ATT.SortOrder = 0
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_no", "nogrip", "short_clamp"}
 
-ATT.SpeedMult = 1.25
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 0.75
-ATT.PhysBulletMuzzleVelocityMult = 0.25
-ATT.RangeMaxMult = 0.5
-ATT.DamageMaxMult = 0.5
+ATT.SpeedMult = 1.1
+ATT.SwayMult = 1.15
+ATT.AimDownSightsTimeAdd = -0.12
+ATT.SprintToFireTimeAdd = -0.15
+
+ATT.RangeMinMult = 0
+ATT.RangeMaxMult = 0.3
+
+ATT.PhysBulletMuzzleVelocityMult = 0.5
 
 ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_rest.mdl"
 ATT.ModelOffset = Vector(-16, -2.5, 2)
@@ -198,8 +219,9 @@ ATT = {}
 
 ATT.PrintName = "Targeter Handguard"
 ATT.CompactName = "Targeter"
-ATT.Description = [[Despite its name, it doesn't really help that much with targeting
-Fitted with three extra rails.]]
+ATT.Description = [[Carbine-length handguard with extra rails and a heatshield.
+Improves sustained fire performance slightly.
+Despite its name, it doesn't really help that much with targeting.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_lr300.png", "mips smooth")
 
@@ -207,10 +229,12 @@ ATT.SortOrder = 2
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_lr300", "short_clamp"}
 
-ATT.SpreadMultSights = 1.15
-ATT.SpreadMultHipFire = 0.75
-ATT.RecoilMult = 0.95
+ATT.RecoilDissipationRateMult = 1.25
+ATT.RecoilRandomSideAdd = 0.25
+ATT.RecoilSideAdd = 0.25
 
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.02
 
 ATT.Attachments = {
     {
@@ -234,7 +258,7 @@ ATT.Attachments = {
         Category = {"tac_css"},
         Pos = Vector(0,1.6, -8.5),
         Ang = Angle(90, 0, 90),
-		ExcludeElements = {"bottom_long"},
+        ExcludeElements = {"bottom_long"},
     },
 }
 
@@ -250,18 +274,40 @@ ATT = {}
 
 ATT.PrintName = "LMG Handguard"
 ATT.CompactName = "LMG"
-ATT.Description = [[Heavy duty handguard designed for long sustaining fire.]]
+ATT.Description = [[Heavy duty handguard designed for long sustained fire.
+Less accurate and has more sway.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_lmg.png", "mips smooth")
 
-ATT.SortOrder = 4
+ATT.SortOrder = 18
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_lmg"}
 
-ATT.SwayMult = 1.5
-ATT.RecoilSideMult = 0.75
+
 ATT.RPMMult = 0.9
-ATT.VisualRecoilMult = 0.75
+
+ATT.FreeAimRadiusAdd = 2.5
+ATT.SwayAdd = 0.05
+
+ATT.RangeMaxMult = 1.5
+ATT.SpreadAdd = 0.00003
+ATT.SpreadAddHipFire = 0.00008
+
+ATT.RecoilMult = 0.8
+ATT.SpreadMultRecoil = 0.95
+ATT.RecoilMultRecoil = 0.95
+
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.06
+
+ATT.RecoilModifierCapAdd = 5
+
+ATT.FiremodesOverride = {
+    {
+        Mode = -1,
+    },
+}
+ATT.FiremodesOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_lmg")
 
@@ -275,7 +321,8 @@ ATT = {}
 
 ATT.PrintName = "Dragoon Handguard"
 ATT.CompactName = "Dragoon"
-ATT.Description = [[Design fitted for mounting or moving
+ATT.Description = [[Slim handguard fitted for mounting or moving.
+Increases fire rate noticeably at the cost of spread.
 Hit them with that driveby whip.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_dragoon.png", "mips smooth")
@@ -284,19 +331,13 @@ ATT.SortOrder = 1.2
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_drg"}
 
-ATT.AimDownSightsTimeMult = 0.875
-ATT.SprintToFireTimeMult = 0.875
-
-ATT.RPMMult = 750 / 600
-
-ATT.RecoilMult = 1.05
-
-ATT.SpreadMultSights = 1.25
-ATT.SwayMult = 1.25
+ATT.SpreadAdd = 0.0005
+ATT.SpreadAddHipFire = 0.0015
+ATT.SpreadMultRecoil = 0.98
+ATT.RPMMult = 850 / 750
+ATT.RecoilMult = 1.15
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_dragoon")
-
-
 
 ----------------------------------------------------------------------------------
 
@@ -305,13 +346,26 @@ ATT = {}
 
 ATT.PrintName = "Bulwark Handguard"
 ATT.CompactName = "Bulwark"
-ATT.Description = [[Short handguard fitted with a peculiar flash guard.]]
+ATT.Description = [[Short handguard fitted with a peculiar flash guard.
+Very short range, but quite easy to handle.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_doe.png", "mips smooth")
 
 ATT.SortOrder = 0.05
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_doe", "short_clamp"}
+
+ATT.RangeMaxMult = 0.75
+ATT.RecoilMult = 3
+
+ATT.SpreadAdd = 0.00003
+ATT.SpreadAddHipFire = 0.00008
+
+ATT.SpreadMultRecoil = 0.95
+ATT.RecoilMultRecoil = 0.95
+
+ATT.AimDownSightsTimeAdd = -0.06
+ATT.SprintToFireTimeAdd = -0.1
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_doe")
 
@@ -323,17 +377,25 @@ ATT = {}
 
 ATT.PrintName = "Marksman Handguard"
 ATT.CompactName = "Marksman"
-ATT.Description = [[Extended guard with 4 extra rails
+ATT.Description = [[Extended barrel and guard with 4 extra rails.
+Superb precision and sway, but fires slower.
 Why couldn't they make a regular extended RIS guard?]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_bn63.png", "mips smooth")
 
-ATT.SortOrder = 7.5
+ATT.SortOrder = 20
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_bn63"}
 
-ATT.SpreadMultSights = 0.8
-ATT.RecoilMult = 0.9
+ATT.RPMMult = 650 / 750
+
+ATT.FreeAimRadiusAdd = 3.5
+ATT.SwayAdd = -0.1
+
+ATT.RangeMaxMult = 2
+ATT.SpreadAdd = -0.001
+
+ATT.RecoilUpMult = 0.9
 
 ATT.Attachments = {
     {
@@ -357,7 +419,7 @@ ATT.Attachments = {
         Category = {"tac_css_flat", "mount_css"},
         Pos = Vector(0,-1.25, -6.5),
         Ang = Angle(90, 0, -90),
-		ExtraSightDistance = 7
+        ExtraSightDistance = 7
     },
 
     {
@@ -365,7 +427,7 @@ ATT.Attachments = {
         Category = {"tac_css"},
         Pos = Vector(0,2, -9.5),
         Ang = Angle(90, 0, 90),
-		-- ExcludeElements = {"bottom_long"},
+        -- ExcludeElements = {"bottom_long"},
     },
 }
 
@@ -379,16 +441,28 @@ ATT = {}
 
 ATT.PrintName = "Woodsman Handguard"
 ATT.CompactName = "Woodsman"
-ATT.Description = [[Wooden handguard which magnically increases precision.]]
+ATT.Description = [[Full length barrel with a sturdy wooden handguard.
+Reduces sway considerably, but does not increase range as much.
+Doesn't make you wish for a nuclear winter all that much.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_adar.png", "mips smooth")
 
-ATT.SortOrder = 5
+ATT.SortOrder = 19
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_adar"}
 
-ATT.SpreadMultSights = 0.5
-ATT.SwayMult = 0.75
+ATT.RPMMult = 700 / 750
+
+ATT.FreeAimRadiusAdd = 2.5
+ATT.SwayAdd = -0.15
+
+ATT.RangeMaxMult = 1.5
+ATT.SpreadAdd = -0.0006
+
+ATT.RecoilUpMult = 0.9
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.04
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_adar")
 
@@ -400,25 +474,41 @@ ATT = {}
 
 ATT.PrintName = "ACR Handguard"
 ATT.CompactName = "ACR"
-ATT.Description = [[Special system with a cooling device allowing for rapid two-shot fire.]]
+ATT.Description = [[Tall full-length barrel and handguard with a cooling device allowing for rapid first shot firing.
+Heavy additions hurt handling and sway, and rate of fire is greatly reduced.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_acr.png", "mips smooth")
 
-ATT.SortOrder = 2.9
+ATT.SortOrder = 18
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_acr"}
 
-ATT.AimDownSightsTimeMult = 1.02
-ATT.SprintToFireTimeMult = 1.02
 
-ATT.RPMMult = 0.85
-ATT.RPMMultFirstShot = 3
+ATT.RPMMult = 600 / 750
 
-ATT.RecoilMult = 1.25
+ATT.FreeAimRadiusAdd = 3
+ATT.SwayAdd = 0.05
+
+ATT.RangeMaxMult = 1.5
+ATT.SpreadAdd = -0.0008
+
+ATT.RPMMultFirstShot = 2
 ATT.RecoilMultFirstShot = 0.1
 
-ATT.SpreadMultSights = 0.85
-ATT.SwayMult = 0.9
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.04
+
+ATT.FiremodesOverride = {
+    {
+        Mode = -1,
+    },
+    {
+        Mode = 2,
+        RunawayBurst = true,
+        PostBurstDelay = 0.15
+    },
+}
+ATT.FiremodesOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_acr")
 
@@ -430,19 +520,43 @@ ATT = {}
 
 ATT.PrintName = "Full-length Handguard"
 ATT.CompactName = "Full"
-ATT.Description = [[Full length handguard for full length engagement.]]
+ATT.Description = [[Full length handguard used by turn-of-the-century rifle models.
+Comes with an additional fire mode with a higher cycle rate.
+Fictional, but probably good enough for your G.I. roleplay.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_a2.png", "mips smooth")
 
-ATT.SortOrder = 7
+ATT.SortOrder = 20
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_a2"}
 
-ATT.SpreadMultSights = 0.9
-ATT.RPMMult = 0.95
-ATT.RecoilMult = 0.85
-ATT.RangeMinMult = 1.25
-ATT.RangeMaxMult = 1.25
+ATT.RPMMult = 700 / 750
+
+ATT.FreeAimRadiusAdd = 2.5
+ATT.SwayAdd = -0.08
+
+ATT.RangeMaxMult = 1.75
+ATT.SpreadAdd = -0.0008
+
+ATT.RecoilUpMult = 0.9
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.03
+
+ATT.FiremodesOverride = {
+    {
+        Mode = -1,
+    },
+    {
+        Mode = 3,
+        RPMMult = 850 / 700,
+        PostBurstDelay = 0.1,
+    },
+    {
+        Mode = 1,
+    },
+}
+ATT.FiremodesOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_a2")
 
@@ -454,17 +568,30 @@ ATT = {}
 
 ATT.PrintName = "Antique Handguard"
 ATT.CompactName = "Antique"
-ATT.Description = [[It's old, outdated and you want it for your serious anarchist roleplay.]]
+ATT.Description = [[It's old, outdated and you want it for your serious anarchist roleplay.
+Increases both range and rate of fire, but accuracy suffers greatly.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_a1.png", "mips smooth")
 
-ATT.SortOrder = 3
+ATT.SortOrder = 16
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_a1"}
 
-ATT.SpreadMultSights = 1.1
-ATT.AimDownSightsTimeMult = 1.1
-ATT.RecoilMult = 0.9
+ATT.RPMMult = 800 / 750
+
+ATT.FreeAimRadiusAdd = 2.5
+ATT.SwayAdd = -0.02
+
+ATT.RangeMaxMult = 1.75
+
+ATT.RecoilUpMult = 0.9
+
+ATT.SpreadAdd = 0.00005
+ATT.SpreadAddRecoil = 0.000005
+ATT.SpreadAddHipFire = 0.0003
+
+ATT.AimDownSightsTimeAdd = 0.015
+ATT.SprintToFireTimeAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_a1")
 
@@ -494,13 +621,19 @@ ATT = {}
 
 ATT.PrintName = "Grenadier Handguard"
 ATT.CompactName = "Grenadier"
-ATT.Description = [[Half handguard equipped with a prototype grenade launcher. Still short as heck]]
+ATT.Description = [[Half handguard equipped with a prototype grenade launcher. Still short as hell.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_148.png", "mips smooth")
 
 ATT.SortOrder = 0.2
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_148", "nogrip", "pre_ubgl", "short_clamp", "akantbo"}
+
+ATT.SprintToFireTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SwayMult = 1.1
+
+ATT.FreeAimRadiusUBGL = 3
 
 ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"
@@ -510,10 +643,10 @@ ATT.UBGLFiremodeName = "XM148"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
 
-ATT.SpreadUBGL = 0.0025
+ATT.SpreadUBGL = 0.005
 
 ATT.ShootEntUBGL = "gekolt_css_m4_nade"
-ATT.ShootEntForceUBGL = 20000
+ATT.ShootEntForceUBGL = 10000
 ATT.ShootSoundUBGL = "gekolt_css/deagle-1.wav"
 
 -- ATT.HasSightsUBGL = false
@@ -540,38 +673,34 @@ ATT = {}
 
 ATT.PrintName = "Precision Handguard"
 ATT.CompactName = "Precision"
-ATT.Description = [[Older design that's somehow more accurate than new ones
-Really makes you question the sanity of the devs.]]
+ATT.Description = [[Long barrel and handguard manufactured for extreme precision.
+Very slow fire rate, but ballistic performance is excellent.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_h_10.png", "mips smooth")
 
-ATT.SortOrder = 6
+ATT.SortOrder = 21
 ATT.Category = "css_m4_handguard"
 ATT.ActivateElements = {"guard_10"}
 
-ATT.SpreadMultSights = 0.5
-ATT.SprintToFireTimeMult = 1.05
+
+ATT.RPMMult = 550 / 750
+
+ATT.FreeAimRadiusAdd = 5
+ATT.SwayAdd = -0.15
+
+ATT.RangeMinMult = 3
+ATT.RangeMaxMult = 2.5
+ATT.SpreadAdd = -0.0015
+
+ATT.RecoilUpMult = 0.75
+
+ATT.RecoilDissipationRateMult = 0.8
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_10")
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-ATT = {}
-
-ATT.PrintName = "Bulwark Handguard"
-ATT.CompactName = "Bulwark"
-ATT.Description = [[Short handguard fitted with a peculiar flash guard.]]
-
-ATT.Icon = Material("entities/gekolt_css_m4_h_doe.png", "mips smooth")
-
-ATT.SortOrder = 0.05
-ATT.Category = "css_m4_handguard"
-ATT.ActivateElements = {"guard_doe", "short_clamp"}
-
-ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_doe")
-
-
-----------------------------------------------------------------------------------
 

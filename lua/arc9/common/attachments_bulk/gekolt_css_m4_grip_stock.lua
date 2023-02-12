@@ -17,7 +17,6 @@ ATT.Category = "css_m4_fg" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"fg_saw"}
 ATT.ExcludeElements = {"no_optic"}
 
-
 ATT.LHIK = true
 ATT.LHIK_Priority = 900000
 
@@ -53,20 +52,16 @@ ATT.Sights = {
     }
 }
 
+ATT.HoldType = "shotgun"
 
-ATT.RecoilMult = 0.25
-ATT.SpreadMultHipFire = 1.1
+ATT.FreeAimRadiusMult = 0.75
+ATT.RecoilMult = 0.75
+ATT.SpeedMultShooting = 0.75
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	-- sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry sorry
-    if anim == "fire" then return "fire_iron" end
-    if anim == "fire_lmg" then return "fire_iron" end
-    if anim == "fire_sg" then return "fire_iron" end
-    if anim == "fire_ak" then return "fire_iron" end
-	if anim == "fire_smg" then return "fire_iron" end
-    if anim == "fire_acr" then return "fire_iron" end
-	if anim == "fire_gih" then return "fire_iron" end
-    if anim == "fire_proto" then return "fire_iron" end
+    if string.find(anim, "fire") and anim ~= "fire_empty" then
+        return "fire_iron"
+    end
 end
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_fg_saw")
