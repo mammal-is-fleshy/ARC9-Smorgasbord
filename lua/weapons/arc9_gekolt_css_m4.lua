@@ -947,7 +947,7 @@ SWEP.AttachmentElements = {
     },
     ["guard_10"] = {
         Bodygroups = { {6, 1}, {10, 1} },
-        AttPosMods = { [5] = { Pos = Vector(0, 1.05, 12.6),}, [8] = { Pos = Vector(0, -0.25, 31.4), }, [9] = { Pos = Vector(0, -0.25, 24.25), }, }
+        AttPosMods = { [5] = { Pos = Vector(0, 1.4, 14.5),}, [8] = { Pos = Vector(0, -0.25, 31.25), }, [9] = { Pos = Vector(0, -0.25, 24.1), }, }
     },
     ["guard_148"] = {
         Bodygroups = { {6, 12} },
@@ -1169,6 +1169,7 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, -0.25, 20),
         Ang = Angle(90, 0, -90),
+		Scale = 1.1
     },
 
     {	--9
