@@ -248,7 +248,7 @@ ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/sig.mdl"
 
-ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope", "css_scope_extra", "tac_css"}
+ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "SCOPE"
 
 -- Allows a custom sight position to be defined
@@ -289,7 +289,8 @@ ATT.SprintToFireTimeAdd = 0.08
 ATT.Attachments = {
     {
         PrintName = "MOUNT TOP",
-        Category = {"tac_css_flat", "mount_css", "optic_css_holo"},
+        Category = {"tac_css_flat", "mount_css", "optic_css_holo", "css_scope_extra"
+		},
         Pos = Vector(1,0, -2.4),
         Ang = Angle(0, 0, 0),
     },
@@ -743,14 +744,14 @@ ATT.Attachments = {
     {
         PrintName = "MOUNT LEFT",
         Category = {"mountr_css", "tac_css", "css_scope_extra"},
-        Pos = Vector(-1, -1.05, -1.5),
+        Pos = Vector(-1, -0.85, -1.375),
         Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(1, 0, 0),
     },
     {
         PrintName = "MOUNT Right",
         Category = {"mountl_css", "tac_css", "css_scope_extra"},
-        Pos = Vector(-1,1.05, -1.5),
+        Pos = Vector(-1,0.85, -1.375),
         Ang = Angle(0, 0, 90),
         Icon_Offset = Vector(-2, 0, 0),
     },
@@ -1298,7 +1299,7 @@ ATT.SortOrder = 0.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/t1.mdl"
 
-ATT.Category = {"optic_css","optic_css_s"}
+ATT.Category = {"optic_css","optic_css_s","optic_css_holo"}
 ATT.Folder = "REFLEX"
 
 -- Allows a custom sight position to be defined
