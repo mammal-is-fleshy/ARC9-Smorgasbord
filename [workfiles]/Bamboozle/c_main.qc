@@ -69,7 +69,12 @@ $sequence "melee" {
 	fadeout 0.2
 	fps 40
 }
-
+$sequence "melee_discharge" {
+	"anims\melee_discharge.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 40
+}
 
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"

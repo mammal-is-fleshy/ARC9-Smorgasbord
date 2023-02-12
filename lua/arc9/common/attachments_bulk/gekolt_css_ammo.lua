@@ -101,10 +101,10 @@ ATT.PhysBulletMuzzleVelocityMult = 2
 ATT.PhysBulletDragMult = 2
 
 ATT.RicochetChanceOverride = 1
-ATT.RicochetAngleMaxOverride = 90
+ATT.RicochetAngleMaxOverride = 360
 ATT.RicochetSeeking = true
 ATT.RicochetSeekingRange = 1024
-ATT.RicochetSeekingAngle = 90
+ATT.RicochetSeekingAngle = 360
 
 -- this weird system of converting total damage back to single back to total is very not hog
 ATT.DamageMinMult = 4
