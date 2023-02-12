@@ -39,7 +39,7 @@ if CLIENT then
     })
 end
 
-local textoffset = Vector(-0.55, 0, 0.35)
+local textoffset = Vector(-0.45, 0, 0.275)
 local textbgcolor = Color(19, 48, 33, 58)
 local textcolor = Color(255, 255, 0)
 local text = ""
