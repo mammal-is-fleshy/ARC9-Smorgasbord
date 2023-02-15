@@ -504,6 +504,8 @@ ATT.Description = [[Oi, they just make the thing longer
 Rounded front sight for... more... accuracy?
 ]]
 
+ATT.Ignore = true
+
 ATT.SortOrder = 2
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rpk"}

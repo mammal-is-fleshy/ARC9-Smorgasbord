@@ -1,0 +1,8 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/gekolt_css_vmt/flaregun"
+	"$bumpmap" "models/gekolt_css_vmt/flaregun_n"
+	
+	"$nocull" 1	
+ 	$color2 "[0.95 0.95 1]"	
+}
