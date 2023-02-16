@@ -15,8 +15,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Contact = [[SlogoKolt#6648 or Mytton#5132]],
-    Assets = "CoD: Black Ops"
+    ["Assets"] = [[CoD: Black Ops]],
+	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],	
 }
 
 SWEP.Description = [[Fuck communism, this mod was made by syndicalism gang.]]

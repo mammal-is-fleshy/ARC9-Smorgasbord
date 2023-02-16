@@ -9,37 +9,39 @@ ATT.Description = [[Bracing and special payload for downed pilots to â€žsignalâ€
 
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 2
+ATT.SortOrder = 1
 
 ATT.Category = "fnv_flare_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"leucht"}
-ATT.MuzzleParticle = "muzzleflash_smg"
---ATT.ShootSound = "gekolt_css/ak47-1.wav"
-
-ATT.DrawFunc = function(swep, model, wm) end
-ATT.RPMMult = 350 / 50
-ATT.Firemodes = {
-    {
-        Mode = -1,
-    }
-}
-ATT.ClipSizeOverride = 20
-
-ATT.DamageMaxMult = 90 / 60
-ATT.DamageMinMult = 60 / 160
-ATT.RecoilMult = 1.15
-ATT.RecoilKickMult = 2 / 3
-
-ATT.SpeedMultSights = 1.15
-ATT.SpeedMultShooting = 1.15
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SprintToFireTimeMult = 1.15
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_br"
+    return anim .. "_leucht"
 end
 
-ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_howell")
+ATT.Num = 1
+ATT.ShootEnt = "gekolt_css_m4_nade"
+ATT.ShootEntForce = 10000
+
+ATT.ActivePosOverride = Vector(-0.25, 1, -1.5)
+ATT.ActiveAngOverride = Angle(0, 0, 0)
+
+ATT.MovingPosOverride = Vector(-0.25, 0.5, -1.25)
+ATT.MovingAngOverride = Angle(0, -2, 0)
+
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8, -5.25	),
+        Ang = Angle(0, 0, 0),
+        Reticle = nil,
+		
+        Magnification = 1,
+        IsIronSight = true,
+        KeepBaseIrons = false
+    }
+}
+
+ARC9.LoadAttachment(ATT, "gekolt_fnv_flare_1")
 
 ----------------------------------------------------------------------------------
 
@@ -58,58 +60,16 @@ ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 0
 
-ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"awp_f_smg", "short_clamp", "notop", "ubgl_maghold"}
-ATT.MuzzleParticle = "muzzleflash_ak47"
-ATT.ShootSound = {"magmacow_smor/mp5n-1.wav", "magmacow_smor/mp5n-2.wav","magmacow_smor/mp5n-3.wav" }
-ATT.ShootSoundSilenced = "magmacow_smor/mp5k-sup.wav"
+ATT.Category = "fnv_flare_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"sld"}
 
-ATT.SwayMult = 1.5
-ATT.AccuracyMOAMult = 3
-ATT.HipDispersionMult = 2
-ATT.SightsDispersionMult = 2
-ATT.SightTimeMult = 0.75
-
-ATT.SpeedMultSights = 1.25
-ATT.SpeedMultShooting = 1.25
-ATT.Ammo = "pistol"
-
-ATT.ClipSizeOverride = 25
-
-
-ATT.AimDownSightsTimeMult = 0.75
-ATT.DamageMaxMult = 45 / 60
-ATT.DamageMinMult = 20 / 160
-ATT.RangeMinMult = 0.8
-ATT.RangeMaxMult = 0.8
-ATT.RecoilMult = 0.4
-ATT.RecoilKickMult = 1.2 / 3
-
-ATT.RPMMult = 900 / 50
-ATT.Firemodes = {
-    {
-        Mode = -1,
-    }
-}
-
-ATT.Sights = {
-    {
-        Pos = Vector(1.6, 0, 10),
-        Ang = Angle(90, 0, -90),
-        Reticle = nil, -- Same as ATT.RTScopeReticle or HoloSightReticle but this sight only. Better cache material somewhere outside this structure: local Reticle1 = Material("reticle1.png", "mips smooth") and here you type only Reticle1). If not defined, will use ATT.RTScopeReticle/HoloSightReticle
-
-
-        Magnification = 1,
-        IsIronSight = true,
-        KeepBaseIrons = false
-    }
-}
+ATT.ClipSizeOverride = 2
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_smg"
+    return anim .. "_sld"
 end
 
-ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_lc10")
+ARC9.LoadAttachment(ATT, "gekolt_fnv_flare_2")
 
 
 ----------------------------------------------------------------------------------

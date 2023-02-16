@@ -98,11 +98,11 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 1
+SWEP.Recoil = 5
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.45 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.25 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.85 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.75 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
@@ -168,8 +168,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.25, 0, 1.6),
-    Ang = Angle(0, 0, 5),
+    Pos = Vector(-2.55, -2, 1),
+    Ang = Angle(0, 0, 0),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
         Ang = Angle(-10, 60, -25),
@@ -247,34 +247,10 @@ SWEP.FiremodeSound = "arc9/firemode.wav"
 SWEP.DefaultBodygroups = "00000000"
 
 SWEP.AttachmentElements = {
-    ["f_auto"] = {
-        Bodygroups = {{3, 1},{2, 3}},
+    ["leucht"] = {
+        Bodygroups = {{1,1},{2,1}},
         AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
     },
-    ["f_burst"] = {
-        Bodygroups = {{3, 2},{1, 1},{2, 3},{0, 3}},
-        AttPosMods = { [3] = { Pos = Vector(0, 0, 10.25), } }
-    },
-    ["f_carbine"] = {
-        Bodygroups = {{3, 5},{1, 2},{2, 1},{4, 2}},
-        AttPosMods = { [2] = { Pos = Vector(0, -1.3, -4.75), },  [3] = { Pos = Vector(0, 0, 9.25), } }
-    },
-    ["f_artillery"] = {
-        Bodygroups = {{3, 6},{1, 2},{2, 1},{5, 2}},
-        AttPosMods = { [3] = { Pos = Vector(0, 0, 15.75), } }
-    },
-    ["f_sd"] = {
-        Bodygroups = {{3, 4},{1, 2}},
-    },
-    ["f_p38"] = {
-        Bodygroups = {{3, 3},{1, 2}},
-    },
-    ["f_welrod"] = {
-        Bodygroups = {{3, 4},{1, 3},{2, 2},{0, 1}},
-    },
-
-    ["g_1"] = { Bodygroups = {{6, 1}}, },
-    ["s_1"] = { Bodygroups = {{5, 1}}, },
 
     ["akimbose"] = {
         SprintPosOverride = Vector(0, 2, -3),
@@ -287,10 +263,10 @@ SWEP.Attachments = {
         PrintName = "Frame",
         DefaultName = "Standard Frame",
 
-        Category = "css_m9_frame",
+        Category = "fnv_flare_frame",
         Bone = "W_Main",
-        Pos = Vector(0, 3, -0.5),
-        Ang = Angle(0, 0, 0),
+        Pos = Vector(0, 0, -0.5),
+        Ang = Angle(90, 0, -90),
     },
     {
         PrintName = "Optic",
@@ -341,6 +317,9 @@ SWEP.Animations = {
     ["idle_empty"] = {
         Source = "idle_emp",
     },
+    ["idle_empty_leucht"] = {
+        Source = "idle_emp_leucht",
+    },
     ["draw"] = {
         Source = "draw",
         EventTable = {
@@ -366,6 +345,12 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
     },
+	["fire_empty"] = {
+        Source = "fire",
+    }, 
+	["fire_empty_leucht"] = {
+        Source = "fire_leucht",
+    },
 
     ["reload"] = {
         Source = "dry",
@@ -387,9 +372,26 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.85,
         EventTable = {
-            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 28 / 40},
-            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 57 / 40},
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,	t = 10 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,	t = 22 / 40},
+            {s =  "gekolt_dod/mp40_clipin.wav" ,    	t = 53 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,	t = 78 / 40},
+            },
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
+        },
+    }, 
+
+	["reload_empty_leucht"] = {
+        Source = "dry_leucht",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        FireASAP = true,
+        MinProgress = 0.85,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 38 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},
+            {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 88 / 40},
             },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },

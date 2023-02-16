@@ -26,6 +26,7 @@ $illumposition 0 0 0
 
 $cdmaterials "models\gekolt_css_vmt\"
 $cdmaterials "models\weapons\v_models\pist_c962"
+$cdmaterials "models\gekolt_css_vmt\rif_m18\"
 
 
 $attachment "1" "W_Main" 0 2.50 5.25 rotate -90 0 0

@@ -57,6 +57,7 @@ ATT.ActivateElements = {"up_a1", "keep_rs"}
 ATT.Firemodes = {
     {
         Mode = 3,
+		RPMMult = 1.5
     }
 }
 ATT.RunawayBurst = true
@@ -67,8 +68,6 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ClipSizeOverride = 20
-
-ATT.RPMMult = 1.5
 ATT.RecoilMult = 0.8
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_u_a1")

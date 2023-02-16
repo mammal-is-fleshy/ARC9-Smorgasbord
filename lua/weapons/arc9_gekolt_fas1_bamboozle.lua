@@ -15,9 +15,9 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Contact = [[SlogoKolt#6648 or Mytton#5132]],
-    Additional Coding = [[TheOnly8Z#8888 (8Z)]],
-    Assets = "Firearms: Source"
+    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
+    ["Assets"] = [[Firearm: Source]],
+	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[THE JAPANESES ARE ATTACKING AGAIN.
