@@ -212,6 +212,12 @@ SWEP.CustomizeNoRotate = false
 
 SWEP.CustomizeRotateAnchor = Vector(16.5, -3, -3.23)
 
+SWEP.StandardPresets = {
+	"[AE50]XQAAAQCUAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHW94F1nERWcC6u1bB5cabzbkNO8/nth3i7Jo80rUF+pecd32WquJt0n3SBidtpp+yyfwcWzkziBA/WgA=",
+	"[LC10]XQAAAQCVAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHW1nsOMm2pcVyg67N+hfFdys3jNbBrRNKsAajt4RaoroF5cQY02muwF47dpzMkeJlQKvbDWlWmZfH4gA=",
+	"[Howell]XQAAAQCVAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHWwxx7WslW8oXGcOTaMP8pK1Z/AGxJhRVITENdxqdfW/67pxvzsryRHMioaTpxeG3B4RJz155iV1EOj+IAA==",
+}
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "ar2"

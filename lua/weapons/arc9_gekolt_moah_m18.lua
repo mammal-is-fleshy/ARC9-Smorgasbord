@@ -226,6 +226,9 @@ SWEP.CustomizeNoRotate = false
 
 SWEP.CustomizeRotateAnchor = Vector(10, -4.27, -6)
 
+SWEP.StandardPresets = {
+}
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "ar2"
