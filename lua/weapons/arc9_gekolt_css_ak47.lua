@@ -16,10 +16,10 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Contact = [[SlogoKolt#6648 or Mytton#5132]],
-    Additional Coding = [[TheOnly8Z#8888 (8Z)]],
-	Sound = [[cherresoda#6579 (rzen1th)]]
-    Assets = "Counter-Strike Source"
+    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
+	["Sound"] = [[cherresoda#6579 (rzen1th)]],
+    ["Assets"] = [[Counter-Strike Source]],
+	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[Rugged rifle with a simple design that can function under harsh conditions.

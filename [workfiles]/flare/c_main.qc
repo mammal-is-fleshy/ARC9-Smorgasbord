@@ -47,6 +47,32 @@ $sequence "idle_emp" {
 	fps 40
 }
 
+$sequence "idle_emp_leucht" {
+	"anims\idle_emp_leucht.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "fire_leucht" {
+	"anims\fire_leucht.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
+$sequence "dry_leucht" {
+	"anims\dry_leucht.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "fire" {
 	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1

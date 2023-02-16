@@ -13,9 +13,9 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Contact = [[SlogoKolt#6648 or Mytton#5132]],
-    Additional Coding = [[TheOnly8Z#8888 (8Z)]],
-    Assets = "Counter Strike: Source"
+    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
+    ["Assets"] = [[Counter-Strike Source]],
+	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Slot = 4

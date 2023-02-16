@@ -16,9 +16,9 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Contact = [[SlogoKolt#6648 or Mytton#5132]],
-    Additional Coding = [[TheOnly8Z#8888 (8Z)]],
-    Assets = "Day of Defeat: Source"
+    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
+    ["Assets"] = [[Day of Defeat: Source]],
+	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[The first truly successful self-loading rifle; a watershed and forerunner among firearms

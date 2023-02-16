@@ -16,8 +16,10 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Contact = [[SlogoKolt#6648 or Mytton#5132]],
-    Assets = "Firearm: Source 2"
+    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
+	["Sound"] = [[CturiX#6008 (CturiX)]],
+    ["Assets"] = [[Firearm: Source 2]],
+	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[Single shot explosive lobing device
