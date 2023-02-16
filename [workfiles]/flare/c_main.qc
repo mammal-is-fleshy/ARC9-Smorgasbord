@@ -5,13 +5,21 @@ $modelname "weapons/geckololt_css/c_flare.mdl"
 $bodygroup "frame"
 {
 	studio "Flare.smd"
+	studio "Flare_SG.smd"
 	blank
 }
 
 $bodygroup "Barrel"
 {
 	studio "Flare_Barrel.smd"
+	studio "Flare_Barrel_Rocket.smd"
 	blank			
+}
+
+$bodygroup "Barrel"
+{
+	blank
+	studio "Flare_Stock.smd"		
 }
 
 $illumposition 0 0 0

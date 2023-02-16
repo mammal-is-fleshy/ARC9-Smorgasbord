@@ -16,8 +16,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Geckololt",
-    Contact = "SlogoKolt#6648",
+    Contact = [[SlogoKolt#6648 or Mytton#5132]],
     Assets = "Firearm: Source 2"
 }
 

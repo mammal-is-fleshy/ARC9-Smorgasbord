@@ -22,6 +22,7 @@ FAS2: M79/Sterling
 Enemy Front[??? honestly i cant remember]: Sten
 Medal of Hounor Airborne: M18
 + Moon - Ripping
+Fallout New Vegas: Flare Gun
 Soldier of Fortune 3 - Muzzles and Tac/Flashlight, some ak stuff, Tishina
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
 Counter Strike Online 2 - Some M4 Parts (  The Taiwanese looking stuff  )
@@ -298,6 +299,9 @@ xm70 -- this is based on a real thing, back in world war cold, the swedes wanted
 -- oh you still need to remove the spoon thing irl       videogame logic
 
 
+ Flare Gun: [German]
+Leucht42
+SLD
 
 
 free text zone for

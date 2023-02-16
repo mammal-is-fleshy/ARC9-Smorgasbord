@@ -18,7 +18,7 @@ SWEP.Trivia = {
 SWEP.Credits = {
     Author = "Geckololt, 8Z",
     Contact = "SlogoKolt#6648",
-    Assets = "Counter-Strike Source"
+    Assets = "Fallout New Vegas"
 }
 
 SWEP.Description = [[text here]]
