@@ -4,7 +4,7 @@ ATT = {}
 
 ATT.PrintName = "Leuchtfeuer-Gestell"
 ATT.CompactName = "Leucht-42"
-ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fnv_flare_leucht.png", "mips smooth")
 ATT.Description = [[Bracing and special payload for downed pilots to „signal“.]]
 
 ATT.Pros = {}
@@ -50,11 +50,8 @@ ATT = {}
 
 ATT.PrintName = "Doppellaeufig-Gestell"
 ATT.CompactName = "SLD"
-ATT.Icon = Material("entities/gekolt_css_awp_f_lc10.png", "mips smooth")
-ATT.Description = [[Mockup frame of a relic from a certain fridgid war.
-Somehow change all the internal mechanism with a click of a button.
-Effectively turn the rifle into a really bad SMG.
-Only for the blackest of operations]]
+ATT.Icon = Material("entities/gekolt_fnv_flare_sld.png", "mips smooth")
+ATT.Description = [[Twice the barrel for twice the fun.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
