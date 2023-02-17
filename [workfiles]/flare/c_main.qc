@@ -110,6 +110,95 @@ $sequence "draw_emp" {
 	fps 40
 }
 
+
+$sequence "fire_emp_sld" {
+	"anims\fire_emp_sld.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
+$sequence "fire_sld" {
+	"anims\fire_sld.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
+$sequence "dry_sld" {
+	"anims\dry_sld.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "wet_sld" {
+	"anims\wet_sld.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "draw_sld" {
+	"anims\draw_sld.smd"
+	activity "ACT_VM_DRAW" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "draw_sld1" {
+	"anims\draw_sld1.smd"
+	activity "ACT_VM_DRAW" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "draw_emp_sld" {
+	"anims\draw_emp_sld.smd"
+	activity "ACT_VM_DRAW" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+
+$sequence "idle_sld1" {
+	"anims\idle_sld1.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "idle_sld" {
+	"anims\idle_sld.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "idle_emp_sld" {
+	"anims\idle_emp_sld.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
 $bonemerge "ValveBiped.Bip01_L_UpperArm"

@@ -252,9 +252,9 @@ SWEP.AttachmentElements = {
         AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
     },
 
-    ["akimbose"] = {
-        SprintPosOverride = Vector(0, 2, -3),
-        SprintAngOverride = Angle(0, 18, 0),
+    ["sld"] = {
+        Bodygroups = {{1,2},{0,1}},
+        AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
     },
 }
 
@@ -268,46 +268,14 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, -0.5),
         Ang = Angle(90, 0, -90),
     },
-    {
-        PrintName = "Optic",
-        DefaultName = "None",
-        InstalledElements = {"has_optic"},
-
-        ExcludeElements = {"pre_optic"},
-        Category = {"optic_css_s"},
-        Bone = "W_Main",
-        Pos = Vector(0, -1.1, 2),
-        Ang = Angle(90, 0, -90),
-    },
-    {
-        PrintName = "Muzzle",
-        DefaultName = "None",
-
-        ExcludeElements = {"pre_muzzed"},
-        Category = {"muzzle_css"},
-        Bone = "W_Main",
-        Pos = Vector(0, 0, 6),
-        Ang = Angle(90, 0, -90),
-    },
-
-    {
-        PrintName = "Off-Hand",
-        DefaultName = "None",
-        InstalledElements = {"akimbo"},
-
-        ExcludeElements = {"akantbo"},
-        Category = {"css_akimbo"},
-        Bone = "Akimbo_Base",
-        Pos = Vector(0, 0, 0),
-        Ang = Angle(90, 0, -90),
-    },
 }
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local model = data.model
-    if wep:HasElement("has_optic") then model:SetBodygroup(4,1) end
-    if wep:HasElement("has_optic") and wep:HasElement("f_carbine") then model:SetBodygroup(4,3) end
-    if wep:HasElement("has_optic") and wep:HasElement("f_artillery") then model:SetBodygroup(4,4) end
+
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if wep:HasElement("sld") and wep:Clip1() == 1 then
+            if anim == "idle" then  return "idle1" end
+            if anim == "draw" then  return "draw1" end
+    end
 end
 
 SWEP.Animations = {
@@ -399,4 +367,73 @@ SWEP.Animations = {
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
         },
     },
+
+
+    ["idle_sld"] = {
+        Source = "idle_sld",
+    }, 
+	["idle1_sld"] = {
+        Source = "idle_sld1",
+    },
+    ["idle_empty_sld"] = {
+        Source = "idle_emp_sld",
+    },
+    ["draw_sld"] = {
+        Source = "draw_sld",
+        EventTable = {
+            {s =  "gekolt_css_foley/draw_pist.wav" ,   t = 0 / 40},
+        },
+    }, 
+	["draw1_sld"] = {
+        Source = "draw_sld1",
+        EventTable = {
+            {s =  "gekolt_css_foley/draw_pist.wav" ,   t = 0 / 40},
+        },
+    },
+    ["draw_empty_sld"] = {
+        Source = "draw_emp_sld", -- QC sequence source, can be {"table", "of", "strings"} or "string"
+        --Time = 0.5, -- overrides the duration of the sequence
+        Mult = 1, -- multiplies time
+        EventTable = {
+            {s =  "gekolt_css/elite_twirl.wav" ,   t = 1 / 40},
+        },
+    },
+    ["fire_sld"] = {
+        Source = "fire_sld",
+    },
+	["fire_empty_sld"] = {
+        Source = "fire_emp_sld",
+    }, 
+
+    ["reload_sld"] = {
+        Source = "wet_sld",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        FireASAP = true,
+        MinProgress = 0.85,
+        EventTable = {
+            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
+        },
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        },
+    },
+    ["reload_empty"] = {
+        Source = "dry_sld",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        FireASAP = true,
+        MinProgress = 0.85,
+        EventTable = {
+            {s =  "rzen1th_smor/flare_open.wav" ,	t = 10 / 40},
+            {s =  "rzen1th_smor/flare_remove.wav" ,	t = 22 / 40},
+            {s =  "rzen1th_smor/flare_insert.wav" ,    	t = 45 / 40},
+            {s =  "rzen1th_smor/flare_close.wav" ,	t = 78 / 40},
+            {s =  "rzen1th_smor/flare_cock.wav" ,	t = 98 / 40},
+            },
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
+        },
+    }, 
 }

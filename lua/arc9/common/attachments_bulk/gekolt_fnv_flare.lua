@@ -69,6 +69,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_sld"
 end
 
+ATT.ActivePosOverride = Vector(-0.25, 1, -1.5)
+ATT.ActiveAngOverride = Angle(0, 0, 0)
+
+ATT.MovingPosOverride = Vector(-0.25, 0.5, -1.25)
+ATT.MovingAngOverride = Angle(0, -2, 0)
+
 ARC9.LoadAttachment(ATT, "gekolt_fnv_flare_2")
 
 
