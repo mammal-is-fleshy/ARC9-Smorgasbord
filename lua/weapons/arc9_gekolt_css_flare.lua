@@ -236,7 +236,7 @@ SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "gekolt_css/elite-1.wav"
+SWEP.ShootSound = "rzen1th_smor/flare_fire.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/9mm_sd.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
@@ -372,10 +372,11 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.85,
         EventTable = {
-            {s =  "gekolt_css/fiveseven_clipout.wav" ,	t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,	t = 22 / 40},
-            {s =  "gekolt_dod/mp40_clipin.wav" ,    	t = 53 / 40},
-            {s =  "gekolt_css/p228_sliderelease.wav" ,	t = 78 / 40},
+            {s =  "rzen1th_smor/flare_open.wav" ,	t = 10 / 40},
+            {s =  "rzen1th_smor/flare_remove.wav" ,	t = 22 / 40},
+            {s =  "rzen1th_smor/flare_insert.wav" ,    	t = 45 / 40},
+            {s =  "rzen1th_smor/flare_close.wav" ,	t = 78 / 40},
+            {s =  "rzen1th_smor/flare_cock.wav" ,	t = 98 / 40},
             },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
