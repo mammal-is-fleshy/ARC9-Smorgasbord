@@ -95,10 +95,10 @@ SWEP.Bash = true
 SWEP.PrimaryBash = false
 
 SWEP.BashDamage = 70
-SWEP.BashLungeRange = 128
-SWEP.BashRange = 72
-SWEP.PreBashTime = 0.275
-SWEP.PostBashTime = 1
+SWEP.BashLungeRange = 0
+SWEP.BashRange = 256
+SWEP.PreBashTime = 0.1
+SWEP.PostBashTime = 0.9
 
 -------------------------- TRACERS
 
@@ -109,7 +109,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 
 SWEP.HasSights = false
 
-SWEP.SprintAng = Angle(0, 15, 0)
+SWEP.SprintAng = Angle(0, -15, 0)
 SWEP.SprintPos = Vector(0, -2, -2)
 
 SWEP.ViewModelFOVBase = 90
@@ -184,6 +184,13 @@ SWEP.Animations = {
     ["bash"] = {
         Source = {"melee"}
     },	
+    ["impact"] = {
+        Source = {"melee_discharge"},
+        EventTable = {
+            {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 21 / 40},
+            {s =  "gekolt_css/clay/pinpull.wav" ,   t = 35 / 40},
+        },		
+    },	
 }
 
 function SWEP:SecondaryAttack()
@@ -206,7 +213,9 @@ SWEP.Hook_BashHit = function(wep, data)
         util.Effect( "Explosion", eff)
         wep:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
     end
-
+    wep:TakeAmmo()
+--	wep:SetNextPrimaryFire(300)
+	
     util.BlastDamage(wep, wep:GetOwner(), pos, 256, 200)
 end
 
@@ -214,7 +223,7 @@ hook.Add("EntityTakeDamage", "arc9_gekolt_bamboozle", function(ent, dmg)
     if IsValid(dmg:GetInflictor()) and (dmg:GetInflictor():GetClass() == "arc9_gekolt_fas1_bamboozle" or dmg:GetInflictor():GetClass() == "gekolt_css_m4_claymore_bamboo") and ent == dmg:GetInflictor():GetOwner() then
         if dmg:GetInflictor():IsWeapon() then
             dmg:ScaleDamage(0.4)
-            ent:SetVelocity(ent:EyeAngles():Forward() * -500)
+            ent:SetVelocity(ent:EyeAngles():Forward() * -200)
         else
             dmg:ScaleDamage(0.75)
             ent:SetVelocity((ent:GetPos() - dmg:GetInflictor():GetPos()):GetNormalized() * 1000)
