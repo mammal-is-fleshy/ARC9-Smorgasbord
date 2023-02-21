@@ -267,6 +267,16 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 0, -0.5),
         Ang = Angle(90, 0, -90),
+    }, 
+	{
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",
+        Category = {"css_ammo_sg"},
+        ExcludeElements = {"not_sg"},
+		
+        Bone = "W_Main",
+        Pos = Vector(0, -2.75, 2),
+        Ang = Angle(90, 0, -90),
     },
 }
 
@@ -411,8 +421,11 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.85,
         EventTable = {
-            {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 10 / 40},
-            {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 43 / 40},
+            {s =  "rzen1th_smor/flare_open.wav" ,	t = 10 / 40},
+            {s =  "rzen1th_smor/flare_remove.wav" ,	t = 22 / 40},
+            {s =  "rzen1th_smor/flare_insert.wav" ,	t = 70 / 40},
+            {s =  "rzen1th_smor/flare_close.wav" ,	t = 98 / 40},
+            {s =  "rzen1th_smor/flare_cock.wav" ,	t = 110 / 40},
         },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -427,9 +440,9 @@ SWEP.Animations = {
         EventTable = {
             {s =  "rzen1th_smor/flare_open.wav" ,	t = 10 / 40},
             {s =  "rzen1th_smor/flare_remove.wav" ,	t = 22 / 40},
-            {s =  "rzen1th_smor/flare_insert.wav" ,    	t = 45 / 40},
-            {s =  "rzen1th_smor/flare_close.wav" ,	t = 78 / 40},
-            {s =  "rzen1th_smor/flare_cock.wav" ,	t = 98 / 40},
+            {s =  "rzen1th_smor/flare_insert.wav" ,	t = 70 / 40},
+            {s =  "rzen1th_smor/flare_close.wav" ,	t = 98 / 40},
+            {s =  "rzen1th_smor/flare_cock.wav" ,	t = 110 / 40},
             },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },

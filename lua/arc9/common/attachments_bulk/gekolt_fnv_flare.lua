@@ -12,7 +12,7 @@ ATT.Cons = {}
 ATT.SortOrder = 1
 
 ATT.Category = "fnv_flare_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"leucht"}
+ATT.ActivateElements = {"leucht", "not_sg"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_leucht"
@@ -31,7 +31,7 @@ ATT.MovingAngOverride = Angle(0, -2, 0)
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 8, -5.25	),
+        Pos = Vector(0, 8, -5.25),
         Ang = Angle(0, 0, 0),
         Reticle = nil,
 		

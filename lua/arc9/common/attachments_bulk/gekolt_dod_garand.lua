@@ -62,10 +62,10 @@ ATT.Firemodes = {
 ATT.ClipSizeOverride = 20
 ATT.ChamberSizeOverride = 1
 
-ATT.DamageMaxMult = 45 / 80
-ATT.DamageMinMult = 22 / 30
-ATT.RecoilMult = 1.25 / 0.75
-ATT.RecoilKickMult = 2.75 / 3
+ATT.DamageMaxMult = 42 / 70
+ATT.DamageMinMult = 21 / 45
+//ATT.RecoilMult = 1 / 1
+ATT.RecoilKickMult = 1.75 / 2
 
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.15
@@ -109,11 +109,12 @@ ATT.Firemodes = {
 }
 ATT.ClipSizeOverride = 30
 ATT.ChamberSizeOverride = 1
+ATT.RecoilMultRecoilMult = 1.1/1.75
 
-ATT.DamageMaxMult = 32 / 80
-ATT.DamageMinMult = 18 / 30
-ATT.RecoilMult = 0.5 / 0.75
-ATT.RecoilKickMult = 1.5 / 3
+ATT.DamageMaxMult = 31 / 70
+ATT.DamageMinMult = 15 / 45
+ATT.RecoilMult = 0.45 / 1
+ATT.RecoilKickMult = 1.25 / 2
 
 ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
@@ -188,6 +189,7 @@ ATT.Attachments = {
 }
 
 ATT.ClipSizeOverride = 7
+ATT.ChamberSizeOverride = 1
 
 ATT.FreeAimRadiusAdd = 5
 ATT.NumOverride = 10

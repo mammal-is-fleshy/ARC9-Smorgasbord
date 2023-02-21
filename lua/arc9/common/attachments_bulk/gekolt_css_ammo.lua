@@ -58,7 +58,7 @@ ATT.Description = [[play rainworld
 play rainworld
 play rainworld
 play rainworld
-play rainworld]] --- dont change this
+play rainworld]] --- do not change this
 ATT.SortOrder = 1
 
 ATT.Category = {"css_ammo_sg"}
@@ -87,7 +87,8 @@ ATT = {}
 ATT.PrintName = "Rebounder Spring Shot"
 ATT.CompactName = "SRPING"
 ATT.Icon = Material("entities/gekolt_css_ammo/spring.png", "mips smooth")
-ATT.Description = [[Boucy projectile]]
+ATT.Description = [[Boucy projectile with magical homing property
+Single projectile.]]
 ATT.SortOrder = 1.2
 
 ATT.Category = {"css_ammo_sg"}
