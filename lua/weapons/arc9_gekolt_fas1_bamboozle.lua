@@ -22,7 +22,8 @@ SWEP.Credits = {
 
 SWEP.Description = [[THE JAPANESES ARE ATTACKING AGAIN.
 
-Crude anti-tank-personnel-whateverinfrontofyou device from the peak of the highlands.]]
+Crude anti-tank-personnel-whateverinfrontofyou device from the peak of the highlands.
+Using it as a spear is not recommended]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_bamboo.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
@@ -41,7 +42,7 @@ SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
 SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 1
+SWEP.SupplyLimit = 2
 SWEP.Crosshair = false
 
 -------------------------- ENTITY LAUNCHING
@@ -96,9 +97,9 @@ SWEP.PrimaryBash = false
 
 SWEP.BashDamage = 70
 SWEP.BashLungeRange = 0
-SWEP.BashRange = 256
-SWEP.PreBashTime = 0.1
-SWEP.PostBashTime = 0.9
+SWEP.BashRange = 128
+SWEP.PreBashTime = 0.15
+SWEP.PostBashTime = 0.95
 
 -------------------------- TRACERS
 
@@ -217,6 +218,9 @@ SWEP.Hook_BashHit = function(wep, data)
 --	wep:SetNextPrimaryFire(300)
 	
     util.BlastDamage(wep, wep:GetOwner(), pos, 256, 200)
+    if wep:GetProcessedValue("Disposable") and !wep:HasAmmoInClip() and !IsValid(wep:GetDetonatorEntity()) and SERVER then
+        wep:Remove()
+	end	
 end
 
 hook.Add("EntityTakeDamage", "arc9_gekolt_bamboozle", function(ent, dmg)
@@ -225,7 +229,7 @@ hook.Add("EntityTakeDamage", "arc9_gekolt_bamboozle", function(ent, dmg)
             dmg:ScaleDamage(0.4)
             ent:SetVelocity(ent:EyeAngles():Forward() * -200)
         else
-            dmg:ScaleDamage(0.75)
+            dmg:ScaleDamage(2) -- trolleg?
             ent:SetVelocity((ent:GetPos() - dmg:GetInflictor():GetPos()):GetNormalized() * 1000)
         end
     end

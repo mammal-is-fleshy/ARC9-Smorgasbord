@@ -91,10 +91,6 @@ SWEP.Firemodes = {
     }
 }
 
-SWEP.TriggerDelay = true
-SWEP.TriggerDelayTime = 0.04
-SWEP.TriggerDownSound = "gekolt_css/weaponclick.wav"
-
 -------------------------- RECOIL
 
 -- General recoil multiplier

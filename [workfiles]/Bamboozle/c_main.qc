@@ -24,6 +24,7 @@ $sequence "idle" {
 	"anims\idle.smd"
 	fadein 0.2
 	fadeout 0.2
+	snap
 	loop	
 	fps 40
 }
