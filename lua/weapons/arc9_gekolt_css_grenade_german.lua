@@ -15,7 +15,7 @@ SWEP.Trivia = {
 SWEP.Credits = {
     ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
     ["Assets2"] = [[Counter-Strike Source]],
-	["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Slot = 4
@@ -34,8 +34,8 @@ SWEP.Firemodes = {
 }
 
 SWEP.Description = [[Seven bundled grenade is better than one lonely grenade.
-Cluster mode lets loose individual grenades to do massive damage.
-Condensed mode creates one concentrated explosion.]]
+Toggle between high damage cluster grenades or large condensed explosion.
+A sober person would throw it...]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
@@ -136,11 +136,11 @@ SWEP.AnimDraw = false
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 
-SWEP.BashDamage = 70
+SWEP.BashDamage = 25
 SWEP.BashLungeRange = 0
-SWEP.BashRange = 96
+SWEP.BashRange = 72
 SWEP.PreBashTime = 0.2
-SWEP.PostBashTime = 0.3
+SWEP.PostBashTime = 0.75
 
 SWEP.Animations = {
     ["idle"] = {
@@ -183,3 +183,75 @@ SWEP.Animations = {
 function SWEP:SecondaryAttack()
     return self:MeleeAttack()
 end
+
+SWEP.Hook_BashHit = function(wep, data)
+    local pos = data.tr.HitPos
+    local eff = EffectData()
+    eff:SetOrigin(pos)
+    if bit.band(util.PointContents(pos), CONTENTS_WATER) == CONTENTS_WATER then
+        util.Effect( "WaterSurfaceExplosion", eff )
+        wep:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
+    else
+        util.Effect( "Explosion", eff)
+    end
+    wep:TakeAmmo()
+
+    local src = wep:GetShootPos()
+    local dir = wep:GetShootDir()
+
+    if wep:GetValue("ShootEnt") == "gekolt_css_grenade_bundle" then
+
+        if bit.band(util.PointContents(pos), CONTENTS_WATER) ~= CONTENTS_WATER then
+            wep:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_WEAPON)
+        end
+
+        util.BlastDamage(wep, wep:GetOwner(), pos, 256, 50)
+        for i = 1, 6 do
+            local dispersion = Angle(math.Rand(-1, 1), math.Rand(-1, 1), 0)
+            dispersion:Mul(1 * 36)
+            dispersion:Add(dir)
+
+            local ent = ents.Create("gekolt_css_nadelet")
+            ent.FuseTime = 0.6 + i * 0.25 + math.Rand(0, 0.2)
+            ent:SetOwner(wep:GetOwner())
+            ent:SetPos(src)
+            ent:SetAngles(AngleRand())
+            ent:Spawn()
+
+            ent:GetPhysicsObject():SetVelocityInstantaneous(wep:GetOwner():GetVelocity() + dispersion:Forward() * math.Rand(256, 512))
+        end
+    else
+
+        if bit.band(util.PointContents(pos), CONTENTS_WATER) ~= CONTENTS_WATER then
+            wep:EmitSound("^ambient/explosions/explode_3.wav", 125, 100, 1, CHAN_WEAPON)
+        end
+
+        util.BlastDamage(wep, wep:GetOwner(), pos, 512, 300)
+
+        local effectdata = EffectData()
+        for i = 1, 8 do
+            local tr = util.TraceLine({
+                start = src,
+                endpos = src + Angle(math.Rand(-15, 15), math.Rand(0, 360), 0):Forward() * math.Rand(64, 384),
+                mask = MASK_SHOT,
+                filter = {wep, wep:GetOwner(), data.tr.Entity},
+            })
+            effectdata:SetOrigin(tr.HitPos)
+            util.Effect("HelicopterMegaBomb", effectdata)
+        end
+
+        wep:EmitSound("^ambient/explosions/explode_3.wav", 125, 100, 1, CHAN_AUTO)
+    end
+
+
+    if wep:GetProcessedValue("Disposable") and !wep:HasAmmoInClip() and !IsValid(wep:GetDetonatorEntity()) and SERVER then
+        wep:Remove()
+    end
+end
+
+hook.Add("EntityTakeDamage", "arc9_gekolt_gbundle", function(ent, dmg)
+    if IsValid(dmg:GetInflictor()) and dmg:GetInflictor():GetClass() == "arc9_gekolt_css_grenade_german" and ent == dmg:GetInflictor():GetOwner() then
+        dmg:ScaleDamage(0.4)
+        ent:SetVelocity(ent:EyeAngles():Forward() * -200)
+    end
+end)

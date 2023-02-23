@@ -17,7 +17,7 @@ SWEP.Trivia = {
 SWEP.Credits = {
     ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
     ["Assets2"] = [[Firearm: Source]],
-	["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[THE JAPANESES ARE ATTACKING AGAIN.
@@ -96,7 +96,7 @@ SWEP.BashWhileSprint = true
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 
-SWEP.BashDamage = 70
+SWEP.BashDamage = 25
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 128
 SWEP.PreBashTime = 0.15
@@ -185,14 +185,14 @@ SWEP.Animations = {
     },
     ["bash"] = {
         Source = {"melee"}
-    },	
+    },
     ["impact"] = {
         Source = {"melee_discharge"},
         EventTable = {
             {s =  "gekolt_css/clay/c4_draw.wav" ,   t = 21 / 40},
             {s =  "gekolt_css/clay/pinpull.wav" ,   t = 35 / 40},
-        },		
-    },	
+        },
+    },
 }
 
 function SWEP:SecondaryAttack()
@@ -216,22 +216,21 @@ SWEP.Hook_BashHit = function(wep, data)
         wep:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
     end
     wep:TakeAmmo()
---	wep:SetNextPrimaryFire(300)
-	
+
     util.BlastDamage(wep, wep:GetOwner(), pos, 256, 200)
     if wep:GetProcessedValue("Disposable") and !wep:HasAmmoInClip() and !IsValid(wep:GetDetonatorEntity()) and SERVER then
         wep:Remove()
-	end	
+    end
 end
 
 hook.Add("EntityTakeDamage", "arc9_gekolt_bamboozle", function(ent, dmg)
     if IsValid(dmg:GetInflictor()) and (dmg:GetInflictor():GetClass() == "arc9_gekolt_fas1_bamboozle" or dmg:GetInflictor():GetClass() == "gekolt_css_m4_claymore_bamboo") and ent == dmg:GetInflictor():GetOwner() then
         if dmg:GetInflictor():IsWeapon() then
             dmg:ScaleDamage(0.4)
-            ent:SetVelocity(ent:EyeAngles():Forward() * -200)
+            ent:SetVelocity(ent:EyeAngles():Forward() * -400)
         else
-            dmg:ScaleDamage(2) -- trolleg?
-            ent:SetVelocity((ent:GetPos() - dmg:GetInflictor():GetPos()):GetNormalized() * 1000)
+            dmg:ScaleDamage(0.75) -- trolleg?
+            ent:SetVelocity((ent:GetPos() - dmg:GetInflictor():GetPos()) / 256 * 1000)
         end
     end
 end)

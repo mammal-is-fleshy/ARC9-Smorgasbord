@@ -17,12 +17,13 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
 --	["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
-	["Sound2"] = [[cherresoda#6579 (rzen1th)]],
+    ["Sound2"] = [[cherresoda#6579 (rzen1th)]],
     ["Assets3"] = [[Fallout New Vegas]],
-	["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[text here]]
+SWEP.Description = [[Single shot survival tool intended to fire signal flares.
+Of course, it conveniently fits 12 gauge shotshells, so that's what we're doing with it.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_flare.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
@@ -268,13 +269,13 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 0, -0.5),
         Ang = Angle(90, 0, -90),
-    }, 
-	{
+    },
+    {
         PrintName = "Ammo Type",
         DefaultName = "Default Type",
         Category = {"css_ammo_sg"},
         ExcludeElements = {"not_sg"},
-		
+
         Bone = "W_Main",
         Pos = Vector(0, -2.75, 2),
         Ang = Angle(90, 0, -90),
@@ -324,10 +325,10 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
     },
-	["fire_empty"] = {
+    ["fire_empty"] = {
         Source = "fire",
-    }, 
-	["fire_empty_leucht"] = {
+    },
+    ["fire_empty_leucht"] = {
         Source = "fire_leucht",
     },
 
@@ -361,9 +362,9 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
         },
-    }, 
+    },
 
-	["reload_empty_leucht"] = {
+    ["reload_empty_leucht"] = {
         Source = "dry_leucht",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
@@ -382,8 +383,8 @@ SWEP.Animations = {
 
     ["idle_sld"] = {
         Source = "idle_sld",
-    }, 
-	["idle1_sld"] = {
+    },
+    ["idle1_sld"] = {
         Source = "idle_sld1",
     },
     ["idle_empty_sld"] = {
@@ -394,8 +395,8 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_css_foley/draw_pist.wav" ,   t = 0 / 40},
         },
-    }, 
-	["draw1_sld"] = {
+    },
+    ["draw1_sld"] = {
         Source = "draw_sld1",
         EventTable = {
             {s =  "gekolt_css_foley/draw_pist.wav" ,   t = 0 / 40},
@@ -412,9 +413,9 @@ SWEP.Animations = {
     ["fire_sld"] = {
         Source = "fire_sld",
     },
-	["fire_empty_sld"] = {
+    ["fire_empty_sld"] = {
         Source = "fire_emp_sld",
-    }, 
+    },
 
     ["reload_sld"] = {
         Source = "wet_sld",
@@ -449,5 +450,5 @@ SWEP.Animations = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
         },
-    }, 
+    },
 }
