@@ -582,7 +582,7 @@ ATT = {}
 
 ATT.PrintName = "Vampire Scope"
 ATT.CompactName = "Vampire"
-ATT.Icon = Material("entities/gekolt_css_optic/farv.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_optic/vampire.png", "mips smooth")
 ATT.Description = [[]]
 ATT.SortOrder = 8
 

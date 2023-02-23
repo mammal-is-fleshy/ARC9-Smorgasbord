@@ -13,13 +13,13 @@ ATT.Category = "css_awp_stock"
 ATT.ActivateElements = {"awp_s_no"}
 
 ATT.SwayAdd = -0.85
-ATT.SprintToFireTimeMult = 1.8
-ATT.AimDownSightsTimeMult = 1.15
-ATT.RecoilMult = 0.7
-ATT.RecoilKickMult = 1.125
+ATT.SprintToFireTimeMult = 0.5
+ATT.AimDownSightsTimeMult = 0.65
+ATT.RecoilMult = 1.5
+ATT.RecoilKickMult = 1.5
 
-ATT.RecoilAutoControlMult = 3.6
-ATT.FreeAimRadiusMult = 0.7
+ATT.RecoilAutoControlMult = 0.5
+ATT.FreeAimRadiusMult = 2
 
 ARC9.LoadAttachment(ATT, "gekolt_css_awp_s_no")
 
@@ -105,10 +105,8 @@ ATT = {}
 ATT.PrintName = "Lincoln Corp 10A2 Frame"
 ATT.CompactName = "LC10"
 ATT.Icon = Material("entities/gekolt_css_awp_f_lc10.png", "mips smooth")
-ATT.Description = [[Mockup frame of a relic from a certain fridgid war.
-Somehow change all the internal mechanism with a click of a button.
-Effectively turn the rifle into a really bad SMG.
-Only for the blackest of operations]]
+ATT.Description = [[Smuggled SMG receiver in a sniper frame
+Unfitting frame yielding unfavourable results.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -117,8 +115,9 @@ ATT.SortOrder = 0
 ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"awp_f_smg", "short_clamp", "notop", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_ak47"
-ATT.ShootSound = {"magmacow_smor/mp5n-1.wav", "magmacow_smor/mp5n-2.wav","magmacow_smor/mp5n-3.wav" }
+ATT.ShootSound = {"magmacow_smor/mp5n-1.wav", "magmacow_smor/mp5n-2.wav","magmacow_smor/mp5n-3.wav" }  -- change this please
 ATT.ShootSoundSilenced = "magmacow_smor/mp5k-sup.wav"
+ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
 ATT.SwayMult = 1.5
 ATT.AccuracyMOAMult = 3
@@ -139,7 +138,10 @@ ATT.DamageMinMult = 20 / 160
 ATT.RangeMinMult = 0.8
 ATT.RangeMaxMult = 0.8
 ATT.RecoilMult = 0.4
-ATT.RecoilKickMult = 1.2 / 3
+ATT.RecoilKickMult = 1 / 2
+ATT.RecoilMultRecoilMult = 1.1/1.75
+
+ATT.RecoilDissipationRateMult = 5/3
 
 ATT.RPMMult = 900 / 50
 ATT.Firemodes = {
@@ -175,7 +177,7 @@ ATT = {}
 
 ATT.PrintName = "Short Stock"
 ATT.CompactName = "Fold"
-ATT.Description = [[This feels wrong]]
+ATT.Description = [[Removes 'unnecessary' bits for aesthetic and weight]]
 
 ATT.Icon = Material("entities/gekolt_css_awp_s_short.png", "mips smooth")
 
@@ -183,13 +185,13 @@ ATT.SortOrder = 0
 ATT.Category = "css_awp_stock"
 ATT.ActivateElements = {"awp_s_short"}
 
-ATT.SwayAdd = 1.25
-ATT.SprintToFireTimeMult = 0.9
+ATT.SwayAdd = 1.1
+ATT.SprintToFireTimeMult = 0.85
 ATT.AimDownSightsTimeMult = 0.9
-ATT.RecoilMult = 1.05
-ATT.RecoilKickMult = 0.95
+ATT.RecoilMult = 1.15
+ATT.RecoilKickMult = 1.2
 
-ATT.FreeAimRadiusMult = 0.85
+ATT.FreeAimRadiusMult = 1.1
 
 ARC9.LoadAttachment(ATT, "gekolt_css_awp_s_short")
 
@@ -218,6 +220,8 @@ ATT.ActivateElements = {"awp_f_sd", "ubgl_maghold", "pre_muzzed"}
 ATT.ShootSoundSilenced = "magmacow_smor/AWM-50.wav"
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.Silencer = true
+ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.ShellScale = 2
 
 ATT.SwayMult = 1.25
 ATT.AccuracyMOAMult = 0.75
