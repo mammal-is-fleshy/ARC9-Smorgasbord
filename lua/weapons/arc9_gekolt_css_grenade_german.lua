@@ -205,20 +205,21 @@ SWEP.Hook_BashHit = function(wep, data)
             wep:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_WEAPON)
         end
 
-        util.BlastDamage(wep, wep:GetOwner(), pos, 256, 50)
+        util.BlastDamage(wep, wep:GetOwner(), pos, 256, 100)
         for i = 1, 6 do
             local dispersion = Angle(math.Rand(-1, 1), math.Rand(-1, 1), 0)
-            dispersion:Mul(1 * 36)
+            dispersion:Mul(1.5 * 36)
             dispersion:Add(dir)
 
             local ent = ents.Create("gekolt_css_nadelet")
-            ent.FuseTime = 0.6 + i * 0.25 + math.Rand(0, 0.2)
+            ent.FuseTime = 0.75 + i * 0.25 + math.Rand(0, 0.2)
+            ent.Damage = 75
             ent:SetOwner(wep:GetOwner())
             ent:SetPos(src)
             ent:SetAngles(AngleRand())
             ent:Spawn()
 
-            ent:GetPhysicsObject():SetVelocityInstantaneous(wep:GetOwner():GetVelocity() + dispersion:Forward() * math.Rand(256, 512))
+            ent:GetPhysicsObject():SetVelocityInstantaneous(wep:GetOwner():GetVelocity() + dispersion:Forward() * math.Rand(96, 512))
         end
     else
 
@@ -226,13 +227,14 @@ SWEP.Hook_BashHit = function(wep, data)
             wep:EmitSound("^ambient/explosions/explode_3.wav", 125, 100, 1, CHAN_WEAPON)
         end
 
-        util.BlastDamage(wep, wep:GetOwner(), pos, 512, 300)
+        util.BlastDamage(wep, wep:GetOwner(), pos, 728, 100)
+        util.BlastDamage(wep, wep:GetOwner(), pos, 512, 200)
 
         local effectdata = EffectData()
         for i = 1, 8 do
             local tr = util.TraceLine({
                 start = src,
-                endpos = src + Angle(math.Rand(-15, 15), math.Rand(0, 360), 0):Forward() * math.Rand(64, 384),
+                endpos = src + Angle(math.Rand(-15, 15), math.Rand(0, 360), 0):Forward() * math.Rand(128, 512),
                 mask = MASK_SHOT,
                 filter = {wep, wep:GetOwner(), data.tr.Entity},
             })
@@ -251,7 +253,7 @@ end
 
 hook.Add("EntityTakeDamage", "arc9_gekolt_gbundle", function(ent, dmg)
     if IsValid(dmg:GetInflictor()) and dmg:GetInflictor():GetClass() == "arc9_gekolt_css_grenade_german" and ent == dmg:GetInflictor():GetOwner() then
-        dmg:ScaleDamage(0.4)
-        ent:SetVelocity(ent:EyeAngles():Forward() * -200)
+        dmg:ScaleDamage(0.5)
+        ent:SetVelocity(ent:EyeAngles():Forward() * -300)
     end
 end)

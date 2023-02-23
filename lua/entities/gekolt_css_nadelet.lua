@@ -11,6 +11,8 @@ ENT.FuseTime = 1
 ENT.ArmTime = 0
 ENT.ImpactFuse = false
 
+ENT.Damage = 150
+
 AddCSLuaFile()
 
 function ENT:Initialize()
@@ -72,7 +74,7 @@ function ENT:Detonate()
             self:EmitSound("^weapons/explode4.wav", 125, math.Rand(100, 110), 1, CHAN_WEAPON)
         end
 
-        util.BlastDamage(self, self:GetOwner(), pos, 350, 150)
+        util.BlastDamage(self, self:GetOwner(), pos, 350, self.Damage)
         self:Remove()
     end
 end
