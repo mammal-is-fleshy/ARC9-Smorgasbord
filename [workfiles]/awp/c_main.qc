@@ -16,7 +16,8 @@ $bodygroup "iron"
 	studio "awp_iron.smd"
 	studio "awm_iron_smg.smd"		
 	blank		
-	studio "awm_rail.smd"	
+	studio "awm_rail.smd"
+	studio "awm_lc10rail.smd"	
 }
 
 $bodygroup "stock"
@@ -54,7 +55,7 @@ $illumposition 0 0 0
 $cdmaterials "models\gekolt_css_vmt\"
 
 $attachment "1" "W_Muz" 0 0 0 rotate -90 0 0
-$attachment "2" "W_Shell" 0 0 0 rotate 0 135 180
+$attachment "2" "W_Shell" 0 0 0 rotate 0 135 -180
 
 $sequence "idle" {
 	"anims\idle.smd"

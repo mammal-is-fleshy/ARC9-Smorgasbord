@@ -504,11 +504,15 @@ ATT.Description = [[Oi, they just make the thing longer
 Rounded front sight for... more... accuracy?
 ]]
 
-ATT.Ignore = true
+ATT.Ignore = false
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rpk"}
+ATT.ExcludeElements = {"pre_bipod"} 
+
+ATT.Bipod = true
+ATT.RecoilDissipationRateMultBipod = 2
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg9")
 

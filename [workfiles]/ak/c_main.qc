@@ -99,6 +99,13 @@ $bodygroup "mount2"
 	studio "ak47_fg_mount.smd"
 }
 
+$bodygroup "bipod"
+{
+	blank
+	studio "Bipod_Folded2.smd"
+	studio "Bipod_Deployed.smd"
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\gekolt_css_vmt\"

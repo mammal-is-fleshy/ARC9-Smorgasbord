@@ -34,7 +34,7 @@ ATT.PrintName = "Foule Drone Shot" -- get it, cuz its bird shot, and foule looks
 ATT.CompactName = "DRONE"
 ATT.Icon = Material("entities/gekolt_css_ammo/drone.png", "mips smooth")
 ATT.Description = [[Condensed with a greater number of pellets allowing for wider spreading and looser clums
-Take out those drones, birds, whatever in the sky.]]
+Take out those drones, birds, whatever in the sky with more ease.]]
 ATT.SortOrder = 20
 
 ATT.Category = {"css_ammo_sg"}
@@ -54,10 +54,10 @@ ATT = {}
 ATT.PrintName = "Marksman Slug Shot"
 ATT.CompactName = "SLUG"
 ATT.Icon = Material("entities/gekolt_css_ammo/slug.png", "mips smooth")
-ATT.Description = [[play rainworld
+ATT.Description = [[the scug
+play rain world
 play rainworld
-play rainworld
-play rainworld
+play rain world
 play rainworld]] --- do not change this
 ATT.SortOrder = 1
 
@@ -87,8 +87,7 @@ ATT = {}
 ATT.PrintName = "Rebounder Spring Shot"
 ATT.CompactName = "SRPING"
 ATT.Icon = Material("entities/gekolt_css_ammo/spring.png", "mips smooth")
-ATT.Description = [[Boucy projectile with magical homing property
-Single projectile.]]
+ATT.Description = [[Single boucy projectile with magical homing property.]]
 ATT.SortOrder = 1.2
 
 ATT.Category = {"css_ammo_sg"}
