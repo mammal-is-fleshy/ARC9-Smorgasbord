@@ -145,6 +145,12 @@ $sequence "throw" {
 	fadeout 0.1
 	fps 40
 }
+$sequence "melee" {
+	"anims\melee.smd"
+	fadein 0.1
+	fadeout 0.1
+	fps 40
+}
 $sequence "throw_full" {
 	"anims\throw_full.smd"
 	fadein 0.3

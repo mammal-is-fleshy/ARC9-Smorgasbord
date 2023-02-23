@@ -13,9 +13,9 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
-    ["Assets"] = [[Counter-Strike Source]],
-	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
+    ["Assets2"] = [[Counter-Strike Source]],
+	["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Slot = 4
@@ -53,7 +53,7 @@ SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
 SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 1
+SWEP.SupplyLimit = 2
 SWEP.Crosshair = false
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
@@ -131,6 +131,16 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
+-------------------------- MELEE
+
+SWEP.Bash = true
+SWEP.PrimaryBash = false
+
+SWEP.BashDamage = 70
+SWEP.BashLungeRange = 0
+SWEP.BashRange = 96
+SWEP.PreBashTime = 0.2
+SWEP.PostBashTime = 0.3
 
 SWEP.Animations = {
     ["idle"] = {
@@ -165,4 +175,11 @@ SWEP.Animations = {
         },
         MinProgress = 0.4
     },
+    ["bash"] = {
+        Source = {"melee"}
+    },
 }
+
+function SWEP:SecondaryAttack()
+    return self:MeleeAttack()
+end

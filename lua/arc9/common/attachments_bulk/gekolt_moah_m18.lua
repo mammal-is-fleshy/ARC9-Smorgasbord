@@ -50,6 +50,7 @@ end
 
 -- stat Normal --
 
+ATT.Ammo = "ar2"
 ATT.MuzzleEffectQCA = 3
 ATT.CaseEffectQCA = 2
 ATT.PhysBulletMuzzleVelocity = 2900 * 12
@@ -108,10 +109,9 @@ ATT.VisualRecoilMult = 1
 ATT.VisualRecoilHipFire = false
 
 
-
 -- stat UBGL --
 ATT.UBGL = true
-ATT.UBGLAmmo = "smg1_grenade"
+ATT.UBGLAmmo = "RPG_Round"
 ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
 ATT.UBGLFiremodeName = "Anti-Armour"

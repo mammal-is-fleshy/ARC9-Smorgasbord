@@ -15,9 +15,9 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
-    ["Assets"] = [[Firearm: Source]],
-	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
+    ["Assets2"] = [[Firearm: Source]],
+	["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[THE JAPANESES ARE ATTACKING AGAIN.
@@ -46,6 +46,7 @@ SWEP.SupplyLimit = 2
 SWEP.Crosshair = false
 
 -------------------------- ENTITY LAUNCHING
+SWEP.Ammo = "slam"
 
 SWEP.ShootEnt = "gekolt_css_m4_claymore_bamboo" -- Set to an entity to launch it out of this weapon.
 

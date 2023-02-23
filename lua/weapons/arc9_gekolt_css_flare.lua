@@ -16,9 +16,10 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    Author = "Geckololt, 8Z",
-    Contact = "SlogoKolt#6648",
-    Assets = "Fallout New Vegas"
+--	["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
+	["Sound2"] = [[cherresoda#6579 (rzen1th)]],
+    ["Assets3"] = [[Fallout New Vegas]],
+	["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[text here]]
@@ -98,16 +99,16 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 5
+SWEP.Recoil = 4
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.85 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 0.75 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.95 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 0.85 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilRandomUp = 0.7
+SWEP.RecoilRandomSide = 2
 
 SWEP.RecoilDissipationRate = 10
 SWEP.RecoilResetTime = 0
@@ -116,7 +117,7 @@ SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
 SWEP.RecoilKick = 1.5
 
-SWEP.RecoilMultRecoil = 1.15 -- Looks stupid but it means expoential recoil growth.
+SWEP.RecoilMultRecoil = 1.5 -- Looks stupid but it means expoential recoil growth.
 
 -------------------------- SPREAD
 
