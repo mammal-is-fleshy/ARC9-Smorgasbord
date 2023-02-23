@@ -15,3 +15,9 @@ ATT.ShootVolumeMult = 1.1
 ATT.MuzzleParticleOverride = "muzzleflash_4"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+
+ATT.SwayMultShootingMult = 1.25
+
+ATT.RecoilMult = 0.9
+--ATT.RecoilUpMult = 1
+ATT.RecoilSideMult = 0.85

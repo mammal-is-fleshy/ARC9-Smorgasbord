@@ -166,8 +166,8 @@ ATT.SortOrder = 3
 ATT.ClipSizeOverride = 20
 ATT.Firemodes = {{Mode = 3,}}
 ATT.RunawayBurst = true
-ATT.PostBurstDelay = 0.2
-ATT.RPMMult = 900 / 600
+ATT.PostBurstDelay = 0.15
+ATT.RPMMult = 1050 / 600
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_mk4"

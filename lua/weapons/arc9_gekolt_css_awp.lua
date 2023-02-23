@@ -142,7 +142,7 @@ SWEP.SwayMultMove = 1
 SWEP.SwayMultCrouch = 0.4
 SWEP.SwayMultShooting = 1.5
 
-SWEP.SwayMultSights = 0.25
+SWEP.SwayMultSights = 0.125
 
 SWEP.AimDownSightsTime = 0.35
 SWEP.SprintToFireTime = 0.5

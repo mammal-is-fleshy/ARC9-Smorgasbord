@@ -333,6 +333,7 @@ ATT.ActivateElements = {"s_bolt"}
 ATT.SwayMult = 0.25
 ATT.RecoilMult = 1.5
 ATT.SpreadMultSights = 0
+ATT.SwayMultSights = 0.5
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_s_bolt")
 
