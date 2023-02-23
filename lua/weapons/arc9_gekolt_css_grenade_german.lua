@@ -85,7 +85,7 @@ SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being a
 SWEP.HasSights = false
 
 SWEP.ViewModelFOVBase = 90
-SWEP.ActivePos = Vector(0, -1, 0)
+SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.SprintPos = Vector(3, -2, -5)
