@@ -3,7 +3,7 @@ ATT.CompactName = [[M26]]
 ATT.Icon = Material("entities/gekolt_css_m4_u_pump.png")
 ATT.Description = [[
 5-Round 12 gauge box magazine pumping shotgun for your handguard
-Requires a magazine to grip
+Requires a magazine to grip.
 ]]
 ATT.Pros = {}
 ATT.Cons = {}

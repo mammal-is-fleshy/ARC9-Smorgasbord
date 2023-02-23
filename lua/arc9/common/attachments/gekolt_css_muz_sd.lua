@@ -1,7 +1,7 @@
 ATT.PrintName = "Suppressor"
 ATT.CompactName = "SUPP"
 ATT.Icon = Material("entities/gekolt_css_muz_sd.png", "mips smooth")
-ATT.Description = [[]]
+ATT.Description = [[Small suppressor]]
 ATT.SortOrder = 2
 
 ATT.Model = "models/weapons/geckololt_css/atts/sd_m.mdl"
