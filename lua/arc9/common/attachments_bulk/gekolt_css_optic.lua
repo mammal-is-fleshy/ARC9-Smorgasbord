@@ -414,7 +414,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_fal")
 
 ATT = {}
 
-ATT.PrintName = "Elcan Scope"
+ATT.PrintName = "Elaccco Optical Gun Sight Scope"
 ATT.CompactName = "Elaccco"
 ATT.Icon = Material("entities/gekolt_css_optic/elcan.png", "mips smooth")
 ATT.Description = [[
