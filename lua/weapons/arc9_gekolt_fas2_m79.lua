@@ -17,9 +17,9 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
-	["Sound2"] = [[CturiX#6008 (CturiX)]],
+    ["Sound2"] = [[CturiX#6008 (CturiX)]],
     ["Assets3"] = [[Firearm: Source 2]],
-	["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[Single shot explosive lobing device
@@ -264,11 +264,11 @@ SWEP.CustomizeNoRotate = false
 SWEP.CustomizeRotateAnchor = Vector(12, -1.94, -5.23)
 
 SWEP.StandardPresets = {
-	"[Alofs]XQAAAQBMAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGORfF89F77zpxWUuYjChqvqkszNWIKeWTwnVXL7WY3i+lFtF0BdUgA=",
-	"[MTS]XQAAAQBcAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGORfRzHumk2PrrmHLR82aBs4r3XJnjc0uBDY6V/i0hZpNQOpBIAkwdUxgNv3s4G",
-	"[Tracker]XQAAAQDHAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGORfRzHumk2Prr36+Ze54qUc3NtKYSXpd5qjHSIwyJ4822EtDLEz9iWFOfuEkkSTZ1X1YgCiz/loYjA7ZnEpSirFPDlepJu437J4++hIFVUAA==",
-	"[Pirate]XQAAAQBaAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGOR9u3YdKqcY2LFms+COwVACvA9h+FgV99ccehKhsbgufg2fdxysYgX+boA",
-	"[MTS-P]XQAAAQBqAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGORfc9BS2vczPZ5yNEGb723pGNzvKeBpDObMcodMjnGHc9iiAKmOyqt27h2cCYGK4kA",
+    "[Alofs]XQAAAQBMAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGORfF89F77zpxWUuYjChqvqkszNWIKeWTwnVXL7WY3i+lFtF0BdUgA=",
+    "[MTS]XQAAAQBcAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGORfRzHumk2PrrmHLR82aBs4r3XJnjc0uBDY6V/i0hZpNQOpBIAkwdUxgNv3s4G",
+    "[Tracker]XQAAAQDHAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGORfRzHumk2Prr36+Ze54qUc3NtKYSXpd5qjHSIwyJ4822EtDLEz9iWFOfuEkkSTZ1X1YgCiz/loYjA7ZnEpSirFPDlepJu437J4++hIFVUAA==",
+    "[Pirate]XQAAAQBaAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGOR9u3YdKqcY2LFms+COwVACvA9h+FgV99ccehKhsbgufg2fdxysYgX+boA",
+    "[MTS-P]XQAAAQBqAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtId02K9Y7vtGORfc9BS2vczPZ5yNEGb723pGNzvKeBpDObMcodMjnGHc9iiAKmOyqt27h2cCYGK4kA",
 }
 
 -------------------------- HoldTypes
@@ -453,6 +453,7 @@ SWEP.Animations = {
         },
         FireASAP = true,
         MinProgress = 0.85,
+        EjectAt = 20 / 40,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
         },
@@ -481,6 +482,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
         MinProgress = 0.83,
+        EjectAt = 35 / 40,
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 12 / 40},
             {s =  "gekolt_fas2/m79_remove.wav" ,   t = 30 / 40},
