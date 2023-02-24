@@ -50,6 +50,9 @@ ATT.ModelBodygroups = "0000000"
 ATT.TriggerDelay = true
 ATT.TriggerDelayTime = 0.07
 ATT.TriggerDownSound = "gekolt_css/weaponclick.wav"
+
+ATT.RPMMultEvenShot = 1.3
+ATT.RPMMultOddShot = 0.8
 --ATT.TriggerUpSound = "gekolt_css/sliderelease.wav"
 
 ATT.ClipSizeOverride = 90
