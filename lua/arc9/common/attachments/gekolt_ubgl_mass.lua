@@ -1,4 +1,4 @@
-ATT.PrintName = [[Knockzy-26 Door & Personnel Deterent]]
+ATT.PrintName = [[Knockzy-26 Door & Personnel Deterrent]]
 ATT.CompactName = [[KNOCKER]]
 ATT.Icon = Material("entities/gekolt_css_m4_u_pump.png")
 ATT.Description = [[
