@@ -1,6 +1,6 @@
 ATT.PrintName = "Slanted"
 ATT.CompactName = "BREAK: SALM"
-ATT.Description = [[  ]]
+ATT.Description = [[Compensator like on that one really famous rifle. Makes the recoil go down]]
 
 ATT.Icon = Material("entities/gekolt_css_muz_long.png", "mips smooth")
 ATT.SortOrder = 1
