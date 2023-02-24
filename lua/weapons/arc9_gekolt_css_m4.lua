@@ -16,10 +16,10 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
-	["Sound"] = [[cherresoda#6579 (rzen1th)]],
-    ["Assets"] = [[Counter-Strike Source]],
-	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
+	["Sound2"] = [[cherresoda#6579 (rzen1th) and CturiX#6008 (CturiX)]],
+    ["Assets3"] = [[Counter-Strike Source]],
+	["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[Standard infantry carbine that is also absurdly popular in civilian markets.
@@ -346,10 +346,9 @@ SWEP.Animations = {
         Source = "nade_reload",
         IKTimeLine = { { t = 0, lhik = 0, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, }},
         EventTable = {
-            {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 6 / 40},
-            {s =  "gekolt_css/m3_insertshell.wav" ,   t = 50 / 40},
-            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 80 / 40},
+            {s =  "cturix_ar15/grenade_open-1.wav" ,   t = 5 / 40},
+            {s =  "cturix_ar15/grenade_position-2.wav" ,   t = 42 / 40},
+            {s =  "cturix_ar15/grenade_close-3.wav" ,    t = 80 / 40},
         },
     },
     ["idle_ubgl"] = {
@@ -713,7 +712,7 @@ SWEP.Animations = {
         },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.875, lhik = 1, rhik = 1, },
         },
         FireASAP = true,
         MinProgress = 0.9,

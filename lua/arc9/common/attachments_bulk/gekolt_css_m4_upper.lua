@@ -12,7 +12,7 @@ ATT.Icon = Material("entities/gekolt_css_m4_u_10.png", "mips smooth")
 ATT.SortOrder = 1.5
 ATT.Category = "css_m4_up"
 ATT.ActivateElements = {"up_proto", "keep_rs"}
-ATT.ShootSound = "gekolt_css/sg550-1.wav"
+ATT.ShootSound = {"cturix_ar15/fire_proto-1.wav","cturix_ar15/fire_proto-2.wav","cturix_ar15/fire_proto-3.wav"}
 ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -117,7 +117,10 @@ ATT.SortOrder = 3
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.MuzzleParticle = "muzzleflash_ak47"
 ATT.ActivateElements = {"up_ak"}
-ATT.ShootSound = "gekolt_css/ak47-1.wav"
+ATT.ShootSound = {"cturix_ar15/fire_ak-1.wav","cturix_ar15/fire_ak-2.wav","cturix_ar15/fire_ak-3.wav"}
+ATT.ShootSoundSilenced = {"cturix_ar15/fire_ak_sup.wav"}
+ATT.DistantShootSound = {"cturix_ar15/fire_ak_dist-1.wav", "cturix_ar15/fire_ak_dist-2.wav"}
+ATT.ShootSoundLooping = "cturix_ar15/fire_ak_auto.wav"
 
 -- ATT.ClipSizeOverride = 30
 
@@ -399,6 +402,9 @@ ATT.SortOrder = 2
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_pdw", "noguard", "nogrip", "short_clamp", "akantbo", "alt_optic"}
 ATT.ShootSound = "gekolt_css/p90-1.wav"
+ATT.ShootSoundSilenced = "cturix_ar15/fire_57_suppressed-1.wav"
+ATT.DistantShootSound ="cturix_ar15/fire_57_dist-1.wav"
+
 ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.CaseEffectQCA = 3
@@ -785,7 +791,9 @@ ATT.SortOrder = 0
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_sd", "noguard", "pre_muzzed"}
-ATT.ShootSound = "gekolt_css/hb_sd.wav"
+ATT.ShootSound = {"cturix_ar15/fire_blackout1.wav", "cturix_ar15/fire_blackout2.wav", "cturix_ar15/fire_blackout3.wav"}
+ATT.DistantShootSound = {"cturix_ar15/fire_blackout_dist.wav"}
+ATT.FirstShootSound = {"cturix_ar15/fire_blackout_first-1.wav"}
 
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.Silencer = true

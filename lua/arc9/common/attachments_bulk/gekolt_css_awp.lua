@@ -175,8 +175,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_lc10")
 
 ATT = {}
 
-ATT.PrintName = "Optimized Stock"
-ATT.CompactName = "Optimization"
+ATT.PrintName = "Optimised Stock"  -- IN THIS HOUSEHOLD WE SPEAK PROPER ENGLISH
+ATT.CompactName = "Optimisation"
 ATT.Description = [[Removes 'unnecessary' bits for improved performance and weight reduction]]
 
 ATT.Icon = Material("entities/gekolt_css_awp_s_short.png", "mips smooth")

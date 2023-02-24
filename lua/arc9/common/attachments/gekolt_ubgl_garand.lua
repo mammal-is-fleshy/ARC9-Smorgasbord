@@ -19,8 +19,10 @@ ATT.IKAnimationProxy = {
     ["reload_ubgl"] = {
         Source = "dry",
         EventTable = {		
-            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 8 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 59 / 40},			
+            {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 10 / 40},
+            {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 15 / 40},
+            {s =  "gekolt_dod/k98_singleshotreload.wav" ,   t = 45 / 40},
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 72 / 40},			
         },
     },
     ["enter_ubgl"] = {
@@ -78,7 +80,8 @@ ATT.SpreadUBGL = 0.005
 
 ATT.ShootEntUBGL = "gekolt_css_m4_nade"
 ATT.ShootEntForceUBGL = 10000
-ATT.ShootSoundUBGL = "gekolt_css/deagle-1.wav"
+ATT.ShootSoundUBGL = {"cturix_ar15/fire_grenade1.wav", "cturix_ar15/fire_grenade2.wav", "cturix_ar15/fire_grenade3.wav"}
+ATT.DistantShootSoundUBGL = {"cturix_ar15/fire_grenade_dist.wav"}
 
 -- ATT.HasSightsUBGL = false
 
