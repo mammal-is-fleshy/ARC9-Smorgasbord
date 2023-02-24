@@ -142,6 +142,9 @@ SWEP.BashRange = 72
 SWEP.PreBashTime = 0.2
 SWEP.PostBashTime = 0.75
 
+SWEP.ShootWhileSprint = true
+SWEP.BashWhileSprint = true
+
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
