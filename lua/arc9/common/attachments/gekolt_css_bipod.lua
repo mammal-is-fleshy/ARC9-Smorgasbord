@@ -1,5 +1,5 @@
 ATT.PrintName = "Bipod"
-ATT.CompactName = "Bipod"
+ATT.CompactName = "BIPO"
 ATT.Description = [[pod means legs, bi means two.
 Massively improves recoil control and reduces cumulative spread while deployed.]]
 

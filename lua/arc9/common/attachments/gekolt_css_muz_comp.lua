@@ -1,5 +1,5 @@
 ATT.PrintName = "Compensator"
-ATT.CompactName = "Comp"
+ATT.CompactName = "COMP"
 ATT.Description = [[  ]]
 
 ATT.Icon = Material("entities/gekolt_css_muz_comp.png", "mips smooth")

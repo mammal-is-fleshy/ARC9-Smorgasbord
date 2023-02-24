@@ -1,9 +1,9 @@
 ATT.PrintName = [[Sawnoff Garand]]
-ATT.CompactName = [[Rifle Grenade]]
+ATT.CompactName = "GANDRIAL"
 ATT.Icon = Material("entities/gekolt_css_m4_u_pump.png")
 ATT.Description = [[
-Exactly what you expect
-Requires a magazine to grip.
+Throws grenades at people too well! banned & classified in 1949
+**Requires a magazine to grip.**
 ]]
 ATT.Pros = {}
 ATT.Cons = {}
@@ -70,7 +70,7 @@ ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"
 ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "XM148"
+ATT.UBGLFiremodeName = "'GANDRIAL'"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
 

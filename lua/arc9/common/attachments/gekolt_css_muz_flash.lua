@@ -1,5 +1,5 @@
 ATT.PrintName = "Flash Hider"
-ATT.CompactName = "Flash"
+ATT.CompactName = "FLASH"
 ATT.Description = [[Converts most vertical kick into horizontal
 Unstable report.]]
 

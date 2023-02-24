@@ -1,5 +1,5 @@
 ATT.PrintName = "Negator"
-ATT.CompactName = "Negator"
+ATT.CompactName = "BREAK: NALA"
 ATT.Description = [[Heavy device improves sustaining recoil]]
 
 ATT.Icon = Material("entities/gekolt_css_muz_negate.png", "mips smooth")

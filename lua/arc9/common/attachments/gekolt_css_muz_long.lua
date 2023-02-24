@@ -1,5 +1,5 @@
 ATT.PrintName = "Slanted"
-ATT.CompactName = "Slanted"
+ATT.CompactName = "BREAK: SALM"
 ATT.Description = [[  ]]
 
 ATT.Icon = Material("entities/gekolt_css_muz_long.png", "mips smooth")

@@ -1,5 +1,5 @@
 ATT.PrintName = "Suppressor"
-ATT.CompactName = "SUPP"
+ATT.CompactName = "SUPP. KLON"
 ATT.Icon = Material("entities/gekolt_css_muz_sd.png", "mips smooth")
 ATT.Description = [[Small suppressor]]
 ATT.SortOrder = 2

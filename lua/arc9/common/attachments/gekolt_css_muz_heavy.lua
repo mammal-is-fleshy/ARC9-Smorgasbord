@@ -1,5 +1,5 @@
 ATT.PrintName = "Heavy Muzzle Break"
-ATT.CompactName = "H.BRAKE"
+ATT.CompactName = "BRAKE: HARV"
 ATT.Description = [[Muzzle device designed to compensate DMR/Sniper Rifle recoil
 Renders unusable for full auto.]]
 

@@ -1,5 +1,5 @@
 ATT.PrintName = "Bird Cage"
-ATT.CompactName = "Cage"
+ATT.CompactName = "FLASH: CAGE"
 ATT.Description = [[Improves stability on sustaining fire]]
 
 ATT.Icon = Material("entities/gekolt_css_muz_cage.png", "mips smooth")

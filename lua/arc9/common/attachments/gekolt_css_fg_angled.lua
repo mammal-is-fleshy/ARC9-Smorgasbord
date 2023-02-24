@@ -1,5 +1,5 @@
 ATT.PrintName = "Angled Foregrip"
-ATT.CompactName = "AFG"
+ATT.CompactName = "ANDER"
 ATT.Description = [[Foregrip allowing faster aim acquisition
 Slightly suffer from recoil and stability]]
 ATT.Icon = Material("entities/gekolt_css_fore_angled.png", "mips smooth")
