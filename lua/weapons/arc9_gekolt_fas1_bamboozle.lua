@@ -49,18 +49,18 @@ SWEP.Crosshair = false
 SWEP.Ammo = "slam"
 
 SWEP.ShootEnt = "gekolt_css_m4_claymore_bamboo" -- Set to an entity to launch it out of this weapon.
+SWEP.ShootEntInheritPlayerVelocity = true
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
 SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
-SWEP.ThrowSpeed = 0.5
 
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
-SWEP.ThrowForceMin = 200 -- Minimum force that the grenade will be thrown with.
-SWEP.ThrowForceMax = 3000 -- Maximum force that the grenade will be thrown with.
+SWEP.ThrowForceMin = 0 -- Minimum force that the grenade will be thrown with.
+SWEP.ThrowForceMax = 2000 -- Maximum force that the grenade will be thrown with.
 SWEP.TossForce = 2500 -- Force that the grenade will be thrown with when right clicked.
 
-SWEP.ThrowChargeTime = 0.8 -- How long it takes to charge the grenade to its maximum throw force.
+SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
 SWEP.ThrowTumble = false -- Grenade tumbles when thrown.
 
@@ -76,6 +76,8 @@ SWEP.Firemodes = {
     },
 }
 -------------------------- HANDLING
+
+SWEP.Spread = 0
 
 SWEP.FreeAimRadius = 0
 
@@ -111,8 +113,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 
 SWEP.HasSights = false
 
-SWEP.SprintAng = Angle(0, -15, 0)
-SWEP.SprintPos = Vector(0, -2, -2)
+SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.SprintPos = Vector(0, 2, 0)
 
 SWEP.ViewModelFOVBase = 90
 SWEP.ActivePos = Vector(0, -2, 0)
@@ -137,12 +139,6 @@ SWEP.HoldTypeBlindfire = "pistol"
 SWEP.AnimShoot = ACT_MELEE_ATTACK2
 SWEP.AnimReload = ACT_IDLE_MELEE
 SWEP.AnimDraw = false
-
-SWEP.BlindFireLeft = false
-
-SWEP.BlindFireOffset = Vector(0, 0, 32) -- The amount by which to offset the blind fire muzzle.
-SWEP.BlindFirePos = Vector(-2, -5, 5)
-SWEP.BlindFireAng = Angle(0, 10, -20)
 
 
 -- theres no grenade base yet  --- before 22/11/08
@@ -177,7 +173,7 @@ SWEP.Animations = {
     ["pullpin"] = {
         Source = {"prep"},
         FireASAP = true,
-        MinProgress = 0.4,
+        MinProgress = 0.3,
     },
     ["holster"] = {
         Source = "idle",
@@ -212,12 +208,13 @@ SWEP.Hook_BashHit = function(wep, data)
         util.Effect( "WaterSurfaceExplosion", eff )
         wep:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
     else
-        util.Effect( "Explosion", eff)
+        util.Effect( "HelicopterMegaBomb", eff)
         wep:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
+        wep:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 125, 110, 1, CHAN_AUTO)
     end
     wep:TakeAmmo()
 
-    util.BlastDamage(wep, wep:GetOwner(), pos, 256, 200)
+    util.BlastDamage(wep, wep:GetOwner(), pos, 200, 100)
     if wep:GetProcessedValue("Disposable") and !wep:HasAmmoInClip() and !IsValid(wep:GetDetonatorEntity()) and SERVER then
         wep:Remove()
     end
@@ -226,11 +223,11 @@ end
 hook.Add("EntityTakeDamage", "arc9_gekolt_bamboozle", function(ent, dmg)
     if IsValid(dmg:GetInflictor()) and (dmg:GetInflictor():GetClass() == "arc9_gekolt_fas1_bamboozle" or dmg:GetInflictor():GetClass() == "gekolt_css_m4_claymore_bamboo") and ent == dmg:GetInflictor():GetOwner() then
         if dmg:GetInflictor():IsWeapon() then
-            dmg:ScaleDamage(0.4)
+            dmg:ScaleDamage(0.5)
             ent:SetVelocity(ent:EyeAngles():Forward() * -400)
         else
-            dmg:ScaleDamage(0.75) -- trolleg?
-            ent:SetVelocity((ent:GetPos() - dmg:GetInflictor():GetPos()) / 256 * 1000)
+            ent:SetVelocity((ent:GetPos() - dmg:GetInflictor():GetPos()):GetNormalized() * Lerp(dmg:GetDamage() / 100, 200, 500))
+            --dmg:ScaleDamage(0.75)
         end
     end
 end)
