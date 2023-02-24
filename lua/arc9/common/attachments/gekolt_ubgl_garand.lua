@@ -54,7 +54,7 @@ ATT.IKGunMotionQCA = 2
 ATT.IKGunMotionOffset = Vector(0, 0, 0)
 ATT.IKGunMotionOffsetAngle = Angle(0, -90, -90)
 
-ATT.IKGunMotionMult = 0.5
+ATT.IKGunMotionMult = 3
 ATT.IKGunMotionAngleMult = 0.5
 
 ATT.Category = {"css_ubgl"}
@@ -75,6 +75,7 @@ ATT.UBGLFiremode = 1
 ATT.UBGLFiremodeName = "'GANDRIAL'"
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 110
+ATT.RPMUBGL = 600
 
 ATT.SpreadUBGL = 0.005
 

@@ -272,6 +272,7 @@ SWEP.MuzzleEffectQCAUBGL = 1
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "gekolt_css/m4a1_unsil-1.wav"
+--SWEP.DistantShootSound = "cturix_ar15/fire_dist.wav"    
 SWEP.ShootSoundSilenced = "gekolt_css/m4a1-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 

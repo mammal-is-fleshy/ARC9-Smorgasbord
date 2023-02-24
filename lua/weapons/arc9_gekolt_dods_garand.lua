@@ -331,7 +331,7 @@ end
 
 SWEP.ExtraShellModels = {
     [1] = {
-        model = "models/props_junk/watermelon01.mdl", -- you better replace this!
+        model = "models/weapons/geckololt_css/shell_garand_raw.mdl",
         smoke = false
     },
 }
