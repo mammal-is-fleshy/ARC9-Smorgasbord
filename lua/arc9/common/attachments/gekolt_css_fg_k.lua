@@ -1,5 +1,5 @@
 ATT.PrintName = "Short Foregrip"
-ATT.CompactName = "K"
+ATT.CompactName = "KENRY"
 ATT.Description = [[Shorten Foregrip made to look like a certain K model.]]
 
 ATT.Icon = Material("entities/gekolt_css_fore_k.png", "mips smooth")

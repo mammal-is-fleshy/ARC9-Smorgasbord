@@ -1,5 +1,5 @@
 ATT.PrintName = "Breacher"
-ATT.CompactName = "Breacher"
+ATT.CompactName = "FLASH: BEAT"
 ATT.Description = [[Spiking muzzle for bashing people]]
 
 ATT.Icon = Material("entities/gekolt_css_muz_breach.png", "mips smooth")

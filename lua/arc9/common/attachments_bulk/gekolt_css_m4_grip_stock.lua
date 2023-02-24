@@ -3,7 +3,7 @@ local ATT = {}
 ATT = {}
 
 ATT.PrintName = "ChainSAW Foregrip"
-ATT.CompactName = "ChainSAW"
+ATT.CompactName = "CHANES"
 ATT.Icon = Material("entities/gekolt_css_m4_fg_saw.png", "mips smooth")
 ATT.Description = [[Obvious questions include why how and what
 Horizontal grip dramatically increases hip fire potential
@@ -333,6 +333,7 @@ ATT.ActivateElements = {"s_bolt"}
 ATT.SwayMult = 0.25
 ATT.RecoilMult = 1.5
 ATT.SpreadMultSights = 0
+ATT.SwayMultSights = 0.5
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_s_bolt")
 

@@ -667,7 +667,7 @@ SWEP.Animations = {
             -- {s =  "gekolt_dod/c96_clipin2.wav" ,    t = 70 / 40},
         },
         IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.85, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
         },
     },
     ["reload_empty_owen"] = {
@@ -682,7 +682,7 @@ SWEP.Animations = {
             {s =  "gekolt_dod/mp40_boltback.wav" ,    t = 95 / 40},
             },
         IKTimeLine = {
-        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
+        { t = 0, lhik = 1, rhik = 1, }, { t = 0.1, lhik = 0, rhik = 0, },{ t = 0.85, lhik = 0, rhik = 0, },{ t = 0.9, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
         },
     },
 

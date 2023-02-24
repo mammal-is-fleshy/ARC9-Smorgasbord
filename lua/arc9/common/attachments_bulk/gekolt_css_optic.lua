@@ -3,7 +3,7 @@ local ATT = {}
 ATT = {}
 
 ATT.PrintName = "Range Finder"
-ATT.CompactName = "Range.F"
+ATT.CompactName = "RA. DANGER"
 ATT.Icon = Material("entities/gekolt_css_optic/range.png", "mips smooth")
 ATT.Description = [[Range fiding gadget. As useless as it sounds]]
 ATT.SortOrder = 1400
@@ -92,7 +92,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_scope_rangefider")
 ATT = {}
 
 ATT.PrintName = "Radar"
-ATT.CompactName = "Radar"
+ATT.CompactName = "LTE RADAR"
 ATT.Icon = Material("entities/gekolt_css_optic/range.png", "mips smooth")
 ATT.Description = [[Very slow radar unit]]
 ATT.SortOrder = 1401
@@ -125,11 +125,15 @@ ARC9.LoadAttachment(ATT, "gekolt_css_scope_radar")
 
 ATT = {}
 
-ATT.PrintName = "ACOG"
-ATT.CompactName = "ACOG"
+ATT.PrintName = "'Enhanced Optical Gunsight' ver. 99"
+ATT.CompactName = "EOG '99"
 ATT.Icon = Material("entities/gekolt_css_optic/acog.png", "mips smooth")
-ATT.Description = [[Simple mid-ranged scope]]
-ATT.SortOrder = 4
+ATT.Description = [[
+Powered mid-range scope with more dials and knobs than you remember
+Comfortable for use at 50 meters
+Supports mounting backup irons and external scopes
+]]
+ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/acog.mdl"
 ATT.ModelBodygroups = "000"
@@ -216,7 +220,7 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_acog")
 ATT = {}
 
 ATT.PrintName = "Iron Sight"
-ATT.CompactName = "IRONS"
+ATT.CompactName = "BACKUP"
 ATT.Icon = Material("entities/gekolt_css_optic/acog_irons.png", "mips smooth")
 ATT.Description = [[Simple backup sight for your optic.]]
 ATT.SortOrder = 4
@@ -240,11 +244,15 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_acog_iron")
 
 ATT = {}
 
-ATT.PrintName = "ACOG B"
-ATT.CompactName = "ACOG_B"
+ATT.PrintName = "'Enhanced Optical Gunsight' ver. 2003"
+ATT.CompactName = "EOG '03"
 ATT.Icon = Material("entities/gekolt_css_optic/acog2.png", "mips smooth")
-ATT.Description = [[Funky model with funky backup ironsight]]
-ATT.SortOrder = 4
+ATT.Description = [[
+Powered mid-range scope with less knobs and a higher price tag than you remember
+Comfortable for use at 2000 inches
+The backup ironsights are built in! You cannot mount external sights ($$$)
+]]
+ATT.SortOrder = 1.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/acog2.mdl"
 
@@ -293,11 +301,15 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_acog2")
 
 ATT = {}
 
-ATT.PrintName = "Bravo-4 Sight"
-ATT.CompactName = "B-4"
+ATT.PrintName = "Blanco 4C Optical Sight"
+ATT.CompactName = "BLANCO4C"
 ATT.Icon = Material("entities/gekolt_css_optic/b4.png", "mips smooth")
-ATT.Description = [[Variable mid-ranged scoped with a short rail mounted]]
-ATT.SortOrder = 4
+ATT.Description = [[
+Variable mid-ranged scoped with a short rail mounted
+Comfortable from 40 to 100 meters
+Allows external sights via the rail
+]]
+ATT.SortOrder = 2
 
 ATT.Model = "models/weapons/geckololt_css/atts/sig.mdl"
 
@@ -358,7 +370,10 @@ ATT = {}
 ATT.PrintName = "Trilux Scope"
 ATT.CompactName = "Trilux"
 ATT.Icon = Material("entities/gekolt_css_optic/fal.png", "mips smooth")
-ATT.Description = [[Cold War era scope with simple picture]]
+ATT.Description = [[
+Cold War era scope with simple picture and high magnification
+100 metre
+]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/trilux.mdl"
@@ -399,11 +414,14 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_fal")
 
 ATT = {}
 
-ATT.PrintName = "Elcan Scope"
-ATT.CompactName = "Elcan"
+ATT.PrintName = "Elaccco Optical Gun Sight Scope"
+ATT.CompactName = "Elaccco"
 ATT.Icon = Material("entities/gekolt_css_optic/elcan.png", "mips smooth")
-ATT.Description = [[]]
-ATT.SortOrder = 4
+ATT.Description = [[
+Sight famous for being of machine gun
+Nice 83 feet
+]]
+ATT.SortOrder = 2
 
 ATT.Model = "models/weapons/geckololt_css/atts/elcan.mdl"
 
@@ -422,7 +440,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 10
+ATT.RTScopeFOV = 15
 ATT.RTScopeReticle = Material("arc9_css/scope7_border.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.03
 ATT.RTScopeColorable = true
@@ -443,10 +461,13 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_elcan")
 
 ATT = {}
 
-ATT.PrintName = "HAMR Sight"
-ATT.CompactName = "HAMR"
+ATT.PrintName = "Happy Meal Gunsight Combo"
+ATT.CompactName = "Happy Meal"
 ATT.Icon = Material("entities/gekolt_css_optic/hamr.png", "mips smooth")
-ATT.Description = [[Combat scope fitted with a backup reflex]]
+ATT.Description = [[
+Combat scope fitted with a backup reflex
+Effective up close to around 159 feet
+]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/hamr.mdl"
@@ -471,8 +492,8 @@ ATT.Sights = {
     },
 }
 
-ATT.RTScopeFOVMax = 8
-ATT.RTScopeFOVMin = 15
+ATT.RTScopeFOVMax = 9
+ATT.RTScopeFOVMin = 17
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 1
 
@@ -504,10 +525,13 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_hamr")
 
 ATT = {}
 
-ATT.PrintName = "Far View Scope"
+ATT.PrintName = "Far View Optical Gunscope"
 ATT.CompactName = "FView"
 ATT.Icon = Material("entities/gekolt_css_optic/farv.png", "mips smooth")
-ATT.Description = [[]]
+ATT.Description = [[
+Called Far View for famously letting you view far
+Effective anywhere you can see someone
+]]
 ATT.SortOrder = 6.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/farview.mdl"
@@ -580,10 +604,13 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_fview")
 
 ATT = {}
 
-ATT.PrintName = "Vampire Scope"
+ATT.PrintName = "Vampire Thermal Scope"
 ATT.CompactName = "Vampire"
 ATT.Icon = Material("entities/gekolt_css_optic/vampire.png", "mips smooth")
-ATT.Description = [[]]
+ATT.Description = [[
+Thermal sniper sight that allows you to touch someone any time of day
+Effective near 168 feet
+]]
 ATT.SortOrder = 8
 
 ATT.Model = "models/weapons/geckololt_css/atts/sweeper.mdl"
@@ -684,10 +711,12 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_sweeper")
 
 ATT = {}
 
-ATT.PrintName = "S&D Medium Scope"
-ATT.CompactName = "S&D M"
+ATT.PrintName = "SARLEYWARLEY Medium Scope"
+ATT.CompactName = "SARLEYWARLEY"
 ATT.Icon = Material("entities/gekolt_css_optic/schmidt.png", "mips smooth")
-ATT.Description = [[Medium range hunting scope]]
+ATT.Description = [[
+Medium range hunting scope
+Effective at the furthest range you can spit at someone]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/schd.mdl"
@@ -707,7 +736,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 1
-ATT.RTScopeFOV = 10
+ATT.RTScopeFOV = 18
 ATT.RTScopeReticle = Material("arc9_css/scope6_border.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.05
 ATT.RTScopeColorable = true
@@ -747,10 +776,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_schd")
 ATT = {}
 
 ATT.PrintName = "Micro Scope"
-ATT.CompactName = "Micro"
+ATT.CompactName = "Micro Scope"
 ATT.Icon = Material("entities/gekolt_css_optic/micro.png", "mips smooth")
 ATT.Description = [[No not that microscope
-2x magnifying scope with three mounted rails for even more attachments]]
+2x magnifying scope with three mounted rails for even more attachments
+Effective at the furthest range you can piss at]]
 ATT.SortOrder = 4
 
 ATT.Model = "models/weapons/geckololt_css/atts/micro2.mdl"
@@ -770,7 +800,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 12
+ATT.RTScopeFOV = 22
 ATT.RTScopeReticle = Material("arc9_css/scope8_border.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.02
 ATT.RTScopeColorable = true
@@ -816,10 +846,14 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_micro")
 
 ATT = {}
 
-ATT.PrintName = "Nightstalker Scope"
-ATT.CompactName = "NStalker"
+ATT.PrintName = "NPRED Scope"
+ATT.CompactName = "NPRED"
 ATT.Icon = Material("entities/gekolt_css_optic/pvs4.png", "mips smooth")
-ATT.Description = [[Heavy night vision scope with extremely limited visibility]]
+ATT.Description = [[
+Heavy night vision scope with extremely limited visibility
+High magnfiication. Effective pretty far I guess
+Hot stuff glows with it
+]]
 ATT.SortOrder = 100
 
 ATT.Model = "models/weapons/geckololt_css/atts/pvs4.mdl"
@@ -839,7 +873,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 10
+ATT.RTScopeFOV = 5
 ATT.RTScopeReticle = Material("arc9_css/nv_border.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.05
 ATT.RTScopeColorable = true
@@ -911,11 +945,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_pvs4")
 
 ATT = {}
 
-ATT.PrintName = "Delta Sight"
-ATT.CompactName = "Delta"
+ATT.PrintName = "Gammer Low-profile"
+ATT.CompactName = "Gammer LP"
 ATT.Icon = Material("entities/gekolt_css_optic/delta.png", "mips smooth")
 ATT.Description = [[Small reflex sight designed as a backup. Peculiar reticle]]
-ATT.SortOrder = 0.1
+ATT.SortOrder = -1.6
 
 ATT.Model = "models/weapons/geckololt_css/atts/delta.mdl"
 
@@ -949,11 +983,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_delta")
 
 ATT = {}
 
-ATT.PrintName = "Delta Sight B"
-ATT.CompactName = "Delta B"
+ATT.PrintName = "Gammer Lower-profiler"
+ATT.CompactName = "Gammer LP-"
 ATT.Icon = Material("entities/gekolt_css_optic/delta2.png", "mips smooth")
 ATT.Description = [[Smaller reflex sight designed as a backup]]
-ATT.SortOrder = 0.1
+ATT.SortOrder = -1.6
 
 ATT.Model = "models/weapons/geckololt_css/atts/delta_mini.mdl"
 
@@ -987,11 +1021,12 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_delta_mini")
 
 ATT = {}
 
-ATT.PrintName = "Holographic Sight"
-ATT.CompactName = "Holo"
+ATT.PrintName = "Fritotech Holographic"
+ATT.CompactName = "Fritotech"
 ATT.Icon = Material("entities/gekolt_css_optic/eo.png", "mips smooth")
-ATT.Description = [[Boxy holographic sight with wide fov]]
-ATT.SortOrder = 0.2
+ATT.Description = [[
+Boxy unique iconic holographic sight]]
+ATT.SortOrder = 2.0
 
 ATT.Model = "models/weapons/geckololt_css/atts/holo.mdl"
 
@@ -1025,12 +1060,15 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_holo")
 
 ATT = {}
 
-ATT.PrintName = "Holographic Sight Prototype"
-ATT.CompactName = "H.Proto"
+ATT.PrintName = "Fritotech Prototype Hotmale Scope"
+ATT.CompactName = "Frito-proto"
 ATT.Icon = Material("entities/gekolt_css_optic/eo_e.png", "mips smooth")
-ATT.Description = [[Holographic sight slapped with some "Tech" bollocks with thermal seeking sense
-Grayscaled for reason not related to gameplay]]
-ATT.SortOrder = 0.2
+ATT.Description = [[
+Once holographic sight now slapped with some "Tech" bollocks
+Now has obtained thermal seeking power
+Grayscaled for reason not related to gameplay
+R&D may or may not have been involved in its creation]]
+ATT.SortOrder = 2.2
 
 ATT.Model = "models/weapons/geckololt_css/atts/holo2.mdl"
 
@@ -1116,11 +1154,13 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_holo2")
 
 ATT = {}
 
-ATT.PrintName = "Holographic Sight B"
-ATT.CompactName = "Holo B"
+ATT.PrintName = "Fritotech Holographic Pequeñito"
+ATT.CompactName = "Frito-pequeño"
 ATT.Icon = Material("entities/gekolt_css_optic/eo_s.png", "mips smooth")
-ATT.Description = [[Smaller Boxy holographic sight with wide fov]]
-ATT.SortOrder = 0.2
+ATT.Description = [[
+Boxy unique iconic holographic sight
+This unit is smaller and has a precise carrot pointing upwards]]
+ATT.SortOrder = 2.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/holo3.mdl"
 
@@ -1154,11 +1194,14 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_holo3")
 
 ATT = {}
 
-ATT.PrintName = "MRS Sight A"
-ATT.CompactName = "MRS A"
+ATT.PrintName = "Aniracco Usual"
+ATT.CompactName = "ANC Usual"
 ATT.Icon = Material("entities/gekolt_css_optic/mrs.png", "mips smooth")
-ATT.Description = [[The most basic reflex sight]]
-ATT.SortOrder = 0.2
+ATT.Description = [[
+The most basic reflex sight
+Cloned all around the world
+This one was 62 yuan!]]
+ATT.SortOrder = 1.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/mrs.mdl"
 
@@ -1192,11 +1235,15 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_mrs")
 
 ATT = {}
 
-ATT.PrintName = "MRS Sight B"
-ATT.CompactName = "MRS B"
+ATT.PrintName = "Aniracco Sona"
+ATT.CompactName = "ANC Sona"
 ATT.Icon = Material("entities/gekolt_css_optic/mrs.png", "mips smooth")
-ATT.Description = [[The most basic reflex sight]]
-ATT.SortOrder = 0.2
+ATT.Description = [[
+The most basic reflex sight
+Cloned all around the world
+This one has an open top for enhanced reflexes! (???)
+This one was 98 yuan!]]
+ATT.SortOrder = 1.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/mrs2.mdl"
 
@@ -1230,11 +1277,15 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_mrs2")
 
 ATT = {}
 
-ATT.PrintName = "MRS Sight C"
-ATT.CompactName = "MRS C"
+ATT.PrintName = "Aniracco Slommy"
+ATT.CompactName = "ANC Slommy"
 ATT.Icon = Material("entities/gekolt_css_optic/mrs.png", "mips smooth")
-ATT.Description = [[The most basic reflex sight]]
-ATT.SortOrder = 0.2
+ATT.Description = [[
+The most basic reflex sight
+Cloned all around the world
+This one has a custom reticle enabling precise and accurate gun shots and smells like salami!!
+This one was 137 yuan!]]
+ATT.SortOrder = 1.1
 
 ATT.Model = "models/weapons/geckololt_css/atts/mrs3.mdl"
 
@@ -1268,11 +1319,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_mrs3")
 
 ATT = {}
 
-ATT.PrintName = "RMR Sight"
-ATT.CompactName = "RMR"
+ATT.PrintName = "RCK Low-profile"
+ATT.CompactName = "RCK LP"
 ATT.Icon = Material("entities/gekolt_css_optic/rmr.png", "mips smooth")
-ATT.Description = [[Small reflex sight designed for pistols and small arms]]
-ATT.SortOrder = 0.1
+ATT.Description = [[Small reflex sight designed for pistols and smallest arms]]
+ATT.SortOrder = -1.45
 
 ATT.Model = "models/weapons/geckololt_css/atts/rmr.mdl"
 
@@ -1306,11 +1357,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_rmr")
 
 ATT = {}
 
-ATT.PrintName = "OKP Sight"
-ATT.CompactName = "OKP"
+ATT.PrintName = "Stopwatch Reflex Sight"
+ATT.CompactName = "Stopwatch"
 ATT.Icon = Material("entities/gekolt_css_optic/okp.png", "mips smooth")
-ATT.Description = [[Reflex sight with chevron reticle]]
-ATT.SortOrder = 0.2
+ATT.Description = [[Reflex sight with chevron reticle that looks like old fellow with one of those long straight down beards]]
+ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/okp.mdl"
 
@@ -1344,11 +1395,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_okp")
 
 ATT = {}
 
-ATT.PrintName = "T1 Sight"
-ATT.CompactName = "T1"
+ATT.PrintName = "Tick Low-profile"
+ATT.CompactName = "Tick LP"
 ATT.Icon = Material("entities/gekolt_css_optic/t1.png", "mips smooth")
-ATT.Description = [[Mid-profile red dot sight]]
-ATT.SortOrder = 0.2
+ATT.Description = [[Low-profile popular red dot sight]]
+ATT.SortOrder = -1.4
 
 ATT.Model = "models/weapons/geckololt_css/atts/t1.mdl"
 
@@ -1383,11 +1434,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_t1")
 
 ATT = {}
 
-ATT.PrintName = "Reddot Sight"
-ATT.CompactName = "Reddot"
+ATT.PrintName = "Teller Reflex Sight"
+ATT.CompactName = "Teller"
 ATT.Icon = Material("entities/gekolt_css_optic/aimpoint.png", "mips smooth")
-ATT.Description = [[Cylindrical optics with lot's of circles.]]
-ATT.SortOrder = 0.2
+ATT.Description = [[Cylindrical optics with lotter circles.]]
+ATT.SortOrder = 1
 
 ATT.Model = "models/weapons/geckololt_css/atts/reddot.mdl"
 
@@ -1421,11 +1472,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_reddot")
 
 ATT = {}
 
-ATT.PrintName = "Romeo-7 Sight"
-ATT.CompactName = "R-7"
+ATT.PrintName = "Kilimanjaro Low-profile"
+ATT.CompactName = "Kilimanjaro LP"
 ATT.Icon = Material("entities/gekolt_css_optic/pks.png", "mips smooth")
 ATT.Description = [[Small relfex sight for backup use]]
-ATT.SortOrder = 0.1
+ATT.SortOrder = -1.5
 
 ATT.Model = "models/weapons/geckololt_css/atts/pks.mdl"
 
@@ -1459,11 +1510,11 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_pks")
 
 ATT = {}
 
-ATT.PrintName = "Kemper XL"
-ATT.CompactName = "K.XL"
+ATT.PrintName = "Temper Anti-Air & Air Powered Rangefinding Reflex Sight"
+ATT.CompactName = "Temper AA&A"
 ATT.Icon = Material("entities/gekolt_css_optic/ragnok.png", "mips smooth")
-ATT.Description = [[Extremely wide holographic sight with a built in range finder]]
-ATT.SortOrder = 0.2
+ATT.Description = [[Extremely wide holographic sight with a built in range finder for machine gunners and plane machine gunners and people that don't like planes and maybe even people that like planes]]
+ATT.SortOrder = 5
 
 ATT.Model = "models/weapons/geckololt_css/atts/ragnok.mdl"
 

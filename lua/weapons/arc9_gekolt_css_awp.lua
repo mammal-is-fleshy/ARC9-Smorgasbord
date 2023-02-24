@@ -142,7 +142,7 @@ SWEP.SwayMultMove = 1
 SWEP.SwayMultCrouch = 0.4
 SWEP.SwayMultShooting = 1.5
 
-SWEP.SwayMultSights = 0.25
+SWEP.SwayMultSights = 0.125
 
 SWEP.AimDownSightsTime = 0.35
 SWEP.SprintToFireTime = 0.5
@@ -270,7 +270,7 @@ SWEP.AttachmentElements = {
 
     ["awp_f_smg"] = {
         Bodygroups = {{0, 1},{1, 1}},
-        AttPosMods = { [3] = { Pos = Vector(0, -1.1, 4), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 3.4, 9), },	[6] = { Pos = Vector(1.15, 1.25, 10), },	[7] = { Pos = Vector(-1.35, 1.25, 10), },	[9] = { Pos = Vector(0, 2.25, 6), } }
+        AttPosMods = { [3] = { Pos = Vector(0, -1, -1.5), }, [4] = { Pos = Vector(0, 0.1, 14.5), }, [5] = { Pos = Vector(0, 3.4, 9), },	[6] = { Pos = Vector(1.15, 1.25, 10), },	[7] = { Pos = Vector(-1.35, 1.25, 10), },	[9] = { Pos = Vector(0, 2.25, 6), } }
     },
     ["awp_f_sd"] = {
         Bodygroups = {{0, 4}},

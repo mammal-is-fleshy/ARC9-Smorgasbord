@@ -5,12 +5,18 @@ ATT = {}
 ATT.PrintName = [[No Stock]]
 ATT.CompactName = [[No]]
 ATT.Icon = Material("entities/gekolt_css_blank.png", "mips smooth")
-ATT.Description = [[no
+ATT.Description = [[Just no.
 ]]
 
 ATT.SortOrder = -0.1
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_no"}
+
+ATT.RecoilMult = 1.5
+ATT.RecoilKickMult = 1.5
+ATT.RecoilAutoControlMult = 0.75
+ATT.SpreadMultHipFire = 1.25
+ATT.SpreadMultMove = 1.25
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock0")
 
@@ -27,6 +33,12 @@ ATT.Description = [[
 ATT.SortOrder = 1
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_fold1"}
+
+ATT.RecoilMult = 1.1
+ATT.RecoilKickMult = 1.1
+ATT.RecoilAutoControlMult = 0.95
+ATT.SpreadMultHipFire = 0.9
+ATT.SpreadMultMove = 0.85
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock1")
 
@@ -95,13 +107,19 @@ ATT = {}
 ATT.PrintName = [[Sliding Stock]]
 ATT.CompactName = [[Slide]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_slide.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[Simple wired stock increases sight acquisition.
 ]]
 
 ATT.SortOrder = 0
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_slide"}
+
+ATT.RecoilMult = 1.1
+ATT.RecoilKickMult = 1.1
+ATT.RecoilAutoControlMult = 1.1
+ATT.SpreadMultHipFire = 1.2
+ATT.SpreadMultMove = 1.2
+ATT.AimDownSightsTimeMult = 0.75
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock4")
 
@@ -121,6 +139,13 @@ ATT.SortOrder = 6
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_rpk"}
 
+ATT.RecoilMult = 0.8
+ATT.RecoilKickMult = 0.85
+ATT.RecoilAutoControlMult = 0.5
+ATT.SpreadMultHipFire = 0.9
+ATT.SpreadMultMove = 0.75
+ATT.AimDownSightsTimeMult = 1.2
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock5")
 
 
@@ -135,9 +160,15 @@ ATT.Icon = Material("entities/gekolt_css_ak_s_full.png", "mips smooth")
 ATT.Description = [[The complete package.
 ]]
 
-ATT.SortOrder = 6
+ATT.SortOrder = 6.5
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_heavy"}
+
+ATT.RecoilMult = 0.675
+ATT.RecoilKickMult = 0.8
+ATT.RecoilAutoControlMult = 0.75
+ATT.SpreadMultMove = 0.675
+ATT.AimDownSightsTimeMult = 1.35
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock6")
 
@@ -154,7 +185,7 @@ ATT.Description = [[
     
 ]]
 
-ATT.SortOrder = 6
+ATT.SortOrder = 7
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_poly1"}
 
@@ -173,7 +204,7 @@ ATT.Description = [[
     
 ]]
 
-ATT.SortOrder = 6
+ATT.SortOrder = 7.5
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_poly2"}
 
@@ -192,7 +223,7 @@ ATT.Description = [[
     
 ]]
 
-ATT.SortOrder = 6
+ATT.SortOrder = 8
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_adaptor"}
 
@@ -504,11 +535,15 @@ ATT.Description = [[Oi, they just make the thing longer
 Rounded front sight for... more... accuracy?
 ]]
 
-ATT.Ignore = true
+ATT.Ignore = false
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rpk"}
+ATT.ExcludeElements = {"pre_bipod"} 
+
+ATT.Bipod = true
+ATT.RecoilDissipationRateMultBipod = 2
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg9")
 

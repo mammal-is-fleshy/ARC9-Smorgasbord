@@ -15,7 +15,13 @@ low quality models stuff on even lower quality animations
 - Grenade Bundle
 - Sten
 - Tishina (Early Concept)
-- Flare Gun (WIP)
+- Flare Gun
+
+
+3 Underbarrel Weapons:
+- MASS12
+- Tishina (Early Concept)
+- Garand (WIP)
 
 
 Future stuff??

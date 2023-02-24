@@ -1,5 +1,5 @@
 ATT.PrintName = "Bipod"
-ATT.CompactName = "Bipod"
+ATT.CompactName = "BIPO"
 ATT.Description = [[pod means legs, bi means two.
 Massively improves recoil control and reduces cumulative spread while deployed.]]
 
@@ -7,6 +7,7 @@ ATT.Icon = Material("entities/gekolt_css_bipod.png", "mips smooth")
 
 ATT.SortOrder = 20
 ATT.Category = {"grip_css"}
+ATT.ActivateElements = {"pre_bipod"}
 
 ATT.Model = "models/weapons/geckololt_css/atts/bipod_sg550.mdl"
 ATT.ModelBodygroups = "3"

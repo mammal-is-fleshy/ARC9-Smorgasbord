@@ -1,5 +1,5 @@
 ATT.PrintName = "Wooden Foregrip"
-ATT.CompactName = "Wood"
+ATT.CompactName = "TOMMY"
 ATT.Description = [[Straight from the antique shop, botched with a rail adaptor]]
 
 ATT.Icon = Material("entities/gekolt_css_fore_thomp.png", "mips smooth")

@@ -12,7 +12,7 @@ ATT.Icon = Material("entities/gekolt_css_m4_u_10.png", "mips smooth")
 ATT.SortOrder = 1.5
 ATT.Category = "css_m4_up"
 ATT.ActivateElements = {"up_proto", "keep_rs"}
-ATT.ShootSound = "gekolt_css/sg550-1.wav"
+ATT.ShootSound = {"cturix_ar15/fire_proto-1.wav","cturix_ar15/fire_proto-2.wav","cturix_ar15/fire_proto-3.wav"}
 ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -28,7 +28,7 @@ ATT.DamageMinMult = 4.5
 ATT.RangeMinMult = 1.25
 ATT.RangeMaxMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.34
-ATT.RPMMult = 520 / 700
+ATT.RPMMult = 520 / 750
 ATT.RecoilUpMult = 1.5
 ATT.RecoilSideMult = 0.5
 ATT.RecoilPatternDriftMult = 2
@@ -117,7 +117,11 @@ ATT.SortOrder = 3
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.MuzzleParticle = "muzzleflash_ak47"
 ATT.ActivateElements = {"up_ak"}
-ATT.ShootSound = "gekolt_css/ak47-1.wav"
+ATT.ShootSound = {"cturix_ar15/fire_ak-1.wav","cturix_ar15/fire_ak-2.wav","cturix_ar15/fire_ak-3.wav"}
+ATT.ShootSoundSilenced = {"cturix_ar15/fire_ak_sup.wav"}
+ATT.DistantShootSound = {"cturix_ar15/fire_ak_dist-1.wav", "cturix_ar15/fire_ak_dist-2.wav"}
+ATT.DistantShootSoundSilenced = "cturix_ar15/fire_blackout_dist.wav"
+ATT.ShootSoundLooping = "cturix_ar15/fire_ak_auto.wav"
 
 -- ATT.ClipSizeOverride = 30
 
@@ -125,7 +129,7 @@ ATT.RecoilMult = 1.5
 ATT.DamageMinMult = 1.5
 ATT.DamageMaxMult = 1.25
 ATT.PhysBulletMuzzleVelocityMult = 1.25
-ATT.RPMMult = 600 / 700
+ATT.RPMMult = 600 / 750
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ak"
@@ -158,7 +162,7 @@ ATT.ShootSound = "gekolt_css/cs5_sup-1.wav"
 
 ATT.ClipSizeOverride = 5
 
-ATT.RPMMult = 60 / 700
+ATT.RPMMult = 60 / 750
 
 ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
 	if wep:Clip1() == 0 then
@@ -332,14 +336,14 @@ ATT.Firemodes = {
     {
         PrintName = "Alternating",
         Mode = -1,
-        RPMMult = 1200 / 700
+        RPMMult = 1200 / 750
     },
     {
         PrintName = "Simutaneous",
         Mode = -1,
         NumOverride = 2,
         AmmoPerShot = 2,
-        RPMMult = 600 / 700
+        RPMMult = 600 / 750
     },
 }
 
@@ -399,12 +403,16 @@ ATT.SortOrder = 2
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_pdw", "noguard", "nogrip", "short_clamp", "akantbo", "alt_optic"}
 ATT.ShootSound = "gekolt_css/p90-1.wav"
+ATT.ShootSoundSilenced = "cturix_ar15/fire_57_suppressed-1.wav"
+ATT.DistantShootSound ="cturix_ar15/fire_57_dist-1.wav"
+ATT.DistantShootSoundSilenced = "cturix_ar15/fire_blackout_dist.wav"
+
 ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.CaseEffectQCA = 3
 ATT.ClipSizeOverride = 50
 
-ATT.RPMMult = 900 / 700
+ATT.RPMMult = 900 / 750
 
 ATT.Sights = {
     {
@@ -584,14 +592,14 @@ ATT.Firemodes = {
     {
         PrintName = "Alternating",
         Mode = -1,
-        RPMMult = 1800 / 700
+        RPMMult = 1800 / 750
     },
     {
         PrintName = "Simutaneous",
         Mode = -1,
         NumOverride = 2,
         AmmoPerShot = 2,
-        RPMMult = 900 / 700
+        RPMMult = 900 / 750
     },
 }
 
@@ -646,7 +654,7 @@ ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 
 ATT.ClipSizeOverride = 5
 
-ATT.RPMMult = 90 / 700
+ATT.RPMMult = 90 / 750
 
 ATT.Sights = {
     {
@@ -726,7 +734,7 @@ ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 
 ATT.ClipSizeOverride = 20
 
-ATT.RPMMult = 320 / 700
+ATT.RPMMult = 320 / 750
 
 ATT.Sights = {
     {
@@ -785,12 +793,14 @@ ATT.SortOrder = 0
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"up_sd", "noguard", "pre_muzzed"}
-ATT.ShootSound = "gekolt_css/hb_sd.wav"
+ATT.ShootSound = {"cturix_ar15/fire_blackout1.wav", "cturix_ar15/fire_blackout2.wav", "cturix_ar15/fire_blackout3.wav"}
+ATT.DistantShootSound = {"cturix_ar15/fire_blackout_dist.wav"}
+ATT.FirstShootSound = {"cturix_ar15/fire_blackout_first-1.wav"}
 
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.Silencer = true
 
-ATT.RPMMult = 650 / 700
+ATT.RPMMult = 650 / 750
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.9
 
@@ -841,7 +851,7 @@ ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.ClipSizeOverride = 32
 
-ATT.RPMMult = 900 / 700
+ATT.RPMMult = 900 / 750
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_smg"

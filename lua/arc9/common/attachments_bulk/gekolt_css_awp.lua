@@ -33,7 +33,7 @@ ATT.PrintName = "Howell Full-Auto Frame"
 ATT.CompactName = "AUTO"
 ATT.Icon = Material("entities/gekolt_css_awp_f_howell.png", "mips smooth")
 ATT.Description = [[This ancient mechanism from the 1900s allows your not so lee enfield looking gun to fire in [SEMI]-auto!
-Comes with a comically large 20 round mag that for some reason look like it could hold 10 more
+Comes with a comically large 20 round mag that for some reason look like it could hold 10 more (It is using 'tall bullets'!)
 Despite using the exact same calibre the damage is reduced in the name of videogame balance.]]
 
 ATT.Pros = {}
@@ -175,9 +175,9 @@ ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_lc10")
 
 ATT = {}
 
-ATT.PrintName = "Short Stock"
-ATT.CompactName = "Fold"
-ATT.Description = [[Removes 'unnecessary' bits for aesthetic and weight]]
+ATT.PrintName = "Optimised Stock"  -- IN THIS HOUSEHOLD WE SPEAK PROPER ENGLISH
+ATT.CompactName = "Optimisation"
+ATT.Description = [[Removes 'unnecessary' bits for improved performance and weight reduction]]
 
 ATT.Icon = Material("entities/gekolt_css_awp_s_short.png", "mips smooth")
 
