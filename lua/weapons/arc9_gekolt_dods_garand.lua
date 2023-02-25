@@ -18,7 +18,7 @@ SWEP.Trivia = {
 SWEP.Credits = {
     ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
     ["Assets"] = [[Day of Defeat: Source]],
-	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[The first truly successful self-loading rifle; a watershed and forerunner among firearms
@@ -35,7 +35,7 @@ SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_garand.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(1, 3, -7),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-8, 3, -7),
+    TPIKPos = Vector(-4, 3, -7),
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
@@ -231,11 +231,11 @@ SWEP.CustomizeNoRotate = false
 SWEP.CustomizeRotateAnchor = Vector(15, -2, -5.23)
 
 SWEP.StandardPresets = {
-	"[Vanguard]XQAAAQB3AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjymTVRcP6LIrBMmJT0uSb7WpKgmxf9cBP68XRG2MY25255451BWfH0SvCg4r6ov4iajA5AA==",
-	"[YSL]XQAAAQByAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjykg6ChSk889UMTy6Tpg7U43VPZ3gAeP5imKK24GFBOlRrSBYIqK+dwhDY4R94zNy",
-	"[Sportive]XQAAAQByAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjykir1xG0cDi0J/GRXHSKYTcgTTBh8m0Py8S6B6Vo9t+aH6V/jUYRU3Vq/G8ZvEgA",
-	"[Grand Slam]XQAAAQCDAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjylpAXDS9Ox33Re8sx/V5mQGNZxqxgD6K8REC1nEJmzG4KPG/V/gbnxENhmW5PtaWBijiKWnrVBiO",
-	"[Scavenger]XQAAAQB0AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjylpatCOSZjefbaD5tGzbnIuZfmo0pCzFPZbUIYt6/BaVch1ABaBv4Z75y/Ky37eIYA==",
+    "[Vanguard]XQAAAQB3AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjymTVRcP6LIrBMmJT0uSb7WpKgmxf9cBP68XRG2MY25255451BWfH0SvCg4r6ov4iajA5AA==",
+    "[YSL]XQAAAQByAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjykg6ChSk889UMTy6Tpg7U43VPZ3gAeP5imKK24GFBOlRrSBYIqK+dwhDY4R94zNy",
+    "[Sportive]XQAAAQByAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjykir1xG0cDi0J/GRXHSKYTcgTTBh8m0Py8S6B6Vo9t+aH6V/jUYRU3Vq/G8ZvEgA",
+    "[Grand Slam]XQAAAQCDAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjylpAXDS9Ox33Re8sx/V5mQGNZxqxgD6K8REC1nEJmzG4KPG/V/gbnxENhmW5PtaWBijiKWnrVBiO",
+    "[Scavenger]XQAAAQB0AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtIBAiCMb9hyIHjylpatCOSZjefbaD5tGzbnIuZfmo0pCzFPZbUIYt6/BaVch1ABaBv4Z75y/Ky37eIYA==",
 }
 
 -------------------------- HoldTypes
@@ -468,13 +468,13 @@ SWEP.Animations = {
 
             {shelleject = {index = 1, upto = 1}, att = 2, t = 13 / 30},
             {shelleject = {index = 1, upto = 2}, att = 2, t = 14 / 30},
-            {shelleject = {index = 1, upto = 3}, att = 2, t = 15 / 30},
-            {shelleject = {index = 1, upto = 4}, att = 2, t = 16 / 30},
-            {shelleject = {index = 1, upto = 5}, att = 2, t = 17 / 30},
-            {shelleject = {index = 1, upto = 6}, att = 2, t = 18 / 30},
-            {shelleject = {index = 1, upto = 7}, att = 2, t = 19 / 30},
+            {shelleject = {index = 1, upto = 3}, att = 2, t = 14 / 30},
+            {shelleject = {index = 1, upto = 4}, att = 2, t = 15 / 30},
+            {shelleject = {index = 1, upto = 5}, att = 2, t = 15 / 30},
+            {shelleject = {index = 1, upto = 6}, att = 2, t = 16 / 30},
+            {shelleject = {index = 1, upto = 7}, att = 2, t = 16 / 30},
         },
-        FireASAP = true,
+        DumpAmmo = true,
         MagSwapTime = 40 / 40,
         MinProgress = 0.85,
         IKTimeLine = {
@@ -485,7 +485,6 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
-        FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
             {s =  "gekolt_dod/garand_clipin1.wav" ,   t = 30 / 40},
