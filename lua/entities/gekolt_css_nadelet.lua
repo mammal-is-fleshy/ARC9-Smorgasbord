@@ -46,10 +46,6 @@ function ENT:PhysicsCollide(data, physobj)
         elseif data.Speed > 25 then
             self:EmitSound(Sound("physics/metal/metal_grenade_impact_soft" .. math.random(1,3) .. ".wav"))
         end
-
-        if (CurTime() - self.SpawnTime >= self.ArmTime) and self.ImpactFuse then
-            self:Detonate()
-        end
     end
 end
 

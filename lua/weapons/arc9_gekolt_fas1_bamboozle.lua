@@ -20,10 +20,10 @@ SWEP.Credits = {
     ["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[THE JAPANESES ARE ATTACKING AGAIN.
+SWEP.Description = [[Crude anti-tank-personnel-whateverinfrontofyou device from the peak of the highlands.
+Airburst detonates by proximity and shoots shrapnel, but has a long arm delay.
 
-Crude anti-tank-personnel-whateverinfrontofyou device from the peak of the highlands.
-Using it as a spear is not recommended]]
+Using it as a spear has explosive consequences.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_bamboo.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
@@ -48,7 +48,7 @@ SWEP.Crosshair = false
 -------------------------- ENTITY LAUNCHING
 SWEP.Ammo = "slam"
 
-SWEP.ShootEnt = "gekolt_css_m4_claymore_bamboo" -- Set to an entity to launch it out of this weapon.
+SWEP.ShootEnt = "gekolt_css_bamboozle_he" -- Set to an entity to launch it out of this weapon.
 SWEP.ShootEntInheritPlayerVelocity = true
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
@@ -56,8 +56,8 @@ SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to 
 
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
-SWEP.ThrowForceMin = 0 -- Minimum force that the grenade will be thrown with.
-SWEP.ThrowForceMax = 2000 -- Maximum force that the grenade will be thrown with.
+SWEP.ThrowForceMin = 200 -- Minimum force that the grenade will be thrown with.
+SWEP.ThrowForceMax = 2500 -- Maximum force that the grenade will be thrown with.
 SWEP.TossForce = 2500 -- Force that the grenade will be thrown with when right clicked.
 
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
@@ -71,8 +71,13 @@ SWEP.PhysBulletMuzzleVelocity = 1000 * 40
 SWEP.Firemodes = {
     {
         Mode = 1,
-        PrintName = "Throw"
-        -- add other attachment modifiers
+        PrintName = "HE",
+        ShootEnt = "gekolt_css_bamboozle_he",
+    },
+    {
+        Mode = 1,
+        PrintName = "Airburst",
+        ShootEnt = "gekolt_css_bamboozle_airburst",
     },
 }
 -------------------------- HANDLING
@@ -200,31 +205,98 @@ end
 SWEP.AttachmentElements = {
 }
 
+SWEP.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "bash" and wep:GetValue("ShootEnt") == "gekolt_css_bamboozle_airburst" then
+        return "impact"
+    end
+end
+
+SWEP.Hook_Bash = function(wep, data)
+    if wep:GetValue("ShootEnt") == "gekolt_css_bamboozle_airburst" then
+        local src, dir = wep:GetShootPos(), wep:GetShootDir():Forward()
+
+        local effectdata = EffectData()
+        effectdata:SetOrigin(src + dir * 24)
+        effectdata:SetMagnitude(4)
+        effectdata:SetScale(1)
+        effectdata:SetRadius(16)
+        effectdata:SetNormal(dir)
+        util.Effect("Sparks", effectdata)
+        wep:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 125, 110, 1, CHAN_AUTO)
+        wep:EmitSound("physics/metal/metal_box_break1.wav", 125, 200)
+
+        wep:FireBullets({
+            Attacker = wep:GetOwner(),
+            Damage = 5,
+            Force = 1,
+            Distance = 512,
+            HullSize = 16,
+            Num = 36,
+            Tracer = 1,
+            Src = src,
+            Dir = dir,
+            Spread = Vector(1, 1, 0),
+            IgnoreEntity = wep:GetOwner(),
+        })
+        local dmg = DamageInfo()
+        dmg:SetAttacker(wep:GetOwner())
+        dmg:SetDamageType(DMG_BULLET)
+        dmg:SetInflictor(wep)
+        dmg:SetDamageForce(dir * 20000)
+        for _, ent in pairs(ents.FindInCone(src, dir, 512, 0.707)) do
+            local tr = util.TraceLine({
+                start = src,
+                endpos = src + (ent:WorldSpaceCenter() - src):GetNormalized() * 512,
+                filter = {wep:GetOwner()},
+                mask = MASK_SHOT
+            })
+            if tr.Entity == ent and tr.Entity ~= wep:GetOwner() then
+                dmg:SetDamagePosition(src)
+                dmg:SetDamage(math.Rand(75, 100) * Lerp(tr.Fraction - 0.2, 1, 0.5))
+                ent:TakeDamageInfo(dmg)
+            end
+        end
+        wep:TakeAmmo()
+        if wep:GetProcessedValue("Disposable") and !wep:HasAmmoInClip() and !IsValid(wep:GetDetonatorEntity()) and SERVER then
+            wep:Remove()
+        end
+
+        util.BlastDamage(wep, wep:GetOwner(), src, 128, 100)
+    end
+end
+
 SWEP.Hook_BashHit = function(wep, data)
     local pos = data.tr.HitPos
     local eff = EffectData()
     eff:SetOrigin(pos)
-    if bit.band(util.PointContents(pos), CONTENTS_WATER) == CONTENTS_WATER then
-        util.Effect( "WaterSurfaceExplosion", eff )
-        wep:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
-    else
-        util.Effect( "HelicopterMegaBomb", eff)
-        wep:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
-        wep:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 125, 110, 1, CHAN_AUTO)
-    end
-    wep:TakeAmmo()
 
-    util.BlastDamage(wep, wep:GetOwner(), pos, 200, 100)
-    if wep:GetProcessedValue("Disposable") and !wep:HasAmmoInClip() and !IsValid(wep:GetDetonatorEntity()) and SERVER then
-        wep:Remove()
+    if wep:GetValue("ShootEnt") == "gekolt_css_bamboozle_he" then
+        if bit.band(util.PointContents(pos), CONTENTS_WATER) == CONTENTS_WATER then
+            util.Effect( "WaterSurfaceExplosion", eff )
+            wep:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
+        else
+            util.Effect( "HelicopterMegaBomb", eff)
+            wep:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
+            wep:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 125, 110, 1, CHAN_AUTO)
+        end
+
+        util.BlastDamage(wep, wep:GetOwner(), pos, 200, 100)
+
+        wep:TakeAmmo()
+        if wep:GetProcessedValue("Disposable") and !wep:HasAmmoInClip() and !IsValid(wep:GetDetonatorEntity()) and SERVER then
+            wep:Remove()
+        end
     end
+
+
 end
 
 hook.Add("EntityTakeDamage", "arc9_gekolt_bamboozle", function(ent, dmg)
-    if IsValid(dmg:GetInflictor()) and (dmg:GetInflictor():GetClass() == "arc9_gekolt_fas1_bamboozle" or dmg:GetInflictor():GetClass() == "gekolt_css_m4_claymore_bamboo") and ent == dmg:GetInflictor():GetOwner() then
+    if IsValid(dmg:GetInflictor()) and (dmg:GetInflictor():GetClass() == "arc9_gekolt_fas1_bamboozle" or dmg:GetInflictor():GetClass() == "gekolt_css_bamboozle_he") and ent == dmg:GetInflictor():GetOwner() then
         if dmg:GetInflictor():IsWeapon() then
-            dmg:ScaleDamage(0.5)
-            ent:SetVelocity(ent:EyeAngles():Forward() * -400)
+            local he = dmg:GetInflictor():GetValue("ShootEnt") == "gekolt_css_bamboozle_he"
+            dmg:ScaleDamage(he and 0.4 or 0.3)
+            ent:SetVelocity(ent:EyeAngles():Forward() * (he and -500 or -350))
         else
             ent:SetVelocity((ent:GetPos() - dmg:GetInflictor():GetPos()):GetNormalized() * Lerp(dmg:GetDamage() / 100, 200, 500))
             --dmg:ScaleDamage(0.75)
