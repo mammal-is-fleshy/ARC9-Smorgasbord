@@ -57,6 +57,15 @@ if SERVER then
             self:EmitSound("physics/metal/metal_box_break1.wav", 125, 200)
         end
 
+        if self:GetDefused() then
+            if self:WaterLevel() == 0 then
+                util.Effect( "HelicopterMegaBomb", effectdata)
+            end
+            util.BlastDamage(self, self.Attacker or self:GetOwner() or self, self:GetPos(), 250, 150)
+            self:Remove()
+            return
+        end
+
         -- The steeper the vertical angle, the higher the damage
         local deg = math.Clamp(1.5 - dir:Cross(Vector(0, 0, -1)):Length(), 0.5, 1)
 

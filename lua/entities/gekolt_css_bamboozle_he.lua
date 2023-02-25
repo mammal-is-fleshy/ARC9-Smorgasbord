@@ -129,7 +129,7 @@ if SERVER then
             self.BOOM = true
             if dmg:IsExplosionDamage() or dmg:IsDamageType(DMG_BURN) or dmg:GetDamage() > 25 then
                 self:Detonate()
-            else
+            elseif not self:GetDefused() then
                 self:Defuse(dmg:GetDamageForce():GetNormalized())
                 self:TakePhysicsDamage(dmg)
             end
