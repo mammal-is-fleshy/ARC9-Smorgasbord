@@ -178,7 +178,7 @@ SWEP.Animations = {
     ["pullpin"] = {
         Source = {"prep"},
         FireASAP = true,
-        MinProgress = 0.3,
+        MinProgress = 0.35,
     },
     ["holster"] = {
         Source = "idle",

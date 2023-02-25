@@ -6,7 +6,7 @@ ENT.Model = "models/weapons/geckololt_css/c_bamboo.mdl"
 
 AddCSLuaFile()
 
-ENT.ArmTime = 0.75
+ENT.ArmTime = 0.8
 ENT.ImpactFuse = false
 
 ENT.SmokeTrail = false
