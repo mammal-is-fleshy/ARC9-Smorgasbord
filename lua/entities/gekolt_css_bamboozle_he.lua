@@ -39,6 +39,8 @@ function ENT:Initialize()
                 --constraint.NoCollide(self, self.Attacker, 0, 0)
             end
         end)
+
+        self:SetPhysicsAttacker(self:GetOwner(), 10)
     end
 
     self.SpawnTime = CurTime()
