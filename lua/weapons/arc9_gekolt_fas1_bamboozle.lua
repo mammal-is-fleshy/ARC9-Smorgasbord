@@ -26,17 +26,19 @@ Airburst detonates by proximity and shoots shrapnel, but has a long arm delay.
 Using it as a spear has explosive consequences.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_bamboo.mdl"
-SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
+SWEP.WorldModel = "models/weapons/geckololt_css/c_bamboo.mdl"
 
-SWEP.Slot = 0
+SWEP.Slot = 4
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_bamboo.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 10, -20),
-    Ang = Angle(0, 0, 180),
+    Pos = Vector(0, 7, 0),
+    Ang = Angle(-90, 0, 180),
     Scale = 1
 }
+
+SWEP.NoTPIK = true
 
 SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
@@ -141,7 +143,7 @@ SWEP.HoldTypeHolstered = "normal"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_MELEE_ATTACK2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 SWEP.AnimReload = ACT_IDLE_MELEE
 SWEP.AnimDraw = false
 
