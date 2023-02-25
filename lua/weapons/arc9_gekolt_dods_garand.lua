@@ -21,8 +21,8 @@ SWEP.Credits = {
     ["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[The first truly successful self-loading rifle; a watershed and forerunner among firearms
-Experimental in nature, there are quite a few modifications available despite its status as a mass production weapon
+SWEP.Description = [[The first truly successful self-loading rifle; a watershed and forerunner among firearms.
+Experimental in nature, there are quite a few modifications available despite its status as a mass production weapon.
 It also goes ping.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_garand.mdl"

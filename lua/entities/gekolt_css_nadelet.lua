@@ -72,9 +72,20 @@ function ENT:Detonate()
         else
             util.Effect("HelicopterMegaBomb", effectdata)
             self:EmitSound("^weapons/explode4.wav", 125, math.Rand(100, 110), 1, CHAN_WEAPON)
+
+            for i = 1, 3 do
+                local tr = util.TraceLine({
+                    start = self:GetPos(),
+                    endpos = self:GetPos() + Angle(math.Rand(-5, 5), math.Rand(0, 360), 0):Forward() * math.Rand(20, 300),
+                    mask = MASK_SHOT,
+                    filter = self,
+                })
+                effectdata:SetOrigin(tr.HitPos)
+                util.Effect("HelicopterMegaBomb", effectdata)
+            end
         end
 
-        util.BlastDamage(self, self:GetOwner(), pos, 350, self.Damage)
+        util.BlastDamage(self, self:GetOwner(), pos, 400, self.Damage)
         self:Remove()
     end
 end
