@@ -4,7 +4,7 @@ ENT.PrintName = "HE Bamboozle"
 
 ENT.Model = "models/weapons/geckololt_css/c_bamboo.mdl"
 ENT.FuseTime = 10
-ENT.ArmTime = 0.05
+ENT.ArmTime = 0
 ENT.ImpactFuse = true
 
 ENT.SmokeTrail = true
@@ -54,7 +54,7 @@ if SERVER then
             self:EmitSound(Sound("physics/metal/metal_grenade_impact_soft" .. math.random(1,3) .. ".wav"))
         end
 
-        if not self:GetDefused() and self.ImpactFuse and CurTime() > self.SpawnTime + self.ArmTime then
+        if not self:GetDefused() and self.ImpactFuse and CurTime() >= self.SpawnTime + self.ArmTime then
             self:Detonate()
         elseif not self:GetDefused() then
             if IsValid(data.HitEntity) then
