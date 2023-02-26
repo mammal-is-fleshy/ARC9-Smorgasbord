@@ -66,8 +66,7 @@ if SERVER then
             return
         end
 
-        -- The steeper the vertical angle, the higher the damage
-        local deg = math.Clamp(1.5 - dir:Cross(Vector(0, 0, -1)):Length(), 0.5, 1)
+        local deg = Lerp(math.Clamp((CurTime() - self.SpawnTime - self.ArmTime) / 2, 0, 1), 0.5, 1) --math.Clamp(1.5 - dir:Cross(Vector(0, 0, -1)):Length(), 0.5, 1)
 
         self:FireBullets({
             Attacker = attacker,
@@ -84,13 +83,14 @@ if SERVER then
         })
         local dmg = DamageInfo()
         dmg:SetAttacker(attacker)
-        dmg:SetDamageType(DMG_BULLET)
+        dmg:SetDamageType(DMG_BULLET + DMG_BLAST)
         dmg:SetInflictor(self)
         dmg:SetDamageForce(self:GetVelocity() * 100)
         for _, ent in pairs(ents.FindInCone(self:GetPos(), dir, 1024, 0.707)) do
             local tr = util.QuickTrace(self:GetPos(), ent:WorldSpaceCenter() - self:GetPos(), self)
             if tr.Entity == ent then
-                dmg:SetDamage(math.Rand(150, 200) * deg * Lerp(tr.Fraction - 0.2, 1, 0.5))
+                dmg:SetDamagePosition(self:GetPos())
+                dmg:SetDamage(150 * math.Rand(0.9, 1.1) * deg)
                 ent:TakeDamageInfo(dmg)
             end
         end
