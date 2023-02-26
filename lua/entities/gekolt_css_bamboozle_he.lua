@@ -110,11 +110,11 @@ if SERVER then
 
         if self:WaterLevel() >= 1 then
             util.Effect( "WaterSurfaceExplosion", effectdata )
-            self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
+            self:EmitSound("weapons/underwater_explode3.wav", 100, 100, 1, CHAN_AUTO)
         else
             util.Effect( "HelicopterMegaBomb", effectdata)
-            self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
-            self:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 125, 110, 1, CHAN_AUTO)
+            self:EmitSound("phx/kaboom.wav", 100, 100, 1, CHAN_AUTO)
+            self:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 100, 110, 1, CHAN_AUTO)
         end
 
         local dmg = Lerp(math.Clamp((CurTime() - self.SpawnTime - 0.5) / 2.5, 0, 1), 100, 300)

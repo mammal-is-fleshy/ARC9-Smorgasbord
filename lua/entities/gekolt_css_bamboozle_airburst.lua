@@ -46,15 +46,15 @@ if SERVER then
 
         if self:WaterLevel() >= 1 then
             util.Effect("WaterSurfaceExplosion", effectdata)
-            self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_AUTO)
+            self:EmitSound("weapons/underwater_explode3.wav", 100, 100, 1, CHAN_AUTO)
         else
             effectdata:SetMagnitude(4)
             effectdata:SetScale(1)
             effectdata:SetRadius(16)
             effectdata:SetNormal(dir)
             util.Effect("Sparks", effectdata)
-            self:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 125, 110, 1, CHAN_AUTO)
-            self:EmitSound("physics/metal/metal_box_break1.wav", 125, 200)
+            self:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 100, 110, 1, CHAN_AUTO)
+            self:EmitSound("physics/metal/metal_box_break1.wav", 100, 200)
         end
 
         if self:GetDefused() then

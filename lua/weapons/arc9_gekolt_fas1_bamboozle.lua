@@ -21,7 +21,7 @@ SWEP.Credits = {
 }
 
 SWEP.Description = [[Crude anti-tank-personnel-whateverinfrontofyou device from the peak of the highlands.
-Airburst detonates by proximity and shoots shrapnel, but has a long arm delay.
+Lethality increases the longer it flies. Airburst detonates by proximity and shoots shrapnel, but has a long arm delay.
 
 Using it as a spear has explosive consequences.]]
 
