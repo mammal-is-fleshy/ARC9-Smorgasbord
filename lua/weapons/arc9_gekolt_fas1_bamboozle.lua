@@ -120,8 +120,8 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 
 SWEP.HasSights = false
 
-SWEP.SprintAng = Angle(0, 0, 0)
-SWEP.SprintPos = Vector(0, 2, 0)
+SWEP.SprintAng = Angle(0, -10, 0)
+SWEP.SprintPos = Vector(0, -3, -1)
 
 SWEP.ViewModelFOVBase = 90
 SWEP.ActivePos = Vector(0, -2, 0)

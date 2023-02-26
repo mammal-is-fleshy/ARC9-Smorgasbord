@@ -54,7 +54,7 @@ ATT.IKGunMotionQCA = 2
 ATT.IKGunMotionOffset = Vector(0, 0, 0)
 ATT.IKGunMotionOffsetAngle = Angle(0, -90, -90)
 
-ATT.IKGunMotionMult = 3
+ATT.IKGunMotionMult = 0.5
 ATT.IKGunMotionAngleMult = 0.5
 
 ATT.Category = {"css_ubgl"}
@@ -83,8 +83,7 @@ ATT.ShootEntUBGL = "gekolt_css_m4_nade"
 ATT.ShootEntForceUBGL = 10000
 ATT.ShootSoundUBGL = {"cturix_ar15/fire_grenade1.wav", "cturix_ar15/fire_grenade2.wav", "cturix_ar15/fire_grenade3.wav"}
 ATT.DistantShootSoundUBGL = {"cturix_ar15/fire_grenade_dist.wav"}
-
--- ATT.HasSightsUBGL = false
+ATT.HasSightsUBGL = false
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
