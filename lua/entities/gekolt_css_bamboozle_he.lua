@@ -143,6 +143,7 @@ if CLIENT then
         if self:WaterLevel() > 2 then return end
         local vel = self:GetVelocity():Length()
         local armed = self.SpawnTime + self.ArmTime < CurTime()
+        local d = armed and 1 or (1 - (self.SpawnTime + self.ArmTime - CurTime()) / self.ArmTime)
 
         local emitter = ParticleEmitter(self:GetPos() + self:GetForward() * 12)
         if not IsValid(emitter) then return end
@@ -166,14 +167,14 @@ if CLIENT then
         end
 
         if self.SparkTrail and (self.NextSparkTime or 0) < CurTime() then
-            self.NextSparkTime = CurTime() + (armed and 0.001 or 0.01)
+            self.NextSparkTime = CurTime() + (armed and 0.001 or Lerp(d, 0.01, 0.002))
             local fire = emitter:Add("effects/spark", self:GetPos())
             fire:SetVelocity(VectorRand() * 100 + self:GetVelocity() * -0.25)
             fire:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), -1000))
-            fire:SetDieTime(math.Rand(0.5, 1))
+            fire:SetDieTime(math.Rand(0.5, 1.5) * Lerp(d, 0.5, 1))
             fire:SetStartAlpha(255)
             fire:SetEndAlpha(0)
-            fire:SetStartSize(armed and 4 or 1)
+            fire:SetStartSize(Lerp(d, 0.1, 4))
             fire:SetEndSize(0)
             fire:SetRoll(math.Rand(-180, 180))
             fire:SetRollDelta(math.Rand(-0.2, 0.2))

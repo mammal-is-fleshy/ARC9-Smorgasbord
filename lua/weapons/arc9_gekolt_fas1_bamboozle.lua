@@ -52,6 +52,7 @@ SWEP.Ammo = "slam"
 
 SWEP.ShootEnt = "gekolt_css_bamboozle_he" -- Set to an entity to launch it out of this weapon.
 SWEP.ShootEntInheritPlayerVelocity = true
+SWEP.ShootEntInheritPlayerVelocityLimit = 250
 
 SWEP.Throwable = true -- Set to true to give this weapon throwing capabilities.
 SWEP.Tossable = false -- When grenade is enabled, right click will toss. Set to false to disable, allowing you to aim down sights.
