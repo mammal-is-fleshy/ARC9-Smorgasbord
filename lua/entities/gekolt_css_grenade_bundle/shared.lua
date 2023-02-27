@@ -62,14 +62,17 @@ function ENT:Detonate()
             self:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_WEAPON)
         else
             util.Effect("Explosion", effectdata)
-            self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_WEAPON)
+            self:EmitSound("phx/kaboom.wav", 100, 100, 1, CHAN_WEAPON)
         end
 
         util.BlastDamage(self, self:GetOwner(), pos, 256, 150)
 
+        local nadecount = self.AdditionalNades or 6
+
         local add = math.Rand(0, 60)
-        local t = {1, 2, 3, 4, 5, 6} -- it looks funny but I need grenades to explode in a ring but also in random order
-        for i = 1, 6 do
+        local t = {} -- it looks funny but I need grenades to explode in a ring but also in random order
+        for i = 1, nadecount do table.insert(t, i) end
+        for i = 1, nadecount do
             local j = math.random(1, #t)
             local k = table.remove(t, j)
             local ent = ents.Create("gekolt_css_nadelet")
@@ -79,7 +82,7 @@ function ENT:Detonate()
             ent:SetAngles(AngleRand())
             ent:Spawn()
 
-            local ang = Angle(math.Rand(-60, -15), add + (i / 6) * 360 + math.Rand(-15, 15), 0)
+            local ang = Angle(math.Rand(-60, -15), add + (i / nadecount) * 360 + math.Rand(-15, 15), 0)
             ent:GetPhysicsObject():SetVelocityInstantaneous(self:GetVelocity() + ang:Forward() * math.Rand(256, 512))
         end
         self:Remove()

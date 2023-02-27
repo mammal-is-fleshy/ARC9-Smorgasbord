@@ -33,8 +33,9 @@ SWEP.Firemodes = {
     },
 }
 
-SWEP.Description = [[Seven bundled grenade is better than one lonely grenade.
-Toggle between high damage cluster grenades or large condensed explosion.
+SWEP.Description = [[Bundle up to 7 grenades together so your explosions are never lonely.
+Toggle between powerful cluster grenades or large condensed explosion.
+
 A sober person would throw it...]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
@@ -53,10 +54,13 @@ SWEP.NoTPIK = true
 
 SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
-SWEP.ClipSize = 1
+SWEP.ClipSize = 0
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 2
+SWEP.SupplyLimit = 7
 SWEP.Crosshair = false
+
+SWEP.PartialLoad = true -- fleshy, set this to false to disable the "spend up to 7" logic
+SWEP.AmmoPerShot = 1 -- might want to set this to 7 if you do
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
@@ -119,6 +123,17 @@ SWEP.CustomizeNoRotate = false
 SWEP.ShootPosOffset = Vector(1, 1, 0)
 
 SWEP.CustomizeRotateAnchor = Vector(10, -7, 0)
+
+SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
+    [0] = "Base",
+    [1] = "Main",
+    [2] = "Nade1",
+    [3] = "Nade2",
+    [4] = "Nade3",
+    [5] = "Nade4",
+    [6] = "Nade5",
+    [7] = "Nade6",
+}
 
 -------------------------- HoldTypes
 
@@ -189,7 +204,31 @@ function SWEP:SecondaryAttack()
     return self:MeleeAttack()
 end
 
+SWEP.Hook_GrenadeThrown = function(wep, data)
+    if wep.PartialLoad then
+        local amt = math.min(wep:Ammo1(), 6)
+        wep:TakeAmmo(amt)
+        wep.AdditionalNades = amt
+    else
+        wep.AdditionalNades = 6
+    end
+end
+
+SWEP.Hook_GrenadeCreated = function(wep, nades)
+    local nade = nades[1]
+    nade.AdditionalNades = (wep.AdditionalNades or 0)
+    for i = 1, 6 do
+        local bone = nade:LookupBone(wep.BulletBones[i + 1])
+        if bone and nade.AdditionalNades < i then
+            nade:ManipulateBoneScale(bone, Vector(0.001, 0.001, 0.001))
+        end
+    end
+    wep.AdditionalNades = nil
+end
+
 SWEP.Hook_BashHit = function(wep, data)
+    if wep:Ammo1() == 0 then return end -- NOT SCIENTIFICALLY POSSIBLE
+
     local pos = data.tr.HitPos
     local eff = EffectData()
     eff:SetOrigin(pos)
@@ -197,9 +236,15 @@ SWEP.Hook_BashHit = function(wep, data)
         util.Effect( "WaterSurfaceExplosion", eff )
         wep:EmitSound("weapons/underwater_explode3.wav", 120, 100, 1, CHAN_AUTO)
     else
-        util.Effect( "Explosion", eff)
+        util.Effect("Explosion", eff)
     end
-    wep:TakeAmmo()
+
+    local amt, d = 6, 1
+    if wep.PartialLoad then
+        amt = math.min(wep:Ammo1() - 1, 6)
+        wep:TakeAmmo(amt + 1)
+        d = amt / 6
+    end
 
     local src = wep:GetShootPos()
     local dir = wep:GetShootDir()
@@ -211,13 +256,13 @@ SWEP.Hook_BashHit = function(wep, data)
         end
 
         util.BlastDamage(wep, wep:GetOwner(), pos, 256, 100)
-        for i = 1, 6 do
+        for i = 1, amt do
             local dispersion = Angle(math.Rand(-1, 1), math.Rand(-1, 1), 0)
             dispersion:Mul(1.5 * 36)
             dispersion:Add(dir)
 
             local ent = ents.Create("gekolt_css_nadelet")
-            ent.FuseTime = 0.75 + i * 0.25 + math.Rand(0, 0.2)
+            ent.FuseTime = 0.8 + i * 0.3 + math.Rand(0, 0.2)
             ent.Damage = 75
             ent:SetOwner(wep:GetOwner())
             ent:SetPos(src)
@@ -232,14 +277,14 @@ SWEP.Hook_BashHit = function(wep, data)
             wep:EmitSound("^ambient/explosions/explode_3.wav", 125, 100, 1, CHAN_WEAPON)
         end
 
-        util.BlastDamage(wep, wep:GetOwner(), pos, 728, 100)
-        util.BlastDamage(wep, wep:GetOwner(), pos, 512, 200)
+        util.BlastDamage(wep, wep:GetOwner(), pos, 320 + d * 320, 25 + d * 75)
+        util.BlastDamage(wep, wep:GetOwner(), pos, 192 + d * 192, 50 + d * 200)
 
         local effectdata = EffectData()
-        for i = 1, 8 do
+        for i = 1, math.ceil(2 + d * 14) do
             local tr = util.TraceLine({
                 start = src,
-                endpos = src + Angle(math.Rand(-15, 15), math.Rand(0, 360), 0):Forward() * math.Rand(128, 512),
+                endpos = src + Angle(math.Rand(-5, 5), math.Rand(0, 360), 0):Forward() * math.Rand(256 * d, 512 * d),
                 mask = MASK_SHOT,
                 filter = {wep, wep:GetOwner(), data.tr.Entity},
             })

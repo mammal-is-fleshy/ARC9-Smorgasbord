@@ -42,9 +42,9 @@ SWEP.NoTPIK = true
 
 SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
-SWEP.ClipSize = 1
+SWEP.ClipSize = 0
 SWEP.ChamberSize = 0
-SWEP.SupplyLimit = 2
+SWEP.SupplyLimit = 3
 SWEP.Crosshair = false
 
 -------------------------- ENTITY LAUNCHING
