@@ -332,7 +332,8 @@ end
 SWEP.ExtraShellModels = {
     [1] = {
         model = "models/weapons/geckololt_css/shell_garand_raw.mdl",
-        smoke = false
+        smoke = false,
+        ShellSmoke = false
     },
 }
 
@@ -467,14 +468,9 @@ SWEP.Animations = {
             {s =  "gekolt_dod/garand_boltforward.wav" ,    t = 78 / 40},
 
             {shelleject = {index = 1, upto = 1}, att = 2, t = 13 / 30},
-            {shelleject = {index = 1, upto = 2}, att = 2, t = 14 / 30},
-            {shelleject = {index = 1, upto = 3}, att = 2, t = 14 / 30},
-            {shelleject = {index = 1, upto = 4}, att = 2, t = 15 / 30},
-            {shelleject = {index = 1, upto = 5}, att = 2, t = 15 / 30},
-            {shelleject = {index = 1, upto = 6}, att = 2, t = 16 / 30},
-            {shelleject = {index = 1, upto = 7}, att = 2, t = 16 / 30},
         },
-        DumpAmmo = true,
+		ShellSmoke = false,
+        DumpAmmo = false,
         MagSwapTime = 40 / 40,
         MinProgress = 0.85,
         IKTimeLine = {

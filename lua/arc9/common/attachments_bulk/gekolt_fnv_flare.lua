@@ -28,6 +28,8 @@ ATT.ActiveAngOverride = Angle(0, 0, 0)
 ATT.MovingPosOverride = Vector(-0.25, 0.5, -1.25)
 ATT.MovingAngOverride = Angle(0, -2, 0)
 
+ATT.SprintPosOverride = Vector(5, -0.5, -2)
+ATT.SprintAngOverride = Angle(35, -10, -10)
 
 ATT.Sights = {
     {
@@ -71,6 +73,9 @@ ATT.ActiveAngOverride = Angle(0, 0, 0)
 
 ATT.MovingPosOverride = Vector(-0.25, 0.5, -1.25)
 ATT.MovingAngOverride = Angle(0, -2, 0)
+
+ATT.SprintPosOverride = Vector(5, -0.5, -2)
+ATT.SprintAngOverride = Angle(35, -10, -10)
 
 ARC9.LoadAttachment(ATT, "gekolt_fnv_flare_2")
 
