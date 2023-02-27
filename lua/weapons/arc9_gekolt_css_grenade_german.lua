@@ -38,16 +38,18 @@ Toggle between high damage cluster grenades or large condensed explosion.
 A sober person would throw it...]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
-SWEP.WorldModel = "models/weapons/w_eq_knife_ct.mdl"
+SWEP.WorldModel = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
 SWEP.Slot = 0
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-10, 10, -20),
-    Ang = Angle(0, 0, 180),
+    Pos = Vector(11, 12, 0),
+    Ang = Angle(0, 90, 90),
     Scale = 1
 }
+
+SWEP.NoTPIK = true
 
 SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
@@ -120,14 +122,14 @@ SWEP.CustomizeRotateAnchor = Vector(10, -7, 0)
 
 -------------------------- HoldTypes
 
-SWEP.HoldType = "slam"
-SWEP.HoldTypeSprint = "slam"
-SWEP.HoldTypeHolstered = "slam"
-SWEP.HoldTypeSights = "slam"
+SWEP.HoldType = "grenade"
+SWEP.HoldTypeSprint = "grenade"
+SWEP.HoldTypeHolstered = "normal"
+SWEP.HoldTypeSights = "normal"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeBlindfire = "pistol"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_GRENADE
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = false
 
@@ -251,6 +253,72 @@ SWEP.Hook_BashHit = function(wep, data)
 
     if wep:GetProcessedValue("Disposable") and !wep:HasAmmoInClip() and !IsValid(wep:GetDetonatorEntity()) and SERVER then
         wep:Remove()
+    end
+end
+
+SWEP.Hook_Think = function(wep)
+    if CLIENT then
+        if wep:WaterLevel() > 2 or !wep:GetGrenadePrimed() then return end
+        local vel = wep:GetOwner():GetVelocity():Length()
+
+        local pos
+
+        if wep:GetOwner() == LocalPlayer() and !LocalPlayer():ShouldDrawLocalPlayer() then
+            local vm = wep:GetOwner():GetViewModel()
+            local matrix = vm:GetBoneMatrix(vm:LookupBone("Main"))
+            if !matrix then return end
+            pos = matrix:GetTranslation()
+            --pos = pos + ang:Up() * -10 + ang:Right() * 11 + ang:Forward() * -2
+        else
+            local matrix = wep:GetOwner():GetBoneMatrix(wep:GetOwner():LookupBone("ValveBiped.Bip01_R_Hand"))
+            if !matrix then return end
+
+            pos = matrix:GetTranslation()
+            local ang = matrix:GetAngles()
+            pos = pos + ang:Up() * -10 + ang:Forward() * 11
+        end
+
+
+        local emitter = ParticleEmitter(pos)
+        if !IsValid(emitter) then return end
+
+        if wep:GetValue("ShootEnt") == "gekolt_css_grenade_bundle_cds" and (wep.NextSmokeTime or 0) < CurTime() then
+            wep.NextSmokeTime = CurTime() + 0.01 / math.Clamp(vel / 500, 1, 4)
+            local smoke = emitter:Add("particle/particle_smokegrenade", pos)
+            smoke:SetVelocity(VectorRand() * 15)
+            smoke:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), 500))
+            smoke:SetDieTime(0.5)
+            smoke:SetStartAlpha(255)
+            smoke:SetEndAlpha(0)
+            smoke:SetStartSize(4)
+            smoke:SetEndSize(8)
+            smoke:SetRoll(math.Rand(-180, 180))
+            smoke:SetRollDelta(math.Rand(-0.2, 0.2))
+            smoke:SetColor(150, 150, 150)
+            smoke:SetAirResistance(5)
+            smoke:SetLighting(true)
+        end
+
+        if wep:GetValue("ShootEnt") == "gekolt_css_grenade_bundle" and (wep.NextSparkTime or 0) < CurTime() then
+            wep.NextSparkTime = CurTime() + 0.005
+            local fire = emitter:Add("effects/spark", pos)
+            fire:SetVelocity(VectorRand() * 128 + Vector(0, 0, 100))
+            fire:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), -1000))
+            fire:SetDieTime(math.Rand(0.5, 1.5))
+            fire:SetStartAlpha(255)
+            fire:SetEndAlpha(0)
+            fire:SetStartSize(3)
+            fire:SetEndSize(0)
+            fire:SetRoll(math.Rand(-180, 180))
+            fire:SetRollDelta(math.Rand(-0.2, 0.2))
+            fire:SetColor(255, 255, 255)
+            fire:SetAirResistance(50)
+            fire:SetLighting(false)
+            fire:SetCollide(true)
+            fire:SetBounce(0.8)
+        end
+
+        emitter:Finish()
     end
 end
 

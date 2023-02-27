@@ -150,16 +150,16 @@ if CLIENT then
         if not IsValid(emitter) then return end
 
         if self.SmokeTrail and (self.NextSmokeTime or 0) < CurTime() then
-            self.NextSmokeTime = CurTime() + 0.02 / math.Clamp(vel / 500, 0.1, 3)
+            self.NextSmokeTime = CurTime() + 0.02 / math.Clamp(vel / 400, 0.1, 3)
             local c = Lerp(math.Clamp((CurTime() - self.SpawnTime - 0.5) / 2.5, 0, 1), 150, 25)
             local smoke = emitter:Add("particle/particle_smokegrenade", self:GetPos())
             smoke:SetVelocity(VectorRand() * 5)
             smoke:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), math.Rand(-20, -25)))
-            smoke:SetDieTime(math.Rand(0.2, 0.4))
-            smoke:SetStartAlpha(255)
+            smoke:SetDieTime(math.Rand(0.25, 0.3))
+            smoke:SetStartAlpha(200)
             smoke:SetEndAlpha(0)
             smoke:SetStartSize(4)
-            smoke:SetEndSize(16)
+            smoke:SetEndSize(12)
             smoke:SetRoll(math.Rand(-180, 180))
             smoke:SetRollDelta(math.Rand(-0.2, 0.2))
             smoke:SetColor(c, c, c)

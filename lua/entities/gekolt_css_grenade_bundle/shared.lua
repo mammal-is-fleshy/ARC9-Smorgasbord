@@ -9,7 +9,9 @@ ENT.AdminSpawnable = false
 ENT.Model = "models/weapons/geckololt_css/c_grenade_bundle.mdl"
 ENT.LifeTime = 3.5
 ENT.ArmTime = 0
-ENT.ImpactFuse = false
+
+ENT.SmokeTrail = false
+ENT.SparkTrail = true
 
 AddCSLuaFile()
 
@@ -29,9 +31,9 @@ function ENT:Initialize()
         end
 
         self:SetCollisionGroup(COLLISION_GROUP_PROJECTILE)
-
-        self.SpawnTime = CurTime()
     end
+
+    self.SpawnTime = CurTime()
 end
 
 function ENT:PhysicsCollide(data, physobj)
@@ -45,12 +47,6 @@ function ENT:PhysicsCollide(data, physobj)
         if (CurTime() - self.SpawnTime >= self.ArmTime) and self.ImpactFuse then
             self:Detonate()
         end
-    end
-end
-
-function ENT:Think()
-    if SERVER and CurTime() - self.SpawnTime >= self.LifeTime then
-        self:Detonate()
     end
 end
 
@@ -93,5 +89,59 @@ end
 function ENT:Draw()
     if CLIENT then
         self:DrawModel()
+    end
+end
+
+if SERVER then
+    function ENT:Think()
+        if CurTime() - self.SpawnTime >= self.LifeTime then
+            self:Detonate()
+        end
+    end
+elseif CLIENT then
+    function ENT:Think()
+        if self:WaterLevel() > 2 then return end
+        local vel = self:GetVelocity():Length()
+
+        local emitter = ParticleEmitter(self:GetPos() + self:GetForward() * 14)
+        if not IsValid(emitter) then return end
+
+        if self.SmokeTrail and (self.NextSmokeTime or 0) < CurTime() then
+            self.NextSmokeTime = CurTime() + 0.01 / math.Clamp(vel / 500, 1, 4)
+            local smoke = emitter:Add("particle/particle_smokegrenade", self:GetPos())
+            smoke:SetVelocity(VectorRand() * 15)
+            smoke:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), 500))
+            smoke:SetDieTime(0.5)
+            smoke:SetStartAlpha(255)
+            smoke:SetEndAlpha(0)
+            smoke:SetStartSize(4)
+            smoke:SetEndSize(8)
+            smoke:SetRoll(math.Rand(-180, 180))
+            smoke:SetRollDelta(math.Rand(-0.2, 0.2))
+            smoke:SetColor(150, 150, 150)
+            smoke:SetAirResistance(5)
+            smoke:SetLighting(true)
+        end
+
+        if self.SparkTrail and (self.NextSparkTime or 0) < CurTime() then
+            self.NextSparkTime = CurTime() + 0.005
+            local fire = emitter:Add("effects/spark", self:GetPos())
+            fire:SetVelocity(VectorRand() * 128 + Vector(0, 0, 100))
+            fire:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), -1000))
+            fire:SetDieTime(math.Rand(0.5, 1.5))
+            fire:SetStartAlpha(255)
+            fire:SetEndAlpha(0)
+            fire:SetStartSize(3)
+            fire:SetEndSize(0)
+            fire:SetRoll(math.Rand(-180, 180))
+            fire:SetRollDelta(math.Rand(-0.2, 0.2))
+            fire:SetColor(255, 255, 255)
+            fire:SetAirResistance(50)
+            fire:SetLighting(false)
+            fire:SetCollide(true)
+            fire:SetBounce(0.8)
+        end
+
+        emitter:Finish()
     end
 end

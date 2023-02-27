@@ -1,13 +1,11 @@
 AddCSLuaFile()
 
 ENT.Type = "anim"
-ENT.Base = "base_entity"
 ENT.PrintName = "Frag Grenade"
-ENT.Author = ""
-ENT.Information = ""
-ENT.Spawnable = false
-ENT.AdminSpawnable = false
 ENT.Base = "gekolt_css_grenade_bundle"
+
+ENT.SmokeTrail = true
+ENT.SparkTrail = false
 
 function ENT:Detonate()
     if SERVER and not self.Exploded then
