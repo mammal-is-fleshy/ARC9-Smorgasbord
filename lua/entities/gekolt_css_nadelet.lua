@@ -49,13 +49,6 @@ function ENT:PhysicsCollide(data, physobj)
     end
 end
 
-function ENT:Think()
-    if SERVER and CurTime() - self.SpawnTime >= self.FuseTime then
-        self:Detonate()
-    end
-end
-
-
 function ENT:Detonate()
     if SERVER and not self.Exploded then
         self.Exploded = true
@@ -72,7 +65,7 @@ function ENT:Detonate()
             for i = 1, 3 do
                 local tr = util.TraceLine({
                     start = self:GetPos(),
-                    endpos = self:GetPos() + Angle(math.Rand(-5, 5), math.Rand(0, 360), 0):Forward() * math.Rand(20, 300),
+                    endpos = self:GetPos() + Angle(math.Rand(-5, 5), math.Rand(0, 360), 0):Forward() * math.Rand(200, 300),
                     mask = MASK_SHOT,
                     filter = self,
                 })
@@ -81,7 +74,8 @@ function ENT:Detonate()
             end
         end
 
-        util.BlastDamage(self, self:GetOwner(), pos, 400, self.Damage)
+        util.BlastDamage(self, self:GetOwner(), pos, 256, self.Damage * 0.5)
+        util.BlastDamage(self, self:GetOwner(), pos, 512, self.Damage * 0.5)
         self:Remove()
     end
 end
@@ -89,5 +83,41 @@ end
 function ENT:Draw()
     if CLIENT then
         self:DrawModel()
+    end
+end
+
+if SERVER then
+    function ENT:Think()
+        if CurTime() - self.SpawnTime >= self.FuseTime then
+            self:Detonate()
+        end
+    end
+elseif CLIENT then
+    function ENT:Think()
+        if self:WaterLevel() > 2 then return end
+
+        local emitter = ParticleEmitter(self:GetPos())
+        if not IsValid(emitter) then return end
+
+        if (self.NextSparkTime or 0) < CurTime() then
+            self.NextSparkTime = CurTime() + 0.015
+            local fire = emitter:Add("effects/spark", self:GetPos())
+            fire:SetVelocity(VectorRand() * 64 + Vector(0, 0, 150))
+            fire:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), -700))
+            fire:SetDieTime(math.Rand(1.5, 2))
+            fire:SetStartAlpha(255)
+            fire:SetEndAlpha(0)
+            fire:SetStartSize(3)
+            fire:SetEndSize(0)
+            fire:SetRoll(math.Rand(-180, 180))
+            fire:SetRollDelta(math.Rand(-0.2, 0.2))
+            fire:SetColor(255, 255, 255)
+            fire:SetAirResistance(50)
+            fire:SetLighting(false)
+            fire:SetCollide(true)
+            fire:SetBounce(0.8)
+        end
+
+        emitter:Finish()
     end
 end

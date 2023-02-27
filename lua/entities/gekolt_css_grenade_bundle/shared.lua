@@ -65,7 +65,7 @@ function ENT:Detonate()
             self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_WEAPON)
         end
 
-        util.BlastDamage(self, self:GetOwner(), pos, 512, 150)
+        util.BlastDamage(self, self:GetOwner(), pos, 256, 150)
 
         local add = math.Rand(0, 60)
         local t = {1, 2, 3, 4, 5, 6} -- it looks funny but I need grenades to explode in a ring but also in random order
