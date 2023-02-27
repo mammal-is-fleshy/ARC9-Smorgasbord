@@ -1,6 +1,6 @@
 ATT.PrintName = [[Sawnoff Garand]]
 ATT.CompactName = "GANDRIAL"
-ATT.Icon = Material("entities/gekolt_css_m4_u_pump.png")
+ATT.Icon = Material("entities/gekolt_dod_ubw_garand.png")
 ATT.Description = [[
 Throws grenades at people too well! banned & classified in 1949
 **Requires a magazine to grip.**

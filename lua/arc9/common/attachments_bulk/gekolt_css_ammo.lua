@@ -248,3 +248,23 @@ ATT.PhysBulletGravityMult = 0.75
 ATT.PhysBulletDragMult = 5
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_flame")
+
+-------------------------------------------------------------------------------
+ATT = {}
+
+ATT.PrintName = "Signal Flare"
+ATT.CompactName = "FLARE"
+ATT.Icon = Material("entities/gekolt_css_ammo/shotgun.png", "mips smooth")
+ATT.Description = [[burn2.]]
+ATT.SortOrder = 0
+
+ATT.Category = {"css_ammo_sg"}
+ATT.AutoStats = true
+
+ATT.NumOverride = 1
+ATT.SpreadMult = 0.3
+
+ATT.ShootEnt = "gekolt_fnv_flare"
+ATT.ShootEntForce = 5000
+
+ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_flame")
