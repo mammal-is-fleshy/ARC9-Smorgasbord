@@ -187,6 +187,16 @@ SWEP.Hook_Think = function(wep)
                         owner.LoudMusic:Stop()
                         owner.LoudMusic = nil
                         hook.Remove("Think", hookname)
+                    elseif owner:GetActiveWeapon() ~= wep then
+                        wep.CurrentlyPlaying = false
+                        if not wep.MusicEnd then
+                            owner.LoudMusic:ChangeVolume(0.4, 0)
+                            wep.MusicEnd = CurTime()
+                            wep.MusicFadingOut = false
+                        elseif wep.MusicEnd + 5 <= CurTime() and not wep.MusicFadingOut then
+                            wep.MusicFadingOut = true
+                            owner.LoudMusic:ChangeVolume(0, 1.9)
+                        end
                     end
                 end)
             end
@@ -194,6 +204,7 @@ SWEP.Hook_Think = function(wep)
             if not wep.MusicEnd or wep.MusicEnd + 7 <= CurTime() then
                 wep:GetOwner().LoudMusic:ChangeVolume(1, 3)
                 wep.MusicFullDurationStart = CurTime()
+                print("full start")
                 wep.NextDamageTick = CurTime() + 1
             else
                 if wep.MusicEnd + 1 <= CurTime() then
