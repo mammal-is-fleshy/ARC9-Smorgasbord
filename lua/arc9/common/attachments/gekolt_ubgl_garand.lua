@@ -18,23 +18,23 @@ ATT.IKAnimationProxy = {
     },
     ["reload_ubgl"] = {
         Source = "dry",
-        EventTable = {		
+        EventTable = {
             {s =  "gekolt_dod/m1carbine_clipin1.wav" ,    t = 10 / 40},
             {s =  "gekolt_dod/m1carbine_clipin2.wav" ,    t = 15 / 40},
             {s =  "gekolt_dod/k98_singleshotreload.wav" ,   t = 45 / 40},
-            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 72 / 40},			
+            {s =  "gekolt_dod/m1carbine_boltforward.wav" ,    t = 72 / 40},
         },
     },
     ["enter_ubgl"] = {
         Source = "to_ubgl1"
-    },  
-	["enter_ubgl_glempty"] = {
+    },
+    ["enter_ubgl_glempty"] = {
         Source = "to_ubgl"
     },
     ["exit_ubgl"] = {
         Source = "from_ubgl1"
-    }, 
-	["exit_ubgl_glempty"] = {
+    },
+    ["exit_ubgl_glempty"] = {
         Source = "from_ubgl"
     },
     ["idle_ubgl"] = {
@@ -42,10 +42,10 @@ ATT.IKAnimationProxy = {
     },
     ["idle_glempty"] = {
         Source = "idle_gun"
-    },	
+    },
     ["idle_ubgl_glempty"] = {
         Source = "idle_ubgl"
-    },	
+    },
 }
 
  -- When an animation event plays, override it with one based on this LHIK model.

@@ -468,9 +468,15 @@ SWEP.Animations = {
             {s =  "gekolt_dod/garand_boltforward.wav" ,    t = 78 / 40},
 
             {shelleject = {index = 1, upto = 1}, att = 2, t = 13 / 30},
+            {shelleject = {index = 1, upto = 2}, att = 2, t = 14 / 30},
+            {shelleject = {index = 1, upto = 3}, att = 2, t = 15 / 30},
+            {shelleject = {index = 1, upto = 4}, att = 2, t = 16 / 30},
+            {shelleject = {index = 1, upto = 5}, att = 2, t = 13 / 30},
+            {shelleject = {index = 1, upto = 6}, att = 2, t = 14 / 30},
+            {shelleject = {index = 1, upto = 7}, att = 2, t = 15 / 30},
         },
-		ShellSmoke = false,
-        DumpAmmo = false,
+        ShellSmoke = false,
+        DumpAmmo = true,
         MagSwapTime = 40 / 40,
         MinProgress = 0.85,
         IKTimeLine = {
