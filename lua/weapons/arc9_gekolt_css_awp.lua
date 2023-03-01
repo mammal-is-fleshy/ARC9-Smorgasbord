@@ -520,7 +520,7 @@ SWEP.Animations = {
 
     ["fire_sd"] = {
         Source = "fire_full_sd",
-        EjectAt = 15 / 40,
+        EjectAt = 17 / 40,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 9 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},
@@ -531,7 +531,7 @@ SWEP.Animations = {
     },
     ["fire_iron_sd"] = {
         Source = "fire_full_sd",
-        EjectAt = 15 / 40,
+        EjectAt = 17 / 40,
         EventTable = {
             {s =  "gekolt_css/awp_boltup.wav" ,   t = 9 / 40},
             {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},
@@ -559,7 +559,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
         MinProgress = 0.9,
-        EjectAt = 100 / 40,
+        EjectAt = 80 / 40,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
         { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.55, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },

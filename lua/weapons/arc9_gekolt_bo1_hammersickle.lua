@@ -15,8 +15,9 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    ["Assets"] = [[CoD: Black Ops]],
-    ["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+	["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
+	["Assets2"] = [[CoD: Black Ops]],
+	["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[A pair of common work tools infused with the power of the proletariat.
