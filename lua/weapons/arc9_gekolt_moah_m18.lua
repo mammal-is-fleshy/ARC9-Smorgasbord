@@ -17,7 +17,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     ["Assets"] = [[Medal of Honor: Airborne]],
-	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[The King's Guard is always ready to take out any armoured opponent

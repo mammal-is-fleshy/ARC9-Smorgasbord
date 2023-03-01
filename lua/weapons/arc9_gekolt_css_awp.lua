@@ -17,9 +17,9 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
-	["Sound2"] = [[cherresoda#6579 (rzen1th)]],
+    ["Sound2"] = [[cherresoda#6579 (rzen1th)]],
     ["Assets3"] = [[Counter-Strike Source]],
-	["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[Imposing magnum sniper rifle used by the police. Overpenetrates up close, so step back.
@@ -79,9 +79,9 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 SWEP.RPM = 40
 
 SWEP.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
-	if wep:Clip1() == 0 then
-		wep:SetNextPrimaryFire(1/300)
-	end
+    if wep:Clip1() == 0 then
+        wep:SetNextPrimaryFire(1/300)
+    end
 end
 
 -- Works different to ArcCW
@@ -214,9 +214,9 @@ SWEP.CustomizeNoRotate = false
 SWEP.CustomizeRotateAnchor = Vector(16.5, -3, -3.23)
 
 SWEP.StandardPresets = {
-	"[AE50]XQAAAQCUAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHW94F1nERWcC6u1bB5cabzbkNO8/nth3i7Jo80rUF+pecd32WquJt0n3SBidtpp+yyfwcWzkziBA/WgA=",
-	"[LC10]XQAAAQCVAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHW1nsOMm2pcVyg67N+hfFdys3jNbBrRNKsAajt4RaoroF5cQY02muwF47dpzMkeJlQKvbDWlWmZfH4gA=",
-	"[Howell]XQAAAQCVAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHWwxx7WslW8oXGcOTaMP8pK1Z/AGxJhRVITENdxqdfW/67pxvzsryRHMioaTpxeG3B4RJz155iV1EOj+IAA==",
+    "[AE50]XQAAAQCUAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHW94F1nERWcC6u1bB5cabzbkNO8/nth3i7Jo80rUF+pecd32WquJt0n3SBidtpp+yyfwcWzkziBA/WgA=",
+    "[LC10]XQAAAQCVAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHW1nsOMm2pcVyg67N+hfFdys3jNbBrRNKsAajt4RaoroF5cQY02muwF47dpzMkeJlQKvbDWlWmZfH4gA=",
+    "[Howell]XQAAAQCVAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrblSJUHWwxx7WslW8oXGcOTaMP8pK1Z/AGxJhRVITENdxqdfW/67pxvzsryRHMioaTpxeG3B4RJz155iV1EOj+IAA==",
 }
 
 -------------------------- HoldTypes

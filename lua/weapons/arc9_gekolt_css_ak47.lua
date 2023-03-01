@@ -17,9 +17,9 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
-	["Sound2"] = [[cherresoda#6579 (rzen1th)]],
+    ["Sound2"] = [[cherresoda#6579 (rzen1th)]],
     ["Assets3"] = [[Counter-Strike Source]],
-	["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[Rugged rifle with a simple design that can function under harsh conditions.
@@ -207,19 +207,19 @@ SWEP.CustomizeNoRotate = false
 SWEP.CustomizeRotateAnchor = Vector(10.5, -2.55, -2.23)
 
 SWEP.StandardPresets = {
-	"[Erikoinen]XQAAAQDZAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1WAT3q6Ut6mKKe3U8vg8o3M0NuhYRa8gZsSSnmj/m4AGgzjzuTsYpWyrIvLihKXTIT/g7nV7tk5rSl3X8kQvc9nXlhtTR/gg1VzS",
-	"[Okhota]XQAAAQC9AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1VUGJq6Ut6mKKe3U8vg8o3M0NuiOKBkQBfxI9jjszCBIjcPQv+DDSECuba9rZVu5BJrnaCDnb+hJungB9wwF1Dun0oY=",
-	"[Dobavoch]XQAAAQC+AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1YE9Dq6Ut6mKKe3U8vg8o3M0Nuh5UKwm9t2Gzg1NrvBho1YpAt6OuxJ1a5ntn6xrRrR0MUyBjxjSUVbGUGtyZYoA",
-	"[Gelikoidal]XQAAAQDYAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1YxKyq6Ut6mKKe3U8vg8o3M0NuigmU9aWJ/VF/MENsZkq3ZhgVdCjkVlUKzKBjgAEkXdY+Tf4Sy5qSWhF6M/eU9I709o6wmamNhg",
-	"[Podvod]XQAAAQDAAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1Wshmq6Ut6mKKe3U8vg7U4mjxr6apG5/mTvclEYeiID67qs/o6X1A8pA0dGoFgxeHwpddYCKQOuo7IwUk5mRc94TOpilJuNa",
-	"[Kavaleriya]XQAAAQClAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1XYvUq6Ut6mKKe3U8vg7U4mjxsIk+tgSzhqz5U5/UcCi5JgDUQShWIb2iUl1RQASLebtcAf0o57mYODyoQIA",
-	"[SurstrÃ¶mming]XQAAAQC4AAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAlIVrJE3/4sNiEMi51/i+PXZceqKvZGy5AKvsntOrU0tuqRPGeB/qWTSIuhRcrQa5Kl8AsGmWVagv5k7cqTh4Sq8QLfUg8Tw=",
-	"[Nikonov]XQAAAQC4AAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAlIVrJE3/4sNiEMi51/i+PXSM6ZiC/McH9ImfeJkmxTBNNPQGRBaUEc7Loo9URC04/Hi6R3iLSfw6KPA/RWCqkAy9hZcq0AA=",
-	"[Dvornik]XQAAAQDhAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1ZdYhq6Oktc0a7zxrr5iPXk+iSiDsyqGzBidoJgCyXGrqHhi3K0UrWX8KJMMoEEiERi1VbUeBnwQ/yuPkYPZ9OUixBLpYPmQAphH9RngaLYA",
-	"[Strelok]XQAAAQC2AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1VUGJq6Ut6mKKe3U8vg8o3M0NuhdpK1G2YgOy6dgS80xtzClbXvxvfBDkAES8FoclttrRRoeAu+g0OQVqKSnTS0S",
-	"[Zhopa]XQAAAQC5AAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAlIVrJE3/4sNiEMi51/i+PXSAfeDhXuNemYyypkXuPGvFiEcx7XGANurnXI7uU6LjAA7pt5MaaFfZeq1BLfByBnUWHjjo984A",
-	"[Dlinnyy]XQAAAQC8AAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAlIVrJE3/4sNiEMi51/i+PXSRa4yC/McH9ImfeJklDblrfsLGBZ10LEIx+ongMxtL6m0Xh1YN24bZernTEyX/kzzF3V4vzgtyAA==",
-	"[Atakovat]XQAAAQDMAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ3xy34cU80ZrHfnzhFv0h9+FmWsqaGZSx2wjKDBd4bQ29S1KKXCkiEOzPTF6WTtI2MqK28vqYvYFzvF854gpeQ9we",
+    "[Erikoinen]XQAAAQDZAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1WAT3q6Ut6mKKe3U8vg8o3M0NuhYRa8gZsSSnmj/m4AGgzjzuTsYpWyrIvLihKXTIT/g7nV7tk5rSl3X8kQvc9nXlhtTR/gg1VzS",
+    "[Okhota]XQAAAQC9AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1VUGJq6Ut6mKKe3U8vg8o3M0NuiOKBkQBfxI9jjszCBIjcPQv+DDSECuba9rZVu5BJrnaCDnb+hJungB9wwF1Dun0oY=",
+    "[Dobavoch]XQAAAQC+AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1YE9Dq6Ut6mKKe3U8vg8o3M0Nuh5UKwm9t2Gzg1NrvBho1YpAt6OuxJ1a5ntn6xrRrR0MUyBjxjSUVbGUGtyZYoA",
+    "[Gelikoidal]XQAAAQDYAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1YxKyq6Ut6mKKe3U8vg8o3M0NuigmU9aWJ/VF/MENsZkq3ZhgVdCjkVlUKzKBjgAEkXdY+Tf4Sy5qSWhF6M/eU9I709o6wmamNhg",
+    "[Podvod]XQAAAQDAAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1Wshmq6Ut6mKKe3U8vg7U4mjxr6apG5/mTvclEYeiID67qs/o6X1A8pA0dGoFgxeHwpddYCKQOuo7IwUk5mRc94TOpilJuNa",
+    "[Kavaleriya]XQAAAQClAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1XYvUq6Ut6mKKe3U8vg7U4mjxsIk+tgSzhqz5U5/UcCi5JgDUQShWIb2iUl1RQASLebtcAf0o57mYODyoQIA",
+    "[SurstrÃ¶mming]XQAAAQC4AAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAlIVrJE3/4sNiEMi51/i+PXZceqKvZGy5AKvsntOrU0tuqRPGeB/qWTSIuhRcrQa5Kl8AsGmWVagv5k7cqTh4Sq8QLfUg8Tw=",
+    "[Nikonov]XQAAAQC4AAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAlIVrJE3/4sNiEMi51/i+PXSM6ZiC/McH9ImfeJkmxTBNNPQGRBaUEc7Loo9URC04/Hi6R3iLSfw6KPA/RWCqkAy9hZcq0AA=",
+    "[Dvornik]XQAAAQDhAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1ZdYhq6Oktc0a7zxrr5iPXk+iSiDsyqGzBidoJgCyXGrqHhi3K0UrWX8KJMMoEEiERi1VbUeBnwQ/yuPkYPZ9OUixBLpYPmQAphH9RngaLYA",
+    "[Strelok]XQAAAQC2AAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ1VUGJq6Ut6mKKe3U8vg8o3M0NuhdpK1G2YgOy6dgS80xtzClbXvxvfBDkAES8FoclttrRRoeAu+g0OQVqKSnTS0S",
+    "[Zhopa]XQAAAQC5AAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAlIVrJE3/4sNiEMi51/i+PXSAfeDhXuNemYyypkXuPGvFiEcx7XGANurnXI7uU6LjAA7pt5MaaFfZeq1BLfByBnUWHjjo984A",
+    "[Dlinnyy]XQAAAQC8AAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAlIVrJE3/4sNiEMi51/i+PXSRa4yC/McH9ImfeJklDblrfsLGBZ10LEIx+ongMxtL6m0Xh1YN24bZernTEyX/kzzF3V4vzgtyAA==",
+    "[Atakovat]XQAAAQDMAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mcrWHcUeJ3xy34cU80ZrHfnzhFv0h9+FmWsqaGZSx2wjKDBd4bQ29S1KKXCkiEOzPTF6WTtI2MqK28vqYvYFzvF854gpeQ9we",
 }
 
 -------------------------- HoldTypes
@@ -560,7 +560,7 @@ SWEP.Animations = {
 
 SWEP.AttachmentElements = {
     ["s_no"] = { Bodygroups = { {4, 13} },}, 
-	["s_fold1"] = { Bodygroups = { {4, 3} },},
+    ["s_fold1"] = { Bodygroups = { {4, 3} },},
     ["s_fold2"] = { Bodygroups = { {4, 4} },},
     ["s_fold3"] = { Bodygroups = { {4, 5} },},
     ["s_slide"] = { Bodygroups = { {4, 10} },},
@@ -617,7 +617,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("rail_def") and wep:HasElement("u_566") 	then model:SetBodygroup(1,0) end
     if wep:HasElement("rail_def") and wep:HasElement("u_disk") 	then model:SetBodygroup(5,0) end
     if wep:HasElement("rail_def") and wep:HasElement("hg_u") 	then model:SetBodygroup(5,1) end  
-	if wep:HasElement("rail_def") and wep:HasElement("hg_naked")	then model:SetBodygroup(5,1) end
+    if wep:HasElement("rail_def") and wep:HasElement("hg_naked")	then model:SetBodygroup(5,1) end
     if wep:HasElement("rail_def") and wep:HasElement("hg_rpk") 	then model:SetBodygroup(5,1) end
     if wep:HasElement("rail_def") and wep:HasElement("s_fold4") then model:SetBodygroup(5,1) end
 
@@ -625,11 +625,11 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("fg_def") and wep:HasElement("hg_rail") 	then model:SetBodygroup(8,0) end
     if wep:HasElement("fg_def") and wep:HasElement("hg_12") 	then model:SetBodygroup(8,0) end
 
-	if wep:HasElement("hg_rpk") and wep:GetBipod() then
-		model:SetBodygroup(9,2)
-	elseif wep:HasElement("hg_rpk") and !wep:GetBipod() then
-		model:SetBodygroup(9,1)
-	end
+    if wep:HasElement("hg_rpk") and wep:GetBipod() then
+        model:SetBodygroup(9,2)
+    elseif wep:HasElement("hg_rpk") and !wep:GetBipod() then
+        model:SetBodygroup(9,1)
+    end
 end
 
 SWEP.Attachments = {

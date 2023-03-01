@@ -17,9 +17,9 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
-	["Sound2"] = [[cherresoda#6579 (rzen1th)]],
+    ["Sound2"] = [[cherresoda#6579 (rzen1th)]],
     ["Assets3"] = [[Counter-Strike Source]],
-	["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[A turn-of-the-century update to a straightforward double-stack pistol.
@@ -208,13 +208,13 @@ SWEP.CustomizeNoRotate = false
 SWEP.CustomizeRotateAnchor = Vector(12, -3.25, -5.23)
 
 SWEP.StandardPresets = {
-	"[Carrista]XQAAAQBvAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4wos5gFaOEpnAmZUM7z4zB4SCUHMb8I68/c6NH/+2f2HPU+/81QDpeet1zKFlBw",
-	"[Lanciere]XQAAAQBvAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4nSMwtYMyA/YK4CjRSMOMfRFYrcdz39iPpYirDFq1R5M6T22A1y1iQFUU4kePXW",
-	"[Incursore]XQAAAQBfAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4nYhhNYNM8bGG199V7aIohDSI4OVeXIPevrWhxKYU+vRKnfq1RCQ44=",
-	"[Bisbigliare]XQAAAQBfAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4nbr5dYNM8bGG199V7aIohDSI4OVeXIPevrWhxKYU+vRKnfq1RCQ44=",
-	"[Centurione]XQAAAQBfAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4ne2RtYNM8bGG199V7aIohDSI4OVeXIPevrWhxKYU+vRKnfq1RCQ44=",
-	"[Bersagliere]XQAAAQBfAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4nVXI9YNM8bGG199V7aIohDSI4OVeXIPevrWhxKYU+vRKnfq1RCQ44=",
-	"[Artigliere]XQAAAQBvAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4niAp9YMyA/YK4CjRSMOMfRFYrcdz39iPpYirDFq1R5M6T22A1y1iQFUU4kePXW",
+    "[Carrista]XQAAAQBvAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4wos5gFaOEpnAmZUM7z4zB4SCUHMb8I68/c6NH/+2f2HPU+/81QDpeet1zKFlBw",
+    "[Lanciere]XQAAAQBvAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4nSMwtYMyA/YK4CjRSMOMfRFYrcdz39iPpYirDFq1R5M6T22A1y1iQFUU4kePXW",
+    "[Incursore]XQAAAQBfAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4nYhhNYNM8bGG199V7aIohDSI4OVeXIPevrWhxKYU+vRKnfq1RCQ44=",
+    "[Bisbigliare]XQAAAQBfAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4nbr5dYNM8bGG199V7aIohDSI4OVeXIPevrWhxKYU+vRKnfq1RCQ44=",
+    "[Centurione]XQAAAQBfAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4ne2RtYNM8bGG199V7aIohDSI4OVeXIPevrWhxKYU+vRKnfq1RCQ44=",
+    "[Bersagliere]XQAAAQBfAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4nVXI9YNM8bGG199V7aIohDSI4OVeXIPevrWhxKYU+vRKnfq1RCQ44=",
+    "[Artigliere]XQAAAQBvAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/aUg4niAp9YMyA/YK4CjRSMOMfRFYrcdz39iPpYirDFq1R5M6T22A1y1iQFUU4kePXW",
 }
 
 -------------------------- HoldTypes

@@ -66,7 +66,7 @@ if SERVER then
             return
         end
 
-        local deg = Lerp(math.Clamp((CurTime() - self.SpawnTime - self.ArmTime) / 2, 0, 1), 0.5, 1) --math.Clamp(1.5 - dir:Cross(Vector(0, 0, -1)):Length(), 0.5, 1)
+        local deg = Lerp(math.Clamp((CurTime() - self.SpawnTime - self.ArmTime) / 1.5, 0, 1), 0.25, 1) --math.Clamp(1.5 - dir:Cross(Vector(0, 0, -1)):Length(), 0.5, 1)
 
         self:FireBullets({
             Attacker = attacker,
@@ -90,8 +90,9 @@ if SERVER then
             local tr = util.QuickTrace(self:GetPos(), ent:WorldSpaceCenter() - self:GetPos(), self)
             if tr.Entity == ent then
                 dmg:SetDamagePosition(self:GetPos())
-                dmg:SetDamage(150 * math.Rand(0.9, 1.1) * deg)
+                dmg:SetDamage(150 * math.Rand(0.8, 1) * deg)
                 ent:TakeDamageInfo(dmg)
+                print(ent, dmg:GetDamage())
             end
         end
 

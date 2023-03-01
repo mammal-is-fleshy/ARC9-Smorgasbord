@@ -105,6 +105,8 @@ if SERVER then
     end
 
     function ENT:Detonate()
+        if self.Detonated then return end
+        self.Detonated = true
         local effectdata = EffectData()
             effectdata:SetOrigin( self:GetPos() )
 
@@ -117,7 +119,7 @@ if SERVER then
             self:EmitSound("^weapons/explode" .. math.random(3, 5) .. ".wav", 100, 110, 1, CHAN_AUTO)
         end
 
-        local dmg = Lerp(math.Clamp((CurTime() - self.SpawnTime - 0.5) / 2.5, 0, 1), 100, 300)
+        local dmg = Lerp(math.Clamp((CurTime() - self.SpawnTime - 0.5) / 2, 0, 1), 90, 250)
 
         util.BlastDamage(self, self.Attacker or self:GetOwner() or self, self:GetPos(), 200, dmg)
 
@@ -144,7 +146,7 @@ if CLIENT then
         local vel = self:GetVelocity():Length()
         local armed = self.SpawnTime + self.ArmTime < CurTime()
         local d = (1 - (self.SpawnTime + self.ArmTime - CurTime()) / self.ArmTime)
-        local d2 = math.Clamp((CurTime() - self.SpawnTime - 0.5) / 2.5, 0, 1)
+        local d2 = math.Clamp((CurTime() - self.SpawnTime - 0.5) / 2, 0, 1)
 
         local emitter = ParticleEmitter(self:GetPos() + self:GetForward() * 12)
         if not IsValid(emitter) then return end

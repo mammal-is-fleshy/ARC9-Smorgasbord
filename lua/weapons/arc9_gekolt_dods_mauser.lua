@@ -17,9 +17,9 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
-	["Sound"] = [[CturiX#6008 (CturiX)]],
+    ["Sound"] = [[CturiX#6008 (CturiX)]],
     ["Assets"] = [[Day of Defeat: Source]],
-	["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[An old as hell pistol given a carbine kit and absurdly fast auto sear.
@@ -214,10 +214,10 @@ SWEP.CustomizeNoRotate = false
 SWEP.CustomizeRotateAnchor = Vector(9, -3.025, -3.23)
 
 SWEP.StandardPresets = {
-	"[Aufplatzen]XQAAAQBOAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/l60jXsdOUtcu59M7a/hPaNYrhhfykp+A2SlrEvqSMD7zjswZsGJt8keCCoAA==",
-	"[Karabiner]XQAAAQByAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/l60jXsdOUtONZ9M5jSiXpOat+FFRKsEb9a7OTQ5ymZX58rksRnFrKrAi7VmKdtMWJCVYgqzCUIAA==",
-	"[Kantschapper]XQAAAQBOAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/l60jXsdOVgo7xPIvTT6T8JgaSwgu4f/pd6jqEKuYHilcoGOaYp0iPh8fb0AA==",
-	"[Kundschafter]XQAAAQBPAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/l60jXsdOUtGsMR4ZY24Es3Yeo+kLt/KjAuyZ6+UuGckh6C+aIEXZHwzUBkUmo=",
+    "[Aufplatzen]XQAAAQBOAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/l60jXsdOUtcu59M7a/hPaNYrhhfykp+A2SlrEvqSMD7zjswZsGJt8keCCoAA==",
+    "[Karabiner]XQAAAQByAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/l60jXsdOUtONZ9M5jSiXpOat+FFRKsEb9a7OTQ5ymZX58rksRnFrKrAi7VmKdtMWJCVYgqzCUIAA==",
+    "[Kantschapper]XQAAAQBOAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/l60jXsdOVgo7xPIvTT6T8JgaSwgu4f/pd6jqEKuYHilcoGOaYp0iPh8fb0AA==",
+    "[Kundschafter]XQAAAQBPAAAAAAAAAAA9iIIiM7tuo1AtT2XPdgkKkZtHi34mc/l60jXsdOUtGsMR4ZY24Es3Yeo+kLt/KjAuyZ6+UuGckh6C+aIEXZHwzUBkUmo=",
 }
 
 -------------------------- HoldTypes
