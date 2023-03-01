@@ -123,6 +123,15 @@ $sequence "fire_gempty" {
 	fps 40
 }
 
+$sequence "fire_gempty_no" {
+	"anims\fire_gempty_no.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 50
+	fps 40
+}
+
 $sequence "fire_iron_gempty" {
 	"anims\fire_iron_gempty.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
@@ -150,6 +159,24 @@ $sequence "fire_slam" {
 	fps 40
 }
 
+$sequence "fire_iron_no" {
+	"anims\fire_iron_no.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 0.02
+	fps 40
+}
+
+$sequence "wet_fast" {
+	"anims\wet_fast.smd"
+	activity "ACT_VM_RELOAD" 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
 $sequence "wet" {
 	"anims\wet.smd"
 	activity "ACT_VM_RELOAD" 1
@@ -161,6 +188,15 @@ $sequence "wet" {
 
 $sequence "dry" {
 	"anims\dry.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_fast" {
+	"anims\dry_fast.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

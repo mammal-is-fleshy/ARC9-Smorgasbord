@@ -441,14 +441,14 @@ SWEP.Animations = {
         EjectAt = 0 / 40,
     },
     ["fire_empty"] = {
-        Source = "fire_gempty",
+        Source = "fire_gempty_no",
         EjectAt = 0 / 40,
         EventTable = {
             {s =  "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
         },
     },
     ["fire_iron_empty"] = {
-        Source = "fire_iron_gempty",
+        Source = "fire_iron_no",
         EjectAt = 0 / 40,
         EventTable = {
             {s =  "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
