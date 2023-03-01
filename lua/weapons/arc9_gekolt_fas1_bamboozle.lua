@@ -42,7 +42,7 @@ SWEP.NoTPIK = true
 
 SWEP.DefaultBodygroups = "00"
 SWEP.BottomlessClip = true
-SWEP.ClipSize = 0
+SWEP.ClipSize = 1
 SWEP.ChamberSize = 0
 SWEP.SupplyLimit = 3
 SWEP.Crosshair = false
@@ -66,6 +66,9 @@ SWEP.TossForce = 2500 -- Force that the grenade will be thrown with when right c
 SWEP.ThrowChargeTime = 1 -- How long it takes to charge the grenade to its maximum throw force.
 
 SWEP.ThrowTumble = false -- Grenade tumbles when thrown.
+
+SWEP.ShootPosOffset = Vector(0, 0, 2)
+
 
 SWEP.PhysBulletMuzzleVelocity = 1000 * 40
 

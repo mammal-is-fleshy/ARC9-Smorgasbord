@@ -16,7 +16,6 @@ $sequence "idle_nor" {
 	"anims\idle_nor.smd"
 	fadein 0.2
 	fadeout 0.2
-	loop	
 	fps 40
 }
 
@@ -24,8 +23,6 @@ $sequence "idle" {
 	"anims\idle.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap
-	loop	
 	fps 40
 }
 
@@ -33,15 +30,13 @@ $sequence "idle_empty" {
 	"anims\idle_empty.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap	
 	fps 40
 }
 
 $sequence "idle_prep" {
 	"anims\idle_prep.smd"
 	fadein 0.2
-	fadeout 0.2
-	loop	
+	fadeout 0.2	
 	fps 40
 }
 
@@ -49,7 +44,6 @@ $sequence "draw" {
 	"anims\draw.smd"
 	fadein 0.2
 	fadeout 0.2
-	snap
 	fps 40
 }
 $sequence "prep" {
