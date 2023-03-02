@@ -422,8 +422,9 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_drg")
 ATT = {}
 
 ATT.PrintName = "Rail"
-ATT.CompactName = "O"
-ATT.Description = [[Railing without attachments]]
+ATT.CompactName = "RAIL"
+ATT.Description = [[Railing without attachments
+Cosmetic only.]]
 
 ATT.Icon = Material("entities/gekolt_css_mount_side.png", "mips smooth")
 
@@ -437,8 +438,9 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_grip_air")
 ATT = {}
 
 ATT.PrintName = "Rail"
-ATT.CompactName = "O"
-ATT.Description = [[Railing without attachments]]
+ATT.CompactName = "RAIL"
+ATT.Description = [[Railing without attachments
+Cosmetic only.]]
 
 ATT.Icon = Material("entities/gekolt_css_mount_side.png", "mips smooth")
 
