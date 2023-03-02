@@ -18,7 +18,11 @@ ATT.SortOrder = -1
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_vanguard"}
 
-ATT.FreeAimRadiusAdd = -4
+ATT.SwayAdd = -0.3
+ATT.FreeAimRadiusAdd = -5
+ATT.SwayAddMove = -0.4
+ATT.SwayMultSights = 2
+
 ATT.SpreadAdd = 0.003
 
 ATT.RecoilMult = 1.15
@@ -62,7 +66,7 @@ ATT.ActivateElements = {"garand_m14", "ubgl_maghold"}
 -- ATT.ShootSound = "gekolt_dod/m1carbine_shoot.wav"
 -- ATT.MuzzleParticle = "muzzleflash_smg"
 
-ATT.RPM = 500
+ATT.RPM = 600
 ATT.Firemodes = {
     {
         Mode = 1
@@ -77,6 +81,9 @@ ATT.ChamberSizeOverride = 1
 ATT.RangeMin = 1000
 ATT.RangeMax = 7500
 
+ATT.RecoilDissipationRateMult = 0.75
+ATT.SpreadMultRecoil = 1.15
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_308"
 end
@@ -90,7 +97,8 @@ ATT = {}
 ATT.PrintName = "Sportive-Charpente"
 ATT.CompactName = "SCF"
 ATT.Icon = Material("entities/gekolt_dod_garand_mini.png", "mips smooth")
-ATT.Description = [["Modernized" model using an intermediate cartridge and ]]
+ATT.Description = [["Modernized" carbine model firing intermediate cartridges from STANAG magazines. Short barrel and pistol grip improves handling noticeably.
+A travesty of a conversion, but at least it has an auto sear that won't dislocate your shoulder.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -100,6 +108,8 @@ ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"
 ATT.ShootSound = "gekolt_dod/m1carbine_shoot1.wav"
 ATT.ActivateElements = {"garand_mini", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_smg"
+
+ATT.Ammo = "smg1"
 
 ATT.RPMMult = 650 / 300
 ATT.Firemodes = {
@@ -112,17 +122,30 @@ ATT.Firemodes = {
 }
 ATT.ClipSizeOverride = 30
 ATT.ChamberSizeOverride = 1
-ATT.RecoilMultRecoilMult = 1.2/1.75
-ATT.RecoilKickMult = 1.75/2
-ATT.RecoilDissipationRateMult = 15/10
-ATT.RecoilUpMult = 0.25/0.6
 
-ATT.DamageMaxMult = 31 / 70
-ATT.DamageMinMult = 15 / 45
-ATT.RecoilMult = 0.45 / 1
+ATT.Spread = 0.0015
+ATT.SpreadAddHipFire = -0.005
 
-ATT.AimDownSightsTimeMult = 0.95
-ATT.SprintToFireTimeMult = 0.95
+ATT.FreeAimRadiusAdd = -4
+ATT.SwayAdd = -0.2
+ATT.SwayAddMove = -0.25
+
+ATT.RecoilUp = 0.3
+ATT.RecoilSide = 0.15
+ATT.RecoilDissipationRate = 15
+ATT.SpreadAddRecoil = -0.002
+ATT.SpreadMultRecoil = 0.85
+ATT.RecoilMultRecoil = 0.63
+ATT.RecoilModifierCap = 14
+
+ATT.DamageMax = 35
+ATT.DamageMin = 20
+
+ATT.RangeMin = 500
+ATT.RangeMax = 4000
+
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.05
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_mini"
