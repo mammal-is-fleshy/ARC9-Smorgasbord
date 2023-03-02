@@ -494,7 +494,7 @@ SWEP.Animations = {
 
     -- Vanguard
     ["reload_vanguard"] = {
-        Source = "wet_fast", -- TODO: Change to something that doesn't catch the clip
+        Source = "wet_fast",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {
             {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 8 / 40},
@@ -768,5 +768,23 @@ SWEP.Animations = {
         RestoreAmmo = 0,
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         IKTimeLine = {	{ t = 0, lhik = 1, rhik = 1, }, { t = 1, lhik = 0, rhik = 1, },	},
+    },
+
+    -- rock and stone or something
+    ["fire_iron_focus"] = {
+        Source = "fire_iron",
+        EjectAt = 0 / 40,
+        EventTable = {
+            {shelleject = 0, att = 2, t = 2 / 40},
+        },
+    },
+    ["fire_iron_empty_focus"] = {
+        Source = "fire_iron_no",
+        EjectAt = 0 / 40,
+        EventTable = {
+            {s =  "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
+            {shelleject = 2, att = 3, t = 1 / 40},
+            {shelleject = 0, att = 2, t = 2 / 40},
+        },
     },
 }

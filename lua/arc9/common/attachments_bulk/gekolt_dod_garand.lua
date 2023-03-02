@@ -18,14 +18,17 @@ ATT.SortOrder = -1
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_vanguard"}
 
-ATT.DrawFunc = function(swep, model, wm) end
+ATT.FreeAimRadiusAdd = -4
+ATT.SpreadAdd = 0.003
 
+ATT.RecoilMult = 1.15
+ATT.SpreadMultRecoil = 1.1
+ATT.RecoilMultRecoil = 0.9
 
-ATT.RecoilMult = 0.775 / 0.75
-ATT.RecoilKickMult = 3.1 / 3
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.06
 
-ATT.AimDownSightsTimeMult = 0.8
-ATT.SprintToFireTimeMult = 0.75
+ATT.RPMMult = 1.15
 
 ARC9.LoadAttachment(ATT, "gekolt_dod_garand_vanguard")
 
@@ -54,7 +57,6 @@ ATT.ShootSound = "gekolt_dod/m1carbine_shoot.wav"
 ATT.ActivateElements = {"garand_m14", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_smg"
 
-ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 500 / 300
 ATT.Firemodes = {
     {
@@ -102,7 +104,6 @@ ATT.ShootSound = "gekolt_dod/m1carbine_shoot1.wav"
 ATT.ActivateElements = {"garand_mini", "ubgl_maghold"}
 ATT.MuzzleParticle = "muzzleflash_smg"
 
-ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 650 / 300
 ATT.Firemodes = {
     {
@@ -116,7 +117,7 @@ ATT.ClipSizeOverride = 30
 ATT.ChamberSizeOverride = 1
 ATT.RecoilMultRecoilMult = 1.2/1.75
 ATT.RecoilKickMult = 1.75/2
-ATT.RecoilDissipationRateMult = 15/10 
+ATT.RecoilDissipationRateMult = 15/10
 ATT.RecoilUpMult = 0.25/0.6
 
 ATT.DamageMaxMult = 31 / 70
@@ -166,23 +167,22 @@ ATT.ShootSound = "gekolt_dod/1887_fire01.wav"
 ATT.ShellModelOverride = "models/shells/shell_12gauge.mdl"
 ATT.ShellScaleOverride = 1
 
-ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 120 / 300
 ATT.Firemodes = {
     {
         Mode = 1,
-		PrintName = "Pump"
+        PrintName = "Pump"
     },
     {
         Mode = -1,
-		PrintName = "SLAM"
+        PrintName = "SLAM"
     }
 }
 
 ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
-	if wep:Clip1() == 0 then
-		wep:SetNextPrimaryFire(1/300)
-	end
+    if wep:Clip1() == 0 then
+        wep:SetNextPrimaryFire(1/300)
+    end
 end
 
 ATT.Attachments = {
@@ -211,9 +211,9 @@ ATT.Ammo = "buckshot"
 ATT.ShotgunReload = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	if anim == "reload_start_empty" then return "reload_start_empty_slam" end
-	if anim == "reload_insert_1" then return "reload_insert_slam" end
-	if anim == "reload_insert_5" then return "reload_insert_slam_5" end
+    if anim == "reload_start_empty" then return "reload_start_empty_slam" end
+    if anim == "reload_insert_1" then return "reload_insert_slam" end
+    if anim == "reload_insert_5" then return "reload_insert_slam_5" end
     return anim .. "_slam"
 end
 
@@ -238,12 +238,11 @@ ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"
 ATT.ActivateElements = {"garand_sks", "nogrip", "ubgl_maghold"}
 
 ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
-	if wep:Clip1() == 0 then
-		wep:SetNextPrimaryFire(1/300)
-	end
+    if wep:Clip1() == 0 then
+        wep:SetNextPrimaryFire(CurTime())
+    end
 end
 
-ATT.DrawFunc = function(swep, model, wm) end
 ATT.RPMMult = 60 / 300
 ATT.Firemodes = {
     {
@@ -265,9 +264,9 @@ ATT.SprintToFireTimeMult = 1.05
 ATT.ShotgunReload = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	if anim == "reload_start_empty" then return "reload_start_empty_sks" end
-	if anim == "reload_insert_1" then return "reload_insert_sks_1" end
-	if anim == "reload_insert_5" then return "reload_insert_sks_5" end
+    if anim == "reload_start_empty" then return "reload_start_empty_sks" end
+    if anim == "reload_insert_1" then return "reload_insert_sks_1" end
+    if anim == "reload_insert_5" then return "reload_insert_sks_5" end
 
     return anim .. "_sks"
 end
@@ -282,6 +281,58 @@ ATT.ModelAngleOffset = Angle(90, -90, 0)
 ATT.Model = "models/weapons/geckololt_css/grip/garand_romania.mdl"
 
 ARC9.LoadAttachment(ATT, "gekolt_dod_garand_strip")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = "Rocheux-Pierreux-Charpente"
+ATT.CompactName = "M1000"
+ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
+ATT.Description = [[Futuristic garage kit suitable for shooting bugs.
+Modified gas system fires two rounds at once while aiming.
+Custom cartridges reduce recoil significantly.]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 5
+
+ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"garand_drg"}
+
+ATT.DamageMax = 60
+ATT.DamageMin = 40
+
+-- need reload anim to support
+-- ATT.ClipSize = 14
+
+ATT.RecoilMult = 0.75
+ATT.RecoilMultRecoil = 0.9
+
+ATT.NumSighted = 2
+ATT.AmmoPerShotSighted = 2
+ATT.RPMMultSighted = 0.3
+ATT.RecoilMultSighted = 2.5
+ATT.RecoilKickMultSighted = 2
+
+ATT.Firemodes = {
+    {
+        Mode = 1,
+        PrintName = "FOCUS",
+    },
+}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if wep:GetProcessedValue("AmmoPerShot") == 2 then
+        return anim .. "_focus"
+    else
+        return anim .. "_drg"
+    end
+end
+
+ARC9.LoadAttachment(ATT, "gekolt_dod_garand_drg")
 
 
 ----------------------------------------------------------------------------------
