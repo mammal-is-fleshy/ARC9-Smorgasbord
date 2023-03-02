@@ -23,7 +23,7 @@ ATT.FreeAimRadiusAdd = -5
 ATT.SwayAddMove = -0.4
 ATT.SwayMultSights = 2
 
-ATT.SpreadAdd = 0.003
+ATT.SpreadAdd = 0.004
 
 ATT.RecoilMult = 1.15
 ATT.SpreadMultRecoil = 1.1
@@ -66,20 +66,25 @@ ATT.ActivateElements = {"garand_m14", "ubgl_maghold"}
 -- ATT.ShootSound = "gekolt_dod/m1carbine_shoot.wav"
 -- ATT.MuzzleParticle = "muzzleflash_smg"
 
-ATT.RPM = 600
 ATT.Firemodes = {
     {
         Mode = 1
     },
     {
         Mode = -1,
+        RPMMult = 2
     }
 }
 ATT.ClipSizeOverride = 20
 ATT.ChamberSizeOverride = 1
 
+ATT.SpreadAdd = 0.0025
+
 ATT.RangeMin = 1000
 ATT.RangeMax = 7500
+
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = 0.02
 
 ATT.RecoilDissipationRateMult = 0.75
 ATT.SpreadMultRecoil = 1.15
@@ -133,7 +138,7 @@ ATT.MuzzleParticle = "muzzleflash_smg"
 
 ATT.Ammo = "smg1"
 
-ATT.RPMMult = 650 / 300
+ATT.RPM = 650
 ATT.Firemodes = {
     {
         Mode = -1
@@ -145,8 +150,8 @@ ATT.Firemodes = {
 ATT.ClipSizeOverride = 30
 ATT.ChamberSizeOverride = 1
 
-ATT.Spread = 0.0015
-ATT.SpreadAddHipFire = -0.005
+ATT.SpreadAdd = 0.0015
+ATT.SpreadAddHipFire = -0.012
 
 ATT.FreeAimRadiusAdd = -4
 ATT.SwayAdd = -0.2
@@ -155,10 +160,10 @@ ATT.SwayAddMove = -0.25
 ATT.RecoilUp = 0.3
 ATT.RecoilSide = 0.15
 ATT.RecoilDissipationRate = 15
-ATT.SpreadAddRecoil = -0.002
-ATT.SpreadMultRecoil = 0.85
-ATT.RecoilMultRecoil = 0.63
-ATT.RecoilModifierCap = 14
+ATT.SpreadAddRecoil = -0.003
+ATT.SpreadMultRecoil = 0.95
+ATT.RecoilMultRecoil = 0.6
+ATT.RecoilModifierCap = 10
 
 ATT.DamageMax = 35
 ATT.DamageMin = 20
@@ -197,6 +202,7 @@ ATT.PrintName = "Trancheuse-Charpente"
 ATT.CompactName = "SLAM"
 ATT.Icon = Material("entities/gekolt_dod_garand_slam.png", "mips smooth")
 ATT.Description = [[Unholy creation for all your trench sweeping needs.
+Still goes ping even though it doesn't use clips anymore. This is because - *dies of cringe*
 
 Somewhere in the afterlife, John Garand is weeping for your sins (yes, that is his real name).]]
 

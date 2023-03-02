@@ -637,6 +637,9 @@ SWEP.Animations = {
     ["fire_empty_slam"] = {
         Source = "fire_emp",
         EjectAt = 0 / 40,
+        EventTable = {
+            {s = "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
+        },
     },
     ["fire_iron_slam"] = {
         Source = "fire_slam",
@@ -648,6 +651,9 @@ SWEP.Animations = {
     ["fire_iron_empty_slam"] = {
         Source = "fire_emp",
         EjectAt = 0 / 40,
+        EventTable = {
+            {s = "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
+        },
     },
 
     ["reload_start_slam"] = {
