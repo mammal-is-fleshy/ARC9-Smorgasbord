@@ -286,6 +286,11 @@ SWEP.BulletBones = {
     [8] = "W_Ammo1",
 }
 
+-- The clip and its ammo are usually hidden in the stock, but the Vanguard stock makes them visible
+SWEP.HideBones = {
+    "W_Ammo1", "W_Ammo2", "W_Ammo3", "W_Ammo4", "W_Ammo5", "W_Ammo6", "W_Ammo7", "W_Ammo8", "W_Clip"
+}
+
 SWEP.AttachmentElements = {
     ["garand_slam"] = {
         Bodygroups = {{1, 2}},

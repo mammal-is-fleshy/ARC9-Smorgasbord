@@ -30,6 +30,9 @@ ATT.SprintToFireTimeAdd = -0.06
 
 ATT.RPMMult = 1.15
 
+ATT.RangeMin = 750
+ATT.RangeMax = 6000
+
 ARC9.LoadAttachment(ATT, "gekolt_dod_garand_vanguard")
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
