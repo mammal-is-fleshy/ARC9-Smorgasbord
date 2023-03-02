@@ -2,7 +2,7 @@ ATT.PrintName = "Heavy Foregrip"
 ATT.CompactName = "HEAVY"
 ATT.Description = [[Simple foregrip with an additional rail for more gadgets.]]
 
-ATT.Icon = Material("entities/gekolt_css_fore_troy.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_css_fore_rail.png", "mips smooth")
 
 ATT.Model = "models/weapons/geckololt_css/atts/fg_railed.mdl"
 

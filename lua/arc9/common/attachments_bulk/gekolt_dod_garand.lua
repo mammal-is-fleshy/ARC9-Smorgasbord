@@ -339,7 +339,7 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_strip")
 
 ATT = {}
 
-ATT.PrintName = "Rocheux-Pierreux-Charpente"
+ATT.PrintName = "Rocheusse-Pierreusse-Charpente"
 ATT.CompactName = "M1000"
 ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
 ATT.Description = [[Futuristic garage kit made for space mining operations.

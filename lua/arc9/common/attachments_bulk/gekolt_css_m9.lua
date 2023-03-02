@@ -235,6 +235,13 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_sd"
 end
 
+ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
+	if wep:Clip1() == 0 then
+		wep:SetNextPrimaryFire(1/30)
+	end
+end
+
+
 ATT.Sights = {
     {
         Pos = Vector(3.85, 0, 12),
