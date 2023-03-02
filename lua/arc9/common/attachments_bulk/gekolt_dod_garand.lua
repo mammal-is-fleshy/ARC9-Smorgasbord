@@ -74,6 +74,9 @@ ATT.Firemodes = {
 ATT.ClipSizeOverride = 20
 ATT.ChamberSizeOverride = 1
 
+ATT.RangeMin = 1000
+ATT.RangeMax = 7500
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_308"
 end

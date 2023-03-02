@@ -9,16 +9,16 @@ SWEP.SubCategory = "Primaries"
 SWEP.PrintName = "Toudranéant-30"  -- /tu-druh-nee-aun/
 SWEP.TrueName = "M1 Garand"
 
-SWEP.Class = "Marskman Rifle"
+SWEP.Class = "Battle Rifle"
 SWEP.Trivia = {
     ["Country of Origin"] = [[[Dominion of] Canada]], -- me purposely spreading misinfomation --  I SAY SO
     ["Caliber"] = ".30-06 Springfield",
 }
 
 SWEP.Credits = {
-	["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
-	["Assets2"] = [[Day of Defeat: Source]],
-	["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
+    ["Assets2"] = [[Day of Defeat: Source]],
+    ["Contact3"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[The first truly successful self-loading rifle; a watershed and forerunner among firearms.
