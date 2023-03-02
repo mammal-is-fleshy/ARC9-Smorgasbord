@@ -771,10 +771,27 @@ SWEP.Animations = {
     },
 
     -- rock and stone or something
+    ["fire_focus"] = {
+        Source = "fire",
+        EjectAt = 0 / 40,
+        EventTable = {
+            {s = "gekolt_dod/m1carbine_boltforward.wav", t = 0 / 40},
+            {shelleject = 0, att = 2, t = 2 / 40},
+        },
+    },
     ["fire_iron_focus"] = {
         Source = "fire_iron",
         EjectAt = 0 / 40,
         EventTable = {
+            {s = "gekolt_dod/m1carbine_boltforward.wav", t = 0 / 40},
+            {shelleject = 0, att = 2, t = 2 / 40},
+        },
+    },
+    ["fire_iron_focus"] = {
+        Source = "fire_iron",
+        EjectAt = 0 / 40,
+        EventTable = {
+            {s = "gekolt_dod/m1carbine_boltforward.wav", t = 0 / 40},
             {shelleject = 0, att = 2, t = 2 / 40},
         },
     },
@@ -782,6 +799,7 @@ SWEP.Animations = {
         Source = "fire_iron_no",
         EjectAt = 0 / 40,
         EventTable = {
+            {s = "gekolt_dod/m1carbine_boltforward.wav", t = 0 / 40},
             {s =  "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
             {shelleject = 2, att = 3, t = 1 / 40},
             {shelleject = 0, att = 2, t = 2 / 40},

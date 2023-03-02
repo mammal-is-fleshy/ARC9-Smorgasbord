@@ -302,20 +302,49 @@ ATT.SortOrder = 5
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_drg"}
 
-ATT.DamageMax = 60
-ATT.DamageMin = 40
-
 -- need reload anim to support
 -- ATT.ClipSize = 14
+
+ATT.DamageMax = 60
+ATT.DamageMin = 40
 
 ATT.RecoilMult = 0.75
 ATT.RecoilMultRecoil = 0.9
 
-ATT.NumSighted = 2
-ATT.AmmoPerShotSighted = 2
-ATT.RPMMultSighted = 0.3
-ATT.RecoilMultSighted = 2.5
-ATT.RecoilKickMultSighted = 2
+-- ATT.NumSighted = 2
+-- ATT.AmmoPerShotSighted = 2
+-- ATT.RPMMultSighted = 0.3
+-- ATT.RecoilMultSighted = 2.5
+-- ATT.RecoilKickMultSighted = 2
+ATT.NumHeated = 2
+ATT.AmmoPerShotHeated = 2
+ATT.RPMMultHeated = 0.3
+ATT.RecoilMultHeated = 2.5
+ATT.RecoilKickHeated = 2
+
+ATT.TriggerDelay = true
+ATT.TriggerDelayTime = 0
+ATT.TriggerDelayCancellable = false
+ATT.TriggerDelayReleaseToFire = true
+
+ATT.Overheat = true
+ATT.HeatPerShot = 0
+ATT.HeatCapacity = 1
+ATT.HeatDissipation = 0
+ATT.HeatLockout = false
+ATT.HeatDelayTime = 0
+
+ATT.Hook_Think = function(wep)
+    if not IsFirstTimePredicted() then return end
+
+    local primedAttack = wep:GetPrimedAttack()
+    if primedAttack then
+        wep:SetHeatAmount(math.min(1, wep:GetHeatAmount() + engine.TickInterval() * 2))
+    else
+        wep:SetHeatAmount(0)
+        wep:SetJammed(false)
+    end
+end
 
 ATT.Firemodes = {
     {
@@ -325,7 +354,7 @@ ATT.Firemodes = {
 }
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    if wep:GetProcessedValue("AmmoPerShot") == 2 then
+    if wep:GetHeatAmount() == 1 then
         return anim .. "_focus"
     else
         return anim .. "_drg"
