@@ -8,7 +8,8 @@ ATT = {}
 ATT.PrintName = "Tranchante-Charpente"
 ATT.CompactName = "Vanguard"
 ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
-ATT.Description = [[Extra short experimental module for paratrooper with extra funky definitely non-foldable stock]]
+ATT.Description = [[Extra short experimental paratrooper model with extra funky definitely non-foldable stock.
+Modified loader can quickly eject non-empty clips in a spectacular but wasteful fashion.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -27,6 +28,10 @@ ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.75
 
 ARC9.LoadAttachment(ATT, "gekolt_dod_garand_vanguard")
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_vanguard"
+end
 
 
 ----------------------------------------------------------------------------------

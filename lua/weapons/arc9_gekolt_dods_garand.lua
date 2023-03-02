@@ -333,7 +333,12 @@ SWEP.ExtraShellModels = {
     [1] = {
         model = "models/weapons/geckololt_css/shell_garand_raw.mdl",
         smoke = false,
-        ShellSmoke = false
+        velocity = {0.75, 1.5},
+    },
+    [2] = {
+        model = "models/weapons/geckololt_css/shell_garand_clip.mdl",
+        smoke = false,
+        velocity = 1,
     },
 }
 
@@ -445,6 +450,7 @@ SWEP.Animations = {
         EjectAt = 0 / 40,
         EventTable = {
             {s =  "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
+            {shelleject = 2, att = 3, t = 1 / 40},
         },
     },
     ["fire_iron_empty"] = {
@@ -452,6 +458,7 @@ SWEP.Animations = {
         EjectAt = 0 / 40,
         EventTable = {
             {s =  "gekolt_dod/garand_clipding.wav" ,   t = 1 / 40},
+            {shelleject = 2, att = 3, t = 1 / 40},
         },
     },
 
@@ -466,17 +473,7 @@ SWEP.Animations = {
             {s =  "gekolt_dod/garand_clipin1.wav" ,   t = 55 / 40},
             {s =  "gekolt_dod/garand_clipin2.wav" ,    t = 60 / 40},
             {s =  "gekolt_dod/garand_boltforward.wav" ,    t = 78 / 40},
-
-            {shelleject = {index = 1, upto = 1}, att = 2, t = 13 / 30},
-            {shelleject = {index = 1, upto = 2}, att = 2, t = 14 / 30},
-            {shelleject = {index = 1, upto = 3}, att = 2, t = 15 / 30},
-            {shelleject = {index = 1, upto = 4}, att = 2, t = 16 / 30},
-            {shelleject = {index = 1, upto = 5}, att = 2, t = 13 / 30},
-            {shelleject = {index = 1, upto = 6}, att = 2, t = 14 / 30},
-            {shelleject = {index = 1, upto = 7}, att = 2, t = 15 / 30},
         },
-        ShellSmoke = false,
-        DumpAmmo = true,
         MagSwapTime = 40 / 40,
         MinProgress = 0.85,
         IKTimeLine = {
@@ -492,6 +489,46 @@ SWEP.Animations = {
             {s =  "gekolt_dod/garand_clipin1.wav" ,   t = 30 / 40},
             {s =  "gekolt_dod/garand_clipin2.wav" ,    t = 35 / 40},
             {s =  "gekolt_dod/garand_boltforward.wav" ,    t = 50 / 40},
+        },
+    },
+
+    -- Vanguard
+    ["reload_vanguard"] = {
+        Source = "wet_fast", -- TODO: Change to something that doesn't catch the clip
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_dod/m1carbine_boltback.wav" ,   t = 8 / 40},
+            {s =  "gekolt_dod/garand_clipding.wav" ,   t = 13 / 40},
+            {s =  "gekolt_dod/garand_clipin1.wav" ,   t = 42 / 40},
+            {s =  "gekolt_dod/garand_clipin2.wav" ,    t = 48 / 40},
+            {s =  "gekolt_dod/garand_boltforward.wav" ,    t = 65 / 40},
+
+            {shelleject = 2, att = 3, t = 13 / 40},
+            {shelleject = {index = 1, upto = 1}, att = 3, t = 13 / 40},
+            {shelleject = {index = 1, upto = 2}, att = 3, t = 13.5 / 40},
+            {shelleject = {index = 1, upto = 3}, att = 3, t = 14 / 40},
+            {shelleject = {index = 1, upto = 4}, att = 3, t = 14.5 / 40},
+            {shelleject = {index = 1, upto = 5}, att = 3, t = 15 / 40},
+            {shelleject = {index = 1, upto = 6}, att = 3, t = 15.25 / 40},
+            {shelleject = {index = 1, upto = 7}, att = 3, t = 15.5 / 40},
+        },
+        ShellSmoke = false,
+        DumpAmmo = true,
+        MagSwapTime = 40 / 40,
+        MinProgress = 0.85,
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 1, lhik = 1, rhik = 1, },
+        },
+    },
+    ["reload_empty_vanguard"] = {
+        Source = "dry_fast",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        MinProgress = 0.925,
+        EventTable = {
+            {s =  "gekolt_dod/garand_clipin1.wav" ,   t = 22 / 40},
+            {s =  "gekolt_dod/garand_clipin2.wav" ,    t = 32 / 40},
+            {s =  "gekolt_dod/garand_boltforward.wav" ,    t = 40 / 40},
         },
     },
 
