@@ -90,9 +90,8 @@ if SERVER then
             local tr = util.QuickTrace(self:GetPos(), ent:WorldSpaceCenter() - self:GetPos(), self)
             if tr.Entity == ent then
                 dmg:SetDamagePosition(self:GetPos())
-                dmg:SetDamage(150 * math.Rand(0.8, 1) * deg)
+                dmg:SetDamage(150 * math.Rand(0.75, 1) * deg)
                 ent:TakeDamageInfo(dmg)
-                print(ent, dmg:GetDamage())
             end
         end
 
