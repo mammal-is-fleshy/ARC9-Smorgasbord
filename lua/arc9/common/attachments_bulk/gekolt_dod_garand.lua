@@ -291,9 +291,8 @@ ATT = {}
 ATT.PrintName = "Rocheux-Pierreux-Charpente"
 ATT.CompactName = "M1000"
 ATT.Icon = Material("entities/gekolt_dod_garand_vanguard.png", "mips smooth")
-ATT.Description = [[Futuristic garage kit suitable for shooting bugs.
-Modified gas system fires two rounds at once while aiming.
-Custom cartridges reduce recoil significantly.]]
+ATT.Description = [[Futuristic garage kit made for space mining operations.
+Modified trigger and gas system can fire two shots at once after charging briefly.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -311,11 +310,6 @@ ATT.DamageMin = 40
 ATT.RecoilMult = 0.75
 ATT.RecoilMultRecoil = 0.9
 
--- ATT.NumSighted = 2
--- ATT.AmmoPerShotSighted = 2
--- ATT.RPMMultSighted = 0.3
--- ATT.RecoilMultSighted = 2.5
--- ATT.RecoilKickMultSighted = 2
 ATT.NumHeated = 2
 ATT.AmmoPerShotHeated = 2
 ATT.RPMMultHeated = 0.3
