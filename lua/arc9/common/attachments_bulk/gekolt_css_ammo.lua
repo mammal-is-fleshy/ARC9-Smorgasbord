@@ -255,7 +255,8 @@ ATT = {}
 ATT.PrintName = "Signal Flare"
 ATT.CompactName = "FLARE"
 ATT.Icon = Material("entities/gekolt_css_ammo/shotgun.png", "mips smooth")
-ATT.Description = [[burn2.]]
+ATT.Description = [[Low pressure shell containing an illuminating flare burning at a high temperature.
+Usually used for signalling, but can light things up in a pinch.]]
 ATT.SortOrder = 0
 
 ATT.Category = {"css_ammo_sg"}
@@ -266,5 +267,7 @@ ATT.SpreadMult = 0.3
 
 ATT.ShootEnt = "gekolt_fnv_flare"
 ATT.ShootEntForce = 5000
+
+ATT.RecoilMult = 0.25
 
 ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_flame")
