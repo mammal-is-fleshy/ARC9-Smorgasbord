@@ -84,8 +84,30 @@ ATT.RangeMax = 7500
 ATT.RecoilDissipationRateMult = 0.75
 ATT.SpreadMultRecoil = 1.15
 
+ATT.FreeAimRadiusAdd = -2
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_308"
+end
+
+ATT.Hook_PrimaryAttack = function(wep)
+    if SERVER and wep:GetBurstCount() > 5 and math.random() <= (wep:GetBurstCount() - 5) * 0.0025 then
+        -- YOU BROKE YOUR SHOULDERS, IDIOT.
+        wep:GetOwner():EmitSound("vo/npc/male01/myarm0" .. math.random(1, 2) .. ".wav", 75)
+        local dmg = DamageInfo()
+        dmg:SetAttacker(wep:GetOwner())
+        dmg:SetInflictor(wep)
+        dmg:SetDamage(math.random(15, 25))
+        dmg:SetDamageType(DMG_GENERIC)
+        wep:GetOwner():TakeDamageInfo(dmg)
+        wep:GetOwner():ViewPunch(Angle(20, -10, 5))
+        -- can't do it right now because the gun isn't done firing yet
+        timer.Simple(0, function()
+            if IsValid(wep) and IsValid(wep:GetOwner()) then
+                wep:GetOwner():DropWeapon(wep, nil, wep:GetOwner():GetForward() * -200 + VectorRand() * 50 + Vector(0, 0, 150))
+            end
+        end)
+    end
 end
 
 ARC9.LoadAttachment(ATT, "gekolt_dod_garand_m14")
@@ -174,7 +196,9 @@ ATT = {}
 ATT.PrintName = "Trancheuse-Charpente"
 ATT.CompactName = "SLAM"
 ATT.Icon = Material("entities/gekolt_dod_garand_slam.png", "mips smooth")
-ATT.Description = [[Unholy creation for all your trench sweeping needs.]]
+ATT.Description = [[Unholy creation for all your trench sweeping needs.
+
+Somewhere in the afterlife, John Garand is weeping for your sins (yes, that is his real name).]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -206,16 +230,17 @@ ATT.Attachments = {
     },
 }
 
-ATT.ClipSizeOverride = 7
+ATT.ClipSizeOverride = 5
 ATT.ChamberSizeOverride = 1
 
-ATT.FreeAimRadiusAdd = 5
+ATT.FreeAimRadiusAdd = 2
 ATT.NumOverride = 10
 ATT.SpreadAdd = 0.0175
-ATT.DamageMaxMult = 12 / 80
-ATT.DamageMinMult = 6 / 30
+ATT.DamageMax = 12
+ATT.DamageMin = 6
 
 ATT.RecoilMult = 3
+ATT.RecoilModifierCap = 2
 
 ATT.Ammo = "buckshot"
 
@@ -239,7 +264,8 @@ ATT = {}
 ATT.PrintName = "Charognarde-Charpente"
 ATT.CompactName = "SCAV"
 ATT.Icon = Material("entities/gekolt_dod_garand_romania.png", "mips smooth")
-ATT.Description = [[Coversion to a lever action high calibre with a fixed magazine, stripper load only]]
+ATT.Description = [[Lever action conversion that could only have come from the hands of some Eastern European crackhead. A wooden "dong" grip is somehow carved onto the frame for stability.
+Fires a sniper cartridge that overpenetrates up close, and can only be loaded from the top.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -249,7 +275,7 @@ ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"
 ATT.ActivateElements = {"garand_sks", "nogrip", "ubgl_maghold"}
 
 
-ATT.RPM = 60
+ATT.RPM = 45
 ATT.RPMEmpty = 600
 
 ATT.Firemodes = {
@@ -261,13 +287,24 @@ ATT.Firemodes = {
 ATT.ClipSizeOverride = 12
 ATT.ChamberSizeOverride = 1
 
-ATT.DamageMaxMult = 105 / 80
-ATT.DamageMinMult = 45 / 30
-ATT.RecoilMult = 3
-ATT.RecoilKickMult = 1.5
+ATT.SwayAdd = -0.05
+ATT.SwayAddMove = 0.1
+ATT.SwayMultSights = 0.75
 
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 1.05
+ATT.FreeAimRadiusAdd = -2
+
+ATT.DamageMax = 40
+ATT.DamageMin = 80
+ATT.RangeMin = 500
+ATT.RangeMax = 2500
+
+ATT.RecoilMult = 2
+ATT.RecoilKickMult = 1.5
+ATT.RecoilMultRecoil = 0.6
+ATT.RecoilModifierCap = 3
+
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = 0.025
 
 ATT.ShotgunReload = true
 

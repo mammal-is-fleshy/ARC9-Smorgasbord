@@ -638,6 +638,17 @@ SWEP.Animations = {
         Source = "fire_emp",
         EjectAt = 0 / 40,
     },
+    ["fire_iron_slam"] = {
+        Source = "fire_slam",
+        EjectAt = 12 / 40,
+        EventTable = {
+            {s =  "gekolt_css/m3_pump.wav" ,   t = 5 / 40},
+        },
+    },
+    ["fire_iron_empty_slam"] = {
+        Source = "fire_emp",
+        EjectAt = 0 / 40,
+    },
 
     ["reload_start_slam"] = {
         Source = "start_slam",
