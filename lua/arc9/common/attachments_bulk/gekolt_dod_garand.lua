@@ -28,7 +28,7 @@ ATT.RecoilMultRecoil = 0.9
 ATT.AimDownSightsTimeAdd = -0.04
 ATT.SprintToFireTimeAdd = -0.06
 
-ATT.RPMMult = 1.15
+ATT.RPM = 360
 
 ATT.RangeMin = 750
 ATT.RangeMax = 6000
@@ -48,19 +48,21 @@ ATT = {}
 ATT.PrintName = "Chasseuse-Charpente"
 ATT.CompactName = "YSL"
 ATT.Icon = Material("entities/gekolt_dod_garand_m14.png", "mips smooth")
-ATT.Description = [["Prototype" of a Mag-Fed conversion, fitted with 20 rounders
-Full-auto is thrown in to be field tested though it is not advised]]
+ATT.Description = [[Select-fire prototype that accepts box magazines. This model has a curious short barrel that makes it resemble a later US military rifle.
+
+Integrity of your shoulder is not guaranteed if you dare touch that fire selector.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
 
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
-ATT.ShootSound = "gekolt_dod/m1carbine_shoot.wav"
 ATT.ActivateElements = {"garand_m14", "ubgl_maghold"}
-ATT.MuzzleParticle = "muzzleflash_smg"
 
-ATT.RPMMult = 500 / 300
+-- ATT.ShootSound = "gekolt_dod/m1carbine_shoot.wav"
+-- ATT.MuzzleParticle = "muzzleflash_smg"
+
+ATT.RPM = 500
 ATT.Firemodes = {
     {
         Mode = 1
@@ -72,14 +74,6 @@ ATT.Firemodes = {
 ATT.ClipSizeOverride = 20
 ATT.ChamberSizeOverride = 1
 
-ATT.DamageMaxMult = 42 / 70
-ATT.DamageMinMult = 21 / 45
-//ATT.RecoilMult = 1 / 1
-ATT.RecoilKickMult = 1.75 / 2
-
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.15
-
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_308"
 end
@@ -88,15 +82,12 @@ ARC9.LoadAttachment(ATT, "gekolt_dod_garand_m14")
 
 
 ----------------------------------------------------------------------------------
-
-
 ATT = {}
 
 ATT.PrintName = "Sportive-Charpente"
 ATT.CompactName = "SCF"
 ATT.Icon = Material("entities/gekolt_dod_garand_mini.png", "mips smooth")
-ATT.Description = [[Modernised Mag-Fed system loaded in a lower calibre
-Configurated with full-auto as its core.]]
+ATT.Description = [["Modernized" model using an intermediate cartridge and ]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -170,23 +161,14 @@ ATT.ShootSound = "gekolt_dod/1887_fire01.wav"
 ATT.ShellModelOverride = "models/shells/shell_12gauge.mdl"
 ATT.ShellScaleOverride = 1
 
-ATT.RPMMult = 120 / 300
+ATT.RPM = 100
+ATT.RPMEmpty = 600
 ATT.Firemodes = {
-    {
-        Mode = 1,
-        PrintName = "Pump"
-    },
     {
         Mode = -1,
         PrintName = "SLAM"
     }
 }
-
-ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
-    if wep:Clip1() == 0 then
-        wep:SetNextPrimaryFire(1/300)
-    end
-end
 
 ATT.Attachments = {
     {
@@ -240,13 +222,10 @@ ATT.SortOrder = 4
 ATT.Category = "dod_garand_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"garand_sks", "nogrip", "ubgl_maghold"}
 
-ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
-    if wep:Clip1() == 0 then
-        wep:SetNextPrimaryFire(CurTime())
-    end
-end
 
-ATT.RPMMult = 60 / 300
+ATT.RPM = 60
+ATT.RPMEmpty = 600
+
 ATT.Firemodes = {
     {
         Mode = 1,
