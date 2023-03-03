@@ -38,9 +38,10 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
+SWEP.NoTPIK = false
+
 SWEP.DefaultBodygroups = "00"
 
-SWEP.CanBlindFire = false
 -------------------------- MAGAZINE
 
 SWEP.Ammo = "" -- What ammo type this gun uses.
@@ -64,7 +65,7 @@ SWEP.Firemodes = {
 
 SWEP.FreeAimRadius = 0
 
-SWEP.SprintToFireTime = 0.15 -- How long it takes to go from sprinting to being able to fire.
+SWEP.SprintToFireTime = 0.1
 SWEP.AimDownSightsTime = 0.1
 
 SWEP.SpeedMult = 1
@@ -91,6 +92,8 @@ SWEP.PostBashTime = 0.3
 SWEP.ShootWhileSprint = true
 SWEP.BashWhileSprint = true
 
+SWEP.BashThirdArmAnimation = false
+
 -------------------------- TRACERS
 
 SWEP.TracerNum = 1 -- Tracer every X
@@ -101,6 +104,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 SWEP.HasSights = true
 SWEP.HoldBreathTime = 0
 SWEP.CanLean = false
+SWEP.Sway = 0
 
 SWEP.SprintAng = Angle(0, 0, 0)
 SWEP.SprintPos = Vector(0, -2, 0)
@@ -117,6 +121,10 @@ SWEP.CrouchPos = Vector(0, -3, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeRotateAnchor = Vector(15, -2, 0)
+
+SWEP.PeekPos = Vector(0, -3, -8)
+SWEP.PeekAng = Angle(0, 10, 0)
+
 -------------------------- HoldTypes
 
 SWEP.HoldType = "duel"
@@ -125,7 +133,8 @@ SWEP.HoldTypeSprint = "duel"
 SWEP.HoldTypeHolstered = "duel"
 SWEP.HoldTypeCustomize = "slam"
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE
+SWEP.AnimShoot = ACT_IDLE_MELEE --ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE
+SWEP.AnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_FIST
 SWEP.AnimReload = ACT_IDLE_MELEE
 SWEP.AnimDraw = false
 
@@ -151,15 +160,14 @@ SWEP.Animations = {
 
     ["enter_sights"] = {
         Source = "block",
+        Time = 0.3,
+        Reverse = false,
+        NoStatAffectors = true,
     },
     ["idle_sights"] = {
         Source = "block_hold",
     },
-
---[[    ["impact"] = {
-     Source = {"slash_hit", "slash2_hit", "slash3_hit", "bash1", "bash2", "bash3"}
-    },	]]
-
+    ["exit_sights"] = false,
 }
 
 -------------------------- ATTACHMENTS
