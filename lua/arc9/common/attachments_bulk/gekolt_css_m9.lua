@@ -225,6 +225,7 @@ ATT.ActivateElements = {"f_welrod", "pre_muzzed", "akantbo"}
 ATT.ShootSound = "gekolt_css/usp1.wav"
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.RPMMult = 60 / 800
+ATT.RPMEmpty = 300
 
 ATT.DamageMaxMult = 54 / 26
 ATT.DamageMinMult = 39 / 16
@@ -233,12 +234,6 @@ ATT.SpreadMult = 0.15
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_sd"
-end
-
-ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
-	if wep:Clip1() == 0 then
-		wep:SetNextPrimaryFire(1/30)
-	end
 end
 
 

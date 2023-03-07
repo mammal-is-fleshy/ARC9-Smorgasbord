@@ -163,12 +163,7 @@ ATT.ShootSound = "gekolt_css/cs5_sup-1.wav"
 ATT.ClipSizeOverride = 5
 
 ATT.RPMMult = 60 / 750
-
-ATT.Hook_Think = function(wep, data)	-- able to reload instantly without the awkward waits, shits ugly!!
-	if wep:Clip1() == 0 then
-		wep:SetNextPrimaryFire(1/300)
-	end
-end
+ATT.RPMEmpty = 600
 
 ATT.Sights = {
     {
