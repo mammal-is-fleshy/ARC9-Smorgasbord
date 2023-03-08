@@ -302,9 +302,14 @@ SWEP.AttachmentElements = {
         AttPosMods = { [2] = { Pos = Vector(0,  -1.1, 5), }, [3] = { Pos = Vector(0, 0, 22.5), } }
     },
 
-    ["garand_vanguard"] = {
-        Bodygroups = {{1, 6}},
-        AttPosMods = { [3] = { Pos = Vector(0, 0, 20.25), } }
+	["garand_vanguard"] = {
+		Bodygroups = {{1, 6}},
+		AttPosMods = { [3] = { Pos = Vector(0, 0, 20.25), } }
+    },
+
+    ["garand_drg"] = {
+		Bodygroups = {{1, 7}},
+		AttPosMods = { [3] = { Pos = Vector(0, 0, 20.25), } }
     },
 
     ["garand_sks"] = {

@@ -16,7 +16,8 @@ $bodygroup "kit"
 	studio "Garand_Mini.smd"
 	studio "Garand_Romania_Mauser.smd"
 	blank
-	studio "Garand_Vanguard.smd"	
+	studio "Garand_Vanguard.smd"
+	studio "Garand_Charge.smd"	
 }
 
 $bodygroup "Rail1"

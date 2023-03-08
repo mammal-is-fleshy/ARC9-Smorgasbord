@@ -265,15 +265,15 @@ ATT.IKAnimationProxy = {
     ["reload_ubgl"] = {
         Source = "wet",
         EventTable = {		
-            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/ump45_clipin.wav" ,    t = 59 / 40},			
+            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 8 / 40},
+            {s =  "gekolt_css/ump45_clipin.wav" ,    t = 61 / 40},			
         },
     },  
 	["reload_ubgl_empty"] = {
         Source = "dry",
         EventTable = {		
-            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/ump45_clipin.wav" ,    t = 59 / 40},	
+            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 8 / 40},
+            {s =  "gekolt_css/ump45_clipin.wav" ,    t = 61 / 40},	
             {s =  "gekolt_css/ump45_boltslap.wav" ,   t = 89 / 40},			
         },
     },	
