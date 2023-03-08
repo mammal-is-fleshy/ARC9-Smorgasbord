@@ -1,6 +1,6 @@
 ATT.PrintName = [[Kleinevoller-45]]
 ATT.CompactName = "UMP-45"
-ATT.Icon = Material("entities/gekolt_dod_ubw_garand.png")
+ATT.Icon = Material("entities/gekolt_dod_ubw_ump.png")
 ATT.Description = [[
 Puts the U in Universal
 **Requires a magazine to grip.**
@@ -15,23 +15,20 @@ ATT.LHIK = true
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
         Source = "fire",
-        EventTable = {
-            {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
-        },		
     },
     ["reload_ubgl"] = {
         Source = "wet",
         EventTable = {		
-            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 8 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 59 / 40},			
+            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/ump45_clipin.wav" ,    t = 59 / 40},			
         },
     },  
 	["reload_ubgl_empty"] = {
         Source = "dry",
         EventTable = {		
-            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 8 / 40},
-            {s =  "gekolt_css/galil_clipin.wav" ,    t = 59 / 40},	
-            {s =  "gekolt_css/m3_pump.wav" ,   t = 89 / 40},			
+            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 5 / 40},
+            {s =  "gekolt_css/ump45_clipin.wav" ,    t = 59 / 40},	
+            {s =  "gekolt_css/ump45_boltslap.wav" ,   t = 89 / 40},			
         },
     },	
     ["enter_ubgl"] = {
@@ -58,18 +55,18 @@ ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
 ATT.UBGL = true
-ATT.UBGLAmmo = "buckshot"
-ATT.UBGLClipSize = 5
-ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "MASS-26"
+ATT.UBGLAmmo = "pistol"
+ATT.UBGLClipSize = 15
+ATT.UBGLFiremode = -1
+ATT.UBGLFiremodeName = "UMP-45"
 ATT.UBGLChamberSize = 1
 ATT.ShootVolumeUBGL = 110
-ATT.RPMUBGL = 90
+ATT.RPMUBGL = 700
 
 ATT.SpreadUBGL = 0.025
 
 ATT.FirstShootSoundUBGL = false
-ATT.ShootSoundUBGL = "gekolt_css/elite-1.wav"
+ATT.ShootSoundUBGL = "gekolt_css/ump45-1.wav"
 ATT.DistantShootSoundUBGL = false
 ATT.HasSightsUBGL = false
 
@@ -109,3 +106,23 @@ ATT.MuzzleParticleUBGL = "muzzleflash_pistol"
 
 ATT.ModelOffset = Vector(0, 0, 1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
+
+
+ATT.Attachments = {
+    {
+        PrintName = "UBGL Magazine",
+        Category = {"smorg_ubgl_ump_mag"},
+        Pos = Vector(-2.5,0, 4),
+        Ang = Angle(0, 180, 0),
+    },
+}
+
+ATT.DrawFunc = function(swep, model, wm)
+    if swep:GetElements()["ubgl_ump_mag_9mm"] then
+        model:SetBodygroup(1,1)
+	elseif	swep:GetElements()["ubgl_ump_mag_10mm"] then
+        model:SetBodygroup(1,2)
+    else
+        model:SetBodygroup(1,0)
+    end  	
+end

@@ -269,6 +269,7 @@ SWEP.AttachmentElements = {
     },
     ["awp_f_sd"] = {
         Bodygroups = {{0, 4}},
+        AttPosMods = {[9] = { Pos = Vector(0, 2.25, 6), } }
     },
 }
 

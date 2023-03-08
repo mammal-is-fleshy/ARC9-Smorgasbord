@@ -4,6 +4,12 @@ $bodygroup "studio" {
 	studio "UB_UMP.smd"
 	blank
 }
+$bodygroup "mag" {
+	studio "UB_UMP_45.smd"
+	studio "UB_UMP_9mm.smd"
+	studio "UB_UMP_10mm.smd"
+	blank
+}
 
 $origin -2.80527 -18.6363 -3.80638 // fucking cunt
 

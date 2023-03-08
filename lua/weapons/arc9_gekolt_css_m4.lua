@@ -373,7 +373,7 @@ SWEP.Animations = {
         MinProgress = 0.83,
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.125, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.675, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
         },
         EventTable = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 10 / 40},
@@ -728,7 +728,7 @@ SWEP.Animations = {
         },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.8, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
         },
         FireASAP = true,
         MinProgress = 0.9,
@@ -741,7 +741,7 @@ SWEP.Animations = {
         },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
-        { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.675, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
         },
         FireASAP = true,
         MinProgress = 0.9,
