@@ -21,6 +21,12 @@ ATT.IKAnimationProxy = {
         },		
     },
     ["fire_ubgl_empty"] = {
+        Source = "fire",
+        EventTable = {
+            {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
+        },		
+    },
+    ["fire_ubgl_glempty"] = {
         Source = "fire_dry",
     },
     ["reload_ubgl"] = {
@@ -29,8 +35,16 @@ ATT.IKAnimationProxy = {
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 8 / 40},
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 59 / 40},			
         },
+    },  
+	["reload_ubgl_empty"] = {
+        Source = "dry",
+        EventTable = {		
+            {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 8 / 40},
+            {s =  "gekolt_css/galil_clipin.wav" ,    t = 59 / 40},	
+            {s =  "gekolt_css/m3_pump.wav" ,   t = 89 / 40},			
+        },
     },
-    ["reload_ubgl_empty"] = {
+    ["reload_ubgl_glempty"] = {
         Source = "dry",
         EventTable = {		
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 8 / 40},
@@ -42,6 +56,9 @@ ATT.IKAnimationProxy = {
         Source = "to_armed"
     },
     ["idle_ubgl"] = {
+        Source = "idle_armed"
+    },
+    ["idle_ubgl_glempty"] = {
         Source = "idle_armed"
     },
     ["idle_ubgl_empty"] = {
