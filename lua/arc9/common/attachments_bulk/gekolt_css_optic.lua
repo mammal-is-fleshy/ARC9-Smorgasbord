@@ -945,8 +945,8 @@ ARC9.LoadAttachment(ATT, "gekolt_css_optic_pvs4")
 
 ATT = {}
 
-ATT.PrintName = "Gammer Low-profile"
-ATT.CompactName = "Gammer LP"
+ATT.PrintName = "Gammer Low-Profile Reflex Sight"
+ATT.CompactName = "Gammer"
 ATT.Icon = Material("entities/gekolt_css_optic/delta.png", "mips smooth")
 ATT.Description = [[Small reflex sight designed as a backup. Peculiar reticle]]
 ATT.SortOrder = -1.6
@@ -962,8 +962,16 @@ ATT.Sights = {
         Pos = Vector(0, 10, -1.05),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
-        ViewModelFOV = 60
-    }
+        ViewModelFOV = 60,
+        HoloSightReticle = Material("arc9_css/uwu.png", "mips smooth"),
+    },
+    {
+        Pos = Vector(0, 10, -1.05),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.1,
+        ViewModelFOV = 60,
+        HoloSightReticle = Material("arc9_css/boring/ReticleDot.png", "mips smooth")
+    },
 }
 
 ATT.HoloSight = true
