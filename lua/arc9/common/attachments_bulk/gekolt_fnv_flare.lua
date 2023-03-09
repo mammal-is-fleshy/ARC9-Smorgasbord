@@ -92,7 +92,7 @@ ATT.Description = [[Hey guys, did you know that in terms of fitting weird calibr
 
 ATT.SortOrder = 1
 ATT.Category = "fnv_flare_frame"
-ATT.ActivateElements = {"50cal"}
+ATT.ActivateElements = {"50cal", "not_sg"}
 
 ATT.Ammo = "357"
 
