@@ -81,3 +81,52 @@ ARC9.LoadAttachment(ATT, "gekolt_fnv_flare_2")
 
 
 ----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = [[50. BMG]]
+ATT.CompactName = [[50 BMG]]
+ATT.Icon = Material("entities/gekolt_fas2_m79_rifle.png", "mips smooth")
+ATT.Description = [[Hey guys, did you know that in terms of fitting weird calibre in a barrel, 50. BMG is the most compatible cartridge for 12 Gauge?
+]]
+
+ATT.SortOrder = 1
+ATT.Category = "fnv_flare_frame"
+ATT.ActivateElements = {"50cal"}
+
+ATT.Ammo = "357"
+
+ATT.SpreadMult = 0.1
+
+ATT.PenetrationOverride = 12
+ATT.RicochetChanceOverride = 1
+
+ATT.NumOverride = 1
+
+ATT.DamageMaxOverride = 65
+ATT.DamageMinOverride = 34
+ATT.RangeMinOverride = 750
+ATT.RangeMaxOverride = 10000
+
+ATT.PhysBulletModelOverride = false
+ATT.ImpactDecalOverride = ""
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_50"
+end
+
+ATT.SuppressSmokeTrail = true
+
+ATT.ExplosionDamageOverride = 0
+ATT.ExplosionEffect = false
+
+ATT.ShootSound = "gekolt_css/deagle-1.wav"
+
+ATT.MuzzleParticleOverride = "muzzleflash_minimi"
+
+ATT.TracerColor = Color(255, 225, 200)
+ATT.TracerSize = 1
+
+ARC9.LoadAttachment(ATT, "gekolt_fnv_flare_3")
+
+----------------------------------------------------------------------------------

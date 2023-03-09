@@ -13,7 +13,8 @@ $bodygroup "Barrel"
 {
 	studio "Flare_Barrel.smd"
 	studio "Flare_Barrel_Rocket.smd"
-	blank			
+	blank
+	studio "Flare_Barrel_50.smd"	
 }
 
 $bodygroup "Barrel"
@@ -85,6 +86,15 @@ $sequence "fire" {
 
 $sequence "dry" {
 	"anims\dry.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry50" {
+	"anims\dry50.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

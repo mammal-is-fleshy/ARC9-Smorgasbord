@@ -253,6 +253,10 @@ SWEP.AttachmentElements = {
         Bodygroups = {{1,1},{2,1}},
         AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
     },
+    ["50cal"] = {
+        Bodygroups = {{1,3}},
+        AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
+    },
 
     ["sld"] = {
         Bodygroups = {{1,2},{0,1}},
@@ -373,6 +377,24 @@ SWEP.Animations = {
             {s =  "gekolt_css/fiveseven_clipout.wav" ,   t = 38 / 40},
             {s =  "gekolt_css/fiveseven_clipin.wav" ,    t = 45 / 40},
             {s =  "gekolt_css/p228_sliderelease.wav" ,    t = 88 / 40},
+            },
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.85, lhik = 0, rhik = 1, },{ t = 0.975, lhik = 1, rhik = 1, },
+        },
+    },
+
+    ["reload_empty_50"] = {
+        Source = "dry50",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        FireASAP = true,
+        MinProgress = 0.85,
+        EventTable = {
+            {s =  "rzen1th_smor/flare_open.wav" ,	t = 10 / 40},
+            {s =  "rzen1th_smor/flare_remove.wav" ,	t = 22 / 40},
+            {s =  "rzen1th_smor/flare_insert.wav" ,    	t = 47 / 40},
+            {s =  "rzen1th_smor/flare_close.wav" ,	t = 80 / 40},
+            {s =  "rzen1th_smor/flare_cock.wav" ,	t = 100 / 40},
             },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
