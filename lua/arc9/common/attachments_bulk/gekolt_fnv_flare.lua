@@ -87,26 +87,14 @@ ATT = {}
 ATT.PrintName = [[50. BMG]]
 ATT.CompactName = [[50 BMG]]
 ATT.Icon = Material("entities/gekolt_fas2_m79_rifle.png", "mips smooth")
-ATT.Description = [[Hey guys, did you know that in terms of fitting weird calibre in a barrel, 50. BMG is the most compatible cartridge for 12 Gauge? 50.BMG are an average of 138 mm and 360 gr. this means they're large enough to be able to handle shotgun chamber, and with their impressive ballistics for armour penetration, you can be rough with one.
+ATT.Description = [[Hey guys, did you know that in terms of fitting weird calibre in a barrel, 50. BMG is the most compatible cartridge for 12 Gauge? 50.BMG are an average of 138 mm and 360 gr. This means they're large enough to be able to handle shotguns, and with their impressive ballistics for armour penetration, you can be rough with one. Due to their advance powder based contruct, there's no doubt in my mind that a primmed 50. BMG would have incredible ballistic coefficient, so efficient that you could easily drive the bullet through air for hours with ease. They can also adapt Armour Piercing, Tracing, and Incendiary along with specific colour coded tips, so it'd be incredibly easy for one to help you in any situation. With their near perfect Rim Size, they can easily be fitted in any shotgun with enough dedication. No other calibre comes close with this level of compatibility. Also, fun fact, if you push in enough, you can fit your 50. BMG in even the smallest chamber. 50. BMG is literally built for shotgun barrel. Ungodly penetrative power + anti-materiel capability means it can be loaded from a shotgun all day, all shapes and sizes and still come for more.
 ]]
-
---[[
---[[Due to their mostly water based contruct, there's no doubt in my mind that an aroused Vaporeon would be incredibly wet, 
-so wet that you could easily have ### with one for hours without getting sore. 
-They can also learn the moves Attract, Baby-Doll eyes, Captivate, Charm and Tail Whip along with not having fur to hide nipples, 
-so it'd be incredibly easy for one to get you in the mood. 
-With their abilities Water Absorb and Hydration, they can easily recover from fatigue with enough water. ]]
-No other calibre comes Close with this level of compatibility.
---[Also, fun fact, if you push in enough, you can make your Vaporeon turn white. 50BMG is literally built for shotgun chamber. ]
-Ungodly penetrative power + anti-materiel capability means it can be loaded from a shotgun all day, all shapes and sizes and still come for more.
-]]
-
 
 ATT.SortOrder = 1
 ATT.Category = "fnv_flare_frame"
 ATT.ActivateElements = {"50cal", "not_sg"}
 
-ATT.Ammo = "357"
+ATT.Ammo = "SniperPenetratedRound"
 
 ATT.SpreadMult = 0.1
 
