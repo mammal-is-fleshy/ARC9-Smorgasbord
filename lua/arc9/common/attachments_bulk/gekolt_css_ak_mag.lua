@@ -5,8 +5,8 @@ ATT = {}
 ATT.PrintName = [[Atakovat-Rama]]
 ATT.CompactName = [[Carbine]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_545.png", "mips smooth")
-ATT.Description = [[Intermediate solution for normal infantry.
-Better at sustained fire, but slightly less stopping power.]]
+ATT.Description = [[Intermediate solution for standard infantry.
+Better at sustained fire, but suffers from slightly less stopping power.]]
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_54"
@@ -236,8 +236,7 @@ ATT = {}
 ATT.PrintName = [[Kavaleriya-Rama]]
 ATT.CompactName = [[LMG]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_cal.png", "mips smooth")
-ATT.Description = [[
-Mounted or on the move, embrace your Tachanka spirit and purge the royalist Whites
+ATT.Description = [[Mounted or on the move, embrace your Tachanka spirit and purge the royalist Whites
 Completely altered weapon requires a heavier trigger.
 ]]
 
@@ -377,9 +376,10 @@ ATT = {}
 ATT.PrintName = [[Dvornik-Rama]]
 ATT.CompactName = [[16G]]
 ATT.Icon = Material("entities/gekolt_css_ak_u_saiga.png", "mips smooth")
-ATT.Description = [[How does small barrel fit big bullets?
-Why is mag so small?
-Are you still mental?
+ATT.Description = [[Undersized drum magazine loaded with disproportionate 16[??] Gauge.
+Somehow still be able to fire from a small rifle barrel.
+
+Bodged conversion yields mediocre ballistics comparing to true shotguns.
 ]]
 
 ATT.SortOrder = -100
@@ -394,8 +394,8 @@ ATT.RPMMult = 300 / 600
 
 ATT.NumOverride = 8
 ATT.SpreadAdd = 0.03
-ATT.DamageMaxMult = 0.45
-ATT.DamageMinMult = 0.45
+ATT.DamageMaxMult = 0.4
+ATT.DamageMinMult = 0.4
 
 ATT.RecoilMult = 4
 ATT.RecoilPatternDriftMult = 5

@@ -70,7 +70,7 @@ ATT.PrintName = [[Folding Stock C]]
 ATT.CompactName = [[F.C]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_fold3.png", "mips smooth")
 ATT.Description = [[
-    
+
 ]]
 
 ATT.SortOrder = 2
@@ -88,7 +88,7 @@ ATT.PrintName = [[Folded Stock]]
 ATT.CompactName = [[F.D]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_fold3.png", "mips smooth")
 ATT.Description = [[
-    
+
 ]]
 ATT.Ignore = true
 
@@ -114,7 +114,7 @@ ATT.SortOrder = 0
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_slide"}
 
-ATT.RecoilMult = 1.1
+ATT.RecoilMult = 1.15
 ATT.RecoilKickMult = 1.1
 ATT.RecoilAutoControlMult = 1.1
 ATT.SpreadMultHipFire = 1.2
@@ -132,7 +132,7 @@ ATT = {}
 ATT.PrintName = [[Heavy Stock]]
 ATT.CompactName = [[Heavy]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_rpk.png", "mips smooth")
-ATT.Description = [[Added braching point.
+ATT.Description = [[Added bracing point and weight for recoil control
 ]]
 
 ATT.SortOrder = 6
@@ -219,8 +219,8 @@ ATT = {}
 ATT.PrintName = [[MOE Stock]]
 ATT.CompactName = [[MOE]]
 ATT.Icon = Material("entities/gekolt_css_m4_s.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[Magic cosmetic carry handle for western stock adaption
+Variations not included.
 ]]
 
 ATT.SortOrder = 8
@@ -281,8 +281,7 @@ ATT = {}
 ATT.PrintName = [[Rifle Grip]]
 ATT.CompactName = [[Rifle]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_cali.png", "mips smooth")
-ATT.Description = [[
-
+ATT.Description = [[Full awkward hunting grip, supposesly adds eehhhhh
 ]]
 
 ATT.SortOrder = 2
@@ -308,8 +307,7 @@ ATT = {}
 ATT.PrintName = [[Polymer Rifle Grip]]
 ATT.CompactName = [[P.Rifle]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_cali2.png", "mips smooth")
-ATT.Description = [[
-
+ATT.Description = [[Who let the western coast touch this?
 ]]
 
 ATT.RHIK = true
@@ -341,7 +339,8 @@ ATT = {}
 ATT.PrintName = [[Stalker Handguard]]
 ATT.CompactName = [[SD]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_sd.png", "mips smooth")
-ATT.Description = [[Long suppressed configuration.
+ATT.Description = [[Long internally suppressed configuration
+Slim design decreases weight while lengthen the foregrip option.
 ]]
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.Silencer = true
@@ -361,7 +360,8 @@ ATT = {}
 ATT.PrintName = [[Polymer Handguard]]
 ATT.CompactName = [[Poly]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_poly.png", "mips smooth")
-ATT.Description = [[An attempt was made to prevent frostbite.
+ATT.Description = [[Northern variant built for the cold
+Comes with a fancy rear ironsight.
 ]]
 
 ATT.SortOrder = 0.5
@@ -533,6 +533,7 @@ ATT.CompactName = [[RPK]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_rpk.png", "mips smooth")
 ATT.Description = [[Oi, they just make the thing longer
 Rounded front sight for... more... accuracy?
+Chucked a built-in bipod for good measures.
 ]]
 
 ATT.Ignore = false
@@ -556,6 +557,7 @@ ATT.PrintName = [[Modernised Handguard]]
 ATT.CompactName = [[Modern]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_12.png", "mips smooth")
 ATT.Description = [[«Latest» production of a truly modernised handguard
+Complete flat top and not so bulky rear sight.
 ]]
 
 ATT.SortOrder = 0.4
@@ -572,7 +574,7 @@ ATT = {}
 ATT.PrintName = [[Magyarie Handguard]]
 ATT.CompactName = [[AMD]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_hungary.png", "mips smooth")
-ATT.Description = [[Special package from the quite lousy comrade.
+ATT.Description = [[Special package from the quite lousy comrade, comes with a built-in foregrip
 What do you mean you got the wrong comrade?
 ]]
 
@@ -600,7 +602,8 @@ ATT = {}
 ATT.PrintName = [[Naked Handguard]]
 ATT.CompactName = [[Naked]]
 ATT.Icon = Material("entities/gekolt_css_ak_h_naked.png", "mips smooth")
-ATT.Description = [[Stripped down to the bare miminum.
+ATT.Description = [[Stripped down to the bare miminum
+Watch that bolt rattles in spectacular failure.
 ]]
 
 ATT.SortOrder = 0.45

@@ -5,7 +5,8 @@ ATT = {}
 ATT.PrintName = [[Buckshot]]
 ATT.CompactName = [[SG]]
 ATT.Icon = Material("entities/gekolt_css_ammo/shotgun.png", "mips smooth")
-ATT.Description = [[Oversized buckshot round for your angry tube
+ATT.Description = [[Oversized buckshot round for your angry explosive tube
+Explosive privilege revoked. 
 ]]
 
 ATT.Attachments = {
@@ -111,10 +112,11 @@ ARC9.LoadAttachment(ATT, "gekolt_fas2_m79_a2")
 
 ATT = {}
 
-ATT.PrintName = [[Pirate]]
+ATT.PrintName = [[Pirate-Kit]]
 ATT.CompactName = [[Pirate]]
 ATT.Icon = Material("entities/gekolt_fas2_m79_pirate.png", "mips smooth")
-ATT.Description = [[Short
+ATT.Description = [[Removes and shortens everything
+The Magic™️ auto eject is no more.
 ]]
 
 ATT.SortOrder = 1
@@ -160,6 +162,7 @@ ATT.PrintName = [[Alofs]]
 ATT.CompactName = [[Alofs]]
 ATT.Icon = Material("entities/gekolt_fas2_m79_alof.png", "mips smooth")
 ATT.Description = [[An overbulking attempt to compete the classic outdated grenade launcher with the modern auto grenade launchers
+China Lakes are too expensive.
 ]]
 
 ATT.SortOrder = 1
@@ -209,7 +212,9 @@ ATT = {}
 ATT.PrintName = [[MTS]]
 ATT.CompactName = [[MTS]]
 ATT.Icon = Material("entities/gekolt_fas2_m79_mts.png", "mips smooth")
-ATT.Description = [[how
+ATT.Description = [[There are guns, that look like other guns
+This isn't it mate
+The inclusive urge to bundle a revolver is too great to ignore. - definitely not the author
 ]]
 
 ATT.SortOrder = 1
@@ -302,7 +307,8 @@ ATT = {}
 ATT.PrintName = [[MTS-S]]
 ATT.CompactName = [[MTS-S]]
 ATT.Icon = Material("entities/gekolt_fas2_m79_mtss.png", "mips smooth")
-ATT.Description = [[HOW
+ATT.Description = [[The inclusive urge to bundle an actual revolver is too great to ignore
+Break action is easier to animate, that's it.
 ]]
 
 ATT.SortOrder = 1

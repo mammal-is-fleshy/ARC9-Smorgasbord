@@ -173,7 +173,7 @@ ATT.PrintName = "ChainSAW Grip"
 ATT.CompactName = "ChainSAW"
 ATT.Icon = Material("entities/gekolt_css_m4_g_saw.png", "mips smooth")
 ATT.Description = [[Extremely uncomfortable grip for hip firing
-Don't ask how do you even engage the magazine release button.]]
+Don't ask how would you even engage the magazine release button.]]
 
 ATT.Pros = {}
 ATT.Cons = {}
@@ -281,7 +281,7 @@ ATT = {}
 
 ATT.PrintName = "Telescopic Stock"
 ATT.CompactName = "Telescopic"
-ATT.Description = [[Because showing more parts means tactical]]
+ATT.Description = [[Non-slidable slidling fullstock]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_s_608.png", "mips smooth")
 
@@ -299,7 +299,7 @@ ATT = {}
 
 ATT.PrintName = "Heavy Stock"
 ATT.CompactName = "Heavy"
-ATT.Description = [[It's nothing special, but it gets the job done.]]
+ATT.Description = [[Classic, albeit a bit more rectangular, lengthy stock.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_s_a1.png", "mips smooth")
 
@@ -321,8 +321,8 @@ ATT = {}
 
 ATT.PrintName = "Precision Stock"
 ATT.CompactName = "Precision"
-ATT.Description = [[Sniper-style stock for single fire compensation.
-Your cheek and shoulder would thank you for this]]
+ATT.Description = [[Sniper-style stock for single fire compensation
+Your cheek and shoulder would love you.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_s_bolt.png", "mips smooth")
 
@@ -464,7 +464,7 @@ ATT = {}
 
 ATT.PrintName = "Buffer Tube"
 ATT.CompactName = "None"
-ATT.Description = [[You know it comes with a stock for a reason, right?]]
+ATT.Description = [[You know it comes free with a stock for a reason, right?]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_s_tube.png", "mips smooth")
 
@@ -507,7 +507,7 @@ ATT = {}
 
 ATT.PrintName = "Sliding Stock B"
 ATT.CompactName = "SB"
-ATT.Description = [[Reverese telescopic stock]]
+ATT.Description = [[Reverese telescopic stock.]]
 
 ATT.Icon = Material("entities/gekolt_css_m4_s_x79.png", "mips smooth")
 

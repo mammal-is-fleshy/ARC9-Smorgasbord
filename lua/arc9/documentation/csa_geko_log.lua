@@ -2,27 +2,32 @@
 
 [ Created by Geckololt (all wrongs reserved, dont care didnt ask) ]
 
+[ Smorgasbord is a pack with guns :D powered by ARC9 (worst base ever) ]
+
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-TheOnly8Z - Major assistance in cleaning and stats department
+TheOnly8Z - Major assistance in cleaning, coding and stats department
 CyloWalker - Annoying little burger -- i love this man as if he's my little cabbage :))
 CturiX - Mauser, M79 and other Sounds
-Zenith - Sounds
+Zenith - AK, M4, M9, AWP and other Sounds
+Fesiug - Nade ent, Random coding
+Darsu - he did something or i stole something with consent    idk i forgor :skull:
 
 -General-
 Google Images - ref
-Fesiug??? - Nade ent
 
 
 -Models/Textures-
 Counter Strike Source: (horrid)Models, Textures [AWP/M4/AK/M9]
-+ Arctic - Incredibly doggy -original- restoration models (css)
++ Arctic - Incredibly doggy -original- restoration models
 Day of Defeat Source: (horrid)Models [Garand/Mauser]
 FAS1: Claymore
 FAS2: M79/Sterling
 Enemy Front[??? honestly i cant remember]: Sten
-Medal of Hounor Airborne: M18
+Medal of Honor Airborne: M18
 + Moon - Ripping
 Fallout New Vegas: Flare Gun
+M60: Combat Arms
+
 Soldier of Fortune 3 - Muzzles and Tac/Flashlight, some ak stuff, Tishina
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
 Counter Strike Online 2 - Some M4 Parts (  The Taiwanese looking stuff  )
@@ -75,6 +80,7 @@ Makarov?? [NOPE NOPE NOPE]
 FAL??????????? [Only the canadian variants]
 M18 (receiver:3)
 STEN (receiver:4-5)
+Flare Gun (receiver:3)
 
 
 -------------
@@ -104,12 +110,10 @@ STEN (receiver:4-5)
 - Actual bipod animation with stock holding in deploy -- not possible for the latter yet, ik overides stuff
 
 [UBGL]
-- Upsidedown Garand Grenade Rifle thing
 - RPG??
 - Tishina
 - GP30??
 - M3
-- UMP??
 - AK??
 - M320??? (hate m203)
 
@@ -130,7 +134,8 @@ M79: Done
 M18: Done
 AK: Done
 Sten: Done
-Tishina: WIP
+Tishina: WIP [SCRAPPED??]
+Flare Gun : Done
 
 
 M30: Scrapped???????
@@ -303,6 +308,12 @@ xm70 -- this is based on a real thing, back in world war cold, the swedes wanted
 Leucht42
 SLD
 
+ Under Barrel Weapons:
+Knockzy-26: Mass26
+Sawnoff Garand: M203s are boring
+Kleinevoller-45: UMP45, act3 will be real
+
+
 
 free text zone for
 reasons
@@ -335,8 +346,15 @@ and in modern Time, there are loads of   modernised version, which im not planni
 there are bullpup version    of course   no i wont be planning that
 + Darsu made ehh eft toz 106 with mosin frame, shotgun mosin? yeah im stealing
 
-M2 Browning
+M60
++ So it was built on an FG42
 
+M82
++ idk
+
+M2 Browning
++ people who are named John made everything in Americksland, John Harvard, John Garand (canada fake), John Browning, John Handegg, John Kentucky Fried Chicken, John Green
+I love John Green, his books are great
 
 
 

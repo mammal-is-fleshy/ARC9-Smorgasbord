@@ -79,7 +79,7 @@ ATT = {}
 
 ATT.PrintName = "Folding Stock"
 ATT.CompactName = "Fold"
-ATT.Description = [[Discounted skeletal stock]]
+ATT.Description = [[Discounted skeletal stock.]]
 
 ATT.Icon = Material("entities/gekolt_css_awp_s_fold.png", "mips smooth")
 
