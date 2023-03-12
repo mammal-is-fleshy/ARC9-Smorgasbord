@@ -103,10 +103,10 @@ ATT.RicochetChanceOverride = 1
 
 ATT.NumOverride = 1
 
-ATT.DamageMaxOverride = 65
-ATT.DamageMinOverride = 34
-ATT.RangeMinOverride = 750
-ATT.RangeMaxOverride = 10000
+ATT.DamageMaxOverride = 180
+ATT.DamageMinOverride = 92
+ATT.RangeMinOverride = 1000
+ATT.RangeMaxOverride = 20000
 
 ATT.PhysBulletModelOverride = false
 ATT.ImpactDecalOverride = ""
