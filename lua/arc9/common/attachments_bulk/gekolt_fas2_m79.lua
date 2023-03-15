@@ -217,6 +217,8 @@ This isn't it mate
 The inclusive urge to bundle a revolver is too great to ignore. - definitely not the author
 ]]
 
+
+ATT.ShellModel = nil
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
 ATT.ActivateElements = {"f_mts", "pre_ammo"}
@@ -311,6 +313,7 @@ ATT.Description = [[The inclusive urge to bundle an actual revolver is too great
 Break action is easier to animate, that's it.
 ]]
 
+ATT.ShellModel = nil
 ATT.SortOrder = 1
 ATT.Category = "fas2_m79_frame"
 ATT.ActivateElements = {"f_mtss", "pre_ammo", "nogrip"}
