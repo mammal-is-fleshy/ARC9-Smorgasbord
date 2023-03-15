@@ -259,7 +259,7 @@ SWEP.MuzzleEffectQCAUBGL = 1
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "gekolt_dod/1887_fire01.wav"
+SWEP.ShootSound = "rzen1th_smor/m18_fire.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/m4a1-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -310,9 +310,11 @@ SWEP.Animations = {
         { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
         },
         EventTable = {
-            {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
-            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},
+            {s =  "rzen1th_smor/m18_latch.wav" ,   t = 10 / 40},
+            {s =  "rzen1th_smor/m18_open.wav" ,   t = 35 / 40},
+            {s =  "rzen1th_smor/m18_remove.wav" ,   t = 38 / 40},
+            {s =  "rzen1th_smor/m18_insert.wav" ,   t = 72 / 40},
+            {s =  "rzen1th_smor/m18_close.wav" ,   t = 84 / 40},
         },
     },
     ["reload"] = {
@@ -324,9 +326,11 @@ SWEP.Animations = {
         { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
         },
         EventTable = {
-            {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
-            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},
+            {s =  "rzen1th_smor/m18_latch.wav" ,   t = 10 / 40},
+            {s =  "rzen1th_smor/m18_open.wav" ,   t = 35 / 40},
+            {s =  "rzen1th_smor/m18_remove.wav" ,   t = 38 / 40},
+            {s =  "rzen1th_smor/m18_insert.wav" ,   t = 72 / 40},
+            {s =  "rzen1th_smor/m18_close.wav" ,   t = 84 / 40},
         },
     },
     ["reload_empty"] = {
@@ -338,9 +342,11 @@ SWEP.Animations = {
         { t = 0.125, lhik = 0, rhik = 0, },{ t = 0.7, lhik = 0, rhik = 0, },{ t = 0.95, lhik = 1, rhik = 1, },
         },
         EventTable = {
-            {s =  "gekolt_css/p90_clipout.wav" ,   t = 13 / 40},
-            {s =  "gekolt_css/ump45_clipout.wav" ,   t = 35 / 40},
-            {s =  "gekolt_css/sg552_clipin.wav" ,    t = 75 / 40},
+            {s =  "rzen1th_smor/m18_latch.wav" ,   t = 10 / 40},
+            {s =  "rzen1th_smor/m18_open.wav" ,   t = 35 / 40},
+            {s =  "rzen1th_smor/m18_remove.wav" ,   t = 38 / 40},
+            {s =  "rzen1th_smor/m18_insert.wav" ,   t = 72 / 40},
+            {s =  "rzen1th_smor/m18_close.wav" ,   t = 84 / 40},
         },
     },
     ["reload_rpg"] = {
