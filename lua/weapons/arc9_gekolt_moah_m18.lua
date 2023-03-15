@@ -16,8 +16,9 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    ["Assets"] = [[Medal of Honor: Airborne]],
-    ["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Sound2"] = [[cherresoda#6579 (rzen1th)]],
+    ["Assets3"] = [[Medal of Honor: Airborne]],
+    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[The King's Guard is always ready to take out any armoured opponent
@@ -208,8 +209,8 @@ SWEP.IronSights = {
 
 SWEP.Crosshair = false
 
-SWEP.SprintAng = Angle(30, -15, -10)
-SWEP.SprintPos = Vector(3, 4, -0.5)
+SWEP.SprintAng = Angle(20, -15, -10)
+SWEP.SprintPos = Vector(-1, 4, -2)
 
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 5, 0)
@@ -314,7 +315,7 @@ SWEP.Animations = {
             {s =  "rzen1th_smor/m18_open.wav" ,   t = 35 / 40},
             {s =  "rzen1th_smor/m18_remove.wav" ,   t = 38 / 40},
             {s =  "rzen1th_smor/m18_insert.wav" ,   t = 72 / 40},
-            {s =  "rzen1th_smor/m18_close.wav" ,   t = 84 / 40},
+            {s =  "rzen1th_smor/m18_close.wav" ,   t = 90 / 40},
         },
     },
     ["reload"] = {
@@ -330,7 +331,7 @@ SWEP.Animations = {
             {s =  "rzen1th_smor/m18_open.wav" ,   t = 35 / 40},
             {s =  "rzen1th_smor/m18_remove.wav" ,   t = 38 / 40},
             {s =  "rzen1th_smor/m18_insert.wav" ,   t = 72 / 40},
-            {s =  "rzen1th_smor/m18_close.wav" ,   t = 84 / 40},
+            {s =  "rzen1th_smor/m18_close.wav" ,   t = 90 / 40},
         },
     },
     ["reload_empty"] = {
@@ -346,7 +347,7 @@ SWEP.Animations = {
             {s =  "rzen1th_smor/m18_open.wav" ,   t = 35 / 40},
             {s =  "rzen1th_smor/m18_remove.wav" ,   t = 38 / 40},
             {s =  "rzen1th_smor/m18_insert.wav" ,   t = 72 / 40},
-            {s =  "rzen1th_smor/m18_close.wav" ,   t = 84 / 40},
+            {s =  "rzen1th_smor/m18_close.wav" ,   t = 90 / 40},
         },
     },
     ["reload_rpg"] = {
