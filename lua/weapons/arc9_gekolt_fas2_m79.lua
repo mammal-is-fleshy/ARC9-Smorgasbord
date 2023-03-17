@@ -363,7 +363,7 @@ end
 SWEP.Hook_TranslateAnimation = function(wep, anim)
 
     if wep:HasElement("rail_bot") and wep:HasElement("f_mts") then
-        return anim .. "_grip"
+		if anim == "reload" then return "reload_grip_mts" end
     end
 
 end
@@ -587,7 +587,7 @@ SWEP.Animations = {
 
 
     -- MTS GRIP --
-    ["reload_mts_grip"] = {
+    ["reload_grip_mts"] = {
         Source = "dry_mts",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         EventTable = {

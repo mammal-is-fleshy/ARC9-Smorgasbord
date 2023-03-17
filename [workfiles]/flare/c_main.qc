@@ -23,6 +23,12 @@ $bodygroup "Barrel"
 	studio "Flare_Stock.smd"		
 }
 
+$bodygroup "Iron"
+{
+	blank
+	studio "W_Iron.smd"		
+}
+
 $illumposition 0 0 0
 
 $cdmaterials "models\gekolt_css_vmt\"

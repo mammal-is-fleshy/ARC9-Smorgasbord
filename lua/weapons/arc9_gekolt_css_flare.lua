@@ -100,7 +100,7 @@ SWEP.Firemodes = {
 -------------------------- RECOIL
 
 -- General recoil multiplier
-SWEP.Recoil = 4
+SWEP.Recoil = 3
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.95 -- Multiplier for vertical recoil
@@ -116,9 +116,9 @@ SWEP.RecoilResetTime = 0
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.5
+SWEP.RecoilKick = 1.15
 
-SWEP.RecoilMultRecoil = 1.5 -- Looks stupid but it means expoential recoil growth.
+SWEP.RecoilMultRecoil = 1.25 -- Looks stupid but it means expoential recoil growth.
 
 -------------------------- SPREAD
 
@@ -170,7 +170,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-2.55, -2, 1),
+    Pos = Vector(-2.6, -3, 0.75),
     Ang = Angle(0, 0, 0),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
@@ -254,7 +254,7 @@ SWEP.AttachmentElements = {
         AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
     },
     ["50cal"] = {
-        Bodygroups = {{1,3}},
+        Bodygroups = {{1,3},{3,1}},
         AttPosMods = { [3] = { Pos = Vector(0, 0, 7.65), } }
     },
 
