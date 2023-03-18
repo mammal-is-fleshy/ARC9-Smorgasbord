@@ -323,6 +323,10 @@ ATT.ModelAngleOffset = Angle(0, 0, 5)
 ATT.Model = "models/weapons/geckololt_css/c_m18.mdl"
 ATT.ModelBodygroups = "223043"
 
+ATT.RecoilAutoControlMult = 0.9
+ATT.SpreadMultHipFire = 1.1
+ATT.SpreadMultMove = 1.05
+ATT.AimDownSightsTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_s1")
 
@@ -338,6 +342,13 @@ ATT.Description = [[Simple straight stock with a small pad.]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
+
+ATT.RecoilMult = 1.05
+ATT.RecoilKickMult = 1.02
+ATT.RecoilAutoControlMult = 0.975
+ATT.SpreadMultHipFire = 0.85
+ATT.SpreadMultMove = 0.9
+ATT.AimDownSightsTimeMult = 0.95
 
 ATT.Category = "ef_sten_stock" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"s_mk2"}
@@ -361,6 +372,11 @@ ATT.SortOrder = 1
 ATT.Category = "ef_sten_stock" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"s_wood"}
 
+ATT.RecoilMult = 0.775
+ATT.RecoilKickMult = 0.85
+ATT.RecoilAutoControlMult = 0.7
+ATT.SpreadMultMove = 0.775
+ATT.AimDownSightsTimeMult = 1.3
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_s3")
 
@@ -380,6 +396,10 @@ ATT.SortOrder = 1
 ATT.Category = "ef_sten_stock" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"s_mk1"}
 
+ATT.RecoilMult = 0.9
+ATT.RecoilKickMult = 0.9
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SpreadMultHipFire = 0.95
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_s4")
 
@@ -410,6 +430,11 @@ ATT.SortOrder = 2
 ATT.Category = "ef_sten_hg" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"hg_wood"}
 
+ATT.SwayAdd = 0.05
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMult = 0.95
+ATT.RecoilMult = 0.95
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low1")
 
@@ -428,6 +453,12 @@ ATT.SortOrder = 1
 
 ATT.Category = "ef_sten_hg" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"hg_no"}
+
+ATT.SwayAdd = -0.1
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.9
+ATT.SpeedMult = 1.1
+ATT.RecoilMult = 1.15
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_low2")
@@ -455,6 +486,12 @@ ATT.ModelOffset = Vector(5, 0, -1)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
 ATT.Model = "models/weapons/geckololt_css/atts/fg.mdl"
 ATT.ModelBodygroups = "100000000000"
+
+ATT.SwayAdd = 0.15
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMult = 0.9
+ATT.RecoilMult = 0.8
 
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -493,6 +530,15 @@ ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
 
+ATT.SwayMultShootingMult = 1.75
+
+ATT.RecoilUpMult = 0.8
+ATT.RecoilSideMult = 1.2
+
+ATT.RecoilRandomUpMult = 0.85
+ATT.RecoilRandomSideMult = 1.15
+ATT.VisualRecoilMult = 1.2
+
 ATT.Category = "ef_sten_barrel" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"b_mk1", "pre_muzzed"}
 
@@ -515,6 +561,13 @@ ATT.SortOrder = 3
 ATT.Category = "ef_sten_barrel" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"b_mk3"}
 
+ATT.SpeedMult = 1.05
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.1
+
+ATT.SwayMult = 1.15
+ATT.RecoilMultRecoil = 0.75
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b2")
 
@@ -534,6 +587,13 @@ ATT.SortOrder = 2
 ATT.Category = "ef_sten_barrel" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"b_mk2"}
 
+ATT.SpeedMult = 1.04
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.2
+
+ATT.SwayMult = 1.2
+ATT.RecoilMultRecoil = 0.8
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b3")
 
@@ -552,6 +612,14 @@ ATT.SortOrder = 4
 
 ATT.Category = "ef_sten_barrel" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"b_owen"}
+
+ATT.SpeedMult = 1.025
+
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.15
+
+ATT.SwayMult = 1.1
+ATT.RecoilMultRecoil = 0.8
 
 
 ARC9.LoadAttachment(ATT, "gekolt_ef_sten_b4")

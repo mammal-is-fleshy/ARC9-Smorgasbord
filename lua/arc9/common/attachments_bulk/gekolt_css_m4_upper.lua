@@ -14,6 +14,7 @@ ATT.Category = "css_m4_up"
 ATT.ActivateElements = {"up_proto", "keep_rs"}
 ATT.ShootSound = {"cturix_ar15/fire_proto-1.wav","cturix_ar15/fire_proto-2.wav","cturix_ar15/fire_proto-3.wav"}
 ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+ATT.DistantShootSoundSilenced = "cturix_ar15/fire_blackout_dist.wav"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
 

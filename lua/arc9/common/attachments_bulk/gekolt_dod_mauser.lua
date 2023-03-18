@@ -90,6 +90,7 @@ ATT.ShootSound = "gekolt_css/usp1.wav"
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 
 ATT.ClipSizeOverride = 15
+ATT.AimDownSightsTimeAdd = -0.1
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
@@ -127,6 +128,11 @@ ATT.RPMMult = 700 / 800
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
+
+ATT.RangeMaxMult = 0.75
+ATT.RecoilUpMult = 0.8
+ATT.RecoilDissipationRateMult = 1.5
+ATT.AimDownSightsTimeAdd = 0.05
 
 ATT.Scale = 1
 ATT.ModelOffset = Vector(-7, -3.8, 5)
@@ -216,6 +222,8 @@ ATT.RunawayBurst = true
 ATT.PostBurstDelay = 0.2
 
 ATT.ClipSizeOverride = 20
+ATT.RangeMaxMult = 0.25
+ATT.AimDownSightsTimeAdd = -0.05
 
 ATT.RPMMult = 1200 / 800
 

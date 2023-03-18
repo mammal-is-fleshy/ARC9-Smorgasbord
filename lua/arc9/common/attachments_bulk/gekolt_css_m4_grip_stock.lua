@@ -271,6 +271,13 @@ ATT.SortOrder = 4
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_607"}
 
+ATT.RecoilMult = 1.1
+ATT.RecoilKickMult = 1.1
+ATT.RecoilAutoControlMult = 0.95
+ATT.SpreadMultHipFire = 0.9
+ATT.SpreadMultMove = 0.85
+ATT.AimDownSightsTimeMult = 0.9
+
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_s_607")
 
 
@@ -288,6 +295,13 @@ ATT.Icon = Material("entities/gekolt_css_m4_s_608.png", "mips smooth")
 ATT.SortOrder = 4
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_608"}
+
+ATT.RecoilMult = 1.05
+ATT.RecoilKickMult = 1.02
+ATT.RecoilAutoControlMult = 0.975
+ATT.SpreadMultHipFire = 0.85
+ATT.SpreadMultMove = 0.9
+ATT.AimDownSightsTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_s_608")
 
@@ -417,6 +431,13 @@ ATT.SortOrder = 2.75
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_swire"}
 
+ATT.RecoilMult = 1.15
+ATT.RecoilKickMult = 1.1
+ATT.RecoilAutoControlMult = 0.9
+ATT.SpreadMultHipFire = 1.2
+ATT.SpreadMultMove = 1.2
+ATT.AimDownSightsTimeMult = 0.75
+
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_s_swire")
 
 
@@ -434,6 +455,10 @@ ATT.Icon = Material("entities/gekolt_css_m4_s_t91.png", "mips smooth")
 ATT.SortOrder = 5.1
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_t91"}
+
+ATT.RecoilMult = 0.9
+ATT.RecoilKickMult = 0.9
+ATT.RecoilAutoControlMult = 0.85
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_s_t91")
 
@@ -453,6 +478,12 @@ ATT.Icon = Material("entities/gekolt_css_m4_s_thomp.png", "mips smooth")
 ATT.SortOrder = 8
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_thomp"}
+
+ATT.RecoilMult = 0.675
+ATT.RecoilKickMult = 0.8
+ATT.RecoilAutoControlMult = 0.75
+ATT.SpreadMultMove = 0.675
+ATT.AimDownSightsTimeMult = 1.35
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_s_thomp")
 
@@ -514,5 +545,12 @@ ATT.Icon = Material("entities/gekolt_css_m4_s_x79.png", "mips smooth")
 ATT.SortOrder = 1
 ATT.Category = "css_m4_stock"
 ATT.ActivateElements = {"s_x79"}
+
+ATT.RecoilMult = 1.15
+ATT.RecoilKickMult = 1.1
+ATT.RecoilAutoControlMult = 0.9
+ATT.SpreadMultHipFire = 1.2
+ATT.SpreadMultMove = 1.2
+ATT.AimDownSightsTimeMult = 0.75
 
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_s_x79")

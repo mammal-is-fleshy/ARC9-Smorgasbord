@@ -482,7 +482,7 @@ SWEP.Animations = {
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
         MinProgress = 0.83,
-        EjectAt = 35 / 40,
+		--EjectAt = 35 / 40,
         EventTable = {
             {s =  "gekolt_fas2/m79_open.wav" ,   t = 12 / 40},
             {s =  "gekolt_fas2/m79_remove.wav" ,   t = 30 / 40},

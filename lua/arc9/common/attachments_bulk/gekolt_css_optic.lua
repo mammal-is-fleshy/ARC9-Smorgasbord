@@ -96,7 +96,7 @@ ATT.CompactName = "LTE RADAR"
 ATT.Icon = Material("entities/gekolt_css_optic/range.png", "mips smooth")
 ATT.Description = [[Very slow radar unit]]
 ATT.SortOrder = 1401
-
+ATT.Ignore = true
 ATT.Model = "models/weapons/geckololt_css/atts/rangefider.mdl"
 ATT.ModelBodygroups = "10"
 ATT.Scale = 1

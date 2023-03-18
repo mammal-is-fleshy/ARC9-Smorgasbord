@@ -17,6 +17,7 @@ ATT.RecoilKickMult = 1.5
 ATT.RecoilAutoControlMult = 0.75
 ATT.SpreadMultHipFire = 1.25
 ATT.SpreadMultMove = 1.25
+ATT.AimDownSightsTimeMult = 0.65
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock0")
 
@@ -130,7 +131,7 @@ ATT.ActivateElements = {"s_slide"}
 
 ATT.RecoilMult = 1.15
 ATT.RecoilKickMult = 1.1
-ATT.RecoilAutoControlMult = 1.1
+ATT.RecoilAutoControlMult = 0.9
 ATT.SpreadMultHipFire = 1.2
 ATT.SpreadMultMove = 1.2
 ATT.AimDownSightsTimeMult = 0.75

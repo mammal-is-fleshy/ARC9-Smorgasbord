@@ -289,8 +289,8 @@ SWEP.Animations = {
             {s =  "gekolt_css/ak47_clipout.wav" ,   t = 12 / 40},
             {s =  "gekolt_css/ak47_clipin1.wav" ,    t = 51 / 40},
             {s =  "gekolt_css/ak47_clipin2.wav" ,    t = 61 / 40},
-            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 84 / 40},
-            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 92 / 40},
+            {s =  "gekolt_css/ak47_boltpull1.wav" ,    t = 85 / 40},
+            {s =  "gekolt_css/ak47_boltpull2.wav" ,    t = 90 / 40},
         },
     },
 

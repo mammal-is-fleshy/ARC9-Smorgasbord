@@ -43,6 +43,7 @@ ATT.ModelBodygroups = "223043"
 ATT.ShootSound = "gekolt_css/g3sg1-1.wav"
 ATT.ShootSoundUBGL = "gekolt_dod/1887_fire01.wav"
 ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+ATT.DistantShootSoundSilenced = "cturix_ar15/fire_blackout_dist.wav"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_xm"
@@ -205,6 +206,8 @@ end
 ATT.ShootEnt = "gekolt_moah_m18_rocket"
 ATT.ShootEntForce = 200000
 
+ATT.AimDownSightsTimeAdd = -0.06
+ATT.SprintToFireTimeAdd = -0.1
 
 ARC9.LoadAttachment(ATT, "gekolt_moah_m18_rpg")
 
@@ -215,12 +218,12 @@ ARC9.LoadAttachment(ATT, "gekolt_moah_m18_rpg")
 ATT = {}
 
 ATT.PrintName = [[Rustning Genomtraengare-Stomme]] -- armour penetrator???
-ATT.CompactName = [[RPG]]
+ATT.CompactName = [[TANDUM]]
 ATT.Icon = Material("entities/gekolt_moah_rpg3.png", "mips smooth")
 ATT.Description = [[Concentrated explosive to retain the normal anti-armour mindset
 Still madness.]]
 
-ATT.SortOrder = 3
+ATT.SortOrder = 4
 ATT.Category = "moah_m18_kit"
 ATT.ActivateElements = {"kit_rpg2"}
 
@@ -231,6 +234,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_rpg"
 end
 
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.05
 
 ARC9.LoadAttachment(ATT, "gekolt_moah_m18_rpg2")
 

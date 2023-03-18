@@ -91,7 +91,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ShootSound = "oneshotof_cs16/sg552-1.wav"
---ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+ATT.DistantShootSoundSilenced = "cturix_ar15/fire_blackout_dist.wav"
 
 ATT.SortOrder = 10
 ATT.Category = "css_ak_up"
@@ -121,7 +122,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ShootSound = {"oneshotof_cs16/m4a1_unsil-1.wav", "oneshotof_cs16/m4a1_unsil-2.wav"}
---ATT.ShootSoundSilenced = "oneshotof_cs16/m4a1-1.wav"
+ATT.DistantShootSound ="cturix_ar15/fire_57_dist-1.wav"
+ATT.DistantShootSoundSilenced = "cturix_ar15/fire_blackout_dist.wav"
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_up"
@@ -308,7 +310,7 @@ ATT.RecoilMult = 0.625
 ATT.Ammo = "pistol"
 
 ATT.ShootSound = {"oneshotof_cs16/mp5-1.wav", "oneshotof_cs16/mp5-2.wav"}
---ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+ATT.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 
 ATT.SortOrder = 12
 ATT.Category = "css_ak_up"
@@ -356,7 +358,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ShootSound = "oneshotof_cs16/ump45-1.wav"
---ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
+ATT.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
