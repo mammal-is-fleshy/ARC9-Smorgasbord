@@ -1,7 +1,7 @@
 # ARC9-Smorgasbord
 low quality models stuff on even lower quality animations
 
-12 Total Weapons: (In order of development)
+13 Total Weapons: (In order of development)
 - AWP 
 - M4
 - Hammer and Sickle
@@ -21,7 +21,8 @@ low quality models stuff on even lower quality animations
 3 Underbarrel Weapons:
 - MASS12
 - Tishina (Early Concept)
-- Garand (WIP)
+- Garand
+- UMP45 (WIP)
 
 
 Future stuff??

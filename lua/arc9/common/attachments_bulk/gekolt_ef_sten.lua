@@ -83,6 +83,16 @@ ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 1
 
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.Silencer = true
+
+ATT.RPMMult = 660 / 600
+ATT.RangeMaxMult = 1.1
+ATT.RangeMinMult = 0.9
+
+ATT.DamageMaxMult = 1.1
+ATT.DamageMinMult = 0.8
+
 ATT.Sights = {
     {
         Pos = Vector(-2.275, 7, 2.32),

@@ -27,6 +27,7 @@ Medal of Honor Airborne: M18
 + Moon - Ripping
 Fallout New Vegas: Flare Gun
 M60: Combat Arms
+Project Reality 2: Flip up Magnifier
 
 Soldier of Fortune 3 - Muzzles and Tac/Flashlight, some ak stuff, Tishina
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )
@@ -59,6 +60,8 @@ https://gamebanana.com/sounds/56985 - M712 Sound
 https://gamebanana.com/sounds/28249 - Random
 https://gamebanana.com/sounds/43486 - Random2
 https://gamebanana.com/sounds/27178 - AWP
+
+https://gamebanana.com/sounds/34864 - Shotgun Garand
 
 The entire Kingdom of Sweden - being so fvcking zased
 
