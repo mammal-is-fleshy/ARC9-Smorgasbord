@@ -2,10 +2,10 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "1"
-ATT.CompactName = "1"
---ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
-ATT.Description = [[Zooming.]]
+ATT.PrintName = "Fritotech Holographic"
+ATT.CompactName = "Fritotech"
+ATT.Icon = Material("entities/gekolt_css_optic/eo.png", "mips smooth")
+ATT.Description = [[Boxy unique iconic holographic sight]]
 ATT.SortOrder = 1
 
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
@@ -26,14 +26,14 @@ end
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6.5, -1.25),
+        Pos = Vector(0, 6, -1.25),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5,
+        Magnification = 1.2,
         ViewModelFOV = 40,
         IgnoreExtra = true,
     },
     {
-        Pos = Vector(0, 5.75, -1.25),
+        Pos = Vector(0, 5.5, -1.25),
         Ang = Angle(0, 0, 0),
         Magnification = 1.1,
         ViewModelFOV = 60,
@@ -50,11 +50,11 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 15
+ATT.RTScopeFOV = 10
 ATT.RTScopeRes = 1024
 ATT.RTScopeReticle = Material("arc9_css/mag_holo.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.75
-ATT.RTScopeShadowIntensity = 7
+ATT.RTScopeShadowIntensity = 2
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false
 
@@ -69,11 +69,13 @@ ARC9.LoadAttachment(ATT, "gekolt_pr2_optic_m1")
 
 ATT = {}
 
-ATT.PrintName = "2"
-ATT.CompactName = "2"
---ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
-ATT.Description = [[Zooming.]]
-ATT.SortOrder = 1
+ATT.PrintName = "Fritotech Holographic Petito"
+ATT.CompactName = "Frito-pequegno"
+ATT.Icon = Material("entities/gekolt_css_optic/eo_s.png", "mips smooth")
+ATT.Description = [[
+Boxy unique iconic holographic sight
+This unit is smaller and has a precise carrot pointing upwards]]
+ATT.SortOrder = 2
 
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "MAGNIFIER"
@@ -95,7 +97,7 @@ ATT.Sights = {
     {
         Pos = Vector(0, 6.5, -1.25),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5,
+        Magnification = 1.2,
         ViewModelFOV = 40,
         IgnoreExtra = true,
     },
@@ -117,11 +119,11 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 15
+ATT.RTScopeFOV = 10
 ATT.RTScopeRes = 1024
 ATT.RTScopeReticle = Material("arc9_css/mag_holo2.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.75
-ATT.RTScopeShadowIntensity = 7
+ATT.RTScopeReticleScale = 0.8
+ATT.RTScopeShadowIntensity = 2
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false
 
@@ -135,11 +137,12 @@ ARC9.LoadAttachment(ATT, "gekolt_pr2_optic_m2")
 
 ATT = {}
 
-ATT.PrintName = "3"
-ATT.CompactName = "3"
---ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
-ATT.Description = [[Zooming.]]
+ATT.PrintName = "Stopwatch Reflex Sight"
+ATT.CompactName = "Stopwatch"
+ATT.Icon = Material("entities/gekolt_css_optic/okp.png", "mips smooth")
+ATT.Description = [[Reflex sight with chevron reticle that looks like old fellow with one of those long straight down beards]]
 ATT.SortOrder = 1
+ATT.SortOrder = 3
 
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "MAGNIFIER"
@@ -161,7 +164,7 @@ ATT.Sights = {
     {
         Pos = Vector(0, 6.5, -1.25),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5,
+        Magnification = 1.2,
         ViewModelFOV = 40,
         IgnoreExtra = true,
     },
@@ -183,11 +186,11 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 15
+ATT.RTScopeFOV = 10
 ATT.RTScopeRes = 1024
 ATT.RTScopeReticle = Material("arc9_css/mag_okp.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.75
-ATT.RTScopeShadowIntensity = 7
+ATT.RTScopeShadowIntensity = 2
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false
 
@@ -201,11 +204,14 @@ ARC9.LoadAttachment(ATT, "gekolt_pr2_optic_m3")
 
 ATT = {}
 
-ATT.PrintName = "4"
-ATT.CompactName = "4"
---ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
-ATT.Description = [[Zooming.]]
-ATT.SortOrder = 1
+ATT.PrintName = "Aniracco Usual"
+ATT.CompactName = "ANC Usual"
+ATT.Icon = Material("entities/gekolt_css_optic/mrs.png", "mips smooth")
+ATT.Description = [[
+The most basic reflex sight
+Cloned all around the world
+This one was 62 yuan!]]
+ATT.SortOrder = 4
 
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "MAGNIFIER"
@@ -227,7 +233,7 @@ ATT.Sights = {
     {
         Pos = Vector(0, 6.5, -1.25),
         Ang = Angle(0, 0, 0),
-        Magnification = 1.5,
+        Magnification = 1.2,
         ViewModelFOV = 40,
         IgnoreExtra = true,
     },
@@ -249,11 +255,11 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 15
+ATT.RTScopeFOV = 10
 ATT.RTScopeRes = 1024
 ATT.RTScopeReticle = Material("arc9_css/mag_mrs.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.75
-ATT.RTScopeShadowIntensity = 7
+ATT.RTScopeReticleScale = 0.8
+ATT.RTScopeShadowIntensity = 2
 ATT.RTScopeColorable = true
 ATT.RTScopeNoPP = false
 
@@ -271,11 +277,11 @@ ATT.PrintName = "5"
 ATT.CompactName = "5"
 --ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
-ATT.SortOrder = 1
+ATT.SortOrder = 5
 
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "MAGNIFIER"
-
+ATT.Ignore = true
 ATT.Model = "models/weapons/geckololt_css/atts/magnifier_holo.mdl"
 ATT.Scale = 1
 ATT.ModelOffset = Vector(-2, 0, -0.1)
@@ -339,6 +345,7 @@ ATT.CompactName = "6"
 --ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
+ATT.Ignore = true
 
 ATT.Category = {"optic_css", "optic_css_m", "optic_css_scope"}
 ATT.Folder = "MAGNIFIER"
@@ -381,7 +388,7 @@ ATT.HoloSightSize = 650
 ATT.HoloSightColorable = true
 
 ATT.RTScope = true
-ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeSubmatIndex = 3
 ATT.RTScopeFOV = 15
 ATT.RTScopeRes = 1024
 ATT.RTScopeReticle = Material("arc9_css/acog_top.png", "mips smooth")
@@ -412,6 +419,7 @@ ATT.CompactName = "7"
 --ATT.Icon = Material("entities/arc9_att_optic_g33.png", "mips smooth")
 ATT.Description = [[Zooming.]]
 ATT.SortOrder = 1
+ATT.Ignore = true
 
 ATT.Category = {"optic_css", "optic_css_l", "optic_css_scope"}
 ATT.Folder = "MAGNIFIER"

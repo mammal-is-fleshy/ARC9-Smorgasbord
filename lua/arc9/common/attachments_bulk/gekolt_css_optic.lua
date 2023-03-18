@@ -1032,8 +1032,7 @@ ATT = {}
 ATT.PrintName = "Fritotech Holographic"
 ATT.CompactName = "Fritotech"
 ATT.Icon = Material("entities/gekolt_css_optic/eo.png", "mips smooth")
-ATT.Description = [[
-Boxy unique iconic holographic sight]]
+ATT.Description = [[Boxy unique iconic holographic sight]]
 ATT.SortOrder = 2.0
 
 ATT.Model = "models/weapons/geckololt_css/atts/holo.mdl"
