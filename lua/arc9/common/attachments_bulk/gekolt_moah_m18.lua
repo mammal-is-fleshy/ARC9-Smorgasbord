@@ -41,7 +41,7 @@ ATT.Model = "models/weapons/geckololt_css/c_m18.mdl"
 ATT.ModelBodygroups = "223043"
 
 ATT.ShootSound = "gekolt_css/g3sg1-1.wav"
-ATT.ShootSoundUBGL = "gekolt_dod/1887_fire01.wav"
+ATT.ShootSoundUBGL = "rzen1th_smor/m18_fire.wav"
 ATT.ShootSoundSilenced = "gekolt_css/ar10_sd.wav"
 ATT.DistantShootSoundSilenced = "cturix_ar15/fire_blackout_dist.wav"
 
@@ -202,7 +202,7 @@ ATT.ActivateElements = {"kit_rpg"}
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_rpg"
 end
-
+ATT.ShootSound = "gekolt_dod/1887_fire01.wav"
 ATT.ShootEnt = "gekolt_moah_m18_rocket"
 ATT.ShootEntForce = 200000
 
@@ -227,6 +227,7 @@ ATT.SortOrder = 4
 ATT.Category = "moah_m18_kit"
 ATT.ActivateElements = {"kit_rpg2"}
 
+ATT.ShootSound = "gekolt_dod/1887_fire01.wav"
 ATT.ShootEnt = "gekolt_moah_m18_rocket_tandem"
 ATT.ShootEntForce = 200000
 
