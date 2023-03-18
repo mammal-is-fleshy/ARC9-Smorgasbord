@@ -27,7 +27,7 @@ ATT = {}
 ATT.PrintName = [[Folding Stock A]]
 ATT.CompactName = [[F.A]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_fold.png", "mips smooth")
-ATT.Description = [[
+ATT.Description = [[Simple folding stock.
 ]]
 
 ATT.SortOrder = 1
@@ -39,6 +39,7 @@ ATT.RecoilKickMult = 1.1
 ATT.RecoilAutoControlMult = 0.95
 ATT.SpreadMultHipFire = 0.9
 ATT.SpreadMultMove = 0.85
+ATT.AimDownSightsTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock1")
 
@@ -50,13 +51,20 @@ ATT = {}
 ATT.PrintName = [[Folding Stock B]]
 ATT.CompactName = [[F.B]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_fold2.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[Wood and Steel hybrid folding stock
+for eastern roleplayer.
 ]]
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_fold2"}
+
+ATT.RecoilMult = 1.05
+ATT.RecoilKickMult = 1.02
+ATT.RecoilAutoControlMult = 0.975
+ATT.SpreadMultHipFire = 0.85
+ATT.SpreadMultMove = 0.9
+ATT.AimDownSightsTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock2")
 
@@ -69,13 +77,19 @@ ATT = {}
 ATT.PrintName = [[Folding Stock C]]
 ATT.CompactName = [[F.C]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_fold3.png", "mips smooth")
-ATT.Description = [[
-
+ATT.Description = [[Compact folding stock.
 ]]
 
 ATT.SortOrder = 2
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_fold3"}
+
+ATT.RecoilMult = 1.15
+ATT.RecoilKickMult = 1.15
+ATT.RecoilAutoControlMult = 0.9
+ATT.SpreadMultHipFire = 0.95
+ATT.SpreadMultMove = 0.9
+ATT.AimDownSightsTimeMult = 0.85
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock3")
 
@@ -96,7 +110,7 @@ ATT.SortOrder = 2
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_fold4"}
 
-ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock3")
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock30")
 
 
 ----------------------------------------------------------------------------------
@@ -181,13 +195,18 @@ ATT = {}
 ATT.PrintName = [[Polymer Stock A]]
 ATT.CompactName = [[P.A]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_poly.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[From the latest material.
 ]]
 
 ATT.SortOrder = 7
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_poly1"}
+
+ATT.RecoilMult = 0.9
+ATT.RecoilKickMult = 0.9
+ATT.RecoilMultCrouch = 0.7
+ATT.RecoilMultHipFire = 0.85
+ATT.AimDownSightsTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock7")
 
@@ -200,13 +219,19 @@ ATT = {}
 ATT.PrintName = [[Polymer Stock B]]
 ATT.CompactName = [[P.B]]
 ATT.Icon = Material("entities/gekolt_css_ak_s_poly2.png", "mips smooth")
-ATT.Description = [[
-    
+ATT.Description = [[Small straight tube designed for winter environment.
 ]]
 
 ATT.SortOrder = 7.5
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_poly2"}
+
+ATT.RecoilMult = 1.05
+ATT.RecoilKickMult = 1.15
+ATT.RecoilAutoControlMult = 0.9
+ATT.SpreadMultHipFire = 0.9
+ATT.SpreadMultMove = 0.8
+ATT.AimDownSightsTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock8")
 
@@ -226,6 +251,11 @@ Variations not included.
 ATT.SortOrder = 8
 ATT.Category = "css_ak_stock"
 ATT.ActivateElements = {"s_adaptor"}
+
+ATT.RecoilMult = 0.9
+ATT.RecoilKickMult = 0.9
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SpreadMultHipFire = 0.95
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_stock9")
 
@@ -251,6 +281,10 @@ ATT.SortOrder = 3
 ATT.Category = "css_ak_g"
 ATT.ActivateElements = {"g_poly"}
 
+ATT.RecoilMult = 1.15
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.9
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip1")
 
 
@@ -269,6 +303,10 @@ How do you even drill it like that?
 ATT.SortOrder = 2
 ATT.Category = "css_ak_g"
 ATT.ActivateElements = {"g_ske"}
+
+ATT.RecoilMult = 1.5
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip2")
 
@@ -296,6 +334,11 @@ ATT.ModelOffset = Vector(1.5, -0.25, 0.5)
 ATT.ModelAngleOffset = Angle(90, -90, 0)
 ATT.Model = "models/weapons/geckololt_css/c_m4a1_ik_cali.mdl"
 
+ATT.SpreadMultHipFire = 2
+ATT.SwayMultSights = 0.75
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.15
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip3")
 
 
@@ -322,8 +365,12 @@ ATT.SortOrder = 2
 ATT.Category = "css_ak_g"
 ATT.ActivateElements = {"g_rifp", "nostock"}
 
-ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip4")
+ATT.SpreadMultHipFire = 3
+ATT.SwayMultSights = 0.5
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
+ARC9.LoadAttachment(ATT, "gekolt_css_ak_grip4")
 
 
 
@@ -349,6 +396,20 @@ ATT.SortOrder = 1
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_sd", "pre_muzzed"}
 
+ATT.ShootVolumeMult = 0.8
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+ATT.Silencer = true
+
+ATT.RecoilUpMult = 1.05
+ATT.RecoilRandomMult = 0.85
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = 0.05
+ATT.PhysBulletMuzzleVelocityMult = 0.95
+ATT.RangeMaxMult = 0.85
+ATT.RangeMinMult = 1.2
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg1")
 
 
@@ -368,6 +429,9 @@ ATT.SortOrder = 0.5
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_poly"}
 
+ATT.RecoilMult = 0.95
+ATT.SwayAdd = 0.05
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg2")
 
 
@@ -385,6 +449,13 @@ ATT.Description = [[Early bulky design in an attempt to modernise the rusty rifl
 ATT.SortOrder = 0.55
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_rail"}
+
+ATT.RecoilDissipationRateMult = 1.25
+ATT.RecoilRandomSideAdd = 0.25
+ATT.RecoilSideAdd = 0.25
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.03
 
 ATT.Sights = {
     {
@@ -416,6 +487,18 @@ ATT.SortOrder = 0.1
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_u"}
 
+ATT.RangeMaxMult = 0.75
+ATT.RecoilMult = 3
+
+ATT.SpreadAdd = 0.003
+ATT.SpreadAddHipFire = 0.008
+
+ATT.SpreadMultRecoil = 0.95
+ATT.RecoilMultRecoil = 0.95
+
+ATT.AimDownSightsTimeAdd = -0.06
+ATT.SprintToFireTimeAdd = -0.1
+
 ATT.Sights = {
     {
         Pos = Vector(0, 18, -2.2),
@@ -445,6 +528,14 @@ ATT.Description = [[Long and regulated handguard and barrel for hunting purpose.
 ATT.SortOrder = 3
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_hunt"}
+
+ATT.FreeAimRadiusAdd = 3.5
+ATT.SwayAdd = -0.075
+
+ATT.RangeMaxMult = 1.75
+ATT.SpreadAdd = -0.001
+
+ATT.RecoilUpMult = 0.85
 
 ATT.Sights = {
     {
@@ -520,6 +611,14 @@ ATT.SortOrder = 0.2
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_bizon"}
 
+ATT.SpreadAdd = 0.0005
+ATT.SpreadAddHipFire = 0.0015
+ATT.SpreadMultRecoil = 0.98
+ATT.RecoilMult = 1.15
+
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = -0.05
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg8")
 
 
@@ -535,6 +634,24 @@ ATT.Description = [[Oi, they just make the thing longer
 Rounded front sight for... more... accuracy?
 Chucked a built-in bipod for good measures.
 ]]
+
+ATT.RPMMult = 0.9
+
+ATT.FreeAimRadiusAdd = 2.5
+ATT.SwayAdd = 0.05
+
+ATT.RangeMaxMult = 1.5
+ATT.SpreadAdd = 0.00003
+ATT.SpreadAddHipFire = 0.00008
+
+ATT.RecoilMult = 0.8
+ATT.SpreadMultRecoil = 0.95
+ATT.RecoilMultRecoil = 0.95
+
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.06
+
+ATT.RecoilModifierCapAdd = 5
 
 ATT.Ignore = false
 
@@ -564,6 +681,13 @@ ATT.SortOrder = 0.4
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_12"}
 
+ATT.RecoilDissipationRateMult = 1.15
+ATT.RecoilRandomSideAdd = 0.2
+ATT.RecoilSideAdd = 0.225
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.03
+
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg10")
 
 
@@ -582,6 +706,12 @@ ATT.SortOrder = 0.3
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_amd", "nofg", "no_bizon"}
 ATT.ExcludeElements = {"no_amd"}
+
+ATT.SwayAdd = 0.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.075
+ATT.SpeedMult = 0.95
+ATT.RecoilMult = 0.85
 
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
@@ -609,6 +739,11 @@ Watch that bolt rattles in spectacular failure.
 ATT.SortOrder = 0.45
 ATT.Category = "css_ak_handguard"
 ATT.ActivateElements = {"hg_naked"}
+
+ATT.SpeedMult = 1.15
+ATT.SwayMult = 1.05
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.1
 
 ARC9.LoadAttachment(ATT, "gekolt_css_ak_hg12")
 
