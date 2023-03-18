@@ -325,6 +325,7 @@ SWEP.Attachments = {
         PrintName = "Off-Hand",
         DefaultName = "None",
         InstalledElements = {"akimbo"},
+        Hidden = true,
 
         ExcludeElements = {"akantbo"},
         Category = {"css_akimbo"},
