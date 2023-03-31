@@ -134,6 +134,8 @@ ATT.Trivia = {
     ["Caliber"] = "5.56x45mm NATO",
 }
 
+ATT.Ammo = "smg1"
+
 ATT.DamageMax = 35
 ATT.DamageMin = 20
 

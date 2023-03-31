@@ -16,10 +16,10 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    ["Additional Coding"] = [[TheOnly8Z#8888 (8Z)]],
-    ["Sound"] = [[CturiX#6008 (CturiX)]],
-    ["Assets"] = [[Day of Defeat: Source]],
-    ["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
+    ["Additional Coding1"] = [[TheOnly8Z#8888 (8Z)]],
+    ["Sound2"] = [[CturiX#6008 (CturiX)]],
+    ["Assets3"] = [[Day of Defeat: Source]],
+    ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
 SWEP.Description = [[An old as time pistol given a carbine kit and absurdly fast auto sear.
