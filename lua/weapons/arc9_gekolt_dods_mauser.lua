@@ -22,13 +22,13 @@ SWEP.Credits = {
     ["Contact"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
-SWEP.Description = [[An old as hell pistol given a carbine kit and absurdly fast auto sear.
+SWEP.Description = [[An old as time pistol given a carbine kit and absurdly fast auto sear.
 Sold en masse to Chinese warlords in the 1930s, so you're a little late to the party.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_mauser.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_mauser.mdl"

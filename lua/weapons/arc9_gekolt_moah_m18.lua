@@ -27,7 +27,7 @@ Personnel or Mechanised.]]
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m18.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_m18.mdl"

@@ -28,7 +28,7 @@ Miniature barage if you can get enough shot.]]
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m79.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
-SWEP.Slot = 3
+SWEP.Slot = 4
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_m79.mdl"

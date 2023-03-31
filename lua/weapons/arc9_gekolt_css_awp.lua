@@ -28,7 +28,7 @@ Its rarity and iconic status makes it all the more tempting to give it... unscru
 SWEP.ViewModel = "models/weapons/geckololt_css/c_awp.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_awp.mdl"

@@ -28,7 +28,7 @@ It also goes ping.]]
 SWEP.ViewModel = "models/weapons/geckololt_css/c_garand.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 3
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_garand.mdl"

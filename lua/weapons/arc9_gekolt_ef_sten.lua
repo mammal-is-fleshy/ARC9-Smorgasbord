@@ -27,7 +27,7 @@ Absurdly simple design lends itself to both pragmatic and unorthodox modificatio
 SWEP.ViewModel = "models/weapons/geckololt_css/c_sten.mdl"
 SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
 
-SWEP.Slot = 2
+SWEP.Slot = 1
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_sten.mdl"
