@@ -490,7 +490,7 @@ SWEP.Animations = {
         EventTable = {
             {s =  "gekolt_css/m4a1_clipout.wav" ,   t = 18 / 40},
             {s =  "gekolt_css/m4a1_clipin.wav" ,    t = 65 / 40},
-            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 113 / 40},
+            {s =  "gekolt_css/usp_sliderelease.wav" ,    t = 110 / 40},
             },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },

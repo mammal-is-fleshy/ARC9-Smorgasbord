@@ -95,6 +95,7 @@ ATT.Category = "fnv_flare_frame"
 ATT.ActivateElements = {"50cal", "not_sg"}
 
 ATT.Ammo = "SniperPenetratedRound"
+ATT.DamageType = DMG_BLAST + DMG_BULLET + DMG_AIRBOAT
 
 ATT.SpreadMult = 0.1
 
@@ -103,8 +104,8 @@ ATT.RicochetChanceOverride = 1
 
 ATT.NumOverride = 1
 
-ATT.DamageMaxOverride = 180
-ATT.DamageMinOverride = 92
+ATT.DamageMaxOverride = 320
+ATT.DamageMinOverride = 102
 ATT.RangeMinOverride = 1000
 ATT.RangeMaxOverride = 20000
 
