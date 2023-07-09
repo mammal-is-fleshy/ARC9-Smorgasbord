@@ -744,6 +744,17 @@ ATT.RecoilDissipationRateMult = 0.95
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.075
 
+
+ATT.Attachments = {
+    {
+        PrintName = "MOUNT TOP",
+        Category = {"tac_css_flat", "mount_css"},
+        Pos = Vector(0,-1.25, -6.5),
+        Ang = Angle(90, 0, -90),
+        ExtraSightDistance = 7
+    },
+}
+
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_11")
 
 
