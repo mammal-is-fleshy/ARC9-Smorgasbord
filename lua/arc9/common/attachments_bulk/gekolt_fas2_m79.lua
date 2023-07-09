@@ -116,7 +116,7 @@ ATT.PrintName = [[Pirate-Kit]]
 ATT.CompactName = [[Pirate]]
 ATT.Icon = Material("entities/gekolt_fas2_m79_pirate.png", "mips smooth")
 ATT.Description = [[Removes and shortens everything
-The Magic™️ auto eject is no more.
+The Magic™ auto eject is no more.
 ]]
 
 ATT.SortOrder = 1

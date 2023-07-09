@@ -712,5 +712,40 @@ ATT.SprintToFireTimeAdd = 0.05
 ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_10")
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = "Athena Handguard"
+ATT.CompactName = "Athena"
+ATT.Description = [[Sharpshooter extention, accuracy comes prepacked.]]
+
+ATT.Icon = Material("entities/gekolt_css_m4_h_athena.png", "mips smooth")
+
+ATT.SortOrder = 21
+ATT.Category = "css_m4_handguard"
+ATT.ActivateElements = {"guard_11"}
+
+
+ATT.RPMMult = 400 / 750
+
+ATT.FreeAimRadiusAdd = 10
+ATT.SwayAdd = -0.5
+
+ATT.RangeMinMult = 3.5
+ATT.RangeMaxMult = 2
+ATT.SpreadAdd = -0.0025
+
+ATT.RecoilUpMult = 0.675
+
+ATT.RecoilDissipationRateMult = 0.95
+
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.075
+
+ARC9.LoadAttachment(ATT, "gekolt_css_m4_h_11")
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

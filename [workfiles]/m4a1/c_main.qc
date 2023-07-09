@@ -103,6 +103,8 @@ $bodygroup "handguard"
 	studio "m4a1_hg_608.smd"
 	studio "m4a1_hg_bn36.smd"
 	studio "m4a1_hg_t86.smd"
+	studio "m4a1_hg_athena.smd"
+	studio "m4a1_hg_athena_ak.smd"
 }
 
 $bodygroup "grip"
@@ -286,6 +288,15 @@ $sequence "dry_2" {
 
 $sequence "dry_3" {
 	"anims\dry_3.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_6" {
+	"anims\dry_6.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2
