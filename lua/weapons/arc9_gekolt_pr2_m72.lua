@@ -261,7 +261,7 @@ SWEP.MuzzleEffectQCAUBGL = 1
 
 -------------------------- SOUNDS
 
-SWEP.ShootSound = "rzen1th_smor/m18_fire.wav"
+SWEP.ShootSound = "gekolt_pr2/m72_fire_1p.wav"
 SWEP.ShootSoundSilenced = "gekolt_css/m4a1-1.wav"
 SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
@@ -313,9 +313,10 @@ SWEP.Animations = {
 -------------------------- ATTACHMENTS
 
 SWEP.AttachmentElements = {
-    ["rail_def"] = { Bodygroups = { {3, 1}, {2, 1} },},  
+    ["rail_def"] = { Bodygroups = { {5, 1}, {2, 1} },},  
 	["rail_bot"] = { Bodygroups = { {4, 1} },},	
-	["a_12g"] = { Bodygroups = { {1, 2} },},
+	["rail_tac"] = { Bodygroups = { {3, 1} },},	
+	["a_12g"] = { Bodygroups = { {1, 3} },},
 }
 
 SWEP.Attachments = {
@@ -327,8 +328,20 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, 0, -10),
         Ang = Angle(90, 0, -90),
+		Hidden = true
     },
 
+    {
+        PrintName = "MOUNT Top",
+        DefaultName = "None",
+        InstalledElements = {"rail_tac"},
+
+        Category = {"tac_css_flat", "mount_css"},
+        Bone = "W_Main",
+        Pos = Vector(0, -3.65, 5.5),
+        Ang = Angle(90, 0, -90),
+    },
+	
     {
         PrintName = "Optic",
         DefaultName = "None",
@@ -337,7 +350,7 @@ SWEP.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
         Category = {"optic_css"},
         Bone = "W_Main",
-        Pos = Vector(0, -3.65, 5.5),
+        Pos = Vector(2.75, -3, -8.5),
         Ang = Angle(90, 0, -90),
     },
 	

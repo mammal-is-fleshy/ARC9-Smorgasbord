@@ -2,6 +2,8 @@ VertexLitGeneric
 {
 	"$basetexture" "models\gekolt_css_vmt\m72\AT4_Projectile"
 	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" "0.9"	
 	"$basetexturealphaenvmapmask"	"1"
 	"$nocull" 1
 

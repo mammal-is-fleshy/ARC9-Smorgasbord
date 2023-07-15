@@ -7,7 +7,6 @@ $bodygroup "0"
 	studio "M72.smd"
 	blank
 }
-
 $bodygroup "1"
 {
 	studio "M72_Ammo.smd"
@@ -15,30 +14,33 @@ $bodygroup "1"
 	studio "M72_Ammo_40.smd"
 	blank	
 }
-
 $bodygroup "2"
 {
 	studio "M72_Iron.smd"
 	studio "M72_IronF.smd"
 	blank
 }
-
 $bodygroup "3"
 {
 	blank
 	studio "Rail_Top.smd"
 }
-
 $bodygroup "4"
 {
 	blank
 	studio "Rail_Bottom.smd"
+}
+$bodygroup "5"
+{
+	blank
+	studio "Rail_Optic.smd"
 }
 
 
 $illumposition 0 0 0
 
 $cdmaterials "models\gekolt_css_vmt\"
+$cdmaterials "models\weapons\v_models\launch_m79_fas2\"
 $cdmaterials "models\gekolt_css_vmt\m72\"
 
 $attachment "1" "W_Main" 0 0 0 rotate -90 0 -90

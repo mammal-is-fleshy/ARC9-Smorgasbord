@@ -272,7 +272,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
     return anim .. "_sg"
 end
 
-ATT.ShootEntOverride = nil
+ATT.ShootEnt = nil
+
 ATT.SortOrder = 1
 ATT.Category = "pr2_m72_ammo"
 ATT.ActivateElements = {"a_12g"}

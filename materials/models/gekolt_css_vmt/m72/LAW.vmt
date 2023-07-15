@@ -2,11 +2,12 @@ VertexLitGeneric
 {
 	"$basetexture" "models\gekolt_css_vmt\m72\LAW"
 	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" "0.9"	
 	"$basetexturealphaenvmapmask"	"1"
 	"$nocull" 1
 
 	"$color2"						"[0.9 0.9 0.9]"
-//	"$halflambert" 					"1"
 
 	"$phong"                        "1"	
 	"$phongalbedotint"              "1"	
