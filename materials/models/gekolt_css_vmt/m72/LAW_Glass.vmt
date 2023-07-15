@@ -1,0 +1,16 @@
+VertexLitGeneric
+{
+	"$basetexture" "models\gekolt_css_vmt\m72\LAW"
+	"$envmap" "env_cubemap"
+
+	"$translucent" "1"
+	"$phong"                        "1"	
+	"$phongalbedotint"              "1"	
+	"$phongexponent"                "16	
+	"$phongboost"                   "4"
+	"$phongfresnelranges"           "[0.5 1.5 3]"
+
+	"$basetexturealphaenvmapmask"	"1"
+	"$envmaptint"			"[0.05 0.05 0.05]"
+	"$envmapfresnel"			"0.5"		
+}

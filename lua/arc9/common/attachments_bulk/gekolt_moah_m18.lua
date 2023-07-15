@@ -242,3 +242,71 @@ ARC9.LoadAttachment(ATT, "gekolt_moah_m18_rpg2")
 
 
 ----------------------------------------------------------------------------------
+
+
+--- M72
+
+
+----------------------------------------------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = [[0 Gauge]]
+ATT.CompactName = [[SG]]
+ATT.Icon = Material("entities/gekolt_css_ammo/shotgun.png", "mips smooth")
+ATT.Description = [[The biggest of all the bucks. 
+DOESNT FUCKING WORK
+]]
+
+ATT.Attachments = {
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",
+        Category = {"css_ammo_sg"},
+        Pos = Vector(0,0,3),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
+    return anim .. "_sg"
+end
+
+ATT.ShootEntOverride = nil
+ATT.SortOrder = 1
+ATT.Category = "pr2_m72_ammo"
+ATT.ActivateElements = {"a_12g"}
+
+ATT.Ammo = "buckshot"
+
+ATT.PhysBulletMuzzleVelocityOverride = 2900 * 12
+ATT.PhysBulletGravityOverride = 1
+ATT.PhysBulletDragOverride = 1
+
+ATT.SpreadAdd = 0.08
+
+ATT.PenetrationOverride = 1
+ATT.RicochetChanceOverride = 0.25
+
+ATT.NumOverride = 50
+
+ATT.DamageMaxOverride = 22
+ATT.DamageMinOverride = 6
+ATT.RangeMinOverride = 750
+ATT.RangeMaxOverride = 10000
+
+ATT.PhysBulletModelOverride = false
+ATT.ImpactDecalOverride = ""
+
+ATT.SuppressSmokeTrail = true
+
+ATT.ShootSoundOverride = {"cturix_m79/fire_buck_large-1.wav", "cturix_m79/fire_buck_large-2.wav", "cturix_m79/fire_buck_large-3.wav", "cturix_m79/fire_buck_large-4.wav"}
+ATT.ShellSoundsOverride = {"cturix_m79/shotshell_large-1.wav", "cturix_m79/shotshell_large-2.wav", "cturix_m79/shotshell_large-3.wav", "cturix_m79/shotshell_large-4.wav"}
+
+
+ATT.MuzzleParticleOverride = "muzzleflash_shotgun"
+
+ATT.TracerColor = Color(255, 225, 200)
+ATT.TracerSize = 1
+
+ARC9.LoadAttachment(ATT, "gekolt_pr2_m72_a1")
