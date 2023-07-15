@@ -98,12 +98,12 @@ SWEP.Firemodes = {
 SWEP.Recoil = 1
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
-SWEP.RecoilUp = 0.3 -- Multiplier for vertical recoil
-SWEP.RecoilSide = 1.2 -- Multiplier for vertical recoil
+SWEP.RecoilUp = 0.25 -- Multiplier for vertical recoil
+SWEP.RecoilSide = 1.5 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.15
+SWEP.RecoilRandomUp = 0.25
 SWEP.RecoilRandomSide = 0.75
 
 SWEP.RecoilDissipationRate = 50 -- How much recoil dissipates per second.
@@ -111,15 +111,15 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 2
+SWEP.RecoilKick = 3
 
 -------------------------- VISUAL RECOIL
 
 SWEP.UseVisualRecoil = true
 
-SWEP.VisualRecoilUp = 0.01 -- Vertical tilt for visual recoil.
-SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt for visual recoil.
-SWEP.VisualRecoilRoll = 0.2 -- Roll tilt for visual recoil.
+SWEP.VisualRecoilUp = 0.02 -- Vertical tilt for visual recoil.
+SWEP.VisualRecoilSide = 0.02 -- Horizontal tilt for visual recoil.
+SWEP.VisualRecoilRoll = 0.4 -- Roll tilt for visual recoil.
 
 SWEP.VisualRecoilCenter = Vector(0, 4, 0) -- The "axis" of visual recoil. Where your hand is.
 
@@ -140,8 +140,8 @@ SWEP.SpreadAddRecoil = 0.0002 -- Applied per unit of recoil.
 SWEP.FreeAimRadius = 10 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 1 -- How much the gun sways.
 
-SWEP.SwayMultMidAir = 2
-SWEP.SwayMultMove = 1.15
+SWEP.SwayMultMidAir = 2.5
+SWEP.SwayMultMove = 1.2
 SWEP.SwayMultCrouch = 0.66
 SWEP.SwayMultShooting = 1.2
 
@@ -153,10 +153,10 @@ SWEP.AimDownSightsTime = 0.33 -- How long it takes to go from hip fire to aiming
 SWEP.SprintToFireTime = 0.35 -- How long it takes to go from sprinting to being able to fire.
 
 SWEP.SpeedMult = 0.95
-SWEP.SpeedMultSights = 0.75
-SWEP.SpeedMultShooting = 0.7
+SWEP.SpeedMultSights = 0.8
+SWEP.SpeedMultShooting = 0.675
 SWEP.SpeedMultMelee = 0.75
-SWEP.SpeedMultCrouch = 1
+SWEP.SpeedMultCrouch = 0.8
 SWEP.SpeedMultBlindFire = 1
 
 -------------------------- BLIND FIRE
