@@ -240,6 +240,10 @@ SWEP.FiremodeSound = "arc9/firemode.wav"
 
 SWEP.DefaultBodygroups = "01100000100000000000"
 
+SWEP.TriggerDelay = true
+SWEP.TriggerDelayTime = 0.07
+SWEP.TriggerDownSound = "gekolt_css/weaponclick.wav"
+
 SWEP.BulletBones = {
     [1] = "W_Belt1",
     [2] = "W_Belt2",

@@ -36,6 +36,7 @@ ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
 ATT.Description = [[Definitely not a g3 mag stuck to the side.]]
 
 ATT.ClipSizeOverride = 20
+ATT.TriggerDelay = false
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_para"
@@ -61,6 +62,7 @@ ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
 ATT.Description = [[Definitely not a g3 mag stuck to the side.]]
 
 ATT.ClipSizeOverride = 40
+ATT.TriggerDelay = false
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_parax"
