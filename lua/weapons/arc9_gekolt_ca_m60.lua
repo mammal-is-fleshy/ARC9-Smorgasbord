@@ -172,7 +172,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.IronSights = {
-    Pos = Vector(-3.3, 0, 1.35),
+    Pos = Vector(-3.3, 0, 1.2),
     Ang = Angle(0,0,5),
     Midpoint = { -- Where the gun should be at the middle of it's irons
         Pos = Vector(0, 15, -4),
@@ -471,7 +471,7 @@ SWEP.AttachmentElements = {
 	["u_para"] = { Bodygroups = { {1, 2}, {2, 2}, {4, 2} }, AttPosMods = { [4] = { Pos = Vector(0, -0.825, -3.75), } }},
 	["u_parax"] = { Bodygroups = { {1, 2}, {2, 3}, {4, 2} }, AttPosMods = { [4] = { Pos = Vector(0, -0.825, -3.75), } }},
 	
-	["hg_para"] = { Bodygroups = { {3, 1}, {6, 1} }, AttPosMods = { [5] = { Pos = Vector(0, -2.2, 19.5), } }},
+	["hg_para"] = { Bodygroups = { {3, 1}, {6, 1}, {11, 2} }, AttPosMods = { [5] = { Pos = Vector(0, -2.2, 19.5), } }},
 }
 
 
@@ -479,6 +479,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
     if wep:HasElement("rail_def") and wep:HasElement("u_para")	then model:SetBodygroup(9,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("u_parax")	then model:SetBodygroup(9,2) end
+
+	if wep:HasElement("muzzle_hide") then model:SetBodygroup(11,0) else model:SetBodygroup(11,1) end
+	if wep:HasElement("muzzle_hide") and wep:HasElement("hg_para") then model:SetBodygroup(11,0) else model:SetBodygroup(11,2) end	
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
@@ -540,6 +543,7 @@ SWEP.Attachments = {
     {
         PrintName = "Muzzle",
         DefaultName = "None",
+        InstalledElements = {"muzzle_hide"},
 
         DefaultIcon = Material("arc9/def_att_icons/barrel.png"),
         ExcludeElements = {"pre_muzzed"},

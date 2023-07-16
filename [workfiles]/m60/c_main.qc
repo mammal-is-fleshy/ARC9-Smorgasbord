@@ -68,6 +68,12 @@ $bodygroup "10"
 	blank
 	studio "Rail_Bottom.smd"
 }
+$bodygroup "11"
+{
+	blank
+	studio "M60_Mz.smd"
+	studio "M60_Mz_Para.smd"
+}
 
 
 $illumposition 0 0 0

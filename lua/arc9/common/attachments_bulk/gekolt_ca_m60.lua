@@ -16,7 +16,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_belt"
 end
 
-ATT.SpeedMult = 0.8
+ATT.SpeedMultOverride = 0.8
 
 ATT.SortOrder = 50
 ATT.Category = "ca_mg_up"
@@ -41,7 +41,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_para"
 end
 
-ATT.SpeedMult = 0.95
+ATT.SpeedMultOverride = 0.95
 
 ATT.SortOrder = 20
 ATT.Category = "ca_mg_up"
@@ -66,7 +66,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_parax"
 end
 
-ATT.SpeedMult = 0.9
+ATT.SpeedMultOverride = 0.9
 
 ATT.SortOrder = 40
 ATT.Category = "ca_mg_up"
