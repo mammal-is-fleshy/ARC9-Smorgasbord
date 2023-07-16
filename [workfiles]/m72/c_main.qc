@@ -43,7 +43,7 @@ $cdmaterials "models\gekolt_css_vmt\"
 $cdmaterials "models\weapons\v_models\launch_m79_fas2\"
 $cdmaterials "models\gekolt_css_vmt\m72\"
 
-$attachment "1" "W_Main" 0 0 0 rotate -90 0 -90
+$attachment "1" "W_Main" 0.00 0.00 18.00 rotate -90 -0 0
 
 $sequence "idle" {
 	"anims\idle.smd"

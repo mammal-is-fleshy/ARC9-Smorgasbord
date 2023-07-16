@@ -350,7 +350,7 @@ SWEP.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
         Category = {"optic_css"},
         Bone = "W_Main",
-        Pos = Vector(2.75, -3, -8.5),
+        Pos = Vector(2.825, -3, -8.5),
         Ang = Angle(90, 0, -90),
     },
 	
