@@ -55,6 +55,7 @@ $bodygroup "7"
 $bodygroup "8"
 {
 	studio "M60_Pod.smd"
+	studio "M60_PodF.smd"
 	blank
 }
 $bodygroup "9"

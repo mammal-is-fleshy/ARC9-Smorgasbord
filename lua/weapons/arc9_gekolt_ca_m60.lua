@@ -106,15 +106,15 @@ SWEP.RecoilSide = 0.15 -- Multiplier for vertical recoil
 
 -- These values determine how much extra movement is applied to the recoil entirely randomly, like in a circle.
 -- This type of recoil CANNOT be predicted.
-SWEP.RecoilRandomUp = 0.325
-SWEP.RecoilRandomSide = 0.45
+SWEP.RecoilRandomUp = 0.25
+SWEP.RecoilRandomSide = 0.325
 
 SWEP.RecoilDissipationRate = 20 -- How much recoil dissipates per second.
 SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern starts to reset.
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.5
+SWEP.RecoilKick = 1.25
 
 SWEP.RecoilMultRecoil = 1.075 -- Looks stupid but it means expoential recoil growth.
 
@@ -149,7 +149,7 @@ SWEP.SprintToFireTime = 0.38
 
 SWEP.SpeedMult = 0.75
 SWEP.SpeedMultSights = 0.65
-SWEP.SpeedMultShooting = 0.5
+SWEP.SpeedMultShooting = 0.75
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.9
 
@@ -184,8 +184,8 @@ SWEP.IronSights = {
 
 SWEP.Crosshair = false
 
-SWEP.BipodPos = Vector(-2.58, 0, 1)
-SWEP.BipodAng = Angle(0, 0, -5)
+SWEP.BipodPos = Vector(-3.3, 0, 1)
+SWEP.BipodAng = Angle(0, 0, 5)
 
 SWEP.SprintAng = Angle(40, -15, -10)
 SWEP.SprintPos = Vector(3, 6, -2)
@@ -238,7 +238,7 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.DefaultBodygroups = "01100000100100000000"
+SWEP.DefaultBodygroups = "01100000000100000000"
 
 SWEP.TriggerDelay = true
 SWEP.TriggerDelayTime = 0.07
@@ -466,7 +466,6 @@ SWEP.Animations = {
 }
 
 -------------------------- ATTACHMENTS
-
 SWEP.AttachmentElements = {
     ["rail_def"] = { Bodygroups = { {9, 1}, {7, 1} },},
     ["fg_def"] = { Bodygroups = { {10, 1} },},   
@@ -477,7 +476,8 @@ SWEP.AttachmentElements = {
 	
 	["hg_para"] = { Bodygroups = { {3, 1}, {6, 1}, {11, 2} }, AttPosMods = { [5] = { Pos = Vector(0, -2.2, 19.5), } }},
 }
-
+SWEP.Bipod = true
+SWEP.RecoilDissipationRateMultBipod = 2
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local model = data.model
@@ -485,6 +485,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if wep:HasElement("rail_def") and wep:HasElement("u_parax")	then model:SetBodygroup(9,2) end
 
 	if wep:HasElement("muzzle_hide") then model:SetBodygroup(11,0) end
+	
+    if wep:GetBipod() then
+        model:SetBodygroup(8,0)
+    elseif !wep:GetBipod() then
+        model:SetBodygroup(8,1)
+    end
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)

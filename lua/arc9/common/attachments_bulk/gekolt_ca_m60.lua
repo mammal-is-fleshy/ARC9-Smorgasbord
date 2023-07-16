@@ -84,7 +84,7 @@ ATT = {}
 
 ATT.PrintName = [[Paratrooper Handguard]]
 ATT.CompactName = [[Para]]
-ATT.Icon = Material("entities/gekolt_css_ak_h_poly.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ca_m60_h_para.png", "mips smooth")
 ATT.Description = [[Northern variant built for the cold
 Comes with a fancy rear ironsight.
 ]]
