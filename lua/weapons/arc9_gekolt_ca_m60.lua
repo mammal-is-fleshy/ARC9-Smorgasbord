@@ -238,7 +238,7 @@ SWEP.DryFireSound = "weapons/clipempty_rifle.wav"
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
-SWEP.DefaultBodygroups = "01100000100000000000"
+SWEP.DefaultBodygroups = "01100000100100000000"
 
 SWEP.TriggerDelay = true
 SWEP.TriggerDelayTime = 0.07
@@ -484,8 +484,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if wep:HasElement("rail_def") and wep:HasElement("u_para")	then model:SetBodygroup(9,2) end
 	if wep:HasElement("rail_def") and wep:HasElement("u_parax")	then model:SetBodygroup(9,2) end
 
-	if wep:HasElement("muzzle_hide") then model:SetBodygroup(11,0) else model:SetBodygroup(11,1) end
-	if wep:HasElement("muzzle_hide") and wep:HasElement("hg_para") then model:SetBodygroup(11,0) else model:SetBodygroup(11,2) end	
+	if wep:HasElement("muzzle_hide") then model:SetBodygroup(11,0) end
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)

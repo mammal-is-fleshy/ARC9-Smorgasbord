@@ -7,7 +7,7 @@ ATT = {}
 
 ATT.PrintName = [[Belt-Only Config]]
 ATT.CompactName = [[Belt]]
-ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ca_m60_u_belt.png", "mips smooth")
 ATT.Description = [[50 Round belt link reduces load both in weight and in capacity.]]
 
 ATT.ClipSizeOverride = 50
@@ -58,7 +58,7 @@ ATT = {}
 
 ATT.PrintName = [[Paratropper Config (Extended)]]
 ATT.CompactName = [[ParaX]]
-ATT.Icon = Material("entities/gekolt_css_ak_u_308.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_ca_m60_u_parax.png", "mips smooth")
 ATT.Description = [[Definitely not a g3 mag stuck to the side.]]
 
 ATT.ClipSizeOverride = 40
