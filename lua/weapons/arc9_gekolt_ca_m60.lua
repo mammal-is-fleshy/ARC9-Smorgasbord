@@ -16,8 +16,8 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    ["Sound2"] = [[Project Reality 2]],
-    ["Assets3"] = [[Project Reality 2]],
+    ["Sound2"] = [[Project Reality 2, cherresoda#6579 (rzen1th)]],
+    ["Assets3"] = [[Combat Arms]],
     ["Contact4"] = [[SlogoKolt#6648 or Mytton#5132]],
 }
 
@@ -76,7 +76,7 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 600
+SWEP.RPM = 650
 
 -- Works different to ArcCW
 
@@ -184,7 +184,7 @@ SWEP.IronSights = {
 
 SWEP.Crosshair = false
 
-SWEP.BipodPos = Vector(-3.3, 0, 1)
+SWEP.BipodPos = Vector(-3.3, 5, -0.5)
 SWEP.BipodAng = Angle(0, 0, 5)
 
 SWEP.SprintAng = Angle(40, -15, -10)
@@ -194,7 +194,7 @@ SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0.5, 8, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-0.2, 4.5, -2)
+SWEP.CrouchPos = Vector(-0.2, 7.5, -2)
 SWEP.CrouchAng = Angle(0, 0, -15)
 
 SWEP.CustomizeAng = Angle(90, 0, 0)
