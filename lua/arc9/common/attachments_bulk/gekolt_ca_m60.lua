@@ -238,10 +238,6 @@ ATT.SortOrder = 1
 ATT.Category = "fh2_thock_barrel"
 ATT.ActivateElements = {"b_short"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_carbine"
-end
-
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.2
 
@@ -266,10 +262,6 @@ ATT.Description = [[Overcompensate much?
 ATT.SortOrder = 1
 ATT.Category = "fh2_thock_barrel"
 ATT.ActivateElements = {"b_long"}
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_carbine"
-end
 
 ATT.RangeMaxMult = 1.5
 ATT.RangeMinMult = 1.5

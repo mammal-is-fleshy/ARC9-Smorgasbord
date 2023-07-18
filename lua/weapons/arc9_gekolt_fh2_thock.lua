@@ -80,7 +80,7 @@ SWEP.ReloadInSights = false -- This weapon can aim down sights while reloading.
 
 -------------------------- FIREMODES
 
-SWEP.RPM = 730
+SWEP.RPM = 930
 
 -- Works different to ArcCW
 
