@@ -474,7 +474,7 @@ SWEP.AttachmentElements = {
 	["u_para"] = { Bodygroups = { {1, 2}, {2, 2}, {4, 2} }, AttPosMods = { [4] = { Pos = Vector(0, -0.825, -3.75), } }},
 	["u_parax"] = { Bodygroups = { {1, 2}, {2, 3}, {4, 2} }, AttPosMods = { [4] = { Pos = Vector(0, -0.825, -3.75), } }},
 	
-	["hg_para"] = { Bodygroups = { {3, 1}, {6, 1}, {11, 2} }, AttPosMods = { [5] = { Pos = Vector(0, -2.2, 19.5), } }},
+	["hg_para"] = { Bodygroups = { {3, 1}, {6, 1}, {8, 2}, {11, 2} }, AttPosMods = { [5] = { Pos = Vector(0, -2.2, 19.5), } }},
 }
 SWEP.Bipod = true
 SWEP.RecoilDissipationRateMultBipod = 2
@@ -486,11 +486,15 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
 	if wep:HasElement("muzzle_hide") then model:SetBodygroup(11,0) end
 	
+	if !wep:HasElement("hg_para") then
+	
     if wep:GetBipod() then
         model:SetBodygroup(8,0)
     elseif !wep:GetBipod() then
         model:SetBodygroup(8,1)
     end
+	
+	end
 end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
@@ -543,7 +547,7 @@ SWEP.Attachments = {
         InstalledElements = {"rail_def"},
 
         DefaultIcon = Material("arc9/def_att_icons/optic.png"),
-        Category = {"optic_css", "optic_css_free"},
+        Category = {"optic_css"},
         Bone = "W_Open",
         Pos = Vector(0, -1.2, -3.75),
         Ang = Angle(90, 0, -90),
