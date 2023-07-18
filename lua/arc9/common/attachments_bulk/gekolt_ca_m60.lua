@@ -123,7 +123,7 @@ ATT = {}
 
 ATT.PrintName = [[40-Rnd Magazine]]
 ATT.CompactName = [[40-Rnd]]
-ATT.Icon = Material("entities/gekolt_ca_m60_h_para.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fh2_thock_magx.png", "mips smooth")
 ATT.Description = [[Northern variant built for the cold
 Comes with a fancy rear ironsight.
 ]]
@@ -175,7 +175,7 @@ ATT.PrintName = [[Wooden Stock]]
 ATT.CompactName = "Wooden"
 ATT.Description = [[Gradually regains its identity.]]
 
-ATT.Icon = Material("entities/gekolt_css_m4_s_thomp.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fh2_thock_s.png", "mips smooth")
 
 ATT.SortOrder = 8
 ATT.Category = "fh2_thock_stock"
@@ -199,7 +199,7 @@ ATT.PrintName = [[Wooden Grip]]
 ATT.CompactName = "Wooden"
 ATT.Description = [[Wonder why it's missing in the first place.]]
 
-ATT.Icon = Material("entities/gekolt_css_m4_s_thomp.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fh2_thock_g.png", "mips smooth")
 
 ATT.SortOrder = -9000000
 ATT.Category = "fh2_thock_grip"
@@ -230,7 +230,7 @@ ATT = {}
 
 ATT.PrintName = [[Medium-Length]]
 ATT.CompactName = [[Ext]]
-ATT.Icon = Material("entities/gekolt_css_m9_f_carbine.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fh2_thock_bs.png", "mips smooth")
 ATT.Description = [[Just packing enough.
 ]]
 
@@ -255,7 +255,7 @@ ATT = {}
 
 ATT.PrintName = [[Long-Length]]
 ATT.CompactName = [[ExExt]]
-ATT.Icon = Material("entities/gekolt_css_m9_f_carbine.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_fh2_thock_bl.png", "mips smooth")
 ATT.Description = [[Overcompensate much?
 ]]
 
