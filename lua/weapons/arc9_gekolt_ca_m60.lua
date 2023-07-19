@@ -499,7 +499,7 @@ end
 
 SWEP.Hook_TranslateAnimation = function(wep, anim)
 	if !wep:HasElement("has_rec") then
-		if wep:Clip1() <= 8 and anim == "reload" then return "reload_half" end
+		if wep:Clip1() <= 10 and anim == "reload" then return "reload_half" end
 	end
 end
 
