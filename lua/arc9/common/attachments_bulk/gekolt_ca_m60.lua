@@ -124,8 +124,7 @@ ATT = {}
 ATT.PrintName = [[40-Rnd Magazine]]
 ATT.CompactName = [[40-Rnd]]
 ATT.Icon = Material("entities/gekolt_fh2_thock_magx.png", "mips smooth")
-ATT.Description = [[Northern variant built for the cold
-Comes with a fancy rear ironsight.
+ATT.Description = [[Doubling the capacity at the cost of nothing.
 ]]
 
 ATT.SortOrder = 0.5
@@ -141,6 +140,40 @@ end
 ATT.SortOrder = 40
 
 ARC9.LoadAttachment(ATT, "gekolt_fh2_thock_mag1")
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[12-Rnd Magnum Magazine]]
+ATT.CompactName = [[12-Rnd Magnum]]
+ATT.Icon = Material("entities/gekolt_fh2_thock_mag.png", "mips smooth")
+ATT.Description = [[Converts to a single stack firing a slightly stronger load.
+Unknown calibre is incapable of full-auto.
+]]
+
+ATT.SortOrder = 0.5
+ATT.Category = "fh2_thock_mag"
+--ATT.ActivateElements = {"mag_ex"}
+
+ATT.ClipSizeOverride = 12
+ATT.SortOrder = 12
+
+ATT.RPMMult = 500 / 930
+ATT.Firemodes = {{Mode = 1,}}
+
+ATT.SwayAdd = -0.05
+ATT.SpreadAdd = -0.0025
+ATT.DamageMaxMult = 2.5
+ATT.DamageMinMult = 2
+
+ATT.RecoilMult = 1.5
+ATT.RecoilKickMult = 2
+ATT.RecoilSideMult = 0.9
+
+ARC9.LoadAttachment(ATT, "gekolt_fh2_thock_mag2")
 
 
 ----------------------------------------------------------------------------------

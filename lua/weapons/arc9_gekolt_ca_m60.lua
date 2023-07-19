@@ -114,7 +114,7 @@ SWEP.RecoilResetTime = 0 -- How long the gun must go before the recoil pattern s
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 1.25
+SWEP.RecoilKick = 2
 
 SWEP.RecoilMultRecoil = 1.075 -- Looks stupid but it means expoential recoil growth.
 

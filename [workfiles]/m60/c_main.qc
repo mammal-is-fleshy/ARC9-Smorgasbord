@@ -26,6 +26,7 @@ $bodygroup "3"
 {
 	studio "M60_B.smd"	
 	studio "M60_B_Para.smd"
+	studio "M60_BC.smd"
 	blank
 }
 $bodygroup "4"
@@ -45,6 +46,7 @@ $bodygroup "6"
 {
 	studio "M60_HG.smd"	
 	studio "M60_HG_No.smd"	
+	studio "M60_HGC.smd"	
 	blank
 }
 $bodygroup "7"

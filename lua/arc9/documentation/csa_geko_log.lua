@@ -6,11 +6,11 @@
 
 --- Credits -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TheOnly8Z - Major assistance in cleaning, coding and stats department
-CyloWalker - Annoying little burger -- i love this man as if he's my little cabbage :))
+CyloWalker - cunt
 CturiX - Mauser, M79 and other Sounds
 Zenith - AK, M4, M9, AWP and other Sounds
 Fesiug - Nade ent, Random coding
-Darsu - he did something or i stole something with consent    idk i forgor :skull:
+Darsu - he did something or i stole something	idk i forgor :skull:
 
 -General-
 Google Images - ref
@@ -26,8 +26,10 @@ Enemy Front[??? honestly i cant remember]: Sten
 Medal of Honor Airborne: M18
 + Moon - Ripping
 Fallout New Vegas: Flare Gun
-M60: Combat Arms
-Project Reality 2: Flip up Magnifier
+Combat Arms: M60
+Project Reality 2: Flip up Magnifier, M72
+Forgotten Hope 2: Thompson
+
 
 Soldier of Fortune 3 - Muzzles and Tac/Flashlight, some ak stuff, Tishina
 Kali - Some M4 Parts (  Dragoon Guard, 607,608 Stock/Guard, Swire Stock  )

@@ -114,7 +114,7 @@ SWEP.RecoilResetTime = 0
 
 SWEP.RecoilAutoControl = 0 -- Multiplier for automatic recoil control.
 
-SWEP.RecoilKick = 2
+SWEP.RecoilKick = 1.25
 
 SWEP.RecoilMultRecoil = 1.15 -- Looks stupid but it means expoential recoil growth.
 
