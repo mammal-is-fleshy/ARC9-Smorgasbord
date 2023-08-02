@@ -144,7 +144,7 @@ SWEP.AimDownSightsTime = 0.25
 SWEP.SprintToFireTime = 0.17
 
 SWEP.SpeedMult = 1
-SWEP.SpeedMultSights = 0.75
+SWEP.SpeedMultSights = 0.7
 SWEP.SpeedMultShooting = 0.8
 SWEP.SpeedMultMelee = 0.75
 SWEP.SpeedMultCrouch = 0.8
@@ -193,10 +193,10 @@ SWEP.MovingPos = Vector(0, 1.75, 0.5)
 SWEP.MovingAng = Angle(0, -2, 0)
 
 SWEP.ViewModelFOVBase = 70
-SWEP.ActivePos = Vector(0, 4, 0)
+SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CrouchPos = Vector(-0.5, 3, -1)
+SWEP.CrouchPos = Vector(-0.5, 2, -1)
 SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, -5, 0)
@@ -242,6 +242,7 @@ SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
 SWEP.EjectDelay = 0
 SWEP.NoShellEject = true
+SWEP.CaseEffectQCA = nil
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
@@ -386,7 +387,7 @@ SWEP.Animations = {
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
         },
     },
-    ["reload_sights"] = {
+    ["reload_sightse"] = {
         Source = "ads_dry",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
@@ -400,3 +401,15 @@ SWEP.Animations = {
         },
     }, 
 }
+
+SWEP.Hook_Think = function(wep)
+    if IsValid(wep) and wep.Arc9 then
+		local vm = wep:GetOwner():GetViewModel()
+		local delta = wep:GetSightDelta()
+
+        local bipoded = wep:GetInBipod()
+        wep.ADSBipodAnims = math.Approach(wep.ADSBipodAnims or 0, bipoded and 1 or 0, FrameTime() / 0.5)
+
+        vm:SetPoseParameter("ads", Lerp( math.ease.InOutCubic(math.max(delta, wep.ADSBipodAnims)), 0, 1)) -- stole straight from urbna
+    end
+end

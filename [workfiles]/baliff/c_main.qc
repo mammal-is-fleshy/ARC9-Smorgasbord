@@ -44,6 +44,8 @@ $cdmaterials "models\gekolt_css_vmt\thompson\"
 
 $attachment "1" "W_Main" 0.00 3.00 10.75 rotate -90 -0 0
 
+$poseparameter "ads" 0 1 loop 0
+
 $sequence "idle" {
 	"anims\idle.smd"
 	loop
@@ -54,8 +56,8 @@ $sequence "fire" {
 	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
-	fadein 0.002
-	fadeout 0.2
+	fadein 0.03
+	fadeout 0.03
 	fps 40
 }
 
@@ -70,6 +72,8 @@ $sequence "ads_fire" {
 
 $sequence "dry" {
 	"anims\dry2.smd"	
+	"anims\dry_ads.smd"		
+	blend "sights" 0 1
 	fadein 0.2
 	fadeout 0.2
 	snap	
