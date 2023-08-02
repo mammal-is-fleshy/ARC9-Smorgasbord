@@ -1,0 +1,23 @@
+"VertexlitGeneric"
+{
+	"$basetexture" 	"models\gekolt_css_vmt\baliff\zl"
+        "$bumpmap" 	"models\gekolt_css_vmt\baliff\zl_NRM"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" "0.9"	
+	"$basetexturealphaenvmapmask"	"1"
+	"$nocull" 1
+	
+	"$normalmapalphaenvmapmask" 	"1"
+ 	"$phong" 			"1"
+	"$phongboost" 			"2"
+	"$phongexponent" 	"75"
+	"$phongfresnelranges"		"[1 3 9]"
+	"$phongalbedotint" 			"1"
+        "$phongalbedoboost" "10"
+	"$rimlightexponent"   "30" 
+	"$rimlightboost"   "1"
+	"$rimmask"      "1"
+        "$selfillum" 1
+}

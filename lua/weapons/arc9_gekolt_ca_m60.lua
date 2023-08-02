@@ -569,12 +569,11 @@ SWEP.Attachments = {
     {
         PrintName = "Clamp",
         DefaultName = "None",
-        Hidden = "True",
-
+        Hidden = true,
         ExcludeElements = {"short_clamp"},
         Category = {"clamp_css"},
         Bone = "W_Main",
-        Pos = Vector(0, -0.25, 20),
+        Pos = Vector(0, -2.25, 18),
         Ang = Angle(90, 0, -90),
     },
 

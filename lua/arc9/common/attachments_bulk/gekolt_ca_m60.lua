@@ -93,6 +93,7 @@ ATT.SortOrder = 0.5
 ATT.Category = "ca_m60_handguard"
 ATT.ActivateElements = {"hg_para"}
 
+ATT.RPMMult = 700/650
 ATT.RangeMaxMult = 0.75
 ATT.RecoilMult = 3
 

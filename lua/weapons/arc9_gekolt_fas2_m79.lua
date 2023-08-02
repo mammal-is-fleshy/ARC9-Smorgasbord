@@ -5,7 +5,7 @@ SWEP.Base = "arc9_base"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
 
-SWEP.PrintName = "TDR-90"
+SWEP.PrintName = "Morthalza-90"
 SWEP.TrueName = "M79"
 SWEP.SubCategory = "Auxilliaries"
 

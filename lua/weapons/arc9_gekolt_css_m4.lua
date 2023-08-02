@@ -6,7 +6,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Smorgasbord"
 SWEP.SubCategory = "Primaries"
 
-SWEP.PrintName = "CC4-R"
+SWEP.PrintName = "Centilia Libero"
 SWEP.TrueName = "M4A1"
 
 SWEP.Class = "Assault Carbine"
