@@ -346,13 +346,13 @@ ATT = {}
 
 ATT.PrintName = [[Extra-Short-Length]]
 ATT.CompactName = [[ExShrt]]
-ATT.Icon = Material("entities/gekolt_cw_baliff_bs.png", "mips smooth")
+ATT.Icon = Material("entities/gekolt_cw_baliff_bx1.png", "mips smooth")
 ATT.Description = [[Is there even any range left.
 ]]
 
 ATT.SortOrder = 1
 ATT.Category = "cw_baliff_barrel"
-ATT.ActivateElements = {"b_short"}
+ATT.ActivateElements = {"b_xshort"}
 
 ATT.RangeMaxMult = 0.5
 ATT.RangeMinMult = 0.5
@@ -375,8 +375,8 @@ ATT.Icon = Material("entities/gekolt_cw_baliff_bl.png", "mips smooth")
 ATT.Description = [[Over reaching length.
 ]]
 
-ATT.SortOrder = 1
-ATT.Category = "fh2_thock_barrel"
+ATT.SortOrder = 10
+ATT.Category = "cw_baliff_barrel"
 ATT.ActivateElements = {"b_long"}
 
 ATT.RangeMaxMult = 1.75
