@@ -35,10 +35,14 @@ SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_hns.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-10, 15, -10),
     Ang = Angle(0, 0, 180),
+    TPIKPos = Vector(),
+    TPIKAng = Angle(0, 70, 90),
     Scale = 1
 }
 
 SWEP.NoTPIK = false
+SWEP.TPIKParentToSpine4 = true
+SWEP.TPIKforcelefthand = true
 
 SWEP.DefaultBodygroups = "00"
 
@@ -134,7 +138,8 @@ SWEP.HoldTypeHolstered = "duel"
 SWEP.HoldTypeCustomize = "slam"
 
 SWEP.AnimShoot = ACT_IDLE_MELEE --ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE
-SWEP.AnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_FIST
+-- SWEP.AnimMelee = ACT_IDLE_MELEE --ACT_HL2MP_GESTURE_RANGE_ATTACK_MELEE
+SWEP.NonTPIKAnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_FIST
 SWEP.AnimReload = ACT_IDLE_MELEE
 SWEP.AnimDraw = false
 
@@ -155,7 +160,7 @@ SWEP.Animations = {
         Source = "block",
     },
     ["bash"] = {
-        Source = {"slash", "slash2", "slash3", "bash1", "bash2", "bash3"}
+        Source = {"slash1", "slash2", "slash3", "bash1", "bash2", "bash3"}
     },
 
     ["enter_sights"] = {
