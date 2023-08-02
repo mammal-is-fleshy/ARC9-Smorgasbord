@@ -250,32 +250,16 @@ SWEP.DefaultBodygroups = "0000000000000"
 
 SWEP.AttachmentElements = {
     ["b_short"] = {
-        Bodygroups = {{1, 1}},
-        AttPosMods = { [3] = { Pos = Vector(0, -2.4, 12.5), } }
+        Bodygroups = {{2, 2}},
+    }, 
+	["b_xshort"] = {
+        Bodygroups = {{2, 3}},
     },
     ["b_long"] = {
-        Bodygroups = {{1, 2}},
-        AttPosMods = { [3] = { Pos = Vector(0, -2.4, 16), } }
-    },
-	
-    ["mag_ex"] = {
-        Bodygroups = {{6, 1}},
+        Bodygroups = {{2, 1}},
     },
     ["has_optic"] = {
         Bodygroups = {{5, 1}},
-    },
-	["fg_def"] = {
-        Bodygroups = {{3, 2}},
-    },
- 	["g_thomp"] = {
-        Bodygroups = {{3, 1}},
-    }, 
-
-	["s_thomp"] = {
-        Bodygroups = {{4, 1}},
-    },
-	["s_wire"] = {
-        Bodygroups = {{4, 2}},
     },
     ["akimbose"] = {
         SprintPosOverride = Vector(0, 2, -3),
@@ -309,7 +293,7 @@ SWEP.Attachments = {
         PrintName = "Barrel",
         DefaultName = "Short",
 		Hidden = false,
-        Category = {"fh2_thock_barrel"},
+        Category = {"cw_baliff_barrel"},
         Bone = "W_Main",
         Pos = Vector(0, -2.4, 5),
         Ang = Angle(90, 0, -90),

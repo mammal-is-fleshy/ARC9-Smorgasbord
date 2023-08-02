@@ -307,4 +307,86 @@ ATT.SprintToFireTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "gekolt_fh2_thock_b2")
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+--- Baliff
+
+
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Short-Length]]
+ATT.CompactName = [[Shrt]]
+ATT.Icon = Material("entities/gekolt_cw_baliff_bs.png", "mips smooth")
+ATT.Description = [[Just enough compact.
+]]
+
+ATT.SortOrder = 1
+ATT.Category = "cw_baliff_barrel"
+ATT.ActivateElements = {"b_short"}
+
+ATT.RangeMaxMult = 0.8
+ATT.RangeMinMult = 0.8
+
+ATT.SpeedMultSightsMult = 1.05
+ATT.SpeedMultShootingMult = 1.05
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "gekolt_cw_baliff_b1")
+
+----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Extra-Short-Length]]
+ATT.CompactName = [[ExShrt]]
+ATT.Icon = Material("entities/gekolt_cw_baliff_bs.png", "mips smooth")
+ATT.Description = [[Is there even any range left.
+]]
+
+ATT.SortOrder = 1
+ATT.Category = "cw_baliff_barrel"
+ATT.ActivateElements = {"b_short"}
+
+ATT.RangeMaxMult = 0.5
+ATT.RangeMinMult = 0.5
+
+ATT.SpeedMultSightsMult = 1.15
+ATT.SpeedMultShootingMult = 1.2
+ATT.AimDownSightsTimeMult = 1.125
+ATT.SprintToFireTimeMult = 1.1
+
+ARC9.LoadAttachment(ATT, "gekolt_cw_baliff_b2")
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Long-Length]]
+ATT.CompactName = [[Ext]]
+ATT.Icon = Material("entities/gekolt_cw_baliff_bl.png", "mips smooth")
+ATT.Description = [[Over reaching length.
+]]
+
+ATT.SortOrder = 1
+ATT.Category = "fh2_thock_barrel"
+ATT.ActivateElements = {"b_long"}
+
+ATT.RangeMaxMult = 1.75
+ATT.RangeMinMult = 1.75
+
+ATT.SpeedMultSightsMult = 0.75
+ATT.SpeedMultShootingMult = 0.9
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+
+ARC9.LoadAttachment(ATT, "gekolt_cw_baliff_b3")
+
 ----------------------------------------------------------------------------------
