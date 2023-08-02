@@ -261,6 +261,9 @@ SWEP.AttachmentElements = {
     ["has_optic"] = {
         Bodygroups = {{5, 1}},
     },
+    ["rail_bottom"] = {
+        Bodygroups = {{4, 1}},
+    },
     ["akimbose"] = {
         SprintPosOverride = Vector(0, 2, -3),
         SprintAngOverride = Angle(0, 18, 0),
@@ -297,6 +300,18 @@ SWEP.Attachments = {
         Bone = "W_Main",
         Pos = Vector(0, -2.4, 5),
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = "MOUNT Bottom",
+        Category = {"tac_css", "rail_bottom"},
+        InstalledElements = {"rail_bottom"},
+        Hidden = false,
+		
+        Bone = "W_Main",
+        Pos = Vector(0, -0.8, 5.5),
+        Ang = Angle(90, 0, 90),
+        ExtraSightDistance = 10,
+        Icon_Offset = Vector(1, 0, 0)
     },
 
     {
