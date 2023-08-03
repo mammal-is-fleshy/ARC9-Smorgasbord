@@ -72,7 +72,7 @@ SWEP.PhysBulletMuzzleVelocity = 1280 * 12
 SWEP.Ammo = "buckshot" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
-SWEP.ClipSize = 6 -- Self-explanatory.
+SWEP.ClipSize = 5-- Self-explanatory.
 SWEP.SupplyLimit = 6 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 2 -- Amount of reserve UBGL magazines you can take.
 
@@ -252,6 +252,9 @@ SWEP.AttachmentElements = {
     ["b_short"] = {
         Bodygroups = {{2, 2}},
     }, 
+    ["b_big"] = {
+        Bodygroups = {{0, 1},{1, 1},{2, 4}},
+    }, 
 	["b_xshort"] = {
         Bodygroups = {{2, 3}},
     },
@@ -386,13 +389,13 @@ SWEP.Animations = {
         { t = 0.1, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.95, lhik = 1, rhik = 1, },
         },
     },
-    ["reload_sightse"] = {
-        Source = "ads_dry",
+    ["reload_big"] = {
+        Source = "dry_big",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
-        MinProgress = 0.85,
+        MinProgress = 0.75,
         EventTable = {
-            {s =  "gekolt_pr2/baliff_reload.ogg" ,   t = 0 / 40}, 
+            {s =  "gekolt_pr2/baliff_reload2.ogg" ,   t = 0 / 40}, 
             },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },

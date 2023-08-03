@@ -390,3 +390,28 @@ ATT.SprintToFireTimeMult = 0.9
 ARC9.LoadAttachment(ATT, "gekolt_cw_baliff_b3")
 
 ----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[Dirgilos-Kit]]
+ATT.CompactName = [[DRS]]
+ATT.Icon = Material("entities/gekolt_css_ammo/shotgun.png", "mips smooth")
+ATT.Description = [[Extremely oversized shell jammed in an entire cylinder
+]]
+
+ATT.SortOrder = 100
+ATT.Category = "cw_baliff_barrel"
+ATT.ActivateElements = {"b_big"}
+ATT.ClipSizeOverride = 1
+
+ATT.Hook_TranslateAnimation = function(wep, anim) -- mang fuck that shit
+    return anim .. "_big"
+end
+
+ATT.NumOverride = 20
+ATT.SpreadAdd = 0.05
+
+ARC9.LoadAttachment(ATT, "gekolt_cw_baliff_b4")
+
+----------------------------------------------------------------------------------

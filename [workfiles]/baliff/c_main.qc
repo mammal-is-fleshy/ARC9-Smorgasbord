@@ -4,12 +4,14 @@ $modelname "weapons/geckololt_css/c_baliff.mdl"
 
 $bodygroup "0"
 {
-	studio "Baliff.smd"
+	studio "Baliff.smd"	
+	studio "Baliff_SG.smd"
 	blank
 }
 $bodygroup "1"
 {
 	studio "Baliff_A.smd"
+	studio "Baliff_A_SG.smd"
 	blank	
 }
 $bodygroup "2"
@@ -18,6 +20,7 @@ $bodygroup "2"
 	studio "Baliff_BL.smd"
 	studio "Baliff_BS.smd"
 	studio "Baliff_BSS.smd"
+	studio "Baliff_BG.smd"
 	blank
 }
 $bodygroup "3"
@@ -73,6 +76,16 @@ $sequence "ads_fire" {
 $sequence "dry" {
 	"anims\dry2.smd"	
 	"anims\dry_ads.smd"		
+	blend "sights" 0 1
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_big" {
+	"anims\dry_big.smd"	
+	"anims\dry_big_ads.smd"		
 	blend "sights" 0 1
 	fadein 0.2
 	fadeout 0.2
