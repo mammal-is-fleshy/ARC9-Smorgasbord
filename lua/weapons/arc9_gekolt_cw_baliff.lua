@@ -275,16 +275,6 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Ammo Type",
-        DefaultName = "Default Type",
-        Category = {"css_ammo_sg"},
-        ExcludeElements = {"not_sg"},
-
-        Bone = "W_Main",
-        Pos = Vector(0, -2.5, 1.5),
-        Ang = Angle(90, 0, -90),
-    },
-    {
         PrintName = "Optic",
         DefaultName = "None",
         InstalledElements = {"has_optic"},
@@ -316,7 +306,16 @@ SWEP.Attachments = {
         ExtraSightDistance = 10,
         Icon_Offset = Vector(1, 0, 0)
     },
+    {
+        PrintName = "Ammo Type",
+        DefaultName = "Default Type",
+        Category = {"css_ammo_sg"},
+        ExcludeElements = {"not_sg"},
 
+        Bone = "W_Main",
+        Pos = Vector(0, -2.5, 1.5),
+        Ang = Angle(90, 0, -90),
+    },
     {
         PrintName = "Off-Hand",
         DefaultName = "None",
