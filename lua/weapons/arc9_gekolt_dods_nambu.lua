@@ -153,10 +153,10 @@ SWEP.SpeedMultCrouch = 0.75
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 
-SWEP.BashDamage = 85
+SWEP.BashDamage = 60
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
-SWEP.PreBashTime = 0.15
+SWEP.PreBashTime = 0.125
 SWEP.PostBashTime = 0.25
 
 SWEP.ShootWhileSprint = true
