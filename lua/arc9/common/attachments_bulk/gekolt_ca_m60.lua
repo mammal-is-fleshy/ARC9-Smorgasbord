@@ -415,3 +415,28 @@ ATT.SpreadAdd = 0.05
 ARC9.LoadAttachment(ATT, "gekolt_cw_baliff_b4")
 
 ----------------------------------------------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = [[FullAuto]]
+ATT.CompactName = [[F.A]]
+ATT.Icon = Material("entities/arc9_gekolt_dods_nambu_fa.png", "mips smooth")
+ATT.Description = [[There is no justification for this.
+]]
+
+ATT.SortOrder = 100
+ATT.Category = "dods_nambu_barrel"
+ATT.ActivateElements = {"fa"}
+
+ATT.SpreadAdd = 0.025
+ATT.RPMMult = 950 / 800
+ATT.Firemodes = {
+    {
+        Mode = -1,
+    }
+}
+
+ARC9.LoadAttachment(ATT, "gekolt_dods_nambu_1")
+
+----------------------------------------------------------------------------------

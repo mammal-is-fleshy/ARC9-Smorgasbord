@@ -59,8 +59,8 @@ $sequence "fire" {
 	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
-	fadein 0.03
-	fadeout 0.03
+	fadein 0.002
+	fadeout 0.2
 	fps 40
 }
 

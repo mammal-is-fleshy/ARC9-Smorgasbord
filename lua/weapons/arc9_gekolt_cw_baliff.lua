@@ -241,8 +241,6 @@ SWEP.ShootSoundSilenced = "gekolt_css/9mm_sd.wav"
 SWEP.DryFireSound = "weapons/clipempty_pistol.wav"
 
 SWEP.EjectDelay = 0
-SWEP.NoShellEject = true
-SWEP.CaseEffectQCA = nil
 
 SWEP.FiremodeSound = "arc9/firemode.wav"
 
