@@ -1,0 +1,28 @@
+// Created by Crowbar 0.12.0.0
+
+$modelname "weapons/geckololt_css/mag/m9_mag_welrod.mdl"
+
+$bodygroup "mag"
+{
+	studio "m9_mag_welrod.smd"
+}
+
+$surfaceprop "item"
+
+$cdmaterials "models\gekolt_css_vmt\"
+
+$sequence "idle" {
+	"anims\staticprop.smd"
+	fadein 0.2
+	fadeout 0.2
+	fps 30
+}
+
+$collisionmodel "m9_mag_welrod.smd"
+{
+	$mass 1
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+}
