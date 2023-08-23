@@ -39,6 +39,7 @@ SWEP.WorldModelOffset = {
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
+SWEP.MirrorVMWMHeldOnly = false
 
 -------------------------- DAMAGE PROFILE
 

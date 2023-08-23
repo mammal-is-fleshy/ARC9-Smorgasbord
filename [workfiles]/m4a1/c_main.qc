@@ -162,6 +162,14 @@ $attachment "2" "W_Shell" -0.50 0.00 0.00 rotate -0 135 180
 $attachment "3" "W_Shell" 0.00 0.00 0.00 rotate -0 -90 180
 $bonemerge "Akimbo_Base"
 
+$sequence "reference" {
+	"anims\reference.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 40
+}
+
 $sequence "idle" {
 	"anims\idle.smd"
 	fadein 0.2
@@ -623,4 +631,13 @@ $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
 
-$collisionmodel "phys.smd"
+$surfaceprop "weapon"
+
+$collisionmodel "w_rif_m4a1_lod0.smd"
+{
+	$mass 4
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+}

@@ -87,6 +87,14 @@ $cdmaterials "models\gekolt_css_vmt\m60\"
 $attachment "1" "W_Main" 0.00 2.20 27.00 rotate -90 0 0
 $attachment "2" "W_Main" -1.70 2.50 0.75 rotate -0 135 -180
 
+$sequence "reference" {
+	"anims\reference.smd"
+	fadein 0.2
+	fadeout 0.2
+	snap
+	fps 40
+}
+
 $sequence "idle" {
 	"anims\idle.smd"
 	fadein 0.2
@@ -229,4 +237,13 @@ $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
 
-$collisionmodel "M60.smd"
+$surfaceprop "weapon"
+
+$collisionmodel "m60_phys.smd"
+{
+	$mass 8
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+}

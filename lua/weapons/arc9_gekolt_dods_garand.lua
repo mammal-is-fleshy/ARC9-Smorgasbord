@@ -26,7 +26,7 @@ Experimental in nature, there are quite a few modifications available despite it
 It also goes ping.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_garand.mdl"
-SWEP.WorldModel = "models/weapons/w_snip_awp.mdl"
+SWEP.WorldModel = "models/weapons/geckololt_css/c_garand.mdl"
 
 SWEP.Slot = 3
 
@@ -39,6 +39,7 @@ SWEP.WorldModelOffset = {
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
+SWEP.MirrorVMWMHeldOnly = true
 
 -------------------------- DAMAGE PROFILE
 

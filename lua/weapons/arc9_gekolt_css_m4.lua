@@ -26,7 +26,7 @@ SWEP.Description = [[Standard infantry carbine that is also absurdly popular in 
 Has countless models and variations, some less stupid than others.]]
 
 SWEP.ViewModel = "models/weapons/geckololt_css/c_m4a1.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.WorldModel = "models/weapons/geckololt_css/c_m4a1.mdl"
 
 SWEP.Slot = 2
 
@@ -39,6 +39,7 @@ SWEP.WorldModelOffset = {
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
+SWEP.MirrorVMWMHeldOnly = true
 
 -------------------------- DAMAGE PROFILE
 

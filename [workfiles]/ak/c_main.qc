@@ -106,7 +106,7 @@ $bodygroup "bipod"
 	studio "Bipod_Deployed.smd"
 }
 
-$illumposition 0 0 0
+$illumposition -2.4 -8 -3
 
 $cdmaterials "models\gekolt_css_vmt\"
 $cdmaterials "arc9_css\"
@@ -352,4 +352,13 @@ $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
 
-$collisionmodel "ak47.smd"
+$surfaceprop "weapon"
+
+$collisionmodel "ak47_phys.smd"
+{
+	$mass 4
+	$inertia 1
+	$damping 0
+	$rotdamping 0
+	$rootbone " "
+}
