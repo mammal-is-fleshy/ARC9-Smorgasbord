@@ -123,6 +123,7 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 -------------------------- POSITIONS
 
 SWEP.HasSights = false
+SWEP.CanLean = false
 
 SWEP.SprintAng = Angle(0, -10, 0)
 SWEP.SprintPos = Vector(0, -3, -1)

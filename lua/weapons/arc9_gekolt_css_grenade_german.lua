@@ -155,6 +155,7 @@ SWEP.AnimDraw = false
 
 SWEP.Bash = true
 SWEP.PrimaryBash = false
+SWEP.CanLean = false
 
 SWEP.BashDamage = 25
 SWEP.BashLungeRange = 0

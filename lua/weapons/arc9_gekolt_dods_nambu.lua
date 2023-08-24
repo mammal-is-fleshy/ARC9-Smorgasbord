@@ -150,6 +150,7 @@ SWEP.SpeedMultCrouch = 0.75
 
 -------------------------- MELEE
 
+SWEP.CanLean = false
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 
