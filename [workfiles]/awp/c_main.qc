@@ -8,7 +8,8 @@ $bodygroup "frame"
 	studio "awp_f_smg.smd"
 	studio "awm_f_howell.smd"
 	blank
-	studio "awm_f_50.smd"	
+	studio "awm_f_50.smd"
+	studio "awm_f_obrez.smd"
 }
 
 $bodygroup "iron"
@@ -17,7 +18,8 @@ $bodygroup "iron"
 	studio "awm_iron_smg.smd"		
 	blank		
 	studio "awm_rail.smd"
-	studio "awm_lc10rail.smd"	
+	studio "awm_lc10rail.smd"
+	studio "awp_iron_obrez.smd"
 }
 
 $bodygroup "stock"
@@ -147,6 +149,15 @@ $sequence "wet" {
 
 $sequence "dry" {
 	"anims\dry.smd"
+	activity "ACT_VM_RELOAD_EMPTY" 1		
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "dry_obrez" {
+	"anims\dry_obrez.smd"
 	activity "ACT_VM_RELOAD_EMPTY" 1		
 	fadein 0.2
 	fadeout 0.2

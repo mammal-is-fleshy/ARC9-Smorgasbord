@@ -250,6 +250,10 @@ SWEP.AttachmentElements = {
     ["awp_f_howell"] = {
         Bodygroups = {{0, 2}},
         AttPosMods = { [4] = { Pos = Vector(0, 0.1, 22.5), }, [5] = { Pos = Vector(0, 3.25, 11.5), },	[6] = { Pos = Vector(1.15, 1.25, 13), },	[7] = { Pos = Vector(-1.35, 1.25, 13), } }
+    },  
+	["awp_f_obrez"] = {
+        Bodygroups = {{0, 5}, {1, 5}, {2, 2}},
+        AttPosMods = { [4] = { Pos = Vector(0, 0.05, 10.5), } }
     },
 
     ["awp_s_smg"] = {Bodygroups = {{2, 1}},},
@@ -297,6 +301,8 @@ SWEP.Attachments = {
     {
         PrintName = "Stock",
         DefaultName = "Polymer Stock",
+        InstalledElements = {"has_stock"},
+		ExcludeElements = {"awp_f_obrez"},
 
         Category = "css_awp_stock",
         Bone = "W_Main",
@@ -306,7 +312,7 @@ SWEP.Attachments = {
     {
         PrintName = "Optic",
         DefaultName = "None",
-
+		
         Category = {"optic_css"},
         Bone = "W_Main",
         Pos = Vector(0, -1, 4),
@@ -325,9 +331,9 @@ SWEP.Attachments = {
     {
         PrintName = "Foregrip",
         DefaultName = "None",
-        InstalledElements = {"rail_bot", "optic_css_free"},
+        InstalledElements = {"rail_bot", "optic_css_free", "has_grip"},
 
-        ExcludeElements = {"nogrip"},
+        ExcludeElements = {"nogrip", "awp_f_obrez"},
         Category = {"grip_css", "optic_css_free"},
         Bone = "W_Main",
         Pos = Vector(0, 3.25, 12),
@@ -339,7 +345,8 @@ SWEP.Attachments = {
         PrintName = "MOUNT Left",
         Category = {"mountr_css", "optic_css_free"},
         InstalledElements = {"rail_side"},
-
+		ExcludeElements = {"awp_f_obrez"},
+		
         Bone = "W_Main",
         Pos = Vector(1.15, 1.25, 15),
         Ang = Angle(90, 0, 180),
@@ -351,7 +358,8 @@ SWEP.Attachments = {
         PrintName = "MOUNT Right",
         Category = {"mountl_css", "optic_css_free"},
         InstalledElements = {"rail_side"},
-
+		ExcludeElements = {"awp_f_obrez"},
+		
         Bone = "W_Main",
         Pos = Vector(-1.35, 1.25, 15),
         Ang = Angle(90, 0, 0),
@@ -362,8 +370,8 @@ SWEP.Attachments = {
         PrintName = "Mount Top",
         DefaultName = "None",
         InstalledElements = {"rail_top"},
+		ExcludeElements = {"awp_f_obrez", "notop"},
 
-        ExcludeElements = {"notop"},
         Category = {"tac_css_flat", "mount_css", "optic_css_free"},
         Bone = "W_Main",
         Pos = Vector(0, -0.9, 13),
@@ -549,6 +557,63 @@ SWEP.Animations = {
     },
     ["reload_empty_sd"] = {
         Source = "dry_sd",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        FireASAP = true,
+        MinProgress = 0.9,
+        EjectAt = 80 / 40,
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.55, lhik = 0, rhik = 1, },{ t = 0.7, lhik = 1, rhik = 1, },
+        },
+        EventTable = {
+            {s =  "gekolt_css/awp_clipout.wav"	,	t = 10 / 40},
+            {s =  "gekolt_css/awp_clipin.wav"	,	t = 48 / 40},
+            {s =  "gekolt_css/awp_boltup.wav"	,	t = 72 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,	t = 79 / 40},
+            {s =  "gekolt_css/awp_boltdown.wav" ,	t = 82 / 40},
+        },
+    },    
+	
+	-- Obrez --
+
+    ["fire_obrez"] = {
+        Source = "fire_full_sd",
+        EjectAt = 17 / 40,
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 9 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 18 / 40},
+        },
+        FireASAP = true,
+        MinProgress = 0.83,
+    },
+    ["fire_iron_obrez"] = {
+        Source = "fire_full_sd",
+        EjectAt = 17 / 40,
+        EventTable = {
+            {s =  "gekolt_css/awp_boltup.wav" ,   t = 9 / 40},
+            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 12 / 40},
+            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 18 / 40},
+        },
+        FireASAP = true,
+        MinProgress = 0.83,
+    },
+    ["reload_obrez"] = {
+        Source = "wet",
+        TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
+        EventTable = {
+            {s =  "gekolt_css/awp_clipout.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/awp_clipin.wav" ,    t = 48 / 40},
+        },
+        FireASAP = true,
+        MinProgress = 0.83,
+        IKTimeLine = {
+        { t = 0, lhik = 1, rhik = 1, },
+        { t = 0.2, lhik = 0, rhik = 1, },{ t = 0.75, lhik = 0, rhik = 1, },{ t = 0.9, lhik = 1, rhik = 1, },
+        },
+    },
+    ["reload_empty_obrez"] = {
+        Source = "dry_obrez",
         TPAnim = ACT_HL2MP_GESTURE_RELOAD_AR2,
         FireASAP = true,
         MinProgress = 0.9,

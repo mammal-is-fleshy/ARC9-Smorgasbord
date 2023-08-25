@@ -239,7 +239,7 @@ ATT.Ammo = "357"
 
 ATT.ClipSizeOverride = 7
 ATT.Firemodes = { { Mode = -1,	PrintName = "BOLT" } }
-ATT.RPMMult = 80 / 50
+ATT.RPMMult = 80 / 40
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_sd"
@@ -247,4 +247,52 @@ end
 
 ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_sd")
 
+
 ----------------------------------------------------------------------------------
+
+
+ATT = {}
+ATT.PrintName = "Obrez Frame"
+ATT.CompactName = "AO338"
+ATT.Icon = Material("entities/gekolt_css_awp_f_obrez.png", "mips smooth")
+ATT.Description = [[Someone's got their hands on some saw and magic glue.
+Is mobility that important?]]
+
+ATT.Pros = {}
+ATT.Cons = {}
+ATT.SortOrder = 0
+
+ATT.Category = "css_awp_frame" -- can be "string" or {"list", "of", "strings"}
+ATT.ActivateElements = {"awp_f_obrez"}
+ATT.ExcludeElements = {"has_stock", "has_grip", "rail_side", "rail_top"}
+
+ATT.SwayAdd = -0.85
+ATT.AccuracyMOAMult = 0.85
+ATT.HipDispersionMult = 0.8
+ATT.SightsDispersionMult = 0.9
+ATT.SightTimeMult = 0.5
+ATT.SprintToFireTimeMult = 0.5
+ATT.AimDownSightsTimeMult = 0.65
+
+ATT.RangeMinMult = 0.5
+ATT.RangeMaxMult = 0.5
+
+ATT.RecoilAutoControlMult = 0.5
+ATT.FreeAimRadiusMult = 2
+
+ATT.SpeedMultSights = 1.75
+ATT.SpeedMultShooting = 2
+
+ATT.RecoilMult = 1.5
+ATT.RecoilKickMult = 1.5
+ATT.RecoilMultRecoilMult = 1.25
+ATT.RPMMult = 85 / 40
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_obrez"
+end
+
+ARC9.LoadAttachment(ATT, "gekolt_css_awp_f_obrez")
+
+
+----------------------------------------------------------------------------------
+
