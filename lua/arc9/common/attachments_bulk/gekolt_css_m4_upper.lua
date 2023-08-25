@@ -724,7 +724,7 @@ ATT.Cons = {}
 ATT.SortOrder = 5
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_sg", "noguard", "keep_rs", "akantbo"}
+ATT.ActivateElements = {"up_sg", "noguard", "keep_rs", "akantbo", "pre_muzzed"}
 ATT.MuzzleParticle = "muzzleflash_shotgun"
 ATT.ShootSound = "gekolt_css/xm1014-1.wav"
 
@@ -840,7 +840,7 @@ ATT.Cons = {}
 ATT.SortOrder = 1
 
 ATT.Category = "css_m4_up" -- can be "string" or {"list", "of", "strings"}
-ATT.ActivateElements = {"up_9mm"}
+ATT.ActivateElements = {"up_9mm", "pre_muzzed"}
 ATT.ShootSound = "gekolt_css/mp5-1.wav"
 ATT.ShootSoundSilenced = "gekolt_css/tmp-1.wav"
 ATT.MuzzleParticle = "muzzleflash_smg"
