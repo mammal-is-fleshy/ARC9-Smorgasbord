@@ -34,10 +34,14 @@ SWEP.WorldModelMirror = "models/weapons/geckololt_css/c_nambu.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-9, 5, -5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-16, 3, -5),
-    TPIKAng = Angle(-5, 0, 180),
+    TPIKPos = Vector(2, -3, -5),
+    TPIKAng = Angle(0, 70, 90),
     Scale = 1
 }
+
+SWEP.NoTPIK = false
+SWEP.TPIKParentToSpine4 = true
+SWEP.TPIKforcelefthand = true
 
 SWEP.SpreadMultHipFire = 3
 SWEP.RecoilMultHipFire = 1.25
@@ -154,7 +158,7 @@ SWEP.CanLean = false
 SWEP.Bash = true
 SWEP.PrimaryBash = false
 
-SWEP.BashDamage = 60
+SWEP.BashDamage = 80
 SWEP.BashLungeRange = 0
 SWEP.BashRange = 64
 SWEP.PreBashTime = 0.125
