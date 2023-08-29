@@ -123,7 +123,7 @@ ATT.RecoilAutoControlUBGL = 0 -- Multiplier for automatic recoil control.
 
 ATT.RecoilKickUBGL = 2
 
-
+ATT.DamageTypeUBGL = DMG_BULLET
 ATT.DamageMaxUBGL = 52 -- Damage done at point blank range
 ATT.DamageMinUBGL = 30 -- Damage done at maximum range
 
@@ -337,7 +337,7 @@ ATT.RecoilAutoControlUBGL = 0 -- Multiplier for automatic recoil control.
 
 ATT.RecoilKickUBGL = 1.25
 
-
+ATT.DamageTypeUBGL = DMG_BULLET
 ATT.DamageMaxUBGL = 32 -- Damage done at point blank range
 ATT.DamageMinUBGL = 14 -- Damage done at maximum range
 
@@ -381,12 +381,13 @@ ATT = {}
 ATT.PrintName = [[9mm]]
 ATT.CompactName = [[9mm]]
 ATT.Icon = Material("entities/gekolt_dod_ubw_ump9.png", "mips smooth")
-ATT.Description = [[lil gun]]
+ATT.Description = [[Alternative calibre with lighter load.]]
 
 ATT.SortOrder = 1
 ATT.Category = "smorg_ubgl_ump_mag"
 ATT.ActivateElements = {"ubgl_ump_mag_9mm"}
 
+ATT.DamageTypeUBGL = DMG_BULLET
 ATT.DamageMaxUBGL = 13
 ATT.DamageMinUBGL = 9
 ATT.RPMUBGL = 900
@@ -412,12 +413,13 @@ ATT = {}
 ATT.PrintName = [[10mm]]
 ATT.CompactName = [[10mm]]
 ATT.Icon = Material("entities/gekolt_dod_ubw_ump10.png", "mips smooth")
-ATT.Description = [[not so lil gun]]
+ATT.Description = [[Alternative calibre with not so lighter load.]]
 
 ATT.SortOrder = 1
 ATT.Category = "smorg_ubgl_ump_mag"
 ATT.ActivateElements = {"ubgl_ump_mag_10mm"}
 
+ATT.DamageTypeUBGL = DMG_BULLET
 ATT.DamageMaxUBGL = 32
 ATT.DamageMinUBGL = 13
 ATT.RPMUBGL = 600
