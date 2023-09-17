@@ -37,17 +37,14 @@ SWEP.WorldModelOffset = {
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
-
-SWEP.SpreadMultHipFire = 3
-SWEP.RecoilMultHipFire = 1.25
-SWEP.RecoilAutoControlMultHipFire = 0.5
+SWEP.MirrorVMWMHeldOnly = true
+SWEP.ShotgunReload = false
 
 -------------------------- DAMAGE PROFILE
 
-SWEP.Num = 9
-
 SWEP.DamageMax = 14
 SWEP.DamageMin = 8
+SWEP.Num = 9
 
 SWEP.RangeMin = 500
 SWEP.RangeMax = 3000
@@ -62,7 +59,6 @@ SWEP.BodyDamageMults = {
     [HITGROUP_LEFTLEG] = 0.75,
     [HITGROUP_RIGHTLEG] = 0.75,
 }
-
 -------------------------- PHYS BULLET BALLISTICS
 
 SWEP.PhysBulletMuzzleVelocity = 1280 * 12
@@ -81,6 +77,7 @@ SWEP.ReloadInSights = true -- This weapon can aim down sights while reloading.
 -------------------------- FIREMODES
 
 SWEP.RPM = 600
+SWEP.RPMEmpty = 600
 
 -- Works different to ArcCW
 
@@ -99,6 +96,7 @@ SWEP.Firemodes = {
 
 -- General recoil multiplier
 SWEP.Recoil = 1
+SWEP.RecoilModifierCap = 2
 
 -- These multipliers affect the predictible recoil by making the pattern taller, shorter, wider, or thinner.
 SWEP.RecoilUp = 0.6 -- Multiplier for vertical recoil
@@ -132,9 +130,12 @@ SWEP.SpreadMultHipFire = 1.75
 -------------------------- HANDLING
 
 SWEP.FreeAimRadius = 4 -- In degrees, how much this gun can free aim in hip fire.
+
+
 SWEP.Sway = 1.25
 
 SWEP.SwayMultMidAir = 2
+
 SWEP.SwayMultMove = 1.5
 SWEP.SwayMultCrouch = 0.667
 SWEP.SwayMultShooting = 1.5
@@ -179,7 +180,11 @@ SWEP.IronSights = {
     CrosshairInSights = true,
 }
 
+
+
+
 SWEP.Crosshair = false
+SWEP.NoShellEject = true
 
 SWEP.SprintAng = Angle(20, -15, -10)
 SWEP.SprintPos = Vector(0, 2, -0.5)
@@ -226,13 +231,15 @@ SWEP.AnimDraw = false
 
 -------------------------- EFFECTS
 
-SWEP.MuzzleParticle = "muzzleflash_pistol"
+SWEP.MuzzleParticle = "muzzleflash_pistol_deagle"
 SWEP.MuzzleEffectQCA = 1
 
-SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellCorrectAng = Angle(0, 180, 0)
+SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellCorrectPos = Vector(0, 0, 0)
+SWEP.ShellCorrectAng = Angle(0, 0, 90)
 SWEP.ShellScale = 1
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
+SWEP.CaseEffectQCA = 1
 
 -------------------------- SOUNDS
 
