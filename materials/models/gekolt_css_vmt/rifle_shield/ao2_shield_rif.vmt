@@ -1,0 +1,18 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/gekolt_css_vmt/rifle_shield/ao2_shield_rif"
+	"$bumpmap" "models/gekolt_css_vmt/rifle_shield/m4a_lr_shd_p01_n"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[.1 .1 .1]"
+	"$envmapcontrast" "0.9"	
+	"$color2"						"[1.25 1.25 1.25]"
+
+	"$nocull" 1
+
+	"$phong"                        "1"	
+	"$phongalbedotint"              "1"	
+	"$phongexponent"                "16"	
+	"$phongboost"                   "0.25"
+	"$phongfresnelranges"           "[0.75 1.5 3]"	
+}

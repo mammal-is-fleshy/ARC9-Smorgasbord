@@ -6,7 +6,7 @@ ATT.Description = [[h]]
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = 2
-ATT.Ignore = false
+ATT.Ignore = true
 
 ATT.Category = {"css_akimbo"} -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"akimbose"}

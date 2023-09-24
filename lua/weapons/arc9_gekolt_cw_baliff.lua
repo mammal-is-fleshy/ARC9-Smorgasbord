@@ -184,7 +184,6 @@ SWEP.IronSights = {
 
 
 SWEP.Crosshair = false
-SWEP.NoShellEject = true
 
 SWEP.SprintAng = Angle(20, -15, -10)
 SWEP.SprintPos = Vector(0, 2, -0.5)
@@ -234,13 +233,13 @@ SWEP.AnimDraw = false
 SWEP.MuzzleParticle = "muzzleflash_pistol_deagle"
 SWEP.MuzzleEffectQCA = 1
 
-SWEP.ShellModel = "models/shells/shell_12gauge.mdl"
+SWEP.ShellModel = nil
 SWEP.ShellCorrectPos = Vector(0, 0, 0)
 SWEP.ShellCorrectAng = Angle(0, 0, 90)
-SWEP.ShellScale = 1
+SWEP.ShellScale = 0
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
 SWEP.CaseEffectQCA = 1
-
+SWEP.NoShellEject = true
 -------------------------- SOUNDS
 
 SWEP.ShootSound = "gekolt_pr2/baliff_shoot.wav"
