@@ -500,7 +500,8 @@ SWEP.Animations = {
     ["fire_pump"] = {
         Source = {"fire_pump"},
         EventTable = {
-            {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/xm_boltpull1.ogg" ,   t = 11 / 40},
+            {s =  "gekolt_css/xm_boltpull2.ogg" ,    t = 18 / 40},
         },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -510,7 +511,8 @@ SWEP.Animations = {
     ["fire_iron_pump"] = {
         Source = {"fire_pump"},
         EventTable = {
-            {s =  "gekolt_css/m3_pump.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/xm_boltpull1.ogg" ,   t = 11 / 40},
+            {s =  "gekolt_css/xm_boltpull2.ogg" ,    t = 18 / 40},
         },
         IKTimeLine = {
         { t = 0, lhik = 1, rhik = 1, },
@@ -538,11 +540,10 @@ SWEP.Animations = {
         },
         FireASAP = true,
         EventTable = {
-            {s =  "gekolt_css/awp_boltup.wav" ,   t = 5 / 40},
-            {s =  "gekolt_css/awp_boltpull.wav" ,   t = 10 / 40},
+            {s =  "gekolt_css/xm_boltpull1.ogg" ,   t = 2 / 40},
             {s =  "gekolt_css/g3sg1_clipout.wav" ,   t = 18 / 40},
             {s =  "gekolt_css/galil_clipin.wav" ,    t = 50 / 40},
-            {s =  "gekolt_css/awp_boltdown.wav" ,    t = 75 / 40},
+            {s =  "gekolt_css/xm_boltpull2.ogg" ,    t = 73 / 40},
         },
         MinProgress = 0.925,
     },
