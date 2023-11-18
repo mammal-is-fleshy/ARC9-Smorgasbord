@@ -195,8 +195,11 @@ SWEP.SprintMidPoint = {
     Ang = Angle(5, 20, 15)
 }
 
-SWEP.MovingPos = Vector(-0.1, 2.5, -0.25)
+SWEP.MovingPos = Vector(0, -0.25, 0)
 SWEP.MovingAng = Angle(0, -1, -2)
+
+SWEP.CrouchPos = Vector(-0.2, -0.5, -1.25)
+SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.BipodPos = Vector(-3.05, -2, -1)
 SWEP.BipodAng = Angle(0, 0, -5)
@@ -204,9 +207,6 @@ SWEP.BipodAng = Angle(0, 0, -5)
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
-
-SWEP.CrouchPos = Vector(-0.5, 2.5, -1.5)
-SWEP.CrouchAng = Angle(0, 0, -10)
 
 SWEP.CustomizeAng = Angle(90, 5, 0)
 SWEP.CustomizePos = Vector(10, 28, 3.5)

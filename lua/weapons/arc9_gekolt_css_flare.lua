@@ -191,18 +191,15 @@ SWEP.SprintMidPoint = {
     Ang = Angle(5, 20, 15)
 }
 
-SWEP.MovingPos = Vector(0, 1.75, 0.5)
-SWEP.MovingAng = Angle(0, -2, 0)
+SWEP.MovingPos = Vector(-0.1, -0.5, 0)
+SWEP.MovingAng = Angle(0, -3, -2)
+
+SWEP.CrouchPos = Vector(-0.2, -0.5, -1.5)
+SWEP.CrouchAng = Angle(0, 0, -7)
 
 SWEP.ViewModelFOVBase = 70
-SWEP.ActivePos = Vector(0, 3, 0)
+SWEP.ActivePos = Vector(0, 2, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
-
-SWEP.CrouchPos = Vector(-0.5, 2, -1)
-SWEP.CrouchAng = Angle(0, 0, -10)
-
-SWEP.CustomizeAng = Angle(90, -5, 0)
-SWEP.CustomizePos = Vector(13, 32, 2)
 
 SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false
@@ -231,10 +228,14 @@ SWEP.AnimDraw = false
 SWEP.MuzzleParticle = "muzzleflash_pistol"
 SWEP.MuzzleEffectQCA = 1
 
-SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellCorrectAng = Angle(0, 180, 0)
-SWEP.ShellScale = 1
+SWEP.ShellModel = nil
+SWEP.ShellSmoke = false
+SWEP.ShellCorrectPos = Vector(0, 0, 0)
+SWEP.ShellCorrectAng = Angle(0, 0, 90)
+SWEP.ShellScale = 0
 SWEP.ShellPhysBox = Vector(0.5, 0.5, 2)
+SWEP.CaseEffectQCA = 1
+SWEP.NoShellEject = true
 
 -------------------------- SOUNDS
 

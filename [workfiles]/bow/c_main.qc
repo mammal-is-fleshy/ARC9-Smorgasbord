@@ -54,8 +54,8 @@ $sequence "fire_prep" {
 	"anims\fire_prep.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
-	fadein 0.02
-	fadeout 0.02
+	fadein 0.2
+	fadeout 0.2
 	
 	fps 40
 }
@@ -64,8 +64,8 @@ $sequence "fire_unprep" {
 	"anims\fire_unprep.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
-	fadein 0.02
-	fadeout 0.02
+	fadein 0.2
+	fadeout 0.2
 	
 	fps 40
 }
@@ -76,9 +76,9 @@ $sequence "fire_reload" {
 	blend "sights" 0 1
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
-	fadein 0.02
-	fadeout 0.02
-	
+	fadein 0.00001
+	fadeout 0.5
+	snap
 	fps 40
 }
 
@@ -86,8 +86,8 @@ $sequence "fire_reload_iron" {
 	"anims\fire_reload_iron.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
 	{ event 5001 0 "1" }
-	fadein 0.02
-	fadeout 0.02
+	fadein 0.002
+	fadeout 0.5
 	
 	fps 40
 }

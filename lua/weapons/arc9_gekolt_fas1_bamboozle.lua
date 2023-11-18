@@ -125,8 +125,11 @@ SWEP.TracerColor = Color(255, 225, 200) -- Color of tracers. Only works if trace
 SWEP.HasSights = false
 SWEP.CanLean = false
 
-SWEP.SprintAng = Angle(0, -10, 0)
-SWEP.SprintPos = Vector(0, -3, -1)
+SWEP.MovingPos = Vector(0, -0.25, 0)
+SWEP.MovingAng = Angle(0, -1, -2)
+
+SWEP.CrouchPos = Vector(-0.2, -0.5, -0.75)
+SWEP.CrouchAng = Angle(0, 0, -2)
 
 SWEP.ViewModelFOVBase = 90
 SWEP.ActivePos = Vector(0, -2, 0)
@@ -135,9 +138,6 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 SWEP.CustomizeAng = Angle(90, -25, 13)
 SWEP.CustomizePos = Vector(9, 32, 4)
 SWEP.CustomizeSnapshotFOV = 110
-
-SWEP.CrouchPos = Vector(0, -3, -1)
-SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeRotateAnchor = Vector(10.5, -10, -4)
 -------------------------- HoldTypes

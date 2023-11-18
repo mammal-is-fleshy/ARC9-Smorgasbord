@@ -25,7 +25,7 @@ ATT.RecoilRandomSideMult = 0.75 / 0.3
 ATT.DamageMaxMult = 92 / 34
 ATT.DamageMinMult = 60 / 19
 
-ATT.MovingPosOverride = Vector(0, 4.5, -0.1)
+ATT.MovingPosOverride = Vector(0, -0.5, -0.1)
 ATT.MovingAngOverride = Angle(0, -2, 0)
 
 ATT.LHIK = true
@@ -34,7 +34,7 @@ ATT.LHIK_Priority = 0
 ATT.SprintAngOverride = Angle(-10, 60, -5)
 ATT.SprintPosOverride = Vector(0.5, 4, -9)
 
-ATT.CrouchPosOverride = Vector(-0.5, 4.5, -1)
+ATT.CrouchPosOverride = Vector(-0.5, -0.5, -1)
 ATT.CrouchAngOverride = Angle(0, 0, -10)
 
 ATT.ActivePosOverride = Vector(0, 5, 0)

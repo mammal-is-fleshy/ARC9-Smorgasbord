@@ -110,8 +110,13 @@ SWEP.HoldBreathTime = 0
 SWEP.CanLean = false
 SWEP.Sway = 0
 
-SWEP.SprintAng = Angle(0, 0, 0)
-SWEP.SprintPos = Vector(0, -2, 0)
+SWEP.SprintMidPoint = {
+    Pos = Vector(0, 0, 0),
+    Ang = Angle(0, 0, 0)
+}
+
+SWEP.SprintAng = Angle(0, -20, 0)
+SWEP.SprintPos = Vector(0, -3, 0)
 
 SWEP.ViewModelFOVBase = 90
 SWEP.ActivePos = Vector(0, -2, 0)
@@ -121,7 +126,7 @@ SWEP.CustomizeAng = Angle(135, 0, 0)
 SWEP.CustomizePos = Vector(12.5, 46, 4)
 SWEP.CustomizeSnapshotFOV = 110
 
-SWEP.CrouchPos = Vector(0, -3, -1)
+SWEP.CrouchPos = Vector(0, -0.5, -1)
 SWEP.CrouchAng = Angle(0, 0, 0)
 
 SWEP.CustomizeRotateAnchor = Vector(15, -2, 0)

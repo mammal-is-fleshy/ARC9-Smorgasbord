@@ -1,6 +1,6 @@
 "VertexlitGeneric"
 {
-	"$basetexture" "models/gekolt_css_vmt/m60/v_m60e4"
+	"$basetexture"			"models/gekolt_css_vmt/m60/v_m60e4"
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[.1 .1 .1]"
 	"$envmapcontrast" "0.9"	
