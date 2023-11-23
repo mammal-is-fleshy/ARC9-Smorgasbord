@@ -341,6 +341,7 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
+	["idle_uncycled"] = {	Source = "idle_fired",	},	
     ["draw"] = {
         Source = "draw",
         EventTable = {
@@ -367,6 +368,18 @@ SWEP.Animations = {
     },
     ["idle_sights"] = {
         Source = "ads",
+    },	
+
+	["enter_sights_uncycled"] = {
+        Source = "ads_in_fired",
+        Time = 50/40,
+    },
+    ["exit_sights_uncycled"] = {
+        Source = "ads_out_fired",
+        Time = 50/40,
+    },
+    ["idle_sights_uncycled"] = {
+        Source = "ads_idle_fired",
     },
 
     ["cycle"] = {

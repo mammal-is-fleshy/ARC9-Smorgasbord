@@ -1,5 +1,5 @@
 AddCSLuaFile()
-
+ARC9:RegisterPhysBulletModel("models/Items/AR2_Grenade.mdl")
 SWEP.Base = "arc9_base"
 
 SWEP.Spawnable = true

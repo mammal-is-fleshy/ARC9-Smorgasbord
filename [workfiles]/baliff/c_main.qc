@@ -55,6 +55,12 @@ $sequence "idle" {
 	fps 40
 }
 
+$sequence "idle_fired" {
+	"anims\idle_fired.smd"
+	loop
+	fps 40
+}
+
 $sequence "fire" {
 	"anims\fire.smd"
 	activity "ACT_VM_PRIMARYATTACK" 1
@@ -70,6 +76,13 @@ $sequence "ads_fire" {
 	{ event 5001 0 "1" }
 	fadein 0.002
 	fadeout 0.2
+	fps 40
+}
+
+$sequence "ads_idle_fired" {
+	"anims\ads_idle_fired.smd"
+	activity "ACT_VM_PRIMARYATTACK" 1
+	loop
 	fps 40
 }
 
@@ -115,6 +128,21 @@ $sequence "ads_in" {
 }
 $sequence "ads_out" {
 	"anims\ads_out.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+
+$sequence "ads_in_fired" {
+	"anims\ads_in_fired.smd"	
+	fadein 0.2
+	fadeout 0.2
+	snap	
+	fps 40
+}
+$sequence "ads_out_fired" {
+	"anims\ads_out_fired.smd"	
 	fadein 0.2
 	fadeout 0.2
 	snap	
