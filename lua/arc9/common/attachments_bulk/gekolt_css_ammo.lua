@@ -270,4 +270,4 @@ ATT.ShootEntForce = 5000
 
 ATT.RecoilMult = 0.25
 
-ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_flame")
+ARC9.LoadAttachment(ATT, "gekolt_ammo_sg_flare")
