@@ -264,9 +264,6 @@ ATT.ShootSound = "oneshotof_cs16/m249-1.wav"
 ATT.ActivePosOverride = Vector(0, 6, -1.5)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
 
-ATT.MovingPosOverride = Vector(0, 5.5, -1.5)
-ATT.MovingAngOverride = Angle(0, -2, 0)
-
 ATT.SortOrder = 30
 ATT.Category = "css_ak_up"
 ATT.ActivateElements = {"u_disk", "noguard", "pre_muzzed"}

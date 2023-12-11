@@ -234,7 +234,7 @@ end]]
 ATT.PhysBulletImpactMult = false
 ATT.RicochetChanceOverride = 0
 
-ATT.DamageTypeOverride = DMG_BURN + DMG_BUCKSHOT
+ATT.DamageTypeOverride = DMG_BUCKSHOT + DMG_BURN 
 
 ATT.TracerSizeMult = 1.5
 ATT.AccuracyMOAMult = 30

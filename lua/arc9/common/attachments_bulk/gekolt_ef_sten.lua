@@ -123,12 +123,6 @@ ATT.ModelBodygroups = "0000000"
 ATT.ActivePosOverride = Vector(0, 8, 0.5)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
 
-ATT.MovingPosOverride = Vector(0, 7.5, 0.5)
-ATT.MovingAngOverride = Angle(0, -2, 0)
-
-ATT.CrouchPos = Vector(-0.5, 7.5, -1)
-ATT.CrouchAng = Angle(0, 0, -10)
-
 ATT.Category = "ef_sten_frame" -- can be "string" or {"list", "of", "strings"}
 ATT.ActivateElements = {"f_sterling","pre_muzzed",  "pre_stock",  "pre_barrel",  "pre_hg"}
 
