@@ -191,7 +191,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
-ATT.Ammo = "SniperRound"
+ATT.Ammo = "SniperPenetratedRound"
 
 ATT.PhysBulletMuzzleVelocityMult = 2.5
 ATT.PenetrationMult = 2

@@ -185,16 +185,16 @@ SWEP.IronSights = {
 
 SWEP.Crosshair = false
 
-SWEP.SprintAng = Angle(20, -15, -10)
-SWEP.SprintPos = Vector(0, 2, -0.5)
+SWEP.SprintAng = Angle(30, -15, -30)
+SWEP.SprintPos = Vector(0.5, 3, -1)
 
 SWEP.SprintMidPoint = {
     Pos = Vector(0, -5, -3),
     Ang = Angle(5, 20, 15)
 }
 
-SWEP.MovingPos = Vector(-0.1, -0.5, 0)
-SWEP.MovingAng = Angle(0, -3, -2)
+SWEP.MovingPos = Vector(-0.1, -0.5, 0.5)
+SWEP.MovingAng = Angle(0, -1, -2)
 
 SWEP.CrouchPos = Vector(-0.2, -0.5, -1.5)
 SWEP.CrouchAng = Angle(0, 0, -7)
@@ -204,7 +204,7 @@ SWEP.ActivePos = Vector(0, 3, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CustomizeAng = Angle(90, -5, 0)
-SWEP.CustomizePos = Vector(13, 32, 2)
+SWEP.CustomizePos = Vector(14, 22, 6)
 
 SWEP.CustomizeSnapshotFOV = 110
 SWEP.CustomizeNoRotate = false

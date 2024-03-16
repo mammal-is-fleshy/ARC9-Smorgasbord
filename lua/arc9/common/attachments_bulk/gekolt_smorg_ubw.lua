@@ -422,20 +422,20 @@ ATT.ActivateElements = {"ubgl_ump_mag_10mm"}
 ATT.DamageTypeUBGL = DMG_BULLET
 ATT.DamageMaxUBGL = 32
 ATT.DamageMinUBGL = 13
-ATT.RPMUBGL = 600
+ATT.RPMUBGL = 620
 
 ATT.RangeMinUBGL = 900
 ATT.RangeMaxUBGL = 7000
 
-ATT.RecoilUpUBGL = 0.2
-ATT.RecoilSideUBGL = 0.12
+ATT.RecoilUpUBGL = 0.3
+ATT.RecoilSideUBGL = 0.2
 
-ATT.RecoilRandomUpUBGL = 0.2
-ATT.RecoilRandomSideUBGL = 0.3
+ATT.RecoilRandomUpUBGL = 0.3
+ATT.RecoilRandomSideUBGL = 0.5
 
-ATT.SpreadAddHipFireUBGL = -0.0006
-ATT.RecoilMultRecoilUBGL = 0.98
-ATT.SpreadMultRecoilUBGL = 0.985
+ATT.SpreadAddHipFireUBGL = -0.0004
+ATT.RecoilMultRecoilUBGL = 1.02
+ATT.SpreadMultRecoilUBGL = 1.02
 
 ARC9.LoadAttachment(ATT, "gekolt_ubgl_ump_10mm")
 

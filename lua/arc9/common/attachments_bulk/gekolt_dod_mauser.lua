@@ -134,9 +134,6 @@ ATT.ModelAngleOffset = Angle(90, -90, 0)
 ATT.Model = "models/weapons/geckololt_css/c_mauser.mdl"
 ATT.ModelBodygroups = "123320"
 
-ATT.MovingPosOverride = Vector(-0.5, 4.5, -0.9)
-ATT.MovingAngOverride = Angle(0, -2, 0)
-
 ATT.ActivePosOverride = Vector(-0.5, 5, -1)
 ATT.ActiveAngOverride = Angle(0, 0, 0)
 
